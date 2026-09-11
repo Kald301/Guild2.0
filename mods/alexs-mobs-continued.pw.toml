@@ -3,11 +3,12 @@ filename = "alexsmobs-2.1.13-neoforge+1.21.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "50ddafdf3d12b33331e4eecb4ab514ae451baadd"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "a277db4fd90c3da5715e8383e7fcd089a9b20673c426149509abcf1c8bad47967c506b0fe58ddcd85029068b855bc8abfdb8c5d8ef5ca6fad29f57e1edb3910f"
+mode = "metadata:modrinth"
+url = "https://cdn.modrinth.com/data/kYIaHHfw/versions/Ok0b9L76/alexsmobs-2.1.13-neoforge%2B1.21.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8856498
-project-id = 1635121
+[update.modrinth]
+mod-id = "kYIaHHfw"
+version = "Ok0b9L76"

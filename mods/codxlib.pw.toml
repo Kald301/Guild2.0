@@ -3,11 +3,12 @@ filename = "codxlib-1.6.0-neoforge+1.21.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "5934c440dd8b4633ca2465dfe94ecfdbe5ad8e89"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "cdcf0f6637075a282888e4141114fc958f1b2842e24047f82ae4335f54dee7df0a23e2ed09bac9e169b7de68ec63a3d7ee0b09da712ff47fcab8eeb931b6c011"
+mode = "metadata:modrinth"
+url = "https://cdn.modrinth.com/data/6oyMM4yX/versions/AVHJYkf1/codxlib-1.6.0-neoforge%2B1.21.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8828240
-project-id = 1633207
+[update.modrinth]
+mod-id = "6oyMM4yX"
+version = "AVHJYkf1"
