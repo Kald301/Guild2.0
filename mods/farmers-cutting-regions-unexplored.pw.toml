@@ -1,0 +1,13 @@
+name = "Farmer's Cutting: Regions Unexplored"
+filename = "farmers-cutting-regions-unexplored-1.21.1-1.1b-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1c3c1f0bba76a3e7722c1e6f117ad66e21ef6fe6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7642854
+project-id = 1133629

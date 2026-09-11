@@ -1,0 +1,13 @@
+name = "Zombies Break & Build"
+filename = "ZombiesBreakBuild-neoforge-1.21.1-1.6.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b06eb9df34de31566a2a79fa045257b7538ba67a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7909339
+project-id = 1472179

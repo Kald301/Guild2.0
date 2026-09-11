@@ -1,0 +1,15 @@
+[names]
+	#MCA Reborn name culture buckets that are allowed to appear in the world.
+	#All existing MCA Reborn 1.21.1 culture buckets and MCA Capitals fantasy culture buckets are enabled by default.
+	#Fantasy buckets: dragonborn, fae, merfolk, dwarven, elven, folklore, tiefling, aasimar.
+	#To force one culture only, leave only one entry, for example: ["spain"] or ["dragonborn"].
+	#If this list is empty or contains no valid entries, MCA Capitals keeps all loaded MCA culture buckets enabled.
+	enabledCultureNameBuckets = ["albania", "arabia", "armenia", "austria", "azerbaijan", "belarus", "belgium", "bosnia", "bulgaria", "china", "croatia", "czechrepublic", "denmark", "eastfrisia", "estonia", "finland", "france", "georgia", "germany", "greatbritain", "greece", "hungary", "iceland", "india", "ireland", "israel", "italy", "japan", "kazakhstan", "korea", "kosovo", "latvia", "lithuania", "luxembourg", "macedonia", "malta", "modernusa", "moldova", "montenegro", "norway", "poland", "portugal", "romania", "russia", "serbia", "slovakia", "slovenia", "spain", "sweden", "swiss", "thenetherlands", "turkey", "ukraine", "usa", "vietnam", "dragonborn", "fae", "merfolk", "dwarven", "elven", "folklore", "tiefling", "aasimar"]
+
+[identity]
+	#Controls which village name is displayed in a villager's origin line.
+	#HISTORICAL preserves the name recorded when the origin was assigned.
+	#CURRENT displays the village's current name when it can be resolved, otherwise the historical name.
+	#CURRENT_AND_FORMER displays the current name followed by the historical name when they differ.
+	#Allowed Values: HISTORICAL, CURRENT, CURRENT_AND_FORMER
+	originNameMode = "HISTORICAL"

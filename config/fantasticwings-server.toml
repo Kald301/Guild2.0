@@ -1,0 +1,241 @@
+[slime_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[metallic_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[angel_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[parrot_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[blue_butterfly_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[dragon_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[monarch_butterfly_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[bat_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[fire_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[fairy_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2
+
+[evil_wings]
+	#Exhaustion caused from continuously flying.
+	#Default Value: 1.0E-4
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_flying = 1.0E-4
+	#Minimum amount of saturation required to be allowed to start and continue to fly.
+	#Default Value: 6
+	# Default: 6
+	# Range: 0 ~ 20
+	required_food_level_for_flying = 6
+	#Exhaustion caused from slowly descending back to the ground.
+	#Default Value: 0.005
+	# Default: 0.005
+	# Range: 0.0 ~ 10.0
+	exhaustion_from_slowly_descending = 0.005
+	#Minimum amount of saturation required to be able to slowly descent back to the ground.
+	#Default Value: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	required_food_level_for_slowly_descending = 2

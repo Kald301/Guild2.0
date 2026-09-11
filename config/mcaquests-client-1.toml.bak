@@ -1,0 +1,159 @@
+[client]
+	#Inject the Quests button into MCA's villager interaction menu.
+	showQuestButtonInMcaMenu = true
+	#Show a short read-only summary of Townstead state under each Townstead quest in the
+	#log -- the villager's trade and tier, the need or schedule the quest is about, the
+	#village's spirit. Server-rendered, so this only hides it for you; it has no effect on
+	#quests, and nothing is shown for quests that are not about Townstead state.
+	showTownsteadQuestContext = true
+	showQuestToasts = true
+	showQuestTrackerHud = true
+	#Add a line to the quest tracker naming the villager the quest wants you to find, with
+	#the distance to it and which way to turn -- "Nether Fortress -- 412 blocks ahead-left".
+	#Every active quest that can name a place gets its own line; the world marker still
+	#stands on only one of them. Needs showQuestTrackerHud.
+	showQuestTargetDirection = true
+	#Add the destination's coordinates to that line, and to the quest log's. The mod could
+	#say how far away somewhere was and never where it was, so there was nothing to write
+	#down, type into a minimap or send to somebody else. A destination in another dimension
+	#shows its coordinates too -- a bearing across dimensions would be a lie, but a
+	#coordinate is exactly what you want written down before you go looking for a portal.
+	showQuestTargetCoordinates = true
+	#Show each quest's destination in the quest log as well as on the HUD tracker. The log
+	#listed objectives and never said where any of them were. Click the line to copy the
+	#coordinates.
+	showQuestLogDestination = true
+	playQuestSounds = true
+	#How many quests the tracker HUD shows at once.
+	# Default: 5
+	# Range: 1 ~ 15
+	questTrackerMaxEntries = 5
+	#Draw a background behind the quest tracker HUD.
+	questTrackerBackground = true
+	#Which background the quest tracker draws, when questTrackerBackground is on:
+	#PANEL for the mod's textured panel, SHADED for the plain translucent box used
+	#before 1.5.0. Ignored entirely when questTrackerBackground is false.
+	#Allowed Values: PANEL, SHADED
+	questTrackerStyle = "PANEL"
+	#Screen corner the quest tracker HUD anchors to: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT.
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	questTrackerAnchor = "TOP_LEFT"
+	#Quest tracker horizontal offset in pixels from its anchored corner.
+	# Default: 4
+	# Range: 0 ~ 10000
+	questTrackerX = 4
+	#Quest tracker vertical offset in pixels from its anchored corner.
+	# Default: 4
+	# Range: 0 ~ 10000
+	questTrackerY = 4
+	#Draw a marker in the world at the place your tracked quest is currently sending you --
+	#a small glyph on the target itself, with a ring on the ground under it, which fades out
+	#as you arrive. Only ever one at a time, for the objective you are actually on. Turn it
+	#off for the tracker text alone.
+	showQuestMarker = true
+	#How far away, in blocks, the world marker is still drawn. Past this only the tracker
+	#line names the target, which keeps a marker from standing on the horizon for a
+	#destination two thousand blocks away.
+	# Default: 256
+	# Range: 16 ~ 4096
+	questMarkerMaxDistance = 256
+	#How much of the marker is drawn: COMPACT for the glyph, its ground ring and its label,
+	#ICON_ONLY for the glyph alone -- the quietest thing that still says where to go --
+	#and HIGH_VISIBILITY to add a short translucent column over the target for finding it
+	#across a crowded village.
+	#Allowed Values: COMPACT, ICON_ONLY, HIGH_VISIBILITY
+	questMarkerStyle = "COMPACT"
+	#What the marker looks like when the target is behind terrain: DIM_OUTLINE leaves a
+	#faint hollow diamond, so a wall reads as a wall; HIDDEN shows nothing at all; FULL
+	#draws the whole marker through the wall the way versions before 1.5.3 did.
+	#Allowed Values: DIM_OUTLINE, HIDDEN, FULL
+	questMarkerOcclusion = "DIM_OUTLINE"
+	#Deprecated compatibility input: read only when marker.edge.mode = AUTO. It said
+	#whether a target off the edge of the screen or behind you gets a small arrow at the
+	#edge pointing at it; marker.edge.mode now says that, and says more. Kept so an
+	#existing config keeps the behaviour it had, and left alone otherwise.
+	questMarkerEdgeIndicator = true
+	#When the marker carries its target's name and distance: NEARBY within 48 blocks,
+	#ALWAYS at any distance it is drawn at, NEVER for the glyph alone. The tracker line
+	#names the target either way.
+	#Allowed Values: NEARBY, ALWAYS, NEVER
+	questMarkerLabels = "NEARBY"
+	#Draw the marker in white on a thick black outline instead of its kind's colour, and
+	#darken the label background. The glyph still says what the target is, so nothing is
+	#lost by not being able to tell the colours apart.
+	questMarkerHighContrast = false
+	#Skip the marker's fade in and its cross-fade between targets, so it simply appears.
+	#Only ever affects opacity over time -- the marker never moves, scales or spins either
+	#way.
+	questMarkerReducedMotion = false
+	#Put your quest destinations on JourneyMap and Xaero's Minimap, where either is
+	#installed. One waypoint per quest that has somewhere to send you, created when it
+	#resolves, moved as the quest advances, and taken away when it is done. They are not
+	#saved to your own waypoint list -- they belong to the quest, not to you.
+	mapWaypoints = true
+	#Restrict those waypoints to the quest you are following, so the map carries one at a
+	#time rather than one per quest. The in-world marker beam has always worked this way;
+	#this makes the map match it.
+	mapWaypointsFollowedOnly = false
+	#Put quest destinations on JourneyMap, when it is installed. With both minimaps
+	#installed the same destination is on both maps, and this is how you keep it on only
+	#the one you actually read. mapWaypoints=false turns both off regardless.
+	journeyMapWaypoints = true
+	#Put quest destinations on Xaero's Minimap, when it is installed. Xaero's third-party
+	#waypoints carry no dimension of their own, so only destinations in the dimension you
+	#are standing in appear there. mapWaypoints=false turns both off regardless.
+	xaeroWaypoints = true
+	#Show participating community projects in the HUD tracker.
+	showProjectTrackerHud = true
+	#How many community projects the tracker HUD shows at once.
+	# Default: 3
+	# Range: 1 ~ 10
+	projectTrackerMaxEntries = 3
+	#Show a toast when the village opens a new situation that needs help (0.8.0).
+	showSituationToast = true
+
+		[client.marker.edge]
+			#The arrow at the edge of the screen that points at a target you are not looking at.
+			#The defaults are the behaviour of 1.5.3 with its flicker taken out; the rest of these
+			#exist because a player on a 30 Hz laptop and one on a 144 Hz monitor do not want the
+			#same amount of smoothing.
+			#When the edge arrow appears. AUTO follows the deprecated questMarkerEdgeIndicator
+			#above, so an existing config keeps its behaviour; DISABLED never shows it;
+			#OFFSCREEN_ONLY shows it when the target is outside the view or behind you;
+			#OFFSCREEN_OR_OCCLUDED also shows it when the target is on screen but hidden behind
+			#terrain and questMarkerOcclusion is HIDDEN -- which costs a rate-limited raycast.
+			#Allowed Values: AUTO, DISABLED, OFFSCREEN_ONLY, OFFSCREEN_OR_OCCLUDED
+			mode = "AUTO"
+			#How far inside the screen the arrow stays, in GUI pixels. The icon's own half-size is
+			#added to this, so the whole arrow is inside the inset rather than its centre.
+			# Default: 18
+			# Range: 0 ~ 128
+			inset = 18
+			#Time constant of the arrow's direction filter, in milliseconds; it settles in about
+			#three times this. Zero turns smoothing off, as does questMarkerReducedMotion.
+			# Default: 80
+			# Range: 0 ~ 500
+			smoothingMs = 80
+			#How far outside the screen the target must be before the world marker gives way to
+			#the arrow, in GUI pixels.
+			# Default: 4
+			# Range: 0 ~ 32
+			enterHysteresisPx = 4
+			#How far back inside the screen it must come before the arrow gives way to the world
+			#marker. Smaller than the entry threshold on purpose: the gap between the two is what
+			#stops a target sitting on the frustum boundary flickering between them.
+			# Default: 2
+			# Range: 0 ~ 32
+			exitHysteresisPx = 2
+			#How many consecutive frames either threshold must hold before the marker changes.
+			# Default: 2
+			# Range: 1 ~ 10
+			transitionFrames = 2
+			#Write the distance next to the arrow. It is placed inward from the edge, so the
+			#number is never the thing that falls off the screen.
+			showDistance = true
+			#Shortest gap between the terrain raycasts OFFSCREEN_OR_OCCLUDED needs, in
+			#milliseconds. Ignored entirely in every other mode, which casts none at all.
+			# Default: 50
+			# Range: 25 ~ 1000
+			occlusionSampleMs = 50

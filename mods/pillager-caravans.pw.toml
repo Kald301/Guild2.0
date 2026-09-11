@@ -1,0 +1,13 @@
+name = "Pillager Caravans"
+filename = "caravans-neoforge-1.21.1-3.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0db482feb4a08c8b532b6dd56594b7925b0b065b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8241460
+project-id = 1356772

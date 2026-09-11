@@ -1,0 +1,13 @@
+name = "EMF Compat: Better Combat"
+filename = "emf_compat_better_combat_1.21.1_2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ae8085564b385a9383970ab6faab4b55873c5887"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8793814
+project-id = 1605147

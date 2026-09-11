@@ -1,0 +1,6 @@
+#.
+#Enable/disable unstable Ore Node particles.
+nodeParticles = true
+#.
+#Whether to display advanced information when looking at an extractor with the Engineer's Goggles equipped.
+advancedExtractorInfo = false

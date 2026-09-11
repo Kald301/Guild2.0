@@ -1,0 +1,13 @@
+name = "Cataclysm & BetterCombat - Compatibility"
+filename = "cataclysm_compat_1.21.1-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "34e9b705c62e8e947b9e37f899782e1e2db976a8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7350924
+project-id = 1335102

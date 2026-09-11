@@ -1,0 +1,13 @@
+name = "Farmer's (Delight) Croptopia"
+filename = "farmers_croptopia-1.21.1-3.2.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b906b5565fbed1875e079781f57754fdc779d599"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8745354
+project-id = 1132546

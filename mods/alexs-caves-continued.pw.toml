@@ -1,0 +1,13 @@
+name = "Alex's Caves Continued"
+filename = "alexscaves-1.0.10-neoforge+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6960b299a39a039ac8a5eb9b07be4ad0e3e0a570"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8856293
+project-id = 1645389

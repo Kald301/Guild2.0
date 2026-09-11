@@ -1,0 +1,13 @@
+name = "Farmer's Cutting: BetterEnd"
+filename = "farmers-cutting-betterend-1.21.1-2.0-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "80013d45c490f2a651ae4f1bee905f1c7b3e9c03"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7648264
+project-id = 1146834

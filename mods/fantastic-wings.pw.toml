@@ -1,0 +1,13 @@
+name = "Fantastic Wings"
+filename = "FantasticWings-v21.1.2-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0587cee8edd1eb146f125b100e6c878bf7dabf5f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8122664
+project-id = 1370532

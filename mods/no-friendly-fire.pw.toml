@@ -1,0 +1,13 @@
+name = "No Friendly Fire - Updated"
+filename = "nofriendlyfire-1.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "08140f9d049cec76a904a5062ba57a106d8b6d1c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6274352
+project-id = 1165603

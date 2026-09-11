@@ -1,0 +1,13 @@
+name = "Mowzie's Cataclysm"
+filename = "mowzies_cataclysm-1.2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0dff3e849155ca343d1a500f5b9ca2b54ffa692d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8196282
+project-id = 1128348

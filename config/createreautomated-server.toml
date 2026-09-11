@@ -1,0 +1,90 @@
+#.
+#Configure extractors stats.
+[extractorConfig]
+	#.
+	#.
+	#When True the Extractor will consume the durability of the Drill when mining.
+	useDrillDurability = true
+
+	#.
+	[extractorConfig.extractor]
+		#.
+		#.
+		#[in Stress Units]
+		# Default: 64.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		impact = 64.0
+		#.
+		#The minimum speed required to power the block.
+		#Allowed Values: NONE, SLOW, MEDIUM, FAST
+		speed = "MEDIUM"
+
+	#.
+	[extractorConfig.advanced_extractor]
+		#.
+		#.
+		#[in Stress Units]
+		# Default: 64.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		impact = 64.0
+		#.
+		#The minimum speed required to power the block.
+		#Allowed Values: NONE, SLOW, MEDIUM, FAST
+		speed = "MEDIUM"
+
+#.
+#Configure each node extraction limit.
+[nodeValues]
+	#.
+	#.
+	#Override all nodes extraction values and make them infinite. Note that this will affect ALL nodes, even custom ones!
+	infiniteNodes = false
+
+	#Configure how many times each node can be extracted before turning into its base rock
+	[nodeValues.extraction]
+		diamond_node = 108
+		deepslate_copper_node = 300
+		gold_node = 180
+		iron_node = 240
+		deepslate_diamond_node = 135
+		nether_quartz_node = 250
+		deepslate_iron_node = 300
+		zinc_node = 200
+		copper_node = 240
+		ancient_debris_node = 90
+		nether_gold_node = 180
+		deepslate_gold_node = 225
+		deepslate_zinc_node = 250
+
+#.
+#Configure global recipe modifiers.
+#The modifiers are multipliers that are applied to all Extracting recipes.
+# > 0.5 = 50%
+# > 2.0 = 200%
+[recipeModifiers]
+	#.
+	#.
+	#Extract duration multiplier.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	duration = 1.0
+	#.
+	#Drill durability consumption multiplier.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	durability = 1.0
+	#.
+	#Fluid consumption multiplier.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	fluid = 1.0
+	#.
+	#Node consumption multiplier.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	nodeConsumption = 1.0
+	#.
+	#Item output multiplier.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	output = 1.0

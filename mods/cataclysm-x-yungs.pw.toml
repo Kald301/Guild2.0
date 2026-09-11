@@ -1,0 +1,13 @@
+name = "Cataclysm x YUNG's Better Nether Fortresses Compat"
+filename = "cataclysmfortresses-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2ed4b70cb80c47fd8b844711fa43abd3ffd14bcf"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7141559
+project-id = 1348970

@@ -1,0 +1,13 @@
+name = "Uranus"
+filename = "uranus-2.4.1-bugfix-1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ccdb021d6eb0f0699a7113c814d3886eac458874"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8587525
+project-id = 1010827

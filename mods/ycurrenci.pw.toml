@@ -1,0 +1,13 @@
+name = "Ycurrency"
+filename = "ycurrenci-2.1.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d9bacf771f4ea342fa33e4dd3cd5f576a838905f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6452657
+project-id = 1092594

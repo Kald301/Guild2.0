@@ -1,0 +1,13 @@
+name = "Cataclysm's Rise"
+filename = "cataclysm_rise-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a8053dad48631deb380ebc563ee9eed81b3a50c8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8241900
+project-id = 1553375

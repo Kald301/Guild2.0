@@ -1,0 +1,13 @@
+name = "Create Utilities J"
+filename = "Create-Utilities-J-1.21.1-0.3.4+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "351ca0def8f1f7eb0631b270f3827f17c94d0fbf"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8317547
+project-id = 1437484

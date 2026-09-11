@@ -1,0 +1,13 @@
+name = "Jauml"
+filename = "jauml-neoforge-1.21.1-2.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8333875d0ce635e1757bdf9e69bf42a3758a5df1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8852368
+project-id = 1281310

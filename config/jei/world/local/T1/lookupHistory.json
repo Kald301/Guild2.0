@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"mts:automotives.boilerbox"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mts:automotives.biplane"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

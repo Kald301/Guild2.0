@@ -1,0 +1,175 @@
+#.
+#Configure nodes spawn.
+[worldgen]
+	#.
+	#.
+	#Whether Create Re-Automated should generate nodes in the world.
+	enabled = true
+
+	#.
+	#Copper nodes specific configs.
+	[worldgen.copper]
+		#.
+		#.
+		# Default: 3
+		# Range: 0 ~ 6
+		faces = 3
+		#.
+		# Default: 30
+		# Range: 0 ~ 512
+		tries = 30
+		#.
+		# Default: -16
+		# Range: > -2147483648
+		fromY = -16
+		#.
+		# Default: 64
+		# Range: > -2147483648
+		toY = 64
+
+	#.
+	#Zinc nodes specific configs.
+	[worldgen.zinc]
+		#.
+		#.
+		# Default: 3
+		# Range: 0 ~ 6
+		faces = 3
+		#.
+		# Default: 50
+		# Range: 0 ~ 512
+		tries = 50
+		#.
+		# Default: -64
+		# Range: > -2147483648
+		fromY = -64
+		#.
+		# Default: 64
+		# Range: > -2147483648
+		toY = 64
+
+	#.
+	#Iron nodes specific configs.
+	[worldgen.iron]
+		#.
+		#.
+		# Default: 3
+		# Range: 0 ~ 6
+		faces = 3
+		#.
+		# Default: 50
+		# Range: 0 ~ 512
+		tries = 50
+		#.
+		# Default: -64
+		# Range: > -2147483648
+		fromY = -64
+		#.
+		# Default: 64
+		# Range: > -2147483648
+		toY = 64
+
+	#.
+	#Gold nodes specific configs.
+	[worldgen.gold]
+		#.
+		#.
+		# Default: 3
+		# Range: 0 ~ 6
+		faces = 3
+		#.
+		# Default: 40
+		# Range: 0 ~ 512
+		tries = 40
+		#.
+		# Default: -64
+		# Range: > -2147483648
+		fromY = -64
+		#.
+		# Default: 32
+		# Range: > -2147483648
+		toY = 32
+
+	#.
+	#Diamond nodes specific configs.
+	[worldgen.diamond]
+		#.
+		#.
+		# Default: 3
+		# Range: 0 ~ 6
+		faces = 3
+		#.
+		# Default: 30
+		# Range: 0 ~ 512
+		tries = 30
+		#.
+		# Default: -64
+		# Range: > -2147483648
+		fromY = -64
+		#.
+		# Default: 16
+		# Range: > -2147483648
+		toY = 16
+
+	#.
+	#Nether Gold nodes specific configs.
+	[worldgen.nether_gold]
+		#.
+		#.
+		# Default: 3
+		# Range: 0 ~ 6
+		faces = 3
+		#.
+		# Default: 60
+		# Range: 0 ~ 512
+		tries = 60
+		#.
+		# Default: 10
+		# Range: > -2147483648
+		fromY = 10
+		#.
+		# Default: 118
+		# Range: > -2147483648
+		toY = 118
+
+	#.
+	#Nether Quartz nodes specific configs.
+	[worldgen.nether_quartz]
+		#.
+		#.
+		# Default: 3
+		# Range: 0 ~ 6
+		faces = 3
+		#.
+		# Default: 50
+		# Range: 0 ~ 512
+		tries = 50
+		#.
+		# Default: 7
+		# Range: > -2147483648
+		fromY = 7
+		#.
+		# Default: 117
+		# Range: > -2147483648
+		toY = 117
+
+	#.
+	#Ancient Debris nodes specific configs.
+	[worldgen.ancient_debris]
+		#.
+		#.
+		# Default: 1
+		# Range: 0 ~ 6
+		faces = 1
+		#.
+		# Default: 300
+		# Range: 0 ~ 512
+		tries = 300
+		#.
+		# Default: 8
+		# Range: > -2147483648
+		fromY = 8
+		#.
+		# Default: 24
+		# Range: > -2147483648
+		toY = 24

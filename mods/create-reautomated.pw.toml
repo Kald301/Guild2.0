@@ -1,0 +1,13 @@
+name = "Create ReAutomated"
+filename = "createreautomated-0.3.2-mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eb3769e5ba15ec5f9bc8d741962e4bd0f9be23e5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8577740
+project-id = 1516820
