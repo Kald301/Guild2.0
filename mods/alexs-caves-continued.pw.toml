@@ -3,11 +3,11 @@ filename = "alexscaves-1.0.10-neoforge+1.21.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "6960b299a39a039ac8a5eb9b07be4ad0e3e0a570"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/cO2CvXug/versions/gb8cXAty/alexscaves-1.0.10-neoforge%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "de6c068a2374ddffb5e27162b42f0bc5cc07d8e3357e07f92cfa861af096ad400a3de5968c6fa7e0656c260f1f13d16cad18c149e5c179e4d7e8a91020e7ac7c"
 
 [update]
-[update.curseforge]
-file-id = 8856293
-project-id = 1645389
+[update.modrinth]
+mod-id = "cO2CvXug"
+version = "gb8cXAty"
