@@ -1,3 +1,12 @@
+# Herramientas de mantenimiento del pack: NO son parte del modpack y no
+# tienen que bajarselas los jugadores.
+sync-modpack.bat
+verify-mods.ps1
+packwiz-installer-bootstrap.jar
+packwiz-installer.jar
+mods-fallidos.txt
+*.log
+
 options.txt
 optionsof.txt
 servers.dat

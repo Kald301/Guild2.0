@@ -3,5 +3,6 @@
   {"ingredient":{"id":"minecraft:obsidian"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:potato"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:stone_axe","components":"{\"minecraft:damage\":114}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"magistuarmory:gold_target","components":"{\"minecraft:damage\":310}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"magistuarmory:gold_target","components":"{\"minecraft:damage\":310}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:oat_seeds"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

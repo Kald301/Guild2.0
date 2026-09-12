@@ -1,12 +1,12 @@
 name = "Guild 2.0"
 author = "Kaland"
-version = "1"
+version = "1.0.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "4c39560591d9882b5270e9cb820142e7cdb41f25617709b8b87336634f2b788f"
+hash = "3015ed574f033eab783faca2f99ddfa822261b5d26604ee7b8df5c7bb6646fd3"
 
 [versions]
 minecraft = "1.21.1"

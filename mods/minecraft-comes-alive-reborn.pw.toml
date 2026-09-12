@@ -1,13 +1,13 @@
-name = "MCA Reborn"
+name = "MCA Reborn [Fabric/Forge]"
 filename = "mca-neoforge-7.7.36-beta.3+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/1W98a849/versions/S2Ln2tIn/mca-neoforge-7.7.36-beta.3%2B1.21.1.jar"
-hash-format = "sha512"
-hash = "d001d10a3c0481cfe25fb22b89b11608bf3cf1290139edd119f3f9bf8d544c369a5a0ea57293eeac3e1390b97f8ece6d2c85f84b753f54db33c4218545356a01"
+hash-format = "sha1"
+hash = "837241e4da732733c307b7385e14d9ec8e93182f"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "1W98a849"
-version = "S2Ln2tIn"
+[update.curseforge]
+file-id = 8658484
+project-id = 535291

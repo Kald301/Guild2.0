@@ -1,0 +1,52 @@
+﻿============================================================
+ Reporte de verificacion de descarga - modpack Guild 2.0
+ Fecha: 2026-09-12 09:40:06
+ Rondas de verificacion: 2
+============================================================
+
+MODS ARREGLADOS (7)
+------------------------------------------------------------
+Estos mods no se pueden bajar por la API de CurseForge (el autor
+los excluyo). Hay dos arreglos posibles:
+  - convertido a override: se borro su .pw.toml y el .jar real
+    quedo dentro de mods\, asi se distribuye como archivo directo
+    y no depende de ninguna API externa.
+  - duplicado borrado: el mod ya estaba agregado desde otra fuente
+    (Modrinth / URL directa) y solo sobraba la copia de CurseForge.
+
+  * accdelight-1.0.0-neoforge+1.21.1.jar
+      accion           : convertido a override
+      .pw.toml borrado : alexs-caves-continued-delight.pw.toml
+      tamano           : 0.1 MB
+  * alexsmobs-2.1.13-neoforge+1.21.1.jar
+      accion           : convertido a override
+      .pw.toml borrado : alexs-mobs-continued.pw.toml
+      tamano           : 26.18 MB
+  * aquaculturedelight-1.2.0-neoforge-1.21.1.jar
+      accion           : convertido a override
+      .pw.toml borrado : aquaculture-delight.pw.toml
+      tamano           : 0.2 MB
+  * codxlib-1.6.0-neoforge+1.21.1.jar
+      accion           : convertido a override
+      .pw.toml borrado : codxlib.pw.toml
+      tamano           : 0.18 MB
+  * entityculling-neoforge-1.10.5-mc1.21.1.jar
+      accion           : convertido a override
+      .pw.toml borrado : entityculling.pw.toml
+      tamano           : 1.51 MB
+  * mcacapitals-1.3.5.jar
+      accion           : duplicado borrado (ya lo cubre capitals-a-monarchy-mod-for-mca-reborn.pw.toml)
+      .pw.toml borrado : mca-capitals.pw.toml
+  * skinlayers3d-neoforge-1.11.2-mc1.21.1.jar
+      accion           : duplicado borrado (ya lo cubre 3dskinlayers.pw.toml)
+      .pw.toml borrado : skin-layers-3d.pw.toml
+
+RESULTADO FINAL: OK
+Despues de los arreglos, la instalacion de prueba termino sin errores.
+
+Log completo del installer: C:\Users\0_0\AppData\Local\packwiz-verify\install.log
+
+NOTA: "packwiz curseforge detect" (paso 6) vuelve a convertir estos
+jars en metadata de CurseForge en cada sincronizacion. Por eso el
+paso 7 los vuelve a pasar a override automaticamente cada vez. Es
+esperado: no hace falta que hagas nada a mano.
