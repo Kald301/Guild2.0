@@ -33,10 +33,10 @@
 	applyToAllMonsters = true
 
 	# Additional entity IDs that will be given the ability to break and place blocks (only Pathfinder mobs)
-	additionalEntityIdList = ["minecraft:iron_golem"]
+	additionalEntityIdList = ["minecraft:iron_golem", "minecraft:slime"]
 
 	# Entity IDs that will NOT be given the ability to place blocks
-	ignoreBuildEntityIdList = ["minecraft:ender_dragon", "minecraft:ghast", "minecraft:phantom", "minecraft:blaze", "minecraft:vex", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:shulker", "minecraft:wither", "minecraft:breeze", "minecraft:creeper"]
+	ignoreBuildEntityIdList = ["minecraft:ender_dragon", "minecraft:ghast", "minecraft:phantom", "minecraft:blaze", "minecraft:vex", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:shulker", "minecraft:wither", "minecraft:breeze", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "born_in_chaos_v1:baby_spider", "born_in_chaos_v1:baby_spider_controlled", "born_in_chaos_v1:corpse_fly"]
 
 	# Entity IDs that will NOT be given the ability to break blocks
 	ignoreBreakEntityIdList = ["minecraft:ender_dragon", "minecraft:shulker", "minecraft:wither", "minecraft:vex", "minecraft:creeper"]
@@ -66,10 +66,10 @@
 
 	[balance.cooldowns]
 		# Cooldown between block breaking attempts (seconds)
-		breakCooldown = 2.0
+		breakCooldown = 1.0
 
 		# Cooldown between block placing attempts (seconds)
-		buildCooldown = 2.0
+		buildCooldown = 1.0
 
 		# Cooldown between searches for dangerous blocks (seconds)
 		searchDangerousBlocksCooldown = 2.0
@@ -82,10 +82,10 @@
 	builtBlocksDisappearTime = 30.0
 
 	# Enable restoration of blocks broken by zombies
-	brokenBlocksRestoring = false
+	brokenBlocksRestoring = true
 
 	# Time before broken blocks by zombies are restored (only if brokenBlocksRestoring is true)
-	brokenBlocksRestoreTime = 30.0
+	brokenBlocksRestoreTime = 300.0
 
 [visualEffects]
 	# [Break] Whether the zombie will swing when breaking a block

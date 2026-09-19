@@ -367,3 +367,41 @@
 						projects = true
 						#The situations that Townstead state can trigger.
 						situations = true
+
+			[rewards.rewards.compat.validation]
+				#Warn once per reload for each quest that could not be loaded because it names
+				#content from a mod that is not installed. Such a quest is quarantined either way:
+				#a copy a player already holds is paused rather than lost, and it comes back when
+				#the content does. Turn this off on a server that deliberately ships packs for mods
+				#it does not run.
+				logMissingOptionalContent = true
+
+			[rewards.rewards.compat.iceandfire]
+				#Master switch for the optional Ice & Fire integration. When false, every
+				#iceandfire capability reports unavailable, so gated quests are never offered and
+				#any a player already holds pause rather than break. The registry probe still runs,
+				#so '/mcaquests compat iceandfire status' keeps telling the truth about what is
+				#installed.
+				enabled = true
+				#Whether MCA: Quests mounts its own Ice & Fire quest pack. Turn this off to keep the
+				#capability probing and the compat_capability condition, but author all Ice & Fire
+				#content yourself.
+				enableBuiltinContent = true
+
+			[rewards.rewards.compat.bountiful]
+				#How far the optional Bountiful integration goes. AUTO uses the completion hook when
+				#Bountiful's own cash-in method is present with the shape it needs, and falls back to
+				#data-only when it is not. DATA_ONLY mounts our bounty pools and reads bounty rarity
+				#but never observes a cash-in, so bounty-completion quests are not offered. OFF makes
+				#the integration behave exactly as if Bountiful were not installed.
+				#Allowed Values: AUTO, DATA_ONLY, OFF
+				mode = "AUTO"
+				#Whether MCA: Quests mounts its own Bountiful quest pack. Turn this off to keep the
+				#capability probing and the compat_capability condition, but author all bounty-board
+				#content yourself.
+				enableBuiltinContent = true
+				#Whether MCA: Quests offers its Ice & Fire bounty pools and decree to Bountiful's
+				#loader when both mods are installed. Separate from enableBuiltinContent because
+				#these become part of what a bounty board generates, which is Bountiful's economy to
+				#balance rather than ours.
+				enableIceAndFirePools = true

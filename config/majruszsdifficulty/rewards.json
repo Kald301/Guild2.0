@@ -1,0 +1,24 @@
+{
+  "double_loot": {
+    "is_enabled": true,
+    "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+    "chance": {
+      "__default": 0.0,
+      "expert": 0.05,
+      "master": 0.1
+    },
+    "blacklisted_items": [
+      "minecraft:nether_star",
+      "minecraft:totem_of_undying"
+    ]
+  },
+  "experience_bonus": {
+    "is_enabled": true,
+    "extra_multiplier__comment": "extra experience on top of the normal drop, where 0.2 means +20%",
+    "extra_multiplier": {
+      "__default": 0.0,
+      "expert": 0.2,
+      "master": 0.4
+    }
+  }
+}

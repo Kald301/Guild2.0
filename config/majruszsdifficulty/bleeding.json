@@ -1,0 +1,132 @@
+{
+  "is_enabled": true,
+  "can_be_cured_with_golden_apples": true,
+  "is_applicable_to_animals": true,
+  "is_applicable_to_pillagers": true,
+  "other_applicable_mobs": [
+    "minecraft:player",
+    "minecraft:villager"
+  ],
+  "immune_mobs": [
+    "minecraft:zombie_horse",
+    "minecraft:skeleton_horse"
+  ],
+  "effect": {
+    "__default": {
+      "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
+      "amplifier": 0,
+      "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
+      "duration": 24.0
+    },
+    "expert": {
+      "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
+      "amplifier": 1,
+      "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
+      "duration": 24.0
+    },
+    "master": {
+      "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
+      "amplifier": 2,
+      "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
+      "duration": 24.0
+    }
+  },
+  "sources": {
+    "arrows": {
+      "is_enabled": true,
+      "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+      "chance": 0.333
+    },
+    "bite": {
+      "is_enabled": true,
+      "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+      "chance": 0.5,
+      "blacklisted_animals": [
+        "minecraft:llama"
+      ]
+    },
+    "cactus": {
+      "is_enabled": true,
+      "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+      "chance": 0.5
+    },
+    "tools": {
+      "is_enabled": true,
+      "list": [
+        {
+          "id": "minecraft:trident",
+          "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+          "chance": 0.3,
+          "enchantments": [
+            {
+              "id": "minecraft:impaling",
+              "extra_chance_per_level__comment": "0.0 - 1.0 added per level of the enchantment, where 0.04 means +4% per level",
+              "extra_chance_per_level": 0.04
+            }
+          ]
+        },
+        {
+          "id": "{regex}.*_sword",
+          "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+          "chance": 0.3,
+          "enchantments": [
+            {
+              "id": "minecraft:sharpness",
+              "extra_chance_per_level__comment": "0.0 - 1.0 added per level of the enchantment, where 0.04 means +4% per level",
+              "extra_chance_per_level": 0.04
+            },
+            {
+              "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+              "extra_chance_per_level__comment": "0.0 - 1.0 added per level of the enchantment, where 0.04 means +4% per level",
+              "extra_chance_per_level": 0.02
+            }
+          ]
+        },
+        {
+          "id": "{regex}.*_axe",
+          "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+          "chance": 0.26,
+          "enchantments": [
+            {
+              "id": "minecraft:sharpness",
+              "extra_chance_per_level__comment": "0.0 - 1.0 added per level of the enchantment, where 0.04 means +4% per level",
+              "extra_chance_per_level": 0.04
+            },
+            {
+              "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+              "extra_chance_per_level__comment": "0.0 - 1.0 added per level of the enchantment, where 0.04 means +4% per level",
+              "extra_chance_per_level": 0.02
+            }
+          ]
+        },
+        {
+          "id": "{regex}(.*_pickaxe)|minecraft:shears",
+          "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+          "chance": 0.22,
+          "enchantments": []
+        },
+        {
+          "id": "{regex}.*_shovel",
+          "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+          "chance": 0.18,
+          "enchantments": []
+        },
+        {
+          "id": "{regex}.*_hoe",
+          "chance__comment": "0.0 - 1.0, where 0.25 means a 25% chance",
+          "chance": 0.14,
+          "enchantments": []
+        }
+      ]
+    }
+  },
+  "armor_protection": {
+    "is_enabled": true,
+    "chance_multiplier_base__comment": "0.0 - 1.0, the share of bleeds a single piece of armour blocks before its own bonus, where 0.09 means 9%",
+    "chance_multiplier_base": 0.09,
+    "chance_multiplier_per_armor__comment": "0.0 - 1.0 added per armour point, where 0.03 means +3% per point",
+    "chance_multiplier_per_armor": 0.03,
+    "chance_multiplier_per_armor_toughness__comment": "0.0 - 1.0 added per armour toughness point, where 0.03 means +3% per point",
+    "chance_multiplier_per_armor_toughness": 0.03
+  }
+}

@@ -1,0 +1,13 @@
+name = "WorldEdit Items"
+filename = "worldedit_items-2.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "327d7acb9ce053f026ec15b374e2cde7e05b0434"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6307350
+project-id = 584724

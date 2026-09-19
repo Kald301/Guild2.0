@@ -1,0 +1,13 @@
+name = "Regions Unexplored: Expansion"
+filename = "RUExpansion-1.0.1+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "79f3a2e95fad9ecf44f801f47b3baae8d76e1cfa"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6883463
+project-id = 1287739

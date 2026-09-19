@@ -1,0 +1,13 @@
+name = "Bosses Oddities"
+filename = "oddities-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "638e8a0cbfd60b5a4a40273d5dc0081d3a86bd94"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8504889
+project-id = 1622496

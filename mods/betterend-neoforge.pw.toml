@@ -1,13 +1,13 @@
 name = "BetterEnd: New Dawn"
-filename = "BetterEnd-21.0.34.jar"
+filename = "BetterEnd-21.0.35.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "149b73179ea63bf777315a7c850b2eba65c554bd"
+hash = "54663bd8027873ece43744495fc46456ffa0178a"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8610367
+file-id = 8896285
 project-id = 1422294

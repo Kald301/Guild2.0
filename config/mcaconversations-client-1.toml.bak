@@ -1,5 +1,7 @@
 [display]
-	#Render supported dialogue choices as a responsive numbered list.
+	#Legacy compatibility switch from 1.4.x/1.5.1. False always restores MCA's original
+	#dialogue UI. New installations should normally leave this true and use
+	#dialogueMenuStyle instead.
 	numberedResponses = true
 	#Allow number keys to select visible choices while a dialogue screen owns focus.
 	#Disabled automatically when numberedResponses is false so invisible mappings never exist.
@@ -9,7 +11,8 @@
 	#Show the compact keyboard and paging hint below the response list.
 	showResponseControlHints = true
 	#Conversation motion: FULL uses short state-driven movement, REDUCED uses fades only,
-	#and OFF changes visual state immediately.
+	#and OFF changes visual state immediately. OFF is the canonical way to disable
+	#every dialogue animation.
 	#Allowed Values: FULL, REDUCED, OFF
 	motionMode = "FULL"
 	#Volume multiplier for response focus, page and confirmation sounds. Zero disables them.
@@ -20,8 +23,16 @@
 	speakerNameAccent = true
 	#Frame the speaking villager in the card header. Hidden automatically on panels
 	#too narrow to give up the reading width, and whenever the villager is unavailable.
+	#Shown only where the style supports it; MINIMAL intentionally omits it.
 	showSpeakerPortrait = true
 	#How the villager's line appears: OFF shows it at once, FAST reveals it over a
-	#few ticks. Ignored when motionMode is OFF, and any input completes it immediately.
+	#few ticks. Ignored when motionMode is OFF and under MCA_ORIGINAL, and any input
+	#completes it immediately.
 	#Allowed Values: OFF, FAST
 	questionRevealMode = "OFF"
+	#Dialogue menu presentation.
+	#RESPONSIVE   - the full MCA: Conversations responsive card.
+	#MINIMAL      - the responsive menu with simpler, lower-overhead graphics.
+	#MCA_ORIGINAL - let MCA Reborn draw and control its original dialogue menu.
+	#Allowed Values: RESPONSIVE, MINIMAL, MCA_ORIGINAL
+	dialogueMenuStyle = "RESPONSIVE"

@@ -1,0 +1,332 @@
+{
+  "is_enabled": true,
+  "reset_all_participants_kills": true,
+  "creates_world_fog": false,
+  "forces_thunderstorm": true,
+  "wave_duration__comment": "seconds a wave lasts before it counts as failed (300 - 3600, so 1200 is 20 minutes)",
+  "wave_duration": 1200.0,
+  "preparing_duration__comment": "seconds of warm-up before a wave starts (1 - 60)",
+  "preparing_duration": 10.0,
+  "highlight_delay__comment": "seconds before the remaining enemies get highlighted (30 - 3600, so 300 is 5 minutes)",
+  "highlight_delay": 300.0,
+  "extra_size_ratio_per_player__comment": "extra mobs per additional player, where 0.5 means +50% for each player beyond the first",
+  "extra_size_ratio_per_player": 0.5,
+  "area_radius__comment": "radius of the battle area in blocks (35 - 140)",
+  "area_radius": 70,
+  "kill_requirement__comment": "kills needed to clear a wave (0 - 1000)",
+  "kill_requirement": 100,
+  "kill_requirement_first__comment": "kills needed to clear the very first wave (1 - 1000)",
+  "kill_requirement_first": 25,
+  "kill_requirement_warning__comment": "how many kills remain when the low-kills warning is shown (1 - 1000)",
+  "kill_requirement_warning": 3,
+  "chaos_integration_enabled__comment": "when Born in Chaos is installed, mixes its mobs into these waves and into natural mob groups; the waves below are never modified on disk, this only adds mobs at spawn time",
+  "chaos_integration_enabled": true,
+  "waves": [
+    {
+      "mobs": [
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+          "count": 2
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+          "count": 2
+        },
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+          "count": 2
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+          "count": 2
+        }
+      ],
+      "game_stage": "normal",
+      "exp__comment": "experience awarded for clearing the wave (0 - 1000)",
+      "exp": 8
+    },
+    {
+      "mobs": [
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+          "count": 2
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+          "count": 3
+        },
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+          "count": 3
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+          "count": 2
+        }
+      ],
+      "game_stage": "normal",
+      "exp__comment": "experience awarded for clearing the wave (0 - 1000)",
+      "exp": 16
+    },
+    {
+      "mobs": [
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+          "count": 3
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
+          "count": 3
+        },
+        {
+          "type": "minecraft:husk",
+          "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+          "count": 3
+        },
+        {
+          "type": "minecraft:stray",
+          "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
+          "count": 3
+        }
+      ],
+      "boss": {
+        "count": 1
+      },
+      "game_stage": "normal",
+      "exp__comment": "experience awarded for clearing the wave (0 - 1000)",
+      "exp": 24
+    },
+    {
+      "mobs": [
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+          "count": 2
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+          "count": 1
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
+          "count": 2
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+          "count": 1
+        },
+        {
+          "count": 1
+        },
+        {
+          "type": "minecraft:husk",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+          "count": 3
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+          "count": 1
+        },
+        {
+          "type": "minecraft:stray",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
+          "count": 3
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+          "count": 1
+        }
+      ],
+      "game_stage": "expert",
+      "exp__comment": "experience awarded for clearing the wave (0 - 1000)",
+      "exp": 32
+    },
+    {
+      "mobs": [
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+          "count": 1
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+          "count": 1
+        },
+        {
+          "type": "minecraft:stray",
+          "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+          "count": 3
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+          "count": 2
+        },
+        {
+          "count": 1
+        },
+        {
+          "type": "minecraft:husk",
+          "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+          "count": 3
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+          "count": 2
+        }
+      ],
+      "boss": {
+        "count": 1
+      },
+      "game_stage": "expert",
+      "exp__comment": "experience awarded for clearing the wave (0 - 1000)",
+      "exp": 40
+    },
+    {
+      "mobs": [
+        {
+          "type": "minecraft:zombie",
+          "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+          "count": 1
+        },
+        {
+          "type": "minecraft:skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+          "count": 1
+        },
+        {
+          "count": 1
+        },
+        {
+          "type": "minecraft:stray",
+          "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+          "count": 1
+        },
+        {
+          "type": "minecraft:husk",
+          "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+          "count": 1
+        },
+        {
+          "type": "minecraft:wither_skeleton",
+          "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton",
+          "count": 1
+        },
+        {
+          "count": 1
+        }
+      ],
+      "boss": {
+        "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+        "count": 1
+      },
+      "game_stage": "master",
+      "exp__comment": "experience awarded for clearing the wave (0 - 1000)",
+      "exp": 48
+    }
+  ],
+  "chaos_wave_mobs__comment": "Born in Chaos mobs added to each Undead Army wave; each outer list corresponds to waves 1 through 6",
+  "chaos_wave_mobs": [
+    [
+      {
+        "type": "born_in_chaos_v1:siamese_skeletons",
+        "count": 3
+      },
+      {
+        "type": "born_in_chaos_v1:spirit_guide",
+        "count": 3
+      }
+    ],
+    [
+      {
+        "type": "born_in_chaos_v1:door_knight",
+        "count": 3
+      },
+      {
+        "type": "born_in_chaos_v1:bonescaller",
+        "count": 3
+      }
+    ],
+    [
+      {
+        "type": "born_in_chaos_v1:skeleton_thrasher",
+        "count": 2
+      },
+      {
+        "type": "born_in_chaos_v1:dark_vortex",
+        "count": 2
+      },
+      {
+        "type": "born_in_chaos_v1:fallen_chaos_knight",
+        "count": 1
+      },
+      {
+        "type": "born_in_chaos_v1:supreme_bonescaller",
+        "count": 1
+      }
+    ],
+    [
+      {
+        "type": "born_in_chaos_v1:swarmer",
+        "count": 6
+      },
+      {
+        "type": "born_in_chaos_v1:mother_spider",
+        "count": 2
+      }
+    ],
+    [
+      {
+        "type": "born_in_chaos_v1:skeleton_thrasher",
+        "count": 2
+      },
+      {
+        "type": "born_in_chaos_v1:dark_vortex",
+        "count": 2
+      },
+      {
+        "type": "born_in_chaos_v1:nightmare_stalker",
+        "count": 1
+      },
+      {
+        "type": "born_in_chaos_v1:fallen_chaos_knight",
+        "count": 2
+      },
+      {
+        "type": "born_in_chaos_v1:supreme_bonescaller",
+        "count": 2
+      }
+    ],
+    [
+      {
+        "type": "born_in_chaos_v1:zombie_clown",
+        "count": 6
+      },
+      {
+        "type": "born_in_chaos_v1:nightmare_stalker",
+        "count": 1
+      },
+      {
+        "type": "born_in_chaos_v1:lifestealer_true_form",
+        "count": 1
+      }
+    ]
+  ]
+}

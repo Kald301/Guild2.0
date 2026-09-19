@@ -42,7 +42,7 @@
 
 		[Weapons.Mobs.Krampus]
 			#.
-			KRAMPUS_SPAWNING_ENABLED = false
+			KRAMPUS_SPAWNING_ENABLED = true
 			#.
 			# Default: 10.0
 			# Range: 0.0 ~ 1.7976931348623157E308

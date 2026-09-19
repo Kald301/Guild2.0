@@ -4,5 +4,14 @@
   {"ingredient":{"id":"minecraft:potato"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:stone_axe","components":"{\"minecraft:damage\":114}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"magistuarmory:gold_target","components":"{\"minecraft:damage\":310}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"swem:oat_seeds"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"swem:oat_seeds"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:alfalfa_bushel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:blue_dye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:iron_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:pumpkin"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"regions_unexplored:larch_stairs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rats:cheese"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:cobblestone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:diamond_shovel","components":"{\"minecraft:damage\":1054}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:water_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

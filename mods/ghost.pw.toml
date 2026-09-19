@@ -1,0 +1,13 @@
+name = "Ghosts"
+filename = "ghosts-neoforge-1.21.1-1.3.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "17709b739ea8652252d71ef2ccc5a9829c2c845e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8306599
+project-id = 602665

@@ -1,0 +1,13 @@
+name = "Spartan Shields Unofficial"
+filename = "spartanshieldsunofficial-1.0.0-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "93a8955413c8105eeafc58379d5b0dfe1f336670"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7584451
+project-id = 1455484

@@ -1,0 +1,144 @@
+#Values the server decides for everyone connected to it. Stored per world under
+#serverconfig/ and synchronised to clients, so hearing distance, heart budgets and
+#villager initiative mean the same thing on both sides of a connection.
+#
+#MIGRATING FROM 1.4.x: these keys used to live in mcaconversations-common.toml. Copy any
+#value you had customised into this file; the old entries are ignored and can be deleted.
+[chat]
+	#How far a villager hears and how long its attention lasts. These decide whether a
+	#villager answers at all, so the server owns them.
+	#Ambient hearing radius (blocks) for unaddressed messages - villagers this close may
+	#answer a message that clearly matches a topic but names no one.
+	# Default: 12.0
+	# Range: 1.0 ~ 64.0
+	chatModeRadius = 12.0
+	#Radius (blocks) when the villager is named or the sticky conversation partner
+	#('calling out' across the square). Larger than the ambient radius.
+	# Default: 24.0
+	# Range: 1.0 ~ 96.0
+	chatModeAddressedRadius = 24.0
+	#How long (game ticks) the last conversation partner stays the default target (600 = 30s).
+	# Default: 600
+	# Range: 0 ~ 72000
+	chatModeStickinessTicks = 600
+	#Chance (0-1) that a given villager greets a given player on a given day. Scaled by
+	#personality (outgoing villagers greet more, reserved ones less); deterministic per day,
+	#so re-entering the radius never re-rolls. 1.0 = everyone always greets.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	chatModeGreetChance = 0.35
+	#How long (game ticks) a villager keeps standing with its conversation partner after the
+	#last exchange before wandering off (600 = 30s; refreshed per exchange; 0 disables).
+	# Default: 600
+	# Range: 0 ~ 72000
+	chatModeAttentionTicks = 600
+
+[conversation]
+	#The heart economy. Every conversation-sourced heart change passes through these caps,
+	#which stay active even when the disposition vector is switched off.
+	#Scale on every conversation-sourced heart change, positive and negative. 0 makes
+	#conversation heart-neutral (the trees still play, the vector and arcs still move).
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	conversationHeartMultiplier = 1.0
+	#Per-villager, per-player, per-MC-day ceiling on hearts GAINED from conversation.
+	#Counted separately from the negative budget, so antagonising a villager can never
+	#manufacture extra room to earn hearts back.
+	# Default: 8
+	# Range: 0 ~ 100
+	conversationDailyPositiveCap = 8
+	#Per-villager, per-player, per-MC-day floor on hearts LOST to conversation (as a positive
+	#number). Stops rage-baiting a villager to farm reconciliation content.
+	# Default: 10
+	# Range: 0 ~ 100
+	conversationDailyNegativeCap = 10
+	#Double the authored negative deltas (before the caps) for players who want dismissiveness
+	#and boundary-pushing to bite harder. Positive outcomes are unaffected.
+	strongerNegativeOutcomes = false
+	#How long (game ticks) a conversation session survives without activity before it expires
+	#and its per-conversation budget resets (1200 = 60 s). Sessions are transient and never
+	#persist across a restart; arcs, milestones and the daily budgets do.
+	# Default: 1200
+	# Range: 200 ~ 24000
+	conversationSessionTimeoutTicks = 1200
+
+[rpg]
+	#Movement and decay of the hidden disposition vector. Whether the vector and the checks
+	#exist at all stays in the common file; only the numbers are here.
+	#Scale on all disposition gains and losses (0 freezes the vector).
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	dispositionGainMultiplier = 1.0
+	#Scale on disposition decay toward the personality baseline (0 = values never drift back).
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	dispositionDecayMultiplier = 1.0
+	#Per-axis, per-MC-day cap on total disposition movement from conversations (anti-farming).
+	# Default: 8
+	# Range: 1 ~ 50
+	dispositionDailyAxisCap = 8
+	#Prune disposition records untouched for this many MC days (0 = only prune on villager death).
+	# Default: 0
+	# Range: 0 ~ 365
+	dispositionStaleDays = 0
+
+[dynamic]
+	#How often a villager may speak first, and how much of the hub is contextual.
+	#How many times a day one villager may open a conversation with one player unprompted.
+	#Urgent acute-state lines and genuine episode state changes may still bypass this, but
+	#never the short real-time cooldown. 0 disables villager initiative entirely.
+	# Default: 1
+	# Range: 0 ~ 8
+	maxInitiativesPerVillagerPlayerDay = 1
+	#Real-time floor (game ticks) between two unprompted lines from the same villager to the
+	#same player, whatever the daily budget still allows (300 = 15 s). This is the backstop
+	#that stops a villager talking at somebody standing next to them; the daily budget is
+	#what keeps the day quiet.
+	# Default: 300
+	# Range: 20 ~ 24000
+	initiativeCooldownTicks = 300
+	#How many context-specific entries may appear above the six fixed hub categories
+	#(Continue..., What's on your mind?, Ask about...). 0 keeps the six fixed categories alone.
+	# Default: 3
+	# Range: 0 ~ 3
+	dynamicTopicSlots = 3
+
+[history]
+	#Storage bounds for persistent narrative state. These may be lowered but never raised
+	#past the hard limits the stores enforce for themselves (see HistoryCaps).
+	#How many in-game days a resolved episode stays available for callbacks before it is
+	#compressed to a milestone token and pruned.
+	# Default: 32
+	# Range: 1 ~ 365
+	episodeRetentionDays = 32
+	#Most simultaneously active or blocked episodes one villager may carry. Beyond this the
+	#lowest-salience one is abandoned; an episode a live thread references is never pruned.
+	# Default: 6
+	# Range: 1 ~ 32
+	activeEpisodeCap = 6
+	#Most resolved episodes one villager keeps as remembered history.
+	# Default: 24
+	# Range: 1 ~ 128
+	resolvedEpisodeCap = 24
+	#Most open conversation threads between one villager and one player. Only the highest
+	#priority item in each category is ever offered, so this is a storage bound, not a menu size.
+	# Default: 8
+	# Range: 1 ~ 32
+	openThreadCapPerPair = 8
+	#Most tracked promises between one villager and one player.
+	# Default: 8
+	# Range: 1 ~ 32
+	commitmentCapPerPair = 8
+	#Most things a player has explicitly told one villager about themselves that are remembered.
+	# Default: 16
+	# Range: 1 ~ 64
+	playerClaimCapPerPair = 16
+	#Most explicit opinions one villager may hold about named neighbours.
+	# Default: 16
+	# Range: 1 ~ 64
+	socialEdgeCapPerVillager = 16
+	#How many recent scenes, subjects and rhetorical shapes are remembered per pair for
+	#repetition suppression.
+	# Default: 32
+	# Range: 4 ~ 128
+	topicRecencyCapPerPair = 32

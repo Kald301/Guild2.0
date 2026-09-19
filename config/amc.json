@@ -30,6 +30,8 @@
     "mimicubeDamageMultiplier": 1.0,
     "// mimicreamRepair": "Whether mimicream can be used to duplicate items.",
     "mimicreamRepair": true,
+    "// roadrunnerTargets": "Extra mobs roadrunners hunt, on top of rattlesnakes. Entity ids, e.g. \"minecraft:rabbit\" or another mod\u0027s small animals. /amc menu lists every mob with an on/off switch, which is the easy way to edit this. A datapack can add mobs to the alexsmobs:roadrunner_targets entity tag instead.",
+    "roadrunnerTargets": [],
     "// mimicreamBlacklist": "Blacklist for items that mimicream cannot make a copy of. Ex: \"minecraft:stone_sword\", \"alexsmobs:blood_sprayer\"",
     "mimicreamBlacklist": [
       "alexsmobs:blood_sprayer",

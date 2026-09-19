@@ -1,0 +1,13 @@
+name = "Golem Overhaul"
+filename = "golemoverhaul-neoforge-1.21.1-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "797235253e2477822c8b18e3e9f4643dc9d8e634"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8521968
+project-id = 618752

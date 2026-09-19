@@ -1,0 +1,82 @@
+{
+  "is_per_player_difficulty_enabled": false,
+  "list": [
+    {
+      "id": "normal",
+      "format": [
+        "WHITE"
+      ],
+      "triggers": {
+        "dimensions": [],
+        "entities": []
+      },
+      "messages": []
+    },
+    {
+      "id": "expert",
+      "format": [
+        "RED",
+        "BOLD"
+      ],
+      "triggers": {
+        "dimensions": [
+          "{regex}.*"
+        ],
+        "entities": []
+      },
+      "messages": [
+        {
+          "id": "majruszsdifficulty.stages.expert.started",
+          "format": [
+            "RED",
+            "BOLD"
+          ]
+        },
+        {
+          "id": "majruszsdifficulty.undead_army.on_expert",
+          "format": [
+            "DARK_PURPLE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "master",
+      "format": [
+        "DARK_PURPLE",
+        "BOLD"
+      ],
+      "triggers": {
+        "dimensions": [],
+        "entities": [
+          "minecraft:ender_dragon"
+        ]
+      },
+      "messages": [
+        {
+          "id": "majruszsdifficulty.stages.master.started",
+          "format": [
+            "DARK_PURPLE",
+            "BOLD"
+          ]
+        },
+        {
+          "id": "majruszsdifficulty.undead_army.on_master",
+          "format": [
+            "DARK_PURPLE"
+          ]
+        }
+      ]
+    }
+  ],
+  "crd_penalty__comment": "0.0 - 1.0 of the area\u0027s regional difficulty removed when a Blood Moon ends, where 0.5 means half of it",
+  "crd_penalty": {
+    "is_enabled": true,
+    "values__comment": "0.0 - 1.0 of the area\u0027s regional difficulty removed when the stage is reached, where 0.15 means 15% of it",
+    "values": {
+      "__default": 0.0,
+      "expert": 0.15,
+      "master": 0.3
+    }
+  }
+}

@@ -1,0 +1,13 @@
+name = "Farmer's Cutting: Twilight Forest"
+filename = "farmers-cutting-twilight-forest-1.21.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "70081b0d648096b9523c5ab251e8c7df8dd1649d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5859455
+project-id = 1131152

@@ -1,0 +1,57 @@
+{
+  "bandage": {
+    "normal_effects": [
+      {
+        "id": "majruszsdifficulty:glass_regeneration",
+        "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
+        "amplifier": 0,
+        "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
+        "duration": 20.0
+      }
+    ],
+    "golden_effects": [
+      {
+        "id": "majruszsdifficulty:glass_regeneration",
+        "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
+        "amplifier": 1,
+        "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
+        "duration": 20.0
+      },
+      {
+        "id": "majruszsdifficulty:bleeding_immunity",
+        "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
+        "amplifier": 0,
+        "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
+        "duration": 90.0
+      }
+    ]
+  },
+  "evoker_fang_scroll": {
+    "attack_damage__comment": "damage dealt, in half-hearts, so 12 is six hearts",
+    "attack_damage": 12,
+    "attack_range__comment": "range in blocks the target has to be within",
+    "attack_range": {
+      "min": 8,
+      "max": 20
+    }
+  },
+  "sonic_boom_scroll": {
+    "attack_damage__comment": "damage dealt, in half-hearts, so 12 is six hearts",
+    "attack_damage": 14,
+    "attack_range__comment": "range in blocks the target has to be within",
+    "attack_range": {
+      "min": 12,
+      "max": 30
+    }
+  },
+  "wither_sword": {
+    "is_enabled": true,
+    "effect": {
+      "id": "minecraft:wither",
+      "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
+      "amplifier": 1,
+      "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
+      "duration": 6.0
+    }
+  }
+}

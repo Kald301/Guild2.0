@@ -141,3 +141,7 @@
 	loot_chest_in_witch_huts = true
 	#Whether the Enchantments added by AC appear in vanilla loot tables.
 	enchantments_in_loot = false
+	#Chance (0 to 1) that the Enchantments added by AC can be picked each time a loot table rolls a random enchantment. Lower it to make them rarer in loot; 0 keeps them out of random loot entirely. Works alongside enchantments_in_loot.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	enchantment_loot_chance = 0.5

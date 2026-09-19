@@ -6,7 +6,12 @@
         "cleric": [],
         "farmer": [],
         "fisherman": [],
-        "fletcher": [],
+        "fletcher": [
+            {
+                "resultItem": "minecraft:emerald",
+                "priceItem1": "minecraft:stick"
+            }
+        ],
         "leatherworker": [],
         "librarian": [],
         "mason": [],
@@ -16,7 +21,10 @@
         "nitwit": [],
         "none": [],
         "mca.guard": [],
-        "___+++___ wandering ___+++___": []
+        "___+++___ wandering ___+++___": [],
+        "mca.archer": [],
+        "mca.cultist": [],
+        "mca.adventurer": []
     },
     "globalBookmarks1": {
         "armorer": [],
@@ -35,7 +43,10 @@
         "nitwit": [],
         "none": [],
         "mca.guard": [],
-        "___+++___ wandering ___+++___": []
+        "___+++___ wandering ___+++___": [],
+        "mca.archer": [],
+        "mca.cultist": [],
+        "mca.adventurer": []
     },
     "globalBookmarks2": {
         "armorer": [],
@@ -54,6 +65,9 @@
         "nitwit": [],
         "none": [],
         "mca.guard": [],
-        "___+++___ wandering ___+++___": []
+        "___+++___ wandering ___+++___": [],
+        "mca.archer": [],
+        "mca.cultist": [],
+        "mca.adventurer": []
     }
 }

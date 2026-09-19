@@ -10,9 +10,13 @@
 	chatNumericShortcuts = true
 	#Show the compact keyboard and paging hint below the response list.
 	showResponseControlHints = true
-	#Conversation motion: FULL uses short state-driven movement, REDUCED uses fades only,
-	#and OFF changes visual state immediately. OFF is the canonical way to disable
-	#every dialogue animation.
+	#Conversation motion: FULL uses short state-driven movement, REDUCED fades the card
+	#in and out and changes everything else immediately, and OFF changes visual state
+	#immediately. OFF is the canonical way to disable every dialogue animation.
+	#REDUCED is recommended, and the default for a key that is absent since 1.7.0 (it
+	#was FULL before). An existing config file already states this key and keeps it.
+	#This covers the effects MCA: Conversations draws; Townstead keeps its own screen,
+	#camera work and typewriter.
 	#Allowed Values: FULL, REDUCED, OFF
 	motionMode = "FULL"
 	#Volume multiplier for response focus, page and confirmation sounds. Zero disables them.
@@ -32,7 +36,16 @@
 	questionRevealMode = "OFF"
 	#Dialogue menu presentation.
 	#RESPONSIVE   - the full MCA: Conversations responsive card.
-	#MINIMAL      - the responsive menu with simpler, lower-overhead graphics.
+	#MINIMAL      - the same menu with flat graphics; recommended, and the default
+	#               for a key that is absent since 1.7.0 (it was RESPONSIVE before).
 	#MCA_ORIGINAL - let MCA Reborn draw and control its original dialogue menu.
+	#An existing config file already states this key, so upgrading never changes it.
 	#Allowed Values: RESPONSIVE, MINIMAL, MCA_ORIGINAL
 	dialogueMenuStyle = "RESPONSIVE"
+	#How many delivered lines and sent responses the dialogue card's history drawer
+	#keeps in memory. The drawer is collapsed by default, holds only what this client
+	#actually received, is cleared on disconnect and world change, and is never written
+	#to disk or exported. 0 disables the drawer entirely.
+	# Default: 64
+	# Range: 0 ~ 256
+	deliveredHistoryEntries = 64

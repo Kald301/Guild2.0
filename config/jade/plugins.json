@@ -52,24 +52,12 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "modulargolems": {
-    "player_skin": true
-  },
   "jade_access": {
     "held_item": true,
     "sign": true,
     "block": true,
     "entity": true,
     "entity_variant": true
-  },
-  "betterend": {
-    "plant_growth": true
-  },
-  "quark": {
-    "oretoise_eating_cooldown": true
-  },
-  "supplementaries": {
-    "hat_stand": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -85,15 +73,6 @@
   "redomesticate": {
     "collar_tag": true
   },
-  "waystones": {
-    "waystone": true
-  },
-  "rats": {
-    "tamed_rat_info": true
-  },
-  "corpse": {
-    "corpse": true
-  },
   "iceandfire": {
     "dragon_egg_entity": true,
     "multipart": true,
@@ -102,5 +81,31 @@
   },
   "balm": {
     "jade": true
+  },
+  "modulargolems": {
+    "player_skin": true
+  },
+  "betterend": {
+    "plant_growth": true
+  },
+  "quark": {
+    "oretoise_eating_cooldown": true
+  },
+  "twilightforest": {
+    "drying_rack": true,
+    "chiseled_bookshelf_spawner": true,
+    "quest_ram_wool": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "waystones": {
+    "waystone": true
+  },
+  "rats": {
+    "tamed_rat_info": true
+  },
+  "corpse": {
+    "corpse": true
   }
 }

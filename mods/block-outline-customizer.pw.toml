@@ -1,0 +1,13 @@
+name = "Block Outline Customizer"
+filename = "boc-1.21.1-neoforge-1.4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "37720d89ecefbcff568a05bf2ff9ae517aaa41fd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8391339
+project-id = 1416962

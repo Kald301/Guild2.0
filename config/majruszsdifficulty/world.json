@@ -1,0 +1,13 @@
+{
+  "deadlier_explosions": {
+    "is_enabled": true,
+    "required_game_stage__comment": "earliest stage this applies from: normal, expert or master",
+    "required_game_stage": "normal",
+    "radius_multiplier__comment": "1.0 - 10.0 times the normal explosion radius, where 1.2599 means 26% wider",
+    "radius_multiplier": 1.2599,
+    "fire_chance__comment": "0.0 - 1.0, where 0.75 means a 75% chance",
+    "fire_chance": 0.75,
+    "is_scaled_by_crd__comment": "when true the chance above grows with the area\u0027s regional difficulty, so it happens more often the longer that area has been settled",
+    "is_scaled_by_crd": true
+  }
+}

@@ -1,0 +1,13 @@
+name = "Twilight Forest - Dungeons & Villages"
+filename = "tf_dnv-2.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c4d57093fe706476d0603352c86c997b074cfa4f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6614073
+project-id = 1271268

@@ -1,0 +1,18 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"cgs:round_gatling_blank"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cgs:shell_gatling"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cgs:flintlock","components":"{\"ntgl:ammo_count\":1}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cgs:shotgun","components":"{\"ntgl:ammo_count\":2}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cgs:nailgun","components":"{\"ntgl:ammo_count\":40}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cgs:gatling","components":"{\"ntgl:ammo_count\":100}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rats:ratbot_barrel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rats:charged_ratbot_barrel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rats:rattling_gun"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:restless_spirit_spawn_egg"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mynethersdelight:magma_cake_slice"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:magma_cube_spawn_egg"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"alexscaves:primal_magma"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:magma_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:creepy_cookies_with_milk"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]
