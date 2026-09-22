@@ -58,7 +58,7 @@
 	affectedEntityIdList = ["@monster", "minecraft:iron_golem"]
 
 	# Affected mob types that cannot place blocks. Supports wildcards, ! exclusions and @categories
-	ignoreBuildEntityIdList = ["minecraft:ender_dragon", "minecraft:ghast", "minecraft:phantom", "minecraft:blaze", "minecraft:vex", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:shulker", "minecraft:wither", "minecraft:breeze", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "born_in_chaos_v1:baby_spider", "born_in_chaos_v1:baby_spider_controlled", "born_in_chaos_v1:mother_spider", "born_in_chaos_v1:corpse_fly", "born_in_chaos_v1:bloody_gadfly", "born_in_chaos_v1:dread_hound", "born_in_chaos_v1:dread_hound_not_despawn", "born_in_chaos_v1:dire_hound_leader"]
+	ignoreBuildEntityIdList = ["minecraft:ender_dragon", "minecraft:ghast", "minecraft:phantom", "minecraft:blaze", "minecraft:vex", "minecraft:elder_guardian", "minecraft:guardian", "minecraft:shulker", "minecraft:wither", "minecraft:breeze", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "born_in_chaos_v1:baby_spider", "born_in_chaos_v1:baby_spider_controlled", "born_in_chaos_v1:mother_spider", "born_in_chaos_v1:corpse_fly", "born_in_chaos_v1:bloody_gadfly", "born_in_chaos_v1:dread_hound", "born_in_chaos_v1:dread_hound_not_despawn", "born_in_chaos_v1:dire_hound_leader", "cataclysm:ignis"]
 
 	# Affected mob types that cannot break blocks. Supports wildcards, ! exclusions and @categories
 	ignoreBreakEntityIdList = ["minecraft:ender_dragon", "minecraft:shulker", "minecraft:wither", "minecraft:vex", "minecraft:creeper"]

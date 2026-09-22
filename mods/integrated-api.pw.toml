@@ -1,13 +1,13 @@
 name = "Integrated API"
-filename = "integrated_api-neoforge-1.21.1-1.8.2.jar"
+filename = "integrated_api-neoforge-1.21.1-1.9.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "e0a0e44235b98f21a05ebbe0171fe8487319a173"
+hash = "b092c3f2f5368ca04215491a264cc840f8ad889a"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8868053
+file-id = 8943419
 project-id = 817709

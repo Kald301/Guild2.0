@@ -1,0 +1,14 @@
+["AutoTranslator Configuration"]
+	#Note: Target language is automatically detected from Minecraft language settings!
+	#Change your Minecraft language in Options > Language to translate to a different language.
+	#Enable automatic translation
+	enabled = true
+	#Automatically activate the generated resource pack
+	autoActivateResourcePack = true
+	#Delay between translation batch requests (in milliseconds)
+	#Default: 0ms. Google Translate is fast and has no rate limits for reasonable use.
+	#Increase this value if you experience issues.
+	#Note: Uses Google Translate API (free, unlimited, no API key required)
+	# Default: 0
+	# Range: 0 ~ 5000
+	translationDelayMs = 0

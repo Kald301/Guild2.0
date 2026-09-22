@@ -1,0 +1,13 @@
+name = "simple boss damage cap"
+filename = "simpplebossdamagecap-1.0.0-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d2af6608d3cfaaad6c9ed25d84f706923676c00e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8190555
+project-id = 1130613

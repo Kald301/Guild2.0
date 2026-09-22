@@ -1,10 +1,10 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-09-20 10:56:49
+ Fecha: 2026-09-22 14:59:37
  Rondas de verificacion: 2
 ============================================================
 
-MODS ARREGLADOS (8)
+MODS ARREGLADOS (11)
 ------------------------------------------------------------
 Estos mods no se pueden bajar por la API de CurseForge (el autor
 los excluyo). Hay dos arreglos posibles:
@@ -30,7 +30,15 @@ los excluyo). Hay dos arreglos posibles:
       accion           : convertido a override
       .pw.toml borrado : codxlib.pw.toml
       tamano           : 0.18 MB
-  * entityculling-neoforge-1.11.1-mc1.21.1.jar
+  * Create-FPS-Optimizer-NeoForge-1.21.1-4.0.4.jar
+      accion           : convertido a override
+      .pw.toml borrado : create-fps-optimizer.pw.toml
+      tamano           : 0.21 MB
+  * Create-Server-Optimizer-NeoForge-1.21.1-2.3.0.jar
+      accion           : convertido a override
+      .pw.toml borrado : create-server-optimizer.pw.toml
+      tamano           : 0.01 MB
+  * entityculling-neoforge-1.11.2-mc1.21.1.jar
       accion           : convertido a override
       .pw.toml borrado : entityculling.pw.toml
       tamano           : 1.44 MB
@@ -41,6 +49,10 @@ los excluyo). Hay dos arreglos posibles:
   * mcacapitals-1.3.5.jar
       accion           : duplicado borrado (ya lo cubre capitals-a-monarchy-mod-for-mca-reborn.pw.toml)
       .pw.toml borrado : mca-capitals.pw.toml
+  * multiplayer_boss_fight-neoforge1.21.1-1.0.3.jar
+      accion           : convertido a override
+      .pw.toml borrado : multiplayer-boss-attribute-modifier.pw.toml
+      tamano           : 0.02 MB
   * skinlayers3d-neoforge-1.11.3-mc1.21.1.jar
       accion           : convertido a override
       .pw.toml borrado : skin-layers-3d.pw.toml

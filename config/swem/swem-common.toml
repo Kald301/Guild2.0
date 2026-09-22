@@ -14,4 +14,4 @@
 		# || What is the spawn chance (%) for Shining Amethyst?
 		# Default: 25
 		# Range: 0 ~ 100
-		amethystSpawnChance = 25
+		amethystSpawnChance = 5

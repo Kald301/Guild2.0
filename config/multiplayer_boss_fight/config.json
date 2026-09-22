@@ -1,0 +1,19 @@
+[
+  {
+    "entities": ["#forge:bosses"],
+    "attribute_modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.4,
+        "max_limit": 114514
+      },
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1,
+        "max_limit": 114514
+      }
+    ]
+  }
+]

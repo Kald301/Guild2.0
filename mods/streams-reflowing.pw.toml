@@ -1,13 +1,13 @@
 name = "Streams Reflowing"
-filename = "StreamsReflowing-1.21.1-neoforge-2.13.7.jar"
+filename = "StreamsReflowing-1.21.1-neoforge-2.13.8.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9bc0ba0987565b657f63dfd0a6c17972b0a6c5f1"
+hash = "3d377af92f28039308b5efac5e6eed19c2961779"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8892021
+file-id = 8935459
 project-id = 1581408

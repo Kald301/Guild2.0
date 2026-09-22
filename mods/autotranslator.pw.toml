@@ -1,0 +1,13 @@
+name = "AutoTranslator"
+filename = "autotranslator-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b46224751dbea04ff6f1b39dd307ef1a86d29a58"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7181419
+project-id = 1377748

@@ -1,0 +1,36 @@
+[
+  {
+    "entities": ["#forge:bosses", "minecraft:wither_boss"],
+    "attribute_modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "MULTIPLY_TOTAL", //ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
+        "value": 0.4,//per player
+        "max_limit": 4 //max player. if players nearby are exceed limit, the attribute will not be modified
+      },
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1,
+        "max_limit": 4
+      }
+    ]
+  },
+  {
+    "entities": ["minecraft:ender_dragon"],
+    "attribute_modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.25,
+        "max_limit": 4
+      },
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1,
+        "max_limit": 4
+      }
+    ]
+  }
+]

@@ -1,8 +1,3 @@
-#=============[ Aquamirae Common Config ]============
-# Please prefer editing the config through the in-game 
-# configuration screen (available via the mods list),
-# as it includes many hints and quality-of-life improvements.
-#====================================================
 #Allowed Values: EVERYWHERE, ICE_MAZE
 shell_horn_usage_mode = "ICE_MAZE"
 # Default: 12
@@ -155,3 +150,11 @@ enable_maze_mother_spawning = true
 # Default: 0.005
 # Range: 0.0 ~ 1.0
 maze_mother_spawn_chance = 0.005
+#=============[ Aquamirae Common Config ]============
+# Please prefer editing the config through the in-game 
+# configuration screen (available via the mods list),
+# as it includes many hints and quality-of-life improvements.
+#====================================================
+#Allowed Values: VANILLA, AQUAMIRAE, BALANCED
+difficulty = "AQUAMIRAE"
+blizzard_biomes = ["#aquamirae:ice_maze"]

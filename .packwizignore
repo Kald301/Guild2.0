@@ -2,6 +2,9 @@
 # tienen que bajarselas los jugadores.
 sync-modpack.bat
 verify-mods.ps1
+server-sync.bat
+server-sync.ps1
+server-blacklist.txt
 packwiz-installer-bootstrap.jar
 packwiz-installer.jar
 mods-fallidos.txt

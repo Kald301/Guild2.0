@@ -1,6 +1,6 @@
 {
   "version": 10,
-  "generatedAt": "2026-09-19T16:47:32.941897800Z",
+  "generatedAt": "2026-09-22T19:11:14.915541500Z",
   "biomes": [
     {
       "biomeId": "alexscaves:abyssal_chasm",
@@ -51894,6 +51894,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -51910,6 +51911,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -51927,6 +51929,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -51972,6 +51975,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -51987,6 +51991,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -58377,6 +58382,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -58394,6 +58400,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -58439,6 +58446,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -61254,6 +61262,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -61286,6 +61295,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -67838,6 +67848,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -67855,6 +67866,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -67900,6 +67912,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -91023,6 +91036,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -91040,6 +91054,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -91102,6 +91117,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -94121,6 +94137,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -94138,6 +94155,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -94183,6 +94201,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -104725,6 +104744,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -104742,6 +104762,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -104817,6 +104838,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -112577,6 +112599,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -112593,6 +112616,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -112610,6 +112634,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -112668,6 +112693,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -112683,6 +112709,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -123288,6 +123315,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -131850,6 +131878,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -131867,6 +131896,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -131912,6 +131942,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -134635,6 +134666,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -134652,6 +134684,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -134680,6 +134713,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -134712,6 +134746,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -137323,6 +137358,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -137340,6 +137376,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -137368,6 +137405,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -137400,6 +137438,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -140008,6 +140047,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -140025,6 +140065,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -140055,6 +140096,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -140070,6 +140112,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -140085,6 +140128,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -145237,6 +145281,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -148091,6 +148136,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -159540,6 +159586,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -159557,6 +159604,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -159585,6 +159633,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -159617,6 +159666,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -163441,6 +163491,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -163457,6 +163508,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -163474,6 +163526,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -163489,6 +163542,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -163504,6 +163558,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -170984,6 +171039,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -171001,6 +171057,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -171031,6 +171088,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -171046,6 +171104,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -171061,6 +171120,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -176562,6 +176622,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -176579,6 +176640,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -176607,6 +176669,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -176639,6 +176702,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -184523,6 +184587,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -184540,6 +184605,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -184570,6 +184636,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -184585,6 +184652,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -187084,6 +187152,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -187101,6 +187170,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -187131,6 +187201,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -187146,6 +187217,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -189617,6 +189689,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -189634,6 +189707,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -189664,6 +189738,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -189679,6 +189754,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -192253,6 +192329,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -204782,6 +204859,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -204799,6 +204877,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -204844,6 +204923,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -209750,6 +209830,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -209767,6 +209848,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -209797,6 +209879,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -209829,6 +209912,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -214676,6 +214760,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -214693,6 +214778,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -214738,6 +214824,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -217546,6 +217633,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -217563,6 +217651,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -217623,6 +217712,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -222971,6 +223061,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -222988,6 +223079,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -223018,6 +223110,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -223033,6 +223126,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -223048,6 +223142,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -231736,6 +231831,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -231753,6 +231849,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -231781,6 +231878,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -231813,6 +231911,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -234295,6 +234394,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -234312,6 +234412,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -234340,6 +234441,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -234372,6 +234474,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -236743,6 +236846,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -239138,6 +239242,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -239155,6 +239260,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -239185,6 +239291,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -239200,6 +239307,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -239215,6 +239323,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -249098,6 +249207,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -249115,6 +249225,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -249160,6 +249271,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -254606,6 +254718,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -254622,6 +254735,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -254639,6 +254753,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -254669,6 +254784,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -254684,6 +254800,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -259923,6 +260040,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -259940,6 +260058,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -259970,6 +260089,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -259985,6 +260105,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -260000,6 +260121,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -271053,6 +271175,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -271070,6 +271193,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -271098,6 +271222,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -271130,6 +271255,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -273573,6 +273699,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -273590,6 +273717,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -273620,6 +273748,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -273635,6 +273764,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -273650,6 +273780,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -275997,6 +276128,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -278367,6 +278499,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -289387,6 +289520,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -289404,6 +289538,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -289434,6 +289569,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -289449,6 +289585,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -289464,6 +289601,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -292107,6 +292245,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -292124,6 +292263,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -292182,6 +292322,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -294969,6 +295110,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -294986,6 +295128,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -295031,6 +295174,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -300616,6 +300760,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -300632,6 +300777,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -300649,6 +300795,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -300694,6 +300841,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -312263,6 +312411,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -312280,6 +312429,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -312342,6 +312492,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -314948,6 +315099,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -314965,6 +315117,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -314995,6 +315148,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -315010,6 +315164,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -315025,6 +315180,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -319938,6 +320094,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -319955,6 +320112,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -319983,6 +320141,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -320015,6 +320174,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -322489,6 +322649,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -322506,6 +322667,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -322536,6 +322698,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -322551,6 +322714,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -322566,6 +322730,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -325054,6 +325219,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -325071,6 +325237,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -325101,6 +325268,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -325116,6 +325284,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -325131,6 +325300,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -329952,6 +330122,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -329969,6 +330140,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -329999,6 +330171,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -330014,6 +330187,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -330029,6 +330203,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -332607,6 +332782,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -332623,6 +332799,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -332640,6 +332817,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -332670,6 +332848,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -332685,6 +332864,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -338570,6 +338750,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -338587,6 +338768,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -338615,6 +338797,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -338647,6 +338830,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -341128,6 +341312,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -341145,6 +341330,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -341175,6 +341361,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -341190,6 +341377,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -341205,6 +341393,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -346052,6 +346241,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -346069,6 +346259,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -346099,6 +346290,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -346114,6 +346306,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -346129,6 +346322,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -350895,6 +351089,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -350912,6 +351107,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -350942,6 +351138,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -350957,6 +351154,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -350972,6 +351170,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -353629,6 +353828,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -353646,6 +353846,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -353691,6 +353892,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -356401,6 +356603,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -356417,6 +356620,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -356434,6 +356638,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -356464,6 +356669,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -356479,6 +356685,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -358937,6 +359144,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -358954,6 +359162,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -358982,6 +359191,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -359014,6 +359224,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -366762,6 +366973,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -366779,6 +366991,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -366841,6 +367054,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -369459,6 +369673,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -369476,6 +369691,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -369519,6 +369735,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -369551,6 +369768,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -374490,6 +374708,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -374506,6 +374725,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -374523,6 +374743,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -374553,6 +374774,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -374568,6 +374790,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -377165,6 +377388,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -377182,6 +377406,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -377240,6 +377465,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -382984,6 +383210,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -383001,6 +383228,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -383016,6 +383244,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -383031,6 +383260,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -384915,6 +385145,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -384932,6 +385163,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -384947,6 +385179,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -384962,6 +385195,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -387299,6 +387533,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -387316,6 +387551,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -387344,6 +387580,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -387376,6 +387613,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -389929,6 +390167,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -389946,6 +390185,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -389976,6 +390216,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -389991,6 +390232,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -390006,6 +390248,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -392676,6 +392919,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -392692,6 +392936,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -392709,6 +392954,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -392767,6 +393013,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -392782,6 +393029,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -395439,6 +395687,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -395455,6 +395704,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -395472,6 +395722,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -395530,6 +395781,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -395545,6 +395797,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -400625,6 +400878,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -403485,6 +403739,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -411678,6 +411933,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -414503,6 +414759,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -414520,6 +414777,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -414582,6 +414840,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -417386,6 +417645,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -417403,6 +417663,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -417433,6 +417694,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -417448,6 +417710,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -417463,6 +417726,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -422529,6 +422793,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -422546,6 +422811,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -422574,6 +422840,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -422606,6 +422873,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -450829,6 +451097,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -450846,6 +451115,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -450921,6 +451191,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -453548,6 +453819,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -453565,6 +453837,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -453595,6 +453868,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -453610,6 +453884,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -453625,6 +453900,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -467843,6 +468119,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -467860,6 +468137,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -467890,6 +468168,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -467905,6 +468184,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -467920,6 +468200,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -470580,6 +470861,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -485057,6 +485339,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -485074,6 +485357,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -485104,6 +485388,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -485119,6 +485404,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -487678,6 +487964,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -487695,6 +487982,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -487725,6 +488013,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -487740,6 +488029,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -487755,6 +488045,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -490259,6 +490550,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -490276,6 +490568,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -490306,6 +490599,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -490321,6 +490615,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -490336,6 +490631,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -495471,6 +495767,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -495487,6 +495784,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -495504,6 +495802,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -495562,6 +495861,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -495577,6 +495877,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -498409,6 +498710,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -498426,6 +498728,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -498488,6 +498791,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -501426,6 +501730,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -501443,6 +501748,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -501505,6 +501811,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -506658,6 +506965,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -506675,6 +506983,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -506703,6 +507012,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -506735,6 +507045,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -509187,6 +509498,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -509204,6 +509516,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -509219,6 +509532,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -509234,6 +509548,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -511837,6 +512152,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -511854,6 +512170,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -511916,6 +512233,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -514832,6 +515150,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -514849,6 +515168,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -514911,6 +515231,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -525750,6 +526071,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -525766,6 +526088,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -525783,6 +526106,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -525841,6 +526165,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -525856,6 +526181,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -530747,6 +531073,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -530764,6 +531091,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -530794,6 +531122,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -530809,6 +531138,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -530824,6 +531154,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -533573,6 +533904,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -533590,6 +533922,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -533652,6 +533985,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -536655,6 +536989,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -536672,6 +537007,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -536734,6 +537070,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -542028,6 +542365,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -544939,6 +545277,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -550146,6 +550485,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -550163,6 +550503,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -550191,6 +550532,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -550223,6 +550565,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -552648,6 +552991,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -552665,6 +553009,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -552695,6 +553040,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -552710,6 +553056,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -552725,6 +553072,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -555085,6 +555433,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -555102,6 +555451,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -555132,6 +555482,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -555147,6 +555498,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -555162,6 +555514,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -557707,6 +558060,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -557724,6 +558078,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -557752,6 +558107,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -557784,6 +558140,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -560337,6 +560694,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -560354,6 +560712,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -560382,6 +560741,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -560414,6 +560774,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -562662,6 +563023,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -562703,6 +563065,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -564740,6 +565103,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -564756,6 +565120,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -566844,6 +567209,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -566861,6 +567227,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -566891,6 +567258,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -566906,6 +567274,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -568888,6 +569257,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -574027,6 +574397,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -576622,6 +576993,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -576639,6 +577011,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -576667,6 +577040,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -576699,6 +577073,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -579294,6 +579669,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -579311,6 +579687,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -579339,6 +579716,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -579371,6 +579749,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -581961,6 +582340,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -581978,6 +582358,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -582008,6 +582389,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -582023,6 +582405,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -582038,6 +582421,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -584562,6 +584946,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -587279,6 +587664,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -587296,6 +587682,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -587339,6 +587726,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -587371,6 +587759,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -590189,6 +590578,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -590205,6 +590595,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -590222,6 +590613,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -590280,6 +590672,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -590295,6 +590688,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -592938,6 +593332,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -592955,6 +593350,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -592985,6 +593381,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -593000,6 +593397,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -593015,6 +593413,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -609826,6 +610225,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -609843,6 +610243,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -609873,6 +610274,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -609888,6 +610290,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -612390,6 +612793,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -612407,6 +612811,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -612435,6 +612840,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -612467,6 +612873,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -615004,6 +615411,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -615021,6 +615429,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -615049,6 +615458,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -615081,6 +615491,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -617486,6 +617897,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -617503,6 +617915,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -617531,6 +617944,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -617563,6 +617977,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -619918,6 +620333,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -619935,6 +620351,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -619963,6 +620380,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:porkchop"
           ]
         },
@@ -619995,6 +620413,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -622582,6 +623001,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -622599,6 +623019,7 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:beef",
+            "minecraft:birch_button",
             "minecraft:leather"
           ]
         },
@@ -622674,6 +623095,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:mutton"
           ]
         },
@@ -624573,6 +624995,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -628572,6 +628995,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -630055,6 +630479,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -631527,6 +631952,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -635309,6 +635735,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -636786,6 +637213,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -639368,6 +639796,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -641982,6 +642411,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -643437,6 +643867,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -644892,6 +645323,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]
@@ -648805,6 +649237,7 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": [
+            "minecraft:birch_button",
             "minecraft:chicken",
             "minecraft:feather"
           ]

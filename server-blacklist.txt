@@ -1,0 +1,52 @@
+# =========================================================
+#  BLACKLIST DE MODS PARA EL SERVIDOR
+#  Usada por server-sync.bat / server-sync.ps1
+# =========================================================
+#
+#  SOLO aplica a mods: la carpeta config se espeja entera, sin filtrar.
+#
+#  Un mod por linea. Las lineas vacias y las que empiezan con #
+#  se ignoran, asi que podes anotar por que bloqueaste cada uno.
+#
+#  COMO ESCRIBIR UNA ENTRADA
+#  -------------------------
+#  Copia el nombre del .jar y borrale la version (y el .jar).
+#  Lo que queda es la entrada. Ejemplos:
+#
+#     sodium-neoforge-0.8.13+mc1.21.1.jar   ->  sodium-neoforge
+#     codxlib-1.6.0-neoforge+1.21.1.jar     ->  codxlib
+#     AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar -> AmbientSounds
+#
+#  La entrada matchea cualquier version de ese mod: si manana el
+#  archivo pasa a ser codxlib-1.7.0-neoforge+1.21.1.jar, la entrada
+#  "codxlib" lo sigue reconociendo sin que toques nada aca.
+#
+#  No distingue mayusculas de minusculas. Si te sobra el ".jar" al
+#  final tampoco pasa nada, se ignora.
+#
+#  IMPORTANTE: el match es del nombre COMPLETO sin version, no un
+#  prefijo suelto. "create" bloquea create-1.21.1-6.0.10.jar pero NO
+#  bloquea create-gunsmithing-...jar ni create_connected-...jar.
+#  Para bloquear esos hay que nombrarlos:
+#     create-gunsmithing
+#     create_connected
+#
+#  Si no sabes como quedaria el nombre de un mod, corre:
+#     server-sync.bat --list
+#  y te imprime cada .jar de tu instancia con la entrada sugerida.
+#
+#  (Extra opcional: una entrada con * se trata como patron contra el
+#  nombre de archivo completo, ej. "create-*". Usalo solo si de verdad
+#  queres barrer una familia entera de mods.)
+#
+# =========================================================
+
+# --- Ejemplo, borralo cuando agregues los tuyos ---
+# codxlib            # solo-cliente, tira el server al arrancar
+
+
+sodium-neoforge
+sodium-extra-neoforge
+boc
+iris-neoforge
+IrisSearch
