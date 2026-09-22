@@ -1,0 +1,13 @@
+name = "Couples Mod"
+filename = "couplesmod-1.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6e9c4f6ec9de848fe9178f1230ddfae8f601d977"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8283438
+project-id = 1572279

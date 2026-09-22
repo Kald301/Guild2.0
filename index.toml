@@ -6,7 +6,7 @@ hash = "ee5f2c5d52c9d6e7e97a34a705d3471608a274c649f2f0eee2409b8fa70e9120"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "8b1043d820e823e5470da712164a7aec454c0437bd1427e74cb84cb50b10d41a"
+hash = "02cf9635c64b90d78fa2d549d4c975691ec4da4eae7b79d174a94edeae1eeb02"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -1138,7 +1138,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "d66c29138e5ba42efc92b884db65a62ade68ada46c023310424a96779ebda11d"
+hash = "d97b846e8c88043a3ac029c13353b57d01e24fd89f6828c69df9e89bb85368ec"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1146,7 +1146,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "01093cbed92994aa0a77d57f2ee3e9bc6e68731be0925e89208c8762354c7c0d"
+hash = "6571cf4440e58795e3e58d60cb11f78239a258b3e5b0ed6a7c4c7dc6db3bdff0"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1154,7 +1154,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "09fd0e8606c05fb4674c376388d4b4385595d6bee25ad0ce9e026d222a0a1776"
+hash = "d97b846e8c88043a3ac029c13353b57d01e24fd89f6828c69df9e89bb85368ec"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1314,7 +1314,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "2809bfff089ce5e0883dc4cf710f67801fa0765ff11f4b8653a1a706dd8c42a1"
+hash = "7ec6f49b9c1efcf94736d40e6f9a6c17a86bc329a4a7475187053ce5c54e4691"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -1474,7 +1474,7 @@ hash = "0aeab6193abedadf1471e2077e10fd1ddcf340957c2c254bee80fd918969c3e8"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "61d6164adf5ed60794582a5cb2067d1eaf2d6badfa3869e407e0924217bbd92c"
+hash = "6aecdec9f2e7c1858f04904cf6b46498d4be9c5f115ab81ec09899afb4cbfbc4"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
@@ -2665,6 +2665,11 @@ hash = "b65ee01fec17228645121952de6dec75053b0b4c59a8c8036d6fa7829819f3f9"
 metafile = true
 
 [[files]]
+file = "mods/couples-mod.pw.toml"
+hash = "6821cc261fafe96ee2f27e5bb2e4266d55b6077f43e42fe50b1bea22bb12cc26"
+metafile = true
+
+[[files]]
 file = "mods/crate-delight-croptopia.pw.toml"
 hash = "484fb38e825f7b42b82fb3bf5493d3615bfc482ba5c5b5373223866a1227d583"
 metafile = true
@@ -3673,7 +3678,7 @@ hash = "fe14f85cf5c551fb1d0f122d7fa07a4b371186f15e23b467a409999658974948"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "5d0252965d440952f443b6775bc85792135441a2f8dfaa99c4f5a8163bf41fe9"
+hash = "31459a4262168559281dd3532da3edf7bf43c17cafb35ca49d548b50023da09f"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5/ComplementaryLicense.txt"
