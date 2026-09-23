@@ -59,7 +59,7 @@
 	# || Specify how many seconds it takes for the mare to give birth
 	# || Set to 1 to disable gestation period, and making the birth instant.
 	# || We recommend '1800' (30min) for singleplayer, and '28800' (8hr) for multiplayer.
-	# Default: 1800
+	# Default: 28800
 	# Range: > 1
 	mareGestationTimeInSeconds = 1800
 	#

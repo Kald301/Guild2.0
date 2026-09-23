@@ -1,0 +1,48 @@
+{
+	/* 筛选模式
+	     RESOURCE: 只要当前语言存在 key，就忽略这个key，无论是否翻译
+	     CORRECTION: 只要当前语言的 key 未翻译，就进行翻译，无论资源文件内是否存在
+	*/
+	"mode": "RESOURCE",
+	// 英语特征 — 包含英文单词、不含格式化占位符(%s/%d)和翻译key(_)的文本
+	"enFeature": "^(?!.*%[A-Za-z0-9])(?!.*_)(?=.*([A-Z]?[a-z]{2,})).+$",
+	// 您的语言的特征，默认的是中日韩
+	"yourLanguageFeature": "[\\u0800-\\u9fa5\\uac00-\\ud7ff]+",
+	// 翻译引擎: Google (默认) 或 AAAABBBB，不区分大小写
+	"translator": "Google",
+	// 是否在翻译后的文本里增加原文显示
+	"appendOriginal": true,
+	// 无需翻译文本, 支持正则, 不区分大小写
+	"wordBlacklist": [],
+	// 两次翻译请求之间的间隔(毫秒)，防止被限流；请求失败时会自动指数退避
+	"translateIntervalMs": 3000,
+	// 开启 DEBUG 模式，开启可能会有日志刷屏
+	"debug": false,
+	// 忽略的命名空间, 支持正则
+	"excludedNamespace": [
+		"minecraft",
+		"forge",
+		"^fabric-.*",
+		"neoforge"
+	],
+	// Google 翻译相关配置
+	"google": {
+		// Google 翻译备用域名，可以填镜像站，只要 API 跟谷歌相同就行
+		"domain": "translate.googleapis.com",
+		/* translate_a/single 接口的 client 参数，按顺序尝试，被拒绝 (429/403) 时自动换下一个
+		    gtx 已被 Google 封禁
+		*/
+		"clients": [
+			"at",
+			"dict-chrome-ex",
+			"at",
+			"dict-chrome-ex",
+			"at",
+			"dict-chrome-ex",
+			"at",
+			"dict-chrome-ex"
+		],
+		// 已废弃，会被忽略: HTTPS 无法直连 IP (TLS 握手失败)，请改用 domain
+		"dns": []
+	}
+}

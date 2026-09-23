@@ -16,5 +16,6 @@
   {"ingredient":{"id":"minecraft:water_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:lava_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:warped_wart_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"spartan_weaponry_unofficial:bolt"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"spartan_weaponry_unofficial:bolt"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:deepslate_bricks"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]
