@@ -17,5 +17,9 @@
   {"ingredient":{"id":"minecraft:lava_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:warped_wart_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"spartan_weaponry_unofficial:bolt"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:deepslate_bricks"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"minecraft:deepslate_bricks"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"regions_unexplored:silt_dirt"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"quark:light_gray_shard"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:cobbled_deepslate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"spartanshieldsunofficial:diamond_tower_shield","components":"{\"minecraft:custom_data\":{picked:1b},\"minecraft:damage\":1428,\"minecraft:enchantments\":{levels:{\"spartanshieldsunofficial:firebrand\":2,\"spartanshieldsunofficial:payback\":4,\"spartanshieldsunofficial:spikes\":3}},\"spartanshieldsunofficial:payback_damage\":0.0f}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

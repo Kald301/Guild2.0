@@ -42,11 +42,9 @@
 
 		[Weapons.Mobs.Krampus]
 			#.
-			KRAMPUS_SPAWNING_ENABLED = true
-			#.
 			# Default: 10.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			KRAMPUS_ARMOR = 10.0
+			KRAMPUS_ARMOR = 20.0
 			#.
 			# Default: 14.0
 			# Range: 0.0 ~ 1.7976931348623157E308
@@ -67,6 +65,8 @@
 			# Default: 0.26
 			# Range: 0.0 ~ 1.7976931348623157E308
 			KRAMPUS_SPEED = 0.26
+			#.
+			KRAMPUS_SPAWNING_ENABLED = true
 
 		[Weapons.Mobs."Baby Skeleton"]
 			#.
