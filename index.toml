@@ -466,7 +466,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "a465ead6ed02ebac36a488a7fc76e5fa5dc1a831d7096de73a2268534837860c"
+hash = "20cd88d8ee9f7f3842d963936f2a34bac2dbb98e4058e9f139d3682cd44d15f2"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1338,7 +1338,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "e6ff25a2f46d8d1d907069c28d6e5838349d0998c394c79c2e0ab32f9be15adb"
+hash = "cb9b8a6d34a66519bad14495635bf6cba56a6f7753cc02eaa1e598cfd1a515d6"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -1881,8 +1881,12 @@ file = "config/sereneseasons/seasons.toml"
 hash = "388745e75654692bb5b2131e9c6c4b8d3ad949217c531ec9b1b724aa8e564c94"
 
 [[files]]
-file = "config/sereneseasonsplus-common.toml"
+file = "config/sereneseasonsplus-common-1.toml.bak"
 hash = "1d742bb533397cfa56aa5f5578f0c00191ec741b4e780ace6b17a0c7cda174d3"
+
+[[files]]
+file = "config/sereneseasonsplus-common.toml"
+hash = "960ead933b8554ba14cf0c298cbd58775dd78bb6710e17f6a939ad174505076e"
 
 [[files]]
 file = "config/sereneseasonsplus-common.toml.pre-descriptive-config-update.bak"
@@ -2438,7 +2442,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "0f6b24d697903dc261c881c4a736ec57c57ed5384f23d77ca9f6cec1e954d559"
+hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
 metafile = true
 
 [[files]]
@@ -2682,7 +2686,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-utilities-j.pw.toml"
-hash = "3a6f302bb4a52f9eb1efcdf9501c67bd0cf8d65f854672c384ca9a19ea81165e"
+hash = "8e3aeb4d5be32f408b2ed7a57f485f343a6a61410cad31d1ff001fb4c57e5276"
 metafile = true
 
 [[files]]
@@ -2697,7 +2701,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "30cb84b864534e520ce67d07a7898b71f03d6f346afd54f33d9cb967f4859c54"
+hash = "2108ab41dd9a48a7a5ac62b89c4cbe152983f71d6aa406b3dce0dfc0a1be486c"
 metafile = true
 
 [[files]]
@@ -2820,7 +2824,7 @@ metafile = true
 
 [[files]]
 file = "mods/epic-knights-armor-and-weapons.pw.toml"
-hash = "bea149b35bf291af90b83b04318f2541301ecf00bd57267c7766ce3143a97d20"
+hash = "e6995f53f84ac0d7cd4c0135b5241e6758f7fa7780867d55b084d7ed557f3de4"
 metafile = true
 
 [[files]]
@@ -3020,7 +3024,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "47c701c67e70b60b3a71c9ec4aff707ea0411f033024730b1ca0567b8526a824"
+hash = "1852c162a57adb3e790ce993c024626ed62026ff5bd9591fac1be61637deae5c"
 metafile = true
 
 [[files]]
@@ -3189,7 +3193,7 @@ metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"
-hash = "0a94f9ca9a86267c51832956da72f6f9b8ba598dcac48c3a93b6e50d38089879"
+hash = "dd3830820c683676dd7e37cbbe906f3b1449f9d3825d8fbcfd148766c073eae5"
 metafile = true
 
 [[files]]
@@ -3383,7 +3387,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "d99554cf4022a273d2cc8108ed590c39965d244e3177316397f6cacc72cd2eb0"
+hash = "4447f298596245cf7990175f85aadf51f3c39e9749deea092717769345d063a1"
 metafile = true
 
 [[files]]
@@ -3422,12 +3426,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "6121e4631e5fccc9f32c08ec06491fa6383c954d4f6b9b05b05053e435c1d6e2"
+hash = "83e1cdd88c8686b90ab7c66bb1ae7ae8f82d4db6430d2fcf6792bb6ccf49c286"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "8553b9eeb5abd742d869b9e65c25d1f6bd509538cf983fcd840aad47140a6be2"
+hash = "6cb053381e774f83642c33b1673dead3508a5ea5b3a81c7a59044ff65cc72861"
 metafile = true
 
 [[files]]
@@ -3457,7 +3461,7 @@ metafile = true
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
-hash = "d8936e62d484381b78a252b1f3db63fedbb9e1865b4999efde67fd9c13659dd7"
+hash = "fb961db54e4b94c86e5391dfc173e227b777c6dce70d4867787ea95dce956672"
 metafile = true
 
 [[files]]
@@ -3497,7 +3501,7 @@ metafile = true
 
 [[files]]
 file = "mods/torchmaster.pw.toml"
-hash = "de4baeea541da736247e11bb8a90c66cee56e29e0b999af5ecb9fd82391c166f"
+hash = "f3275e582b2626dcc9ae543154c2eff9aa4b60a571a9103b057db024974b2806"
 metafile = true
 
 [[files]]
@@ -3537,7 +3541,7 @@ metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-hash = "cfc3d0abc9c387a708d246bef5f90481cd62adee3b6ed7e0932042de2bdbcc3e"
+hash = "42b53ca74c99b3d0edb2ef4e07896b269fd058e049e44e8503d8fd921342eee8"
 metafile = true
 
 [[files]]
@@ -3674,7 +3678,7 @@ hash = "fe14f85cf5c551fb1d0f122d7fa07a4b371186f15e23b467a409999658974948"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "9e24c384ae8ecb03392c6a69c9e2b40aa402ec5c8784f7c2e6a7a6be70076368"
+hash = "a65bb40d7a5aaf105e6fb918214e7962ac0b3bbc0ecd0c39b2d7d7522b2b2135"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5/ComplementaryLicense.txt"
