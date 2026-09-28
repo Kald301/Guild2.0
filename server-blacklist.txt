@@ -50,4 +50,4 @@ sodium-extra-neoforge
 boc
 iris-neoforge
 IrisSearch
-autoTranslation-next
+AutoTranslation-Next-2.1.0-fix2

@@ -45,6 +45,48 @@ rebiomeLakes = 1
 #World: safe on an existing world -- applies the moment you save, everywhere.
 welcomeMessage = true
 
+#PERFORMANCE -- how FAST vs. how GOOD generation is. Costs CPU at world-gen time only; each
+#region builds once and is saved to disk forever, so the cost is one-time per area. If live
+#hitches bother you, pre-generate ahead with a mod like Chunky.
+[performance]
+	#The one performance dial. Higher = finer, more accurate rivers but a longer one-time build per
+	#region; lower = coarser rivers, near-instant. Choose by CPU strength and whether you pre-generate.
+	#
+	#  POTATO   ~3s/region   smoothest while flying; coarse rivers
+	#  LOW      ~4s          smooth while flying
+	#  MEDIUM   ~8s          default; brief hitch into never-seen land
+	#  HIGH     ~30s         pre-gen (Chunky) suggested
+	#  EXTREME  ~2min        pre-gen suggested
+	#  MAX      ~45min       pre-gen mandatory; finest
+	#(Rough, one-time per region, on heavy Tectonic terrain; vanilla is far cheaper.)
+	#Allowed: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX.
+	#Perf: THE MAIN SPEED DIAL (see the per-level timings above). One-time per region.
+	#World: CHANGES THE STREAM NETWORK. Takes effect only after the world is RELOADED (quit to title and reopen, or restart the server), and only in NEW chunks -- streams will not line up where new land meets old. Best chosen before starting a world.
+	#Allowed Values: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX
+	terrainAccuracyLevel = "MEDIUM"
+	#
+	#(Legacy) The former name of the setting above. Kept only so an existing config is not
+	#silently reset when the option was renamed: if this is set to anything other than MEDIUM
+	#while terrainAccuracyLevel is still at its default, this value is used. Set
+	#terrainAccuracyLevel instead -- this one will be removed in a later version.
+	#Allowed Values: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX
+	qualityPreset = "MEDIUM"
+	#
+	#Watershed (region) size in blocks -- how large one continuous stream system is before it hands off
+	#to the next. -1 = auto (follow the quality preset; recommended). Otherwise 256 to 8192.
+	#  RECOMMENDED: leave at auto for live gameplay. Raising it can cause worldgen pauses when you
+	#  cross a watershed border (each build covers more ground at once).
+	#  For PRE-GENERATED worlds, larger watersheds produce stream systems that reach much further
+	#  inland, at overall similar total generation time. New chunks only.
+	#  NOTE: while pre-generating, the generation status can appear FROZEN/paused as a stream region
+	#  builds -- chunk generation waits for that watershed to finish, then resumes. This is normal;
+	#  larger sizes make each pause longer but less frequent.
+	#Perf: major. Larger = longer pauses when crossing a border, but fewer of them.
+	#World: CHANGES THE STREAM NETWORK. Takes effect only after the world is RELOADED (quit to title and reopen, or restart the server), and only in NEW chunks -- streams will not line up where new land meets old. Best chosen before starting a world.
+	# Default: -1
+	# Range: -1 ~ 8192
+	plateSize = -1
+
 #APPEARANCE -- how streams look. These shape the network and channels and do NOT meaningfully
 #affect speed. Anything that changes the network (most of these) applies to NEW chunks only.
 [appearance]
@@ -423,48 +465,6 @@ welcomeMessage = true
 	#World: safe on an existing world -- applies to chunks generated from now on, no restart needed. Land already generated keeps its current look.
 	underwaterFloraBiomeBlacklist = ""
 
-#PERFORMANCE -- how FAST vs. how GOOD generation is. Costs CPU at world-gen time only; each
-#region builds once and is saved to disk forever, so the cost is one-time per area. If live
-#hitches bother you, pre-generate ahead with a mod like Chunky.
-[performance]
-	#The one performance dial. Higher = finer, more accurate rivers but a longer one-time build per
-	#region; lower = coarser rivers, near-instant. Choose by CPU strength and whether you pre-generate.
-	#
-	#  POTATO   ~3s/region   smoothest while flying; coarse rivers
-	#  LOW      ~4s          smooth while flying
-	#  MEDIUM   ~8s          default; brief hitch into never-seen land
-	#  HIGH     ~30s         pre-gen (Chunky) suggested
-	#  EXTREME  ~2min        pre-gen suggested
-	#  MAX      ~45min       pre-gen mandatory; finest
-	#(Rough, one-time per region, on heavy Tectonic terrain; vanilla is far cheaper.)
-	#Allowed: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX.
-	#Perf: THE MAIN SPEED DIAL (see the per-level timings above). One-time per region.
-	#World: CHANGES THE STREAM NETWORK. Takes effect only after the world is RELOADED (quit to title and reopen, or restart the server), and only in NEW chunks -- streams will not line up where new land meets old. Best chosen before starting a world.
-	#Allowed Values: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX
-	terrainAccuracyLevel = "MEDIUM"
-	#
-	#(Legacy) The former name of the setting above. Kept only so an existing config is not
-	#silently reset when the option was renamed: if this is set to anything other than MEDIUM
-	#while terrainAccuracyLevel is still at its default, this value is used. Set
-	#terrainAccuracyLevel instead -- this one will be removed in a later version.
-	#Allowed Values: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX
-	qualityPreset = "MEDIUM"
-	#
-	#Watershed (region) size in blocks -- how large one continuous stream system is before it hands off
-	#to the next. -1 = auto (follow the quality preset; recommended). Otherwise 256 to 8192.
-	#  RECOMMENDED: leave at auto for live gameplay. Raising it can cause worldgen pauses when you
-	#  cross a watershed border (each build covers more ground at once).
-	#  For PRE-GENERATED worlds, larger watersheds produce stream systems that reach much further
-	#  inland, at overall similar total generation time. New chunks only.
-	#  NOTE: while pre-generating, the generation status can appear FROZEN/paused as a stream region
-	#  builds -- chunk generation waits for that watershed to finish, then resumes. This is normal;
-	#  larger sizes make each pause longer but less frequent.
-	#Perf: major. Larger = longer pauses when crossing a border, but fewer of them.
-	#World: CHANGES THE STREAM NETWORK. Takes effect only after the world is RELOADED (quit to title and reopen, or restart the server), and only in NEW chunks -- streams will not line up where new land meets old. Best chosen before starting a world.
-	# Default: -1
-	# Range: -1 ~ 8192
-	plateSize = -1
-
 #WATER & BOATS -- runtime behaviour of water itself. These affect ALL water in the world, not
 #just this mod's streams, and apply LIVE (no regeneration needed).
 [water]
@@ -539,10 +539,9 @@ welcomeMessage = true
 	serverStreamParticles = true
 	#
 	#Which biomes a stream is allowed to open its mouth into: a comma-separated list of biome TAGS (written
-	#with a leading #) and plain biome ids. A stream's mouth must END in a listed biome, standing in real
-	#water at least a block below sea level: from where its route reaches sea-level ground it keeps walking,
-	#over ground no higher than the sea, until it does -- then a little further into deeper water so it does
-	#not stop in the shallows. Leave it EMPTY to accept any body of water at all.
+	#with a leading #) and plain biome ids. A mouth is accepted when any listed biome sits within one grid
+	#cell of it, so water lying just outside the biome that owns it -- the last blocks of a river, the edge of
+	#a swamp pool -- still counts. Leave it EMPTY to accept any body of water at all.
 	#This mod's own lakes are never subject to it and end a stream whatever the list says.
 	#A stream that cannot reach water it may join is not generated, so a shorter list means fewer streams.
 	#Perf: none directly; a shorter list means fewer streams to build.
