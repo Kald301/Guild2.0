@@ -1,157 +1,53 @@
 [performance]
-	#Run supported snow-processing work on background threads. Enabled by default only on systems with more than 6 processor cores. Disable this when diagnosing mod compatibility or threading problems.
-	runSnowUpdatesAsynchronously = true
+	#Use async tasks for some operations to improve performance. This may cause issues with some mods.
+	useAsync = true
 
-[snowUpdateTiming]
-	#Number of Minecraft ticks between snow-placement updates. 20 ticks is approximately 1 real-time second.
+[snowPillerAndReplacer]
+	#Tick interval for snow pillers in ticks. Default is 20 (1 second).
 	# Default: 20
 	# Range: > 1
-	snowPlacementIntervalInTicks = 20
-	#Number of Minecraft ticks between snow replacement and accumulation scans. Lower values update snow more frequently but require more processing. 20 ticks is approximately 1 real-time second.
+	tickSnowPiller = 20
+	#Tick interval for snow replacer in ticks. Default is 20 (1 second).
 	# Default: 100
 	# Range: > 1
-	snowReplacementIntervalInTicks = 100
+	tickSnowReplacer = 100
 
-[seasonalSnowAccumulation]
-	#Allow Serene Seasons Plus to place, replace, and accumulate snow during supported seasonal weather.
-	enableSeasonalSnowAccumulation = false
+[snowstorm]
+	#Enable snowstorm mode which increases snow pilling intensity.
+	enabled = false
 
-[seasonalPlantGrowth]
-	#Allow the mod to apply extra grass and flower growth during warm seasons.
-	enableSeasonalGrassAndFlowerGrowth = true
+["Grass and Flower Growth"]
+	#Enable enhanced grass and flower growth during warm seasons.
+	enabled = true
 
-[snowLimits]
-	#Maximum number of snow layers allowed in one vertical column. Eight layers equal one full snow block; the default of 24 equals three blocks.
+[snow]
+	#Maximum total snow layers allowed per column (8 layers = 1 block). Default 24 = 3 blocks.
 	# Default: 24
 	# Range: 0 ~ 512
-	maximumSnowLayersPerColumn = 24
+	maxSnowAccumulationLayers = 24
 
-[realWorldSeasonSynchronization]
-	#Synchronize the in-game season with the current real-world date in the America/Toronto time zone. Leave disabled to let Serene Seasons progress normally in-game.
-	syncSeasonsToEasternCanadianCalendar = false
+[seasonSync]
+	#Lock seasons to current Canadian calendar months (Eastern time).
+	realTimeCanadianSeasons = false
 
-[dayNightCycle]
-	#Change the daylight and nighttime proportions according to the current in-game sub-season, giving summer longer days and winter longer nights.
-	changeDayNightLengthsWithSeasons = true
-	#Allow Serene Seasons Plus to control Better Days day and night speed values. Disable this if Better Days or another mod should control time speed by itself.
-	allowSeasonalControlOfBetterDaysTimeSpeed = true
-	#Keep one complete day and night at a fixed total elapsed length while seasons change the daylight/night split. When false, the original seasonal speed behavior is preserved. This does not sync to the computer clock.
-	keepFullDayNightCycleAtFixedLength = false
-	#Total elapsed real-world minutes in one complete day and night when keepFullDayNightCycleAtFixedLength is enabled. Set to 1440 for 24 hours. This controls duration only and does not sync to the computer clock.
-	# Default: 20.0
-	# Range: 0.1 ~ 10080.0
-	fullDayNightCycleLengthInRealMinutes = 20.0
+[seasonalDaylightCycle]
+	#Enable seasonal daylight cycle. This will change the length of day and night based on the current season.
+	enableSeasonalDaylightCycle = true
+	#Allow Serene Seasons Plus to update Better Days daySpeed/nightSpeed at runtime using reflection. Disable this if you want Better Days to fully own time speed behavior.
+	enableBetterDaysDynamicTimeCompat = true
 	#When Better Days finishes a sleep cycle, set the wake-up time to betterDaysSleepWakeTime. This does not change Better Days dayStart/nightStart speed boundaries.
 	enableBetterDaysSleepWakeTimeFix = true
 	#Minecraft time of day to use after a Better Days sleep cycle. 1000 is 7:00 AM.
 	# Default: 1000
 	# Range: 0 ~ 23999
 	betterDaysSleepWakeTime = 1000
-	#Use the custom day and night speed multipliers below when seasonal day/night length changes are disabled.
-	useCustomDayAndNightSpeedMultipliers = false
-	#Better Days speed multiplier for daytime when custom speed mode is active. Values below 1 make daytime longer; values above 1 make it shorter.
+	#If true, the day and night lengths will be determined by the custom values set below. If false, the day and night lengths will be determined by the season.
+	customCycleLength = false
+	#Custom day length in ticks. Only used if seasonal daylight cycle is disabled.
 	# Default: 1.0
 	# Range: 0.05 ~ 100.0
-	customDaySpeedMultiplier = 1.0
-	#Better Days speed multiplier for nighttime when custom speed mode is active. Values below 1 make nighttime longer; values above 1 make it shorter.
+	customDayLength = 1.0
+	#Custom night length in ticks. Only used if seasonal daylight cycle is disabled.
 	# Default: 1.0
 	# Range: 0.05 ~ 100.0
-	customNightSpeedMultiplier = 1.0
-
-	[dayNightCycle.seasonalSpeedMultipliers]
-		#Daytime speed multiplier during early spring. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 1.09
-		# Range: 0.05 ~ 100.0
-		earlySpringDaySpeedMultiplier = 1.09
-		#Nighttime speed multiplier during early spring. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 0.92
-		# Range: 0.05 ~ 100.0
-		earlySpringNightSpeedMultiplier = 0.92
-		#Daytime speed multiplier during mid spring. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 0.87
-		# Range: 0.05 ~ 100.0
-		midSpringDaySpeedMultiplier = 0.87
-		#Nighttime speed multiplier during mid spring. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 1.11
-		# Range: 0.05 ~ 100.0
-		midSpringNightSpeedMultiplier = 1.11
-		#Daytime speed multiplier during late spring. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 0.67
-		# Range: 0.05 ~ 100.0
-		lateSpringDaySpeedMultiplier = 0.67
-		#Nighttime speed multiplier during late spring. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 1.28
-		# Range: 0.05 ~ 100.0
-		lateSpringNightSpeedMultiplier = 1.28
-		#Daytime speed multiplier during early summer. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 0.59
-		# Range: 0.05 ~ 100.0
-		earlySummerDaySpeedMultiplier = 0.59
-		#Nighttime speed multiplier during early summer. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 1.35
-		# Range: 0.05 ~ 100.0
-		earlySummerNightSpeedMultiplier = 1.35
-		#Daytime speed multiplier during mid summer. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 0.67
-		# Range: 0.05 ~ 100.0
-		midSummerDaySpeedMultiplier = 0.67
-		#Nighttime speed multiplier during mid summer. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 1.28
-		# Range: 0.05 ~ 100.0
-		midSummerNightSpeedMultiplier = 1.28
-		#Daytime speed multiplier during late summer. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 0.86
-		# Range: 0.05 ~ 100.0
-		lateSummerDaySpeedMultiplier = 0.86
-		#Nighttime speed multiplier during late summer. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 1.12
-		# Range: 0.05 ~ 100.0
-		lateSummerNightSpeedMultiplier = 1.12
-		#Daytime speed multiplier during early autumn. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 1.09
-		# Range: 0.05 ~ 100.0
-		earlyAutumnDaySpeedMultiplier = 1.09
-		#Nighttime speed multiplier during early autumn. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 0.92
-		# Range: 0.05 ~ 100.0
-		earlyAutumnNightSpeedMultiplier = 0.92
-		#Daytime speed multiplier during mid autumn. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 1.28
-		# Range: 0.05 ~ 100.0
-		midAutumnDaySpeedMultiplier = 1.28
-		#Nighttime speed multiplier during mid autumn. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 0.77
-		# Range: 0.05 ~ 100.0
-		midAutumnNightSpeedMultiplier = 0.77
-		#Daytime speed multiplier during late autumn. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 1.47
-		# Range: 0.05 ~ 100.0
-		lateAutumnDaySpeedMultiplier = 1.47
-		#Nighttime speed multiplier during late autumn. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 0.6
-		# Range: 0.05 ~ 100.0
-		lateAutumnNightSpeedMultiplier = 0.6
-		#Daytime speed multiplier during early winter. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 1.55
-		# Range: 0.05 ~ 100.0
-		earlyWinterDaySpeedMultiplier = 1.55
-		#Nighttime speed multiplier during early winter. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 0.54
-		# Range: 0.05 ~ 100.0
-		earlyWinterNightSpeedMultiplier = 0.54
-		#Daytime speed multiplier during mid winter. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 1.45
-		# Range: 0.05 ~ 100.0
-		midWinterDaySpeedMultiplier = 1.45
-		#Nighttime speed multiplier during mid winter. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 0.62
-		# Range: 0.05 ~ 100.0
-		midWinterNightSpeedMultiplier = 0.62
-		#Daytime speed multiplier during late winter. Values below 1 make daytime longer; values above 1 make it shorter.
-		# Default: 1.26
-		# Range: 0.05 ~ 100.0
-		lateWinterDaySpeedMultiplier = 1.26
-		#Nighttime speed multiplier during late winter. Values below 1 make nighttime longer; values above 1 make it shorter.
-		# Default: 0.78
-		# Range: 0.05 ~ 100.0
-		lateWinterNightSpeedMultiplier = 0.78
+	customNightLength = 1.0

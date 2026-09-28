@@ -466,7 +466,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "4f55a3e1f61d2e2868d94c8e5e071b20c256e0cb2a323e2f7faedb5cea1d3ed5"
+hash = "6721089abf5585d6b32fc790cf46b6e0a5dd4a60f8baed15907ff3d2db381bff"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1338,7 +1338,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "37cf0d47b7023ba91c73d12bbe413520bafd44ce9f1a500305a8fa5502baee78"
+hash = "7be74e4783f6a31717cfb866dcf69f0ca27edfd1007be7dc4e5493829f82f6cf"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -1882,11 +1882,15 @@ hash = "388745e75654692bb5b2131e9c6c4b8d3ad949217c531ec9b1b724aa8e564c94"
 
 [[files]]
 file = "config/sereneseasonsplus-common-1.toml.bak"
+hash = "960ead933b8554ba14cf0c298cbd58775dd78bb6710e17f6a939ad174505076e"
+
+[[files]]
+file = "config/sereneseasonsplus-common-2.toml.bak"
 hash = "1d742bb533397cfa56aa5f5578f0c00191ec741b4e780ace6b17a0c7cda174d3"
 
 [[files]]
 file = "config/sereneseasonsplus-common.toml"
-hash = "960ead933b8554ba14cf0c298cbd58775dd78bb6710e17f6a939ad174505076e"
+hash = "1d742bb533397cfa56aa5f5578f0c00191ec741b4e780ace6b17a0c7cda174d3"
 
 [[files]]
 file = "config/sereneseasonsplus-common.toml.pre-descriptive-config-update.bak"
@@ -1962,31 +1966,39 @@ hash = "08b8834b774de64e6e7b78282f536202bec4cfb027d0d9ec625dd73c45006410"
 
 [[files]]
 file = "config/streamsreflowing-client-1.toml.bak"
-hash = "40321a1a469f4bf6ab0f19b9e42ed7e416a47c424728138c935ead239e64ad1f"
+hash = "770b15f43e9c3b05e0acfb882d747db1561272b71dc9241b10fadab8f7ccd8c7"
 
 [[files]]
 file = "config/streamsreflowing-client-2.toml.bak"
+hash = "40321a1a469f4bf6ab0f19b9e42ed7e416a47c424728138c935ead239e64ad1f"
+
+[[files]]
+file = "config/streamsreflowing-client-3.toml.bak"
 hash = "770b15f43e9c3b05e0acfb882d747db1561272b71dc9241b10fadab8f7ccd8c7"
 
 [[files]]
 file = "config/streamsreflowing-client.toml"
-hash = "222ca20f214d032e45c5db5408667974102cd17ae109d130b37d4921348cdca4"
+hash = "40321a1a469f4bf6ab0f19b9e42ed7e416a47c424728138c935ead239e64ad1f"
 
 [[files]]
 file = "config/streamsreflowing-common-1.toml.bak"
-hash = "bbf9669050a7be2598648782046a32eaf7605699fb8a60381a05fc93a6b6ec0a"
-
-[[files]]
-file = "config/streamsreflowing-common-2.toml.bak"
 hash = "4c29a6dc15511bc433cfec1bff7bc56e16e0425752428fd74b5b37b062c47f75"
 
 [[files]]
+file = "config/streamsreflowing-common-2.toml.bak"
+hash = "bbf9669050a7be2598648782046a32eaf7605699fb8a60381a05fc93a6b6ec0a"
+
+[[files]]
 file = "config/streamsreflowing-common-3.toml.bak"
+hash = "4c29a6dc15511bc433cfec1bff7bc56e16e0425752428fd74b5b37b062c47f75"
+
+[[files]]
+file = "config/streamsreflowing-common-4.toml.bak"
 hash = "d1c2d1f54f24c869146b0383954d1046e1a3a5e86e9e403dd98c7e801273e3b4"
 
 [[files]]
 file = "config/streamsreflowing-common.toml"
-hash = "617de5c5961989ca8fc143aa5ce185640e84b074265dfcba3347726851bafdc1"
+hash = "bbf9669050a7be2598648782046a32eaf7605699fb8a60381a05fc93a6b6ec0a"
 
 [[files]]
 file = "config/streamsreflowing/bank_features/.guide_version"
@@ -2079,150 +2091,6 @@ hash = "c73ead5da554de94bec7230fda8ea5cd391170ec2f63487e32a7a1a0b0e489a6"
 [[files]]
 file = "config/streamsreflowing/bank_styles/examples/09_old_2_13_format.json"
 hash = "0d26bd8200a585ac1556d2f91909ee4a9bdb0677aa7457e50dde697b92859e48"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/badlands.json"
-hash = "cf416c37142d08d57d4d4d63b92da99a69d8c3cee1d4e035043097b9a9c04165"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/beach.json"
-hash = "81de3d814269a7a6072bba1a7a0c520f4c257273ffa7dbd3c987df6d495b9053"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/cherry_grove.json"
-hash = "38c9cdd80539396311cf5dee90fe0d2728c646cd3a101d65fb6f9e0943a1cdac"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/climate_dry.json"
-hash = "5ecc12c2a4f3aaabf91a3c20fc311e97c46c7797ed3f0399b2e577ccb2040ce2"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/climate_sandy.json"
-hash = "dbe6517893a3095253c9b75f347ad264820ae5db77d1f01d21a44f79a5bc4c83"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/climate_snowy.json"
-hash = "435300ab6bae0a29c8eef265fa84938e23db5bfed87f6d8daeaa6d05c96b8b66"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/climate_wet.json"
-hash = "1aaca990cdb7e1e8b7200e5da817a54e41b8d2b428d6e437b3cccf363f5c62da"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/dark_forest.json"
-hash = "6aa4be09a555f889a3691cbc620819d80f76c63f0ae616c96a737c4ea07f082c"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/deciduous.json"
-hash = "7586ab7ae7b2f1e44d53bd42218131dbe7de0b40cf294f9a2cbae6b52aa869a2"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/default.json"
-hash = "c8b32a341ff9e602cd320f8346f9096471a25910246ec0397da9884f2377d45e"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/desert.json"
-hash = "885232c4242b7520fe720116bc4cec06d091533ed8096d892517c9ad167cd457"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/forest.json"
-hash = "453bcf8cb03166fa341df9b9e5f97abe3ed50ce0bccd9b9ae47d4efdcdd6001e"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/frozen_river.json"
-hash = "2a3e80cf0eb45f490f6880cbc9b32275f1f7b29ddef7590954a92de9b508e96d"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/jungle.json"
-hash = "4fb6d1f316fb065e42519372bafc800b1015bbae0a85966a31e40a21ccff3f50"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/mangrove_swamp.json"
-hash = "1f3ae5d4a1a5d8bd40c2c133f02206efaa39d234861fef78016f25af62d8c09f"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/meadow.json"
-hash = "82143027faa1e4615f68f1c7c99c5d28f081d00a352bf1c3159ddd22bf6ee3ec"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/mushroom_fields.json"
-hash = "00ae5545f40520204aa101d7c93a87eb8f62edaa3310ea08a20442c505f2061c"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/ocean.json"
-hash = "0f1e506ecab00d8ae9a28046033c68addaac196f9d40556502c814ff1584b172"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/ocean_c.json"
-hash = "9adf186bfb720677382712aecf120c40f88a91169dd097b92e33db191df40632"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/ocean_cold.json"
-hash = "87ffd68832a3aae8554e84e73031ea4acb5c6f14ec8bc379775ffa855a67b354"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/ocean_deep.json"
-hash = "5338c3395552f3a3ca910ca049cf6907d47cf049edbfa8c0b9628d0e914fd7da"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/ocean_frozen.json"
-hash = "16075777cef4ae68bc119a33b38317c4127c6db3e7a675fb4e5cb7d2e94f6b2c"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/ocean_warm.json"
-hash = "b5823f99d47b45e8af5d8949c3f5e6afa37fa1971217a207d31766a83023db5b"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/plains.json"
-hash = "95ff0b7537d0a59ce747a4cfde20a5d7895c7d82d4a183db84efd50d1186ec41"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/plains_c.json"
-hash = "cc0c26bdd736251344e793bd1cd61a6818c8a3789b24f999f66d10b99f0614a0"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/river.json"
-hash = "4292413150f2cb5cbf72fa5b3b395cb7703d116b9e6c45bab279bf3123bc854a"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/river_c.json"
-hash = "a22cc00d439d33531345ef57a0ff0e3ee4cc7eae00cccd35da4ac81e120e93bb"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/savanna.json"
-hash = "3a85d05bee640c6a791d1e2d49760e122e1c75bd85b4c6f956cd0a5953ae8979"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/snowy.json"
-hash = "77027c19c3fece65aa613f209f0b213ee8907b7fec614a039ee805d08d068a91"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/snowy_beach.json"
-hash = "ba68c481b140f8e523ef1e002b0e783546e6a62e530ba496ca26b128b4748552"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/stony_peaks.json"
-hash = "4eb44ae700953010f4b40dafaeb1b1c2157f7b385fc1f6464224af6947fffdb9"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/stony_shore.json"
-hash = "668032e20d6641256283e0f71ffdb6e0c0fcc6e25721b2bb5227e301a0a124c0"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/swamp.json"
-hash = "d43bab09a04d62cdd4e6b5396ffefb512b41fca226ba4ed3c82870476f35a5a1"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/taiga.json"
-hash = "6252bcb22f44506cc59af9ea6ec3906f989c2f4ff76549ee2d6712074973bb79"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/taiga_c.json"
-hash = "21cd3a5bb2cc97e0075977f500c90eee375534b07e69b8da56cdc92dfe38782c"
-
-[[files]]
-file = "config/streamsreflowing/bank_styles/examples/windswept.json"
-hash = "49da707c1a61e1bd6ae5313f0db512fcb4dc4c88c2a855a43c5a72f85d157110"
 
 [[files]]
 file = "config/supplementaries-client.toml"
@@ -2594,7 +2462,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "48ccf754257a1d140c12e4cee3bd7901392023fcd5a3fc961b7275448459fe73"
+hash = "0f6b24d697903dc261c881c4a736ec57c57ed5384f23d77ca9f6cec1e954d559"
 metafile = true
 
 [[files]]
@@ -2838,7 +2706,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-utilities-j.pw.toml"
-hash = "8e3aeb4d5be32f408b2ed7a57f485f343a6a61410cad31d1ff001fb4c57e5276"
+hash = "3a6f302bb4a52f9eb1efcdf9501c67bd0cf8d65f854672c384ca9a19ea81165e"
 metafile = true
 
 [[files]]
@@ -2853,7 +2721,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "2108ab41dd9a48a7a5ac62b89c4cbe152983f71d6aa406b3dce0dfc0a1be486c"
+hash = "30cb84b864534e520ce67d07a7898b71f03d6f346afd54f33d9cb967f4859c54"
 metafile = true
 
 [[files]]
@@ -2976,7 +2844,7 @@ metafile = true
 
 [[files]]
 file = "mods/epic-knights-armor-and-weapons.pw.toml"
-hash = "e6995f53f84ac0d7cd4c0135b5241e6758f7fa7780867d55b084d7ed557f3de4"
+hash = "bea149b35bf291af90b83b04318f2541301ecf00bd57267c7766ce3143a97d20"
 metafile = true
 
 [[files]]
@@ -3176,7 +3044,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "1852c162a57adb3e790ce993c024626ed62026ff5bd9591fac1be61637deae5c"
+hash = "47c701c67e70b60b3a71c9ec4aff707ea0411f033024730b1ca0567b8526a824"
 metafile = true
 
 [[files]]
@@ -3345,7 +3213,7 @@ metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"
-hash = "dd3830820c683676dd7e37cbbe906f3b1449f9d3825d8fbcfd148766c073eae5"
+hash = "0a94f9ca9a86267c51832956da72f6f9b8ba598dcac48c3a93b6e50d38089879"
 metafile = true
 
 [[files]]
@@ -3539,12 +3407,12 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "4447f298596245cf7990175f85aadf51f3c39e9749deea092717769345d063a1"
+hash = "d99554cf4022a273d2cc8108ed590c39965d244e3177316397f6cacc72cd2eb0"
 metafile = true
 
 [[files]]
 file = "mods/serene-seasons-plus.pw.toml"
-hash = "1805582db91071fdbd478e57d4f7168fc509af618b46d0101009bdee633bdcd1"
+hash = "93b93b9f338963d5efff571efae28f26b00e12d7fa736f409db7f9c1e0fc9354"
 metafile = true
 
 [[files]]
@@ -3578,12 +3446,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "83e1cdd88c8686b90ab7c66bb1ae7ae8f82d4db6430d2fcf6792bb6ccf49c286"
+hash = "6121e4631e5fccc9f32c08ec06491fa6383c954d4f6b9b05b05053e435c1d6e2"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "6cb053381e774f83642c33b1673dead3508a5ea5b3a81c7a59044ff65cc72861"
+hash = "8553b9eeb5abd742d869b9e65c25d1f6bd509538cf983fcd840aad47140a6be2"
 metafile = true
 
 [[files]]
@@ -3613,7 +3481,7 @@ metafile = true
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
-hash = "fb961db54e4b94c86e5391dfc173e227b777c6dce70d4867787ea95dce956672"
+hash = "d8936e62d484381b78a252b1f3db63fedbb9e1865b4999efde67fd9c13659dd7"
 metafile = true
 
 [[files]]
@@ -3637,6 +3505,10 @@ hash = "94c24b1c183b93df940560428a3763c94321f33c2a277bf1babf85fba62a864e"
 metafile = true
 
 [[files]]
+file = "mods/swemcull-1.21.1-1.0.4.jar"
+hash = "422487d48fb21c546fcbe8255665f14e7bc7858a29c7ff1124fc800ab698e9c8"
+
+[[files]]
 file = "mods/terrablender-neoforge.pw.toml"
 hash = "d77e4dc337b6090358c1ef01b0f99a8357e5279443e0e23e511de1be865c01c9"
 metafile = true
@@ -3653,7 +3525,7 @@ metafile = true
 
 [[files]]
 file = "mods/torchmaster.pw.toml"
-hash = "f3275e582b2626dcc9ae543154c2eff9aa4b60a571a9103b057db024974b2806"
+hash = "de4baeea541da736247e11bb8a90c66cee56e29e0b999af5ecb9fd82391c166f"
 metafile = true
 
 [[files]]
@@ -3693,7 +3565,7 @@ metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-hash = "42b53ca74c99b3d0edb2ef4e07896b269fd058e049e44e8503d8fd921342eee8"
+hash = "cfc3d0abc9c387a708d246bef5f90481cd62adee3b6ed7e0932042de2bdbcc3e"
 metafile = true
 
 [[files]]
@@ -3830,7 +3702,7 @@ hash = "fe14f85cf5c551fb1d0f122d7fa07a4b371186f15e23b467a409999658974948"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "c30b5f598491582f3c0ce62d89540ff991f1a9535301a6878f896046f5d594c9"
+hash = "9f1422a2962a2001c01ce922fe70d069361d15371fb8d2c9c0627db858ea6d47"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5/ComplementaryLicense.txt"

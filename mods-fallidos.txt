@@ -1,10 +1,10 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-09-28 16:36:31
+ Fecha: 2026-09-28 17:27:36
  Rondas de verificacion: 2
 ============================================================
 
-MODS ARREGLADOS (11)
+MODS ARREGLADOS (12)
 ------------------------------------------------------------
 Estos mods no se pueden bajar por la API de CurseForge (el autor
 los excluyo). Hay dos arreglos posibles:
@@ -57,6 +57,10 @@ los excluyo). Hay dos arreglos posibles:
       accion           : convertido a override
       .pw.toml borrado : skin-layers-3d.pw.toml
       tamano           : 1.82 MB
+  * swemcull-1.21.1-1.0.4.jar
+      accion           : convertido a override
+      .pw.toml borrado : swemcull.pw.toml
+      tamano           : 0.12 MB
 
 RESULTADO FINAL: OK
 Despues de los arreglos, la instalacion de prueba termino sin errores.
