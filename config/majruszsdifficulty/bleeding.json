@@ -22,13 +22,13 @@
       "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
       "amplifier": 1,
       "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
-      "duration": 24.0
+      "duration": 36.0
     },
     "master": {
       "amplifier__comment": "effect level starting at 0, so 0 is level I and 1 is level II (0 - 10)",
       "amplifier": 2,
       "duration__comment": "how long the effect lasts, in seconds (1 - 1000)",
-      "duration": 24.0
+      "duration": 48.0
     }
   },
   "sources": {
