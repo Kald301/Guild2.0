@@ -1,10 +1,10 @@
 [generation]
 	#Average radius (in blocks) of an Alex's Caves cave biome.
-	# Default: 300.0
+	# Default: 160.0
 	# Range: 10.0 ~ 1.7976931348623157E308
 	cave_biome_mean_width = 300.0
 	#Average separation (in blocks) between each Alex's Caves cave biome.
-	# Default: 900
+	# Default: 2000
 	# Range: > 50
 	cave_biome_mean_separation = 900
 	#How irregularly shaped Alex's Caves cave biomes can generate. 0 = all biomes nearly circular. 1 = biomes completely squiggly in shape.
@@ -45,8 +45,6 @@
 	# Default: 300
 	# Range: > 20
 	nucleeper_fuse_time = 300
-	#Whether a mob is allowed to pick itself as its attack target. A mob that hits itself takes the knockback from a direction of zero length, which throws it straight up into the air. False stops that; true restores it, which some players prefer for how it looks.
-	mobs_can_target_themselves = false
 	#True if the Tremorzilla beam breaks even more blocks.
 	devastating_tremorzilla_beam = true
 	#Whether the Watcher can take control of the camera.
@@ -87,7 +85,7 @@
 	nuke_max_block_explosion_resistance = 1000
 	#The scale of nuclear bomb destruction. multiply this by 16 to get the radius of a nuclear bomb explosion.
 	# Default: 3.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ 100.0
 	nuclear_explosion_size_modifier = 3.0
 	#Whether the Totem of Possession can be applied to players.
 	totem_of_possession_works_on_players = true
@@ -141,7 +139,3 @@
 	loot_chest_in_witch_huts = true
 	#Whether the Enchantments added by AC appear in vanilla loot tables.
 	enchantments_in_loot = false
-	#Chance (0 to 1) that the Enchantments added by AC can be picked each time a loot table rolls a random enchantment. Lower it to make them rarer in loot; 0 keeps them out of random loot entirely. Works alongside enchantments_in_loot.
-	# Default: 0.5
-	# Range: 0.0 ~ 1.0
-	enchantment_loot_chance = 0.5

@@ -1,0 +1,13 @@
+name = "Iris Caves"
+filename = "iriscaves-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b91cb148e19c7a16234286b1d30c9dd9b528aab6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8822025
+project-id = 1607375

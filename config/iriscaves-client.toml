@@ -1,0 +1,21 @@
+#IrisCaves — automatic shader pack patching
+[general]
+	#MASTER SWITCH for the patch feature.
+	#Set to false to fully disable patching: the mod will not scan the shaderpacks
+	#folder and will not generate any '<pack>_iriscaves' copy. Nothing else the mod
+	#does depends on this, so false effectively turns the pack integration off.
+	autoPatch = true
+	#Re-generate the patched copy when the source pack (or this mod's patch set) changes.
+	#When false, an existing patched copy is left untouched.
+	regenerateOnChange = true
+	#After generating, attempt to select the patched pack in Iris automatically.
+	#Off by default so the mod never overrides the pack you picked; enable if you want
+	#IrisCaves to switch you onto the patched pack on its own.
+	autoSelect = false
+	#BLACKLIST of shader packs the mod must NOT auto-patch.
+	#Put the folder name (or the .zip name without '.zip') of any pack you want left
+	#completely alone. Matching is case-insensitive and by substring, so an entry of
+	#"photon" blocks "photon_v1.3b", and "BSL" blocks "BSL_v8.4".
+	#The example entry below matches no real pack — replace it with your own. Example:
+	#  patchBlacklist = ["photon_v1.3b", "BSL_v8.4", "MyCustomPack"]
+	patchBlacklist = ["ExampleShaderName-replace-me"]

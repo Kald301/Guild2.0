@@ -1,5 +1,6 @@
 [
   {"version":1},
+  {"ingredient":{"id":"minecraft:end_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aquamirae:fin"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aquamirae:abyssal_tiara"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aquamirae:frozen_key"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -28,7 +29,6 @@
   {"ingredient":{"id":"ycurrenci:resinaquimica"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"sophisticatedbackpacks:tank_upgrade"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:elytra"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:end_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:ender_chest"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:bone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"iceandfire:chain"},"type":"item_stack","bookmarkType":"INGREDIENT"},
