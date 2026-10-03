@@ -478,7 +478,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "be1d9c305ea61935e3f2c462746a72483f1f5233e57981455347926f77836506"
+hash = "6549c8e6f576e181e76acc2a7c263963d2c3b21779acc199ffcada13e9ce4ccd"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -649,6 +649,14 @@ file = "config/c2me.toml"
 hash = "9e83d6f0be06a9667bc3245ad5ef52624861b9045725dcef2df61a3b819ca5a4"
 
 [[files]]
+file = "config/camera-client.toml"
+hash = "e1d6ec13c3ff73ab9bdf86177c22089c6e76b4f3140298f8f8cc601bda9e9077"
+
+[[files]]
+file = "config/camera-server.toml"
+hash = "d706ac615a38636d4ae02d962754b1ba5be90e4a9dabc788d9ebc66ed5d5f555"
+
+[[files]]
 file = "config/carryon-client.toml"
 hash = "865a366143df5f4d92941058c823ea48deb8445f6444b45e870331b16a444f0f"
 
@@ -730,7 +738,7 @@ hash = "687143b4844094f166ff875447d139941970649475924d47ce8982e04ef1cf5d"
 
 [[files]]
 file = "config/couplesmod-common.toml"
-hash = "a31baeb9acdaedf93f625833ed29340aa1b04a961962a7eafa969784877c9591"
+hash = "08d18a5c4bd2c6f036eb96fd05609332de306d20f153f647f8de57a0b15c459c"
 
 [[files]]
 file = "config/create-client.toml"
@@ -1162,7 +1170,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "ef0b183b2927f3b6a35d5d834c90c3a8fb6b8f0831be8046e13eb04bb07a7282"
+hash = "1b9428100e411ca8c53d15646faa079b9740894ce31ff4821c3d7a37fba8ebf8"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1170,7 +1178,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "d7c9ab93ad438c976c10a56d60ad973fa2d1f78d127476d79168f9ae8f197706"
+hash = "c81720fca1f4682a590f7d3674598d04405a164cd0e6f38ca5c7b7f4c1e60880"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1178,7 +1186,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "81197bb43a0f6c233820742666df32b287033874a6dfd55c999e52d3e6121688"
+hash = "1b9428100e411ca8c53d15646faa079b9740894ce31ff4821c3d7a37fba8ebf8"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1226,7 +1234,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "fca61d45f109e6123431fac48336de51b7c0f9a9865a187aceb6021d4311b419"
+hash = "b0417cd86c3360e3fc33410ce486a26e323fb0bc393575f5ec4baa6a1296f231"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1297,6 +1305,10 @@ file = "config/iceandfire/iaf-common.json"
 hash = "844e896649ecf7cde301884e8a2206de08fbb7088cede5cb959fa98e6cde995a"
 
 [[files]]
+file = "config/immediatelyfast.json"
+hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
+
+[[files]]
 file = "config/inventoryhud-client.toml"
 hash = "57cb563686856ba273590ea41ebafe1db80661491e2ba60dc6b5c03f92548bc6"
 
@@ -1314,7 +1326,7 @@ hash = "35445c24f55c339768145024b0f42df3b027f7526bbb35ec88ac20119634b64d"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/refillDisabledSlots.txt"
-hash = "55b5872bd8c8fabf6d8531b88728bb72a94bd6064cbe74041dbd8ec1a4cb038a"
+hash = "7036fe71ac482004c64486744d50e8c1adbbb777c16bc7516288555465226e82"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/villager-trading-config-v2.json"
@@ -1358,7 +1370,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "02d9ba891e66174947140e0e578985aef7b203d2cff5a27580ac80f39549bc2b"
+hash = "c3cdcbe60f772e4381373d8dbb52e329ef858eca4d75f6f9d5d4be2de2d1357d"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -1382,11 +1394,11 @@ hash = "1b9faa0637ce35640b258cb9a6ede6d7fbe23f3138e1f3e04167caef4f204ecc"
 
 [[files]]
 file = "config/jade/plugins.json"
-hash = "bfcc10a09d18f307edaff8a664bfd92e30b9b6b965463150027a75c3a1168a7c"
+hash = "0d8ecbfacf758015e850664fe8d850a865a8f9004a125378c15f8137745fc768"
 
 [[files]]
 file = "config/jade/sort-order.json"
-hash = "e81b8cc0306041fa305b0f76f6a6558fd78325ed49aa2a092cdf6ccd1f0d2917"
+hash = "6ad3df5e204c1c699814c664df341717f67bdb4ca7198608c98a977da6b044c8"
 
 [[files]]
 file = "config/jauml/config.json"
@@ -1422,7 +1434,7 @@ hash = "2e5119684366f75bc8a6df871381c6094a812cadd0d5ed0547405b5f1353f9e1"
 
 [[files]]
 file = "config/jei/client/ingredient-list-mod-sort-order.ini"
-hash = "f4826bbc3f8897ca5a8d55feb6fa8f0bd447dda2998c19ccf16d529d0d100333"
+hash = "ca766117ab414125e40118d671831f8321ddea797f01864e6c0ab296ea91e4c7"
 
 [[files]]
 file = "config/jei/client/ingredient-list-type-sort-order.ini"
@@ -1518,15 +1530,15 @@ hash = "2fc8764ace825ea648953800377c2fe600080b83a5129f8d07c25800e5b53989"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/bookmarks.json"
-hash = "ed8a77e14f555974ec9786249afbf9815e8c94bc9dbf3963db4b18741d9d5e65"
+hash = "653bc29e6efdb2b7631d6e0b98a1176013e6ea274a4ec93011c1541c1760a392"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "2b403f343b677a85d90ab2aaaede3b11b13c30b3212a5ce14ca9623c6ac246b3"
+hash = "2ff44e7ea493579afaf667adbb35bc4d1ee7b488fae30768c157ae7354d1c473"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "9aa00c489281c1aa792800df1beb087e92f6567f5445a4e11e79ab32064d26b8"
+hash = "3452bdee0653d227bbe1f371c4c2ffb8292b6e834ab0565ea4637916d13cb58a"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -1650,6 +1662,14 @@ hash = "874afb6e8e520e75810459176d5fd3e0b9d321e02f4282d81b649182947db605"
 
 [[files]]
 file = "config/mcaconversations-common-1.toml.bak"
+hash = "f3549f6adffea4b0173deaad5911d27a54ec8f9b172bce1fa44c15349ace9302"
+
+[[files]]
+file = "config/mcaconversations-common-2.toml.bak"
+hash = "f51f9c45efc1ea6b6bdef22bb1c4119a1b2b5e02f8d0f401cd40cf4daa1057d4"
+
+[[files]]
+file = "config/mcaconversations-common-3.toml.bak"
 hash = "1ce846c12a2c88d0713014249090f88047bb46f0f4ff4b994b2bda43d41801a2"
 
 [[files]]
@@ -1666,14 +1686,22 @@ hash = "7cef954b96e217dc3af9b90ccb24c76ec0e546b9debe53c9d5a03239190140ac"
 
 [[files]]
 file = "config/mcaquests-client-1.toml.bak"
-hash = "0df7b8f754461c8c4d6779a408e1aa883c2bc4fb7244fdd7fb4c5d888e1bdad0"
+hash = "f22a0e6eb1e01f5d88e677576072a792d4f7de238a08293e90b70a3457b91b0a"
 
 [[files]]
 file = "config/mcaquests-client-2.toml.bak"
-hash = "972bf5acab3fc9157c0bab7bc076298068ef1e5281721ecb2b7e8c38b325e7e0"
+hash = "b8238b12774695070b8060246a765fc6bd40b794b41f85d6fe77617a9c45b998"
 
 [[files]]
 file = "config/mcaquests-client-3.toml.bak"
+hash = "0df7b8f754461c8c4d6779a408e1aa883c2bc4fb7244fdd7fb4c5d888e1bdad0"
+
+[[files]]
+file = "config/mcaquests-client-4.toml.bak"
+hash = "972bf5acab3fc9157c0bab7bc076298068ef1e5281721ecb2b7e8c38b325e7e0"
+
+[[files]]
+file = "config/mcaquests-client-5.toml.bak"
 hash = "bd4b086ae0d54672722e41d74356b3c3dcd6d21b59c48c7085b93b558e0da03d"
 
 [[files]]
@@ -1682,14 +1710,22 @@ hash = "b8238b12774695070b8060246a765fc6bd40b794b41f85d6fe77617a9c45b998"
 
 [[files]]
 file = "config/mcaquests-common-1.toml.bak"
-hash = "541896681679e803fc70468b2f5c7ec91f25abef84952b3156888195e6c13b15"
+hash = "3d4ba67cbfcb2fd39e2119b77aed0ed71b405dff77f8427ca56c3aea8f80c202"
 
 [[files]]
 file = "config/mcaquests-common-2.toml.bak"
-hash = "8a6e2f8645ff0b4c59c2460c3bdef0fadb61f0ed899eb55d806f7c0944f00424"
+hash = "70186380a41e71e561f740f6a1709123b69ab2219aa28a73dd0ea2c67d507ee1"
 
 [[files]]
 file = "config/mcaquests-common-3.toml.bak"
+hash = "541896681679e803fc70468b2f5c7ec91f25abef84952b3156888195e6c13b15"
+
+[[files]]
+file = "config/mcaquests-common-4.toml.bak"
+hash = "8a6e2f8645ff0b4c59c2460c3bdef0fadb61f0ed899eb55d806f7c0944f00424"
+
+[[files]]
+file = "config/mcaquests-common-5.toml.bak"
 hash = "0e3e2d61860e302786ad227eab85d155f026d8522f283ae8326216a2533168c7"
 
 [[files]]
@@ -2238,7 +2274,7 @@ hash = "00c6e34f0adbb41db954d296fd7c55dc3412463a38038dc836626433dd7f6d92"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "5c6d98b4b1ecd0d01edf820bd8828d6d45b5e22b47e906eeab6a025137ec6b26"
+hash = "d57f3237522c2ca9704bd373dcde5137e66789bcbce020e5387aff0939674690"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -2583,6 +2619,11 @@ metafile = true
 [[files]]
 file = "mods/c2me.pw.toml"
 hash = "8a0bea28f988792ff9093667d301f33015fb3cdd6bffb4648c842f0b246caf80"
+metafile = true
+
+[[files]]
+file = "mods/camera-mod.pw.toml"
+hash = "ea66cd2caa9bbc2adb768f142bf717e0845ba33815f828daa26b10c543dd86db"
 metafile = true
 
 [[files]]
@@ -3025,6 +3066,11 @@ metafile = true
 [[files]]
 file = "mods/iceandfire-ce.pw.toml"
 hash = "271f993e5d60a3c6262154be945bc5b61b181f7dd7b2d821eeadd7b7089bb26a"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "fec42f4ea33169c1ea9c14f6b179325f974367eb7c7082dfffe9c483789a19f1"
 metafile = true
 
 [[files]]
@@ -3600,7 +3646,7 @@ metafile = true
 
 [[files]]
 file = "mods/tree-harvester.pw.toml"
-hash = "acaf6d5f5cc298e92fd1a9598330661aefdb6721447e23300b2adc54433be57e"
+hash = "8c339966c6092921b9f89a1bd03862b8e1109338f14f0e3446cfe983d6779d33"
 metafile = true
 
 [[files]]
@@ -8842,7 +8888,7 @@ hash = "e8ce4fad71a8b58e9c8edb834001b3c3695febaed9e7741aa661f64c93df0976"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "57a1320f52650dd2de5c8cd739635645e2fd3a77825a85e698e96d7685c5a3b6"
+hash = "953216e27a08c7fbcc65d9655911678a656b47b02721809741c2a9f45a61ac64"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5/ComplementaryLicense.txt"

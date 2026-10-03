@@ -105,6 +105,9 @@
   "rats": {
     "tamed_rat_info": true
   },
+  "camera": {
+    "image_frame": true
+  },
   "corpse": {
     "corpse": true
   }
