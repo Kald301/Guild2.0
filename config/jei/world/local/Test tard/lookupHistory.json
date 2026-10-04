@@ -1,5 +1,6 @@
 [
   {"version":1},
+  {"ingredient":{"id":"guildwings:wing_harness","components":"{\"guildwings:wing_type\":\"angel_wings\"}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:glowstone_dust"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:prismarine_crystals"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:prismarine_shard"},"type":"item_stack","bookmarkType":"INGREDIENT"}

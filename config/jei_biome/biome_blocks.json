@@ -1,10 +1,10 @@
 {
   "version": 10,
-  "generatedAt": "2026-10-03T17:42:57.275964300Z",
+  "generatedAt": "2026-10-04T13:46:17.271903100Z",
   "biomes": [
     {
       "biomeId": "alexscaves:abyssal_chasm",
-      "placedFeatureCount": 100,
+      "placedFeatureCount": 63,
       "placedFeatureIds": [
         "alexscaves:abyssal_boulder",
         "alexscaves:black_vent",
@@ -17,24 +17,7 @@
         "alexscaves:tube_worm",
         "alexscaves:twilight_anemone",
         "alexscaves:whalefall",
-        "artifacts:underground_campsite",
-        "artifacts:underground_minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore_placed",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node_placed",
-        "createreautomated:diamond_node_placed",
-        "createreautomated:gold_node_placed",
-        "createreautomated:iron_node_placed",
-        "createreautomated:zinc_node_placed",
         "croptopia:disk_salt_placed",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "iceandfire:spawn_hippocampus",
         "iceandfire:spawn_sea_serpent",
         "minecraft:brown_mushroom_normal",
@@ -72,17 +55,8 @@
         "minecraft:patch_sugar_cane",
         "minecraft:red_mushroom_normal",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:cave_urns",
         "supplementaries:ocean_barnacles",
         "supplementaries:shore_barnacles",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_placed",
-        "swem:sw_cobble_placed",
         "ycurrenci:marmore"
       ],
       "configuredFeatureIds": [
@@ -97,24 +71,7 @@
         "alexscaves:tube_worm",
         "alexscaves:twilight_anemone",
         "alexscaves:whalefall",
-        "artifacts:campsite",
-        "artifacts:minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "croptopia:disk_salt",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "iceandfire:spawn_hippocampus",
         "iceandfire:spawn_sea_serpent",
         "minecraft:disk_clay",
@@ -146,17 +103,8 @@
         "minecraft:patch_red_mushroom",
         "minecraft:patch_sugar_cane",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
         "supplementaries:barnacles_growth",
         "supplementaries:barnacles_patch",
-        "supplementaries:urns_patch",
-        "supplementaries:wild_flax_patch",
-        "swem:cantazarite",
-        "swem:sw_cobble",
         "ycurrenci:marmore"
       ],
       "terrainBlocks": [
@@ -171,33 +119,10 @@
         "minecraft:poppy",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
-        "minecraft:short_grass",
-        "supplementaries:wild_flax"
+        "minecraft:short_grass"
       ],
-      "undergroundFeatureBlocks": [
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "supplementaries:urn"
-      ],
+      "undergroundFeatureBlocks": [],
       "oreBlocks": [
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:coal_ore",
         "minecraft:copper_ore",
@@ -218,8 +143,6 @@
         "minecraft:lapis_ore",
         "minecraft:redstone_ore",
         "minecraft:tuff",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ],
       "oreDistributions": [
@@ -624,126 +547,6 @@
           ]
         },
         {
-          "blockId": "swem:cantazarite_ore",
-          "lines": [
-            {
-              "sourceId": "swem:cantazarite_placed",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "30",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:deepslate_lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "swem:star_worm_cobble",
-          "lines": [
-            {
-              "sourceId": "swem:sw_cobble_placed",
-              "sourceKind": "common",
-              "veinSize": 7,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "50",
-              "maxHeight": "128",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:black_argillite",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:black_argillite",
-              "sourceKind": "common",
-              "veinSize": 27,
-              "attemptsPerChunk": "3",
-              "averageEveryChunks": "",
-              "minHeight": "-17",
-              "maxHeight": "17",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create_better_motors:deepslate_reggarfonite_ore",
-          "lines": [
-            {
-              "sourceId": "create_better_motors:deepslate_reggarfonite_ore",
-              "sourceKind": "common",
-              "veinSize": 10,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "40",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_deepslate_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "-128",
-              "maxHeight": "-8",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "16",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
           "blockId": "ycurrenci:marmore",
           "lines": [
             {
@@ -757,76 +560,16 @@
               "heightMode": "even"
             }
           ]
-        },
-        {
-          "blockId": "iceandfire:silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:deepslate_silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "create:zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create:deepslate_zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
         }
       ],
       "mobSpawns": [
         {
-          "entityId": "alexsmobs:fly",
-          "category": "ambient",
-          "weight": 3,
-          "minCount": 2,
-          "maxCount": 3,
-          "placementType": "on_ground",
+          "entityId": "alexscaves:gossamer_worm",
+          "category": "alexscaves:deep_sea_creature",
+          "weight": 20,
+          "minCount": 1,
+          "maxCount": 1,
+          "placementType": "in_water",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
           "spawnCharge": "",
@@ -834,17 +577,34 @@
           "dropItems": []
         },
         {
-          "entityId": "swem:swem_horse",
-          "category": "creature",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 5,
-          "placementType": "on_ground",
+          "entityId": "alexscaves:sea_pig",
+          "category": "alexscaves:deep_sea_creature",
+          "weight": 50,
+          "minCount": 3,
+          "maxCount": 4,
+          "placementType": "in_water",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
           "spawnCharge": "",
           "spawnEnergyBudget": "",
-          "dropItems": []
+          "dropItems": [
+            "alexscaves:sea_pig"
+          ]
+        },
+        {
+          "entityId": "alexscaves:tripodfish",
+          "category": "alexscaves:deep_sea_creature",
+          "weight": 40,
+          "minCount": 1,
+          "maxCount": 2,
+          "placementType": "in_water",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": [
+            "alexscaves:tripodfish"
+          ]
         },
         {
           "entityId": "alexscaves:deep_one_knight",
@@ -1613,62 +1373,6 @@
           ]
         },
         {
-          "entityId": "golemoverhaul:slime_golem",
-          "category": "monster",
-          "weight": 25,
-          "minCount": 1,
-          "maxCount": 2,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:slime_ball"
-          ]
-        },
-        {
-          "entityId": "majruszsdifficulty:cursed_armor",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:illusioner",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:tank",
-          "category": "monster",
-          "weight": 3,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:bone"
-          ]
-        },
-        {
           "entityId": "minecraft:creeper",
           "category": "monster",
           "weight": 100,
@@ -1846,21 +1550,6 @@
           "dropItems": []
         },
         {
-          "entityId": "spider_overhaul:cavern_spider",
-          "category": "monster",
-          "weight": 120,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:string"
-          ]
-        },
-        {
           "entityId": "friendsandfoes:rascal",
           "category": "rascals",
           "weight": 4,
@@ -1944,35 +1633,6 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:devils_hole_pupfish",
-          "category": "water_ambient",
-          "weight": 23,
-          "minCount": 5,
-          "maxCount": 12,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:flying_fish",
-          "category": "water_ambient",
-          "weight": 8,
-          "minCount": 3,
-          "maxCount": 6,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "alexsmobs:flying_fish",
-            "minecraft:bone_meal"
-          ]
         },
         {
           "entityId": "aquaculture:atlantic_halibut",
@@ -2158,49 +1818,6 @@
           "dropItems": []
         },
         {
-          "entityId": "alexscaves:gossamer_worm",
-          "category": "water_creature",
-          "weight": 20,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexscaves:sea_pig",
-          "category": "water_creature",
-          "weight": 50,
-          "minCount": 3,
-          "maxCount": 4,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "alexscaves:sea_pig"
-          ]
-        },
-        {
-          "entityId": "alexscaves:tripodfish",
-          "category": "water_creature",
-          "weight": 40,
-          "minCount": 1,
-          "maxCount": 2,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "alexscaves:tripodfish"
-          ]
-        },
-        {
           "entityId": "alexsmobs:cachalot_whale",
           "category": "water_creature",
           "weight": 2,
@@ -2322,47 +1939,15 @@
         }
       ],
       "featureBlocks": [
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:brown_mushroom",
         "minecraft:dandelion",
         "minecraft:poppy",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
-        "minecraft:short_grass",
-        "supplementaries:urn",
-        "supplementaries:wild_flax"
+        "minecraft:short_grass"
       ],
       "allBlocks": [
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "croptopia:salt_ore",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:brown_mushroom",
         "minecraft:clay",
@@ -2391,16 +1976,12 @@
         "minecraft:sand",
         "minecraft:short_grass",
         "minecraft:tuff",
-        "supplementaries:urn",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ]
     },
     {
       "biomeId": "alexscaves:candy_cavity",
-      "placedFeatureCount": 113,
+      "placedFeatureCount": 69,
       "placedFeatureIds": [
         "alexscaves:candy_cane",
         "alexscaves:candy_ruins",
@@ -2420,23 +2001,6 @@
         "alexscaves:sweet_puff",
         "alexscaves:sweetberry_ice_cream_scoop",
         "alexscaves:vanilla_ice_cream_scoop",
-        "artifacts:underground_campsite",
-        "artifacts:underground_minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore_placed",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node_placed",
-        "createreautomated:diamond_node_placed",
-        "createreautomated:gold_node_placed",
-        "createreautomated:iron_node_placed",
-        "createreautomated:zinc_node_placed",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:brown_mushroom_normal",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
@@ -2476,15 +2040,6 @@
         "minecraft:red_mushroom_normal",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:cave_urns",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_placed",
-        "swem:sw_cobble_placed",
         "ycurrenci:marmore"
       ],
       "configuredFeatureIds": [
@@ -2506,23 +2061,6 @@
         "alexscaves:sweet_puff",
         "alexscaves:sweetberry_ice_cream_scoop",
         "alexscaves:vanilla_ice_cream_scoop",
-        "artifacts:campsite",
-        "artifacts:minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
         "minecraft:disk_sand",
@@ -2557,15 +2095,6 @@
         "minecraft:patch_tall_grass",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:urns_patch",
-        "supplementaries:wild_flax_patch",
-        "swem:cantazarite",
-        "swem:sw_cobble",
         "ycurrenci:marmore"
       ],
       "terrainBlocks": [
@@ -2582,33 +2111,10 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
-      "undergroundFeatureBlocks": [
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "supplementaries:urn"
-      ],
+      "undergroundFeatureBlocks": [],
       "oreBlocks": [
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:coal_ore",
         "minecraft:copper_ore",
@@ -2629,8 +2135,6 @@
         "minecraft:lapis_ore",
         "minecraft:redstone_ore",
         "minecraft:tuff",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ],
       "oreDistributions": [
@@ -3035,126 +2539,6 @@
           ]
         },
         {
-          "blockId": "swem:cantazarite_ore",
-          "lines": [
-            {
-              "sourceId": "swem:cantazarite_placed",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "30",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:deepslate_lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "swem:star_worm_cobble",
-          "lines": [
-            {
-              "sourceId": "swem:sw_cobble_placed",
-              "sourceKind": "common",
-              "veinSize": 7,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "50",
-              "maxHeight": "128",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:black_argillite",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:black_argillite",
-              "sourceKind": "common",
-              "veinSize": 27,
-              "attemptsPerChunk": "3",
-              "averageEveryChunks": "",
-              "minHeight": "-17",
-              "maxHeight": "17",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create_better_motors:deepslate_reggarfonite_ore",
-          "lines": [
-            {
-              "sourceId": "create_better_motors:deepslate_reggarfonite_ore",
-              "sourceKind": "common",
-              "veinSize": 10,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "40",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_deepslate_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "-128",
-              "maxHeight": "-8",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "16",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
           "blockId": "ycurrenci:marmore",
           "lines": [
             {
@@ -3168,98 +2552,12 @@
               "heightMode": "even"
             }
           ]
-        },
-        {
-          "blockId": "iceandfire:silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:deepslate_silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "create:zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create:deepslate_zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
         }
       ],
       "mobSpawns": [
         {
-          "entityId": "alexsmobs:cockroach",
-          "category": "ambient",
-          "weight": 4,
-          "minCount": 5,
-          "maxCount": 5,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:fly",
-          "category": "ambient",
-          "weight": 3,
-          "minCount": 2,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "alexscaves:candicorn",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 100,
           "minCount": 4,
           "maxCount": 6,
@@ -3272,23 +2570,10 @@
         },
         {
           "entityId": "alexscaves:gummy_bear",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 100,
           "minCount": 1,
           "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "swem:swem_horse",
-          "category": "creature",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 5,
           "placementType": "on_ground",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
@@ -3346,45 +2631,6 @@
           "hasPlacement": true,
           "spawnCharge": "1",
           "spawnEnergyBudget": "0.3",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:centipede_head",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:farseer",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:murmur",
-          "category": "monster",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
           "dropItems": []
         },
         {
@@ -4102,62 +3348,6 @@
           ]
         },
         {
-          "entityId": "golemoverhaul:slime_golem",
-          "category": "monster",
-          "weight": 25,
-          "minCount": 1,
-          "maxCount": 2,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:slime_ball"
-          ]
-        },
-        {
-          "entityId": "majruszsdifficulty:cursed_armor",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:illusioner",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:tank",
-          "category": "monster",
-          "weight": 3,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:bone"
-          ]
-        },
-        {
           "entityId": "mowziesmobs:grottol",
           "category": "monster",
           "weight": 2,
@@ -4200,27 +3390,12 @@
           "dropItems": []
         },
         {
-          "entityId": "spider_overhaul:cavern_spider",
-          "category": "monster",
-          "weight": 120,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:string"
-          ]
-        },
-        {
           "entityId": "alexscaves:sweetish_fish",
           "category": "water_ambient",
           "weight": 10,
           "minCount": 1,
           "maxCount": 3,
-          "placementType": "no_restrictions",
+          "placementType": "custom",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
           "spawnCharge": "",
@@ -4228,19 +3403,6 @@
           "dropItems": [
             "alexscaves:sweetish_fish_red"
           ]
-        },
-        {
-          "entityId": "alexsmobs:devils_hole_pupfish",
-          "category": "water_ambient",
-          "weight": 23,
-          "minCount": 5,
-          "maxCount": 12,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
         },
         {
           "entityId": "aquaculture:bluegill",
@@ -4421,16 +3583,6 @@
         }
       ],
       "featureBlocks": [
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:brown_mushroom",
         "minecraft:dandelion",
         "minecraft:oak_leaves",
@@ -4438,31 +3590,9 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:urn",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "allBlocks": [
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:brown_mushroom",
         "minecraft:clay",
@@ -4493,16 +3623,12 @@
         "minecraft:short_grass",
         "minecraft:tall_grass",
         "minecraft:tuff",
-        "supplementaries:urn",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ]
     },
     {
       "biomeId": "alexscaves:forlorn_hollows",
-      "placedFeatureCount": 102,
+      "placedFeatureCount": 67,
       "placedFeatureIds": [
         "alexscaves:coprolith_coal_ore",
         "alexscaves:dirt_replace_packed_mud",
@@ -4515,28 +3641,12 @@
         "alexscaves:thornwood_roots",
         "alexscaves:thornwood_tree_with_branches",
         "alexscaves:underweed",
-        "artifacts:underground_campsite",
-        "artifacts:underground_minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore_placed",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node_placed",
-        "createreautomated:diamond_node_placed",
-        "createreautomated:gold_node_placed",
-        "createreautomated:iron_node_placed",
-        "createreautomated:zinc_node_placed",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:brown_mushroom_normal",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
         "minecraft:disk_sand",
         "minecraft:flower_plains",
+        "minecraft:freeze_top_layer",
         "minecraft:glow_lichen",
         "minecraft:lake_lava_surface",
         "minecraft:lake_lava_underground",
@@ -4573,16 +3683,8 @@
         "minecraft:red_mushroom_normal",
         "minecraft:spring_lava",
         "minecraft:spring_water",
+        "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:cave_urns",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_placed",
-        "swem:sw_cobble_placed",
         "ycurrenci:marmore"
       ],
       "configuredFeatureIds": [
@@ -4597,30 +3699,16 @@
         "alexscaves:thornwood_roots",
         "alexscaves:thornwood_tree_with_branches",
         "alexscaves:underweed",
-        "artifacts:campsite",
-        "artifacts:minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
         "minecraft:disk_sand",
+        "minecraft:fancy_oak_bees_005",
         "minecraft:flower_plain",
+        "minecraft:freeze_top_layer",
         "minecraft:glow_lichen",
         "minecraft:lake_lava",
         "minecraft:monster_room",
+        "minecraft:oak_bees_005",
         "minecraft:ore_andesite",
         "minecraft:ore_coal",
         "minecraft:ore_coal_buried",
@@ -4647,61 +3735,32 @@
         "minecraft:patch_tall_grass",
         "minecraft:spring_lava_overworld",
         "minecraft:spring_water",
+        "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:urns_patch",
-        "supplementaries:wild_flax_patch",
-        "swem:cantazarite",
-        "swem:sw_cobble",
         "ycurrenci:marmore"
       ],
       "terrainBlocks": [
         "minecraft:clay",
+        "minecraft:dirt",
         "minecraft:gravel",
         "minecraft:sand"
       ],
       "surfaceFeatureBlocks": [
+        "alexscaves:underweed",
         "minecraft:brown_mushroom",
         "minecraft:dandelion",
         "minecraft:glow_lichen",
+        "minecraft:oak_leaves",
+        "minecraft:oak_log",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
-      "undergroundFeatureBlocks": [
-        "alexscaves:underweed",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "minecraft:brown_mushroom",
-        "supplementaries:urn"
-      ],
+      "undergroundFeatureBlocks": [],
       "oreBlocks": [
         "alexscaves:coprolith_coal_ore",
         "alexscaves:guanostone_redstone_ore",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:coal_ore",
         "minecraft:copper_ore",
@@ -4722,8 +3781,6 @@
         "minecraft:lapis_ore",
         "minecraft:redstone_ore",
         "minecraft:tuff",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ],
       "oreDistributions": [
@@ -4762,7 +3819,7 @@
               "attemptsPerChunk": "25",
               "averageEveryChunks": "",
               "minHeight": "世界底部+-15",
-              "maxHeight": "世界底部+120",
+              "maxHeight": "192",
               "heightMode": "even"
             }
           ]
@@ -5168,126 +4225,6 @@
           ]
         },
         {
-          "blockId": "swem:cantazarite_ore",
-          "lines": [
-            {
-              "sourceId": "swem:cantazarite_placed",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "30",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:deepslate_lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "swem:star_worm_cobble",
-          "lines": [
-            {
-              "sourceId": "swem:sw_cobble_placed",
-              "sourceKind": "common",
-              "veinSize": 7,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "50",
-              "maxHeight": "128",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:black_argillite",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:black_argillite",
-              "sourceKind": "common",
-              "veinSize": 27,
-              "attemptsPerChunk": "3",
-              "averageEveryChunks": "",
-              "minHeight": "-17",
-              "maxHeight": "17",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create_better_motors:deepslate_reggarfonite_ore",
-          "lines": [
-            {
-              "sourceId": "create_better_motors:deepslate_reggarfonite_ore",
-              "sourceKind": "common",
-              "veinSize": 10,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "40",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_deepslate_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "-128",
-              "maxHeight": "-8",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "16",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
           "blockId": "ycurrenci:marmore",
           "lines": [
             {
@@ -5298,66 +4235,6 @@
               "averageEveryChunks": "",
               "minHeight": "0",
               "maxHeight": "1000",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:deepslate_silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "create:zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create:deepslate_zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
               "heightMode": "even"
             }
           ]
@@ -5378,50 +4255,11 @@
           "dropItems": []
         },
         {
-          "entityId": "alexsmobs:cockroach",
-          "category": "ambient",
-          "weight": 4,
-          "minCount": 5,
-          "maxCount": 5,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:fly",
-          "category": "ambient",
-          "weight": 3,
-          "minCount": 2,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "minecraft:bat",
           "category": "ambient",
           "weight": 10,
           "minCount": 8,
           "maxCount": 8,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "swem:swem_horse",
-          "category": "creature",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 5,
           "placementType": "on_ground",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
@@ -5471,35 +4309,9 @@
           "dropItems": []
         },
         {
-          "entityId": "alexsmobs:centipede_head",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "alexsmobs:farseer",
           "category": "monster",
           "weight": 30,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:murmur",
-          "category": "monster",
-          "weight": 5,
           "minCount": 1,
           "maxCount": 1,
           "placementType": "on_ground",
@@ -6224,62 +5036,6 @@
           ]
         },
         {
-          "entityId": "golemoverhaul:slime_golem",
-          "category": "monster",
-          "weight": 25,
-          "minCount": 1,
-          "maxCount": 2,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:slime_ball"
-          ]
-        },
-        {
-          "entityId": "majruszsdifficulty:cursed_armor",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:illusioner",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:tank",
-          "category": "monster",
-          "weight": 3,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:bone"
-          ]
-        },
-        {
           "entityId": "mowziesmobs:grottol",
           "category": "monster",
           "weight": 2,
@@ -6315,34 +5071,6 @@
           "minCount": 2,
           "maxCount": 4,
           "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "spider_overhaul:cavern_spider",
-          "category": "monster",
-          "weight": 120,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:string"
-          ]
-        },
-        {
-          "entityId": "alexsmobs:devils_hole_pupfish",
-          "category": "water_ambient",
-          "weight": 23,
-          "minCount": 5,
-          "maxCount": 12,
-          "placementType": "in_water",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
           "spawnCharge": "",
@@ -6529,50 +5257,20 @@
       ],
       "featureBlocks": [
         "alexscaves:underweed",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:brown_mushroom",
         "minecraft:dandelion",
         "minecraft:glow_lichen",
+        "minecraft:oak_leaves",
+        "minecraft:oak_log",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:urn",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "allBlocks": [
         "alexscaves:coprolith_coal_ore",
         "alexscaves:guanostone_redstone_ore",
         "alexscaves:underweed",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:brown_mushroom",
         "minecraft:clay",
@@ -6595,6 +5293,8 @@
         "minecraft:gravel",
         "minecraft:iron_ore",
         "minecraft:lapis_ore",
+        "minecraft:oak_leaves",
+        "minecraft:oak_log",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:redstone_ore",
@@ -6602,43 +5302,19 @@
         "minecraft:short_grass",
         "minecraft:tall_grass",
         "minecraft:tuff",
-        "supplementaries:urn",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ]
     },
     {
       "biomeId": "alexscaves:magnetic_caves",
-      "placedFeatureCount": 100,
+      "placedFeatureCount": 63,
       "placedFeatureIds": [
         "alexscaves:azure_magnetic_node",
-        "alexscaves:floating_galena_orb",
-        "alexscaves:galena_hexagon_ceiling",
-        "alexscaves:galena_hexagon_floor",
         "alexscaves:galena_iron_ore",
         "alexscaves:magnetic_ruins",
         "alexscaves:metal_swarf",
         "alexscaves:scarlet_magnetic_node",
         "alexscaves:tesla_bulb",
-        "artifacts:underground_campsite",
-        "artifacts:underground_minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore_placed",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node_placed",
-        "createreautomated:diamond_node_placed",
-        "createreautomated:gold_node_placed",
-        "createreautomated:iron_node_placed",
-        "createreautomated:zinc_node_placed",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:amethyst_geode",
         "minecraft:brown_mushroom_normal",
         "minecraft:disk_clay",
@@ -6684,44 +5360,15 @@
         "minecraft:spring_water",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:cave_urns",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_placed",
-        "swem:sw_cobble_placed",
         "ycurrenci:marmore"
       ],
       "configuredFeatureIds": [
         "alexscaves:azure_magnetic_node",
-        "alexscaves:floating_galena_orb",
-        "alexscaves:galena_hexagon_ceiling",
-        "alexscaves:galena_hexagon_floor",
         "alexscaves:galena_iron_ore",
         "alexscaves:magnetic_ruins",
         "alexscaves:metal_swarf",
         "alexscaves:scarlet_magnetic_node",
         "alexscaves:tesla_bulb",
-        "artifacts:campsite",
-        "artifacts:minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:amethyst_geode",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
@@ -6761,15 +5408,6 @@
         "minecraft:spring_water",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:urns_patch",
-        "supplementaries:wild_flax_patch",
-        "swem:cantazarite",
-        "swem:sw_cobble",
         "terralith:cave/generic/amethyst_geode",
         "terralith:cave/generic/mega_geode",
         "ycurrenci:marmore"
@@ -6789,20 +5427,9 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "undergroundFeatureBlocks": [
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:amethyst_block",
         "minecraft:amethyst_cluster",
         "minecraft:budding_amethyst",
@@ -6811,22 +5438,11 @@
         "minecraft:large_amethyst_bud",
         "minecraft:medium_amethyst_bud",
         "minecraft:small_amethyst_bud",
-        "minecraft:smooth_basalt",
-        "supplementaries:urn"
+        "minecraft:smooth_basalt"
       ],
       "oreBlocks": [
         "alexscaves:galena_iron_ore",
         "alexscaves:metal_swarf",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:coal_ore",
         "minecraft:copper_ore",
@@ -6847,8 +5463,6 @@
         "minecraft:lapis_ore",
         "minecraft:redstone_ore",
         "minecraft:tuff",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ],
       "oreDistributions": [
@@ -7343,126 +5957,6 @@
           ]
         },
         {
-          "blockId": "swem:cantazarite_ore",
-          "lines": [
-            {
-              "sourceId": "swem:cantazarite_placed",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "30",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:deepslate_lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "swem:star_worm_cobble",
-          "lines": [
-            {
-              "sourceId": "swem:sw_cobble_placed",
-              "sourceKind": "common",
-              "veinSize": 7,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "50",
-              "maxHeight": "128",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:black_argillite",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:black_argillite",
-              "sourceKind": "common",
-              "veinSize": 27,
-              "attemptsPerChunk": "3",
-              "averageEveryChunks": "",
-              "minHeight": "-17",
-              "maxHeight": "17",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create_better_motors:deepslate_reggarfonite_ore",
-          "lines": [
-            {
-              "sourceId": "create_better_motors:deepslate_reggarfonite_ore",
-              "sourceKind": "common",
-              "veinSize": 10,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "40",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_deepslate_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "-128",
-              "maxHeight": "-8",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "16",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
           "blockId": "ycurrenci:marmore",
           "lines": [
             {
@@ -7473,66 +5967,6 @@
               "averageEveryChunks": "",
               "minHeight": "0",
               "maxHeight": "1000",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:deepslate_silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "create:zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create:deepslate_zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
               "heightMode": "even"
             }
           ]
@@ -7553,50 +5987,11 @@
           "dropItems": []
         },
         {
-          "entityId": "alexsmobs:cockroach",
-          "category": "ambient",
-          "weight": 4,
-          "minCount": 5,
-          "maxCount": 5,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:fly",
-          "category": "ambient",
-          "weight": 3,
-          "minCount": 2,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "minecraft:bat",
           "category": "ambient",
           "weight": 10,
           "minCount": 8,
           "maxCount": 8,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "swem:swem_horse",
-          "category": "creature",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 5,
           "placementType": "on_ground",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
@@ -7657,35 +6052,9 @@
           "dropItems": []
         },
         {
-          "entityId": "alexsmobs:centipede_head",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "alexsmobs:farseer",
           "category": "monster",
           "weight": 30,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:murmur",
-          "category": "monster",
-          "weight": 5,
           "minCount": 1,
           "maxCount": 1,
           "placementType": "on_ground",
@@ -8410,62 +6779,6 @@
           ]
         },
         {
-          "entityId": "golemoverhaul:slime_golem",
-          "category": "monster",
-          "weight": 25,
-          "minCount": 1,
-          "maxCount": 2,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:slime_ball"
-          ]
-        },
-        {
-          "entityId": "majruszsdifficulty:cursed_armor",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:illusioner",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:tank",
-          "category": "monster",
-          "weight": 3,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:bone"
-          ]
-        },
-        {
           "entityId": "minecraft:creeper",
           "category": "monster",
           "weight": 100,
@@ -8658,21 +6971,6 @@
           "dropItems": []
         },
         {
-          "entityId": "spider_overhaul:cavern_spider",
-          "category": "monster",
-          "weight": 120,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:string"
-          ]
-        },
-        {
           "entityId": "minecraft:glow_squid",
           "category": "underground_water_creature",
           "weight": 10,
@@ -8686,19 +6984,6 @@
           "dropItems": [
             "minecraft:glow_ink_sac"
           ]
-        },
-        {
-          "entityId": "alexsmobs:devils_hole_pupfish",
-          "category": "water_ambient",
-          "weight": 23,
-          "minCount": 5,
-          "maxCount": 12,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
         },
         {
           "entityId": "aquaculture:bluegill",
@@ -8879,16 +7164,6 @@
         }
       ],
       "featureBlocks": [
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:amethyst_block",
         "minecraft:amethyst_cluster",
         "minecraft:brown_mushroom",
@@ -8906,33 +7181,11 @@
         "minecraft:short_grass",
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
-        "minecraft:tall_grass",
-        "supplementaries:urn",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "allBlocks": [
         "alexscaves:galena_iron_ore",
         "alexscaves:metal_swarf",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:amethyst_block",
         "minecraft:amethyst_cluster",
         "minecraft:andesite",
@@ -8973,16 +7226,12 @@
         "minecraft:smooth_basalt",
         "minecraft:tall_grass",
         "minecraft:tuff",
-        "supplementaries:urn",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ]
     },
     {
       "biomeId": "alexscaves:primordial_caves",
-      "placedFeatureCount": 106,
+      "placedFeatureCount": 68,
       "placedFeatureIds": [
         "alexscaves:amber_monolith",
         "alexscaves:ambersol",
@@ -8996,24 +7245,10 @@
         "alexscaves:packed_mud_replace_dirt",
         "alexscaves:pewen_tree",
         "alexscaves:primordial_caves_grass",
+        "alexscaves:primordial_caves_lake",
         "alexscaves:primordial_forest_rock",
         "alexscaves:subterranodon_roost",
         "alexscaves:volcano_boulder",
-        "artifacts:underground_campsite",
-        "artifacts:underground_minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore_placed",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node_placed",
-        "createreautomated:diamond_node_placed",
-        "createreautomated:gold_node_placed",
-        "createreautomated:iron_node_placed",
-        "createreautomated:zinc_node_placed",
-        "iceandfire:silver_ore",
         "minecraft:brown_mushroom_normal",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
@@ -9054,15 +7289,6 @@
         "minecraft:red_mushroom_normal",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:cave_urns",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_placed",
-        "swem:sw_cobble_placed",
         "ycurrenci:marmore"
       ],
       "configuredFeatureIds": [
@@ -9078,25 +7304,10 @@
         "alexscaves:packed_mud_replace_dirt",
         "alexscaves:pewen_tree",
         "alexscaves:primordial_caves_grass",
-        "alexscaves:primordial_caves_grass_vegetation",
+        "alexscaves:primordial_caves_lake",
         "alexscaves:primordial_forest_rock",
         "alexscaves:subterranodon_roost",
         "alexscaves:volcano_boulder",
-        "artifacts:campsite",
-        "artifacts:minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "iceandfire:silver_ore",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
         "minecraft:disk_sand",
@@ -9132,15 +7343,6 @@
         "minecraft:patch_tall_grass",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:urns_patch",
-        "supplementaries:wild_flax_patch",
-        "swem:cantazarite",
-        "swem:sw_cobble",
         "ycurrenci:marmore"
       ],
       "terrainBlocks": [
@@ -9158,37 +7360,15 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "undergroundFeatureBlocks": [
         "alexscaves:curly_fern",
         "alexscaves:flytrap",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:fern",
-        "minecraft:large_fern",
-        "supplementaries:urn"
+        "minecraft:large_fern"
       ],
       "oreBlocks": [
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:coal_ore",
         "minecraft:copper_ore",
@@ -9211,8 +7391,6 @@
         "minecraft:packed_mud",
         "minecraft:redstone_ore",
         "minecraft:tuff",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ],
       "oreDistributions": [
@@ -9647,126 +7825,6 @@
           ]
         },
         {
-          "blockId": "swem:cantazarite_ore",
-          "lines": [
-            {
-              "sourceId": "swem:cantazarite_placed",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "30",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:deepslate_lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "swem:star_worm_cobble",
-          "lines": [
-            {
-              "sourceId": "swem:sw_cobble_placed",
-              "sourceKind": "common",
-              "veinSize": 7,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "50",
-              "maxHeight": "128",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:black_argillite",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:black_argillite",
-              "sourceKind": "common",
-              "veinSize": 27,
-              "attemptsPerChunk": "3",
-              "averageEveryChunks": "",
-              "minHeight": "-17",
-              "maxHeight": "17",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create_better_motors:deepslate_reggarfonite_ore",
-          "lines": [
-            {
-              "sourceId": "create_better_motors:deepslate_reggarfonite_ore",
-              "sourceKind": "common",
-              "veinSize": 10,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "40",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_deepslate_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "-128",
-              "maxHeight": "-8",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "16",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
           "blockId": "ycurrenci:marmore",
           "lines": [
             {
@@ -9780,98 +7838,12 @@
               "heightMode": "even"
             }
           ]
-        },
-        {
-          "blockId": "iceandfire:silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:deepslate_silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "create:zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create:deepslate_zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
         }
       ],
       "mobSpawns": [
         {
-          "entityId": "alexsmobs:cockroach",
-          "category": "ambient",
-          "weight": 4,
-          "minCount": 5,
-          "maxCount": 5,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:fly",
-          "category": "ambient",
-          "weight": 3,
-          "minCount": 2,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "alexscaves:atlatitan",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 10,
           "minCount": 2,
           "maxCount": 3,
@@ -9884,7 +7856,7 @@
         },
         {
           "entityId": "alexscaves:grottoceratops",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 27,
           "minCount": 2,
           "maxCount": 4,
@@ -9897,7 +7869,7 @@
         },
         {
           "entityId": "alexscaves:relicheirus",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 13,
           "minCount": 1,
           "maxCount": 1,
@@ -9910,7 +7882,7 @@
         },
         {
           "entityId": "alexscaves:subterranodon",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 6,
           "minCount": 3,
           "maxCount": 5,
@@ -9923,7 +7895,7 @@
         },
         {
           "entityId": "alexscaves:tremorsaurus",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 5,
           "minCount": 1,
           "maxCount": 1,
@@ -9936,7 +7908,7 @@
         },
         {
           "entityId": "alexscaves:vallumraptor",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 6,
           "minCount": 6,
           "maxCount": 7,
@@ -9949,62 +7921,10 @@
         },
         {
           "entityId": "minecraft:frog",
-          "category": "creature",
+          "category": "alexscaves:cave_creature",
           "weight": 7,
           "minCount": 1,
           "maxCount": 2,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "swem:swem_horse",
-          "category": "creature",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 5,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:centipede_head",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:farseer",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:murmur",
-          "category": "monster",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 1,
           "placementType": "on_ground",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
@@ -10727,62 +8647,6 @@
           ]
         },
         {
-          "entityId": "golemoverhaul:slime_golem",
-          "category": "monster",
-          "weight": 25,
-          "minCount": 1,
-          "maxCount": 2,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:slime_ball"
-          ]
-        },
-        {
-          "entityId": "majruszsdifficulty:cursed_armor",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:illusioner",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:tank",
-          "category": "monster",
-          "weight": 3,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:bone"
-          ]
-        },
-        {
           "entityId": "mowziesmobs:grottol",
           "category": "monster",
           "weight": 2,
@@ -10825,39 +8689,11 @@
           "dropItems": []
         },
         {
-          "entityId": "spider_overhaul:cavern_spider",
-          "category": "monster",
-          "weight": 120,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:string"
-          ]
-        },
-        {
           "entityId": "alexscaves:trilocaris",
           "category": "water_ambient",
           "weight": 15,
           "minCount": 1,
           "maxCount": 2,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:devils_hole_pupfish",
-          "category": "water_ambient",
-          "weight": 23,
-          "minCount": 5,
-          "maxCount": 12,
           "placementType": "in_water",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
@@ -11046,16 +8882,6 @@
       "featureBlocks": [
         "alexscaves:curly_fern",
         "alexscaves:flytrap",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:brown_mushroom",
         "minecraft:dandelion",
         "minecraft:fern",
@@ -11066,33 +8892,11 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:urn",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "allBlocks": [
         "alexscaves:curly_fern",
         "alexscaves:flytrap",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:brown_mushroom",
         "minecraft:clay",
@@ -11128,16 +8932,12 @@
         "minecraft:short_grass",
         "minecraft:tall_grass",
         "minecraft:tuff",
-        "supplementaries:urn",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ]
     },
     {
       "biomeId": "alexscaves:toxic_caves",
-      "placedFeatureCount": 101,
+      "placedFeatureCount": 65,
       "placedFeatureIds": [
         "alexscaves:acid_lake",
         "alexscaves:acid_vent",
@@ -11149,23 +8949,6 @@
         "alexscaves:toxic_ruins",
         "alexscaves:underweed",
         "alexscaves:unrefined_waste_replace_mud",
-        "artifacts:underground_campsite",
-        "artifacts:underground_minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore_placed",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node_placed",
-        "createreautomated:diamond_node_placed",
-        "createreautomated:gold_node_placed",
-        "createreautomated:iron_node_placed",
-        "createreautomated:zinc_node_placed",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:amethyst_geode",
         "minecraft:brown_mushroom_normal",
         "minecraft:disk_clay",
@@ -11209,15 +8992,6 @@
         "minecraft:spring_water",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:cave_urns",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_placed",
-        "swem:sw_cobble_placed",
         "ycurrenci:marmore"
       ],
       "configuredFeatureIds": [
@@ -11231,23 +9005,6 @@
         "alexscaves:toxic_ruins",
         "alexscaves:underweed",
         "alexscaves:unrefined_waste_replace_mud",
-        "artifacts:campsite",
-        "artifacts:minimalist_campsite",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-        "born_in_chaos_v1:infected_diamond_ore_feature",
-        "cgs:lead_ore",
-        "create:striated_ores_overworld",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "farmersdelight:patch_wild_carrots",
-        "farmersdelight:patch_wild_onions",
-        "iceandfire:silver_ore",
         "minecraft:amethyst_geode",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
@@ -11286,15 +9043,6 @@
         "minecraft:spring_water",
         "minecraft:trees_plains",
         "minecraft:underwater_magma",
-        "streamsreflowing:river",
-        "streamsreflowing:river_flow",
-        "streamsreflowing:snow_cleanup",
-        "streamsreflowing:stream_vegetation",
-        "streamsreflowing:water_skin",
-        "supplementaries:urns_patch",
-        "supplementaries:wild_flax_patch",
-        "swem:cantazarite",
-        "swem:sw_cobble",
         "terralith:cave/generic/amethyst_geode",
         "terralith:cave/generic/mega_geode",
         "ycurrenci:marmore"
@@ -11306,6 +9054,7 @@
         "minecraft:sand"
       ],
       "surfaceFeatureBlocks": [
+        "alexscaves:underweed",
         "minecraft:brown_mushroom",
         "minecraft:dandelion",
         "minecraft:glow_lichen",
@@ -11314,22 +9063,10 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "minecraft:short_grass",
-        "minecraft:tall_grass",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "undergroundFeatureBlocks": [
         "alexscaves:acid",
-        "alexscaves:underweed",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:amethyst_block",
         "minecraft:amethyst_cluster",
         "minecraft:budding_amethyst",
@@ -11338,23 +9075,12 @@
         "minecraft:large_amethyst_bud",
         "minecraft:medium_amethyst_bud",
         "minecraft:small_amethyst_bud",
-        "minecraft:smooth_basalt",
-        "supplementaries:urn"
+        "minecraft:smooth_basalt"
       ],
       "oreBlocks": [
         "alexscaves:metal_swarf",
         "alexscaves:radrock_uranium_ore",
         "alexscaves:unrefined_waste",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:andesite",
         "minecraft:coal_ore",
         "minecraft:copper_ore",
@@ -11375,8 +9101,6 @@
         "minecraft:lapis_ore",
         "minecraft:redstone_ore",
         "minecraft:tuff",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ],
       "oreDistributions": [
@@ -11880,128 +9604,8 @@
               "attemptsPerChunk": "30",
               "averageEveryChunks": "",
               "minHeight": "世界底部+0",
-              "maxHeight": "世界底部+120",
+              "maxHeight": "256",
               "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "swem:cantazarite_ore",
-          "lines": [
-            {
-              "sourceId": "swem:cantazarite_placed",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "30",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "cgs:deepslate_lead_ore",
-          "lines": [
-            {
-              "sourceId": "cgs:lead_ore_placed",
-              "sourceKind": "common",
-              "veinSize": 9,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "80",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "swem:star_worm_cobble",
-          "lines": [
-            {
-              "sourceId": "swem:sw_cobble_placed",
-              "sourceKind": "common",
-              "veinSize": 7,
-              "attemptsPerChunk": "12",
-              "averageEveryChunks": "",
-              "minHeight": "50",
-              "maxHeight": "128",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:black_argillite",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:black_argillite",
-              "sourceKind": "common",
-              "veinSize": 27,
-              "attemptsPerChunk": "3",
-              "averageEveryChunks": "",
-              "minHeight": "-17",
-              "maxHeight": "17",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create_better_motors:deepslate_reggarfonite_ore",
-          "lines": [
-            {
-              "sourceId": "create_better_motors:deepslate_reggarfonite_ore",
-              "sourceKind": "common",
-              "veinSize": 10,
-              "attemptsPerChunk": "7",
-              "averageEveryChunks": "",
-              "minHeight": "-64",
-              "maxHeight": "40",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_deepslate_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_deepslate_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "-128",
-              "maxHeight": "-8",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "born_in_chaos_v1:infected_diamond_ore",
-          "lines": [
-            {
-              "sourceId": "born_in_chaos_v1:infected_diamond_ore_feature",
-              "sourceKind": "common",
-              "veinSize": 8,
-              "attemptsPerChunk": "1",
-              "averageEveryChunks": "",
-              "minHeight": "0",
-              "maxHeight": "16",
-              "heightMode": "middle_common"
             }
           ]
         },
@@ -12019,69 +9623,22 @@
               "heightMode": "even"
             }
           ]
-        },
-        {
-          "blockId": "iceandfire:silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "iceandfire:deepslate_silver_ore",
-          "lines": [
-            {
-              "sourceId": "iceandfire:silver_ore",
-              "sourceKind": "common",
-              "veinSize": 4,
-              "attemptsPerChunk": "16",
-              "averageEveryChunks": "",
-              "minHeight": "-16",
-              "maxHeight": "112",
-              "heightMode": "middle_common"
-            }
-          ]
-        },
-        {
-          "blockId": "create:zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
-        },
-        {
-          "blockId": "create:deepslate_zinc_ore",
-          "lines": [
-            {
-              "sourceId": "create:zinc_ore",
-              "sourceKind": "common",
-              "veinSize": 12,
-              "attemptsPerChunk": "8",
-              "averageEveryChunks": "",
-              "minHeight": "-63",
-              "maxHeight": "70",
-              "heightMode": "even"
-            }
-          ]
         }
       ],
       "mobSpawns": [
+        {
+          "entityId": "alexscaves:raycat",
+          "category": "alexscaves:cave_creature",
+          "weight": 10,
+          "minCount": 1,
+          "maxCount": 1,
+          "placementType": "on_ground",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": []
+        },
         {
           "entityId": "alexscaves:gammaroach",
           "category": "ambient",
@@ -12096,63 +9653,11 @@
           "dropItems": []
         },
         {
-          "entityId": "alexsmobs:cockroach",
-          "category": "ambient",
-          "weight": 4,
-          "minCount": 5,
-          "maxCount": 5,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:fly",
-          "category": "ambient",
-          "weight": 3,
-          "minCount": 2,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "minecraft:bat",
           "category": "ambient",
           "weight": 10,
           "minCount": 8,
           "maxCount": 8,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexscaves:raycat",
-          "category": "creature",
-          "weight": 10,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "swem:swem_horse",
-          "category": "creature",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 5,
           "placementType": "on_ground",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
@@ -12187,35 +9692,9 @@
           "dropItems": []
         },
         {
-          "entityId": "alexsmobs:centipede_head",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
           "entityId": "alexsmobs:farseer",
           "category": "monster",
           "weight": 30,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "alexsmobs:murmur",
-          "category": "monster",
-          "weight": 5,
           "minCount": 1,
           "maxCount": 1,
           "placementType": "on_ground",
@@ -12940,62 +10419,6 @@
           ]
         },
         {
-          "entityId": "golemoverhaul:slime_golem",
-          "category": "monster",
-          "weight": 25,
-          "minCount": 1,
-          "maxCount": 2,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:slime_ball"
-          ]
-        },
-        {
-          "entityId": "majruszsdifficulty:cursed_armor",
-          "category": "monster",
-          "weight": 30,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:illusioner",
-          "category": "monster",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
-        },
-        {
-          "entityId": "majruszsdifficulty:tank",
-          "category": "monster",
-          "weight": 3,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:bone"
-          ]
-        },
-        {
           "entityId": "minecraft:creeper",
           "category": "monster",
           "weight": 100,
@@ -13188,21 +10611,6 @@
           "dropItems": []
         },
         {
-          "entityId": "spider_overhaul:cavern_spider",
-          "category": "monster",
-          "weight": 120,
-          "minCount": 1,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:string"
-          ]
-        },
-        {
           "entityId": "minecraft:glow_squid",
           "category": "underground_water_creature",
           "weight": 10,
@@ -13223,7 +10631,7 @@
           "weight": 10,
           "minCount": 1,
           "maxCount": 3,
-          "placementType": "no_restrictions",
+          "placementType": "custom",
           "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
           "hasPlacement": true,
           "spawnCharge": "",
@@ -13231,19 +10639,6 @@
           "dropItems": [
             "alexscaves:radgill"
           ]
-        },
-        {
-          "entityId": "alexsmobs:devils_hole_pupfish",
-          "category": "water_ambient",
-          "weight": 23,
-          "minCount": 5,
-          "maxCount": 12,
-          "placementType": "in_water",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": []
         },
         {
           "entityId": "aquaculture:bluegill",
@@ -13426,16 +10821,6 @@
       "featureBlocks": [
         "alexscaves:acid",
         "alexscaves:underweed",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
         "minecraft:amethyst_block",
         "minecraft:amethyst_cluster",
         "minecraft:brown_mushroom",
@@ -13453,9 +10838,7 @@
         "minecraft:short_grass",
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
-        "minecraft:tall_grass",
-        "supplementaries:urn",
-        "supplementaries:wild_flax"
+        "minecraft:tall_grass"
       ],
       "allBlocks": [
         "alexscaves:acid",
@@ -13463,26 +10846,6 @@
         "alexscaves:radrock_uranium_ore",
         "alexscaves:underweed",
         "alexscaves:unrefined_waste",
-        "born_in_chaos_v1:black_argillite",
-        "born_in_chaos_v1:infected_deepslate_diamond_ore",
-        "born_in_chaos_v1:infected_diamond_ore",
-        "cgs:deepslate_lead_ore",
-        "cgs:lead_ore",
-        "create:deepslate_zinc_ore",
-        "create:zinc_ore",
-        "create_better_motors:deepslate_reggarfonite_ore",
-        "createreautomated:copper_node",
-        "createreautomated:deepslate_copper_node",
-        "createreautomated:deepslate_diamond_node",
-        "createreautomated:deepslate_gold_node",
-        "createreautomated:deepslate_iron_node",
-        "createreautomated:deepslate_zinc_node",
-        "createreautomated:diamond_node",
-        "createreautomated:gold_node",
-        "createreautomated:iron_node",
-        "createreautomated:zinc_node",
-        "iceandfire:deepslate_silver_ore",
-        "iceandfire:silver_ore",
         "minecraft:amethyst_block",
         "minecraft:amethyst_cluster",
         "minecraft:andesite",
@@ -13523,10 +10886,6 @@
         "minecraft:smooth_basalt",
         "minecraft:tall_grass",
         "minecraft:tuff",
-        "supplementaries:urn",
-        "supplementaries:wild_flax",
-        "swem:cantazarite_ore",
-        "swem:star_worm_cobble",
         "ycurrenci:marmore"
       ]
     },

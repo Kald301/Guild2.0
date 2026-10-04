@@ -43,13 +43,13 @@
 	alwaysSeeNearestPlayer = false
 
 	# Affected mobs can find a new target through blocks
-	canNoticeTargetsThroughBlocks = true
+	canNoticeTargetsThroughBlocks = false
 
 	# (only if canNoticeTargetsThroughBlocks is true) Maximum solid blocks between a mob and a new target; 0 = unlimited
 	noticeTargetsThroughBlocksLimit = 3
 
 	# Zombies can keep chasing an already found target through blocks
-	canContinueSeeingTargetsThroughBlocks = true
+	canContinueSeeingTargetsThroughBlocks = false
 
 	# (only if canContinueSeeingTargetsThroughBlocks is true) Maximum solid blocks between a mob and its current target; 0 = unlimited
 	continueSeeingTargetsThroughBlocksLimit = 6

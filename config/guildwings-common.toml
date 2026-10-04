@@ -1,0 +1,74 @@
+#Parte 1: daño por velocidad de impacto mientras se vuela o se planea con alas de Fantastic Wings
+#(poción o Arnés de alas). Funciona como el choque con Elytra vanilla: duele chocar rápido de frente
+#contra bloques; aterrizar siguiendo la trayectoria no.
+#La velocidad se mide con el movimiento real que reporta el cliente, por eje (X, Y, Z).
+#Daño = (pérdida de velocidad - impact_safe_velocity) x 10 x impact_damage_multiplier.
+#El tipo de daño (guildwings:wing_impact) se comporta como fly_into_wall: ignora la armadura,
+#Feather Falling no lo reduce y Protección sí.
+[fall_damage]
+	#Interruptor general de la Parte 1. En false no se aplica ningún daño por impacto.
+	habilitado = true
+	#Pérdida de velocidad (bloques/tick) a partir de la cual un choque empieza a doler.
+	#0.3 bloques/tick = ~6 bloques/s, el mismo umbral que la Elytra vanilla. A calibrar en pruebas.
+	# Default: 0.3
+	# Range: 0.0 ~ 10.0
+	impact_safe_velocity = 0.3
+	#Escala el daño resultante. 1.0 = igual que la Elytra vanilla.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	impact_damage_multiplier = 1.0
+	#Tope de daño por impacto, en puntos de vida (2 = 1 corazón), antes de Protección.
+	#-1 (o cualquier valor <= 0) = sin tope: el daño escala libremente con la velocidad.
+	# Default: -1.0
+	# Range: -1.0 ~ 1024.0
+	impact_damage_max_cap = -1.0
+	#Impide el golpe en picada de la Maza mientras se vuela o se planea con alas.
+	#Hoy es REDUNDANTE a propósito: Guild Wings no toca fallDistance y Fantastic Wings la deja en ~0
+	#mientras se vuela o se planea, así que la Maza ya no puede activarse (necesita fallDistance > 1.5).
+	#Queda explícito para documentar el comportamiento y para seguir bloqueando el combo si algún día
+	#se restaurara fallDistance.
+	bloquear_maza_planeando = true
+	#Para calibrar: en cada contacto nuevo contra un bloque mientras se vuela o se planea, le muestra al
+	#jugador en el chat la velocidad previa por eje, la pérdida (b/t y b/s), el umbral y el daño calculado,
+	#aunque el daño sea 0. Dejar en false en el server real.
+	debug_impacto = false
+
+#Parte 2: límite de tiempo de vuelo ACTIVO (isFlying). El planeo pasivo no consume presupuesto.
+#El costo de hambre de Fantastic Wings se sigue cobrando aparte.
+[flight_limit]
+	#Interruptor general de la Parte 2. En false el vuelo vuelve a ser ilimitado (solo lo limita el hambre).
+	habilitado = true
+	#Modo del presupuesto de vuelo:
+	#  cooldown_en_tiempo_real: segundos_de_vuelo de vuelo activo; a los segundos_de_recarga desde el
+	#    último vuelo, el presupuesto vuelve completo. La recarga corre en tiempo real, también desconectado.
+	#  por_dia_de_juego: ticks_por_dia de vuelo activo por día de juego (el contador vuelve a 0 cuando
+	#    cambia el día del Overworld; dormir o /time set también lo resetean).
+	modo = "cooldown_en_tiempo_real"
+	#Modo cooldown: segundos de vuelo activo por carga. 60 s son ~900 bloques volando (estimado, a validar).
+	# Default: 60
+	# Range: 1 ~ 86400
+	segundos_de_vuelo = 60
+	#Modo cooldown: segundos desde el último vuelo hasta que el presupuesto vuelve completo.
+	# Default: 300
+	# Range: 0 ~ 86400
+	segundos_de_recarga = 300
+	#Modo por día: ticks de vuelo activo por día de juego (20 ticks = 1 s; un día dura 24000 ticks).
+	# Default: 2400
+	# Range: 1 ~ 24000
+	ticks_por_dia = 2400
+	#Los jugadores en creativo o espectador no tienen límite.
+	excluir_creativo = true
+	#Los operadores (nivel >= nivel_operador) no tienen límite. En false para que el admin pueda probarlo.
+	excluir_operadores = false
+	#Nivel de permiso mínimo que cuenta como operador para excluir_operadores.
+	# Default: 2
+	# Range: 0 ~ 4
+	nivel_operador = 2
+	#Muestra el vuelo restante o la recarga en la actionbar mientras se vuela o se está en recarga.
+	mostrar_actionbar = true
+
+#Parte 3: Arnés de alas equipable en Curios (slot "wings").
+#El costo de la receta NO está acá: se ajusta con el JSON de la receta (datapack o KubeJS).
+[wing_harness]
+	#Si es false, el arnés no otorga alas y sus recetas no se cargan (hace falta /reload para las recetas).
+	habilitado = true

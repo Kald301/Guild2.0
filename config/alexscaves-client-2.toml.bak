@@ -15,6 +15,8 @@
 	biome_sky_overrides = true
 	#true if some biomes, such as toxic caves, have an thicker fog to them. May conflict with shaders.
 	biome_sky_fog_overrides = true
+	#true if some biomes, such as abyssal chasm, have an thicker water fog to them. May conflict with shaders.
+	biome_water_fog_overrides = true
 	#true if ambersol block renders with rays of light emerging from it.
 	ambersol_shines = true
 	#true if irradiated effect makes mobs glow. May conflict with shaders.
@@ -29,8 +31,6 @@
 	subterranodon_indicator_y = 6
 	#true if sugar rush makes the world more saturated. May conflict with shaders.
 	sugar_rush_saturation_effect = true
-	#true if some biomes, such as abyssal chasm, have an thicker water fog to them. May conflict with shaders.
-	biome_water_fog_overrides = true
 
 [audio]
 	#whether nuclear explosions briefly muffle other sounds.
