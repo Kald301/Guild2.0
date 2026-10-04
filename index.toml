@@ -2473,11 +2473,6 @@ hash = "c0947eb7bd364bcec8c3f27fc56655204a18f2cb3f5d0cfada8d3a88de581ceb"
 metafile = true
 
 [[files]]
-file = "mods/alexs-caves-unofficial-port.pw.toml"
-hash = "dad63ca9ff3eb3a5cbabaa66142caecc7e4acfafab504fcc1009aeae1de0c508"
-metafile = true
-
-[[files]]
 file = "mods/alexs-delight.pw.toml"
 hash = "516e0ce480882c6a73773d685dfc00b2228e1be6f2108488a614063d0dca261e"
 metafile = true
