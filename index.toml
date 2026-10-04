@@ -10,7 +10,7 @@ hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "7dd852950fecc492014d2a1a0edaa90fb38fc7c40da0ecc88c6e2cfeab9bef31"
+hash = "a22b3a01dd3ed6f889c218f4751e875e43e4af77e21c9c7944e5dbb5a31afc06"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -37,60 +37,36 @@ file = "config/addonslib-common.toml"
 hash = "d041026e6112bde28569652e819b0a945503a1b07c7e547e516a20917bae1118"
 
 [[files]]
-file = "config/alexscaves-client-1.toml.bak"
-hash = "53f346fb7031389402e1e5c3834fe8be23369e291176a3c031857d01533c28dd"
-
-[[files]]
-file = "config/alexscaves-client-2.toml.bak"
+file = "config/alexscaves-client.toml"
 hash = "a312af011085b9f0ff2eeb49f78cadfc0042ea912dd727e257a97036e21e5272"
 
 [[files]]
-file = "config/alexscaves-client.toml"
-hash = "73c45c649657cf14a130452516c6c7fa99b1a48cf5cb9a493f22c965b666a691"
-
-[[files]]
-file = "config/alexscaves-general-1.toml.bak"
-hash = "7586e8d8cd5d417b13a3870a8b17f8e9b502dc3825f28c7e240814279e178bed"
-
-[[files]]
-file = "config/alexscaves-general-2.toml.bak"
-hash = "0a3130216c9f25fa52fe296d1011ab03ff2f794874fd92a375551fc2b159fe02"
-
-[[files]]
-file = "config/alexscaves-general-3.toml.bak"
-hash = "15342186561d19b693693367733db19f195b3839011ff29afd3365b7e821baf3"
-
-[[files]]
 file = "config/alexscaves-general.toml"
-hash = "690aa50b5b4a4197165de92a1036af9c6c6b515c0e4da0415222f131792e2983"
-
-[[files]]
-file = "config/alexscaves_biome_generation/.version"
-hash = "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+hash = "92957b20c72066c221d208d7cfb56347282fef3862608097edf6aff234992dbe"
 
 [[files]]
 file = "config/alexscaves_biome_generation/abyssal_chasm.json"
-hash = "7a0aca34fad9cf3895e1f8035fe40fe75c3fbea31fd69f07151cc6d221e224d3"
+hash = "d286a521c5fd852ef189e15f02952d3e6f529efbb67fe769d88d45183279c3b9"
 
 [[files]]
 file = "config/alexscaves_biome_generation/candy_cavity.json"
-hash = "e68dac5fc506c198dedf07566e0184872be730c4d369c4bbb245f5b12673bd19"
+hash = "02120d68d535ce346b1d66d42a039a0683ee4432b8537d70fbb2f1bf59c4d364"
 
 [[files]]
 file = "config/alexscaves_biome_generation/forlorn_hollows.json"
-hash = "aabb95c7efcedff55a3add91832b1395d767f1b8bc5736064b809f16293481c7"
+hash = "5eea375f709ff5d7096b51fdc32b671952e1d2aed9f48c9bd9bc8e50ec2cb7f7"
 
 [[files]]
 file = "config/alexscaves_biome_generation/magnetic_caves.json"
-hash = "5b9a96de68eb17b03b5b19808dc2bae7854948c81e57aeda60bab927b4a54e8e"
+hash = "cf811ff0e46881d7993eb4910d9891ff6472554b613d3b3940deb0c6f1e0a779"
 
 [[files]]
 file = "config/alexscaves_biome_generation/primordial_caves.json"
-hash = "ad81cc492bce6aad55b2becdff94bddde8007070e467445610dc124b4f8d3c68"
+hash = "f0e2da7cf5d77abef1bd270cb7c288e3f57c001005fe41e11d545d948b06474d"
 
 [[files]]
 file = "config/alexscaves_biome_generation/toxic_caves.json"
-hash = "f9e79d5c2c508e03e72da253925f7060acc9146191df44d5f21f0513a4b34c66"
+hash = "d6d7d5becfd20cca48dabcb838021694740bd874fba80a259b05d37bcc720a43"
 
 [[files]]
 file = "config/alexsmobs/alligator_snapping_turtle_spawns.json"
@@ -486,7 +462,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "0202ecb489953b44dc7776c655491f8ac1710cd5c81a1221d0b9669f2b310f9c"
+hash = "1271911e576fc7a738a37b734f2b3cbfc2f3aac7c7c1aa9d6addfd59bebc37ae"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1246,7 +1222,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "c73636f2322c09955becd918a8fe4d7b66918ef73ae8fa41e1025a351c8f668d"
+hash = "f2b9330a40afbb3653822cecd05ce21ff510fdbd53e0a76e0fd86fc2c766ce9f"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1369,6 +1345,10 @@ file = "config/inventoryprofilesnext/Test tard/villager-trading-config-v2.json"
 hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
 
 [[files]]
+file = "config/inventoryprofilesnext/cynthia-gnd.tun.ply.gg/villager-trading-config-v2.json"
+hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
+
+[[files]]
 file = "config/inventoryprofilesnext/integrationHints/exampleIntegrationHints.json"
 hash = "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
 
@@ -1386,7 +1366,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "0904c67a4f647412b5094062e51243e1a7cd9770c18883429e348e52cb48aae8"
+hash = "f9d837da85362d962e8e0528d2d2b4e68c392bab08300066d6c1730d03d660b5"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -11453,7 +11433,7 @@ hash = "aa0a49fff1a950b23ccd11b24757bb7d9d30c7463a3155c27f3aa8fce31ba1cb"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "eb8a324578c92cf11f0dd12bffaa934d35f155e70cc7757fa248be027c07ab59"
+hash = "9bac353399d3cdbf5d4b11be3ed0e557599bc60dfad8d7da4552c69fc10839c7"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves/ComplementaryLicense.txt"

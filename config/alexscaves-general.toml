@@ -45,6 +45,8 @@
 	# Default: 300
 	# Range: > 20
 	nucleeper_fuse_time = 300
+	#Whether a mob is allowed to pick itself as its attack target. A mob that hits itself takes the knockback from a direction of zero length, which throws it straight up into the air. False stops that; true restores it, which some players prefer for how it looks.
+	mobs_can_target_themselves = false
 	#True if the Tremorzilla beam breaks even more blocks.
 	devastating_tremorzilla_beam = true
 	#Whether the Watcher can take control of the camera.
@@ -53,8 +55,6 @@
 	# Default: 300
 	# Range: 20 ~ 24000
 	watcher_possession_cooldown = 300
-	#Whether a mob is allowed to pick itself as its attack target. A mob that hits itself takes the knockback from a direction of zero length, which throws it straight up into the air. False stops that; true restores it, which some players prefer for how it looks.
-	mobs_can_target_themselves = false
 
 [block-behavior]
 	#True if players wearing boots can walk on any scarlet neodymium surface.
@@ -69,8 +69,6 @@
 	nuclear_furnace_custom_type = false
 
 [item-behavior]
-	#Whether some block items are dropped by nuclear explosions. False if all destroyed blocks do not drop items.
-	nuke_spawn_item_drops = false
 	#True if one Cave Codex is all that is needed to unlock every Cave Compendium entry.
 	only_one_research_needed = false
 	#How many attempts to find a biome a cave map engages in when used. Increase this to increase the search radius, or decrease it to make them faster.
@@ -85,6 +83,8 @@
 	# Default: 1000
 	# Range: > 0
 	nuke_max_block_explosion_resistance = 1000
+	#Whether some block items are dropped by nuclear explosions. False if all destroyed blocks do not drop items.
+	nuke_spawn_item_drops = true
 	#The scale of nuclear bomb destruction. multiply this by 16 to get the radius of a nuclear bomb explosion.
 	# Default: 3.0
 	# Range: 0.0 ~ 1.7976931348623157E308
@@ -144,4 +144,4 @@
 	#Chance (0 to 1) that the Enchantments added by AC can be picked each time a loot table rolls a random enchantment. Lower it to make them rarer in loot; 0 keeps them out of random loot entirely. Works alongside enchantments_in_loot.
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
-	enchantment_loot_chance = 0.1
+	enchantment_loot_chance = 0.5
