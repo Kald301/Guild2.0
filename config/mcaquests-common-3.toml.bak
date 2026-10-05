@@ -49,6 +49,19 @@
 	#last-known position - so an unloaded giver also permits the fallback.
 	allowTurnInToSameProfessionIfOriginalMissing = false
 	failQuestIfGiverDies = false
+	#Let MCA's own Gift action pay a quest delivery: one item per gift, to the villager
+	#the quest actually named. A gift that no quest asked for keeps MCA's ordinary
+	#behaviour untouched - hearts, mood, saturation and every special case.
+	#Turn it off to diagnose a compatibility problem; the Deliver button in the quest
+	#menu is unaffected either way.
+	enableMcaGiftDelivery = true
+	#Restore the pre-1.6.5 behaviour where simply right-clicking the recipient handed
+	#over a whole delivery payload. OFF by default, and deliberately: that click is also
+	#the click that opens a conversation, so a player who meant to talk could lose the
+	#goods without ever choosing to hand them over. When on, it uses exactly the same
+	#transaction as the Deliver button and now explains a refusal instead of failing
+	#silently.
+	legacyInteractDelivery = false
 
 [rewards]
 	#Command rewards are disabled by default for safety (spec section 26).
@@ -75,6 +88,13 @@
 	# Default: 1.0
 	# Range: 0.0 ~ 100.0
 	xpRewardMultiplier = 1.0
+	#Caps the enchantment LEVEL any mcaquests:item or mcaquests:item_pool reward may carry.
+	#Levels above this are clamped down before the card is shown and before the item is
+	#granted, so the preview and the payout always agree. 0 strips enchantments from every
+	#reward. This is an enchantment level (Sharpness I = 1), not enchanting-table power.
+	# Default: 1
+	# Range: 0 ~ 5
+	maxRewardEnchantmentLevel = 1
 
 	[rewards.currency]
 		#Which item the semantic mcaquests:currency reward pays out in.
@@ -204,6 +224,28 @@
 			# Default: 8
 			# Range: 0 ~ 100
 			guidanceStructureSearchRadius = 8
+			#How far, in blocks measured horizontally, the giver villager must be from the nearest
+			#village before ANY escort_entity quest is offered. This is what stops a villager standing
+			#in the middle of town asking to be walked home. A village here means a vanilla or modded
+			#village structure in the #mcaquests:villages tag, an MCA Reborn village, or an MCA
+			#Capitals capital. Finding structure villages is done off the server thread, so while the
+			#answer is still pending escort quests are withheld rather than offered; set 0 to disable
+			#the check entirely.
+			# Default: 500
+			# Range: 0 ~ 2048
+			minEscortDistanceFromVillage = 500
+			#Radius, in blocks, of the cheap meeting-point (village bell) check used by the escort gate
+			#above; the effective radius is the smaller of this and the gate distance. The lookup can
+			#read point-of-interest data from disk for chunks that are not loaded, so it is capped well
+			#below the gate distance to bound that cost; the structure scan covers the rest. Set 0 to
+			#skip the bell check.
+			# Default: 64
+			# Range: 0 ~ 128
+			villagePoiDetectionRadius = 64
+			#Extra structure ids, or #tag ids, counted as villages by the escort gate above, for village
+			#mods that do not join #minecraft:village. Entries that do not resolve are ignored.
+			#Example: ["somemod:big_town", "#somemod:settlements"]
+			extraVillageStructures = []
 
 		[rewards.rewards.debug]
 			#Treat any malformed/unknown quest JSON as a hard error.

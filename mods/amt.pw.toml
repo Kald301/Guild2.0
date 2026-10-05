@@ -1,13 +1,13 @@
 name = "[AMT] | Alex's Mobs: Tweaks"
-filename = "alex-mobs-tweaks-omni-1.3.1.jar"
+filename = "alex-mobs-tweaks-omni-1.3.3.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d4b928affc7f1efb0d2f30a9390c0e434bdacf61"
+hash = "cb64095223ce315e289720fad356f9042545a78c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8824370
+file-id = 9060951
 project-id = 1611566

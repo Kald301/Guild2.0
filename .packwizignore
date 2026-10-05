@@ -8,6 +8,8 @@ server-blacklist.txt
 packwiz-installer-bootstrap.jar
 packwiz-installer.jar
 mods-fallidos.txt
+mods-reemplazos.txt
+mods-conservar.txt
 *.log
 
 options.txt

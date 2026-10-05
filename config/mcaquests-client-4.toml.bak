@@ -111,6 +111,45 @@
 	projectTrackerMaxEntries = 3
 	#Show a toast when the village opens a new situation that needs help (0.8.0).
 	showSituationToast = true
+	#Automatic Map Atlases quest overlays. The master mapWaypoints switch also applies.
+	mapAtlasesWaypoints = true
+	#Draw automatic quest destinations on the atlas screen.
+	mapAtlasesWorldMap = true
+	#Draw automatic quest destinations on the native atlas minimap.
+	mapAtlasesMinimap = true
+	#Draw automatic quest destinations on the map displayed by a held atlas.
+	mapAtlasesInHand = true
+	#Show the primary destination on the minimap rim when covered by this atlas.
+	mapAtlasesPrimaryEdgeArrow = true
+	#Allow explicit Show in atlas actions, independently of automatic overlays.
+	mapAtlasesNavigation = true
+	#Allow explicit personal pins in the native atlas store, independently of automatic overlays.
+	mapAtlasesPins = true
+	#COVERED_MAPS requires an existing map. EXPLORED_PIXELS additionally requires explored vanilla pixels; other types are withheld.
+	#Allowed Values: COVERED_MAPS, EXPLORED_PIXELS
+	mapAtlasesCoverage = "COVERED_MAPS"
+	#Show vertical hints or require reliable target height within the selected slice tolerance.
+	#Allowed Values: SHOW_WITH_HEIGHT_HINT, STRICT_SLICE
+	mapAtlasesSlicePolicy = "SHOW_WITH_HEIGHT_HINT"
+	#Vertical tolerance in blocks for STRICT_SLICE.
+	# Default: 8
+	# Range: 0 ~ 64
+	mapAtlasesSliceTolerance = 8
+	#Additional marker scale, applied once with native icon scaling.
+	# Default: 1.0
+	# Range: 0.5 ~ 2.0
+	mapAtlasesMarkerScale = 1.0
+	#Label density; destination details remain keyboard accessible.
+	#Allowed Values: HOVER_AND_PRIMARY, HOVER_ONLY, NONE
+	mapAtlasesLabels = "HOVER_AND_PRIMARY"
+	#Maximum fullscreen glyphs; overflow remains in Quest destinations.
+	# Default: 128
+	# Range: 8 ~ 256
+	mapAtlasesWorldMapBudget = 128
+	#Maximum minimap glyphs; overflow remains in Quest destinations.
+	# Default: 32
+	# Range: 4 ~ 64
+	mapAtlasesMinimapBudget = 32
 
 		[client.marker.edge]
 			#The arrow at the edge of the screen that points at a target you are not looking at.

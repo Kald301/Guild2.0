@@ -1,0 +1,15 @@
+# =========================================================
+#  .pw.toml QUE NUNCA SE PODAN
+#  Usado por verify-mods.ps1 (paso 7 de sync-modpack.bat)
+# =========================================================
+#
+#  verify-mods.ps1 borra (o lista, en modo "listar") todo .pw.toml
+#  cuyo .jar ya no esta en la instancia de CurseForge. Si alguna vez
+#  agregas a proposito un mod que NO instalas en CurseForge (por
+#  ejemplo con "packwiz url add"), anotalo aca para que no se pode.
+#
+#  Uno por linea: el nombre del .pw.toml sin el ".pw.toml".
+#  Las lineas vacias y lo que va despues de # se ignoran.
+#
+#  Vacio = no hay excepciones (lo normal).
+# =========================================================

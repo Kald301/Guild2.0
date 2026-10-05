@@ -42,6 +42,11 @@
 	#  false           - hand it to any MCA villager
 	#A quest that DOES state a mode always wins; this only fills in the blank.
 	requireOriginalVillagerForTurnIn = true
+	#Let an ORIGINAL_GIVER quest be handed to any villager of the giver's trade,
+	#but only while the giver is NOT present in the world. A giver standing next to
+	#the player always takes their own quest back, flag or no flag.
+	#An unloaded giver cannot be told apart from a dead one - the quest stores no
+	#last-known position - so an unloaded giver also permits the fallback.
 	allowTurnInToSameProfessionIfOriginalMissing = false
 	failQuestIfGiverDies = false
 
@@ -171,19 +176,16 @@
 			#quests had five glowing villagers and no way to tell which one mattered.
 			highlightAllActiveQuests = false
 			#How long, in ticks, before the quest marker retries a world search that found nothing.
-			#Locating a structure or a biome is the same work as /locate and runs on the server
-			#thread; a search that SUCCEEDS is remembered permanently on the objective, so this only
+			#Structure searches are queued; biome searches still run on the server thread.
+			#A search that SUCCEEDS is remembered permanently on the objective, so this only
 			#governs how often a failed one is tried again as the player travels. Lower it if you
 			#want markers to appear sooner after a long journey; raise it on a busy server.
 			# Default: 200
 			# Range: 20 ~ 24000
 			guidanceSearchIntervalTicks = 200
-			#How many world searches one player's guidance pass may run, per second.
-			#Since 1.5.0 every active quest gets its own destination rather than only the one
-			#carrying the marker, so a player holding five quests whose structures are all out of
-			#range could otherwise fire five /locate calls at once. Quests that do not get a turn
-			#are asked again on the next pass -- nothing is skipped, it is only spread out. Raise it
-			#if destinations take too long to appear after a long journey.
+			#How many synchronous biome/block searches one player's guidance pass may run.
+			#Quests that do not get a turn are asked again on the next pass. Structure searches
+			#use a separate server-wide queue, with one outstanding chunk request at a time.
 			# Default: 1
 			# Range: 1 ~ 8
 			guidanceSearchesPerPass = 1
@@ -194,6 +196,14 @@
 			autoTrackNewQuests = true
 			#Send a short chat confirmation when a quest is accepted or completed.
 			questChatMessages = true
+			#Maximum structure search radius in placement regions, NOT individual chunks.
+			#A region spans the structure's configured spacing (27 chunks for vanilla fortresses).
+			#Default 8 limits exploration compared with vanilla /locate's 100. Higher values
+			#can find more distant structures but request more chunk data over time.
+			#Does not limit strongholds, which use a finite list of concentric-ring positions.
+			# Default: 8
+			# Range: 0 ~ 100
+			guidanceStructureSearchRadius = 8
 
 		[rewards.rewards.debug]
 			#Treat any malformed/unknown quest JSON as a hard error.
@@ -405,3 +415,23 @@
 				#these become part of what a bounty board generates, which is Bountiful's economy to
 				#balance rather than ours.
 				enableIceAndFirePools = true
+
+			[rewards.rewards.compat.capitals]
+				#Master switch for the optional MCA Capitals integration. When false the provider
+				#reports DISABLED and every capital condition, role target and title reward answers
+				#as if Capitals were absent, so gated quests are never offered and any a player
+				#already holds pause rather than break. Which court offices a quest requires is not
+				#configured here: that is what the capital_role condition in quest JSON is for.
+				enabled = true
+				#Whether MCA: Quests mounts its own MCA Capitals quest pack. Turn this off to keep the
+				#capability probing and the compat_capability condition, but author all court content
+				#yourself.
+				enableBuiltinContent = true
+				#How often (ticks) the capital situation poller samples thrones and diplomacy. Polled
+				#rather than event-driven because Capitals resolves a succession on its own death
+				#handler, and reading the throne from beside it would race. This is therefore the
+				#ceiling on how long a vacant throne or a fresh war can go unnoticed -- and an
+				#interregnum Capitals resolves inside one interval can be missed entirely.
+				# Default: 200
+				# Range: 20 ~ 6000
+				pollIntervalTicks = 200

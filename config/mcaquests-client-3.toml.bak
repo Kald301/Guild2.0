@@ -31,8 +31,9 @@
 	#Draw a background behind the quest tracker HUD.
 	questTrackerBackground = true
 	#Which background the quest tracker draws, when questTrackerBackground is on:
-	#PANEL for the mod's textured panel, SHADED for the plain translucent box used
-	#before 1.5.0. Ignored entirely when questTrackerBackground is false.
+	#PANEL for the mod's textured panel, SHADED for a soft, borderless translucent
+	#wash that fades in from the top. Ignored entirely when questTrackerBackground is false.
+	#Read every frame, so edits apply as soon as the file is saved - no restart.
 	#Allowed Values: PANEL, SHADED
 	questTrackerStyle = "PANEL"
 	#Screen corner the quest tracker HUD anchors to: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT.
@@ -150,6 +151,11 @@
 	# Default: 32
 	# Range: 4 ~ 64
 	mapAtlasesMinimapBudget = 32
+	#Opacity of the tracker background, 0 (invisible) to 100 (as drawn). Applies to both
+	#PANEL and SHADED; text is never faded. Read every frame like the other tracker keys.
+	# Default: 100
+	# Range: 0 ~ 100
+	questTrackerOpacity = 100
 
 		[client.marker.edge]
 			#The arrow at the edge of the screen that points at a target you are not looking at.

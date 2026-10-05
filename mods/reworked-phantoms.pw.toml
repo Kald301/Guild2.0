@@ -1,0 +1,13 @@
+name = "Reworked Phantoms"
+filename = "ReworkedPhantoms-1.2.5+NeoForge-1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9d5e38b6db87cd5cd252ca3416bca543e554ddb6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7771893
+project-id = 1272418

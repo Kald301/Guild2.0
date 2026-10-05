@@ -32,33 +32,43 @@
 	#jugador en el chat la velocidad previa por eje, la pérdida (b/t y b/s), el umbral y el daño calculado,
 	#aunque el daño sea 0. Dejar en false en el server real.
 	debug_impacto = false
-	#Un salto o una caída corta no es planear. Fantastic Wings frena cualquier caída con alas, incluso la
-	#de un salto común, así que sin vuelo activo el impacto cuenta recién cuando el jugador cayó MÁS de
-	#estos bloques desde que dejó el suelo (la misma cuenta que la distancia de caída vanilla; subir no
-	#descuenta), o si voló en ese mismo tramo en el aire. El vuelo activo cuenta siempre.
-	#3 = la altura a partir de la cual vanilla hace daño por caída. 0 = cuenta en cuanto empieza a caer.
-	# Default: 3.0
-	# Range: 0.0 ~ 256.0
-	planeo_caida_minima = 3.0
+
+#Parte 2: límite de tiempo de vuelo ACTIVO (isFlying). El planeo pasivo no consume presupuesto.
+#El costo de hambre de Fantastic Wings se sigue cobrando aparte.
+[flight_limit]
+	#Interruptor general de la Parte 2. En false el vuelo vuelve a ser ilimitado (solo lo limita el hambre).
+	habilitado = true
+	#Modo del presupuesto de vuelo:
+	#  cooldown_en_tiempo_real: segundos_de_vuelo de vuelo activo; a los segundos_de_recarga desde el
+	#    último vuelo, el presupuesto vuelve completo. La recarga corre en tiempo real, también desconectado.
+	#  por_dia_de_juego: ticks_por_dia de vuelo activo por día de juego (el contador vuelve a 0 cuando
+	#    cambia el día del Overworld; dormir o /time set también lo resetean).
+	modo = "cooldown_en_tiempo_real"
+	#Modo cooldown: segundos de vuelo activo por carga. 60 s son ~900 bloques volando (estimado, a validar).
+	# Default: 60
+	# Range: 1 ~ 86400
+	segundos_de_vuelo = 60
+	#Modo cooldown: segundos desde el último vuelo hasta que el presupuesto vuelve completo.
+	# Default: 300
+	# Range: 0 ~ 86400
+	segundos_de_recarga = 300
+	#Modo por día: ticks de vuelo activo por día de juego (20 ticks = 1 s; un día dura 24000 ticks).
+	# Default: 2400
+	# Range: 1 ~ 24000
+	ticks_por_dia = 2400
+	#Los jugadores en creativo o espectador no tienen límite.
+	excluir_creativo = true
+	#Los operadores (nivel >= nivel_operador) no tienen límite. En false para que el admin pueda probarlo.
+	excluir_operadores = false
+	#Nivel de permiso mínimo que cuenta como operador para excluir_operadores.
+	# Default: 2
+	# Range: 0 ~ 4
+	nivel_operador = 2
+	#Muestra el vuelo restante o la recarga en la actionbar mientras se vuela o se está en recarga.
+	mostrar_actionbar = true
 
 #Parte 3: Arnés de alas equipable en Curios (slot "wings").
 #El costo de la receta NO está acá: se ajusta con el JSON de la receta (datapack o KubeJS).
 [wing_harness]
 	#Si es false, el arnés no otorga alas y sus recetas no se cargan (hace falta /reload para las recetas).
 	habilitado = true
-
-#Parte 2: las alas de POCIÓN duran un tiempo. Al tomar una poción de alas de Fantastic Wings (también
-#la arrojadiza, la persistente o la flecha) el jugador recibe el efecto "Alas" con esta duración; el
-#tiempo corre siempre (volando, planeando o caminando) y se ve como cualquier efecto. Cuando termina,
-#las alas se pierden (no hay recarga: hace falta otra poción). Volver a tomarla renueva la duración.
-#La leche quita el efecto (y con él las alas); el tótem de la inmortalidad no.
-#El Arnés de alas NO tiene límite de tiempo: solo el costo de hambre de Fantastic Wings
-#(fantasticwings-server.toml).
-[wing_potion]
-	#Si es false, las alas de poción vuelven a ser permanentes, como en Fantastic Wings original.
-	habilitado = true
-	#Duración del efecto "Alas" de una poción, en segundos. 300 = 5 minutos.
-	#Un cambio se aplica a las pociones que se tomen después, no a los efectos que ya están corriendo.
-	# Default: 300
-	# Range: 1 ~ 86400
-	duracion_segundos = 300

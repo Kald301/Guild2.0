@@ -1,5 +1,5 @@
 ["Marriage Effects"]
 	#Effects applied to married couples when close to each other. Format: 'modid:effect;duration_ticks;amplifier'
-	marriageProximityEffects = ["minecraft:haste;30;1", "minecraft:regeneration;30;0", "minecraft:speed;30;0", "minecraft:health_boost;30;1", "minecraft:luck;30;0"]
+	marriageProximityEffects = ["minecraft:haste;150;0", "minecraft:speed;150;0", "minecraft:health_boost;150;1", "minecraft:luck;150;0"]
 	#Effects applied when a married couple sleeps near each other. Format: 'modid:effect;duration_ticks;amplifier'
 	sharedBedEffects = ["minecraft:saturation;600;0", "minecraft:regeneration;600;0"]

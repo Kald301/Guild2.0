@@ -1,73 +1,83 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-04 11:01:59
+ Fecha: 2026-10-05 18:17:10
  Rondas de verificacion: 2
+ Poda de obsoletos: listar
 ============================================================
 
-MODS ARREGLADOS (12)
+OBSOLETOS DETECTADOS - NO SE BORRO NADA (4)
 ------------------------------------------------------------
-Estos mods no se pueden bajar por la API de CurseForge (el autor
-los excluyo). Hay dos arreglos posibles:
-  - convertido a override: se borro su .pw.toml y el .jar real
-    quedo dentro de mods\, asi se distribuye como archivo directo
-    y no depende de ninguna API externa.
-  - duplicado borrado: el mod ya estaba agregado desde otra fuente
-    (Modrinth / URL directa) y solo sobraba la copia de CurseForge.
+Su .jar ya no esta en la instancia de CurseForge, pero siguen en
+el pack: los jugadores los siguen bajando y el server no los tiene.
+Por que no se borraron: modo listar (PODA=listar en sync-modpack.bat)
+Si la lista esta bien, pone PODA=borrar en sync-modpack.bat y se
+van a borrar solos. Si alguno tiene que quedarse, anotalo en
+mods-conservar.txt.
+
+  * 3dskinlayers.pw.toml  (skinlayers3d-neoforge-1.11.2-mc1.21.1.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
+  * autotranslator.pw.toml  (autotranslator-1.0.0.jar)
+      motivo : reemplazado por AutoTranslation-Next
+  * citadel.pw.toml  (citadel-2.7.1-1.21.1.jar)
+      motivo : reemplazado por citadel-1-21-1-port
+  * falling-tree.pw.toml  (FallingTree-1.21.1-1.21.1.11.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
+
+DUPLICADOS CONOCIDOS BORRADOS (1)
+------------------------------------------------------------
+El mismo .jar estaba declarado dos veces. No se pierde ningun mod:
+lo sigue cubriendo el otro.
+
+  * mcacapitals-1.3.5.jar
+      borrado : mca-capitals.pw.toml
+      motivo  : ya lo cubre capitals-a-monarchy-mod-for-mca-reborn.pw.toml (descarga directa)
+
+CONVERTIDOS A OVERRIDE (11)
+------------------------------------------------------------
+El autor excluyo estos mods de la API de CurseForge. Se borro su
+.pw.toml y el .jar real quedo dentro de mods\, asi se distribuye
+como archivo directo y no depende de ninguna API externa.
 
   * accdelight-1.0.0-neoforge+1.21.1.jar
-      accion           : convertido a override
       .pw.toml borrado : alexs-caves-continued-delight.pw.toml
       tamano           : 0.1 MB
   * alexsmobs-2.2.2-neoforge+1.21.1.jar
-      accion           : convertido a override
       .pw.toml borrado : alexs-mobs-continued.pw.toml
       tamano           : 26.19 MB
   * aquaculturedelight-1.2.0-neoforge-1.21.1.jar
-      accion           : convertido a override
       .pw.toml borrado : aquaculture-delight.pw.toml
       tamano           : 0.2 MB
   * codxlib-1.6.1-neoforge+1.21.1.jar
-      accion           : convertido a override
       .pw.toml borrado : codxlib.pw.toml
       tamano           : 0.18 MB
   * Create-FPS-Optimizer-NeoForge-1.21.1-4.0.4.jar
-      accion           : convertido a override
       .pw.toml borrado : create-fps-optimizer.pw.toml
       tamano           : 0.21 MB
   * Create-Server-Optimizer-NeoForge-1.21.1-2.3.0.jar
-      accion           : convertido a override
       .pw.toml borrado : create-server-optimizer.pw.toml
       tamano           : 0.01 MB
   * entityculling-neoforge-1.11.2-mc1.21.1.jar
-      accion           : convertido a override
       .pw.toml borrado : entityculling.pw.toml
       tamano           : 1.44 MB
   * majruszs-difficulty-neoforge-1.21.1-1.1.3.jar
-      accion           : convertido a override
       .pw.toml borrado : majruszs-progressive-difficulty-continued.pw.toml
       tamano           : 1.18 MB
-  * mcacapitals-1.3.5.jar
-      accion           : duplicado borrado (ya lo cubre capitals-a-monarchy-mod-for-mca-reborn.pw.toml)
-      .pw.toml borrado : mca-capitals.pw.toml
   * scalingmobs-1.1-neoforge.jar
-      accion           : convertido a override
       .pw.toml borrado : scalingmobs.pw.toml
       tamano           : 0.01 MB
   * skinlayers3d-neoforge-1.11.3-mc1.21.1.jar
-      accion           : convertido a override
       .pw.toml borrado : skin-layers-3d.pw.toml
       tamano           : 1.82 MB
   * swemcull-1.21.1-1.0.4.jar
-      accion           : convertido a override
       .pw.toml borrado : swemcull.pw.toml
       tamano           : 0.12 MB
 
-RESULTADO FINAL: OK
+RESULTADO DE LA INSTALACION DE PRUEBA: OK
 Despues de los arreglos, la instalacion de prueba termino sin errores.
 
 Log completo del installer: C:\Users\0_0\AppData\Local\packwiz-verify\install.log
 
-NOTA: "packwiz curseforge detect" (paso 6) vuelve a convertir estos
-jars en metadata de CurseForge en cada sincronizacion. Por eso el
-paso 7 los vuelve a pasar a override automaticamente cada vez. Es
+NOTA: "packwiz curseforge detect" (paso 6) vuelve a convertir los
+overrides en metadata de CurseForge en cada sincronizacion. Por eso
+el paso 7 los vuelve a pasar a override automaticamente cada vez. Es
 esperado: no hace falta que hagas nada a mano.

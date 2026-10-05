@@ -294,6 +294,7 @@
 	spillOverWater = true
 	#Limit that spreading to water this mod gives a current to.
 	#false = every water block in the world spills over water.
+	#Leave on: with it off, other mods' water channels and tanks can overflow.
 	#Applies at once.
 	spillOnStreamsOnly = true
 	#How fast a current carries Sable physics vessels (blocks per second).
@@ -338,11 +339,17 @@
 		#For setups where other mods drain or displace plain-water streams.
 		#Applies to newly generated land only.
 		forceBakedFluid = false
-		#The Physics Mod draws its own flowing-water effect over streams.
-		#0 = show both, 1 = hide it on streams (its ocean waves stay).
-		#Applies at once.
-		# Default: 1
-		# Range: 0 ~ 1
+		#How to share water with the Physics Mod.
+		#1 = with that mod installed, stop drawing this mod's current on the water surface,
+		#    so that mod draws water however it likes (the default).
+		#2 = do that even without the Physics Mod: still water surfaces, but the current
+		#    still carries boats and items and still makes the spray.
+		#3 = keep this mod's moving water and keep that mod's ocean off it. NEEDS
+		#    forceBakedFluid = true and newly generated land.
+		#0 = always draw this mod's own flowing surface.
+		#Applies at once, but loaded chunks need a rebuild (F3+A).
+		# Default: 3
+		# Range: 0 ~ 3
 		physicsModWater = 1
 		#With Flowing Fluids installed, fill streams with this mod's own stream water,
 		#so they cannot drain away. No effect without that mod.

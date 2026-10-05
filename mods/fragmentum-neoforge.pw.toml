@@ -1,13 +1,13 @@
 name = "Fragmentum [NeoForge Edition]"
-filename = "fragmentum-5.0.0+1.21.1-neoforge.jar"
+filename = "fragmentum-5.2.0+1.21.1-neoforge.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "bd5e53aed71308da1f12740c2af88019b4e7c2b3"
+hash = "b4b7aed92ff5bfd61c2d0b0a894268d03c3f8f8c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8921953
+file-id = 9070553
 project-id = 1123977

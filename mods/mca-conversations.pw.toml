@@ -1,13 +1,13 @@
 name = "MCA: Conversations"
-filename = "mcaconversations-neoforge-1.7.1+1.21.1.jar"
+filename = "mcaconversations-neoforge-1.8.0+1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "a5def16b467ded4070a5c3e33052abfc290f657b"
+hash = "b061e7d5d2d13860fad354b8035b0db31999f5c4"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8895125
+file-id = 9023801
 project-id = 1601191

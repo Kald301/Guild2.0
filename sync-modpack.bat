@@ -16,6 +16,16 @@ REM Por encima de esto se reporta para revision manual, para no chocar
 REM con el limite de 100 MB por archivo de GitHub.
 set "MAX_MB=90"
 
+REM Poda de .pw.toml obsoletos (mods cuyo .jar ya no esta en la instancia
+REM de CurseForge: los sacaste, o los cambiaste por un fork).
+REM   listar = solo los reporta en mods-fallidos.txt, NO borra nada
+REM   borrar = los borra del repo (a los jugadores se les van solos)
+set "PODA=listar"
+
+REM Si aparecen mas obsoletos que esto de una sola vez, no se borra
+REM ninguno: casi seguro es la ruta ORIGEN mal puesta, no 50 mods viejos.
+set "MAX_PODA=10"
+
 REM =========================================================
 REM  NO EDITAR DE ACA PARA ABAJO
 REM =========================================================
@@ -103,7 +113,7 @@ call "%PACKWIZ%" refresh
 if errorlevel 1 goto :error_packwiz
 
 REM =========================================================
-REM  PASO 7: VERIFICACION DE DESCARGA REAL (detecta mods bloqueados)
+REM  PASO 7: PODA DE OBSOLETOS + VERIFICACION DE DESCARGA REAL
 REM
 REM  Toda la logica vive en verify-mods.ps1 (PowerShell da control real
 REM  de procesos, codigos de salida y manejo de archivos; el .bat puro
@@ -111,14 +121,18 @@ REM  no). Ya NO se usa "packwiz serve": el installer se corre directo
 REM  contra el pack.toml local, asi que no hay servidor en segundo
 REM  plano que pueda quedar colgado.
 REM
+REM  Ademas de la verificacion, poda los .pw.toml obsoletos (segun PODA)
+REM  y lee mods-reemplazos.txt y mods-conservar.txt.
+REM
 REM  Codigos de salida de verify-mods.ps1:
 REM    0 = la verificacion corrio y el pack quedo sano
-REM    1 = corrio, arreglo lo que pudo, quedan casos manuales
+REM    1 = corrio, arreglo lo que pudo, quedan casos manuales u
+REM        obsoletos detectados sin borrar (PODA=listar)
 REM    2 = NO se pudo verificar (falta java / falta el bootstrap jar)
 REM    3 = la verificacion fallo de un modo no interpretable
 REM    4 = el propio verificador se corto por un error inesperado
 REM =========================================================
-echo [7/7] Verificando que todos los mods sean descargables...
+echo [7/7] Podando obsoletos y verificando que todos los mods sean descargables...
 echo   (instala el pack entero en una carpeta de prueba: puede tardar)
 
 if not exist "%DESTINO%\verify-mods.ps1" (
@@ -128,14 +142,14 @@ if not exist "%DESTINO%\verify-mods.ps1" (
     goto :fin_error
 )
 
-powershell -NoProfile -ExecutionPolicy Bypass -File "%DESTINO%\verify-mods.ps1" -ProjectRoot "%DESTINO%" -SourceMods "%ORIGEN%\mods" -MaxMB %MAX_MB%
+powershell -NoProfile -ExecutionPolicy Bypass -File "%DESTINO%\verify-mods.ps1" -ProjectRoot "%DESTINO%" -SourceMods "%ORIGEN%\mods" -MaxMB %MAX_MB% -PruneMode "%PODA%" -MaxPrune %MAX_PODA%
 set "VERIF_RC=!ERRORLEVEL!"
 
 if "!VERIF_RC!"=="0" goto :verif_fin
 if "!VERIF_RC!"=="1" (
     echo.
-    echo [ATENCION] Se arreglaron mods automaticamente pero quedaron casos
-    echo            que necesitan revision manual. Mira mods-fallidos.txt
+    echo [ATENCION] Quedaron casos que necesitan revision manual, u obsoletos
+    echo            detectados que no se borraron. Mira mods-fallidos.txt
     echo            ANTES de hacer push.
     goto :verif_fin
 )

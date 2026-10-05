@@ -61,6 +61,50 @@
 	# Default: 1200
 	# Range: 200 ~ 24000
 	conversationSessionTimeoutTicks = 1200
+	#How far apart (blocks) a player and a villager may be and go on talking. Measured
+	#in three dimensions and inclusive: standing exactly this far apart is still in range.
+	#This is the CONTINUED distance only - opening an interaction still needs MCA's own
+	#reach, so raising this never lets anybody start a conversation from further away.
+	#The chat frontend keeps its own hearing radii above; they are a different question.
+	# Default: 16.0
+	# Range: 1.0 ~ 64.0
+	continueDistance = 16.0
+	#Past this distance (blocks) the conversation ends at once, with no grace period.
+	#Values below continueDistance are raised to it, which simply removes the grace band.
+	# Default: 24.0
+	# Range: 1.0 ~ 128.0
+	immediateCloseDistance = 24.0
+	#How long (game ticks) a player may stand between continueDistance and
+	#immediateCloseDistance before the conversation ends (20 = 1 s). The window stays
+	#readable during the grace, but no answer or topic change may run from out there,
+	#and walking back inside clears the timer. 0 ends the conversation immediately.
+	# Default: 20
+	# Range: 0 ~ 1200
+	distanceGraceTicks = 20
+	#How long (game ticks) a dialogue window may go without saying it is still open
+	#before the server releases the villager (100 = 5 s, several heartbeat intervals).
+	#This is what frees a villager from a client that crashed or a window that vanished;
+	#reading for minutes renews it continuously and never expires. 0 disables the lease,
+	#which means only an explicit close, distance or death ever releases the villager.
+	# Default: 100
+	# Range: 0 ~ 24000
+	guiLeaseTicks = 100
+	#Hold a villager still and facing you while you are talking to them. Turning this off
+	#only gives up the movement hold; every lifecycle rule above still applies.
+	holdVillagerDuringInteraction = true
+	#How long (game ticks) after an attack before that villager will talk again
+	#(100 = 5 s). Ongoing danger keeps refusing regardless of this number.
+	# Default: 100
+	# Range: 0 ~ 24000
+	attackReopenDelayTicks = 100
+	#What a villager is free to do after an attack ends the conversation.
+	#NATIVE_COMBAT - leave MCA's own reaction alone; a guard fights back. The default.
+	#RETREAT       - break away from the attacker whatever the profession would do.
+	#Allowed Values: NATIVE_COMBAT, RETREAT
+	attackedBehavior = "NATIVE_COMBAT"
+	#End the conversation when the villager is in immediate danger, so they are free to
+	#flee rather than standing in a fight to finish a sentence.
+	interruptOnImmediateDanger = true
 
 [rpg]
 	#Movement and decay of the hidden disposition vector. Whether the vector and the checks

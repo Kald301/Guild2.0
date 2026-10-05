@@ -29,6 +29,11 @@
 	#legacy one-line result and returns to its category, exactly as in 1.0.0. Turning this
 	#off never leaves an empty page: each starter carries an explicit legacy fallback result.
 	enableBranching = true
+	#Enable MCA: Crime integration (only active when the 'mcacrime' mod is installed):
+	#villagers can gate lines on whether you are wanted, your band or custody
+	#(conversations_crime_* conditions, crime.* context fields), witnesses remember what
+	#they saw you do, and a guard's challenge speaks in the guard's own personality.
+	enableCrime = true
 
 [gift]
 	#Most recent gifts remembered per player (oldest dropped first).

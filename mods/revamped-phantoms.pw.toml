@@ -1,0 +1,13 @@
+name = "Revamped Phantoms"
+filename = "revampedphantoms-1.1.2-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bf1eea15d4eaf3809545a9f74e63775f9886b2af"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5625105
+project-id = 575418

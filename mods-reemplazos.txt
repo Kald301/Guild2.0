@@ -1,0 +1,31 @@
+# =========================================================
+#  REEMPLAZOS DE MODS (forks / sucesores)
+#  Usado por verify-mods.ps1 (paso 7 de sync-modpack.bat)
+# =========================================================
+#
+#  Una linea por par:    viejo -> nuevo    # comentario opcional
+#
+#    viejo = nombre del .pw.toml del mod que ya NO se usa, sin
+#            el ".pw.toml"  (ej: alexs-caves-unofficial-port)
+#    nuevo = nombre del .pw.toml que lo reemplaza, o el comienzo
+#            del nombre del .jar si el reemplazo es un override
+#            (ej: AutoTranslation-Next)
+#
+#  Que hace el script con cada par:
+#    - Si "viejo" ya no esta en la instancia de CurseForge, se poda
+#      como cualquier obsoleto, y el reporte dice "reemplazado por
+#      <nuevo>" en vez de un motivo generico.
+#    - Si estan LOS DOS en la instancia, NO se borra nada y queda
+#      para revision manual: hay que sacar "viejo" de CurseForge.
+#      Borrarlo solo del repo dejaria al server (que copia de la
+#      instancia) con los dos, y el desfase volveria al reves.
+#
+#  Ojo: aunque un par no figure aca, el script igual poda cualquier
+#  .pw.toml cuyo .jar ya no este en la instancia. Esta lista solo
+#  sirve para documentar el reemplazo y para frenar el caso en que
+#  quedaron los dos instalados.
+# =========================================================
+
+alexs-caves-unofficial-port -> alexs-caves-continued
+citadel -> citadel-1-21-1-port
+autotranslator -> AutoTranslation-Next    # reemplazo funcional decidido a mano: NO es el mismo mod ni el mismo modId

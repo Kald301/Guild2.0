@@ -334,3 +334,42 @@
 [debug]
 	#Verbose logging for gossip detection and dialogue condition evaluation.
 	debugLogging = false
+
+[capitals]
+	#Master switch for the optional MCA Capitals integration. With Capitals absent this
+	#changes nothing at all. With Capitals installed and this off, Conversations behaves
+	#exactly as though it were absent: every capital context field is unavailable, every
+	#capital topic self-hides, and no capital state is read.
+	enabled = true
+	#Offer the capital conversation topics (the crown, the court, houses, the realm).
+	topicsEnabled = true
+	#Turn new chronicle entries and court changes into village gossip, so a coronation or
+	#a declaration of war is something villagers bring up on their own.
+	newsEnabled = true
+	#How often the chronicle is checked for new entries, in seconds. Independent of the
+	#gossip sweep's own cadence; a capital's chronicle changes far less often than a
+	#village does.
+	# Default: 30
+	# Range: 5 ~ 600
+	newsPollSeconds = 30
+	#How many chronicle entries one poll may turn into gossip. A capital that generated a
+	#burst of events while nobody was near should not flood the village with all of them.
+	# Default: 3
+	# Range: 1 ~ 20
+	newsMaxPerPoll = 3
+	#Let villagers speak about wars, truces and alliances between capitals. Off, the
+	#war and allied context fields stay unavailable and only domestic court talk remains.
+	diplomacyTalkEnabled = true
+	#Let a villager whose title just changed remark on it when approached, once.
+	roleRemarkEnabled = true
+	#How many days a title change stays fresh enough to be worth remarking on.
+	# Default: 7
+	# Range: 1 ~ 60
+	roleRemarkDays = 7
+	#How long a resolved villager-to-capital lookup is reused, in ticks. 0 re-resolves
+	#every read, which is correct but scans the capital registry far more often.
+	# Default: 200
+	# Range: 0 ~ 6000
+	contextCacheTicks = 200
+	#Verbose logging for the Capitals binding and context reads.
+	debug = false

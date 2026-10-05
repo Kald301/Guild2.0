@@ -156,12 +156,6 @@
 	# Default: 100
 	# Range: 0 ~ 100
 	questTrackerOpacity = 100
-	#How long a project's build area stays outlined after you press Show build area on its
-	#card, in seconds (1.7.0). The outline is the area the server actually counts placements
-	#and kills in. 0 turns the outline off; the area is still described in chat.
-	# Default: 60
-	# Range: 0 ~ 600
-	showBuildAreaSeconds = 60
 
 		[client.marker.edge]
 			#The arrow at the edge of the screen that points at a target you are not looking at.
