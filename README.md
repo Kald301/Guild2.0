@@ -62,12 +62,14 @@ Tres fases, en este orden. Todo queda anotado en `mods-fallidos.txt`, separado p
 (ni por nombre ni por hash) es un mod que saqué, o la versión vieja de uno que cambié por un
 fork. Si queda, los jugadores lo siguen bajando y el server (que copia de la instancia) no lo
 tiene → "conexión perdida" por canales que el server no conoce.
-- `PODA=listar` (en el `.bat`): solo los lista en `mods-fallidos.txt`, **no borra nada**.
-- `PODA=borrar`: los borra. A los jugadores se les borra el `.jar` solo en el próximo arranque:
+- `PODA=borrar` (en el `.bat`, **el default**): los borra en la misma corrida y quedan anotados en
+  la sección "OBSOLETOS PODADOS" de `mods-fallidos.txt`, con el motivo. A los jugadores se les borra el `.jar` solo en el próximo arranque:
   packwiz-installer borra lo que él mismo instaló y salió del pack (lo dice el log:
   `Deleted X (removed from pack)`). **No** toca lo que no instaló él (un `.jar` copiado a mano).
-- Si aparecen más de `MAX_PODA` obsoletos de una vez **no se borra ninguno** (casi seguro es la
-  ruta `ORIGEN` mal puesta).
+- `PODA=listar`: solo los lista en `mods-fallidos.txt`, **no borra nada** (por si quiero revisar
+  antes de borrar).
+- En los dos modos: si la instancia no tiene ningún `.jar`, o aparecen más de `MAX_PODA` obsoletos
+  de una vez, **no se borra ninguno** (casi seguro es la ruta `ORIGEN` mal puesta).
 - `mods-reemplazos.txt`: pares `viejo -> nuevo` (forks/sucesores). El reporte dice "reemplazado
   por X", y si los dos siguen instalados en CurseForge **frena** en vez de borrar: hay que sacar
   el viejo de la instancia (si no, el server queda con los dos).
@@ -99,7 +101,7 @@ después y lo vuelve a arreglar. No hay que "arreglarlo de una vez por todas".
 | Código | Significa | Qué hago |
 |--------|-----------|----------|
 | 0 | Pack sano, se instaló completo sin errores | Commit y push tranquilo |
-| 1 | Arregló lo que pudo, **quedan casos manuales** u obsoletos detectados sin borrar (`PODA=listar`) | Leer `mods-fallidos.txt` **antes** de publicar |
+| 1 | Arregló lo que pudo, **quedan casos manuales** u obsoletos detectados sin borrar (`PODA=listar` o poda frenada) | Leer `mods-fallidos.txt` **antes** de publicar |
 | 2 | **No se pudo verificar** (falta `java` en el PATH o falta el bootstrap jar) | No probó nada: no asumir que está bien |
 | 3 | Falló de un modo no interpretable | No asumir que está bien; ver el log |
 | 4 | El verificador se cortó por un error propio | No asumir que está bien; ver el error |
@@ -132,8 +134,9 @@ Solo en estos casos, que son la excepción:
   **90 MB** (no se convierte a override para no chocar con el límite de 100 MB por archivo de
   GitHub).
 - Hace falta agregar un mod que no está ni en CurseForge ni en Modrinth.
-- `mods-fallidos.txt` lista **obsoletos detectados** (con `PODA=listar`): si la lista está bien,
-  cambiar a `PODA=borrar`; si alguno tiene que quedarse, anotarlo en `mods-conservar.txt`.
+- `mods-fallidos.txt` lista **obsoletos detectados - no se borró nada**: o la poda frenó (revisar
+  la ruta `ORIGEN`), o estoy en `PODA=listar`. Si alguno tiene que quedarse, anotarlo en
+  `mods-conservar.txt`.
 - Cambio un mod por un fork → anotar el par en `mods-reemplazos.txt` (opcional: el viejo se poda
   igual, pero así queda documentado y el script frena si quedaron los dos instalados).
 

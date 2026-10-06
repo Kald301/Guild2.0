@@ -13,8 +13,10 @@
 #     por nombre ni por hash) es un mod que sacaste de la instancia, o la
 #     version vieja de uno que cambiaste por un fork. Ningun otro paso
 #     los borra: "packwiz curseforge detect" solo agrega y robocopy solo
-#     espeja .jar. Con -PruneMode listar solo se reportan; con borrar se
-#     borran. mods-reemplazos.txt declara pares viejo -> nuevo y
+#     espeja .jar. Con -PruneMode borrar (el default) se borran; con
+#     listar solo se reportan. En los dos modos, si la instancia no tiene
+#     .jar o hay mas de -MaxPrune obsoletos, NO se borra ninguno.
+#     mods-reemplazos.txt declara pares viejo -> nuevo y
 #     mods-conservar.txt las excepciones que nunca se podan.
 #
 #  3. INSTALACION DE PRUEBA
@@ -38,7 +40,7 @@ param(
     [Parameter(Mandatory = $true)][string] $SourceMods,
     [int]    $MaxMB     = 90,
     [int]    $MaxRounds = 4,
-    [string] $PruneMode = 'listar',
+    [string] $PruneMode = 'borrar',
     [int]    $MaxPrune  = 10
 )
 
@@ -781,9 +783,15 @@ if ($listados.Count -gt 0) {
     $r.Add('Su .jar ya no esta en la instancia de CurseForge, pero siguen en')
     $r.Add('el pack: los jugadores los siguen bajando y el server no los tiene.')
     $r.Add("Por que no se borraron: $($listados[0].Porque)")
-    $r.Add('Si la lista esta bien, pone PODA=borrar en sync-modpack.bat y se')
-    $r.Add('van a borrar solos. Si alguno tiene que quedarse, anotalo en')
-    $r.Add('mods-conservar.txt.')
+    if ($PruneMode -eq 'listar') {
+        $r.Add('Si la lista esta bien, pone PODA=borrar en sync-modpack.bat y se')
+        $r.Add('van a borrar solos.')
+    } else {
+        $r.Add('Si son demasiados, casi seguro la ruta ORIGEN esta mal: revisala')
+        $r.Add('antes de volver a correr. Si la lista es real, borralos a mano o')
+        $r.Add('subi MAX_PODA en sync-modpack.bat para esta corrida.')
+    }
+    $r.Add('Si alguno tiene que quedarse, anotalo en mods-conservar.txt.')
     $r.Add('')
     foreach ($p in $listados) {
         $r.Add("  * $($p.Toml)  ($($p.Jar))")

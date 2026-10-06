@@ -1,18 +1,16 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-05 21:00:39
+ Fecha: 2026-10-06 10:05:52
  Rondas de verificacion: 2
- Poda de obsoletos: listar
+ Poda de obsoletos: borrar
 ============================================================
 
-OBSOLETOS DETECTADOS - NO SE BORRO NADA (5)
+OBSOLETOS PODADOS (5)
 ------------------------------------------------------------
-Su .jar ya no esta en la instancia de CurseForge, pero siguen en
-el pack: los jugadores los siguen bajando y el server no los tiene.
-Por que no se borraron: modo listar (PODA=listar en sync-modpack.bat)
-Si la lista esta bien, pone PODA=borrar en sync-modpack.bat y se
-van a borrar solos. Si alguno tiene que quedarse, anotalo en
-mods-conservar.txt.
+Su .jar ya no esta en la instancia de CurseForge: se borro el
+.pw.toml. A los jugadores se les borra el .jar solo en el proximo
+arranque (packwiz-installer borra lo que el mismo instalo y salio
+del pack).
 
   * 3dskinlayers.pw.toml  (skinlayers3d-neoforge-1.11.2-mc1.21.1.jar)
       motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)

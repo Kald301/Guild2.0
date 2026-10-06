@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "804d752444553ee0428864e09995afa70ad488db795de81e9c76ba1bcdb12faf"
+hash = "773fcd2dfb4a6e277dfe95da2d9c0cf674d29420111594c8ae3c5ec80bc45ead"
 
 [[files]]
 file = "config/.sereneseasonsplus-descriptive-config-reset.done"
@@ -10,7 +10,7 @@ hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "7dd852950fecc492014d2a1a0edaa90fb38fc7c40da0ecc88c6e2cfeab9bef31"
+hash = "50c579c430b84f7b345c9f1876ffa0bcca3f1d28df0ad64c14f67845cce5a661"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -462,7 +462,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "087a5fa46f5a866a5453439b3131ae6039fea1464b2cd3aa1132b9177909bda9"
+hash = "bfe8a49925d27d7ffde9a969de449b579ec1e7dffefe3416556ec3875eb32f91"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1194,7 +1194,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "ed0e791ac0ba4f198efe1eb64ea6cd217479c12394e65d0520905e9d8d93ad8b"
+hash = "8ce4ab88f6c1e269b8b8e6c367f198166aa235fc02e5eef368174bca6f5ffd15"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1202,7 +1202,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "e9aad93d4e3eccaabf865d3f3f2380fb3b2855d5c59cc0b8d1d781c1e4d7a22a"
+hash = "e1c8bf77c37654c6a5277082fecdee14e644a61e90ee409d1dca218779a9f3c3"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1210,7 +1210,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "03a893d763591729e22a342805dfc171223506f65241755100b4034f5e6fd400"
+hash = "e1c8bf77c37654c6a5277082fecdee14e644a61e90ee409d1dca218779a9f3c3"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1258,7 +1258,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "827e36d93ab361af86e2fb8f9f3294239a35d3e7e04bfc5f9c9d6661369a314a"
+hash = "330df235987c31a53a39e379409b83494df48388b8e6c66b6a04f10a74885112"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1406,7 +1406,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "e22e128c28b700763d840911e8633b068aa9ed66e8b774016f4f4e3de23bea71"
+hash = "f2803e2b39bbddaa21e22bc2dc4f5addc227ed7bc82079e3705f46b5cf81c5e9"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2481,11 +2481,6 @@ file = "kubejs/startup_scripts/main.js"
 hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
 
 [[files]]
-file = "mods/3dskinlayers.pw.toml"
-hash = "c1f98a1e9d7201f0b6ddc3f705f43a53f7539978f48425de5c1177a310fe7b86"
-metafile = true
-
-[[files]]
 file = "mods/AutoTranslation-Next-2.1.0-fix2.jar"
 hash = "cc77d4b2669ec11566f1f6890f0c32574b6165343a4f3545ea5b7f8483eb1c46"
 
@@ -2572,11 +2567,6 @@ metafile = true
 [[files]]
 file = "mods/athena.pw.toml"
 hash = "38bddea8d550568799dd7f208c0bbe10280de3e456016a0d59aa20de112a2345"
-metafile = true
-
-[[files]]
-file = "mods/autotranslator.pw.toml"
-hash = "ec09418591172b7405ecf919e734b9f1f317163e567392cfbdb1e0849ef6380e"
 metafile = true
 
 [[files]]
@@ -2727,11 +2717,6 @@ metafile = true
 [[files]]
 file = "mods/citadel-1-21-1-port.pw.toml"
 hash = "3a0f7208a7863c154b7dbc6418c4686a7e5956444d6f9b05d9a33b0393cbafef"
-metafile = true
-
-[[files]]
-file = "mods/citadel.pw.toml"
-hash = "74e817fb0fa9e1ff1ef2aa0e742bdd2504a40c02ab72dc1d5c671d20444cb037"
 metafile = true
 
 [[files]]
@@ -2989,11 +2974,6 @@ metafile = true
 [[files]]
 file = "mods/euphoria-patches.pw.toml"
 hash = "ea10cab55df1871fa566aa64329fef98a1b68c8966d72d6c716c57c394e67bab"
-metafile = true
-
-[[files]]
-file = "mods/falling-tree.pw.toml"
-hash = "5fe387bcad2d72c9bdd7047c19fed3959dcc65e2615e188ae743c517c08209df"
 metafile = true
 
 [[files]]
@@ -3552,11 +3532,6 @@ metafile = true
 [[files]]
 file = "mods/redomesticate.pw.toml"
 hash = "37fc6086fa13e6cd67fb3f03d64ae3190a9f7e1b344021041891c5b5b07bb9bb"
-metafile = true
-
-[[files]]
-file = "mods/regions-unexplored-expansion.pw.toml"
-hash = "4acd42706d7da19e320e7d93cbb79abd8d72a6fe4e93b822b6dc1d479e495367"
 metafile = true
 
 [[files]]
@@ -11526,7 +11501,7 @@ hash = "aa0a49fff1a950b23ccd11b24757bb7d9d30c7463a3155c27f3aa8fce31ba1cb"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "8fec2625ffa99f9fb17bf29b3398dfb36b4cd5ea53fde372289fa8b4dd687ffa"
+hash = "105e1d6371cab14284e6a03ff4423dd57f64c31888679208df1bdb09330e01f0"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves/ComplementaryLicense.txt"

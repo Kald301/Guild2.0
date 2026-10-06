@@ -18,9 +18,12 @@ set "MAX_MB=90"
 
 REM Poda de .pw.toml obsoletos (mods cuyo .jar ya no esta en la instancia
 REM de CurseForge: los sacaste, o los cambiaste por un fork).
+REM   borrar = los borra del repo (a los jugadores se les van solos).
+REM            Es el modo normal. Queda anotado en mods-fallidos.txt.
 REM   listar = solo los reporta en mods-fallidos.txt, NO borra nada
-REM   borrar = los borra del repo (a los jugadores se les van solos)
-set "PODA=listar"
+REM            (para revisar a mano antes de borrar)
+REM El freno de MAX_PODA aplica en los dos modos.
+set "PODA=borrar"
 
 REM Si aparecen mas obsoletos que esto de una sola vez, no se borra
 REM ninguno: casi seguro es la ruta ORIGEN mal puesta, no 50 mods viejos.
@@ -127,7 +130,8 @@ REM
 REM  Codigos de salida de verify-mods.ps1:
 REM    0 = la verificacion corrio y el pack quedo sano
 REM    1 = corrio, arreglo lo que pudo, quedan casos manuales u
-REM        obsoletos detectados sin borrar (PODA=listar)
+REM        obsoletos detectados sin borrar (PODA=listar, o poda
+REM        frenada por MAX_PODA / instancia sin jars)
 REM    2 = NO se pudo verificar (falta java / falta el bootstrap jar)
 REM    3 = la verificacion fallo de un modo no interpretable
 REM    4 = el propio verificador se corto por un error inesperado
