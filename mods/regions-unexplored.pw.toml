@@ -1,13 +1,13 @@
 name = "Regions Unexplored"
-filename = "regions_unexplored-neoforge-1.21.1-0.5.9.jar"
+filename = "regions-unexplored-0.6.2-neoforge-21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "064c2da020731fadd07e095707320431df12288d"
+hash = "122586c147f0aa1efdc655792b6ef24aebbbba84"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7492526
+file-id = 8419667
 project-id = 659110

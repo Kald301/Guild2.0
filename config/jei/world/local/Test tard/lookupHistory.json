@@ -1,5 +1,6 @@
 [
   {"version":1},
+  {"ingredient":{"id":"regions_unexplored:brimwood_log"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:potion","components":"{\"minecraft:potion_contents\":{potion:\"fantasticwings:slime_wings\"}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"guildwings:wing_harness","components":"{\"guildwings:wing_type\":\"angel_wings\"}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:glowstone_dust"},"type":"item_stack","bookmarkType":"INGREDIENT"},

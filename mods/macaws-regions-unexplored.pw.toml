@@ -1,0 +1,13 @@
+name = "Macaw's Regions Unexplored"
+filename = "mcwregionsunexplored-neoforge-1.21.1-1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f63b16adf0b78203dec01af7ae61b66273148b48"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8296198
+project-id = 605641

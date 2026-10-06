@@ -1,11 +1,11 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-05 18:17:10
+ Fecha: 2026-10-05 21:00:39
  Rondas de verificacion: 2
  Poda de obsoletos: listar
 ============================================================
 
-OBSOLETOS DETECTADOS - NO SE BORRO NADA (4)
+OBSOLETOS DETECTADOS - NO SE BORRO NADA (5)
 ------------------------------------------------------------
 Su .jar ya no esta en la instancia de CurseForge, pero siguen en
 el pack: los jugadores los siguen bajando y el server no los tiene.
@@ -21,6 +21,8 @@ mods-conservar.txt.
   * citadel.pw.toml  (citadel-2.7.1-1.21.1.jar)
       motivo : reemplazado por citadel-1-21-1-port
   * falling-tree.pw.toml  (FallingTree-1.21.1-1.21.1.11.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
+  * regions-unexplored-expansion.pw.toml  (RUExpansion-1.0.1+1.21.1.jar)
       motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)

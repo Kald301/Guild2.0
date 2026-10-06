@@ -1,5 +1,7 @@
 [
   {"version":1},
+  {"ingredient":{"id":"regions_unexplored:black_painted_planks"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:grass_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"redomesticate:wayward_lantern"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"magistuarmory:diamond_ranseur"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"magistuarmory:hilt"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -97,7 +99,5 @@
   {"ingredient":{"id":"createreautomated:ancient_debris_node"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"createreautomated:zinc_node"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"createreautomated:node_fragment"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createreautomated:extractor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createreautomated:netherite_drill"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createreautomated:advanced_extractor"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"createreautomated:extractor"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

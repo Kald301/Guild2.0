@@ -1,0 +1,13 @@
+name = "Oh The Biomes We've Gone"
+filename = "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "09e5372e2d03fd68d5e9403ed7238d75efacaf52"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9064021
+project-id = 1070751
