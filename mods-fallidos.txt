@@ -1,27 +1,9 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-06 10:05:52
+ Fecha: 2026-10-06 21:44:20
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
-
-OBSOLETOS PODADOS (5)
-------------------------------------------------------------
-Su .jar ya no esta en la instancia de CurseForge: se borro el
-.pw.toml. A los jugadores se les borra el .jar solo en el proximo
-arranque (packwiz-installer borra lo que el mismo instalo y salio
-del pack).
-
-  * 3dskinlayers.pw.toml  (skinlayers3d-neoforge-1.11.2-mc1.21.1.jar)
-      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
-  * autotranslator.pw.toml  (autotranslator-1.0.0.jar)
-      motivo : reemplazado por AutoTranslation-Next
-  * citadel.pw.toml  (citadel-2.7.1-1.21.1.jar)
-      motivo : reemplazado por citadel-1-21-1-port
-  * falling-tree.pw.toml  (FallingTree-1.21.1-1.21.1.11.jar)
-      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
-  * regions-unexplored-expansion.pw.toml  (RUExpansion-1.0.1+1.21.1.jar)
-      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)
 ------------------------------------------------------------

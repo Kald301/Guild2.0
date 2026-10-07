@@ -462,7 +462,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "bfe8a49925d27d7ffde9a969de449b579ec1e7dffefe3416556ec3875eb32f91"
+hash = "1d485c223c82f290961285a62d34412dbef9e00b78d7459fdf215897c74923da"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1194,7 +1194,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "8ce4ab88f6c1e269b8b8e6c367f198166aa235fc02e5eef368174bca6f5ffd15"
+hash = "a601e4ef398aefddab71caa171560ce47acdf15a55d830b7971d2dfbcddb7587"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1202,7 +1202,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "e1c8bf77c37654c6a5277082fecdee14e644a61e90ee409d1dca218779a9f3c3"
+hash = "0966430595950751a3f8d44e82ede33d75bcc6f89e8a123480f17b18619ce01f"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1210,7 +1210,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "e1c8bf77c37654c6a5277082fecdee14e644a61e90ee409d1dca218779a9f3c3"
+hash = "3aedea2093bdba6d9f0d36cd0649403853e3cdc69840e60a4bed8cf49249e424"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1258,7 +1258,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "330df235987c31a53a39e379409b83494df48388b8e6c66b6a04f10a74885112"
+hash = "22e0d34c33ebf387c256b29820013cc83be1666a20542f08e6c1e2a5913ae524"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1406,7 +1406,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "f2803e2b39bbddaa21e22bc2dc4f5addc227ed7bc82079e3705f46b5cf81c5e9"
+hash = "521554b82d8e75ea2f55450375b37eba746b871c510aedd48d9d8b7afae876fe"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -1574,7 +1574,7 @@ hash = "18cdd9b65178098ff3662a4c3b23fc6aadb4761d18901c8effbd3d6125a80e25"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "d28ccd48a329f1734f82bbbdb7a0bfd06b61e4c1de006f57a3a5e15bed5ad374"
+hash = "4c6a117c34d6daa035f2fa501b470f8884acdbfb97c6277c126d1e536189e962"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
@@ -2370,11 +2370,11 @@ hash = "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd"
 
 [[files]]
 file = "config/xaero/minimap/profiles/default.cfg"
-hash = "0572210b9ded58149afef323cdec549e2584891ba3fca29367e04c8c71b935f0"
+hash = "949d7ee433dc16df36918cac652dcc0fdd1d08037751c07d879cf42dc78d18de"
 
 [[files]]
 file = "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json"
-hash = "0493e5324433e15c87334333b87e094deb172f63850fba896f633f860a1b5408"
+hash = "2f7dd4a8273116f6cade2472a377144bb8c33099494cf2575a9850b99ec55b6d"
 
 [[files]]
 file = "config/xaero/minimap/profiles/info_display_config/default.cfg.txt"
@@ -2751,6 +2751,11 @@ metafile = true
 [[files]]
 file = "mods/configured.pw.toml"
 hash = "af4dc4828902eae1784568632a749fe9a442943f1570ac0ba3ea75e79934be41"
+metafile = true
+
+[[files]]
+file = "mods/connectivity.pw.toml"
+hash = "89340330d49ebf646a46af0da4cd457c98e0dca4337490981421d86bfcd2fd94"
 metafile = true
 
 [[files]]
@@ -11501,7 +11506,7 @@ hash = "aa0a49fff1a950b23ccd11b24757bb7d9d30c7463a3155c27f3aa8fce31ba1cb"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "105e1d6371cab14284e6a03ff4423dd57f64c31888679208df1bdb09330e01f0"
+hash = "39f1d5fc908c797deb2a72031d8d765458c0704b505eeacd4073f7981c12876c"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves/ComplementaryLicense.txt"
