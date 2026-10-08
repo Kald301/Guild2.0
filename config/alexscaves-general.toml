@@ -84,11 +84,11 @@
 	# Range: > 0
 	nuke_max_block_explosion_resistance = 1000
 	#Whether some block items are dropped by nuclear explosions. False if all destroyed blocks do not drop items.
-	nuke_spawn_item_drops = true
+	nuke_spawn_item_drops = false
 	#The scale of nuclear bomb destruction. multiply this by 16 to get the radius of a nuclear bomb explosion.
 	# Default: 3.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	nuclear_explosion_size_modifier = 3.0
+	nuclear_explosion_size_modifier = 4.0
 	#Whether the Totem of Possession can be applied to players.
 	totem_of_possession_works_on_players = true
 	#The amount of time (in ticks) it takes to charge up the Cloak of Darkness ability.

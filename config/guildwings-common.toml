@@ -12,7 +12,7 @@
 	#0.3 bloques/tick = ~6 bloques/s, el mismo umbral que la Elytra vanilla. A calibrar en pruebas.
 	# Default: 0.3
 	# Range: 0.0 ~ 10.0
-	impact_safe_velocity = 0.3
+	impact_safe_velocity = 0.6
 	#Escala el daño resultante. 1.0 = igual que la Elytra vanilla.
 	# Default: 1.0
 	# Range: 0.0 ~ 100.0

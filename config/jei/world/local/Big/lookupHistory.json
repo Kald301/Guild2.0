@@ -1,0 +1,9 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"ethological:trough"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ethological:chicken_feeder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mermod:sea_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mermod:mermaid_bra_modifier"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mermod:sea_necklace"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createreautomatedtraces:trace_finder"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

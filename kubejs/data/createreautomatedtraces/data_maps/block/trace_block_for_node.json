@@ -1,0 +1,6 @@
+{
+  "values": {
+    "createreautomated:nether_quartz_node":  { "trace_block": "minecraft:nether_quartz_ore" },
+    "createreautomated:ancient_debris_node": { "trace_block": "minecraft:ancient_debris" }
+  }
+}

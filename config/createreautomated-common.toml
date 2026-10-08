@@ -13,11 +13,11 @@
 		#.
 		# Default: 3
 		# Range: 0 ~ 6
-		faces = 3
+		faces = 2
 		#.
 		# Default: 30
 		# Range: 0 ~ 512
-		tries = 30
+		tries = 4
 		#.
 		# Default: -16
 		# Range: > -2147483648
@@ -25,7 +25,7 @@
 		#.
 		# Default: 64
 		# Range: > -2147483648
-		toY = 64
+		toY = 48
 
 	#.
 	#Zinc nodes specific configs.
@@ -34,19 +34,19 @@
 		#.
 		# Default: 3
 		# Range: 0 ~ 6
-		faces = 3
+		faces = 2
 		#.
 		# Default: 50
 		# Range: 0 ~ 512
-		tries = 50
+		tries = 6
 		#.
 		# Default: -64
 		# Range: > -2147483648
-		fromY = -64
+		fromY = -48
 		#.
 		# Default: 64
 		# Range: > -2147483648
-		toY = 64
+		toY = 48
 
 	#.
 	#Iron nodes specific configs.
@@ -55,19 +55,19 @@
 		#.
 		# Default: 3
 		# Range: 0 ~ 6
-		faces = 3
+		faces = 2
 		#.
 		# Default: 50
 		# Range: 0 ~ 512
-		tries = 50
+		tries = 6
 		#.
 		# Default: -64
 		# Range: > -2147483648
-		fromY = -64
+		fromY = -48
 		#.
 		# Default: 64
 		# Range: > -2147483648
-		toY = 64
+		toY = 48
 
 	#.
 	#Gold nodes specific configs.
@@ -76,19 +76,19 @@
 		#.
 		# Default: 3
 		# Range: 0 ~ 6
-		faces = 3
+		faces = 2
 		#.
 		# Default: 40
 		# Range: 0 ~ 512
-		tries = 40
+		tries = 4
 		#.
 		# Default: -64
 		# Range: > -2147483648
-		fromY = -64
+		fromY = -48
 		#.
 		# Default: 32
 		# Range: > -2147483648
-		toY = 32
+		toY = 16
 
 	#.
 	#Diamond nodes specific configs.
@@ -97,11 +97,11 @@
 		#.
 		# Default: 3
 		# Range: 0 ~ 6
-		faces = 3
+		faces = 1
 		#.
 		# Default: 30
 		# Range: 0 ~ 512
-		tries = 30
+		tries = 3
 		#.
 		# Default: -64
 		# Range: > -2147483648
@@ -109,7 +109,7 @@
 		#.
 		# Default: 16
 		# Range: > -2147483648
-		toY = 16
+		toY = 4
 
 	#.
 	#Nether Gold nodes specific configs.
@@ -118,11 +118,11 @@
 		#.
 		# Default: 3
 		# Range: 0 ~ 6
-		faces = 3
+		faces = 2
 		#.
 		# Default: 60
 		# Range: 0 ~ 512
-		tries = 60
+		tries = 7
 		#.
 		# Default: 10
 		# Range: > -2147483648
@@ -130,7 +130,7 @@
 		#.
 		# Default: 118
 		# Range: > -2147483648
-		toY = 118
+		toY = 90
 
 	#.
 	#Nether Quartz nodes specific configs.
@@ -139,11 +139,11 @@
 		#.
 		# Default: 3
 		# Range: 0 ~ 6
-		faces = 3
+		faces = 2
 		#.
 		# Default: 50
 		# Range: 0 ~ 512
-		tries = 50
+		tries = 6
 		#.
 		# Default: 7
 		# Range: > -2147483648
@@ -151,7 +151,7 @@
 		#.
 		# Default: 117
 		# Range: > -2147483648
-		toY = 117
+		toY = 90
 
 	#.
 	#Ancient Debris nodes specific configs.
@@ -164,7 +164,7 @@
 		#.
 		# Default: 300
 		# Range: 0 ~ 512
-		tries = 300
+		tries = 10
 		#.
 		# Default: 8
 		# Range: > -2147483648
@@ -172,4 +172,4 @@
 		#.
 		# Default: 24
 		# Range: > -2147483648
-		toY = 24
+		toY = 20

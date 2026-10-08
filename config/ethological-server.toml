@@ -1,0 +1,1053 @@
+#Comfort and life
+[comfort]
+	#Global hunger drain speed multiplier applied to every species (1.0 = normal, 2.0 = twice as fast, 0.5 = half as fast).
+	# Default: 1.0
+	# Range: 0.05 ~ 20.0
+	hunger_drain_multiplier = 1.0
+	#Global thirst drain speed multiplier applied to every species (1.0 = normal, 2.0 = twice as fast, 0.5 = half as fast).
+	# Default: 1.0
+	# Range: 0.05 ~ 20.0
+	thirst_drain_multiplier = 1.0
+	#If true, natural herd spawns are rejected on cliff edges or steep drops so herds never form on cliff faces.
+	avoid_cliff_spawns = true
+	#In heat, multiply thirst depletion interval by this (0.75 = faster thirst).
+	# Default: 0.75
+	# Range: 0.05 ~ 1.0
+	heat_depletion_multiplier = 0.75
+	#Biome base temperature at or above this always counts as hot.
+	# Default: 0.95
+	# Range: 0.0 ~ 2.0
+	hot_biome_temperature = 0.95
+	#Biome base temperature at or above this is hot during midday.
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	warm_biome_temperature = 0.8
+	#Extra blocks of shelter search radius while raining.
+	# Default: 4
+	# Range: 0 ~ 32
+	rain_shelter_search_bonus = 4
+	#While raining outdoors, multiply thirst depletion interval by this (above 1.0 = slower thirst).
+	# Default: 1.35
+	# Range: 1.0 ~ 3.0
+	rain_thirst_depletion_multiplier = 1.35
+	#How long babies follow their mother (game ticks; 48000 ≈ 2 days).
+	# Default: 48000
+	# Range: 0 ~ 240000
+	mother_follow_ticks = 48000
+	#Minimum distance between grazing herd-mates' food stands.
+	# Default: 1.5
+	# Range: 0.0 ~ 8.0
+	graze_min_spacing = 1.5
+	#If true, wild wolves hunt sheep, cows, chickens, pigs, and rabbits.
+	wild_wolves_hunt_livestock = true
+	#Trust points gained each successful hand-feed toward the most familiar player.
+	# Default: 2
+	# Range: 1 ~ 20
+	familiarity_hand_feed_gain = 2
+	#Familiarity score required before calmer proximity / curious / startle behavior applies.
+	# Default: 4
+	# Range: 1 ~ 20
+	familiarity_trust_threshold = 4
+	#Maximum familiarity score an animal can build toward one player.
+	# Default: 20
+	# Range: 1 ~ 100
+	familiarity_max_score = 20
+	#Hunger restored to a baby when nursing from its mother.
+	# Default: 2
+	# Range: 1 ~ 20
+	nurse_feed_amount = 2
+	#Hunger drained from the mother per successful nursing bout.
+	# Default: 1
+	# Range: 0 ~ 20
+	nurse_mother_drain = 1
+	#Cooldown after nursing before a baby can nurse again.
+	# Default: 200
+	# Range: 20 ~ 72000
+	nurse_cooldown_ticks = 200
+	#Ticks before grazed dirt may restore to grass (9600 ≈ 8 minutes).
+	# Default: 9600
+	# Range: 200 ~ 240000
+	pasture_regrow_delay_ticks = 9600
+	#Max pending dirt-to-grass restores queued per chunk.
+	# Default: 24
+	# Range: 1 ~ 256
+	pasture_regrow_max_per_chunk = 24
+	#Y-difference penalty in the food/water target score (score = distanceSqr + dy*dy * weight). Higher strongly prefers targets near the animal's own Y; 0 = pure nearest distance.
+	# Default: 16.0
+	# Range: 0.0 ~ 256.0
+	y_penalty_weight = 16.0
+	#Horizontal gap between herd members' individual sleep spots (0 = no gap, just never two on the same block).
+	# Default: 1
+	# Range: 0 ~ 8
+	sleep_spot_spacing = 1
+	#If true, a stationary animal steps aside when a pathing herd-mate is stuck against it.
+	yield_on_block = true
+	#Preferred clear space (blocks) animals aim for when choosing where to walk or stand. Soft preference only - never physically pushes animals.
+	# Default: 2.5
+	# Range: 1.0 ~ 4.0
+	crowd_spacing_radius = 2.5
+
+#Mod compatibility
+[compat]
+	#If true and Better Days is installed, hunger/thirst drain scales with the current day length so animals eat and drink the same number of times per day-cycle.
+	better_days_sync_drain = true
+
+#Sheep settings
+[sheep]
+
+	#Hunger
+	[sheep.hunger]
+		#Maximum hunger points.
+		# Default: 10
+		# Range: 1 ~ 100
+		max_hunger = 10
+		#Ticks between losing 1 hunger.
+		# Default: 2400
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2400
+		#Ticks between starve damage at 0 hunger.
+		# Default: 1200
+		# Range: 1 ~ 72000
+		starve_damage_interval_ticks = 1200
+		#Damage dealt when starving.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		starve_damage = 1.0
+		#Cooldown between successful eats.
+		# Default: 0
+		# Range: 0 ~ 72000
+		eat_cooldown_ticks = 0
+		#Hunger restored per food block eaten.
+		# Default: 1
+		# Range: 1 ~ 100
+		hunger_per_food = 1
+		#Health restored per food block eaten.
+		# Default: 2.0
+		# Range: 0.0 ~ 20.0
+		heal_per_food = 2.0
+		#If true, hunger still depletes while sleeping.
+		deplete_while_sleeping = false
+		#Seek food when hunger is below max * this percent (1.0 = any deficit).
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		search_threshold_percent = 1.0
+		#Block IDs that count as food.
+		food_blocks = ["minecraft:grass_block", "minecraft:short_grass", "minecraft:tall_grass", "minecraft:wheat", "minecraft:fern", "minecraft:large_fern"]
+		#Bites taken at one graze patch before moving on.
+		# Default: 4
+		# Range: 1 ~ 32
+		eats_per_patch = 4
+		#Radius around a patch center where members may eat.
+		# Default: 6
+		# Range: 1 ~ 32
+		patch_graze_radius = 6
+		#How far leaders search for the next graze patch.
+		# Default: 24
+		# Range: 1 ~ 128
+		patch_search_radius = 24
+		#Minimum ticks a full leader lingers at a patch for hungry mates.
+		# Default: 30
+		# Range: 0 ~ 1200
+		graze_linger_ticks_min = 30
+		#Random extra linger ticks added to the minimum.
+		# Default: 30
+		# Range: 1 ~ 1200
+		graze_linger_ticks_span = 30
+		#When sheared (sheep), multiply depletion interval by this (0.5 = twice as fast).
+		# Default: 0.5
+		# Range: 0.05 ~ 1.0
+		sheared_depletion_multiplier = 0.5
+		#Multiplier on hunger_per_food when a player hand-feeds this animal.
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		hand_feed_multiplier = 2.0
+		#Multiplier on hunger_per_food when this animal eats from a trough or feeder.
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		feeder_multiplier = 3.0
+		#Multiplier on hunger_per_food when this animal eats planted crops (wheat, potatoes, carrots, beetroot).
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		crop_multiplier = 3.0
+
+	#Thirst
+	[sheep.thirst]
+		#Maximum thirst points.
+		# Default: 10
+		# Range: 1 ~ 100
+		max_thirst = 10
+		#Ticks between losing 1 thirst.
+		# Default: 2400
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2400
+		#If true, thirst still depletes while sleeping.
+		deplete_while_sleeping = false
+		#Ticks between dehydrate damage at 0 thirst.
+		# Default: 800
+		# Range: 1 ~ 72000
+		dehydrate_damage_interval_ticks = 800
+		#Damage dealt when dehydrated.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		dehydrate_damage = 1.0
+		#Ticks spent drinking once water is reached.
+		# Default: 60
+		# Range: 1 ~ 72000
+		drink_ticks = 60
+		#Ticks before sleep start when evening drinking begins.
+		# Default: 1000
+		# Range: 0 ~ 24000
+		evening_drink_lead_ticks = 1000
+		#At or below this thirst, drink any time while awake.
+		# Default: 2
+		# Range: 0 ~ 100
+		urgent_drink_threshold = 2
+
+	#Bedtime / sleep
+	[sheep.sleep]
+		#Day tick when the sleep window opens (0-23999).
+		# Default: 13000
+		# Range: 0 ~ 23999
+		sleep_start_tick = 13000
+		#Day tick when the sleep window closes (0-23999).
+		# Default: 23000
+		# Range: 0 ~ 23999
+		sleep_end_tick = 23000
+		#Regeneration amplifier while asleep (0 = Regen I).
+		# Default: 0
+		# Range: 0 ~ 10
+		regen_amplifier = 0
+		#Max staggered delay after sleep start before lying down.
+		# Default: 1200
+		# Range: 0 ~ 24000
+		max_bedtime_delay_ticks = 1200
+		#Max distance a sleeping animal can be pushed before walking back to its spot.
+		# Default: 4
+		# Range: 1 ~ 16
+		sleep_return_radius = 4
+
+	#Home
+	[sheep.home]
+		#Radius to find or validate water for homes and drinking.
+		# Default: 128
+		# Range: 1 ~ 256
+		water_search_radius = 128
+		#Daytime wander leash radius around home.
+		# Default: 48
+		# Range: 1 ~ 256
+		wander_radius = 48
+		#Ticks before sleep start over which the leash shrinks.
+		# Default: 1000
+		# Range: 0 ~ 24000
+		leash_shrink_ticks = 1000
+		#How often home establish/validate checks run.
+		# Default: 200
+		# Range: 1 ~ 72000
+		validation_interval_ticks = 200
+		#If true, migrate by day and camp near water instead of a permanent home.
+		nomadic = false
+		#Speed multiplier while migrating (nomadic species).
+		# Default: 1.0
+		# Range: 0.1 ~ 2.0
+		migration_speed = 1.0
+		#Day tick when nomads start camping near water until sleep.
+		# Default: 9500
+		# Range: 0 ~ 23999
+		camp_time_tick = 9500
+
+	#Herd
+	[sheep.herd]
+		#Maximum herd members.
+		# Default: 12
+		# Range: 1 ~ 64
+		max_size = 12
+		#Radius to find others when joining or forming a herd.
+		# Default: 20
+		# Range: 1 ~ 128
+		join_radius = 20
+		#Base distance for following the alpha.
+		# Default: 8.0
+		# Range: 1.0 ~ 64.0
+		follow_distance = 8.0
+		#How close babies try to stay to their mother (blocks).
+		# Default: 3.0
+		# Range: 1.0 ~ 32.0
+		mother_follow_distance = 3.0
+		#Radius to alert other animals when hurt.
+		# Default: 20.0
+		# Range: 0.0 ~ 128.0
+		cross_species_alert_radius = 20.0
+		#Extra follow distance per additional member (0.1 = +10% each).
+		# Default: 0.08
+		# Range: 0.0 ~ 1.0
+		follow_spread_per_member_percent = 0.08
+		#During WARY, re-scatter if the threat comes this close.
+		# Default: 12.0
+		# Range: 1.0 ~ 64.0
+		resatter_distance = 12.0
+		#Multiplier on follow distance: pack members may not sleep until within this distance of their alpha (cow 6 * 1.0 = 6 blocks).
+		# Default: 1.0
+		# Range: 0.1 ~ 4.0
+		sleep_follow_multiplier = 1.0
+		#How members keep station with the alpha in calm times: FOLLOW trails behind, SURROUND spreads around it.
+		#Allowed Values: FOLLOW, SURROUND
+		follow_style = "SURROUND"
+		#Minimum animals in a natural spawn pack.
+		# Default: 6
+		# Range: 1 ~ 64
+		spawn_group_min = 6
+		#Maximum animals in a natural spawn pack (also raises cluster cap).
+		# Default: 12
+		# Range: 1 ~ 64
+		spawn_group_max = 12
+		#Minimum babies in a natural spawn pack.
+		# Default: 0
+		# Range: 0 ~ 64
+		spawn_babies_min = 0
+		#Maximum babies in a natural spawn pack.
+		# Default: 2
+		# Range: 0 ~ 64
+		spawn_babies_max = 2
+
+	#Baby growth & play
+	[sheep.growth]
+		#Minimum days for a baby to grow up (1 in-game day = 24000 ticks).
+		# Default: 5
+		# Range: 1 ~ 30
+		min_growth_days = 5
+		#Maximum days for a baby to grow up (each baby picks a random day in [min, max]).
+		# Default: 7
+		# Range: 1 ~ 30
+		max_growth_days = 7
+		#Extra SCALE a baby gains by maturity before restoring adult size (0.2 = +20%, about 50% -> 60% of adult).
+		# Default: 0.2
+		# Range: 0.0 ~ 0.5
+		baby_extra_scale = 0.2
+		#Chance a baby attempts to start a play bout on each roll (0-1).
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		baby_play_chance = 0.6
+		#Allowed play styles for this species: chase, headbutt.
+		play_styles = ["chase", "headbutt"]
+		#If true, babies only play with other babies (never with adults).
+		baby_only_play_babies = true
+
+#Cow settings
+[cow]
+
+	#Hunger
+	[cow.hunger]
+		#Maximum hunger points.
+		# Default: 12
+		# Range: 1 ~ 100
+		max_hunger = 12
+		#Ticks between losing 1 hunger.
+		# Default: 2400
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2400
+		#Ticks between starve damage at 0 hunger.
+		# Default: 1200
+		# Range: 1 ~ 72000
+		starve_damage_interval_ticks = 1200
+		#Damage dealt when starving.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		starve_damage = 1.0
+		#Cooldown between successful eats.
+		# Default: 0
+		# Range: 0 ~ 72000
+		eat_cooldown_ticks = 0
+		#Hunger restored per food block eaten.
+		# Default: 1
+		# Range: 1 ~ 100
+		hunger_per_food = 1
+		#Health restored per food block eaten.
+		# Default: 2.0
+		# Range: 0.0 ~ 20.0
+		heal_per_food = 2.0
+		#If true, hunger still depletes while sleeping.
+		deplete_while_sleeping = true
+		#Seek food when hunger is below max * this percent (1.0 = any deficit).
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		search_threshold_percent = 1.0
+		#Block IDs that count as food.
+		food_blocks = ["minecraft:grass_block", "minecraft:short_grass", "minecraft:tall_grass", "minecraft:wheat", "minecraft:fern", "minecraft:large_fern"]
+		#Bites taken at one graze patch before moving on.
+		# Default: 2
+		# Range: 1 ~ 32
+		eats_per_patch = 2
+		#Radius around a patch center where members may eat.
+		# Default: 10
+		# Range: 1 ~ 32
+		patch_graze_radius = 10
+		#How far leaders search for the next graze patch.
+		# Default: 40
+		# Range: 1 ~ 128
+		patch_search_radius = 40
+		#Minimum ticks a full leader lingers at a patch for hungry mates.
+		# Default: 50
+		# Range: 0 ~ 1200
+		graze_linger_ticks_min = 50
+		#Random extra linger ticks added to the minimum.
+		# Default: 50
+		# Range: 1 ~ 1200
+		graze_linger_ticks_span = 50
+		#When sheared (sheep), multiply depletion interval by this (0.5 = twice as fast).
+		# Default: 1.0
+		# Range: 0.05 ~ 1.0
+		sheared_depletion_multiplier = 1.0
+		#Multiplier on hunger_per_food when a player hand-feeds this animal.
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		hand_feed_multiplier = 2.0
+		#Multiplier on hunger_per_food when this animal eats from a trough or feeder.
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		feeder_multiplier = 3.0
+		#Multiplier on hunger_per_food when this animal eats planted crops (wheat, potatoes, carrots, beetroot).
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		crop_multiplier = 3.0
+
+	#Thirst
+	[cow.thirst]
+		#Maximum thirst points.
+		# Default: 10
+		# Range: 1 ~ 100
+		max_thirst = 10
+		#Ticks between losing 1 thirst.
+		# Default: 2400
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2400
+		#If true, thirst still depletes while sleeping.
+		deplete_while_sleeping = true
+		#Ticks between dehydrate damage at 0 thirst.
+		# Default: 800
+		# Range: 1 ~ 72000
+		dehydrate_damage_interval_ticks = 800
+		#Damage dealt when dehydrated.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		dehydrate_damage = 1.0
+		#Ticks spent drinking once water is reached.
+		# Default: 60
+		# Range: 1 ~ 72000
+		drink_ticks = 60
+		#Ticks before sleep start when evening drinking begins.
+		# Default: 1000
+		# Range: 0 ~ 24000
+		evening_drink_lead_ticks = 1000
+		#At or below this thirst, drink any time while awake.
+		# Default: 2
+		# Range: 0 ~ 100
+		urgent_drink_threshold = 2
+
+	#Bedtime / sleep
+	[cow.sleep]
+		#Day tick when the sleep window opens (0-23999).
+		# Default: 13000
+		# Range: 0 ~ 23999
+		sleep_start_tick = 13000
+		#Day tick when the sleep window closes (0-23999).
+		# Default: 23000
+		# Range: 0 ~ 23999
+		sleep_end_tick = 23000
+		#Regeneration amplifier while asleep (0 = Regen I).
+		# Default: 0
+		# Range: 0 ~ 10
+		regen_amplifier = 0
+		#Max staggered delay after sleep start before lying down.
+		# Default: 1200
+		# Range: 0 ~ 24000
+		max_bedtime_delay_ticks = 1200
+		#Max distance a sleeping animal can be pushed before walking back to its spot.
+		# Default: 4
+		# Range: 1 ~ 16
+		sleep_return_radius = 4
+
+	#Home
+	[cow.home]
+		#Radius to find or validate water for homes and drinking.
+		# Default: 128
+		# Range: 1 ~ 256
+		water_search_radius = 128
+		#Daytime wander leash radius around home.
+		# Default: 80
+		# Range: 1 ~ 256
+		wander_radius = 80
+		#Ticks before sleep start over which the leash shrinks.
+		# Default: 1000
+		# Range: 0 ~ 24000
+		leash_shrink_ticks = 1000
+		#How often home establish/validate checks run.
+		# Default: 200
+		# Range: 1 ~ 72000
+		validation_interval_ticks = 200
+		#If true, migrate by day and camp near water instead of a permanent home.
+		nomadic = true
+		#Speed multiplier while migrating (nomadic species).
+		# Default: 0.8
+		# Range: 0.1 ~ 2.0
+		migration_speed = 0.8
+		#Day tick when nomads start camping near water until sleep.
+		# Default: 9500
+		# Range: 0 ~ 23999
+		camp_time_tick = 9500
+
+	#Herd
+	[cow.herd]
+		#Maximum herd members.
+		# Default: 20
+		# Range: 1 ~ 64
+		max_size = 20
+		#Radius to find others when joining or forming a herd.
+		# Default: 32
+		# Range: 1 ~ 128
+		join_radius = 32
+		#Base distance for following the alpha.
+		# Default: 6.0
+		# Range: 1.0 ~ 64.0
+		follow_distance = 6.0
+		#How close babies try to stay to their mother (blocks).
+		# Default: 3.0
+		# Range: 1.0 ~ 32.0
+		mother_follow_distance = 3.0
+		#Radius to alert other animals when hurt.
+		# Default: 14.0
+		# Range: 0.0 ~ 128.0
+		cross_species_alert_radius = 14.0
+		#Extra follow distance per additional member (0.1 = +10% each).
+		# Default: 0.08
+		# Range: 0.0 ~ 1.0
+		follow_spread_per_member_percent = 0.08
+		#During WARY, re-scatter if the threat comes this close.
+		# Default: 16.0
+		# Range: 1.0 ~ 64.0
+		resatter_distance = 16.0
+		#Multiplier on follow distance: pack members may not sleep until within this distance of their alpha (cow 6 * 1.0 = 6 blocks).
+		# Default: 1.0
+		# Range: 0.1 ~ 4.0
+		sleep_follow_multiplier = 1.0
+		#How members keep station with the alpha in calm times: FOLLOW trails behind, SURROUND spreads around it.
+		#Allowed Values: FOLLOW, SURROUND
+		follow_style = "SURROUND"
+		#Minimum animals in a natural spawn pack.
+		# Default: 10
+		# Range: 1 ~ 64
+		spawn_group_min = 10
+		#Maximum animals in a natural spawn pack (also raises cluster cap).
+		# Default: 20
+		# Range: 1 ~ 64
+		spawn_group_max = 20
+		#Minimum babies in a natural spawn pack.
+		# Default: 0
+		# Range: 0 ~ 64
+		spawn_babies_min = 0
+		#Maximum babies in a natural spawn pack.
+		# Default: 3
+		# Range: 0 ~ 64
+		spawn_babies_max = 3
+
+	#Baby growth & play
+	[cow.growth]
+		#Minimum days for a baby to grow up (1 in-game day = 24000 ticks).
+		# Default: 5
+		# Range: 1 ~ 30
+		min_growth_days = 5
+		#Maximum days for a baby to grow up (each baby picks a random day in [min, max]).
+		# Default: 7
+		# Range: 1 ~ 30
+		max_growth_days = 7
+		#Extra SCALE a baby gains by maturity before restoring adult size (0.2 = +20%, about 50% -> 60% of adult).
+		# Default: 0.2
+		# Range: 0.0 ~ 0.5
+		baby_extra_scale = 0.2
+		#Chance a baby attempts to start a play bout on each roll (0-1).
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		baby_play_chance = 0.6
+		#Allowed play styles for this species: chase, headbutt.
+		play_styles = ["chase", "headbutt"]
+		#If true, babies only play with other babies (never with adults).
+		baby_only_play_babies = true
+
+#Pig settings
+[pig]
+
+	#Hunger
+	[pig.hunger]
+		#Maximum hunger points.
+		# Default: 10
+		# Range: 1 ~ 100
+		max_hunger = 10
+		#Ticks between losing 1 hunger.
+		# Default: 2400
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2400
+		#Ticks between starve damage at 0 hunger.
+		# Default: 1200
+		# Range: 1 ~ 72000
+		starve_damage_interval_ticks = 1200
+		#Damage dealt when starving.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		starve_damage = 1.0
+		#Cooldown between successful eats.
+		# Default: 0
+		# Range: 0 ~ 72000
+		eat_cooldown_ticks = 0
+		#Hunger restored per food block eaten.
+		# Default: 1
+		# Range: 1 ~ 100
+		hunger_per_food = 1
+		#Health restored per food block eaten.
+		# Default: 2.0
+		# Range: 0.0 ~ 20.0
+		heal_per_food = 2.0
+		#If true, hunger still depletes while sleeping.
+		deplete_while_sleeping = false
+		#Seek food when hunger is below max * this percent (1.0 = any deficit).
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		search_threshold_percent = 1.0
+		#Block IDs that count as food.
+		food_blocks = ["minecraft:carrots", "minecraft:potatoes", "minecraft:beetroots", "minecraft:short_grass", "minecraft:tall_grass"]
+		#Bites taken at one graze patch before moving on.
+		# Default: 3
+		# Range: 1 ~ 32
+		eats_per_patch = 3
+		#Radius around a patch center where members may eat.
+		# Default: 6
+		# Range: 1 ~ 32
+		patch_graze_radius = 6
+		#How far leaders search for the next graze patch.
+		# Default: 24
+		# Range: 1 ~ 128
+		patch_search_radius = 24
+		#Minimum ticks a full leader lingers at a patch for hungry mates.
+		# Default: 30
+		# Range: 0 ~ 1200
+		graze_linger_ticks_min = 30
+		#Random extra linger ticks added to the minimum.
+		# Default: 30
+		# Range: 1 ~ 1200
+		graze_linger_ticks_span = 30
+		#When sheared (sheep), multiply depletion interval by this (0.5 = twice as fast).
+		# Default: 1.0
+		# Range: 0.05 ~ 1.0
+		sheared_depletion_multiplier = 1.0
+		#Multiplier on hunger_per_food when a player hand-feeds this animal.
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		hand_feed_multiplier = 2.0
+		#Multiplier on hunger_per_food when this animal eats from a trough or feeder.
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		feeder_multiplier = 3.0
+		#Multiplier on hunger_per_food when this animal eats planted crops (wheat, potatoes, carrots, beetroot).
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		crop_multiplier = 3.0
+
+	#Thirst
+	[pig.thirst]
+		#Maximum thirst points.
+		# Default: 10
+		# Range: 1 ~ 100
+		max_thirst = 10
+		#Ticks between losing 1 thirst.
+		# Default: 2400
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2400
+		#If true, thirst still depletes while sleeping.
+		deplete_while_sleeping = false
+		#Ticks between dehydrate damage at 0 thirst.
+		# Default: 800
+		# Range: 1 ~ 72000
+		dehydrate_damage_interval_ticks = 800
+		#Damage dealt when dehydrated.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		dehydrate_damage = 1.0
+		#Ticks spent drinking once water is reached.
+		# Default: 60
+		# Range: 1 ~ 72000
+		drink_ticks = 60
+		#Ticks before sleep start when evening drinking begins.
+		# Default: 1000
+		# Range: 0 ~ 24000
+		evening_drink_lead_ticks = 1000
+		#At or below this thirst, drink any time while awake.
+		# Default: 2
+		# Range: 0 ~ 100
+		urgent_drink_threshold = 2
+
+	#Bedtime / sleep
+	[pig.sleep]
+		#Day tick when the sleep window opens (0-23999).
+		# Default: 13000
+		# Range: 0 ~ 23999
+		sleep_start_tick = 13000
+		#Day tick when the sleep window closes (0-23999).
+		# Default: 23000
+		# Range: 0 ~ 23999
+		sleep_end_tick = 23000
+		#Regeneration amplifier while asleep (0 = Regen I).
+		# Default: 0
+		# Range: 0 ~ 10
+		regen_amplifier = 0
+		#Max staggered delay after sleep start before lying down.
+		# Default: 1200
+		# Range: 0 ~ 24000
+		max_bedtime_delay_ticks = 1200
+		#Max distance a sleeping animal can be pushed before walking back to its spot.
+		# Default: 4
+		# Range: 1 ~ 16
+		sleep_return_radius = 4
+
+	#Home
+	[pig.home]
+		#Radius to find or validate water for homes and drinking.
+		# Default: 128
+		# Range: 1 ~ 256
+		water_search_radius = 128
+		#Daytime wander leash radius around home.
+		# Default: 40
+		# Range: 1 ~ 256
+		wander_radius = 40
+		#Ticks before sleep start over which the leash shrinks.
+		# Default: 1000
+		# Range: 0 ~ 24000
+		leash_shrink_ticks = 1000
+		#How often home establish/validate checks run.
+		# Default: 200
+		# Range: 1 ~ 72000
+		validation_interval_ticks = 200
+		#If true, migrate by day and camp near water instead of a permanent home.
+		nomadic = false
+		#Speed multiplier while migrating (nomadic species).
+		# Default: 1.0
+		# Range: 0.1 ~ 2.0
+		migration_speed = 1.0
+		#Day tick when nomads start camping near water until sleep.
+		# Default: 9500
+		# Range: 0 ~ 23999
+		camp_time_tick = 9500
+
+	#Herd
+	[pig.herd]
+		#Maximum herd members.
+		# Default: 8
+		# Range: 1 ~ 64
+		max_size = 8
+		#Radius to find others when joining or forming a herd.
+		# Default: 16
+		# Range: 1 ~ 128
+		join_radius = 16
+		#Base distance for following the alpha.
+		# Default: 6.0
+		# Range: 1.0 ~ 64.0
+		follow_distance = 6.0
+		#How close babies try to stay to their mother (blocks).
+		# Default: 3.0
+		# Range: 1.0 ~ 32.0
+		mother_follow_distance = 3.0
+		#Radius to alert other animals when hurt.
+		# Default: 18.0
+		# Range: 0.0 ~ 128.0
+		cross_species_alert_radius = 18.0
+		#Extra follow distance per additional member (0.1 = +10% each).
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		follow_spread_per_member_percent = 0.15
+		#During WARY, re-scatter if the threat comes this close.
+		# Default: 12.0
+		# Range: 1.0 ~ 64.0
+		resatter_distance = 12.0
+		#Multiplier on follow distance: pack members may not sleep until within this distance of their alpha (cow 6 * 1.0 = 6 blocks).
+		# Default: 1.0
+		# Range: 0.1 ~ 4.0
+		sleep_follow_multiplier = 1.0
+		#How members keep station with the alpha in calm times: FOLLOW trails behind, SURROUND spreads around it.
+		#Allowed Values: FOLLOW, SURROUND
+		follow_style = "SURROUND"
+		#Minimum animals in a natural spawn pack.
+		# Default: 4
+		# Range: 1 ~ 64
+		spawn_group_min = 4
+		#Maximum animals in a natural spawn pack (also raises cluster cap).
+		# Default: 8
+		# Range: 1 ~ 64
+		spawn_group_max = 8
+		#Minimum babies in a natural spawn pack.
+		# Default: 0
+		# Range: 0 ~ 64
+		spawn_babies_min = 0
+		#Maximum babies in a natural spawn pack.
+		# Default: 2
+		# Range: 0 ~ 64
+		spawn_babies_max = 2
+
+	#Baby growth & play
+	[pig.growth]
+		#Minimum days for a baby to grow up (1 in-game day = 24000 ticks).
+		# Default: 5
+		# Range: 1 ~ 30
+		min_growth_days = 5
+		#Maximum days for a baby to grow up (each baby picks a random day in [min, max]).
+		# Default: 7
+		# Range: 1 ~ 30
+		max_growth_days = 7
+		#Extra SCALE a baby gains by maturity before restoring adult size (0.2 = +20%, about 50% -> 60% of adult).
+		# Default: 0.2
+		# Range: 0.0 ~ 0.5
+		baby_extra_scale = 0.2
+		#Chance a baby attempts to start a play bout on each roll (0-1).
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		baby_play_chance = 0.6
+		#Allowed play styles for this species: chase, headbutt.
+		play_styles = ["chase"]
+		#If true, babies only play with other babies (never with adults).
+		baby_only_play_babies = true
+
+#Chicken settings
+[chicken]
+
+	#Hunger
+	[chicken.hunger]
+		#Maximum hunger points.
+		# Default: 8
+		# Range: 1 ~ 100
+		max_hunger = 8
+		#Ticks between losing 1 hunger.
+		# Default: 2000
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2000
+		#Ticks between starve damage at 0 hunger.
+		# Default: 1000
+		# Range: 1 ~ 72000
+		starve_damage_interval_ticks = 1000
+		#Damage dealt when starving.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		starve_damage = 1.0
+		#Cooldown between successful eats.
+		# Default: 0
+		# Range: 0 ~ 72000
+		eat_cooldown_ticks = 0
+		#Hunger restored per food block eaten.
+		# Default: 1
+		# Range: 1 ~ 100
+		hunger_per_food = 1
+		#Health restored per food block eaten.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		heal_per_food = 1.0
+		#If true, hunger still depletes while sleeping.
+		deplete_while_sleeping = false
+		#Seek food when hunger is below max * this percent (1.0 = any deficit).
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		search_threshold_percent = 1.0
+		#Block IDs that count as food.
+		food_blocks = ["minecraft:short_grass", "minecraft:tall_grass", "minecraft:wheat", "minecraft:beetroots"]
+		#Bites taken at one graze patch before moving on.
+		# Default: 4
+		# Range: 1 ~ 32
+		eats_per_patch = 4
+		#Radius around a patch center where members may eat.
+		# Default: 5
+		# Range: 1 ~ 32
+		patch_graze_radius = 5
+		#How far leaders search for the next graze patch.
+		# Default: 20
+		# Range: 1 ~ 128
+		patch_search_radius = 20
+		#Minimum ticks a full leader lingers at a patch for hungry mates.
+		# Default: 20
+		# Range: 0 ~ 1200
+		graze_linger_ticks_min = 20
+		#Random extra linger ticks added to the minimum.
+		# Default: 20
+		# Range: 1 ~ 1200
+		graze_linger_ticks_span = 20
+		#When sheared (sheep), multiply depletion interval by this (0.5 = twice as fast).
+		# Default: 1.0
+		# Range: 0.05 ~ 1.0
+		sheared_depletion_multiplier = 1.0
+		#Multiplier on hunger_per_food when a player hand-feeds this animal.
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		hand_feed_multiplier = 2.0
+		#Multiplier on hunger_per_food when this animal eats from a trough or feeder.
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		feeder_multiplier = 3.0
+		#Multiplier on hunger_per_food when this animal eats planted crops (wheat, potatoes, carrots, beetroot).
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		crop_multiplier = 3.0
+
+	#Thirst
+	[chicken.thirst]
+		#Maximum thirst points.
+		# Default: 8
+		# Range: 1 ~ 100
+		max_thirst = 8
+		#Ticks between losing 1 thirst.
+		# Default: 2000
+		# Range: 1 ~ 72000
+		depletion_interval_ticks = 2000
+		#If true, thirst still depletes while sleeping.
+		deplete_while_sleeping = false
+		#Ticks between dehydrate damage at 0 thirst.
+		# Default: 700
+		# Range: 1 ~ 72000
+		dehydrate_damage_interval_ticks = 700
+		#Damage dealt when dehydrated.
+		# Default: 1.0
+		# Range: 0.0 ~ 20.0
+		dehydrate_damage = 1.0
+		#Ticks spent drinking once water is reached.
+		# Default: 40
+		# Range: 1 ~ 72000
+		drink_ticks = 40
+		#Ticks before sleep start when evening drinking begins.
+		# Default: 1000
+		# Range: 0 ~ 24000
+		evening_drink_lead_ticks = 1000
+		#At or below this thirst, drink any time while awake.
+		# Default: 2
+		# Range: 0 ~ 100
+		urgent_drink_threshold = 2
+
+	#Bedtime / sleep
+	[chicken.sleep]
+		#Day tick when the sleep window opens (0-23999).
+		# Default: 13000
+		# Range: 0 ~ 23999
+		sleep_start_tick = 13000
+		#Day tick when the sleep window closes (0-23999).
+		# Default: 23000
+		# Range: 0 ~ 23999
+		sleep_end_tick = 23000
+		#Regeneration amplifier while asleep (0 = Regen I).
+		# Default: 0
+		# Range: 0 ~ 10
+		regen_amplifier = 0
+		#Max staggered delay after sleep start before lying down.
+		# Default: 800
+		# Range: 0 ~ 24000
+		max_bedtime_delay_ticks = 800
+		#Max distance a sleeping animal can be pushed before walking back to its spot.
+		# Default: 4
+		# Range: 1 ~ 16
+		sleep_return_radius = 4
+
+	#Home
+	[chicken.home]
+		#Radius to find or validate water for homes and drinking.
+		# Default: 96
+		# Range: 1 ~ 256
+		water_search_radius = 96
+		#Daytime wander leash radius around home.
+		# Default: 24
+		# Range: 1 ~ 256
+		wander_radius = 24
+		#Ticks before sleep start over which the leash shrinks.
+		# Default: 800
+		# Range: 0 ~ 24000
+		leash_shrink_ticks = 800
+		#How often home establish/validate checks run.
+		# Default: 200
+		# Range: 1 ~ 72000
+		validation_interval_ticks = 200
+		#If true, migrate by day and camp near water instead of a permanent home.
+		nomadic = false
+		#Speed multiplier while migrating (nomadic species).
+		# Default: 1.0
+		# Range: 0.1 ~ 2.0
+		migration_speed = 1.0
+		#Day tick when nomads start camping near water until sleep.
+		# Default: 9500
+		# Range: 0 ~ 23999
+		camp_time_tick = 9500
+
+	#Herd
+	[chicken.herd]
+		#Maximum herd members.
+		# Default: 12
+		# Range: 1 ~ 64
+		max_size = 12
+		#Radius to find others when joining or forming a herd.
+		# Default: 14
+		# Range: 1 ~ 128
+		join_radius = 14
+		#Base distance for following the alpha.
+		# Default: 5.0
+		# Range: 1.0 ~ 64.0
+		follow_distance = 5.0
+		#How close babies try to stay to their mother (blocks).
+		# Default: 3.0
+		# Range: 1.0 ~ 32.0
+		mother_follow_distance = 3.0
+		#Radius to alert other animals when hurt.
+		# Default: 22.0
+		# Range: 0.0 ~ 128.0
+		cross_species_alert_radius = 22.0
+		#Extra follow distance per additional member (0.1 = +10% each).
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		follow_spread_per_member_percent = 0.1
+		#During WARY, re-scatter if the threat comes this close.
+		# Default: 10.0
+		# Range: 1.0 ~ 64.0
+		resatter_distance = 10.0
+		#Multiplier on follow distance: pack members may not sleep until within this distance of their alpha (cow 6 * 1.0 = 6 blocks).
+		# Default: 1.0
+		# Range: 0.1 ~ 4.0
+		sleep_follow_multiplier = 1.0
+		#How members keep station with the alpha in calm times: FOLLOW trails behind, SURROUND spreads around it.
+		#Allowed Values: FOLLOW, SURROUND
+		follow_style = "SURROUND"
+		#Minimum animals in a natural spawn pack.
+		# Default: 6
+		# Range: 1 ~ 64
+		spawn_group_min = 6
+		#Maximum animals in a natural spawn pack (also raises cluster cap).
+		# Default: 12
+		# Range: 1 ~ 64
+		spawn_group_max = 12
+		#Minimum babies in a natural spawn pack.
+		# Default: 0
+		# Range: 0 ~ 64
+		spawn_babies_min = 0
+		#Maximum babies in a natural spawn pack.
+		# Default: 4
+		# Range: 0 ~ 64
+		spawn_babies_max = 4
+
+	#Baby growth & play
+	[chicken.growth]
+		#Minimum days for a baby to grow up (1 in-game day = 24000 ticks).
+		# Default: 5
+		# Range: 1 ~ 30
+		min_growth_days = 5
+		#Maximum days for a baby to grow up (each baby picks a random day in [min, max]).
+		# Default: 7
+		# Range: 1 ~ 30
+		max_growth_days = 7
+		#Extra SCALE a baby gains by maturity before restoring adult size (0.2 = +20%, about 50% -> 60% of adult).
+		# Default: 0.2
+		# Range: 0.0 ~ 0.5
+		baby_extra_scale = 0.2
+		#Chance a baby attempts to start a play bout on each roll (0-1).
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		baby_play_chance = 0.6
+		#Allowed play styles for this species: chase, headbutt.
+		play_styles = ["chase"]
+		#If true, babies only play with other babies (never with adults).
+		baby_only_play_babies = true

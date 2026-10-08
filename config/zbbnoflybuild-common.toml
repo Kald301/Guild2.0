@@ -14,5 +14,5 @@ checkNoGravity = true
 #Malformed ids are removed from the file on load (NeoForge keeps a .bak backup); the rest of the list is kept.
 excludedMobIds = ["minecraft:drowned"]
 #Only mobs of this MobCategory are affected. Almost always MONSTER.
-#Allowed Values: MONSTER, CREATURE, AMBIENT, AXOLOTLS, UNDERGROUND_WATER_CREATURE, WATER_CREATURE, WATER_AMBIENT, MISC, ALEXSCAVES_CAVE_CREATURE, ALEXSCAVES_DEEP_SEA_CREATURE, GLARES, RASCALS
+#Allowed Values: MONSTER, CREATURE, AMBIENT, AXOLOTLS, UNDERGROUND_WATER_CREATURE, WATER_CREATURE, WATER_AMBIENT, MISC, ALEXSCAVES_CAVE_CREATURE, ALEXSCAVES_DEEP_SEA_CREATURE, FRIENDSANDFOES_GLARES, FRIENDSANDFOES_RASCALS
 requiredCategory = "MONSTER"

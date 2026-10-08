@@ -1,5 +1,14 @@
 [
   {"version":1},
+  {"ingredient":{"id":"block_factorys_bosses:kraken_trident"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"block_factorys_bosses:kraken_cannon_item"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:desert_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:storm_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:monstrous_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:cursed_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:abyss_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:void_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:firework_rocket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"waystones:warp_stone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"waystones:sandy_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:end_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -90,14 +99,5 @@
   {"ingredient":{"id":"doggytalents:treat_bag"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"doggytalents:energizer_stick"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"doggytalents:shrinking_mallet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:magnifying_bone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:kami_treat"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:master_treat"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:super_treat"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:training_treat"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:food_bowl"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"cgs:charcoal_dust"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"cgs:niter"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:rotten_flesh"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"farmersdelight:skillet"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"doggytalents:magnifying_bone"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

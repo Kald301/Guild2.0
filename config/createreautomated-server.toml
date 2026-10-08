@@ -42,19 +42,19 @@
 
 	#Configure how many times each node can be extracted before turning into its base rock
 	[nodeValues.extraction]
-		diamond_node = 108
-		deepslate_copper_node = 300
-		gold_node = 180
-		iron_node = 240
-		deepslate_diamond_node = 135
-		nether_quartz_node = 250
-		deepslate_iron_node = 300
-		zinc_node = 200
-		copper_node = 240
-		ancient_debris_node = 90
-		nether_gold_node = 180
-		deepslate_gold_node = 225
-		deepslate_zinc_node = 250
+		diamond_node = 189
+		deepslate_copper_node = 525
+		gold_node = 315
+		iron_node = 420
+		deepslate_diamond_node = 236
+		nether_quartz_node = 438
+		deepslate_iron_node = 525
+		zinc_node = 350
+		copper_node = 420
+		ancient_debris_node = 158
+		nether_gold_node = 315
+		deepslate_gold_node = 394
+		deepslate_zinc_node = 438
 
 #.
 #Configure global recipe modifiers.

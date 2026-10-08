@@ -3,7 +3,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -13,7 +13,7 @@
 	#Default Value: 0.005
 	# Default: 0.005
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_slowly_descending = 0.05
+	exhaustion_from_slowly_descending = 0.03
 	#Minimum amount of saturation required to be able to slowly descent back to the ground.
 	#Default Value: 2
 	# Default: 2
@@ -25,7 +25,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -47,7 +47,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -69,7 +69,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -91,7 +91,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -113,7 +113,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -135,7 +135,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -157,7 +157,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -179,7 +179,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -201,7 +201,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6
@@ -223,7 +223,7 @@
 	#Default Value: 1.0E-4
 	# Default: 1.0E-4
 	# Range: 0.0 ~ 10.0
-	exhaustion_from_flying = 0.016
+	exhaustion_from_flying = 0.0009
 	#Minimum amount of saturation required to be allowed to start and continue to fly.
 	#Default Value: 6
 	# Default: 6

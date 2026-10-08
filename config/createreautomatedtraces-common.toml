@@ -1,0 +1,27 @@
+#.
+#Configure trace generation.
+[worldgen]
+	#.
+	#.
+	#Maximum horizontal offset in blocks between a Node and the Trace template center.
+	# Default: 2
+	# Range: 0 ~ 8
+	tracePlacementRadius = 8
+	#.
+	#Log one compact INFO summary when Trace placement is skipped for a Node.
+	tracePlacementDiagnostics = false
+
+#.
+#Configure Trace Finder rendering.
+[finder]
+	#.
+	#.
+	#Maximum chunk radius used by the Trace Finder when sending visible Trace beams to the client.
+	# Default: 12
+	# Range: 2 ~ 12
+	traceFinderRenderRadiusChunks = 12
+	#.
+	#Maximum number of Trace Finder beams shown at once. Set to 0 for no limit.
+	# Default: 64
+	# Range: 0 ~ 256
+	maxVisibleTraceBeams = 1

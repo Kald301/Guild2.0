@@ -1,0 +1,13 @@
+name = "Create ReAutomated: Traces"
+filename = "createreautomatedtraces-0.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "496b1698ddb008fd4e6efa2ba67d868f2722b92a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8359139
+project-id = 1539353

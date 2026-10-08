@@ -1,0 +1,13 @@
+name = "Ethological!"
+filename = "ethological-0.1.45.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a6e822224438b115fa3f3c22075b02da8f67583"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8758223
+project-id = 1641376
