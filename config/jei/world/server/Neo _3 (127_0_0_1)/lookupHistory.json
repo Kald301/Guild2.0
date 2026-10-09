@@ -1,5 +1,13 @@
 [
   {"version":1},
+  {"ingredient":{"id":"doggytalents:uncooked_rice_bowl"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:hopper"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"doggytalents:uncooked_rice"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"doggytalents:rice_mill"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"doggytalents:rice_wheat"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"doggytalents:rice_grains"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"farmersdelight:cutting_board"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:monster_flesh"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"block_factorys_bosses:kraken_trident"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"block_factorys_bosses:kraken_cannon_item"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cataclysm:desert_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -91,13 +99,5 @@
   {"ingredient":{"id":"minecraft:observer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"create:track_observer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"doggytalents:kitsune_mask"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:divine_retribution"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:soy_beans_dried"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:soy_milk"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:tofu"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:aburaage"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:treat_bag"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:energizer_stick"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:shrinking_mallet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"doggytalents:magnifying_bone"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"doggytalents:divine_retribution"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

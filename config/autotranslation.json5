@@ -180,6 +180,12 @@
 			"at",
 			"dict-chrome-ex",
 			"at",
+			"dict-chrome-ex",
+			"at",
+			"dict-chrome-ex",
+			"at",
+			"dict-chrome-ex",
+			"at",
 			"dict-chrome-ex"
 		],
 		// 已废弃，会被忽略: HTTPS 无法直连 IP (TLS 握手失败)，请改用 domain

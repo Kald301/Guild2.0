@@ -1,0 +1,13 @@
+name = "Abyssal Decor"
+filename = "abyssal_decor_1.21.1_0.11.0_Neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8033176da762df7e9455f6c8584b20b7461c707f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8672733
+project-id = 964853

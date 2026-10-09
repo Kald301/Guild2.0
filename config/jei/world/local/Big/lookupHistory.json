@@ -1,5 +1,13 @@
 [
   {"version":1},
+  {"ingredient":{"id":"abyssal_decor:bellmetal_bars_solo"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"abyssal_decor:raw_seabrass_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"abyssal_decor:gold_bars"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"abyssal_decor:dull_iron_bars"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"abyssal_decor:ornate_dull_iron_bars"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"abyssal_decor:cinnamon_tea"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"abyssal_decor:cinnamon_roll"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"abyssal_decor:black_pearl"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"ethological:trough"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"ethological:chicken_feeder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"mermod:sea_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
