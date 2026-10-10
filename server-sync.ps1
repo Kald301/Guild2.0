@@ -4,10 +4,11 @@
 #  Espeja hacia el servidor:
 #    - los .jar de la instancia, salteando los de la blacklist
 #    - la carpeta config entera (la blacklist NO aplica a config)
+#    - la carpeta kubejs entera (idem: la blacklist no aplica)
 #
 #  NO se edita nada aca: las rutas se configuran en server-sync.bat.
 #  Este script no toca git, no corre packwiz y no toca ninguna
-#  carpeta fuera de -Dest y -DestConfig.
+#  carpeta fuera de -Dest, -DestConfig y -DestKubejs.
 #
 #  Codigos de salida:
 #    0 = todo ok
@@ -25,11 +26,15 @@ param(
     [string] $SourceConfig = '',
     [string] $DestConfig   = '',
     [string] $KeepConfig   = '',    # separadas por coma; llega como texto desde el .bat
+    [string] $SourceKubejs = '',
+    [string] $DestKubejs   = '',
+    [string] $KeepKubejs   = '',    # idem KeepConfig, pero para kubejs
     [switch] $ListOnly
 )
 
-# Lo que el server genera por su cuenta y no hay que borrar al espejar config
-$keepList = @($KeepConfig -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' })
+# Lo que el server genera por su cuenta y no hay que borrar al espejar
+$keepList       = @($KeepConfig -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' })
+$keepListKubejs = @($KeepKubejs -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne '' })
 
 $ErrorActionPreference = 'Stop'
 
@@ -152,6 +157,57 @@ function Test-SameFile {
     return ([math]::Abs(($A.LastWriteTimeUtc - $B.LastWriteTimeUtc).TotalSeconds) -le 2)
 }
 
+# Plan de espejo de una carpeta entera (config, kubejs), sin escribir nada.
+# Devuelve que copiar, que borrar y cuantos archivos tiene el origen.
+function Get-MirrorPlan {
+    param([string] $SrcDir, [string] $DstDir, [string[]] $Keep, [string] $Kind)
+
+    $srcRoot = (Get-Item -LiteralPath $SrcDir).FullName.TrimEnd('\')
+    $dstRoot = (Get-Item -LiteralPath $DstDir).FullName.TrimEnd('\')
+
+    $srcFiles = @(Get-ChildItem -LiteralPath $srcRoot -File -Recurse)
+    $dstFiles = @(Get-ChildItem -LiteralPath $dstRoot -File -Recurse |
+                  Where-Object { -not ($_.Name.EndsWith($TMP_EXT) -or $_.Name.EndsWith($BAK_EXT)) })
+    $dstByRel = @{}
+    foreach ($f in $dstFiles) { $dstByRel[(Get-RelPath $dstRoot $f.FullName).ToLower()] = $f }
+
+    $plan = @(); $delete = @()
+    $srcRels = @{}
+    foreach ($f in $srcFiles) {
+        $rel = Get-RelPath $srcRoot $f.FullName
+        $srcRels[$rel.ToLower()] = $true
+        $d = $dstByRel[$rel.ToLower()]
+        if (($null -eq $d) -or (-not (Test-SameFile $f $d))) {
+            $plan += [pscustomobject]@{
+                From  = $f.FullName
+                Final = (Join-Path $dstRoot $rel)
+                Name  = $rel
+                Size  = $f.Length
+                Kind  = $Kind
+            }
+        }
+    }
+
+    foreach ($f in $dstFiles) {
+        $rel = Get-RelPath $dstRoot $f.FullName
+        if ($srcRels.ContainsKey($rel.ToLower())) { continue }
+        if (Test-KeepConfig $rel $Keep)          { continue }   # lo genera el server
+        $delete += $f
+    }
+
+    return [pscustomobject]@{ Plan = $plan; Delete = $delete; SrcCount = $srcFiles.Count }
+}
+
+# Borra las carpetas que quedaron vacias despues de espejar
+function Remove-EmptyDirs {
+    param([string] $Root)
+    foreach ($d in (Get-ChildItem -LiteralPath $Root -Directory -Recurse | Sort-Object { $_.FullName.Length } -Descending)) {
+        if (@(Get-ChildItem -LiteralPath $d.FullName -Force).Count -eq 0) {
+            Remove-Item -LiteralPath $d.FullName -Force -ErrorAction SilentlyContinue
+        }
+    }
+}
+
 try {
 
 # =========================================================
@@ -190,7 +246,7 @@ if ($ListOnly) {
     }
     Write-Host ""
     Write-Host "Total: $($sourceJars.Count) mods. No se copio ni borro nada."
-    Write-Host "(La blacklist no aplica a config: config se espeja entera.)"
+    Write-Host "(La blacklist no aplica a config ni a kubejs: se espejan enteras.)"
     exit 0
 }
 
@@ -224,6 +280,28 @@ if ($doConfig) {
     }
 }
 
+# kubejs tambien es opcional
+$doKubejs = ($SourceKubejs -ne '' -and $DestKubejs -ne '')
+if ($doKubejs) {
+    if (-not (Test-Path -LiteralPath $SourceKubejs -PathType Container)) {
+        Write-Host "[ERROR] No existe la carpeta kubejs de origen:" -ForegroundColor Red
+        Write-Host "  $SourceKubejs"
+        Write-Host "Revisa KUBEJS_ORIGEN al inicio de server-sync.bat."
+        exit 2
+    }
+    if (-not (Test-Path -LiteralPath $DestKubejs -PathType Container)) {
+        Write-Host "[ERROR] No existe la carpeta kubejs del servidor:" -ForegroundColor Red
+        Write-Host "  $DestKubejs"
+        Write-Host "Revisa KUBEJS_DESTINO al inicio de server-sync.bat."
+        exit 2
+    }
+    if (@(Get-ChildItem -LiteralPath $SourceKubejs -File -Recurse).Count -eq 0) {
+        Write-Host "[ERROR] La carpeta kubejs de origen esta vacia. Se aborta por las dudas" -ForegroundColor Red
+        Write-Host "        (espejarla borraria todos los scripts del server)."
+        exit 2
+    }
+}
+
 # =========================================================
 #  2. MODS: CLASIFICACION  (todo en memoria, sin escribir)
 # =========================================================
@@ -252,7 +330,7 @@ $orphanEntries = @($entries | Where-Object { $hitCount[$_] -eq 0 })
 $dupes = @($allowed | Group-Object { (Get-ModBaseName $_.Name).ToLower() } | Where-Object { $_.Count -gt 1 })
 
 # =========================================================
-#  3. PLAN DE ESPEJO (mods + config), sin escribir todavia
+#  3. PLAN DE ESPEJO (mods + config + kubejs), sin escribir todavia
 # =========================================================
 
 # ---- mods ----
@@ -272,46 +350,23 @@ foreach ($jar in $allowed) {
             Final = (Join-Path $Dest $jar.Name)
             Name  = $jar.Name
             Size  = $jar.Length
+            Kind  = 'mods'
         }
     }
 }
 $modDelete = @($destJars | Where-Object { -not $allowedNames.ContainsKey($_.Name.ToLower()) })
 
-# ---- config (la blacklist NO aplica aca: se espeja entera) ----
+# ---- config y kubejs (la blacklist NO aplica aca: se espejan enteras) ----
 $cfgPlan = @(); $cfgDelete = @(); $cfgSrcCount = 0
 if ($doConfig) {
-    $srcRoot = (Get-Item -LiteralPath $SourceConfig).FullName.TrimEnd('\')
-    $dstRoot = (Get-Item -LiteralPath $DestConfig).FullName.TrimEnd('\')
+    $m = Get-MirrorPlan $SourceConfig $DestConfig $keepList 'config'
+    $cfgPlan = @($m.Plan); $cfgDelete = @($m.Delete); $cfgSrcCount = $m.SrcCount
+}
 
-    $srcFiles = @(Get-ChildItem -LiteralPath $srcRoot -File -Recurse)
-    $cfgSrcCount = $srcFiles.Count
-
-    $dstFiles = @(Get-ChildItem -LiteralPath $dstRoot -File -Recurse |
-                  Where-Object { -not ($_.Name.EndsWith($TMP_EXT) -or $_.Name.EndsWith($BAK_EXT)) })
-    $dstByRel = @{}
-    foreach ($f in $dstFiles) { $dstByRel[(Get-RelPath $dstRoot $f.FullName).ToLower()] = $f }
-
-    $srcRels = @{}
-    foreach ($f in $srcFiles) {
-        $rel = Get-RelPath $srcRoot $f.FullName
-        $srcRels[$rel.ToLower()] = $true
-        $d = $dstByRel[$rel.ToLower()]
-        if (($null -eq $d) -or (-not (Test-SameFile $f $d))) {
-            $cfgPlan += [pscustomobject]@{
-                From  = $f.FullName
-                Final = (Join-Path $dstRoot $rel)
-                Name  = $rel
-                Size  = $f.Length
-            }
-        }
-    }
-
-    foreach ($f in $dstFiles) {
-        $rel = Get-RelPath $dstRoot $f.FullName
-        if ($srcRels.ContainsKey($rel.ToLower())) { continue }
-        if (Test-KeepConfig $rel $keepList)      { continue }   # lo genera el server
-        $cfgDelete += $f
-    }
+$kjsPlan = @(); $kjsDelete = @(); $kjsSrcCount = 0
+if ($doKubejs) {
+    $m = Get-MirrorPlan $SourceKubejs $DestKubejs $keepListKubejs 'kubejs'
+    $kjsPlan = @($m.Plan); $kjsDelete = @($m.Delete); $kjsSrcCount = $m.SrcCount
 }
 
 # Restos de una corrida anterior que se haya cortado
@@ -319,11 +374,14 @@ $stale = @(Get-ChildItem -LiteralPath $Dest -File | Where-Object { $_.Name.EndsW
 if ($doConfig) {
     $stale += @(Get-ChildItem -LiteralPath $DestConfig -File -Recurse | Where-Object { $_.Name.EndsWith($TMP_EXT) -or $_.Name.EndsWith($BAK_EXT) })
 }
+if ($doKubejs) {
+    $stale += @(Get-ChildItem -LiteralPath $DestKubejs -File -Recurse | Where-Object { $_.Name.EndsWith($TMP_EXT) -or $_.Name.EndsWith($BAK_EXT) })
+}
 foreach ($f in $stale) { Remove-Item -LiteralPath $f.FullName -Force -ErrorAction SilentlyContinue }
 
 # Espacio libre antes de empezar
 $needed = 0
-foreach ($p in @($modPlan + $cfgPlan)) { $needed += $p.Size }
+foreach ($p in @($modPlan + $cfgPlan + $kjsPlan)) { $needed += $p.Size }
 $drive = (Get-Item -LiteralPath $Dest).PSDrive
 if ($null -ne $drive -and $null -ne $drive.Free -and $drive.Free -lt ($needed + 50MB)) {
     Write-Host "[ERROR] Espacio insuficiente en $($drive.Name): hacen falta $([math]::Round($needed/1MB)) MB." -ForegroundColor Red
@@ -334,7 +392,7 @@ if ($null -ne $drive -and $null -ne $drive.Free -and $drive.Free -lt ($needed + 
 # =========================================================
 #  4. COPIA EN DOS FASES (para no dejar el destino a medias)
 #
-#  Fase A: TODO (mods y config) se copia primero a un .tmpsync.
+#  Fase A: TODO (mods, config y kubejs) se copia primero a un .tmpsync.
 #          Si algo falla aca, se borran los temporales y ni el server
 #          ni su config se tocaron.
 #  Fase B: se renombran los .tmpsync al nombre final, guardando el
@@ -342,9 +400,9 @@ if ($null -ne $drive -and $null -ne $drive.Free -and $drive.Free -lt ($needed + 
 #  Recien con todo aplicado se borra lo que sobra.
 # =========================================================
 
-$plan = @($modPlan + $cfgPlan)
+$plan = @($modPlan + $cfgPlan + $kjsPlan)
 Write-Host ""
-Write-Host "Copiando $($modPlan.Count) mods y $($cfgPlan.Count) archivos de config..."
+Write-Host "Copiando $($modPlan.Count) mods, $($cfgPlan.Count) archivos de config y $($kjsPlan.Count) de kubejs..."
 
 # --- Fase A ---
 $staged   = @()   # From / Tmp / Final / Name
@@ -360,7 +418,7 @@ try {
         $failFile = $p.Name
         $tmp = $p.Final + $TMP_EXT
         Copy-Item -LiteralPath $p.From -Destination $tmp -Force
-        $staged += [pscustomobject]@{ Tmp = $tmp; Final = $p.Final; Name = $p.Name }
+        $staged += [pscustomobject]@{ Tmp = $tmp; Final = $p.Final; Name = $p.Name; Kind = $p.Kind }
     }
 }
 catch {
@@ -386,7 +444,7 @@ try {
             Move-Item -LiteralPath $s.Final -Destination $bak -Force
         }
         Move-Item -LiteralPath $s.Tmp -Destination $s.Final -Force
-        $committed += [pscustomobject]@{ Final = $s.Final; Bak = $bak }
+        $committed += [pscustomobject]@{ Final = $s.Final; Bak = $bak; Kind = $s.Kind }
     }
 }
 catch {
@@ -411,8 +469,9 @@ foreach ($c in $committed) {
     if ($null -ne $c.Bak) { Remove-Item -LiteralPath $c.Bak -Force -ErrorAction SilentlyContinue }
 }
 
-$cfgCopied = @($committed | Where-Object { $_.Final.StartsWith($DestConfig, 'OrdinalIgnoreCase') }).Count
-$modCopied = $committed.Count - $cfgCopied
+$modCopied = @($committed | Where-Object { $_.Kind -eq 'mods' }).Count
+$cfgCopied = @($committed | Where-Object { $_.Kind -eq 'config' }).Count
+$kjsCopied = @($committed | Where-Object { $_.Kind -eq 'kubejs' }).Count
 
 # --- Borrado de lo que ya no corresponde (recien con todo aplicado) ---
 $deleted = @()
@@ -425,14 +484,14 @@ foreach ($f in $cfgDelete) {
     Remove-Item -LiteralPath $f.FullName -Force
     $cfgDeleted += (Get-RelPath $DestConfig $f.FullName)
 }
-# carpetas que quedaron vacias en config
-if ($doConfig) {
-    foreach ($d in (Get-ChildItem -LiteralPath $DestConfig -Directory -Recurse | Sort-Object { $_.FullName.Length } -Descending)) {
-        if (@(Get-ChildItem -LiteralPath $d.FullName -Force).Count -eq 0) {
-            Remove-Item -LiteralPath $d.FullName -Force -ErrorAction SilentlyContinue
-        }
-    }
+$kjsDeleted = @()
+foreach ($f in $kjsDelete) {
+    Remove-Item -LiteralPath $f.FullName -Force
+    $kjsDeleted += (Get-RelPath $DestKubejs $f.FullName)
 }
+# carpetas que quedaron vacias en config / kubejs
+if ($doConfig) { Remove-EmptyDirs $DestConfig }
+if ($doKubejs) { Remove-EmptyDirs $DestKubejs }
 
 # =========================================================
 #  5. RESUMEN
@@ -494,6 +553,27 @@ if ($doConfig) {
     }
 } else {
     Write-Host " CONFIG  : desactivado (CONFIG_ORIGEN vacio en server-sync.bat)"
+}
+
+Write-Host ""
+if ($doKubejs) {
+    Write-Host " KUBEJS  (la blacklist no aplica: se espeja entera)"
+    Write-Host ("   Archivos en el origen    : {0}" -f $kjsSrcCount)
+    Write-Host ("   Copiados/actualizados    : {0}" -f $kjsCopied)
+    Write-Host ("   Ya estaban al dia        : {0}" -f ($kjsSrcCount - $kjsCopied))
+    Write-Host ("   Borrados del server      : {0}" -f $kjsDeleted.Count)
+    if ($kjsDeleted.Count -gt 0) {
+        Write-Host ""
+        Write-Host "   --- kubejs borrado del server (no esta en tu instancia) ---"
+        foreach ($n in ($kjsDeleted | Sort-Object | Select-Object -First 25)) {
+            Write-Host ("     {0}" -f $n) -ForegroundColor DarkYellow
+        }
+        if ($kjsDeleted.Count -gt 25) {
+            Write-Host ("     ... y {0} mas" -f ($kjsDeleted.Count - 25)) -ForegroundColor DarkYellow
+        }
+    }
+} else {
+    Write-Host " KUBEJS  : desactivado (KUBEJS_ORIGEN vacio en server-sync.bat)"
 }
 
 $warn = $false

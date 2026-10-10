@@ -27,15 +27,26 @@ REM de Chunky. Separadas por coma; acepta carpetas o patrones con *.
 REM Si queres un espejo puro (sin excepciones), dejala vacia.
 set "CONFIG_CONSERVAR=chunky\tasks,worldedit\sessions,worldedit\.archive-unpack,*.bak"
 
+REM Carpeta kubejs de tu instancia (origen). Dejala VACIA para no tocar kubejs.
+REM Se espeja entera (scripts, data, assets, config), igual que config.
+set "KUBEJS_ORIGEN=C:\Users\0_0\curseforge\minecraft\Instances\Guild 2.1 - copia\kubejs"
+
+REM Carpeta kubejs del servidor (destino)
+set "KUBEJS_DESTINO=C:\Games\Neo MC\kubejs"
+
+REM Archivos de kubejs que genera el server y no hay que borrar (igual
+REM que CONFIG_CONSERVAR). Hoy el server no genera nada propio ahi.
+set "KUBEJS_CONSERVAR="
+
 REM =========================================================
 REM  NO EDITAR DE ACA PARA ABAJO
 REM
 REM  Este script es independiente de sync-modpack.bat: NO corre
 REM  packwiz, NO toca el repo del pack de los jugadores y NO toca
-REM  nada fuera de las carpetas mods y config del servidor.
+REM  nada fuera de las carpetas mods, config y kubejs del servidor.
 REM
 REM  Uso:
-REM    server-sync.bat           espeja mods + config al servidor
+REM    server-sync.bat           espeja mods + config + kubejs al servidor
 REM    server-sync.bat --list    solo lista como escribir cada mod
 REM                              en la blacklist (no copia nada)
 REM =========================================================
@@ -64,6 +75,12 @@ if defined CONFIG_ORIGEN (
     echo        -^> %CONFIG_DESTINO%
 ) else (
     echo Config:    ^(desactivado^)
+)
+if defined KUBEJS_ORIGEN (
+    echo KubeJS:    %KUBEJS_ORIGEN%
+    echo        -^> %KUBEJS_DESTINO%
+) else (
+    echo KubeJS:    ^(desactivado^)
 )
 echo Blacklist: %BLACKLIST%
 echo.
@@ -98,6 +115,21 @@ if defined CONFIG_ORIGEN (
     )
 )
 
+if defined KUBEJS_ORIGEN (
+    if not exist "%KUBEJS_ORIGEN%" (
+        echo [ERROR] No se encontro la carpeta kubejs de origen:
+        echo   %KUBEJS_ORIGEN%
+        echo Revisa KUBEJS_ORIGEN al inicio de este script.
+        goto :fin_error
+    )
+    if not exist "%KUBEJS_DESTINO%" (
+        echo [ERROR] No se encontro la carpeta kubejs del servidor:
+        echo   %KUBEJS_DESTINO%
+        echo Revisa KUBEJS_DESTINO al inicio de este script.
+        goto :fin_error
+    )
+)
+
 if not exist "%BLACKLIST%" (
     echo [ERROR] No se encontro el archivo de blacklist:
     echo   %BLACKLIST%
@@ -116,7 +148,11 @@ REM     el recorte de versiones en los nombres de archivo) ---
 set "ARGS_CONFIG="
 if defined CONFIG_ORIGEN set "ARGS_CONFIG=-SourceConfig "%CONFIG_ORIGEN%" -DestConfig "%CONFIG_DESTINO%" -KeepConfig "%CONFIG_CONSERVAR%""
 
-powershell -NoProfile -ExecutionPolicy Bypass -File "%MOTOR%" -Source "%ORIGEN%" -Dest "%DESTINO%" -Blacklist "%BLACKLIST%" !ARGS_CONFIG! %MODO%
+set "ARGS_KUBEJS="
+if defined KUBEJS_ORIGEN set "ARGS_KUBEJS=-SourceKubejs "%KUBEJS_ORIGEN%" -DestKubejs "%KUBEJS_DESTINO%""
+if defined KUBEJS_ORIGEN if defined KUBEJS_CONSERVAR set "ARGS_KUBEJS=!ARGS_KUBEJS! -KeepKubejs "%KUBEJS_CONSERVAR%""
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "%MOTOR%" -Source "%ORIGEN%" -Dest "%DESTINO%" -Blacklist "%BLACKLIST%" !ARGS_CONFIG! !ARGS_KUBEJS! %MODO%
 set "RC=!ERRORLEVEL!"
 
 if "!RC!"=="0" goto :fin_ok
@@ -161,11 +197,10 @@ exit /b 1
 :fin_ok
 if defined MODO goto :sin_cartel
 echo ============================================
-if defined CONFIG_ORIGEN (
-    echo  Listo. Los mods y la config del server estan al dia.
-) else (
-    echo  Listo. La carpeta de mods del server esta al dia.
-)
+set "HECHO=los mods"
+if defined CONFIG_ORIGEN set "HECHO=!HECHO!, la config"
+if defined KUBEJS_ORIGEN set "HECHO=!HECHO!, kubejs"
+echo  Listo. Al dia en el server: !HECHO!.
 echo ============================================
 echo.
 :sin_cartel

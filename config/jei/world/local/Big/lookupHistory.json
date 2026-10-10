@@ -1,5 +1,12 @@
 [
   {"version":1},
+  {"ingredient":{"id":"swem:mineral_bone_meal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:star_worm_cobble"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:star_worm"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mermod:sea_necklace"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mermod:sea_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"torchmaster:megatorch"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:mounted_potato_cannon"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"abyssal_decor:bellmetal_bars_solo"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"abyssal_decor:raw_seabrass_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"abyssal_decor:gold_bars"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -10,8 +17,6 @@
   {"ingredient":{"id":"abyssal_decor:black_pearl"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"ethological:trough"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"ethological:chicken_feeder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"mermod:sea_crystal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"mermod:mermaid_bra_modifier"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"mermod:sea_necklace"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"createreautomatedtraces:trace_finder"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

@@ -79,13 +79,13 @@
 	# || Disable infertility option by setting it to '0'.
 	# Default: 0
 	# Range: > 0
-	maxStallionCovers = 0
+	maxStallionCovers = 4
 	#
 	# || Specify how many times a mare can breed before it is infertile.
 	# || Disable infertility option by setting it to '0'.
 	# Default: 0
 	# Range: > 0
-	maxMareCovers = 0
+	maxMareCovers = 4
 	#
 	# || Specify the chance of a mare giving birth to twins (Default = 1,000 = 0.1%)
 	# || If the value is higher than 1,000 the odds go down, if the value is lower than 1,000 the odds go up.
@@ -142,7 +142,7 @@
 [server_admin]
 	# || Enable Coat Cycling (via lapis lazuli and redstone)?
 	# || Do not enable if the server is multiplayer and has an economy.
-	allowCoatCycling = true
+	allowCoatCycling = false
 	# || Can Secret Coats be obtained via Secret Items? (Default = True = Yes)
 	# || Do not enable if the server is multiplayer and has an economy.
 	allowSecretCoats = true
@@ -162,9 +162,9 @@
 	# || Should xp cost for renaming items in an cantazarite anvil be removed?
 	removeXpRenameCost = true
 	# || Should the perks provided by the Amethyst Armor (excluding Amethyst Riding Boots) be disabled?
-	disableAmethystPerks = false
+	disableAmethystPerks = true
 	# || Should the rider be teleported with the horse if the horse should fall into the void whilst the horse is wearing Amethyst Tier Armor.
-	voidTP = true
+	voidTP = false
 	# || List of coats ids that should not be obtainable
 	# || Example: ["swem:salamarty_arishant_cytris", "swem:mr_ed", "swem:joey_this_esme", "swem:delta_malli"]
 	blacklistedCoatIds = []
@@ -181,4 +181,4 @@
 	#|| How much to heal the player wearing Netherite+ Riding Boots as a percentage of damage dealt.
 	# Default: 0.05
 	# Range: 0.01 ~ 1.0
-	lifesteal = 0.05
+	lifesteal = 0.01

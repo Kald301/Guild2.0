@@ -1,0 +1,13 @@
+name = "Twilight Spellbooks: Iron's Spells 'n Spellbooks Addon"
+filename = "twilight_spellbooks-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1980ea704d143b707b0dc42c9363f4cf712258ee"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8597044
+project-id = 1585352

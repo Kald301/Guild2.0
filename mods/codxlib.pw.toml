@@ -1,0 +1,13 @@
+name = "Codxlib"
+filename = "codxlib-1.6.1-neoforge+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d11c51c10d86420c4ba9a18ce42b5b7bbc1fd3ca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8893360
+project-id = 1633207

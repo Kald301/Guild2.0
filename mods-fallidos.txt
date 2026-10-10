@@ -1,6 +1,6 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-09 11:00:01
+ Fecha: 2026-10-10 13:25:06
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
@@ -29,9 +29,9 @@ como archivo directo y no depende de ninguna API externa.
   * aquaculturedelight-1.2.0-neoforge-1.21.1.jar
       .pw.toml borrado : aquaculture-delight.pw.toml
       tamano           : 0.2 MB
-  * codxlib-1.6.1-neoforge+1.21.1.jar
-      .pw.toml borrado : codxlib.pw.toml
-      tamano           : 0.18 MB
+  * create-aeronautics-bundled-1.21.1-1.3.2.jar
+      .pw.toml borrado : create-aeronautics.pw.toml
+      tamano           : 31.59 MB
   * Create-FPS-Optimizer-NeoForge-1.21.1-4.0.4.jar
       .pw.toml borrado : create-fps-optimizer.pw.toml
       tamano           : 0.21 MB

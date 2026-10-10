@@ -1,0 +1,31 @@
+#General settings.
+[general]
+	#Give the cookbook on the first join. Default: true
+	give_book_on_startup = true
+
+#Eating a placed Dragon Special Pie.
+[special_pie]
+	#Chance of the explosion. 0.0 = 0%, 1.0 = 100%. Default: 0.2
+	chance_explosions_when_eat_special_pie = 0.2
+	#Will there be an explosion when eating a special pie. Default: true
+	enable_explosions_when_eat_special_pie = true
+	#How many explosions may trigger before they stop. Default: 1
+	number_death_before_explosions_stop_when_eating_special_pie = 1.0
+
+#Eating a Dragon Special Sausage.
+[special_sausage]
+	#Will there be an explosion when eating a special sausage. Default: true
+	enable_explosions_when_eat_special_sausage = true
+	#How many explosions may trigger before they stop. Default: 1
+	number_death_before_explosions_stop_when_eating_special_sausage = 1.0
+	#Chance of the explosion. 0.0 = 0%, 1.0 = 100%. Default: 0.2
+	chance_explosions_when_eat_special_sausage = 0.2
+
+#Eating a slice of Dragon Special Pie.
+[special_pie_slice]
+	#How many explosions may trigger before they stop. Default: 1
+	number_death_before_explosions_stop_when_eating_special_pie_slice = 1.0
+	#Chance of the explosion. 0.0 = 0%, 1.0 = 100%. Default: 0.2
+	chance_explosions_when_eat_special_pie_slice = 0.2
+	#Will there be an explosion when eating a special pie slice. Default: true
+	enable_explosions_when_eat_special_pie_slice = true

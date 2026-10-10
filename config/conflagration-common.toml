@@ -1,0 +1,426 @@
+#Conflagration - aggressive, configurable fire spread.
+#
+#Two numbers control every flammable block in Minecraft, and they do
+#different jobs:
+#  ignite - how likely the block is to CATCH from a nearby fire.
+#           Raise this to make fire TRAVEL.
+#  burn   - how quickly the block is CONSUMED once alight. Raising this
+#           too far makes fires shorter, because the fire loses the fuel
+#           it was standing on.
+#For fires that level a building, you want HIGH ignite and MODERATE burn.
+#
+#Vanilla logs sit at ignite 5, which is the single reason forest fires
+#burn the canopy and leave the trunks standing.
+[general]
+	#
+	#VANILLA     - Mojang's stock fuel values; heat remains independently configurable.
+	#SMOULDERING - restrained. Buildings burn, slowly, and fire is survivable.
+	#AGGRESSIVE  - the intended default. A lit house burns down; forest fires carry.
+	#INFERNO     - deliberately unreasonable. Fire crosses open ground. You will lose things.
+	#CUSTOM      - use the [custom] values below verbatim.
+	#Allowed Values: VANILLA, SMOULDERING, AGGRESSIVE, INFERNO, CUSTOM
+	preset = "INFERNO"
+	#Master switch. When false, Conflagration changes nothing at all.
+	enabled = true
+	#
+	#Log every block whose flammability was changed, at server start.
+	#Useful once to see what a preset actually did; noisy afterwards.
+	log_applied_values = false
+
+#Rare server-side ignition from lit campfire sparks.
+[campfire]
+	#Allow lit campfires to very rarely ignite nearby flammable blocks.
+	sparks_can_ignite = true
+	#Maximum block radius searched for a valid campfire spark landing.
+	# Default: 6
+	# Range: 2 ~ 16
+	spark_radius = 6
+	#Chance per lit campfire per real-time minute to attempt ignition.
+	#0.0002 averages one attempt per 83 hours of continuous burning, before
+	#checking for valid nearby fuel. Set 0 to prevent spark ignition.
+	# Default: 2.0E-4
+	# Range: 0.0 ~ 1.0
+	spark_chance_per_minute = 2.0E-4
+
+#Destructive fuel behavior. These options affect only removals caused by fire.
+[destruction]
+	#When a chest burns, destroy its inventory instead of dropping it.
+	#Set false to keep the destructive fire but spill the stored items.
+	destroy_chest_contents = false
+	#Let wooden chests and trapped chests catch fire. Enabled by default.
+	burn_chests = true
+
+#Per-category values, used when preset = CUSTOM.
+#Both numbers are clamped to 0-300. Setting both to 0 makes the category
+#fireproof.
+[custom]
+
+	[custom.logs]
+		#How readily this catches fire. Vanilla: 5
+		# Default: 35
+		# Range: 0 ~ 300
+		ignite = 35
+		#How quickly this is consumed. Vanilla: 5
+		# Default: 8
+		# Range: 0 ~ 300
+		burn = 8
+
+	[custom.bamboo]
+		#How readily this catches fire. Vanilla: 5
+		# Default: 35
+		# Range: 0 ~ 300
+		ignite = 35
+		#How quickly this is consumed. Vanilla: 5
+		# Default: 8
+		# Range: 0 ~ 300
+		burn = 8
+
+	[custom.planks]
+		#How readily this catches fire. Vanilla: 5
+		# Default: 40
+		# Range: 0 ~ 300
+		ignite = 40
+		#How quickly this is consumed. Vanilla: 20
+		# Default: 12
+		# Range: 0 ~ 300
+		burn = 12
+
+	[custom.wooden_features]
+		#How readily this catches fire. Vanilla: 5
+		# Default: 40
+		# Range: 0 ~ 300
+		ignite = 40
+		#How quickly this is consumed. Vanilla: 20
+		# Default: 15
+		# Range: 0 ~ 300
+		burn = 15
+
+	[custom.kindling]
+		#How readily this catches fire. Vanilla: 0
+		# Default: 70
+		# Range: 0 ~ 300
+		ignite = 70
+		#How quickly this is consumed. Vanilla: 0
+		# Default: 100
+		# Range: 0 ~ 300
+		burn = 100
+
+	[custom.chests]
+		#How readily this catches fire. Vanilla: 0
+		# Default: 45
+		# Range: 0 ~ 300
+		ignite = 45
+		#How quickly this is consumed. Vanilla: 0
+		# Default: 30
+		# Range: 0 ~ 300
+		burn = 30
+
+	[custom.leaves]
+		#How readily this catches fire. Vanilla: 30
+		# Default: 60
+		# Range: 0 ~ 300
+		ignite = 60
+		#How quickly this is consumed. Vanilla: 60
+		# Default: 45
+		# Range: 0 ~ 300
+		burn = 45
+
+	[custom.wool]
+		#How readily this catches fire. Vanilla: 30
+		# Default: 50
+		# Range: 0 ~ 300
+		ignite = 50
+		#How quickly this is consumed. Vanilla: 60
+		# Default: 45
+		# Range: 0 ~ 300
+		burn = 45
+
+	[custom.carpets]
+		#How readily this catches fire. Vanilla: 60
+		# Default: 70
+		# Range: 0 ~ 300
+		ignite = 70
+		#How quickly this is consumed. Vanilla: 20
+		# Default: 30
+		# Range: 0 ~ 300
+		burn = 30
+
+	[custom.saplings]
+		#How readily this catches fire. Vanilla: 60
+		# Default: 60
+		# Range: 0 ~ 300
+		ignite = 60
+		#How quickly this is consumed. Vanilla: 100
+		# Default: 100
+		# Range: 0 ~ 300
+		burn = 100
+
+	[custom.plants]
+		#How readily this catches fire. Vanilla: 60
+		# Default: 70
+		# Range: 0 ~ 300
+		ignite = 70
+		#How quickly this is consumed. Vanilla: 100
+		# Default: 100
+		# Range: 0 ~ 300
+		burn = 100
+
+	[custom.crops]
+		#How readily this catches fire. Vanilla: 0
+		# Default: 40
+		# Range: 0 ~ 300
+		ignite = 40
+		#How quickly this is consumed. Vanilla: 0
+		# Default: 60
+		# Range: 0 ~ 300
+		burn = 60
+
+#Fine-grained control over individual blocks.
+[blocks]
+	#Force exact values for specific blocks, whatever the preset says.
+	#Format: "namespace:block=ignite,burn". The namespace may be omitted
+	#and defaults to minecraft. Works for modded blocks.
+	#Example: ["minecraft:oak_log=80,10", "create:andesite_casing=0,0"]
+	overrides = []
+	#
+	#Blocks Conflagration must never touch, whatever else is configured.
+	#Takes priority over overrides. Use this to protect a specific block
+	#another mod depends on.
+	#Example: ["minecraft:bookshelf"]
+	blacklist = []
+
+#Integration with other mods. All optional - Conflagration runs fine
+#on a bare NeoForge server with none of these installed.
+[integration]
+	#Controls FTB Chunks' claim fire protection, if FTB Chunks is present.
+	#Aggressive fire plus unprotected claims means a neighbour's forest fire
+	#can take out someone's base, so this defaults to ENABLE.
+	#  ENABLE      - fire cannot spread into another team's claimed chunks.
+	#  DISABLE     - fire spreads everywhere, including into claims.
+	#  LEAVE_ALONE - do not touch FTB Chunks' own setting.
+	#Ignored entirely when FTB Chunks is not installed.
+	#Allowed Values: LEAVE_ALONE, ENABLE, DISABLE
+	claim_fire_protection = "ENABLE"
+
+#Server-side fire performance. These optimizations use narrow mixin
+#injections but preserve NeoForge's contextual fire hooks for modded blocks.
+[performance]
+	#Avoid the hundreds of temporary BlockPos objects vanilla creates during
+	#each fire spread scan. This preserves scan order, random calls, world reads,
+	#and BlockState#getFireSpreadSpeed callbacks. Enabled by default because it
+	#does not change fire behavior. Set false as a compatibility escape hatch.
+	optimize_neighbour_scans = true
+	#
+	#Spread engine. VANILLA preserves Minecraft exactly. FRONTIER is an
+	#experimental sparse event engine that scans each fire occasionally and
+	#schedules deduplicated ignition arrivals instead of retrying all 53
+	#candidates every fire tick. FRONTIER changes timing and RNG distribution.
+	#Allowed Values: VANILLA, FRONTIER
+	engine = "FRONTIER"
+	#Ignition-odds multiplier used only by the VANILLA spread engine.
+	#1.0 preserves vanilla timing. Higher values make nearby fuel catch faster
+	#without changing fire tick cadence, burnout, claim checks, or mod hooks.
+	# Default: 1.0
+	# Range: 1.0 ~ 20.0
+	vanilla_spread_speed = 1.0
+	#
+	#AUTO_STRICT falls back to VANILLA when a known claim/fire mod injects into
+	#the vanilla spread loop. FORCE_UNSAFE bypasses that guard. It may allow fire
+	#through claims or skip special block behavior; pack authors own the result.
+	#Allowed Values: AUTO_STRICT, FORCE_UNSAFE
+	frontier_compatibility = "AUTO_STRICT"
+	#FRONTIER ignition-arrival rate multiplier. 1.0 is the vanilla-speed
+	#baseline (FRONTIER timing is still not bit-for-bit vanilla). The default
+	#2.0 halves the mean sampled delay; 4.0 quarters it. This preserves the
+	#exponential distribution while making an established fire accelerate
+	#across available fuel more quickly.
+	# Default: 2.0
+	# Range: 0.05 ~ 20.0
+	frontier_spread_speed = 2.0
+	#Maximum horizontal landing distance FRONTIER scans for ember jumps.
+	#1 matches vanilla's local footprint. The default 2 lets fire reach air
+	#beside fuel across short stone/path gaps; the outer ring receives a
+	#distance-squared delay penalty. Higher values cost more neighbour reads.
+	# Default: 2
+	# Range: 1 ~ 4
+	frontier_ember_jump_distance = 2
+	#Show successful FRONTIER jumps as a short arc of vanilla ember particles.
+	#Uses built-in client assets, so players still do not need this mod.
+	frontier_ember_particles = true
+	#Maximum successful ember-jump arcs sent per level per game tick.
+	#Each arc is five nearby-player particle packets; excess visuals are
+	#dropped without delaying or changing fire simulation.
+	# Default: 8
+	# Range: 0 ~ 256
+	frontier_max_particle_arcs_per_tick = 8
+	#Limit the horizontal reach of leaf/log-dominant FRONTIER outbreaks.
+	#The heuristic exempts spread into planks, doors, stairs, slabs, fences,
+	#gates, trapdoors, wool, beds, and chests so large structures still burn.
+	#Disable this for uncapped forest fires. It does not alter VANILLA mode.
+	frontier_forest_radius_limit = true
+	#Floor for the random nominal horizontal reach of each forest outbreak.
+	#The undistorted ellipse preserves nominal area; boundary noise varies it.
+	# Default: 60
+	# Range: 16 ~ 4096
+	frontier_forest_min_radius_blocks = 60
+	#Ceiling for the random nominal horizontal reach of each forest outbreak.
+	#Set equal to the minimum for fixed-size (still irregular) outbreaks.
+	# Default: 256
+	# Range: 16 ~ 4096
+	frontier_forest_max_radius_blocks = 256
+	#Keep fire in the vacated block when it burns downward through a vertical
+	#burnable-log column. This prevents canopy fires leaving floating trunks.
+	frontier_trunk_descent = true
+	#Game ticks before FRONTIER re-discovers edges around the same source fire.
+	#Higher values reduce scans; lower values react faster to changed neighbours.
+	# Default: 200
+	# Range: 20 ~ 20000
+	frontier_rescan_interval = 200
+	#Maximum due frontier ignitions processed per level per game tick.
+	# Default: 2048
+	# Range: 16 ~ 100000
+	frontier_max_events_per_tick = 2048
+	#Maximum source fires allowed to discover new frontier edges per level tick.
+	# Default: 256
+	# Range: 1 ~ 10000
+	frontier_max_sources_per_tick = 256
+	#Hard cap on queued ignition arrivals per level. New events are deferred
+	#when full rather than allowing an inferno to exhaust server memory.
+	# Default: 100000
+	# Range: 1024 ~ 2000000
+	frontier_max_pending_events = 100000
+
+#Radiant heat from groups of active fire blocks. The model uses incident
+#heat flux and accumulated exposure: a lone fireplace remains tolerable,
+#while a dense structure fire becomes dangerous from several blocks away.
+[heat]
+	#Master switch for radiant entity heat and thermal glass failure.
+	enabled = true
+	#Allow accumulated radiant exposure to ignite living entities.
+	#Vanilla fire immunity, Fire Resistance, damage hooks, and water still apply.
+	damage_entities = true
+	#Gameplay multiplier for radiant exposure applied to entities.
+	#1.0 uses the reference calibration; the default 4.0 lets players feel
+	#a structure fire from farther away without changing the inverse-square model.
+	# Default: 4.0
+	# Range: 0.1 ~ 20.0
+	entity_heating_multiplier = 4.0
+	#Maximum loaded-world radius, in blocks, used for entity heat queries.
+	# Default: 12.0
+	# Range: 2.0 ~ 24.0
+	radius = 12.0
+	#Effective radiative power per fresh fire block, in kilowatts.
+	#12.5 is gameplay-calibrated so one non-contact fire is tolerable while
+	#compact groups become dangerous. This is not literal fuel heat release.
+	# Default: 12.5
+	# Range: 1.0 ~ 100.0
+	source_radiative_power_kw = 12.5
+	#Maximum per-flame radiative-power boost inside a dense four-block cell.
+	#Total heat already rises with fire count; this smaller boost represents
+	#mutual heating and is approached smoothly rather than as a hard step.
+	# Default: 1.5
+	# Range: 1.0 ~ 4.0
+	dense_fire_power_multiplier = 1.5
+	#Incident heat flux that starts accumulating harmful dose, in kW/m^2.
+	#2.5 follows the lower bound commonly used by fire tenability models.
+	# Default: 2.5
+	# Range: 0.5 ~ 50.0
+	damage_threshold_kw_m2 = 2.5
+	#Radiant dose required for one two-second ignition pulse.
+	#Dose units are (kW/m^2)^(4/3) * minutes. The default 0.45 compresses
+	#exposure into Minecraft fire lifetimes; 1.33 is the reference pain dose.
+	# Default: 0.45
+	# Range: 0.1 ~ 20.0
+	damage_dose = 0.45
+	#Allow radiant heat to shatter ordinary glass blocks and panes.
+	#Claim adapters are checked; unsafe direct destruction fails closed.
+	shatter_glass = true
+	#Maximum loaded-world distance searched for thermally stressed glass.
+	# Default: 8
+	# Range: 1 ~ 12
+	glass_radius = 8
+	#Gameplay time-compression applied to the real thermal-gradient model.
+	#1.0 follows the reference glazing times; the default 8.0 makes windows
+	#fail during Minecraft's much shorter village-house fires.
+	# Default: 8.0
+	# Range: 0.1 ~ 50.0
+	glass_heating_multiplier = 8.0
+	#Modelled center-to-edge temperature difference that fractures glass, C.
+	#60 C is representative ordinary soda-lime glazing, not reinforced glass.
+	# Default: 60.0
+	# Range: 10.0 ~ 300.0
+	glass_break_delta_c = 60.0
+	#Legacy-named hard per-level candidate budget shared by glass fracture
+	#and all heat-driven terrain transformations.
+	# Default: 256
+	# Range: 0 ~ 16384
+	max_glass_checks_per_tick = 256
+	#Hard per-level cap on fire positions retained by the heat index.
+	# Default: 100000
+	# Range: 256 ~ 2000000
+	max_tracked_fires = 100000
+	#Convert grass blocks to dirt under sustained nearby fire heat.
+	scorch_grass_to_dirt = true
+	#Convert fire-heated farmland back to dirt.
+	bake_farmland_to_dirt = true
+	#Convert fire-heated sand/red sand to sandstone/red sandstone.
+	fuse_sand_to_sandstone = true
+	#Convert fire-heated clay blocks to terracotta.
+	fire_clay_to_terracotta = true
+	#Maximum loaded-world distance searched for heat-scorched grass.
+	# Default: 4
+	# Range: 1 ~ 12
+	scorch_grass_radius = 4
+	#Effective incident heat flux required to turn grass into dirt, kW/m^2.
+	#This uses the entity gameplay multiplier so dense fires scorch farther.
+	# Default: 1.0
+	# Range: 0.1 ~ 50.0
+	scorch_grass_threshold_kw_m2 = 1.0
+	#Convert exposed stone/cobblestone to magma under extreme nearby heat.
+	#Only a surface block with air or fire directly above can change, so the
+	#effect cannot tunnel downward through terrain.
+	melt_surface_stone_to_magma = true
+	#Maximum loaded-world distance searched for extreme surface melting.
+	# Default: 4
+	# Range: 1 ~ 12
+	melt_surface_stone_radius = 4
+	#Effective incident heat flux required for surface magma, kW/m^2.
+	# Default: 30.0
+	# Range: 1.0 ~ 200.0
+	melt_surface_stone_threshold_kw_m2 = 30.0
+	#Gradually return magma created by Conflagration to ordinary stone after
+	#the surrounding fire has cooled. Natural magma is never tracked or changed.
+	cool_generated_magma_to_stone = true
+	#Minimum cool-down delay for generated magma, in real-time seconds.
+	# Default: 120
+	# Range: 10 ~ 86400
+	magma_cooling_delay_seconds = 120
+	#Additional deterministic per-block delay range. This makes magma patches
+	#turn to stone gradually instead of changing in one server tick.
+	# Default: 180
+	# Range: 0 ~ 86400
+	magma_cooling_spread_seconds = 180
+	#Cooling waits while effective incident heat remains above this value, kW/m^2.
+	# Default: 1.0
+	# Range: 0.0 ~ 50.0
+	magma_cooling_threshold_kw_m2 = 1.0
+	#Create server-driven smoke haze around exposed players.
+	#Uses only vanilla particles, so connecting clients need no mod or assets.
+	smoke_haze = true
+	#Apply a short hidden Blindness effect in severe indoor smoke.
+	#It clears about 1.5 seconds after the player reaches cleaner air.
+	smoke_blindness = true
+	#Smoke exposure at which visible haze begins. Indoor spaces concentrate
+	#exposure while open-sky smoke disperses; lower values are smokier.
+	# Default: 0.75
+	# Range: 0.1 ~ 50.0
+	smoke_threshold = 0.75
+	#Indoor smoke exposure at which vision becomes severely obscured.
+	# Default: 5.0
+	# Range: 0.5 ~ 100.0
+	smoke_blindness_threshold = 5.0
+	#Maximum vanilla smoke particles emitted per exposed player per sample.
+	#Smoke is sampled once per second; zero keeps vision effects but hides particles.
+	# Default: 12
+	# Range: 0 ~ 128
+	max_smoke_particles_per_player = 12

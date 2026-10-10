@@ -1,0 +1,13 @@
+name = "Ice and Fire Community Delight"
+filename = "iceandfirecommunitydelight-neoforge-0.2.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6e5258ca08ed58cfc3d3dcde97602837418356b7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9085869
+project-id = 1718094
