@@ -1,6 +1,6 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-10 13:25:06
+ Fecha: 2026-10-11 11:53:03
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
@@ -38,10 +38,10 @@ como archivo directo y no depende de ninguna API externa.
   * Create-Server-Optimizer-NeoForge-1.21.1-2.3.0.jar
       .pw.toml borrado : create-server-optimizer.pw.toml
       tamano           : 0.01 MB
-  * entityculling-neoforge-1.11.2-mc1.21.1.jar
+  * entityculling-neoforge-1.11.3-mc1.21.1.jar
       .pw.toml borrado : entityculling.pw.toml
       tamano           : 1.44 MB
-  * majruszs-difficulty-neoforge-1.21.1-1.1.3.jar
+  * majruszs-difficulty-neoforge-1.21.1-1.1.4.jar
       .pw.toml borrado : majruszs-progressive-difficulty-continued.pw.toml
       tamano           : 1.18 MB
   * scalingmobs-1.1-neoforge.jar

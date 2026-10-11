@@ -142,7 +142,7 @@
 [server_admin]
 	# || Enable Coat Cycling (via lapis lazuli and redstone)?
 	# || Do not enable if the server is multiplayer and has an economy.
-	allowCoatCycling = false
+	allowCoatCycling = true
 	# || Can Secret Coats be obtained via Secret Items? (Default = True = Yes)
 	# || Do not enable if the server is multiplayer and has an economy.
 	allowSecretCoats = true

@@ -34,5 +34,6 @@
   {"ingredient":{"id":"minecraft:crying_obsidian"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"regions_unexplored:stripped_blackwood_log"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:coal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:bowl"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"minecraft:bowl"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:crafting_table"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

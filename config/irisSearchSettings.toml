@@ -1,11 +1,17 @@
 # This file stores configuration options for the IrisSearch mod
-# Made for version 1.8.2
+# Made for version 1.8.3
 # Thank you for using IrisSearch - SpacEagle17
 
 [behavior]
 	# Minimum number of shader packs required for the search bar to appear in the shader selection menu.
 	# Default = 6
 	minPacksForSelectionSearch = 6
+
+	# Maximum number of option search results that are shown in a single column instead of the usual two or three.
+	# Set to -1 to pick automatically: a single column is used based on GUI scale and screen size.
+	# Set to 0 to never use a single column.
+	# Default = -1
+	maxResultsForSingleColumn = -1
 
 [debug]
 	# Option that enables or disables debug logging. Alternatively, one can also set the JVM argument -DebugIrisSearch=true/false which takes priority over this setting.

@@ -1,13 +1,13 @@
 name = "IceAndFire Community Edition"
-filename = "iceandfire-2.1.3.jar"
+filename = "iceandfire-2.1.4.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "71923d0aebd7bdb11b1ef65d9017152ff2b80d2e"
+hash = "3bffc3a55369bba28db6c2f6a5e827b1c6ac8586"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8929517
+file-id = 9128508
 project-id = 1040076

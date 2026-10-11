@@ -1,13 +1,13 @@
 name = "Recipes Library"
-filename = "RecipesLibrary-1.21.1-4.0.1.jar"
+filename = "RecipesLibrary-1.21.1-4.0.2.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "e33f72aeb8354aace5e492b1bf365fcd96f0b72f"
+hash = "6f52be333fc64cd49f6bb5726aa39ac0c53555fe"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8028877
+file-id = 9123268
 project-id = 398351

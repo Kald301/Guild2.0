@@ -1,13 +1,13 @@
 name = "ManyIdeas Core"
-filename = "ManyIdeasCore-1.21.1-3.0.2.jar"
+filename = "ManyIdeasCore-1.21.1-3.1.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "6aa9a2deaf3fe0c9e7366f500f0e3510e72ac85c"
+hash = "5d9e15f5cbdc315afec9267b3715e721a37a49d1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9051406
+file-id = 9123199
 project-id = 433642
