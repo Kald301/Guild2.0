@@ -24,7 +24,14 @@
         "___+++___ wandering ___+++___": [],
         "mca.archer": [],
         "mca.cultist": [],
-        "mca.adventurer": []
+        "mca.adventurer": [],
+        "pet_shop_owner": [
+            {
+                "resultItem": "minecraft:emerald",
+                "priceItem1": "minecraft:string"
+            }
+        ],
+        "animal_tamer": []
     },
     "globalBookmarks1": {
         "armorer": [],
@@ -46,7 +53,9 @@
         "___+++___ wandering ___+++___": [],
         "mca.archer": [],
         "mca.cultist": [],
-        "mca.adventurer": []
+        "mca.adventurer": [],
+        "pet_shop_owner": [],
+        "animal_tamer": []
     },
     "globalBookmarks2": {
         "armorer": [],
@@ -68,6 +77,8 @@
         "___+++___ wandering ___+++___": [],
         "mca.archer": [],
         "mca.cultist": [],
-        "mca.adventurer": []
+        "mca.adventurer": [],
+        "pet_shop_owner": [],
+        "animal_tamer": []
     }
 }

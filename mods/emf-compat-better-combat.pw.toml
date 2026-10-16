@@ -1,13 +1,13 @@
 name = "EMF Compat: Better Combat"
-filename = "emf_compat_better_combat_neoforge_1.21.1_2.1.0.jar"
+filename = "emf_compat_better_combat_neoforge_1.21.1_2.1.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d03f5c26ea1bbbdfd40326a2abc6c354ec272816"
+hash = "180e04f2ba543ec74a2bfb70c61b7044cd12c5a7"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9103343
+file-id = 9190768
 project-id = 1605147

@@ -100,11 +100,11 @@
 		#Maximum hunger points.
 		# Default: 10
 		# Range: 1 ~ 100
-		max_hunger = 10
+		max_hunger = 20
 		#Ticks between losing 1 hunger.
 		# Default: 2400
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2400
+		depletion_interval_ticks = 4800
 		#Ticks between starve damage at 0 hunger.
 		# Default: 1200
 		# Range: 1 ~ 72000
@@ -175,11 +175,11 @@
 		#Maximum thirst points.
 		# Default: 10
 		# Range: 1 ~ 100
-		max_thirst = 10
+		max_thirst = 20
 		#Ticks between losing 1 thirst.
 		# Default: 2400
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2400
+		depletion_interval_ticks = 4800
 		#If true, thirst still depletes while sleeping.
 		deplete_while_sleeping = false
 		#Ticks between dehydrate damage at 0 thirst.
@@ -340,11 +340,11 @@
 		#Maximum hunger points.
 		# Default: 12
 		# Range: 1 ~ 100
-		max_hunger = 12
+		max_hunger = 24
 		#Ticks between losing 1 hunger.
 		# Default: 2400
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2400
+		depletion_interval_ticks = 4800
 		#Ticks between starve damage at 0 hunger.
 		# Default: 1200
 		# Range: 1 ~ 72000
@@ -415,11 +415,11 @@
 		#Maximum thirst points.
 		# Default: 10
 		# Range: 1 ~ 100
-		max_thirst = 10
+		max_thirst = 20
 		#Ticks between losing 1 thirst.
 		# Default: 2400
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2400
+		depletion_interval_ticks = 4800
 		#If true, thirst still depletes while sleeping.
 		deplete_while_sleeping = true
 		#Ticks between dehydrate damage at 0 thirst.
@@ -580,11 +580,11 @@
 		#Maximum hunger points.
 		# Default: 10
 		# Range: 1 ~ 100
-		max_hunger = 10
+		max_hunger = 20
 		#Ticks between losing 1 hunger.
 		# Default: 2400
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2400
+		depletion_interval_ticks = 4800
 		#Ticks between starve damage at 0 hunger.
 		# Default: 1200
 		# Range: 1 ~ 72000
@@ -655,11 +655,11 @@
 		#Maximum thirst points.
 		# Default: 10
 		# Range: 1 ~ 100
-		max_thirst = 10
+		max_thirst = 20
 		#Ticks between losing 1 thirst.
 		# Default: 2400
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2400
+		depletion_interval_ticks = 4800
 		#If true, thirst still depletes while sleeping.
 		deplete_while_sleeping = false
 		#Ticks between dehydrate damage at 0 thirst.
@@ -820,11 +820,11 @@
 		#Maximum hunger points.
 		# Default: 8
 		# Range: 1 ~ 100
-		max_hunger = 8
+		max_hunger = 16
 		#Ticks between losing 1 hunger.
 		# Default: 2000
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2000
+		depletion_interval_ticks = 4000
 		#Ticks between starve damage at 0 hunger.
 		# Default: 1000
 		# Range: 1 ~ 72000
@@ -852,7 +852,7 @@
 		# Range: 0.0 ~ 1.0
 		search_threshold_percent = 1.0
 		#Block IDs that count as food.
-		food_blocks = ["minecraft:short_grass", "minecraft:tall_grass", "minecraft:wheat", "minecraft:beetroots"]
+		food_blocks = ["minecraft:short_grass", "minecraft:tall_grass", "minecraft:wheat", "minecraft:beetroots", "minecraft:grass_block"]
 		#Bites taken at one graze patch before moving on.
 		# Default: 4
 		# Range: 1 ~ 32
@@ -895,11 +895,11 @@
 		#Maximum thirst points.
 		# Default: 8
 		# Range: 1 ~ 100
-		max_thirst = 8
+		max_thirst = 16
 		#Ticks between losing 1 thirst.
 		# Default: 2000
 		# Range: 1 ~ 72000
-		depletion_interval_ticks = 2000
+		depletion_interval_ticks = 4000
 		#If true, thirst still depletes while sleeping.
 		deplete_while_sleeping = false
 		#Ticks between dehydrate damage at 0 thirst.
@@ -965,7 +965,7 @@
 		# Range: 1 ~ 72000
 		validation_interval_ticks = 200
 		#If true, migrate by day and camp near water instead of a permanent home.
-		nomadic = false
+		nomadic = true
 		#Speed multiplier while migrating (nomadic species).
 		# Default: 1.0
 		# Range: 0.1 ~ 2.0

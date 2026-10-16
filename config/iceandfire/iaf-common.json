@@ -14,7 +14,7 @@
     "tamedGriefing": true,
     "flapNoiseDistance": 4,
     "fluteDistance": 8,
-    "attackDamage": 17,
+    "attackDamage": 30,
     "attackDamageFire": 5.0,
     "attackDamageIce": 6.5,
     "attackDamageLightning": 8.0,
@@ -24,6 +24,7 @@
     "canDespawn": true,
     "sleep": true,
     "digWhenStuck": true,
+    "destroyBoats": true,
     "breakBlockCooldown": 5,
     "targetSearchLength": 128,
     "wanderFromHomeDistance": 40,
@@ -40,12 +41,26 @@
     "brushTimesMul": 1.0,
     "loot.skull": true,
     "loot.heart": true,
-    "loot.blood": true
+    "loot.blood": true,
+    "minStageToBreakBlocks": 0,
+    "avoidWaterPathfinding": false,
+    "flightStamina": true,
+    "staminaPerStage": 100.0,
+    "staminaDrainIdlePerTick": 0.25,
+    "staminaDrainPerClimbUnit": 2.0,
+    "staminaRefundPerFallUnit": 1.0,
+    "staminaRegenGrounded": 4.0
   },
   "hippogryphs": {
     "spawn": true,
     "spawnWeight": 2,
-    "fightSpeedMod": 1.0
+    "fightSpeedMod": 1.0,
+    "flightStamina": false,
+    "maxStamina": 200.0,
+    "staminaDrainIdlePerTick": 0.25,
+    "staminaDrainPerClimbUnit": 2.0,
+    "staminaRefundPerFallUnit": 1.0,
+    "staminaRegenGrounded": 4.0
   },
   "pixie": {
     "size": 5,
@@ -63,7 +78,13 @@
   "siren": {
     "maxHealth": 50.0,
     "maxSingTime": 12000,
-    "timeBetweenSongs": 2000
+    "timeBetweenSongs": 2000,
+    "beachSpawns": false,
+    "beachSpawnWeight": 10,
+    "beachMinGroupSize": 1,
+    "beachMaxGroupSize": 1,
+    "beachMinPlayerDistance": 48.0,
+    "despawnAtMorning": true
   },
   "gorgon": {
     "maxHealth": 100.0
@@ -106,13 +127,29 @@
     "tameTime": 400,
     "flightSpeed": 1.75,
     "maxHealth": 50.0,
-    "attackDamage": 7.0
+    "attackDamage": 7.0,
+    "flightRework": false,
+    "constantFlightSpeed": 0.8,
+    "maxStamina": 200.0,
+    "staminaDrainIdlePerTick": 0.25,
+    "staminaDrainPerClimbUnit": 2.0,
+    "staminaRegenGrounded": 4.0,
+    "glideEnterStamina": 0.0,
+    "forcedGlideAngleDegrees": 30.0,
+    "forcedClimbAngleDegrees": 45.0,
+    "ignoreTakeoffInputPitchDegrees": 20.0,
+    "wanderMinDistance": 15.0,
+    "wanderMaxDistance": 30.0,
+    "wanderMinAltitude": 8,
+    "wanderMaxAltitude": 20
   },
   "seaSerpent": {
-    "spawnChance": 0.004,
+    "spawnChance": 0.001,
     "griefing": true,
     "baseHealth": 20.0,
-    "attackDamage": 4.0
+    "attackDamage": 4.0,
+    "normalModifier": 1.0,
+    "ancientModifier": 1.5
   },
   "lich": {
     "spawn": true,
@@ -124,7 +161,8 @@
   },
   "hippocampus": {
     "spawnChance": 0.025,
-    "swimSpeedMod": 1.0
+    "swimSpeedMod": 1.0,
+    "bubbleColumnImmunity": false
   },
   "ghost": {
     "maxHealth": 30.0,
@@ -143,11 +181,19 @@
     "phantasmalBladeAbility": true,
     "dragonLightningSearchRange": 10.0,
     "dragonLightningDamageReduction": 0.5,
-    "dragonLightningMaxSearchCount": 10
+    "dragonLightningMaxSearchCount": 10,
+    "pixieWandCooldown": 5,
+    "pixieChargeEffectDuration": 100,
+    "hydraHeartRegenDuration": 900,
+    "hydraHeartNerfedBrackets": false,
+    "deathwormGauntletRange": 5.0,
+    "deathwormGauntletKnockbackMin": 0.5,
+    "deathwormGauntletKnockbackMax": 0.5,
+    "deathwormGauntletRayTargeting": false
   },
   "armors": {
     "dragonSteelBaseDamage": 25.0,
-    "dragonSteelBaseDurability": 8000,
+    "dragonSteelBaseDurability": 4000,
     "dragonsteelArmorToughness": 6.0,
     "dragonsteelHelmetArmor": 7,
     "dragonsteelHelmetDurability": 1760,
@@ -158,26 +204,72 @@
     "dragonsteelBootsArmor": 6,
     "dragonsteelBootsDurability": 2080,
     "dragonsteelArmorEnchantability": 30,
-    "dragonsteelArmorKnockbackResistance": 0.1
+    "dragonsteelArmorKnockbackResistance": 0.1,
+    "dragonScaleBreathReduction": true,
+    "dragonSteelBreathReduction": true,
+    "trollProjectileReduction": true,
+    "tideGuardianEffects": true,
+    "cosmeticArmorUnbreakable": false,
+    "dragonScaleProtection": [
+      5,
+      7,
+      9,
+      5
+    ],
+    "trollProtection": [
+      2,
+      5,
+      7,
+      3
+    ],
+    "copperProtection": [
+      1,
+      3,
+      4,
+      2
+    ],
+    "silverProtection": [
+      1,
+      4,
+      5,
+      2
+    ],
+    "deathwormProtection": [
+      2,
+      5,
+      7,
+      3
+    ],
+    "tideGuardianProtection": [
+      5,
+      7,
+      8,
+      4
+    ],
+    "dragonScaleToughness": 2.0,
+    "trollToughness": 1.0,
+    "deathwormToughness": 1.5,
+    "tideGuardianToughness": 2.5
   },
   "worldgen": {
-    "dangerousDistanceLimit": 2000.0,
+    "dangerousDistanceLimit": 3000.0,
     "generateFireDragonCaveChance": 0.5,
-    "generateFireDragonRoostChance": 0.05,
+    "generateFireDragonRoostChance": 0.01,
     "generateIceDragonCaveChance": 0.5,
-    "generateIceDragonRoostChance": 0.05,
+    "generateIceDragonRoostChance": 0.01,
     "generateLightningDragonCaveChance": 0.5,
-    "generateLightningDragonRoostChance": 0.05,
-    "generateCyclopsCaveChance": 0.05,
-    "generateGorgonTempleChance": 0.05,
-    "generateGraveYardChance": 0.05,
+    "generateLightningDragonRoostChance": 0.01,
+    "generateCyclopsCaveChance": 0.2,
+    "generateGorgonTempleChance": 0.2,
+    "generateGraveYardChance": 0.2,
     "generateHydraCaveChance": 0.5,
-    "generateMausoleumChance": 0.05,
-    "generatePixieVillageChance": 0.02,
-    "generateSirenIslandChance": 0.05
+    "generateMausoleumChance": 0.2,
+    "generatePixieVillageChance": 0.2,
+    "generateSirenIslandChance": 0.5,
+    "dragonCaveYOffset": 0
   },
   "misc": {
     "enableDragonSeeker": true,
-    "dreadQueenMaxHealth": 750.0
+    "dreadQueenMaxHealth": 1000.0
   }
 }
