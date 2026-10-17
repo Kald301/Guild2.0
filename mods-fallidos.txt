@@ -1,6 +1,6 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-16 11:13:26
+ Fecha: 2026-10-16 21:05:29
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
