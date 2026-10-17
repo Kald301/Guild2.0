@@ -1,6 +1,6 @@
 # =========================================================
 #  .pw.toml QUE NUNCA SE PODAN
-#  Usado por verify-mods.ps1 (paso 7 de sync-modpack.bat)
+#  Usado por verify-mods.ps1 (paso 6 de sync-modpack.bat)
 # =========================================================
 #
 #  verify-mods.ps1 borra (o lista, en modo "listar") todo .pw.toml

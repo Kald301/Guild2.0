@@ -10,6 +10,10 @@ packwiz-installer.jar
 mods-fallidos.txt
 mods-reemplazos.txt
 mods-conservar.txt
+sync-packs.ps1
+packs-propios.txt
+packs-ignorar.txt
+packs-fallidos.txt
 *.log
 
 options.txt

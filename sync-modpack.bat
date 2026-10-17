@@ -66,12 +66,12 @@ if not defined PACKWIZ (
 )
 
 REM --- Sincronizar mods (solo .jar, espejo exacto) ---
-echo [1/7] Sincronizando mods...
+echo [1/6] Sincronizando mods...
 robocopy "%ORIGEN%\mods" "%DESTINO%\mods" *.jar /MIR /NFL /NDL /NJH /NJS
 if %ERRORLEVEL% GEQ 8 goto :error_robocopy
 
 REM --- Sincronizar config (espejo exacto) ---
-echo [2/7] Sincronizando config...
+echo [2/6] Sincronizando config...
 if exist "%ORIGEN%\config" (
     robocopy "%ORIGEN%\config" "%DESTINO%\config" /MIR /NFL /NDL /NJH /NJS
     if %ERRORLEVEL% GEQ 8 goto :error_robocopy
@@ -80,7 +80,7 @@ if exist "%ORIGEN%\config" (
 )
 
 REM --- Sincronizar kubejs (espejo exacto, si existe) ---
-echo [3/7] Sincronizando kubejs...
+echo [3/6] Sincronizando kubejs...
 if exist "%ORIGEN%\kubejs" (
     robocopy "%ORIGEN%\kubejs" "%DESTINO%\kubejs" /MIR /NFL /NDL /NJH /NJS
     if %ERRORLEVEL% GEQ 8 goto :error_robocopy
@@ -88,26 +88,35 @@ if exist "%ORIGEN%\kubejs" (
     echo   (no existe carpeta kubejs en origen, se omite)
 )
 
-REM --- Sincronizar resourcepacks (espejo exacto, si existe) ---
-echo [4/7] Sincronizando resourcepacks...
-if exist "%ORIGEN%\resourcepacks" (
-    robocopy "%ORIGEN%\resourcepacks" "%DESTINO%\resourcepacks" /MIR /NFL /NDL /NJH /NJS
-    if %ERRORLEVEL% GEQ 8 goto :error_robocopy
-) else (
-    echo   (no existe carpeta resourcepacks en origen, se omite)
+REM --- Resourcepacks y shaderpacks: NO se espejan tal cual ---
+REM  El repo es publico: subir los zips de terceros es redistribuirlos.
+REM  sync-packs.ps1 publica por Modrinth (.pw.toml) lo que esta ahi, sube
+REM  tal cual solo lo de packs-propios.txt, no sube lo que generan los
+REM  mods en cada cliente (packs-ignorar.txt) y frena todo lo demas.
+REM    0 = OK   1 = hay casos en packs-fallidos.txt   2 = sin Modrinth   4 = error
+echo [4/6] Sincronizando resourcepacks y shaderpacks...
+if not exist "%DESTINO%\sync-packs.ps1" (
+    echo.
+    echo [ERROR] Falta sync-packs.ps1 en %DESTINO%
+    goto :fin_error
 )
-
-REM --- Sincronizar shaderpacks (espejo exacto, si existe) ---
-echo [5/7] Sincronizando shaderpacks...
-if exist "%ORIGEN%\shaderpacks" (
-    robocopy "%ORIGEN%\shaderpacks" "%DESTINO%\shaderpacks" /MIR /NFL /NDL /NJH /NJS
-    if %ERRORLEVEL% GEQ 8 goto :error_robocopy
-) else (
-    echo   (no existe carpeta shaderpacks en origen, se omite)
+set "PACKS_ATENCION="
+powershell -NoProfile -ExecutionPolicy Bypass -File "%DESTINO%\sync-packs.ps1" -Origen "%ORIGEN%" -Destino "%DESTINO%" -PruneMode "%PODA%" -MaxPrune %MAX_PODA% -Esperados "%LOCALAPPDATA%\packwiz-verify\packs-esperados.json"
+set "PACKS_RC=!ERRORLEVEL!"
+if "!PACKS_RC!"=="1" set "PACKS_ATENCION=1"
+if "!PACKS_RC!"=="2" (
+    echo.
+    echo [ERROR] No se pudo consultar Modrinth. No se toco resourcepacks ni shaderpacks.
+    goto :fin_error
+)
+if not "!PACKS_RC!"=="0" if not "!PACKS_RC!"=="1" (
+    echo.
+    echo [ERROR] sync-packs.ps1 fallo ^(codigo !PACKS_RC!^). Ver el mensaje de arriba.
+    goto :fin_error
 )
 
 REM --- Ejecutar packwiz para regenerar indices ---
-echo [6/7] Actualizando indices de packwiz...
+echo [5/6] Actualizando indices de packwiz...
 cd /d "%DESTINO%"
 call "%PACKWIZ%" curseforge detect
 if errorlevel 1 goto :error_packwiz
@@ -116,7 +125,7 @@ call "%PACKWIZ%" refresh
 if errorlevel 1 goto :error_packwiz
 
 REM =========================================================
-REM  PASO 7: PODA DE OBSOLETOS + VERIFICACION DE DESCARGA REAL
+REM  PASO 6: PODA DE OBSOLETOS + VERIFICACION DE DESCARGA REAL (MODS Y PACKS)
 REM
 REM  Toda la logica vive en verify-mods.ps1 (PowerShell da control real
 REM  de procesos, codigos de salida y manejo de archivos; el .bat puro
@@ -136,7 +145,7 @@ REM    2 = NO se pudo verificar (falta java / falta el bootstrap jar)
 REM    3 = la verificacion fallo de un modo no interpretable
 REM    4 = el propio verificador se corto por un error inesperado
 REM =========================================================
-echo [7/7] Podando obsoletos y verificando que todos los mods sean descargables...
+echo [6/6] Podando obsoletos y verificando que todos los mods y packs sean descargables...
 echo   (instala el pack entero en una carpeta de prueba: puede tardar)
 
 if not exist "%DESTINO%\verify-mods.ps1" (
@@ -146,7 +155,7 @@ if not exist "%DESTINO%\verify-mods.ps1" (
     goto :fin_error
 )
 
-powershell -NoProfile -ExecutionPolicy Bypass -File "%DESTINO%\verify-mods.ps1" -ProjectRoot "%DESTINO%" -SourceMods "%ORIGEN%\mods" -MaxMB %MAX_MB% -PruneMode "%PODA%" -MaxPrune %MAX_PODA%
+powershell -NoProfile -ExecutionPolicy Bypass -File "%DESTINO%\verify-mods.ps1" -ProjectRoot "%DESTINO%" -SourceMods "%ORIGEN%\mods" -MaxMB %MAX_MB% -PruneMode "%PODA%" -MaxPrune %MAX_PODA% -ExpectedPacks "%LOCALAPPDATA%\packwiz-verify\packs-esperados.json"
 set "VERIF_RC=!ERRORLEVEL!"
 
 if "!VERIF_RC!"=="0" goto :verif_fin
@@ -176,6 +185,12 @@ echo         No se probo el pack completo: revisa el log indicado arriba.
 goto :fin_error
 
 :verif_fin
+
+if defined PACKS_ATENCION (
+    echo.
+    echo [ATENCION] Hay resource packs o shaders que NO se publicaron o para
+    echo            revisar. Mira packs-fallidos.txt ANTES de hacer push.
+)
 
 echo.
 echo ============================================

@@ -1,5 +1,5 @@
 # =====================================================================
-#  verify-mods.ps1  --  Paso 7 de sync-modpack.bat
+#  verify-mods.ps1  --  Paso 6 de sync-modpack.bat
 #
 #  Hace tres cosas, en este orden:
 #
@@ -31,6 +31,12 @@
 #           -> NO se toca nada: queda para revision manual
 #     Repite el ciclo hasta que la instalacion de prueba termine limpia.
 #
+#  4. RESOURCE PACKS Y SHADERS (con -ExpectedPacks)
+#     Sobre esa misma instalacion de prueba compara resourcepacks\ y
+#     shaderpacks\ con el manifiesto que dejo sync-packs.ps1: cada
+#     archivo que tiene que bajar el jugador esta y tiene el mismo SHA-1
+#     que en la instancia, y lo generado o no publicable NO esta.
+#
 #  NO se invoca a mano: lo llama sync-modpack.bat.
 # =====================================================================
 
@@ -41,7 +47,8 @@ param(
     [int]    $MaxMB     = 90,
     [int]    $MaxRounds = 4,
     [string] $PruneMode = 'borrar',
-    [int]    $MaxPrune  = 10
+    [int]    $MaxPrune  = 10,
+    [string] $ExpectedPacks = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -720,6 +727,41 @@ for ($ronda = 1; $ronda -le $MaxRounds; $ronda++) {
 }
 
 # ---------------------------------------------------------------------
+#  Fase 4: resource packs y shaders (manifiesto de sync-packs.ps1)
+# ---------------------------------------------------------------------
+
+$packsOk = 0
+if ($ExpectedPacks -ne '') {
+    if (-not (Test-Path -LiteralPath $ExpectedPacks)) {
+        $manuales.Add([pscustomobject]@{ Jar = '(resource packs y shaders)'; Motivo = "no esta $ExpectedPacks (sync-packs.ps1 no termino): no se verificaron"; Linea = '' })
+        Write-Fail 'No se encontro el manifiesto de sync-packs.ps1: los packs NO se verificaron.'
+    } elseif (-not $limpio) {
+        Write-Warn 'La instalacion de prueba no termino limpia: no se verifican los resource packs ni los shaders.'
+    } else {
+        $esp = [System.IO.File]::ReadAllText($ExpectedPacks) | ConvertFrom-Json
+        foreach ($p in @($esp.presentes | Where-Object { $_ })) {
+            $f = Join-Path $instance ($p.ruta -replace '/', '\')
+            if (-not (Test-Path -LiteralPath $f -PathType Leaf)) {
+                $manuales.Add([pscustomobject]@{ Jar = $p.ruta; Motivo = 'el installer NO lo instalo: un jugador no lo recibe'; Linea = '' })
+                Write-Warn "$($p.ruta) : el installer no lo instalo."
+            } elseif ((Get-FileHash -LiteralPath $f -Algorithm SHA1).Hash.ToLowerInvariant() -ne $p.sha1) {
+                $manuales.Add([pscustomobject]@{ Jar = $p.ruta; Motivo = 'el archivo que baja el jugador NO es el de la instancia (SHA-1 distinto)'; Linea = '' })
+                Write-Warn "$($p.ruta) : lo que baja el jugador no coincide con la instancia."
+            } else {
+                $packsOk++
+            }
+        }
+        foreach ($a in @($esp.ausentes | Where-Object { $_ })) {
+            if (Test-Path -LiteralPath (Join-Path $instance ($a -replace '/', '\'))) {
+                $manuales.Add([pscustomobject]@{ Jar = $a; Motivo = 'quedo publicado en el pack y NO deberia (generado en cada cliente o de terceros sin permiso)'; Linea = '' })
+                Write-Warn "$a : esta en el pack y no deberia."
+            }
+        }
+        Write-Step "Resource packs y shaders: $packsOk archivo(s) bajan identicos a la instancia."
+    }
+}
+
+# ---------------------------------------------------------------------
 #  Reporte y limpieza
 # ---------------------------------------------------------------------
 
@@ -742,6 +784,9 @@ if ($total -eq 0) {
         Write-Host ''
         Write-Host "  VERIFICACION REAL COMPLETADA ($rondas ronda(s)): el installer instalo" -ForegroundColor Green
         Write-Host '  el pack entero sin un solo error. Todos los mods son descargables.' -ForegroundColor Green
+        if ($ExpectedPacks -ne '') {
+            Write-Host "  Resource packs y shaders verificados: $packsOk archivo(s) correctos." -ForegroundColor Green
+        }
     } else {
         Write-Fail 'La verificacion termino sin poder confirmar que el pack este sano.'
         Write-Fail "Log: $ultimoLog"
@@ -856,9 +901,9 @@ if ($limpio) {
 $r.Add('')
 $r.Add("Log completo del installer: $ultimoLog")
 $r.Add('')
-$r.Add('NOTA: "packwiz curseforge detect" (paso 6) vuelve a convertir los')
+$r.Add('NOTA: "packwiz curseforge detect" (paso 5) vuelve a convertir los')
 $r.Add('overrides en metadata de CurseForge en cada sincronizacion. Por eso')
-$r.Add('el paso 7 los vuelve a pasar a override automaticamente cada vez. Es')
+$r.Add('el paso 6 los vuelve a pasar a override automaticamente cada vez. Es')
 $r.Add('esperado: no hace falta que hagas nada a mano.')
 
 Set-Content -LiteralPath $reporte -Value $r -Encoding UTF8
@@ -870,6 +915,7 @@ Write-Host ("    Obsoletos detectados (sin borrar): {0}" -f $listados.Count)
 Write-Host ("    Duplicados conocidos borrados  : {0}" -f $duplicados.Count)
 Write-Host ("    Convertidos a override         : {0}" -f $convertidos.Count)
 Write-Host ("    Revision manual (sin tocar)    : {0}" -f $manualesTodos.Count)
+if ($ExpectedPacks -ne '') { Write-Host ("    Packs/shaders verificados      : {0}" -f $packsOk) }
 Write-Host ''
 if ($limpio) {
     Write-Host "  VERIFICACION REAL COMPLETADA ($rondas ronda(s)): la instalacion de prueba" -ForegroundColor Green

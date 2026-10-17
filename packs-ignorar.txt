@@ -1,0 +1,25 @@
+# =========================================================
+#  PACKS QUE GENERA CADA CLIENTE: NUNCA SE SUBEN
+#  Usado por sync-packs.ps1 (paso 4 de sync-modpack.bat)
+# =========================================================
+#
+#  Hay mods que, al arrancar el juego, crean packs nuevos a partir
+#  de los que ya estan. Cada jugador los genera solo, asi que no hay
+#  que subirlos. Ademas son versiones MODIFICADAS de Complementary,
+#  y su licencia (puntos 1.2.c y 1.2.d) prohibe redistribuirlas.
+#
+#  Una ruta por linea, relativa al repo, con comodines (* ?).
+#  Termina en "/" = carpeta; si no, archivo.
+#  Las lineas vacias y lo que va despues de # se ignoran.
+#  OJO: un patron sin "/" final no toca las carpetas, y al reves.
+#  Asi los ajustes "<shader>.txt" (packs-propios.txt) no se pierden.
+# =========================================================
+
+# Euphoria Patcher: "<Complementary> + EuphoriaPatches_<version>"
+# (y renombra los viejos a "Outdated <...> + EP_<version>")
+shaderpacks/* + EuphoriaPatches_*/
+shaderpacks/* + EP_*/
+
+# IrisCaves: copia "<pack>_iriscaves" de cada shader que parchea
+shaderpacks/*_iriscaves/
+shaderpacks/*_iriscaves.zip

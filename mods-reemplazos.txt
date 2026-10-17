@@ -1,6 +1,6 @@
 # =========================================================
 #  REEMPLAZOS DE MODS (forks / sucesores)
-#  Usado por verify-mods.ps1 (paso 7 de sync-modpack.bat)
+#  Usado por verify-mods.ps1 (paso 6 de sync-modpack.bat)
 # =========================================================
 #
 #  Una linea por par:    viejo -> nuevo    # comentario opcional

@@ -8,8 +8,8 @@ usan con **Prism Launcher** y se les actualiza solo al abrir la instancia.
 
 ## 1. Uso del día a día
 
-1. Instalo / pruebo / saco mods **normalmente en mi instancia de CurseForge**.
-2. Doble click en `sync-modpack.bat` y espero (el paso 7 tarda: instala el pack entero de prueba).
+1. Instalo / pruebo / saco mods, resource packs y shaders **normalmente en mi instancia de CurseForge**.
+2. Doble click en `sync-modpack.bat` y espero (el paso 6 tarda: instala el pack entero de prueba).
 3. Si terminó en verde:
 
 ```bat
@@ -22,7 +22,10 @@ git push
 Listo. Los jugadores no hacen nada: se actualiza solo la próxima vez que abran Prism.
 
 > Si el script avisó **"quedaron casos que necesitan revisión manual, u obsoletos detectados que no se
-> borraron"** → leer `mods-fallidos.txt` ANTES de hacer push (ver secciones 3 y 6).
+> borraron"** → leer `mods-fallidos.txt` ANTES de hacer push (ver secciones 3 y 7).
+>
+> Si avisó **"Hay resource packs o shaders que NO se publicaron"** → leer `packs-fallidos.txt`
+> ANTES de hacer push (ver sección 4).
 
 ---
 
@@ -33,16 +36,17 @@ Listo. Los jugadores no hacen nada: se actualiza solo la próxima vez que abran 
 | 1 | `robocopy /MIR` de `mods\` (solo `*.jar`) desde la instancia de CurseForge |
 | 2 | `robocopy /MIR` de `config\` (si existe en origen) |
 | 3 | `robocopy /MIR` de `kubejs\` (si existe) |
-| 4 | `robocopy /MIR` de `resourcepacks\` (si existe) |
-| 5 | `robocopy /MIR` de `shaderpacks\` (si existe) |
-| 6 | `packwiz curseforge detect` + `packwiz refresh` |
-| 7 | Corre `verify-mods.ps1` (poda de obsoletos + verificación real de descarga) |
+| 4 | Corre `sync-packs.ps1`: `resourcepacks\` y `shaderpacks\` por Modrinth / propios / generados (sección 4) |
+| 5 | `packwiz curseforge detect` + `packwiz refresh` |
+| 6 | Corre `verify-mods.ps1` (poda de obsoletos + verificación real de descarga de mods **y** packs) |
 
 Notas:
 - `/MIR` es **espejo**, pero solo de los `.jar`: los `.pw.toml` no entran en el filtro y
   `packwiz curseforge detect` solo agrega, nunca borra. Por eso un mod que saco de CurseForge
   dejaba su `.pw.toml` vivo para siempre (así pasó con Alex's Caves y Citadel). Desde ahora
-  eso lo resuelve la **poda de obsoletos** del paso 7 (sección 3).
+  eso lo resuelve la **poda de obsoletos** del paso 6 (sección 3).
+- `resourcepacks\` y `shaderpacks\` **ya no se espejan** con robocopy: subía los zips de
+  terceros tal cual a este repo, que es público (sección 4).
 - Busca `packwiz.exe` en el PATH y, si no está, en `%USERPROFILE%\go\bin\packwiz.exe`.
 - Al principio del `.bat` se configuran las rutas de origen/destino, `MAX_MB=90`,
   `PODA=listar|borrar` y `MAX_PODA=10`.
@@ -51,7 +55,7 @@ Notas:
 
 ## 3. Qué hace `verify-mods.ps1` (y por qué existe)
 
-Tres fases, en este orden. Todo queda anotado en `mods-fallidos.txt`, separado por motivo.
+Cuatro fases, en este orden. Todo queda anotado en `mods-fallidos.txt`, separado por motivo.
 
 **1. Duplicados conocidos** (antes de instalar nada). Se borran solos, porque el mod no se pierde:
 - un `.jar` suelto en `mods\` que ya declara un `.pw.toml` → sobra el `.jar`;
@@ -90,13 +94,54 @@ carpeta descartable fuera del repo, y clasifica cada mod que falla:
 Repite el ciclo (hasta 4 rondas) hasta que la instalación de prueba termine limpia. Ningún mod
 se borra "a ciegas": si el motivo no es uno conocido, el `.pw.toml` queda como estaba.
 
-⚠️ **Esto es esperado, no es un bug:** `packwiz curseforge detect` (paso 6) vuelve a convertir
-esos jars a metadata de CurseForge en **cada** sincronización. Por eso el paso 7 corre siempre
+⚠️ **Esto es esperado, no es un bug:** `packwiz curseforge detect` (paso 5) vuelve a convertir
+esos jars a metadata de CurseForge en **cada** sincronización. Por eso el paso 6 corre siempre
 después y lo vuelve a arreglar. No hay que "arreglarlo de una vez por todas".
+
+**4. Resource packs y shaders.** Sobre la misma instalación de prueba compara `resourcepacks\` y
+`shaderpacks\` con lo que dejó `sync-packs.ps1`: cada archivo que tiene que bajar un jugador
+está y es idéntico (SHA-1) al de mi instancia, y lo generado o no publicable **no** está.
+Cualquier diferencia queda en "REQUIERE REVISIÓN MANUAL" de `mods-fallidos.txt`.
 
 ---
 
-## 4. Códigos de salida de `verify-mods.ps1`
+## 4. Resource packs y shaders (`sync-packs.ps1`)
+
+Este repo es **público**: subir acá un zip de otro autor es redistribuirlo, y sus licencias no
+lo permiten (Complementary, punto 1.2.d: *"It is not allowed to redistribute This Pack using a
+direct file upload"*; Fresh Animations y Recolourful son "All Rights Reserved"). Lo que sí
+permiten es incluirlos en un modpack **a través de Modrinth/CurseForge**, igual que los mods.
+
+Por eso el paso 4 clasifica cada cosa de `resourcepacks\` y `shaderpacks\` de la instancia:
+
+| Caso | Cómo se detecta | Qué se publica |
+|---|---|---|
+| Generado en cada cliente | `packs-ignorar.txt` (Euphoria Patcher, IrisCaves) | **Nada**: cada jugador lo genera al arrancar |
+| Ya declarado | un `.pw.toml` del repo con el mismo nombre de archivo y el mismo hash | Se deja como está |
+| Está en Modrinth | por el SHA-1 del archivo | `<slug>.pw.toml` apuntando a **ese** archivo exacto |
+| Propio | `packs-propios.txt` | El archivo tal cual |
+| Cualquier otra cosa | — | **Nada**. Queda en `packs-fallidos.txt` para revisar |
+
+Además saca del repo lo suelto que ya no corresponde y poda los `.pw.toml` de packs que saqué de
+la instancia (con el mismo `PODA` / `MAX_PODA` que los mods).
+
+- **Agregar un pack que está en Modrinth:** lo instalo en CurseForge y sincronizo. Nada más.
+- **Un pack que solo está en CurseForge:** queda en "NO PUBLICADOS". Lo agrego una vez con
+  `packwiz curseforge add <url> --meta-folder resourcepacks` (o `shaderpacks`); desde ahí el
+  sync lo reconoce por nombre y hash.
+- **Un pack hecho por nosotros:** lo anoto en `packs-propios.txt`.
+- **Un pack de terceros que no está en ningún lado:** no se publica. Si el autor da permiso
+  escrito para subirlo, recién ahí va a `packs-propios.txt`.
+- El nombre del archivo en el `.pw.toml` es el **mismo** que en la instancia, así no se rompen
+  `options.txt` ni `config/iris.properties` de los jugadores.
+
+Códigos de salida de `sync-packs.ps1`: **0** todo OK · **1** hay casos en `packs-fallidos.txt`
+(el `.bat` sigue, pero avisa al final) · **2** no se pudo consultar Modrinth (no toca nada y el
+`.bat` corta) · **4** error inesperado (el `.bat` corta).
+
+---
+
+## 5. Códigos de salida de `verify-mods.ps1`
 
 | Código | Significa | Qué hago |
 |--------|-----------|----------|
@@ -110,7 +155,7 @@ Con 2, 3 o 4 el `.bat` corta y **no** muestra los pasos de git.
 
 ---
 
-## 5. Setup de un jugador nuevo
+## 6. Setup de un jugador nuevo
 
 1. Instalar **Prism Launcher**.
 2. Crear instancia **Minecraft 1.21.1 + NeoForge 21.1.249**.
@@ -123,10 +168,16 @@ Con 2, 3 o 4 el `.bat` corta y **no** muestra los pasos de git.
 ```
 
 5. Iniciar. La primera vez baja todo; después solo baja lo que cambió.
+6. Una sola vez, en *Opciones → Paquetes de recursos*: activar **FA+Player** y, **por encima**,
+   **Guild - parche FA+Player** (hace que esas animaciones sean solo de jugadores, no de los
+   aldeanos de MCA). packwiz baja los packs pero no los activa.
+
+Los shaders (Complementary + Euphoria Patches + IrisCaves) se arman solos en cada PC: el primer
+arranque tarda un poco más. Si esa primera vez arranca sin shaders, cerrar y volver a abrir.
 
 ---
 
-## 6. Cuándo tocar algo a mano
+## 7. Cuándo tocar algo a mano
 
 Solo en estos casos, que son la excepción:
 
@@ -146,9 +197,12 @@ Para esos casos existen `packwiz curseforge add`, `packwiz modrinth add` y `pack
 Si agrego un mod con `packwiz url add` que **no** instalo en CurseForge, anotarlo en
 `mods-conservar.txt`; si no, la poda lo toma como obsoleto.
 
+- `packs-fallidos.txt` lista **NO PUBLICADOS**: un resource pack o shader que no está en Modrinth
+  ni es propio ni generado (sección 4).
+
 ---
 
-## 7. Rutas importantes
+## 8. Rutas importantes
 
 | Qué | Dónde |
 |-----|-------|
@@ -159,11 +213,15 @@ Si agrego un mod con `packwiz url add` que **no** instalo en CurseForge, anotarl
 | Reporte de fallos | `mods-fallidos.txt` (raíz del repo; se borra solo si todo salió OK) |
 | Pares fork/reemplazo | `mods-reemplazos.txt` (raíz del repo) |
 | Excepciones a la poda | `mods-conservar.txt` (raíz del repo) |
+| Packs propios (se suben tal cual) | `packs-propios.txt` (raíz del repo) |
+| Packs que genera cada cliente (nunca se suben) | `packs-ignorar.txt` (raíz del repo) |
+| Reporte de packs no publicados | `packs-fallidos.txt` (raíz del repo; se borra solo si todo salió OK) |
+| Manifiesto de packs para la verificación | `%LOCALAPPDATA%\packwiz-verify\packs-esperados.json` |
 | URL del pack para los jugadores | `https://raw.githubusercontent.com/Kald301/Guild2.0/main/pack.toml` |
 
 ---
 
-## 8. Troubleshooting
+## 9. Troubleshooting
 
 - **"Hash invalid" en muchísimos archivos a la vez** → era el problema de line endings.
   Ya resuelto con `.gitattributes` (`* -text`); no debería repetirse.
@@ -175,3 +233,25 @@ Si agrego un mod con `packwiz url add` que **no** instalo en CurseForge, anotarl
 - **Código 2: "no se encontró java"** → abrir la consola con un Java en el PATH, o reinstalarlo.
 - **Código 2: falta el bootstrap jar** → bajar `packwiz-installer-bootstrap.jar` de
   https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest a la raíz del repo.
+- **"No se pudo consultar Modrinth"** (paso 4) → sin internet o Modrinth caído. No se tocó nada;
+  reintentar más tarde.
+- **Un jugador arrancó sin shaders después de actualizar** → Euphoria Patcher e IrisCaves
+  regeneran el shader en ese arranque. Cerrar y volver a abrir el juego.
+
+---
+
+## 10. Créditos
+
+Packs que el modpack incluye (se bajan desde Modrinth, no desde este repo):
+
+- [Complementary Shaders - Unbound](https://modrinth.com/shader/complementary-unbound) y
+  [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined),
+  de EminGT / Complementary Development — https://www.complementary.dev/
+- [Euphoria Patches](https://modrinth.com/mod/euphoria-patches), de SpacEagle17 (los aplica el mod
+  Euphoria Patcher en cada PC).
+- [Fresh Animations: Player Extension](https://modrinth.com/resourcepack/fa-player-extension), de FreshLX.
+- [Recolourful Containers GUI + HUD](https://modrinth.com/resourcepack/recolourful-containers-gui), de Vi_Tul.
+
+Propio del modpack: **Guild - parche FA+Player** (`resourcepacks/Guild-parche-FA-Player-solo-jugador.zip`).
+Requiere Fresh Animations: Player Extension de FreshLX y no incluye ninguno de sus archivos
+(`.jem`, `.jpm`, animaciones ni íconos).

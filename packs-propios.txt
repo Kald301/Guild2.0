@@ -1,0 +1,25 @@
+# =========================================================
+#  PACKS PROPIOS: SE SUBEN AL REPO TAL CUAL
+#  Usado por sync-packs.ps1 (paso 4 de sync-modpack.bat)
+# =========================================================
+#
+#  Lo que hay en resourcepacks\ y shaderpacks\ de la instancia de
+#  CurseForge se publica por Modrinth (.pw.toml) si esta ahi. Si NO
+#  esta, solo se sube como archivo si figura en esta lista.
+#
+#  Aca va SOLO lo que hicimos nosotros. Un pack de terceros NO va
+#  aca aunque no este en Modrinth: subirlo tal cual al repo (que es
+#  publico) es redistribuirlo. Para esos: "packwiz curseforge add".
+#
+#  Una ruta por linea, relativa al repo, con comodines (* ?).
+#  Termina en "/" = carpeta; si no, archivo.
+#  Las lineas vacias y lo que va despues de # se ignoran.
+# =========================================================
+
+# Parche: las animaciones de FA+Player solo en jugadores, no en los
+# aldeanos de MCA. No trae ningun .jem/.jpm de Fresh Animations.
+resourcepacks/Guild-parche-FA-Player-solo-jugador.zip
+
+# Ajustes de Iris de cada shader ("<shader>.txt"): son nuestra
+# configuracion, no tienen codigo del shader.
+shaderpacks/*.txt
