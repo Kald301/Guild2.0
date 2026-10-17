@@ -1,5 +1,8 @@
 [
   {"version":1},
+  {"ingredient":{"id":"cozys-improved-cats:cat_guidebook"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cozys-improved-cats:yarn_ball"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cozys-improved-cats:cat_treat"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"swem:mineral_bone_meal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"swem:star_worm_cobble"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"swem:star_worm"},"type":"item_stack","bookmarkType":"INGREDIENT"},

@@ -1,6 +1,6 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-16 21:05:29
+ Fecha: 2026-10-17 12:50:45
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
@@ -23,7 +23,7 @@ como archivo directo y no depende de ninguna API externa.
   * accdelight-1.0.0-neoforge+1.21.1.jar
       .pw.toml borrado : alexs-caves-continued-delight.pw.toml
       tamano           : 0.1 MB
-  * alexsmobs-2.2.2-neoforge+1.21.1.jar
+  * alexsmobs-2.2.3-neoforge+1.21.1.jar
       .pw.toml borrado : alexs-mobs-continued.pw.toml
       tamano           : 26.19 MB
   * aquaculturedelight-1.2.0-neoforge-1.21.1.jar
@@ -44,7 +44,7 @@ como archivo directo y no depende de ninguna API externa.
   * majruszs-difficulty-neoforge-1.21.1-1.1.6.jar
       .pw.toml borrado : majruszs-progressive-difficulty-continued.pw.toml
       tamano           : 1.18 MB
-  * scalingmobs-1.1-neoforge.jar
+  * scalingmobs-1.2-neoforge.jar
       .pw.toml borrado : scalingmobs.pw.toml
       tamano           : 0.01 MB
   * skinlayers3d-neoforge-1.11.3-mc1.21.1.jar

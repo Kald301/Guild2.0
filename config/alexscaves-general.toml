@@ -55,6 +55,8 @@
 	# Default: 300
 	# Range: 20 ~ 24000
 	watcher_possession_cooldown = 300
+	#Whether the Tremorzilla beam breaks blocks at all. False keeps the beam's damage to mobs and players but leaves terrain alone, without turning off mob griefing for every other mob.
+	tremorzilla_beam_breaks_blocks = true
 
 [block-behavior]
 	#True if players wearing boots can walk on any scarlet neodymium surface.

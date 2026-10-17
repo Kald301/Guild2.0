@@ -1,5 +1,5 @@
 {
-  "configVersion": 3,
+  "configVersion": 4,
   "trading": {
     "ancientCodEmeraldCost": 3,
     "ancientCodTradeReceive": 1,
@@ -39,6 +39,7 @@
     "smallProximityBondIncreaseChance": 0.9
   },
   "behavior": {
+    "allowNonOwnerCare": true,
     "preventOwnerFriendlyFireToCat": true,
     "preventAnyFriendlyFireToCat": false,
     "preventNonOwnersFromBreeding": true,
@@ -53,10 +54,40 @@
     "enablePairedEmotes": true,
     "abilityRange": 25.0
   },
+  "hunger": {
+    "enabled": true,
+    "droppedFoodEnabled": true,
+    "depletionIntervalTicks": 480,
+    "sleepingMultiplier": 0.5,
+    "normalFoodRestoration": 25.0,
+    "favoriteFoodRestoration": 50.0,
+    "regenerationThreshold": 80.0,
+    "regenerationIntervalTicks": 200,
+    "regenerationAmount": 1.0,
+    "starvationIntervalTicks": 1200,
+    "starvationAmount": 1.0,
+    "healthFloor": 1.0
+  },
+  "genetics": {
+    "inheritClass": true,
+    "mutationChance": 0.1,
+    "mutationVariation": 0.05,
+    "minHealth": 20.0,
+    "maxHealth": 35.0,
+    "minSpeed": 0.2,
+    "maxSpeed": 0.6
+  },
+  "homes": {
+    "enabled": true,
+    "maxRoamingRadius": 32
+  },
   "toggles": {
     "teleportSoundEnabled": true,
     "genderSystemEnabled": true,
     "reviveEnabled": true,
+    "bedRevivalEnabled": false,
+    "fetchingEnabled": true,
+    "accidentalAttackRecoveryEnabled": true,
     "allowVanillaTaming": false,
     "enableFallDamage": false,
     "enableTotemReroll": false

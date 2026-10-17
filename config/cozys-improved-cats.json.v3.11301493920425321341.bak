@@ -1,0 +1,134 @@
+{
+  "configVersion": 3,
+  "trading": {
+    "ancientCodEmeraldCost": 3,
+    "ancientCodTradeReceive": 1,
+    "ancientSalmonEmeraldCost": 3,
+    "ancientSalmonTradeReceive": 1,
+    "fishermanLevelForTrade": 3,
+    "maxTradeUsesAncientCod": 10,
+    "maxTradeUsesAncientSalmon": 10,
+    "xpForTrade": 5,
+    "priceMultiplierForTradeFluctuation": 0.05
+  },
+  "catStats": {
+    "wildMaxHealth": 20.0,
+    "tamedMinHealth": 20.0,
+    "tamedMaxHealth": 35.0,
+    "tamedDefaultSpeed": 0.4,
+    "affinityLevelOne": 12000,
+    "affinityLevelTwo": 48000,
+    "affinityLevelThree": 192000,
+    "affinityLevelFour": 768000,
+    "affinityLevelFive": 3072000,
+    "bondLevelOne": 12000,
+    "bondLevelTwo": 48000,
+    "bondLevelThree": 192000,
+    "bondLevelFour": 768000,
+    "bondLevelFive": 3072000,
+    "nonFavoriteFoodBondXp": 1,
+    "favoriteFoodBondXp": 2,
+    "interactionBondXpMin": 1,
+    "interactionBondXpMax": 3,
+    "proximityBondXp": 1,
+    "largeBondProximityDistance": 30.0,
+    "mediumBondProximityDistance": 20.0,
+    "smallBondProximityDistance": 10.0,
+    "largeProximityBondIncreaseChance": 0.1,
+    "mediumProximityBondIncreaseChance": 0.3,
+    "smallProximityBondIncreaseChance": 0.9
+  },
+  "behavior": {
+    "preventOwnerFriendlyFireToCat": true,
+    "preventAnyFriendlyFireToCat": false,
+    "preventNonOwnersFromBreeding": true,
+    "babyCatsAlwaysWild": true,
+    "tamedFollowStopDistance": 1.0,
+    "additionalBlocksFromWanderToTeleport": 3.0,
+    "emoteChance": 1.667E-4,
+    "ownerBondEmoteChance": 0.25,
+    "emoteMaxDistance": 30.0,
+    "pairedActionRange": 7.0,
+    "enableSoloEmotes": true,
+    "enablePairedEmotes": true,
+    "abilityRange": 25.0
+  },
+  "toggles": {
+    "teleportSoundEnabled": true,
+    "genderSystemEnabled": true,
+    "reviveEnabled": true,
+    "allowVanillaTaming": false,
+    "enableFallDamage": false,
+    "enableTotemReroll": false
+  },
+  "misc": {
+    "shouldAlwaysRenderName": true,
+    "tameChance": 2,
+    "statusEffectDurationSeconds": 10,
+    "secondsToInteract": 5,
+    "interactionsToCompletion": 3,
+    "trainingStringDurability": 99,
+    "heartIconHealthAmount": 4.0,
+    "foodHealAmount": 4.0,
+    "favoriteFoodHealMultiplier": 2,
+    "healthDecayAmount": 1.0,
+    "healthDecayIntervalTicks": 1500,
+    "minHealthPercentage": 0.5
+  },
+  "ancientFish": {
+    "ancientSalmonDropChance": 0.5,
+    "ancientCodDropChance": 0.5,
+    "experienceForSmeltingAncientFish": 1.0,
+    "ticksToSmeltAncientFish": 200,
+    "rawAncientFishNutritionAmount": 2,
+    "rawAncientFishSaturationModifier": 0.1,
+    "cookedAncientFishNutritionAmount": 5,
+    "cookedAncientFishSaturationModifier": 0.6,
+    "cookedAncientFishEffects": true
+  },
+  "classes": {
+    "maleChanceForLucky": 0.05,
+    "maleChanceForDreamer": 0.15,
+    "maleChanceForGuardian": 0.25,
+    "maleChanceForNaiad": 0.25,
+    "maleChanceForWitchling": 0.2,
+    "femaleChanceForLucky": 0.05,
+    "femaleChanceForDreamer": 0.15,
+    "femaleChanceForGuardian": 0.2,
+    "femaleChanceForNaiad": 0.35,
+    "femaleChanceForWitchling": 0.25,
+    "guardianCreeperDetectionRadius": 15,
+    "guardianPhantomDetectionRadius": 200,
+    "witchlingGiftChance": 1.667E-4
+  },
+  "notifs": {
+    "catRevivedNotif": true,
+    "newCatGetNotif": true,
+    "catAbilityNotif": true,
+    "catInteractionProgressNotif": true,
+    "catInteractionCompletedNotif": true,
+    "catNonOwnerInteractionCompletedNotif": true,
+    "tamingHintNotif": true,
+    "catHealthFeedNotif": true
+  },
+  "debug": {
+    "enableNbtWarnings": true,
+    "debugLoggingEnabled": false
+  },
+  "genderClassChances": {
+    "maleChances": {
+      "naiad": 0.25,
+      "dreamer": 0.15,
+      "witchling": 0.2,
+      "lucky": 0.05,
+      "guardian": 0.35
+    },
+    "femaleChances": {
+      "naiad": 0.35,
+      "dreamer": 0.15,
+      "witchling": 0.25,
+      "lucky": 0.05,
+      "guardian": 0.2
+    }
+  }
+}
