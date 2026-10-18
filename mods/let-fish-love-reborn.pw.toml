@@ -1,0 +1,13 @@
+name = "Let Fish Love Reborn"
+filename = "letfishlove-1.1.1-mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4e55a9a0c1200f48108ca57cbe13488ffde0aa3f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8315689
+project-id = 1556616

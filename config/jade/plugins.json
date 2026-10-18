@@ -110,5 +110,18 @@
   },
   "corpse": {
     "corpse": true
+  },
+  "createfood": {
+    "ration_box": true,
+    "large_bowl": true,
+    "consumable_block": true,
+    "generic_display": true,
+    "empty_display": true,
+    "cloth_sack": true,
+    "food_block": true,
+    "cake_block": true,
+    "storage_item_entity": true,
+    "block_item_tooltip": true,
+    "candle_cake_block": true
   }
 }

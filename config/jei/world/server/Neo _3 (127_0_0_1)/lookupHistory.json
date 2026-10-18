@@ -1,5 +1,15 @@
 [
   {"version":1},
+  {"ingredient":{"id":"rats:plastic_waste"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rats:rat_water_bottle"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cozys-improved-cats:cat_bed"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"quark:iron_ladder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"quark:azalea_ladder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"quark:dark_oak_ladder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:item_vault"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:barrel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"regions_unexplored:pine_log"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chunkloaders:basic_chunk_loader"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cozys-improved-cats:training_string"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cozys-improved-cats:ancient_cooked_salmon"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cozys-improved-cats:ancient_cooked_cod"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -89,15 +99,5 @@
   {"ingredient":{"id":"prettypipes:low_speed_module"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"create:pulse_timer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"prettypipes:random_sorting_modifier"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:mechanical_saw"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:deployer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:electron_tube"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:brass_hand"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:sand_paper"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:polished_rose_quartz"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:rose_quartz"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"biomesoplenty:rose_quartz_chunk"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"prettypipes:pipe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:lightning_rod"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:furnace"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"create:mechanical_saw"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]
