@@ -10,7 +10,7 @@ hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "30ff9cfcc6f8dfcaea9bb0c7c0c2fabdea93c68d7c03767e8e9a9e8c73e43fd7"
+hash = "6722d3466f383d506ba67ba56c20564bbe2c33214500df578270360b3bde482c"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -470,7 +470,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "06f94a5b826a040de6694a1b9da677011cce9ae4dc9e61317e323a8f6f5d0355"
+hash = "e566cbf424260ad5ccf3d83ab0b686ef8e2334b16b0eafd6d01023dce77fb861"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1346,7 +1346,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "1172badbaa7ece93750f6401b791c21d28e5b03176232862d90e312ec63f27ba"
+hash = "128afa6b0b9a2d3f0e56a1076c775ca00236d8cb31130c907262adc4a37978fb"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1518,7 +1518,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "39339f8a69a8ec29837c65167bd8abb6683c3c2975aa6c0b933609eaf716ccc0"
+hash = "35b6791a7bd20b4653a0efaf8666de87e6bb3b4df40cd2dc2d9fa3f8158c6261"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -1714,7 +1714,7 @@ hash = "a6600583c9361084edd86c7c535b282597659876b3535ad4a0df7c53843f072e"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "07e371069cc31ce4c5ce9b101d1bd4d58c68db21daaa6cdd341f03c1ba1fbdad"
+hash = "d089845665462c66998b01c0f88a8e8bb5b7cd0f25835264d07956ab2b927e0b"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -2518,7 +2518,7 @@ hash = "00c6e34f0adbb41db954d296fd7c55dc3412463a38038dc836626433dd7f6d92"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "895ec7ce82899488b80ebeec271be31a1c700ca9728d24fcb502c4a0e34b5fc6"
+hash = "76ab22b6f3d1130d3e8db3863d22a3790f006c7886dfa1d9e7acb3e01b878cb5"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -2675,6 +2675,18 @@ hash = "55fb6a5a2654ea536c2284df1c5f8d40dfe615dbe6b1bb32ecdf5fd0316b4408"
 [[files]]
 file = "kubejs/data/createreautomatedtraces/data_maps/block/trace_block_for_node.json"
 hash = "f08dc4adbcbadcbd8088036b6eb5aa8ae84ed6072db933492fa53843d336ff84"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/rats/mushroom.json"
+hash = "d2e8ec22ad085d4c6b06055ebdac4afbf1e8920a88f4dcbf14ffb38b1d8a7556"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/rats/savanna.json"
+hash = "fb64e99bfa3ebdfc1071acb87d2d1602b2bae0bd411c81a154713e849fda613a"
+
+[[files]]
+file = "kubejs/data/ctov/lithostitched/worldgen_modifier/rats/snowy.json"
+hash = "6bde48e16a42c839293418849d63715a80e8daeefdff77ac1fe6bab2b3172936"
 
 [[files]]
 file = "kubejs/data/swem/loot_modifiers/bastion.json"
@@ -4277,7 +4289,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "7390aa5bf21664e8cb8117f4570a9f265047afc0ae908b7225e49f9a40778ac0"
+hash = "171376999d3dc00ceaad890b088730d5005908c0d54c1cd5bee15c29c726c0a2"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"
