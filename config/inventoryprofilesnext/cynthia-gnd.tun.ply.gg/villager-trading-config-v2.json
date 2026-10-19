@@ -14,7 +14,10 @@
         "toolsmith": [],
         "weaponsmith": [],
         "nitwit": [],
-        "none": []
+        "none": [],
+        "forager": [],
+        "mca.guard": [],
+        "mca.archer": []
     },
     "globalBookmarks1": {
         "armorer": [],
@@ -31,7 +34,10 @@
         "toolsmith": [],
         "weaponsmith": [],
         "nitwit": [],
-        "none": []
+        "none": [],
+        "forager": [],
+        "mca.guard": [],
+        "mca.archer": []
     },
     "globalBookmarks2": {
         "armorer": [],
@@ -48,6 +54,9 @@
         "toolsmith": [],
         "weaponsmith": [],
         "nitwit": [],
-        "none": []
+        "none": [],
+        "forager": [],
+        "mca.guard": [],
+        "mca.archer": []
     }
 }
