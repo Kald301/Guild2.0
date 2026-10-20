@@ -31,7 +31,9 @@
                 "priceItem1": "minecraft:string"
             }
         ],
-        "animal_tamer": []
+        "animal_tamer": [],
+        "beekeeper": [],
+        "forager": []
     },
     "globalBookmarks1": {
         "armorer": [],
@@ -55,7 +57,9 @@
         "mca.cultist": [],
         "mca.adventurer": [],
         "pet_shop_owner": [],
-        "animal_tamer": []
+        "animal_tamer": [],
+        "beekeeper": [],
+        "forager": []
     },
     "globalBookmarks2": {
         "armorer": [],
@@ -79,6 +83,8 @@
         "mca.cultist": [],
         "mca.adventurer": [],
         "pet_shop_owner": [],
-        "animal_tamer": []
+        "animal_tamer": [],
+        "beekeeper": [],
+        "forager": []
     }
 }

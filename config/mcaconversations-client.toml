@@ -49,3 +49,12 @@
 	# Default: 64
 	# Range: 0 ~ 256
 	deliveredHistoryEntries = 64
+
+[speech]
+	#Hand chat-mode villager lines (typed conversations, greetings) to MCA Reborn's own
+	#speech, once each, exactly as MCA speaks lines in its interaction screen: silent with
+	#the MCA Voices resource pack (it has no recordings for these lines), spoken with
+	#MCA's online text-to-speech. Off by default. A nearby player who overhears a
+	#public reply hears it spoken too, and each listening client sends its own request
+	#to an online backend. Options blocks and heart feedback are never spoken.
+	chatModeSpeech = false

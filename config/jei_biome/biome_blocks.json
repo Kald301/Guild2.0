@@ -1,6 +1,6 @@
 {
   "version": 10,
-  "generatedAt": "2026-10-19T03:24:27.083349500Z",
+  "generatedAt": "2026-10-20T17:05:12.996518500Z",
   "biomes": [
     {
       "biomeId": "alexscaves:abyssal_chasm",
@@ -407497,7 +407497,7 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "regions_unexplored:grass_sprouts",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:wild_flax"
       ],
       "undergroundFeatureBlocks": [
@@ -409885,7 +409885,7 @@
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
         "regions_unexplored:grass_sprouts",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax"
       ],
@@ -409962,7 +409962,7 @@
         "minecraft:smooth_basalt",
         "minecraft:tuff",
         "regions_unexplored:grass_sprouts",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax",
         "swem:cantazarite_ore",
@@ -465313,7 +465313,6 @@
         "minecraft:freeze_top_layer",
         "minecraft:glow_lichen",
         "minecraft:lake_lava",
-        "minecraft:mega_pine",
         "minecraft:mega_spruce",
         "minecraft:ore_andesite",
         "minecraft:ore_coal",
@@ -465348,6 +465347,7 @@
         "minecraft:spruce",
         "minecraft:trees_old_growth_pine_taiga",
         "minecraft:underwater_magma",
+        "regions_unexplored:mega_pine",
         "regions_unexplored:vanilla_changes/shrub_group/old_growth_pine_taiga",
         "streamsreflowing:river",
         "streamsreflowing:river_flow",
@@ -566125,7 +566125,7 @@
     },
     {
       "biomeId": "regions_unexplored:blackstone_basin",
-      "placedFeatureCount": 43,
+      "placedFeatureCount": 42,
       "placedFeatureIds": [
         "cgs:sulfur_ore_placed",
         "create:striated_ores_nether",
@@ -566150,7 +566150,6 @@
         "minecraft:spring_closed",
         "minecraft:spring_open",
         "regions_unexplored:nether/obsidian_spire",
-        "regions_unexplored:nether/patch/blackstone_cluster",
         "regions_unexplored:nether/patch/cobalt_earlight",
         "regions_unexplored:nether/patch/cobalt_roots",
         "regions_unexplored:nether/patch/hanging_earlight",
@@ -566182,7 +566181,6 @@
         "minecraft:spring_nether_closed",
         "minecraft:spring_nether_open",
         "regions_unexplored:nether/obsidian_spire",
-        "regions_unexplored:nether/patch/blackstone_cluster",
         "regions_unexplored:nether/patch/cobalt_earlight",
         "regions_unexplored:nether/patch/cobalt_roots",
         "regions_unexplored:nether/patch/hanging_earlight",
@@ -566206,7 +566204,6 @@
         "minecraft:fire",
         "minecraft:lava",
         "minecraft:red_mushroom",
-        "regions_unexplored:blackstone_cluster",
         "regions_unexplored:cobalt_earlight",
         "regions_unexplored:cobalt_roots",
         "regions_unexplored:tall_cobalt_earlight"
@@ -567229,7 +567226,6 @@
         "minecraft:fire",
         "minecraft:lava",
         "minecraft:red_mushroom",
-        "regions_unexplored:blackstone_cluster",
         "regions_unexplored:cobalt_earlight",
         "regions_unexplored:cobalt_roots",
         "regions_unexplored:tall_cobalt_earlight"
@@ -567253,7 +567249,6 @@
         "minecraft:nether_gold_ore",
         "minecraft:nether_quartz_ore",
         "minecraft:red_mushroom",
-        "regions_unexplored:blackstone_cluster",
         "regions_unexplored:cobalt_earlight",
         "regions_unexplored:cobalt_roots",
         "regions_unexplored:tall_cobalt_earlight",
@@ -587959,7 +587954,7 @@
         "minecraft:tall_grass",
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:mallow",
-        "regions_unexplored:small_desert_shrub",
+        "regions_unexplored:short_dead_grass",
         "supplementaries:wild_flax"
       ],
       "undergroundFeatureBlocks": [
@@ -590535,7 +590530,7 @@
         "minecraft:tall_grass",
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:mallow",
-        "regions_unexplored:small_desert_shrub",
+        "regions_unexplored:short_dead_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax"
       ],
@@ -590605,7 +590600,7 @@
         "minecraft:tuff",
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:mallow",
-        "regions_unexplored:small_desert_shrub",
+        "regions_unexplored:short_dead_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax",
         "swem:cantazarite_ore",
@@ -612941,7 +612936,7 @@
         "minecraft:glow_lichen",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:wild_flax"
       ],
       "undergroundFeatureBlocks": [
@@ -615131,7 +615126,7 @@
         "minecraft:red_mushroom",
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax"
       ],
@@ -615194,7 +615189,7 @@
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
         "minecraft:tuff",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax",
         "swem:cantazarite_ore",
@@ -629024,8 +629019,8 @@
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:joshua_shrub",
         "regions_unexplored:mallow",
-        "regions_unexplored:sandy_grass",
-        "regions_unexplored:small_desert_shrub",
+        "regions_unexplored:short_dead_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:wild_flax"
       ],
       "undergroundFeatureBlocks": [
@@ -631351,8 +631346,8 @@
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:joshua_shrub",
         "regions_unexplored:mallow",
-        "regions_unexplored:sandy_grass",
-        "regions_unexplored:small_desert_shrub",
+        "regions_unexplored:short_dead_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax"
       ],
@@ -631423,8 +631418,8 @@
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:joshua_shrub",
         "regions_unexplored:mallow",
-        "regions_unexplored:sandy_grass",
-        "regions_unexplored:small_desert_shrub",
+        "regions_unexplored:short_dead_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax",
         "swem:cantazarite_ore",
@@ -662984,7 +662979,7 @@
     },
     {
       "biomeId": "regions_unexplored:outback",
-      "placedFeatureCount": 101,
+      "placedFeatureCount": 100,
       "placedFeatureIds": [
         "abyssal_decor:scrimshaw_cavern_structure_feature",
         "abyssal_decor:spidercorn_feature",
@@ -663060,7 +663055,6 @@
         "regions_unexplored:patch/desert_shrub_on_sand",
         "regions_unexplored:patch/mallow",
         "regions_unexplored:patch/short_grass",
-        "regions_unexplored:patch/steppe_grass",
         "regions_unexplored:patch/steppe_grass_on_sand",
         "regions_unexplored:shrub/group/outback",
         "regions_unexplored:tree/group/outback",
@@ -663143,7 +663137,6 @@
         "regions_unexplored:patch/desert_shrub_on_sand",
         "regions_unexplored:patch/mallow",
         "regions_unexplored:patch/short_grass",
-        "regions_unexplored:patch/steppe_grass",
         "regions_unexplored:patch/steppe_grass_on_sand",
         "regions_unexplored:shrub/group/outback",
         "regions_unexplored:tree/acacia_shrub",
@@ -663182,11 +663175,10 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "regions_unexplored:acacia_shrub",
-        "regions_unexplored:dead_steppe_shrub",
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:mallow",
-        "regions_unexplored:small_desert_shrub",
-        "regions_unexplored:steppe_grass",
+        "regions_unexplored:short_dead_grass",
+        "regions_unexplored:tall_dead_grass",
         "supplementaries:wild_flax"
       ],
       "undergroundFeatureBlocks": [
@@ -665638,11 +665630,10 @@
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
         "regions_unexplored:acacia_shrub",
-        "regions_unexplored:dead_steppe_shrub",
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:mallow",
-        "regions_unexplored:small_desert_shrub",
-        "regions_unexplored:steppe_grass",
+        "regions_unexplored:short_dead_grass",
+        "regions_unexplored:tall_dead_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax"
       ],
@@ -665714,11 +665705,10 @@
         "minecraft:smooth_basalt",
         "minecraft:tuff",
         "regions_unexplored:acacia_shrub",
-        "regions_unexplored:dead_steppe_shrub",
         "regions_unexplored:grass_sprouts",
         "regions_unexplored:mallow",
-        "regions_unexplored:small_desert_shrub",
-        "regions_unexplored:steppe_grass",
+        "regions_unexplored:short_dead_grass",
+        "regions_unexplored:tall_dead_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax",
         "swem:cantazarite_ore",
@@ -695134,7 +695124,7 @@
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
         "regions_unexplored:barrel_cactus",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:wild_flax"
       ],
       "undergroundFeatureBlocks": [
@@ -697445,7 +697435,7 @@
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
         "regions_unexplored:barrel_cactus",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax"
       ],
@@ -697514,7 +697504,7 @@
         "minecraft:smooth_basalt",
         "minecraft:tuff",
         "regions_unexplored:barrel_cactus",
-        "regions_unexplored:sandy_grass",
+        "regions_unexplored:short_sandy_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax",
         "swem:cantazarite_ore",
@@ -710214,6 +710204,39 @@
           ]
         },
         {
+          "entityId": "endermanoverhaul:cave_enderman",
+          "category": "monster",
+          "weight": 2,
+          "minCount": 1,
+          "maxCount": 1,
+          "placementType": "on_ground",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": [
+            "minecraft:coal",
+            "minecraft:emerald",
+            "minecraft:ender_pearl",
+            "minecraft:raw_iron"
+          ]
+        },
+        {
+          "entityId": "endermanoverhaul:dark_oak_enderman",
+          "category": "monster",
+          "weight": 10,
+          "minCount": 1,
+          "maxCount": 4,
+          "placementType": "on_ground",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": [
+            "minecraft:ender_pearl"
+          ]
+        },
+        {
           "entityId": "golemoverhaul:slime_golem",
           "category": "monster",
           "weight": 25,
@@ -710283,21 +710306,6 @@
           "spawnEnergyBudget": "",
           "dropItems": [
             "minecraft:bone"
-          ]
-        },
-        {
-          "entityId": "minecraft:enderman",
-          "category": "monster",
-          "weight": 10,
-          "minCount": 1,
-          "maxCount": 4,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "minecraft:ender_pearl"
           ]
         },
         {
@@ -713389,7 +713397,7 @@
         "minecraft:glow_lichen",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
-        "regions_unexplored:steppe_grass",
+        "minecraft:short_grass",
         "supplementaries:wild_flax"
       ],
       "undergroundFeatureBlocks": [
@@ -715960,9 +715968,9 @@
         "minecraft:medium_amethyst_bud",
         "minecraft:pumpkin",
         "minecraft:red_mushroom",
+        "minecraft:short_grass",
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
-        "regions_unexplored:steppe_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax"
       ],
@@ -716026,10 +716034,10 @@
         "minecraft:red_mushroom",
         "minecraft:redstone_ore",
         "minecraft:sand",
+        "minecraft:short_grass",
         "minecraft:small_amethyst_bud",
         "minecraft:smooth_basalt",
         "minecraft:tuff",
-        "regions_unexplored:steppe_grass",
         "supplementaries:urn",
         "supplementaries:wild_flax",
         "swem:cantazarite_ore",
@@ -738987,6 +738995,37 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": []
+        },
+        {
+          "entityId": "born_in_chaos_v1:thornshell_crab",
+          "category": "creature",
+          "weight": 8,
+          "minCount": 1,
+          "maxCount": 1,
+          "placementType": "on_ground",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": [
+            "born_in_chaos_v1:rotten_fish",
+            "born_in_chaos_v1:spiny_shell"
+          ]
+        },
+        {
+          "entityId": "naturalist:alligator",
+          "category": "creature",
+          "weight": 10,
+          "minCount": 2,
+          "maxCount": 3,
+          "placementType": "on_ground",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": [
+            "naturalist:tooth"
+          ]
         },
         {
           "entityId": "naturalist:duck",
