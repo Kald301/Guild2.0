@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "alexscaves:hullbreaker", "required": false },
+    { "id": "alexscaves:tremorzilla", "required": false }
+  ]
+}

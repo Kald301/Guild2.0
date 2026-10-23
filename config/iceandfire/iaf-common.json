@@ -47,7 +47,7 @@
     "flightStamina": true,
     "staminaPerStage": 100.0,
     "staminaDrainIdlePerTick": 0.25,
-    "staminaDrainPerClimbUnit": 2.0,
+    "staminaDrainPerClimbUnit": 0.75,
     "staminaRefundPerFallUnit": 1.0,
     "staminaRegenGrounded": 4.0
   },

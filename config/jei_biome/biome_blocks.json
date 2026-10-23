@@ -1,6 +1,6 @@
 {
   "version": 10,
-  "generatedAt": "2026-10-20T17:05:12.996518500Z",
+  "generatedAt": "2026-10-23T23:08:11.156000900Z",
   "biomes": [
     {
       "biomeId": "alexscaves:abyssal_chasm",
@@ -738995,37 +738995,6 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": []
-        },
-        {
-          "entityId": "born_in_chaos_v1:thornshell_crab",
-          "category": "creature",
-          "weight": 8,
-          "minCount": 1,
-          "maxCount": 1,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "born_in_chaos_v1:rotten_fish",
-            "born_in_chaos_v1:spiny_shell"
-          ]
-        },
-        {
-          "entityId": "naturalist:alligator",
-          "category": "creature",
-          "weight": 10,
-          "minCount": 2,
-          "maxCount": 3,
-          "placementType": "on_ground",
-          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
-          "hasPlacement": true,
-          "spawnCharge": "",
-          "spawnEnergyBudget": "",
-          "dropItems": [
-            "naturalist:tooth"
-          ]
         },
         {
           "entityId": "naturalist:duck",

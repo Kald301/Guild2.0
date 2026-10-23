@@ -1,0 +1,293 @@
+#Detección de jefes por capas, en este orden. La lista negra siempre gana.
+#0: lista negra (tag bossequilibrium:blacklist + 'blacklist'). Jugadores, mascotas con dueño y el tag
+#   bossequilibrium:companions quedan siempre excluidos.
+#1: lista blanca (tag bossequilibrium:bosses + 'whitelist'). 2: tag común c:bosses.
+#3: barra de jefe (la clase de la entidad declara un campo ServerBossEvent/BossEvent).
+#4: heurística de vida: mob hostil no domesticado con vida máxima base de MÁS de heuristic_min_max_health.
+#El resultado se guarda por tipo de entidad; se recalcula al guardar este archivo, con /reload y con
+#/bossequilibrium reload.
+[detection]
+	#Capa 2: tratar como jefe a todo lo que esté en el tag c:bosses.
+	use_common_boss_tag = true
+	#Capa 3: tratar como jefe a toda entidad cuya clase (o una superclase) declare un campo de barra de jefe.
+	use_bossbar_reflection = true
+	#Capa 3: exigir además que esa barra exista y esté visible en la entidad concreta.
+	#Hace falta porque algunos mods (Mowzie's Mobs) declaran la barra en la clase base de TODOS sus mobs
+	#y la ocultan en los que no son jefes. Si un jefe oculta la barra mientras duerme, cuenta al despertar.
+	#false = solo mirar el tipo del campo.
+	bossbar_require_visible = true
+	#Capa 4: tratar como jefe a todo mob no domesticado cuya vida máxima base sea estrictamente mayor que
+	#heuristic_min_max_health. Se mira en cada entidad (vida base del atributo, sin modificadores de
+	#ningún mod), así que una cría pequeña y un adulto grande del mismo tipo pueden dar distinto.
+	#Si atrapa mobs que no quieres, añádelos a 'blacklist' o al tag bossequilibrium:blacklist.
+	use_health_heuristic = true
+	#Capa 4: mirar solo mobs hostiles (los que el juego marca como enemigos). Deja fuera animales grandes,
+	#gólems de jugadores, monturas y muñecos de prueba, que la vida sola no distingue de un jefe.
+	#Los tipos del tag bossequilibrium:heuristic_candidates también se miran aunque no estén marcados como
+	#hostiles (por ejemplo, dragones domesticables): son jefes si superan la vida mínima y no tienen dueño.
+	heuristic_hostile_only = true
+	#Umbral de la capa 4 (estrictamente mayor). 190 deja dentro a los mobs de 200, que en la mayoría de
+	#los mods ya son jefes o minijefes, y fuera a los mobs grandes comunes (100-150). La auditoría también
+	#lo usa para marcar sospechosos.
+	# Default: 190.0
+	# Range: 1.0 ~ 1000000.0
+	heuristic_min_max_health = 190.0
+	#Capa 1: ids de entidad 'modid:entidad' o comodín por mod 'modid:*'.
+	whitelist = []
+	#Capa 0: mismo formato que whitelist. Siempre gana.
+	blacklist = []
+
+#Quién cuenta como participante de la pelea (jugadores y mascotas/compañeros cerca del jefe).
+[participants]
+	#Distancia máxima al jefe, en bloques, en la misma dimensión.
+	# Default: 100.0
+	# Range: 1.0 ~ 1024.0
+	radius = 100.0
+	#Contar jugadores en creativo. Los espectadores nunca cuentan.
+	count_creative_players = false
+	#Un jugador cuenta si su vida máxima es estrictamente mayor que esto (0 = todos).
+	# Default: 0.0
+	# Range: 0.0 ~ 1000000.0
+	player_min_health = 0.0
+	#Contar mascotas y compañeros de jugadores.
+	count_companions = true
+	#Una mascota o compañero cuenta si su vida máxima es estrictamente mayor que esto.
+	# Default: 40.0
+	# Range: 0.0 ~ 1000000.0
+	companion_min_health = 40.0
+	#La mascota solo cuenta si su dueño también está dentro del radio.
+	companion_requires_owner_nearby = true
+	#Una montura con un jugador encima no cuenta aparte.
+	exclude_ridden_companions = true
+	#Cuánto vale cada compañero: 1.0 = como un jugador; 0.5 = media unidad.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	companion_weight = 1.0
+	#Tope de participantes contados (se prioriza a los jugadores). Solo el enrage lo supera.
+	# Default: 8
+	# Range: 1 ~ 10000
+	max_counted_participants = 8
+	#El potenciador solo actúa si hay al menos esta cantidad de participantes.
+	# Default: 2
+	# Range: 1 ~ 10000
+	min_participants_to_scale = 2
+
+#Cuándo el jefe vuelve a contar participantes.
+[scan]
+	#Cada cuántos ticks se escanea (200 = 10 s). Escalonado por id de entidad.
+	# Default: 200
+	# Range: 1 ~ 72000
+	interval_ticks = 200
+	#Escanear en cuanto empieza el combate, sin esperar al siguiente intervalo.
+	scan_on_combat_start = true
+	#Escanear solo mientras el jefe está en combate.
+	require_combat = true
+	#En combate = tiene objetivo válido o recibió daño de un participante en estos últimos ticks.
+	# Default: 200
+	# Range: 1 ~ 72000
+	combat_timeout_ticks = 200
+	#RESET: sin combate durante reset_delay_ticks, el jefe vuelve a su estado base. KEEP: nunca se reinicia.
+	#Allowed Values: RESET, KEEP
+	out_of_combat = "RESET"
+	#Ticks sin combate antes de volver al estado base (600 = 30 s).
+	# Default: 600
+	# Range: 0 ~ 720000
+	reset_delay_ticks = 600
+
+#Potenciador por participantes. extra = participantes - 1.
+#efecto(extra) = LINEAR: extra | SQRT: raíz(extra) | LOG: ln(1 + extra)
+#vida x min(max_health_multiplier, 1 + health_per_extra * efecto)
+#armadura + min(max_armor_bonus, armor_per_extra * efecto)   (puntos fijos)
+#daño x min(max_damage_multiplier, 1 + damage_per_extra * efecto)
+[scaling]
+	#Interruptor del potenciador.
+	enabled = true
+	#Curva del efecto: LINEAR | SQRT | LOG.
+	#Allowed Values: LINEAR, SQRT, LOG
+	curve = "LINEAR"
+	#Vida extra por participante extra (0.30 = +30 %).
+	# Default: 0.3
+	# Range: 0.0 ~ 100.0
+	health_per_extra = 0.3
+	#Tope del multiplicador de vida.
+	# Default: 4.0
+	# Range: 1.0 ~ 1000.0
+	max_health_multiplier = 4.0
+	#Puntos de armadura por participante extra.
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	armor_per_extra = 2.0
+	#Tope del bono de armadura, en puntos.
+	# Default: 16.0
+	# Range: 0.0 ~ 1000.0
+	max_armor_bonus = 16.0
+	#Daño extra por participante extra (0.05 = +5 %).
+	# Default: 0.05
+	# Range: 0.0 ~ 100.0
+	damage_per_extra = 0.05
+	#Tope del multiplicador de daño.
+	# Default: 1.8
+	# Range: 1.0 ~ 1000.0
+	max_damage_multiplier = 1.8
+	#EVENT: multiplica el daño que causa el jefe desde el evento de daño (cubre hechizos y proyectiles).
+	#ATTRIBUTE: usa el atributo de daño de ataque. OFF: no toca el daño. Son excluyentes.
+	#Allowed Values: EVENT, ATTRIBUTE, OFF
+	damage_mode = "EVENT"
+
+#Tope de DPS: cubeta de fichas por jefe, sobre el daño final de todas las fuentes.
+#tope_dps = vida_base * percent_of_base_health_per_second / 100 * (1 + bonus_per_extra_player * jugadores_extra)
+#vida_base = vida máxima del jefe sin el modificador de este mod.
+[dps_cap]
+	#Interruptor del tope de DPS.
+	enabled = true
+	#Porcentaje de la vida base que el jefe puede perder por segundo. Punto de partida SIN calibrar.
+	# Default: 3.0
+	# Range: 0.001 ~ 10000.0
+	percent_of_base_health_per_second = 3.0
+	#Capacidad de la cubeta, en segundos de tope (permite un golpe fuerte aislado, no una ráfaga).
+	# Default: 1.0
+	# Range: 0.05 ~ 600.0
+	bucket_seconds = 1.0
+	#Cuánto sube el tope por cada jugador real extra. Las mascotas no lo suben.
+	# Default: 0.3
+	# Range: 0.0 ~ 100.0
+	bonus_per_extra_player = 0.3
+	#Tags de tipo de daño que el tope no limita (por defecto: vacío y /kill).
+	exempt_damage_type_tags = ["minecraft:bypasses_invulnerability"]
+	#EXPERIMENTAL: vigilar la caída de vida por tick y revertir el exceso (mods que usan setHealth directo).
+	watch_direct_health_changes = false
+	#Avisar al jugador (barra de acción) cuando el tope recorta su daño.
+	notify = true
+	#Enfriamiento del aviso por jugador, en ticks.
+	# Default: 60
+	# Range: 0 ~ 72000
+	notify_cooldown_ticks = 60
+	#Texto literal del aviso (admite códigos de color con §).
+	message_capped = "§7El jefe resiste el exceso de daño."
+
+#Enrage (opcional). Con enabled = false no se ejecuta nada de esta sección.
+#Cada efecto tiene su propio interruptor y todos dependen de enabled.
+[enrage]
+	#Interruptor maestro del enrage.
+	enabled = true
+	#Participantes contados SIN tope que lo activan.
+	# Default: 12.0
+	# Range: 1.0 ~ 10000.0
+	trigger_participants = 12.0
+	#Contar jugadores para el disparo.
+	count_players = true
+	#Contar mascotas y compañeros para el disparo.
+	count_companions = true
+	#Una vez activado, se mantiene hasta que el jefe se reinicia (ver scan.out_of_combat).
+	latch_until_reset = true
+	#Solo si latch_until_reset = false: se apaga al bajar de trigger_participants - release_margin.
+	# Default: 2.0
+	# Range: 0.0 ~ 10000.0
+	release_margin = 2.0
+	#Mientras dura: ignorar max_counted_participants y los max_* del potenciador.
+	lift_limits = true
+	#Mientras dura: daño del jefe x damage_base_multiplier * damage_growth_per_extra ^ (participantes - trigger).
+	exponential_damage = true
+	#Factor del daño exponencial al llegar justo al umbral.
+	# Default: 1.5
+	# Range: 0.0 ~ 1000.0
+	damage_base_multiplier = 1.5
+	#Crecimiento del daño por cada participante por encima del umbral.
+	# Default: 1.1
+	# Range: 0.01 ~ 100.0
+	damage_growth_per_extra = 1.1
+	#Techo del multiplicador TOTAL de daño del jefe (potenciador x exponencial). 0 = sin techo.
+	#El castigo a compañeros va aparte, encima.
+	# Default: 100.0
+	# Range: 0.0 ~ 1.0E9
+	damage_multiplier_ceiling = 100.0
+	#Mientras dura: multiplicar el daño del jefe contra mascotas y compañeros de jugadores.
+	companion_damage_multiplier_enabled = true
+	#Multiplicador contra compañeros, encima de todo lo anterior.
+	# Default: 4.0
+	# Range: 0.0 ~ 1000000.0
+	companion_damage_multiplier = 4.0
+	#ALL_OWNED: toda mascota con dueño jugador o del tag bossequilibrium:companions.
+	#COUNTED_ONLY: solo las que cuentan como participantes.
+	#Allowed Values: ALL_OWNED, COUNTED_ONLY
+	companion_damage_applies_to = "ALL_OWNED"
+	#Aviso al activarse: TITLE | CHAT | ACTIONBAR | NONE.
+	#Allowed Values: TITLE, CHAT, ACTIONBAR, NONE
+	notify_mode = "TITLE"
+	#Radio del aviso, en bloques.
+	# Default: 100.0
+	# Range: 0.0 ~ 1024.0
+	notify_radius = 100.0
+	#Avisar también cuando se apaga.
+	notify_on_release = false
+	#Texto literal al activarse (admite §).
+	message_activate = "§c¡El jefe se ha enfurecido! Hay demasiados aliados cerca."
+	#Texto literal al apagarse (admite §).
+	message_release = "§7El jefe se ha calmado."
+	#Id de sonido vanilla al activarse. Vacío = sin sonido.
+	sound = "minecraft:entity.ender_dragon.growl"
+	#Volumen del sonido.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	sound_volume = 1.0
+	#Partículas al activarse.
+	particles = false
+
+#Rotación de aggro (opcional, de mejor esfuerzo). Con enabled = false no se ejecuta nada de esta sección.
+#Solo funciona con jefes que usan el objetivo normal de mob (Mob.setTarget). No funciona con el Warden
+#(objetivo en la memoria del cerebro) ni con el Dragón del End (objetivo dentro de sus fases).
+[aggro_rotation]
+	#Interruptor maestro de la rotación de aggro.
+	enabled = true
+	#Cada cuántos ticks se elige objetivo (100 = 5 s).
+	# Default: 100
+	# Range: 1 ~ 72000
+	rotation_interval_ticks = 100
+	#Cuánto dura el objetivo fijado, en ticks.
+	# Default: 100
+	# Range: 1 ~ 72000
+	lock_ticks = 100
+	#MOST_RECENT | MOST_DAMAGE | RANDOM_RECENT.
+	#Allowed Values: MOST_RECENT, MOST_DAMAGE, RANDOM_RECENT
+	selection_mode = "MOST_RECENT"
+	#Quién puede atraer el aggro: solo los atacantes RELEVANTES, los que suben las estadísticas del jefe
+	#(cuentan como participantes según [participants]). Prioridad al último atacante relevante; sin ninguno,
+	#no hay bloqueo y el jefe sigue su IA normal.
+	#PLAYERS: solo jugadores. PLAYERS_AND_COMPANIONS: también mascotas fuertes (más de companion_min_health,
+	#dueño cerca, sin jinete). Una mascota con poca vida nunca se fija: la trata la IA propia del jefe.
+	#Allowed Values: PLAYERS, PLAYERS_AND_COMPANIONS
+	eligible_attackers = "PLAYERS_AND_COMPANIONS"
+	#Ventana de atacantes recientes, en ticks.
+	# Default: 100
+	# Range: 1 ~ 72000
+	attacker_window_ticks = 100
+	#Distancia máxima al candidato. 0 = usar el follow_range del propio jefe.
+	# Default: 0.0
+	# Range: 0.0 ~ 2048.0
+	max_target_distance = 0.0
+	#Mínimo de ticks entre dos cambios de objetivo (evita cortar animaciones de ataque).
+	# Default: 40
+	# Range: 0 ~ 72000
+	min_ticks_between_switches = 40
+	#Rotar solo mientras el jefe está en combate.
+	only_during_combat = true
+	#Si hay que reponer el objetivo más veces por segundo que esto, se desactiva para ese tipo de jefe.
+	# Default: 10
+	# Range: 1 ~ 1000
+	max_reasserts_per_second = 10
+	#Avisar al jugador elegido.
+	notify_target = false
+	#Texto literal del aviso al elegido (admite §).
+	message_target = "§e¡El jefe te ha fijado como objetivo!"
+	#Duración de /bossequilibrium aggro test, en ticks (100 = 5 s).
+	# Default: 100
+	# Range: 1 ~ 72000
+	test_duration_ticks = 100
+
+#Comandos de operador (/bossequilibrium).
+[commands]
+	#Alcance de inspect, status, simulate y aggro test: la entidad apuntada o, si no, la más cercana
+	#dentro de este radio.
+	# Default: 32.0
+	# Range: 1.0 ~ 256.0
+	target_range = 32.0

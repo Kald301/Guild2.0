@@ -1,0 +1,57 @@
+#Camino de hielo de SWEM (armadura de caballo de oro o mejor, con Frost Walk activo).
+#SWEM pone el hielo solo en el servidor y el movimiento del caballo montado lo decide el cliente, así
+#que con ping o con parones el hielo llega tarde y el caballo se hunde. Todo lo de esta sección actúa
+#solo cuando un jugador monta el caballo; los caballos sueltos siguen exactamente como en SWEM.
+[frost_path]
+	#Interruptor general de esta sección. false = el camino de hielo de SWEM sin cambios.
+	enabled = true
+
+	#Hielo adelantado: además del disco de radio 6 de SWEM, congela una franja por delante del caballo,
+	#en la dirección en que se mueve, tan larga como lo que avanza durante el ping del jinete más un margen.
+	[frost_path.lookahead]
+		#Activar el hielo adelantado.
+		enabled = true
+		#Límite de cuánto se adelanta, en ticks (20 ticks = 1 s). 10 = medio segundo: cubre unos 400 ms de
+		#ping incluso al galope más rápido (22,8 bloques/s). Más alto = cubre más ping, pero la franja es más
+		#larga y deja más hielo suelto en las curvas y al frenar.
+		# Default: 10
+		# Range: 0 ~ 40
+		max_ticks = 10
+		#Milisegundos que se suman al ping del jinete. Cubren el tick de retraso con que el servidor envía el
+		#hielo, la espera hasta el siguiente tick y la variación del ping.
+		# Default: 150
+		# Range: 0 ~ 1000
+		safety_ms = 150
+		#Medio ancho de la franja adelantada, en bloques (el disco de SWEM es 6).
+		# Default: 3
+		# Range: 1 ~ 6
+		radius = 3
+
+	#Que el caballo no pierda el suelo sobre su propio camino.
+	[frost_path.support]
+		#El hielo justo bajo el caballo no se derrite mientras está encima. Sin esto, un caballo quieto ve un
+		#tick de agua cuando ese bloque se derrite y puede atravesar el hielo.
+		keep_ice_under_horse = true
+		#Ticks que el caballo sigue congelando agua tras despegar del suelo (saltos, tropiezos), a la altura
+		#del último suelo que pisó. SWEM deja de hacerlo en cuanto no toca suelo. 20 = 1 s, lo que dura un
+		#salto normal. 0 = como en SWEM.
+		# Default: 20
+		# Range: 0 ~ 60
+		airborne_grace_ticks = 20
+
+	#Rescate: si el caballo cae al agua con el efecto activo, se congela un anillo de hielo en la superficie
+	#a su alrededor (la orilla) y un suelo de hielo un bloque bajo la superficie entre el caballo y ese anillo
+	#(el escalón). El caballo sube al escalón, de ahí al anillo, y el camino normal sigue. Actúa siempre que
+	#el efecto esté activo, también al entrar al agua desde una orilla alta.
+	[frost_path.rescue]
+		#Activar el rescate.
+		enabled = true
+		#Distancia (desde el centro del caballo) hasta la que se pone el escalón sumergido. El caballo mide 1,6
+		#de ancho, así que menos de 2 casi no deja escalón alrededor.
+		# Default: 2.5
+		# Range: 1.5 ~ 4.0
+		inner_radius = 2.5
+		#Distancia hasta la que llega el anillo de la superficie. Se fuerza a ser al menos inner_radius + 1.
+		# Default: 4.0
+		# Range: 2.5 ~ 6.0
+		outer_radius = 4.0

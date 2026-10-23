@@ -1,0 +1,6 @@
+{
+  "_comentario": "Excepciones por jefe de Boss Equilibrium. Prioridad: id exacto > comodín de mod (modid:*) > config global. Las claves son las de [scaling] y [dps_cap] del TOML, más scaling_enabled, dps_cap_enabled, enrage_enabled, aggro_rotation_enabled (solo apagan), trigger_participants y rotation_interval_ticks. Las claves que empiezan con _ se ignoran: quita el _ del ejemplo para usarlo. Se relee con /bossequilibrium reload.",
+  "_cataclysm:ignis": { "percent_of_base_health_per_second": 4.0, "health_per_extra": 0.2 },
+  "_cataclysm:*": { "percent_of_base_health_per_second": 3.5 },
+  "_minecraft:wither": { "scaling_enabled": false }
+}

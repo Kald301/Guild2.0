@@ -10,7 +10,7 @@ hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "30ff9cfcc6f8dfcaea9bb0c7c0c2fabdea93c68d7c03767e8e9a9e8c73e43fd7"
+hash = "6722d3466f383d506ba67ba56c20564bbe2c33214500df578270360b3bde482c"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -19,10 +19,6 @@ hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
 [[files]]
 file = "config/No Friendly Fire Configurations.toml"
 hash = "b27d3d46b36a8e05649abe7eefb9ac721d3f7bdcc3c58390626ef9d65e32c9e7"
-
-[[files]]
-file = "config/SimpleBossDamageCap.toml"
-hash = "52e8318b59abd851aa398453626db51ef35c0749826c6264ebd8e903b3c728f9"
 
 [[files]]
 file = "config/SpiderOverhaul.json"
@@ -474,7 +470,7 @@ hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "887a3891d841b336892ecab04fff02ac2f92a9e548017eca9bfb2865f78cddf3"
+hash = "755688a3c7b0cff71fc1518c68248d3c84f7fbedd5ebe3121fd2f10653e78237"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -542,7 +538,7 @@ hash = "b03069c030f940550b4436d2f7c3dab582efa2fcc32b221ac30dbcb0617eab7f"
 
 [[files]]
 file = "config/betterend/biomes_toggle.json"
-hash = "ffe86a45f90889bd9f86b26e625e0be7c388d4f7b40411f41820c896434f43b0"
+hash = "aa572f4902eb1167059037724c2c99a52176400332b98957c181dfa3197ef17e"
 
 [[files]]
 file = "config/betterend/client.json"
@@ -675,6 +671,18 @@ hash = "103d33aeb39d6e537f65dd9afd5f993fcdfad944568a5be77887f5814064aa77"
 [[files]]
 file = "config/borninconfiguration-general.toml"
 hash = "a73d56171558cdd8875b587ffaf4eada0c13de1f0afc91d50f5582693f374d0b"
+
+[[files]]
+file = "config/bossequilibrium-server-1.toml.bak"
+hash = "1918799f03c5b80ca31f3cc73275d8aa3259c24f98da531e4cfb4ab976cbfb56"
+
+[[files]]
+file = "config/bossequilibrium-server.toml"
+hash = "02ce5ea5c2c4c727ff03e7609e22c042165c438ca4724a55f37b0343d7a2b339"
+
+[[files]]
+file = "config/bossequilibrium/bosses.json"
+hash = "5c4dfaa4b25c2dd58ba10657f5c2cc21c8f412a89ab08ab6c9d95942f572b8e9"
 
 [[files]]
 file = "config/c2me.toml"
@@ -1282,7 +1290,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "26057a8915557d43a70e7d717ff2890fcaa783b0f44c98c0ca337582d298edf5"
+hash = "b47593dedb20a1f3a9be6a72f322eb0fb25ebba52ed971f469136bbd9b1ec0e5"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1290,7 +1298,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "35199d8094d2a9106b92ea0e40a9a69bff1eb3995950d8d2b6f78987232e678d"
+hash = "c47c48919c0b4faa9ded8d1effd9a005f779d8425304cf238dd80e8c49b5b9f4"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1298,7 +1306,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "9ccf0fcb21cbf815e49d5bfe0bf16c06b997c188eb2f8962e60e8d6f2323d993"
+hash = "e6418f26c8041fbc245e4b69098d5f33a51dae8167b39da90bd55243d9ce0a10"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1358,7 +1366,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "8b51deeb303cc2b6d689aa0978ad4f4215b600c0ba34f1033d2b030d3d567a5e"
+hash = "c92a187b84ce4f55c6bcdf7947d9b23fdb6eddea8d5133d0fbdeb9473a378cf5"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1434,7 +1442,7 @@ hash = "139c77cbd5c106862de2543f2809de827b8293a0648ec0e786887285ee63ae27"
 
 [[files]]
 file = "config/iceandfire/iaf-common.json"
-hash = "69af262881595c5aa8c8359614976dbdbfd54e3f2b31ae5f42944bbc9f254d02"
+hash = "3d1b9be6cf36af1cc3829410c83bbd81fc11ad7425283ebfa5d1932d1ecd5c96"
 
 [[files]]
 file = "config/iceandfirecommunitydelight-common.toml"
@@ -1466,7 +1474,7 @@ hash = "cccaabb38c99eb7797e55137e59bcdecdf92bd71da243eb08d3992be8edf7f59"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/refillDisabledSlots.txt"
-hash = "33b84d539f2d6af5e6e0f1c323573221fecadad0dc972bdc0509e738415a32bd"
+hash = "02bd1d274a09fd303aedf41c38dbdc3bcaca9e52151894e00a5dba49fe65ae35"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/villager-trading-config-v2.json"
@@ -1573,6 +1581,14 @@ file = "config/inventoryprofilesnext/T4/villager-trading-config-v2.json"
 hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
 
 [[files]]
+file = "config/inventoryprofilesnext/Test P 1/prev-villager-trading-config-v2.json"
+hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
+
+[[files]]
+file = "config/inventoryprofilesnext/Test P 1/villager-trading-config-v2.json"
+hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
+
+[[files]]
 file = "config/inventoryprofilesnext/Test tard/prev-villager-trading-config-v2.json"
 hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
 
@@ -1594,7 +1610,7 @@ hash = "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "c2e3e7f8b3e006c78376d6db876502b4038ea494d00ae08b2bd1c761984f25a0"
+hash = "b0481fc99d83635450072f40cd7babd01f99e212057297242eee00bf04602b21"
 
 [[files]]
 file = "config/inventoryprofilesnext/test/prev-villager-trading-config-v2.json"
@@ -1614,7 +1630,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "3d5cc2a71acb26ddfd4ec667ee532c57d2e85ed474957e2e001695090f0a887c"
+hash = "018746967b37c20ca6b2681a9d9480ef408def320a477863ced4b9c03e738253"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -1814,11 +1830,11 @@ hash = "0b969708c2690ca22cb19b54e621660a5187e562e927bd61d5856f384e34db86"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "78f4585bf399b3a7d38e6b1488dcddb3c16d1113beb544d5966780c476d738d4"
+hash = "8c53789032a095bcf091e13bcbbf8296bfacf032f828862c873769c3deae49f2"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "855ec8867ab8cdb46459e0b35651cbbeb09eb8eab1a290db87822756262065d3"
+hash = "90e50dcfd72a605f9f2d5177bb7d137c3fa117f189b6f714d9b31e8fe937fbba"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -2261,10 +2277,6 @@ file = "config/sable-server.toml"
 hash = "9c3e9012ea23ca1449fdfc7df7a8134d4f0f2eacc46f8f8c1ab9ccb2b4510783"
 
 [[files]]
-file = "config/scalingmobs-common.toml"
-hash = "c0773143aa5a7e821c4e2795fff8a3c04c45f04f02df0fbc4f99ebbbc5f4f36e"
-
-[[files]]
 file = "config/sereneseasons/fertility.toml"
 hash = "f63f94b985285add146c73a8747d278cec3d386807855b25de0e1db9962c153f"
 
@@ -2561,12 +2573,16 @@ file = "config/swemcull-client.toml"
 hash = "7b731d3f9a4888f9ba08b55b6ac708a84cfc90f175f6272198ef7682eb2306e5"
 
 [[files]]
+file = "config/swemtweaks-server.toml"
+hash = "863bd7867e7f5cc90a1aa6accfed7c75c7550fde88a8f783d97d2e63b999db77"
+
+[[files]]
 file = "config/takesapillage.json"
 hash = "7db0f52b6068154e92b7685dd1b3ec2a754bfeb2a523af3eccbc9840dbfe9d6e"
 
 [[files]]
 file = "config/terrablender.toml"
-hash = "bb5a6bbd9cad07b85cd50ffa92467004d0f3737c3b87775fa61d9b92ed8ba367"
+hash = "cff6a9a0d415b19b9852844c0ad5bb2b1cfdb9fce12e729e7228a6521fc95927"
 
 [[files]]
 file = "config/terralith.json"
@@ -2634,7 +2650,7 @@ hash = "00c6e34f0adbb41db954d296fd7c55dc3412463a38038dc836626433dd7f6d92"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "ae88dfb8db655807b3d08a49c71d71af2b500eb5f5dbd048d89c4f469e2c415a"
+hash = "d03648f142f815ee4d0875b2315a9e36878b3497843819fbde16f1411a055fdd"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -2789,6 +2805,18 @@ file = "kubejs/config/web_server.json"
 hash = "55fb6a5a2654ea536c2284df1c5f8d40dfe615dbe6b1bb32ecdf5fd0316b4408"
 
 [[files]]
+file = "kubejs/data/bossequilibrium/tags/entity_type/blacklist.json"
+hash = "ee50b838275d834159cba3e06d328e99de5e9d0aa1ddd22966ec898875fd6df0"
+
+[[files]]
+file = "kubejs/data/bossequilibrium/tags/entity_type/bosses.json"
+hash = "5a57f09592eb73406a227592ea57200f9b061e28706cbf4ace999692326f6525"
+
+[[files]]
+file = "kubejs/data/bossequilibrium/tags/entity_type/heuristic_candidates.json"
+hash = "191e7fe3bd58765f61cfe4bc91c84aef04f8c96f7b746c21313bc168e9c6400e"
+
+[[files]]
 file = "kubejs/data/createreautomatedtraces/data_maps/block/trace_block_for_node.json"
 hash = "f08dc4adbcbadcbd8088036b6eb5aa8ae84ed6072db933492fa53843d336ff84"
 
@@ -2803,10 +2831,6 @@ hash = "fb64e99bfa3ebdfc1071acb87d2d1602b2bae0bd411c81a154713e849fda613a"
 [[files]]
 file = "kubejs/data/ctov/lithostitched/worldgen_modifier/rats/snowy.json"
 hash = "6bde48e16a42c839293418849d63715a80e8daeefdff77ac1fe6bab2b3172936"
-
-[[files]]
-file = "kubejs/data/lithostitched/lithostitched/fast_noise_config/region/overworld.json"
-hash = "8d1ba84e10be2edf4d1f54f3e39d9a07337927fa306a9fb036f02b7d96d9b96c"
 
 [[files]]
 file = "kubejs/data/swem/loot_modifiers/bastion.json"
@@ -3052,6 +3076,10 @@ metafile = true
 file = "mods/born-in-configuration.pw.toml"
 hash = "1b38c40c7061a4aff0e2eda5924e84186a675d524a825bb7f656fe156745170f"
 metafile = true
+
+[[files]]
+file = "mods/bossequilibrium-0.2.0.jar"
+hash = "75df84efa3effcc912a3a6d5842d18c70817ac92ed73c44d7b5e4cffe13425a3"
 
 [[files]]
 file = "mods/bosses-oddities.pw.toml"
@@ -4063,10 +4091,6 @@ hash = "f2c81cf494b7b6c1063563d7377224cf64b29e0b86bcf87bcf4da8eb79b9c800"
 metafile = true
 
 [[files]]
-file = "mods/scalingmobs-1.2-neoforge.jar"
-hash = "da15974b165e1129c2dde18ff18f3c3e587c5183c9b9a9e3026e910d294ab7ff"
-
-[[files]]
 file = "mods/searchables.pw.toml"
 hash = "6c0fac550bb053ee2728144a28819835823dcc6d04ad7897750431fe55100e53"
 metafile = true
@@ -4084,11 +4108,6 @@ metafile = true
 [[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "eb438b9d4a49c0cc65560cdc295bf927cabc6f34319375a0cfbf3aece662add8"
-metafile = true
-
-[[files]]
-file = "mods/simple-boss-damage-cap.pw.toml"
-hash = "5f09d8b6065d7d5cf0cf6c8232364d0cc0736892c38ba2b0dababf04d883d569"
 metafile = true
 
 [[files]]
@@ -4198,6 +4217,10 @@ metafile = true
 [[files]]
 file = "mods/swemcull-1.21.1-1.0.4.jar"
 hash = "422487d48fb21c546fcbe8255665f14e7bc7858a29c7ff1124fc800ab698e9c8"
+
+[[files]]
+file = "mods/swemtweaks-0.1.0.jar"
+hash = "679b8920b00dcd8320cfe9353f314feef7e0631d88b071bc3571c701270cd8f9"
 
 [[files]]
 file = "mods/terrablender-neoforge.pw.toml"
@@ -4418,7 +4441,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "6e9d34ba8d4aa50145a1be7c2b11de2dfbb18437257de1e23ec4eb802eda55f1"
+hash = "6d6b3f41f250b804082caa6e81a0a81afba985ee3b5898c224c1fdf96938e671"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"

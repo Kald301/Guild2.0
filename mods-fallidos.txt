@@ -1,9 +1,19 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-20 20:33:41
- Rondas de verificacion: 3
+ Fecha: 2026-10-23 18:38:15
+ Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
+
+OBSOLETOS PODADOS (1)
+------------------------------------------------------------
+Su .jar ya no esta en la instancia de CurseForge: se borro el
+.pw.toml. A los jugadores se les borra el .jar solo en el proximo
+arranque (packwiz-installer borra lo que el mismo instalo y salio
+del pack).
+
+  * simple-boss-damage-cap.pw.toml  (simpplebossdamagecap-1.0.0-1.21.1.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)
 ------------------------------------------------------------
@@ -14,7 +24,7 @@ lo sigue cubriendo el otro.
       borrado : mca-capitals.pw.toml
       motivo  : ya lo cubre capitals-a-monarchy-mod-for-mca-reborn.pw.toml (descarga directa)
 
-CONVERTIDOS A OVERRIDE (11)
+CONVERTIDOS A OVERRIDE (10)
 ------------------------------------------------------------
 El autor excluyo estos mods de la API de CurseForge. Se borro su
 .pw.toml y el .jar real quedo dentro de mods\, asi se distribuye
@@ -44,9 +54,6 @@ como archivo directo y no depende de ninguna API externa.
   * majruszs-difficulty-neoforge-1.21.1-1.1.6.jar
       .pw.toml borrado : majruszs-progressive-difficulty-continued.pw.toml
       tamano           : 1.18 MB
-  * scalingmobs-1.2-neoforge.jar
-      .pw.toml borrado : scalingmobs.pw.toml
-      tamano           : 0.01 MB
   * skinlayers3d-neoforge-1.11.4-mc1.21.1.jar
       .pw.toml borrado : skin-layers-3d.pw.toml
       tamano           : 1.82 MB

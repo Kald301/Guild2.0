@@ -1,5 +1,5 @@
 {
-  "create_version": "21.0.34",
+  "create_version": "0.0.0",
   "biomes": {
     "amber_land": true,
     "blossoming_spires": true,
@@ -8,6 +8,7 @@
     "dragon_graveyards": true,
     "dry_shrubland": true,
     "dust_wastelands": true,
+    "flower_islets": true,
     "foggy_mushroomland": true,
     "glowing_grasslands": true,
     "ice_starfield": true,
@@ -17,6 +18,7 @@
     "sulphur_springs": true,
     "umbrella_jungle": true,
     "umbra_valley": true,
+    "waterfall_ponds": true,
     "megalake_grove": true,
     "neon_oasis": true,
     "painted_mountains": true,
@@ -25,9 +27,7 @@
     "lush_smaragdant_cave": true,
     "empty_aurora_cave": true,
     "lush_aurora_cave": true,
-    "jade_cave": true,
-    "flower_islets": true,
-    "waterfall_ponds": true
+    "jade_cave": true
   },
-  "modify_version": "21.0.35"
+  "modify_version": "0.0.0"
 }

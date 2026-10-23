@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "cinematiccataclysm:ancient_remnant_cutscene", "required": false },
+    { "id": "cinematiccataclysm:ignis_cutscene", "required": false },
+    { "id": "cinematiccataclysm:leviathan_cutscene", "required": false },
+    { "id": "cinematiccataclysm:maledictus_cutscene", "required": false },
+    { "id": "cinematiccataclysm:scylla_cutscene", "required": false }
+  ]
+}
