@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"block_factorys_bosses:cannonball"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cozys-improved-cats:cat_guidebook"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

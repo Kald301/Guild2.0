@@ -1,19 +1,9 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-23 18:38:15
+ Fecha: 2026-10-25 11:35:49
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
-
-OBSOLETOS PODADOS (1)
-------------------------------------------------------------
-Su .jar ya no esta en la instancia de CurseForge: se borro el
-.pw.toml. A los jugadores se les borra el .jar solo en el proximo
-arranque (packwiz-installer borra lo que el mismo instalo y salio
-del pack).
-
-  * simple-boss-damage-cap.pw.toml  (simpplebossdamagecap-1.0.0-1.21.1.jar)
-      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)
 ------------------------------------------------------------

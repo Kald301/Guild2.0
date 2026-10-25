@@ -43,5 +43,7 @@
   {"ingredient":{"id":"farmersdelight:straw"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"supplementaries:ash"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cgs:scope"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"iceandfire:shiny_scales"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"iceandfire:shiny_scales"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:framed_glass_trapdoor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"farmersdelight:tree_bark"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

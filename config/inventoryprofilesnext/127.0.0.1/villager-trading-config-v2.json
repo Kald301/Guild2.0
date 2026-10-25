@@ -33,7 +33,8 @@
         ],
         "animal_tamer": [],
         "beekeeper": [],
-        "forager": []
+        "forager": [],
+        "scribe": []
     },
     "globalBookmarks1": {
         "armorer": [],
@@ -59,7 +60,8 @@
         "pet_shop_owner": [],
         "animal_tamer": [],
         "beekeeper": [],
-        "forager": []
+        "forager": [],
+        "scribe": []
     },
     "globalBookmarks2": {
         "armorer": [],
@@ -85,6 +87,7 @@
         "pet_shop_owner": [],
         "animal_tamer": [],
         "beekeeper": [],
-        "forager": []
+        "forager": [],
+        "scribe": []
     }
 }

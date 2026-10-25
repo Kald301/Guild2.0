@@ -1,13 +1,13 @@
 name = "Cozy's Improved Cats"
-filename = "cozys-improved-cats-2.0.0-1.21.1.jar"
+filename = "cozys-improved-cats-2.1.0-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1b5026997a29b523c3c0e68e824f6e61e1433b86"
+hash = "b6ee883f195632920abd64ca46d11f32c4b0d572"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9102069
+file-id = 9293579
 project-id = 1001847

@@ -1,6 +1,6 @@
 {
   "version": 10,
-  "generatedAt": "2026-10-23T23:08:11.156000900Z",
+  "generatedAt": "2026-10-25T14:34:34.458329500Z",
   "biomes": [
     {
       "biomeId": "alexscaves:abyssal_chasm",
@@ -391657,6 +391657,19 @@
           "dropItems": []
         },
         {
+          "entityId": "cozys-improved-cats:improved_cat",
+          "category": "creature",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 2,
+          "placementType": "no_restrictions",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": []
+        },
+        {
           "entityId": "minecraft:strider",
           "category": "creature",
           "weight": 60,
@@ -412647,6 +412660,19 @@
           "dropItems": []
         },
         {
+          "entityId": "cozys-improved-cats:improved_cat",
+          "category": "creature",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 2,
+          "placementType": "no_restrictions",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": []
+        },
+        {
           "entityId": "alexsmobs:farseer",
           "category": "monster",
           "weight": 30,
@@ -413677,6 +413703,19 @@
           "entityId": "alexsmobs:spectre",
           "category": "creature",
           "weight": 10,
+          "minCount": 1,
+          "maxCount": 2,
+          "placementType": "no_restrictions",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": []
+        },
+        {
+          "entityId": "cozys-improved-cats:improved_cat",
+          "category": "creature",
+          "weight": 1,
           "minCount": 1,
           "maxCount": 2,
           "placementType": "no_restrictions",
@@ -414719,6 +414758,19 @@
           "entityId": "alexsmobs:spectre",
           "category": "creature",
           "weight": 10,
+          "minCount": 1,
+          "maxCount": 2,
+          "placementType": "no_restrictions",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": []
+        },
+        {
+          "entityId": "cozys-improved-cats:improved_cat",
+          "category": "creature",
+          "weight": 1,
           "minCount": 1,
           "maxCount": 2,
           "placementType": "no_restrictions",

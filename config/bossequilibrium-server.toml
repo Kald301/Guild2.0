@@ -39,7 +39,8 @@
 
 #Quién cuenta como participante de la pelea (jugadores y mascotas/compañeros cerca del jefe).
 [participants]
-	#Distancia máxima al jefe, en bloques, en la misma dimensión.
+	#Distancia máxima al jefe de los JUGADORES, en bloques, en la misma dimensión. Un dueño cuenta como
+	#"cerca" si está dentro de este radio. Las mascotas usan companion_radius.
 	# Default: 100.0
 	# Range: 1.0 ~ 1024.0
 	radius = 100.0
@@ -71,6 +72,35 @@
 	# Default: 2
 	# Range: 1 ~ 10000
 	min_participants_to_scale = 2
+	#Distancia máxima al jefe de las MASCOTAS y compañeros, en bloques. 100 = igual que hasta ahora.
+	#Bájalo (por ejemplo 48-64) para ignorar mascotas que esperan lejos de la pelea.
+	# Default: 100.0
+	# Range: 1.0 ~ 1024.0
+	companion_radius = 100.0
+	#Compañeros INACTIVOS. El mod no mira si atacan (una mascota de apoyo que no ataca sigue contando):
+	#solo descarta a los que por su ESTADO no participan. Los descartados no suben al jefe y salen aparte
+	#en /bossequilibrium status. Estas comprobaciones solo se hacen en el escaneo periódico, y solo a los
+	#que ya pasaron las demás reglas (vida, dueño jugador cerca, sin jinete).
+	#exclude_sitting: no cuenta una mascota sentada (TamableAnimal sentado u ordenado sentarse: perros, gatos, loros).
+	exclude_sitting = true
+	#No cuenta un compañero sin IA (NoAI: no se mueve ni pelea).
+	exclude_noai = true
+	#No cuenta un compañero dormido.
+	exclude_sleeping = true
+	#No cuenta un compañero atado con correa.
+	exclude_leashed = true
+	#Sondas por nombre de método, para mods con su propio modo "quieto/esperando" que el mod no conoce.
+	#Cada nombre es un método público, sin argumentos, que devuelve boolean, de la clase de la mascota
+	#(se busca en toda su jerarquía). Si alguno devuelve true, la mascota es inactiva y no cuenta.
+	#Se resuelven una vez por tipo de entidad. Un método que falla al llamarlo se desactiva para esa clase
+	#y se avisa una vez en el log. /bossequilibrium participants muestra los métodos candidatos de cada
+	#mascota cercana y su valor actual. Ejemplo: ["isStanding"]. Vacío por defecto.
+	inactive_method_names = []
+	#Histéresis del recuento, para que la vida máxima del jefe no oscile: si N sube se aplica en ese
+	#escaneo; si baja, solo cuando se mantiene más bajo este número de escaneos seguidos. 1 = sin retraso.
+	# Default: 2
+	# Range: 1 ~ 100
+	scale_down_delay_scans = 2
 
 #Cuándo el jefe vuelve a contar participantes.
 [scan]
@@ -134,6 +164,26 @@
 	#Allowed Values: EVENT, ATTRIBUTE, OFF
 	damage_mode = "EVENT"
 
+	#Aviso a los jugadores cuando el jefe se fortalece por compañeros. Se envía cuando cambia N, cuenta al
+	#menos un compañero y pasó el enfriamiento. Texto literal con los marcadores {players}, {companions} y
+	#{total} (N).
+	[scaling.notify]
+		#Interruptor del aviso.
+		enabled = true
+		#Dónde se muestra: ACTIONBAR | CHAT | NONE.
+		#Allowed Values: ACTIONBAR, CHAT, NONE
+		mode = "ACTIONBAR"
+		#Lo reciben los jugadores a esta distancia del jefe, en bloques. 0 = igual que participants.radius.
+		# Default: 0.0
+		# Range: 0.0 ~ 1024.0
+		radius = 0.0
+		#Enfriamiento por jefe, en ticks (600 = 30 s).
+		# Default: 600
+		# Range: 0 ~ 720000
+		cooldown_ticks = 600
+		#Texto literal (admite §).
+		message = "§7El jefe se fortalece: cuentan {players} jugador(es) y {companions} compañero(s)."
+
 #Tope de DPS: cubeta de fichas por jefe, sobre el daño final de todas las fuentes.
 #tope_dps = vida_base * percent_of_base_health_per_second / 100 * (1 + bonus_per_extra_player * jugadores_extra)
 #vida_base = vida máxima del jefe sin el modificador de este mod.
@@ -164,12 +214,51 @@
 	notify_cooldown_ticks = 60
 	#Texto literal del aviso (admite códigos de color con §).
 	message_capped = "§7El jefe resiste el exceso de daño."
+	#Informe de combate, para descubrir jefes de "ventana" (inmunes casi siempre, vulnerables en ventanas
+	#cortas). Al terminar cada combate (muerte o reinicio) escribe UNA línea INFO en el log con: duración
+	#(del primer al último golpe), daño que pasó, daño recortado y su %, golpes recortados y tiempo con la
+	#cubeta llena. /bossequilibrium fights muestra los últimos. No cambia nada por sí solo.
+	#false = no se calcula nada.
+	fight_report = true
+	#Marca CANDIDATO_VENTANA si el % de daño recortado llega a esto...
+	# Default: 40.0
+	# Range: 0.0 ~ 100.0
+	window_candidate_min_capped_percent = 40.0
+	#...y la cubeta estuvo llena al menos este % del combate.
+	# Default: 60.0
+	# Range: 0.0 ~ 100.0
+	window_candidate_min_full_bucket_percent = 60.0
+
+	#Perfil de tope para jefes de "ventana de oportunidad": los del tag bossequilibrium:opportunity_bosses.
+	#Son jefes inmunes casi todo el tiempo y vulnerables en ventanas cortas (ej.: el Ferrous Wroughtnaut de
+	#Mowzie's Mobs, unos 3 s tras clavar el hacha). Con el tope global (3 %/s, cubeta de 1 s) cada ventana
+	#deja quitar muy poco, y la cubeta se desborda durante la inmunidad: ese tiempo se pierde.
+	#Este perfil SOLO cambia el tope de DPS de esos jefes: potenciador, enrage, aggro y participantes siguen igual.
+	#Prioridad, clave por clave: bosses.json (id exacto > comodín de mod) > este perfil > [dps_cap].
+	#notify y message_capped son siempre los de [dps_cap].
+	[dps_cap.opportunity]
+		#Interruptor del perfil. false = estos jefes usan el tope global.
+		enabled = true
+		#Porcentaje de la vida base por segundo MIENTRAS el jefe es vulnerable. La cubeta se recarga a este
+		#ritmo también durante la inmunidad, hasta su capacidad.
+		# Default: 10.0
+		# Range: 0.001 ~ 10000.0
+		percent_of_base_health_per_second = 10.0
+		#Capacidad de la cubeta, en segundos de tope: permite gastar de golpe lo acumulado durante la inmunidad.
+		#Ej.: 5 %/s con cubeta de 10 s permite ~50 % de la vida en una ráfaga tras una inmunidad larga.
+		# Default: 1.0
+		# Range: 0.05 ~ 600.0
+		bucket_seconds = 1.0
+		#Cuánto sube el tope por cada jugador extra. -1 = el de [dps_cap] (hereda el global).
+		# Default: -1.0
+		# Range: -1.0 ~ 100.0
+		bonus_per_extra_player = -1.0
 
 #Enrage (opcional). Con enabled = false no se ejecuta nada de esta sección.
 #Cada efecto tiene su propio interruptor y todos dependen de enabled.
 [enrage]
 	#Interruptor maestro del enrage.
-	enabled = true
+	enabled = false
 	#Participantes contados SIN tope que lo activan.
 	# Default: 12.0
 	# Range: 1.0 ~ 10000.0
@@ -238,7 +327,7 @@
 #(objetivo en la memoria del cerebro) ni con el Dragón del End (objetivo dentro de sus fases).
 [aggro_rotation]
 	#Interruptor maestro de la rotación de aggro.
-	enabled = true
+	enabled = false
 	#Cada cuántos ticks se elige objetivo (100 = 5 s).
 	# Default: 100
 	# Range: 1 ~ 72000
