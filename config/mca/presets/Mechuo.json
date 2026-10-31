@@ -1,0 +1,113 @@
+{
+  "ChatAIPrompt": "You own a cracked lantern that once guided you through a blizzard. You find the sound of rain against a roof comforting. You spent several years traveling between distant settlements with a caravan.",
+  "InfectionProgress": 0.0,
+  "LastGossipDecay": 0,
+  "GeneVoiceTone": 0.8809837,
+  "FallFlying": 0,
+  "HurtTime": 0,
+  "Health": 50.0,
+  "GeneHemoglobin": 0.07089552,
+  "GeneFace": 0.125,
+  "VillagerData": {
+    "profession": "minecraft:none",
+    "level": 1,
+    "type": "minecraft:plains"
+  },
+  "longTermMemory": {},
+  "BabyAge": 0,
+  "HairExtra": "mca:skins/layered_hair/extra/3.png",
+  "PlayerModel": 1,
+  "HairBase": "mca:skins/layered_hair/base/3.png",
+  "HandItems": [
+    {},
+    {}
+  ],
+  "SkinColor": -16777216,
+  "CitadelData": {},
+  "HasBaby": 0,
+  "HurtByTimestamp": 0,
+  "Mood": 0,
+  "Age": 1,
+  "Brain": {
+    "memories": {}
+  },
+  "GeneVoice": 0.300851,
+  "HairStyle": "",
+  "GeneMelanin": 0.25746268,
+  "GeneBreast": 0.85406023,
+  "Xp": 0,
+  "nicknames": {},
+  "RestocksToday": 0,
+  "Clothes": "mca:skins/clothing/normal/male/none/1.png",
+  "AgeState": 5,
+  "HairColor": -16777216,
+  "RedomesticateCommand": 0,
+  "DeathTime": 0,
+  "Personality": "mca:greedy",
+  "GeneEyeBrightness": 0.0,
+  "PersistenceRequired": 0,
+  "GeneWidth": 0.67424244,
+  "CanPickUpLoot": 1,
+  "Hair": "",
+  "HairBangs": "mca:skins/layered_hair/bangs/14.png",
+  "GeneSkin": 0.6064236,
+  "Gossips": [],
+  "Inventory": [],
+  "MCADataVersion": 1,
+  "ActiveChore": 0,
+  "IsPanicking": 0,
+  "IsProcreating": 0,
+  "HairBack": "mca:skins/layered_hair/back/8.png",
+  "GiftSaturationQueue": [],
+  "HomeVillage": -1,
+  "ArmorItems": [
+    {},
+    {},
+    {},
+    {}
+  ],
+  "ClothingLocked": 1,
+  "ForcedAge": 0,
+  "attributes": [
+    {
+      "id": "minecraft:generic.attack_damage",
+      "base": 3.0
+    },
+    {
+      "id": "minecraft:generic.movement_speed",
+      "base": 0.5
+    }
+  ],
+  "HandDropChances": [
+    0.085,
+    0.085
+  ],
+  "ArmorDropChances": [
+    0.085,
+    0.085,
+    0.085,
+    0.085
+  ],
+  "Memories": {},
+  "InteractedWith": 0,
+  "RedomesticateTamed": 0,
+  "EyeColor": -1,
+  "GenePheomelanin": 1.0,
+  "EyeColorLeft": -1,
+  "GrowthAmount": 0,
+  "HairFront": "mca:skins/layered_hair/front/14.png",
+  "LastProcreation": 0,
+  "Traits": {},
+  "Gender": 1,
+  "MoveState": 0,
+  "GeneSize": 0.81060606,
+  "LeftHanded": 0,
+  "AbsorptionAmount": 0.0,
+  "DespawnDelay": 0,
+  "IsBabyMale": 0,
+  "WearArmor": 0,
+  "GeneEumelanin": 0.25,
+  "FoodLevel": 0,
+  "LastRestock": 0,
+  "Skin": "mca:skins/skin/male/4_classic.png"
+}

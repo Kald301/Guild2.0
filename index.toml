@@ -10,7 +10,7 @@ hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "6722d3466f383d506ba67ba56c20564bbe2c33214500df578270360b3bde482c"
+hash = "30ff9cfcc6f8dfcaea9bb0c7c0c2fabdea93c68d7c03767e8e9a9e8c73e43fd7"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -966,7 +966,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "afe1a956dd21367663b9ab68ba19b53431f267d4a2ebb2854dd76d63752371b0"
+hash = "e60c7f50295d1f0c8eee9d22a4793984d0cc82088723429ffc97099a7829b255"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1162,7 +1162,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
+hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
 
 [[files]]
 file = "config/block_factorys_bosses-client.toml"
@@ -1934,7 +1934,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "5818299fa9e3bbafe9beb2b41f0b799eda8d68eb83c26dfbe3630460e558aa69"
+hash = "1c2ca20d3e8f0a8d434ad550b8ba8fc3e79cf022bb6d5f40808fc1d01439e6ac"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -2422,7 +2422,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "3569ab3193fe90d7993c76948aeddbab78854a47b6d07f28817dc4af2e16b998"
+hash = "ece06b6e7f57ab1a2c58132a5bcb196a3e23fbdbe196be6b46b78fbfe653bfb6"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2642,7 +2642,7 @@ hash = "4afd973f2e101fea8dd394daaa2ecd3bdbcafe074593199eccb9860ad531b8bb"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "41b7b051dd260aec55299b82329f0e49dc0643130518daf72ad1a160bd90c93c"
+hash = "8bce3f631cbdde9904e09b9d58cec655fb5205ec734446ebb91290ad51f18b74"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
@@ -2755,6 +2755,10 @@ hash = "0ccca51416c512dda8aa0eed9813ece65c1e7483f6a512662832800ccfb454ea"
 [[files]]
 file = "config/mca.json"
 hash = "914351d54796c1f38ebc7ad4c038aa1f82f8ea46fbd826612d2f18be78512049"
+
+[[files]]
+file = "config/mca/presets/Mechuo.json"
+hash = "70f5eebb1555292b341ddb3628048ac0693584953ac59eac1f968e53f8f124a8"
 
 [[files]]
 file = "config/mcacapitals-common.toml"
@@ -4343,6 +4347,10 @@ hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
 hash = "e481a41af7900d8bae6a7c650081da6255f56e806426e2d22fe0bb9f5b3059b8"
+
+[[files]]
+file = "kubejs/startup_scripts/firstaid_couples_fix.js"
+hash = "cbad98f3e8bf618c785425650d1181c9bc45f36750725ee094fa425400fa85be"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"
@@ -5970,7 +5978,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "0d07d8fc7c675008aa351a0042807f298adeb524aad868d5bd5be5de40c2126b"
+hash = "abba1cc2371328abbedc09084281301f639dbd605db3c73443845ca3578205bf"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"

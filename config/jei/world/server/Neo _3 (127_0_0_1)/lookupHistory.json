@@ -1,5 +1,14 @@
 [
   {"version":1},
+  {"ingredient":{"id":"firstaid:antibiotics"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:salt"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:sea_water_sample"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:fresh_water_sample"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:sample_bottle"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:antibiotics_pack"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:antibiotic_syringe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:purified_water"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:elastic_bandage"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"firstaid:silk"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"betterend:silk_fiber"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"firstaid:silk_seeds"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -90,14 +99,5 @@
   {"ingredient":{"id":"create:gantry_shaft"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"create:electron_tube"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"createfood:pressed_cocoa"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createfood:cocoa_powder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"mca:matchmakers_ring"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"swem:quality_bale"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"swem:alfalfa_bale"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"swem:oat_bale"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"swem:timothy_bale"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"cgs:paper_cartridge"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createfood:ground_beef"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createfood:raw_beef_meatball"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"createfood:cocoa_powder"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]
