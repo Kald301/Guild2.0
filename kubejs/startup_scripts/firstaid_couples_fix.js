@@ -7,17 +7,31 @@
 // Couples escucha solo EntityInteract con prioridad NORMAL y usa Shift + mano vacia.
 // Este script cancela el evento entre ambos para que First Aid ignore Shift + mano vacia.
 //
-// Es un startup script: los cambios requieren reiniciar el juego (no basta con /reload).
+// v2: NO usar player.level() -> en KubeJS "level" es una propiedad (getLevel de KubeJS) y
+//     llamarla como funcion lanzaba TypeError y cerraba el juego. El lado se obtiene con
+//     event.getSide(). Todo va dentro de try/catch para que un error nunca cierre el juego.
+//
+// Es un startup script: los cambios requieren reiniciar el juego/servidor (no basta con /reload).
 
 const $EventPriority = Java.loadClass('net.neoforged.bus.api.EventPriority')
 
+let errorAvisado = false
+
 function shiftManoVaciaSobreJugador(event) {
-  const player = event.getEntity()
-  if (player.level().isClientSide()) return false
-  if (!player.isShiftKeyDown()) return false
-  if (String(event.getHand()) != 'MAIN_HAND') return false
-  if (!player.getMainHandItem().isEmpty()) return false
-  return event.getTarget().isPlayer()
+  try {
+    if (event.getSide().isClient()) return false
+    if (String(event.getHand()) != 'MAIN_HAND') return false
+    const player = event.getEntity()
+    if (!player.isShiftKeyDown()) return false
+    if (!player.getMainHandItem().isEmpty()) return false
+    return event.getTarget().isPlayer()
+  } catch (e) {
+    if (!errorAvisado) {
+      errorAvisado = true
+      console.error('[firstaid_couples_fix] Error, el script se ignora para no cerrar el juego: ' + e)
+    }
+    return false
+  }
 }
 
 // Primer aviso del clic (interactAt): llega antes y First Aid lo usa para abrir su pantalla.
