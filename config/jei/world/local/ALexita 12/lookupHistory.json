@@ -1,0 +1,10 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"cold_sweat:goat_fur_helmet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cold_sweat:goat_fur_chestplate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cold_sweat:goat_fur_leggings"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cold_sweat:slush"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cold_sweat:hoglin_hide"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cold_sweat:icebox"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:white_wool"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

@@ -4,7 +4,7 @@
     "verbose": true
   },
   "server": {
-    "force_default_world_preset": true
+    "force_default_world_preset": false
   },
   "modify_version": "21.0.25"
 }

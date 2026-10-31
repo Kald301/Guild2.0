@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"firstaid:plaster"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:bandage"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

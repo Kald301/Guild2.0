@@ -345,80 +345,93 @@
 				#so the mcaquests condition/reward editor dropdowns can offer real quest/task ids.
 				syncFtbqEditorIds = true
 
-				[rewards.rewards.compat.compat.townstead]
-					#Master switch for the optional Townstead integration. When false (or Townstead is
-					#absent) no Townstead class is loaded, no Townstead state is queried, and Townstead
-					#content stays ineligible. Datapack type registration is unaffected either way, so
-					#packs still parse. Takes effect on restart.
-					enabled = true
-					#Offer the quests, projects and situations that MCA: Quests ships for Townstead. Turn
-					#this off to keep the mechanics available to your own datapacks without the built-in
-					#content competing for menu slots.
-					contentEnabled = true
-					#Let quest, project and situation transitions play Townstead reactions (villagers
-					#applaud, wave, and so on). Purely cosmetic: a reaction never affects quest state, and
-					#a failed one never blocks a completion.
-					reactionsEnabled = true
-					#Allow the mcaquests:townstead_needs reward to change a villager's hunger, thirst or
-					#energy. Values are always clamped to Townstead's own ranges.
-					needRewardsEnabled = true
-					#Allow the mcaquests:townstead_profession_xp reward to award Townstead profession XP.
-					professionXpRewardsEnabled = true
-					#Allow the mcaquests:townstead_skill reward to teach or remove Townstead skills.
-					skillRewardsEnabled = true
-					#Permit profession XP rewards that ask to bypass Townstead's daily cap. Bypassing needs
-					#BOTH this switch and "respect_daily_cap": false in the reward JSON, because uncapped
-					#XP lets a quest loop outrun Townstead's intended progression pacing.
-					allowUncappedProfessionXp = false
-					#When a Townstead reward cannot be applied (mod removed mid-quest, villager gone,
-					#capability missing), refuse the turn-in instead of completing without it. Default off:
-					#removing Townstead should never trap a player in a quest they have finished.
-					rewardFailureBlocksCompletion = false
-					#How often (ticks) Townstead-backed quest objectives re-read villager state. Shares the
-					#existing once-per-second objective pass; raising this trades responsiveness for tick time.
-					# Default: 20
-					# Range: 10 ~ 1200
-					pollIntervalTicks = 20
-					#How often (ticks) Townstead-backed project objectives re-read village state.
-					# Default: 20
-					# Range: 10 ~ 1200
-					projectPollIntervalTicks = 20
-					#Cap on how many village residents one player's pass inspects. Larger villages are
-					#visited round-robin across passes, so nobody is ignored and no pass is unbounded.
-					# Default: 64
-					# Range: 1 ~ 256
-					maxVillagersPerPass = 64
-					#Cap on how many villages one situation scan inspects, also round-robin.
-					# Default: 8
-					# Range: 1 ~ 64
-					maxVillagesPerPass = 8
-					#Gap between the value that opens a need crisis and the value that closes it. With a
-					#hunger crisis at 20 and a hysteresis of 10, the village leaves the crisis at 30 -- so a
-					#villager hovering on the threshold cannot flap the situation on and off.
-					# Default: 10
-					# Range: 0 ~ 100
-					needCrisisHysteresis = 10
-					#Log every Townstead binding decision at startup and each capability miss at runtime.
-					#Verbose; for diagnosing an integration problem, not for normal play.
-					debugBindingLogs = false
+				[rewards.rewards.compat.compat.crime]
+					#With MCA: Crime installed, guards and archers refuse quest business -- offers, acceptance
+					#and turn-ins -- with a player who is currently WANTED. Nothing is failed or taken away;
+					#the quest waits until the warrant is settled. A no-op without MCA: Crime.
+					responderRefusesWanted = true
+					#Every quest giver refuses a wanted player, not only the law. Off by default: a farmer
+					#who still deals with an outlaw is the more interesting village.
+					allGiversRefuseWanted = false
+					#Freeze every active quest's clock while the player is serving an MCA: Crime jail
+					#sentence, the way a quest pauses for a missing optional mod, so a sentence cannot
+					#expire a deadline.
+					pauseWhileJailed = true
 
-					[rewards.rewards.compat.compat.townstead.content]
-						#Which themes of the built-in Townstead content are offered. All of these are
-						#subordinate to contentEnabled above: turning that off hides everything regardless.
-						#Changing any of them affects future offers only -- a quest already accepted is never
-						#taken away from a player because a server owner changed their mind about a theme.
-						#Hunger, thirst, energy, collapse, shifts and work routine.
-						needsAndSchedules = true
-						#Profession progression, workplaces and apprenticeships.
-						professions = true
-						#Seasons, the Townstead calendar, coming of age and later life.
-						calendarAndLife = true
-						#Village character, registered buildings and the identity commissions.
-						spiritAndBuildings = true
-						#The village projects that read Townstead state.
-						projects = true
-						#The situations that Townstead state can trigger.
-						situations = true
+					[rewards.rewards.compat.compat.compat.townstead]
+						#Master switch for the optional Townstead integration. When false (or Townstead is
+						#absent) no Townstead class is loaded, no Townstead state is queried, and Townstead
+						#content stays ineligible. Datapack type registration is unaffected either way, so
+						#packs still parse. Takes effect on restart.
+						enabled = true
+						#Offer the quests, projects and situations that MCA: Quests ships for Townstead. Turn
+						#this off to keep the mechanics available to your own datapacks without the built-in
+						#content competing for menu slots.
+						contentEnabled = true
+						#Let quest, project and situation transitions play Townstead reactions (villagers
+						#applaud, wave, and so on). Purely cosmetic: a reaction never affects quest state, and
+						#a failed one never blocks a completion.
+						reactionsEnabled = true
+						#Allow the mcaquests:townstead_needs reward to change a villager's hunger, thirst or
+						#energy. Values are always clamped to Townstead's own ranges.
+						needRewardsEnabled = true
+						#Allow the mcaquests:townstead_profession_xp reward to award Townstead profession XP.
+						professionXpRewardsEnabled = true
+						#Allow the mcaquests:townstead_skill reward to teach or remove Townstead skills.
+						skillRewardsEnabled = true
+						#Permit profession XP rewards that ask to bypass Townstead's daily cap. Bypassing needs
+						#BOTH this switch and "respect_daily_cap": false in the reward JSON, because uncapped
+						#XP lets a quest loop outrun Townstead's intended progression pacing.
+						allowUncappedProfessionXp = false
+						#When a Townstead reward cannot be applied (mod removed mid-quest, villager gone,
+						#capability missing), refuse the turn-in instead of completing without it. Default off:
+						#removing Townstead should never trap a player in a quest they have finished.
+						rewardFailureBlocksCompletion = false
+						#How often (ticks) Townstead-backed quest objectives re-read villager state. Shares the
+						#existing once-per-second objective pass; raising this trades responsiveness for tick time.
+						# Default: 20
+						# Range: 10 ~ 1200
+						pollIntervalTicks = 20
+						#How often (ticks) Townstead-backed project objectives re-read village state.
+						# Default: 20
+						# Range: 10 ~ 1200
+						projectPollIntervalTicks = 20
+						#Cap on how many village residents one player's pass inspects. Larger villages are
+						#visited round-robin across passes, so nobody is ignored and no pass is unbounded.
+						# Default: 64
+						# Range: 1 ~ 256
+						maxVillagersPerPass = 64
+						#Cap on how many villages one situation scan inspects, also round-robin.
+						# Default: 8
+						# Range: 1 ~ 64
+						maxVillagesPerPass = 8
+						#Gap between the value that opens a need crisis and the value that closes it. With a
+						#hunger crisis at 20 and a hysteresis of 10, the village leaves the crisis at 30 -- so a
+						#villager hovering on the threshold cannot flap the situation on and off.
+						# Default: 10
+						# Range: 0 ~ 100
+						needCrisisHysteresis = 10
+						#Log every Townstead binding decision at startup and each capability miss at runtime.
+						#Verbose; for diagnosing an integration problem, not for normal play.
+						debugBindingLogs = false
+
+						[rewards.rewards.compat.compat.compat.townstead.content]
+							#Which themes of the built-in Townstead content are offered. All of these are
+							#subordinate to contentEnabled above: turning that off hides everything regardless.
+							#Changing any of them affects future offers only -- a quest already accepted is never
+							#taken away from a player because a server owner changed their mind about a theme.
+							#Hunger, thirst, energy, collapse, shifts and work routine.
+							needsAndSchedules = true
+							#Profession progression, workplaces and apprenticeships.
+							professions = true
+							#Seasons, the Townstead calendar, coming of age and later life.
+							calendarAndLife = true
+							#Village character, registered buildings and the identity commissions.
+							spiritAndBuildings = true
+							#The village projects that read Townstead state.
+							projects = true
+							#The situations that Townstead state can trigger.
+							situations = true
 
 			[rewards.rewards.compat.validation]
 				#Warn once per reload for each quest that could not be loaded because it names

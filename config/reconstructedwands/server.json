@@ -1,0 +1,97 @@
+// RE:Constructed Wands 2.0: server rules. Clients get the server's copy when they join.
+// Reload with /wands reload. Durability changes need a restart.
+{
+  // Per wand: durability (0 = unbreakable), the most blocks one click may place (construction),
+  // how far the Angel Core reaches, and the most blocks Destruction and Exchange may touch.
+  // The Architect Core uses the construction number. cores: whether the wand accepts cores.
+  "tiers": {
+    "stone": {
+      "durability": 131,
+      "construction": 27,
+      "angel": 2,
+      "destruction": 4,
+      "exchange": 4,
+      "cores": false
+    },
+    "iron": {
+      "durability": 250,
+      "construction": 128,
+      "angel": 4,
+      "destruction": 9,
+      "exchange": 9,
+      "cores": true
+    },
+    "diamond": {
+      "durability": 1561,
+      "construction": 1024,
+      "angel": 16,
+      "destruction": 81,
+      "exchange": 81,
+      "cores": true
+    },
+    "netherite": {
+      "durability": 2031,
+      "construction": 2048,
+      "angel": 32,
+      "destruction": 128,
+      "exchange": 128,
+      "cores": true
+    },
+    "infinity": {
+      "durability": 0,
+      "construction": 2048,
+      "angel": 64,
+      "destruction": 128,
+      "exchange": 128,
+      "cores": true
+    }
+  },
+
+  // The Infinity Wand's limit in creative mode.
+  "creative_limit": 8192,
+
+  // No block further than this from the player is ever changed (0 = no limit).
+  "max_range": 256,
+
+  // Actions each player can undo (and redo). 0 turns undo off.
+  "undo_depth": 10,
+
+  // Turn off a core's mode. Wands keep the core but cannot use the mode.
+  "modes": {
+    "angel": true,
+    "destruction": true,
+    "exchange": true,
+    "architect": true
+  },
+
+  // Where wands find blocks besides loose stacks in the inventory. bound_range is how far a bound
+  // container may be (same dimension, loaded chunks only).
+  "sources": {
+    "shulker_boxes": true,
+    "bundles": true,
+    "ender_chest": true,
+    "bound_containers": true,
+    "bound_range": 64
+  },
+
+  // Destruction hands the removed blocks' drops to the player, as if broken by the tool in the
+  // offhand; Exchange hands back the swapped-out blocks themselves. false deletes them.
+  "destruction_drops": true,
+
+  // Allow the Angel Core in survival while falling.
+  "angel_while_falling": false,
+
+  // Groups of blocks that the "Similar" match setting treats as one block.
+  "similar_blocks": [
+    [
+      "minecraft:dirt",
+      "minecraft:grass_block",
+      "minecraft:coarse_dirt",
+      "minecraft:podzol",
+      "minecraft:mycelium",
+      "minecraft:rooted_dirt",
+      "minecraft:dirt_path",
+      "minecraft:farmland"
+    ]
+  ]
+}

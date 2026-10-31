@@ -3,9 +3,21 @@
 #Los valores se leen al abrir o crear un mundo y quedan fijos hasta cerrarlo.
 #Cambiar algo afecta solo a los chunks que se generen después: en un mundo existente vas a ver costuras.
 [general]
+	#Solo border_style = "CLASSIC" (en NATURAL no se usa): ondulación de los bordes entre provincias, como fracción
+	#de sector_size (0 = bordes rectos). 0.1 con sector 8192 deforma los bordes hasta ~800 bloques. Máximo 0.15.
+	# Default: 0.1
+	# Range: 0.0 ~ 0.15
+	border_warp = 0.15
 	#Interruptor general. En false el mod no cambia nada (TerraBlender y lithostitched funcionan como siempre).
 	enabled = true
-	#Tamaño medio de cada provincia, en bloques (lado de la celda de Voronoi).
+	#Lado medio de la CELDA del mapa de provincias, en bloques (celda de Voronoi). No es el tamaño de una provincia:
+	#cada celda sortea su mod y las celdas vecinas que sacan el mismo mod se fusionan, así que las provincias
+	#reales miden bastante más. Con 8192 y tres mods de igual peso (medido recorriendo el mapa de provincias
+	#que usa la generación, celda por celda):
+	#  - una celda sola: ~9 200 bloques de diámetro equivalente;
+	#  - una provincia (celdas fusionadas): mediana ~12 700 bloques; una columna al azar cae en una provincia
+	#    de ~30 000 de media (ponderada por área).
+	#Todo escala en proporción a este valor (con 2048: mediana ~3 200, ponderada ~8 400).
 	#Conviene que sea 3 o 4 veces la celda de región de TerraBlender
 	#(overworld_region_size 3 ≈ 512 bloques, 4 ≈ 1024, 5 ≈ 2048) para que dentro de cada provincia
 	#haya varias regiones del mod que manda y de la base.
@@ -20,17 +32,63 @@
 	# Default: 0
 	# Range: -9223372036854775808 ~ 9223372036854775807
 	salt = 0
-	#Ondulación de los bordes entre provincias, como fracción de sector_size (0 = bordes rectos).
-	#0.1 con sector 8192 deforma los bordes hasta ~800 bloques. Máximo 0.15.
-	# Default: 0.1
-	# Range: 0.0 ~ 0.15
-	border_warp = 0.1
 	#TerraBlender decide la región en píxeles gruesos y después los "difumina" al hacer zoom, así que sus
 	#regiones se meten en la provincia vecina (con overworld_region_size 5, hasta un par de km).
 	#true  = en cada punto, una región que no corresponde a esa provincia se reemplaza por la base (Terralith/vanilla):
 	#        bordes limpios.
 	#false = se deja la difuminación natural de TerraBlender: bordes más mezclados.
 	strict_borders = true
+	#Forma de los bordes entre provincias. Solo cuenta al CREAR un mundo: queda congelada en él (un mundo que ya existe
+	#sigue con la suya, y uno creado con 0.2.0 o antes es siempre CLASSIC).
+	#  NATURAL = bordes curvos y uniones redondeadas (desde 0.4.0): mismas provincias, mismo reparto y mismos tamaños
+	#            que CLASSIC; solo cambia por dónde pasa el borde. Usa border_strength y border_rounding.
+	#  CLASSIC = la forma de 0.2.0/0.3.0 (celdas de Voronoi con la ondulación de border_warp): con la misma semilla y
+	#            la misma config, el mismo mundo que esas versiones.
+	#Un mundo NATURAL no se puede abrir con 0.2.0 ni 0.3.0 (se niegan con un mensaje).
+	#Allowed Values: CLASSIC, NATURAL
+	border_style = "NATURAL"
+	#Solo NATURAL: cuánto se curvan los lados (rizo de 3 octavas de 8, 4 y 2 km con sector 8192; escala con
+	#sector_size). 1 = ±1000/400/160 bloques, 2 = ±1300/520/208, 3 = ±1500/600/240. Los niveles 1 y 2 nunca pliegan
+	#el mapa; el 3, en sitios muy raros, puede dejar un hilo de 1-2 bloques de la provincia vecina junto a un borde.
+	# Default: 3
+	# Range: 1 ~ 3
+	border_strength = 3
+	#Solo NATURAL: cuánto se redondean las uniones entre provincias, como fracción de sector_size (0.12 con
+	#sector 8192 = radio del orden de 1000 bloques). 0 = uniones en punta (sin redondeo).
+	#Presets: G-1 = strength 1 con 0.06, G-2 = 2 con 0.08, G-3 = 3 con 0.10, G-4 = 3 con 0.12 (por defecto),
+	#G-5 = 3 con 0.15 (experimental).
+	#Redondear le quita un poco de área al mod con provincias más chicas y aisladas: con 0.12, en un mundo TARGET
+	#20/25/25/30, las celdas con base de Regions Unexplored pierden ~2.5 % de su área (0.10: ~1.7 %; 0.06: ~0.7 %; 0: nada).
+	#Hasta 0.12 está soportado. EXPERIMENTAL por encima de 0.12 (hasta 0.15): uniones aún más redondas; con 0.15 esa
+	#pérdida sube a ~4.1 %.
+	# Default: 0.12
+	# Range: 0.0 ~ 0.15
+	border_rounding = 0.12
+	#Separa un poco las provincias del mismo mod (desde 0.5.0). Con 0, cada celda sortea su mod sin mirar a sus vecinas
+	#(como 0.2.0-0.4.0) y a veces se juntan muchas del mismo mod en una zona enorme; con más, las celdas se reparten por
+	#bloques de 2 × 2 y esas zonas enormes son más raras. No cambia el % de cada mod en el mundo: los pesos de sorteo se
+	#calibran por área al crear el mundo. Vale con border_style NATURAL y CLASSIC. Solo cuenta al CREAR un mundo: queda
+	#congelada en él (un mundo de una versión anterior sigue sin dispersión, diga lo que diga esta clave).
+	#  0.5 = suave, 0.7 = media (por defecto), 0.85 = fuerte. Por encima de 0.8 es EXPERIMENTAL: el tamaño medio de
+	#  provincia baja de 0.6 veces el de 0 (un mosaico parejo). Máximo 0.9.
+	#Un mundo con dispersión no se puede abrir con 0.3.0 ni 0.4.0 (se niegan con un mensaje); 0.2.0 lo abre SIN avisar
+	#y lo generaría con otro sorteo (costuras): no lo hagas.
+	# Default: 0.7
+	# Range: 0.0 ~ 0.9
+	province_dispersion = 0.7
+	#Solo NATURAL (en CLASSIC se ignora): bordes "moteados" (desde 0.6.0). Visto de cerca, el borde entre dos provincias
+	#deja de ser una línea limpia y pasa a ser una franja irregular con manchas de cada provincia del otro lado, como las
+	#transiciones naturales entre biomas. No mueve el borde a gran escala ni cambia el % de cada mod (las manchas son
+	#simétricas: se midió ≤ 0.03 %). Solo cuenta al CREAR un mundo: queda congelado en él (un mundo de una versión
+	#anterior sigue sin moteado, diga lo que diga esta clave).
+	#  OFF    = el borde de 0.5.0 (una curva limpia).
+	#  SOFT   = franja de hasta 32 bloques a cada lado: borde dentado, pocas manchas sueltas.
+	#  MEDIUM = franja de hasta 64 bloques (por defecto): borde dentado y manchas sueltas de 16 a 50 bloques.
+	#  STRONG = franja de hasta 128 bloques: más manchas y más grandes (hasta ~150 bloques).
+	#Un mundo con moteado no se puede abrir con 0.5.0 ni anteriores (0.3.0-0.5.0 se niegan con un mensaje); 0.2.0 lo abre
+	#SIN avisar y lo generaría sin las manchas (costuras): no lo hagas.
+	#Allowed Values: OFF, SOFT, MEDIUM, STRONG
+	border_mottle = "MEDIUM"
 
 #Qué mods rotan como provincias y qué entra en cada una.
 [provinces]
@@ -39,12 +97,18 @@
 	#  - compiten la región base de TerraBlender (Terralith/vanilla) y las regiones de TerraBlender de ese mod;
 	#  - las regiones de TerraBlender de los OTROS mods de esta lista quedan afuera;
 	#  - los reemplazos de lithostitched cuyo bioma resultante es de ese mod (Regions Unexplored) solo ocurren ahí.
-	#Un mod sin regiones de TerraBlender (como Regions Unexplored) tiene como provincia la base sola,
-	#y sus reemplazos operan sobre ella. También sirve "terralith=1" para provincias solo de base.
+	#Una entrada sin regiones de TerraBlender (Regions Unexplored, "terralith" o un mod que no está) tiene dos
+	#tipos de celda, según full_province_share: en las celdas "con base" compite solo la base (Terralith/vanilla);
+	#en las "plenas" se usa el layout vanilla. Los reemplazos de ese mod operan sobre lo que haya.
+	#Por eso "terralith=1" NO da provincias solo de Terralith: con full_province_share 0.7, el 70% de sus celdas
+	#sale con superficie vanilla. Para provincias solo de base hace falta full_province_share = 0
+	#(y eso también apaga las plenas de RU).
+	#En modo TARGET (mode = "TARGET" en biomeprovinces-distribucion.toml) se ignora: el reparto lo calcula el mod.
 	rotating = ["regions_unexplored=1", "biomesoplenty=1", "biomeswevegone=1"]
 	#Peso de la región base de TerraBlender (Terralith/vanilla) dentro de las provincias de mods con regiones.
 	#-1 = usar el de TerraBlender (vanilla_overworld_region_weight en config/terrablender.toml).
 	#Más alto = más Terralith dentro de las provincias de BOP/BWG.
+	#En modo TARGET (biomeprovinces-distribucion.toml) se ignora: el mod calcula la base de cada provincia.
 	# Default: -1
 	# Range: -1 ~ 100000
 	base_weight = -1
@@ -54,6 +118,8 @@
 	#  con base = su superficie usa la base del mundo (Terralith), y el mod solo reemplaza lo vanilla (~40%).
 	#0 = ninguna plena (todas con Terralith); 1 = todas plenas. Las provincias de BOP/BWG no cambian.
 	#Si es mayor que 0, al arrancar se registra una región de TerraBlender: cambiarlo de 0 a otro valor requiere reiniciar.
+	#En modo TARGET (biomeprovinces-distribucion.toml) se ignora: el mod calcula las plenas de cada provincia (y esa región
+	#se registra igual, porque mode = "TARGET" también la registra al arrancar).
 	# Default: 0.7
 	# Range: 0.0 ~ 1.0
 	full_province_share = 0.7

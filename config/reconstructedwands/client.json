@@ -1,0 +1,26 @@
+// RE:Constructed Wands 2.0: client options. These only change your own game.
+{
+  // Outline the blocks a click would change.
+  "preview": true,
+
+  // Outline colours (#RRGGBB): blocks to place, blocks to remove or swap, blocks you are missing,
+  // and the last action while you hold Ctrl (undo).
+  "colors": {
+    "place": "#7FE8FF",
+    "remove": "#FF9A3C",
+    "missing": "#FF4D4D",
+    "undo": "#7CFF7C"
+  },
+
+  // Show the mode, size and blocks next to the hotbar while you hold a wand.
+  "hud": true,
+
+  // Ctrl+Z undoes and Ctrl+Y redoes your last wand action while you hold a wand.
+  "undo_shortcuts": true,
+
+  // Ctrl + scroll changes the size; Sneak + scroll changes the lock or the shape.
+  "scroll_controls": true,
+
+  // Sneak + right-click the air opens the wand's options.
+  "sneak_opens_screen": true
+}

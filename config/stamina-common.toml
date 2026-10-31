@@ -1,0 +1,99 @@
+[stamina]
+	#Base maximum stamina points before armor enchantments.
+	# Default: 100.0
+	# Range: 1.0 ~ 100000.0
+	maxStamina = 100.0
+	#Base stamina consumed each second while sprinting.
+	# Default: 2.0
+	# Range: 0.0 ~ 10000.0
+	sprintCostPerSecond = 2.0
+	#Base stamina consumed each second while fast-swimming.
+	# Default: 2.0
+	# Range: 0.0 ~ 10000.0
+	swimCostPerSecond = 2.0
+	#Base stamina consumed for a jump.
+	# Default: 7.0
+	# Range: 0.0 ~ 10000.0
+	jumpCost = 7.0
+	#Base stamina consumed when attacking an entity with a melee attack.
+	# Default: 10.0
+	# Range: 0.0 ~ 10000.0
+	attackCost = 10.0
+	#Stamina consumed by a fully drawn bow. Partial draws consume a linear fraction of this value; 20 ticks is full draw.
+	# Default: 10.0
+	# Range: 0.0 ~ 10000.0
+	bowFullDrawCost = 10.0
+	#Stamina drained per second while a bow is held at full draw without releasing the shot.
+	# Default: 5.0
+	# Range: 0.0 ~ 10000.0
+	bowHoldCostPerSecond = 5.0
+	#Fixed stamina consumed whenever a block is successfully broken, regardless of the held tool.
+	# Default: 2.0
+	# Range: 0.0 ~ 10000.0
+	blockBreakCost = 2.0
+	#Base stamina regenerated each second.
+	# Default: 8.0
+	# Range: 0.0 ~ 10000.0
+	regenPerSecond = 8.0
+	#Regeneration delay used only while the exhausted-mode reserve is recovering. Normal stamina loss begins regenerating immediately. 20 ticks = 1 second.
+	# Default: 40
+	# Range: 0 ~ 12000
+	regenDelayTicks = 40
+	#Stamina restored by drinking a normal water bottle.
+	# Default: 30.0
+	# Range: 0.0 ~ 100000.0
+	waterRecovery = 30.0
+	#Level-I stamina bonus for Stamina Capacity. Each following level doubles it: 10, 20, 40, 80, 160 by default.
+	# Default: 10.0
+	# Range: 0.0 ~ 100000.0
+	enchantmentStaminaBaseBonus = 10.0
+	#Additional regeneration multiplier per total level of Stamina Regeneration Speed on equipped armor. 0.05 means +5% per level.
+	# Default: 0.05
+	# Range: 0.0 ~ 10.0
+	regenerationEnchantmentPercentPerLevel = 0.05
+	#Armor-weight points added for each defense point.
+	# Default: 0.35
+	# Range: 0.0 ~ 100.0
+	armorDefenseWeight = 0.35
+	#Armor-weight points added for each toughness point.
+	# Default: 0.25
+	# Range: 0.0 ~ 100.0
+	armorToughnessWeight = 0.25
+	#Weight assigned to wearable armor-slot items that are not ArmorItem instances.
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	armorFallbackWeight = 1.0
+	#Extra stamina drain multiplier per armor-weight point.
+	# Default: 0.08
+	# Range: 0.0 ~ 10.0
+	armorDrainPerWeight = 0.08
+	#Regeneration penalty per armor-weight point.
+	# Default: 0.035
+	# Range: 0.0 ~ 1.0
+	armorRegenPenaltyPerWeight = 0.035
+	#Regeneration multiplier for each level of the stamina regeneration effect. Default is x4. Legacy config values left at the old default x2 are migrated to x4 at runtime.
+	# Default: 4.0
+	# Range: 1.0 ~ 100.0
+	regenerationPotionMultiplier = 4.0
+	#If true, the stamina HUD shifts the vanilla health, food, armor, air and vehicle-health rows upward to make room for the stamina bar and its info box. Disable if another mod already repositions those rows, to avoid double-shifting.
+	shiftVanillaHud = true
+	#Capacity of the 'exhausted mode' reserve bar that opens once normal stamina runs out.
+	# Default: 50.0
+	# Range: 1.0 ~ 1000.0
+	exhaustedModeMax = 50.0
+	#How many cumulative points consumed from the exhausted-mode reserve cause damage.
+	# Default: 10
+	# Range: 1 ~ 1000
+	exhaustedDamagePerPoints = 10
+	#Damage dealt every time exhaustedDamagePerPoints is crossed. 1.0 = half a heart.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	exhaustedDamageAmount = 1.0
+	#Fraction of the normal regeneration speed used while recovering the exhausted-mode reserve. 0.4 = 40% speed.
+	# Default: 0.4
+	# Range: 0.01 ~ 1.0
+	exhaustedRegenMultiplier = 0.4
+	#Regeneration multiplier applied while the player holds sneak (shift) and stands completely still. 2.0 = double speed.
+	# Default: 2.0
+	# Range: 1.0 ~ 100.0
+	sneakRegenMultiplier = 2.0

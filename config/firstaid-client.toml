@@ -1,0 +1,70 @@
+# First Aid display and sound settings for this game client.
+
+# Health overlay.
+[hud]
+# Overlay style [OFF, NUMBERS, HEARTS, PLAYER_MODEL, PLAYER_MODEL_4_COLORS]
+overlayMode = "HEARTS"
+# Screen corner of the overlay [TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT]
+position = "TOP_RIGHT"
+# Horizontal offset from that corner (-32768 to 32767)
+xOffset = 0
+# Vertical offset from that corner (-32768 to 32767)
+yOffset = 1
+# Overlay size (0.5 to 2.0)
+scale = 1.0
+# Overlay transparency, 0 is opaque (0 to 200)
+transparency = 50
+# Ticks the overlay stays visible after health changes, -1 to always show it (-1 to 600)
+visibleTicks = -1
+# Show the vanilla health bar, which shows the average health of all parts [NORMAL, HIDE]
+vanillaHealthBar = "NORMAL"
+
+# Tooltips and the treatment screen.
+[interface]
+# How armor tooltips show the body part armor values [REPLACE, APPEND, NONE]
+armorTooltips = "REPLACE"
+# Show medical hints in tooltips and the treatment screen.
+medicalTooltips = true
+# Preferred width of the treatment screen (220 to 800)
+treatmentWidth = 320
+# Preferred height of the treatment screen (150 to 600)
+treatmentHeight = 244
+
+# Screen effects and sounds.
+[effects]
+# Darken the screen edges during heavy blood loss.
+bloodLossVisuals = true
+# Render native blood decals; does not change server storage or medical rules.
+bloodStainsVisible = true
+# Native blood decal rendering distance in blocks (8 to 128)
+bloodStainDistance = 32
+# Maximum native blood quads per frame (64 to 4096)
+bloodStainRenderLimit = 1024
+# Strength of the darkening (0.0 to 1.0)
+dimmingIntensity = 1.0
+# Show concussion and alcohol visual distortion, camera motion and tremor.
+neurologicalVisuals = true
+# Strength of concussion and alcohol visual effects (0.0 to 1.0)
+neurologicalIntensity = 1.0
+# Show nausea: slow waves of darkening at the screen edges and a pale tint.
+nauseaVisuals = true
+# Strength of the nausea screen effects and view sway (0.0 to 1.0)
+nauseaIntensity = 1.0
+# Nausea gently sways and slows the view. Turn off if camera motion makes you unwell; the screen effects stay.
+nauseaCameraMotion = true
+# Quiet swallowing sounds during nausea.
+nauseaSounds = true
+# Play injury sounds.
+sounds = true
+# Play a heartbeat during blood loss.
+heartbeat = true
+# Volume of the ringing in the ears after a concussion; 0 turns it off (0.0 to 1.0)
+tinnitusVolume = 0.6
+# Show the acute stress reaction and blast deafness: heartbeat, narrowed vision, slight hand tremor and muffled hearing.
+stressEffects = true
+# Strength of the stress reaction effects (0.0 to 1.0)
+stressIntensity = 1.0
+# Gore: strong explosions tear the body apart with heavy bleeding. Off: the body stays whole and bleeds moderately.
+gore = true
+# Small jokes on special days.
+easterEggs = true

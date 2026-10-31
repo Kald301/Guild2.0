@@ -380,3 +380,43 @@
 	# Default: 32.0
 	# Range: 1.0 ~ 256.0
 	target_range = 32.0
+
+#Regeneración fuera de combate (opcional). Con enabled = false no se ejecuta nada de esta sección.
+#Un jefe detectado que sale de combate herido (mismo criterio de combate que [scan]: sin objetivo válido
+#y sin golpes de participantes en combat_timeout_ticks) recupera su vida tras delay_seconds, a un ritmo
+#total de 0 a 100 % de su vida máxima ACTUAL en full_heal_seconds. Si vuelve a combate, para al instante.
+#Por jefe, en bosses.json: regen_mode = "AUTO" | "ALWAYS" | "NEVER", delay_seconds y
+#full_heal_seconds (id exacto > comodín de mod > tag bossequilibrium:no_regen > estos valores).
+#AUTO descuenta la curación propia del jefe (compensate_native_regen); ALWAYS cura el ritmo completo encima;
+#NEVER no lo toca. El tag bossequilibrium:no_regen pone NEVER a sus tipos (vacío en el mod).
+#RIESGO: un jefe con fases ligadas a umbrales de vida puede quedarse en una fase avanzada con la vida
+#restaurada (depende del mod). Para esos, regen_mode = "NEVER" o el tag no_regen.
+[regen]
+	#Interruptor maestro. Apagado por defecto: el mod no cura a ningún jefe.
+	enabled = false
+	#Segundos fuera de combate antes de empezar a curar.
+	# Default: 10.0
+	# Range: 0.0 ~ 3600.0
+	delay_seconds = 10.0
+	#Segundos para curar de 0 a 100 % de la vida máxima actual (con el potenciador, si lo hay).
+	#0 = curación instantánea al terminar el retraso.
+	# Default: 20.0
+	# Range: 0.0 ~ 86400.0
+	full_heal_seconds = 20.0
+	#Cada cuántos ticks se cura (20 = 1 s). Solo se recorren los jefes heridos y fuera de combate.
+	# Default: 20
+	# Range: 1 ~ 1200
+	interval_ticks = 20
+	#Descontar la curación propia del jefe (la de su mod o la de vanilla): en cada intervalo se mide
+	#cuánto subió su vida sin el mod y solo se cura lo que falta para llegar al ritmo configurado.
+	#Si el jefe ya se cura más rápido, el mod no hace nada. false = curar siempre el ritmo completo.
+	compensate_native_regen = true
+	#Intervalos con los que se promedia la curación propia medida (suaviza curaciones puntuales).
+	# Default: 3
+	# Range: 1 ~ 20
+	native_regen_smoothing = 3
+	#Si es mayor que 0: solo cura mientras no haya jugadores vivos en supervivencia o aventura a esta
+	#distancia del jefe, en bloques. 0 = desactivado.
+	# Default: 0.0
+	# Range: 0.0 ~ 1024.0
+	require_no_players_within = 0.0

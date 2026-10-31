@@ -1,5 +1,5 @@
 [quests]
-	#Ship and enable the built-in default quest pack.
+	#Load the content this mod ships with: its quests, projects, situations, titles, tier ladders and voice pools, including its optional-mod packs. Set false to run datapack content only; a datapack's override of a built-in file is kept. Read at every datapack load (server start and /reload).
 	enableDefaultQuestPack = true
 	#Maximum simultaneously-active MCA quests per player.
 	# Default: 10

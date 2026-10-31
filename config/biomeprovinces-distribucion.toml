@@ -1,0 +1,239 @@
+# =============================================================================
+#  Biome Provinces · reparto por objetivos (config/biomeprovinces-distribucion.toml)
+#  El mod mantiene este archivo en cada arranque: conserva tus valores, agrega
+#  lo nuevo, nunca borra la sección de un mod que ya no está (la marca "no
+#  instalado") y conserva las claves y tablas que no conoce, con un aviso en el
+#  log. Un valor inválido queda como lo escribiste y el log dice qué se usa.
+#  Los comentarios se REGENERAN siempre: tus notas van en claves nota = "...".
+#  Solo reescribe el archivo si algo cambió, y siempre igual (sin fechas).
+# =============================================================================
+#
+#  INICIO RÁPIDO (solo mundos NUEVOS)
+#    1. En [overworld] pon  mode = "TARGET".
+#    2. En la sección de cada mod, [overworld.providers.<mod>], pon  target = <número>
+#       (el % de la tierra que quieres que sea de ese mod). Haz lo mismo en
+#       [overworld.base] para Terralith + vanilla. Los que dejes en "auto" se
+#       reparten lo que falte para llegar a 100.
+#    3. Crea un mundo nuevo. El log y /biomeprovinces distribution report dicen
+#       qué se pudo cumplir y qué no.
+#    Todo lo demás se puede dejar como está.
+#
+#  AVISO: los porcentajes son OBJETIVOS, no garantías.
+#   · Cambian con el clima, la semilla, el preset (Superbiomas / Large Biomes)
+#     y el tamaño de la zona que mires.
+#   · El mundo se reparte en PROVINCIAS: cada mancha grande de un solo mod.
+#     Miden decenas de miles de bloques, así que el reparto real solo se ve en
+#     áreas enormes. Medido en las pruebas del mod, con 3 mods de igual peso,
+#     sector_size 8192 y province_dispersion = 0: en un cuadrado de 32 000
+#     bloques de lado, el % de cada mod tiene un desvío típico de ±5 a ±9 puntos
+#     según el lugar; en uno de 16 000, de ±11 a ±17; en uno de 8 000, de ±17 a
+#     ±26. Con province_dispersion (0.7 en los mundos nuevos desde la 0.5.0) el
+#     desvío es menor: esas cifras son lo MÁXIMO (con 0.7, unas 0,8 veces eso).
+#     Lo que pesa es cuántas celdas del mapa de provincias (de lado sector_size)
+#     entran, n = (lado / sector_size)²: el desvío va como sector_size / lado.
+#     Con sector 4096, un cuadrado de 16 000 oscila más o menos como uno de
+#     32 000 con 8192.
+#   · Terralith y vanilla salen juntos de la base (en las pruebas, casi mitad y
+#     mitad): por separado solo admiten metas orientativas.
+#   · Compruébalo con /biomeprovinces distribution report (mide con
+#     /biomeprovinces stats <radio>).
+#  El objetivo es un promedio del mundo entero; en una excursión de pocos miles
+#  de bloques lo que ves depende de qué provincias te toquen.
+#
+#  MÉTRICA: % de la tierra del Overworld, sin océanos ni cuevas; los ríos no
+#  cuentan. El % de un mod cuenta solo SUS biomas, no los vanilla que aparezcan
+#  dentro de sus provincias. Los máximos alcanzables dependen de tu pack:
+#  el log los muestra al crear el mundo.
+#
+#  SOLO MUNDOS NUEVOS: al crear un mundo, sus parámetros se guardan en
+#  <mundo>/data/biomeprovinces.dat y ya no cambian. Editar este archivo no
+#  altera un mundo ya creado: solo verás un aviso en el log.
+#
+#  MODS DETECTADOS (Overworld):
+#    regions_unexplored  Regions Unexplored 0.6.3        reemplazos de lithostitched
+#    biomesoplenty       Biomes O' Plenty 21.1.0.14      regiones de TerraBlender: overworld_primary(10), overworld_secondary(8), overworld_rare(2)
+#    biomeswevegone      Oh The Biomes We've Gone 2.6.3  regiones de TerraBlender: region_0(8), region_1(8), region_2(8)
+#    base                Terralith 2.6.2 + vanilla       región base minecraft:overworld
+#  SE DETECTAN AL CARGAR EL MUNDO (otros mods que ponen biomas con lithostitched): ninguno
+#  Los biomas de otros mods que el mod no sabe repartir cuentan como "otros" y no llevan sección;
+#  se listan en el log y en /biomeprovinces providers.
+#  NO INSTALADOS (sección conservada e ignorada): ninguno
+#
+#  EJEMPLOS (los números son solo de ejemplo, no una recomendación)
+#   a) Equilibrado:
+#        [overworld.providers.regions_unexplored]
+#        target = 20
+#        [overworld.providers.biomesoplenty]
+#        target = 25
+#        [overworld.providers.biomeswevegone]
+#        target = 25
+#        [overworld.base]
+#        target = 30
+#   b) Que Regions Unexplored (RU) tenga el 40% aunque BOP y BWG se alejen de lo
+#      suyo: RU va FIXED (se cumple con un margen de ±1 punto) y BOP y BWG van SOFT
+#      (ceden lo que haga falta). 40 + 30 + 30 ya suma 100 y la base necesita su
+#      parte, así que BOP y BWG quedan unos puntos por debajo de 30 y el log lo
+#      marca (EN_CONFLICTO):
+#        [overworld.providers.regions_unexplored]
+#        target = 40
+#        priority = "FIXED"
+#        [overworld.providers.biomesoplenty]
+#        target = 30
+#        [overworld.providers.biomeswevegone]
+#        target = 30
+#   c) Sin BWG en el Overworld:
+#        [overworld.providers.biomeswevegone]
+#        target = 0
+#   Esas secciones ya están más abajo: cambia el valor ahí. Si repites una
+#   sección, el archivo deja de ser TOML válido y el mod lo ignora (usa los
+#   valores por defecto y lo avisa en el log).
+#   Si los números no suman 100 y no hay "auto", se escalan a 100 y se avisa en el log.
+# =============================================================================
+
+# Versión del formato de este archivo. No la cambies.
+schema_version = 1
+
+[overworld]
+# WEIGHTS = el reparto lo deciden "rotating", "base_weight" y "full_province_share"
+#           de biomeprovinces-common.toml, como en las versiones anteriores del mod.
+#           Es el valor por defecto.
+# TARGET  = escribes en este archivo el % que quieres de cada mod y el mod calcula esas tres.
+# En los dos modos siguen valiendo las demás claves del common (sector_size, jitter,
+# salt, border_style, border_strength, border_rounding, border_warp, province_dispersion, border_mottle,
+# strict_borders, replacements, keep_base_underground, region_weight_overrides,
+# other_regions).
+mode = "TARGET"
+
+[overworld.target]
+# Reglas del modo TARGET para todos los mods.
+# Si un mod con objetivo (target = número) no está instalado:
+#   PROPORTIONAL = su % se reparte entre los demás objetivos, en proporción
+#   TO_BASE      = su % se suma al de la base
+redistribute_missing = "PROPORTIONAL"
+# Qué parte de cada provincia de un mod con regiones de TerraBlender (BOP, BWG...)
+# tienen que ocupar las regiones del propio mod, de 0 a 100; el resto es la base
+# (y las regiones de los mods en "off", si las hay). Por debajo de ~59 el mod
+# deja de formar manchas continuas y queda en islas sueltas (es un umbral
+# teórico, no medido con este mod). No se aplica a Regions Unexplored ni a otros
+# mods de reemplazos.
+min_province_purity = 60
+# Permite provincias enteras de solo base (Terralith + vanilla). Hace falta si
+# quieres más base de la que cabe dentro de las provincias de los mods.
+allow_base_provinces = true
+# Un mod con target "auto" nunca baja de este % del área que tendría sin
+# objetivos (0 = sin piso). Para que un mod desaparezca, ponle target = 0.
+auto_min_area = 50
+# AVANZADO: no hace falta tocarlo.
+# Margen, en puntos, para dar por cumplido un objetivo FIXED.
+fixed_tolerance = 1.0
+# AVANZADO: no hace falta tocarlo.
+# Qué hacer con el vanilla de la base dentro de las provincias de un mod. Hoy solo
+# "KEEP" (se queda como está). Reservado y NO implementado: "PREFER_PROVINCE_MOD"
+# (cambiarlo, donde se pueda, por un bioma del mod de esa provincia).
+vanilla_policy = "KEEP"
+
+# --- Secciones de mods: [overworld.providers.<mod>] ------------------------------
+# Cada una tiene estas tres claves:
+# target = número de 0 a 100 · "auto" · "off"
+#   número: % de la tierra que quieres de ese mod.
+#   "auto": sin objetivo: recibe lo que sobre, pero nunca baja de auto_min_area %
+#           (en [overworld.target]) del área que tendría sin objetivos.
+#   0:      el mod NO aparece en el Overworld (salvo las cuevas de un mod de
+#           reemplazos como Regions Unexplored, que siguen libres con
+#           surface_only = true en biomeprovinces-common.toml).
+#   "off":  el mod no se gestiona: no tiene provincias. Si tiene regiones de
+#           TerraBlender, sus biomas se mezclan por todo el mundo o no salen, según
+#           other_regions de biomeprovinces-common.toml; si es de reemplazos (como
+#           Regions Unexplored), reemplaza libremente en todo el mundo.
+#           NO es lo mismo que 0.
+# priority = "SOFT" (por defecto: se acerca lo más posible) · "FIXED" (se intenta
+#            cumplir y se avisa si no se puede, aunque los demás se alejen) ·
+#            "IGNORE" (su objetivo no cuenta: queda como "auto"). Solo importa si
+#            target es un número.
+# base_share = "auto" o 0..100: cuánto de las provincias de ese mod se deja para
+#              la base (Terralith + vanilla). Más alto = el mod sale más diluido.
+#              Para empezar, "auto". En Regions Unexplored es el % de sus celdas
+#              "con base" (mezcladas); el resto son "plenas" (casi todo RU).
+# --------------------------------------------------------------------------------
+
+[overworld.providers.regions_unexplored]
+# Regions Unexplored 0.6.3 · reemplazos de lithostitched · instalado
+# target: número de 0 a 100, "auto" u "off" (ver la leyenda de arriba)
+target = 25
+# priority: "SOFT", "FIXED" o "IGNORE" (solo cuenta si target es un número)
+priority = "SOFT"
+# base_share: "auto" o 0..100 (cuánto de sus provincias queda para la base)
+base_share = "auto"
+
+[overworld.providers.biomesoplenty]
+# Biomes O' Plenty 21.1.0.14 · regiones de TerraBlender: overworld_primary(10), overworld_secondary(8), overworld_rare(2) · instalado
+# target: número de 0 a 100, "auto" u "off" (ver la leyenda de arriba)
+target = 25
+# priority: "SOFT", "FIXED" o "IGNORE" (solo cuenta si target es un número)
+priority = "SOFT"
+# base_share: "auto" o 0..100 (cuánto de sus provincias queda para la base)
+base_share = "auto"
+
+[overworld.providers.biomeswevegone]
+# Oh The Biomes We've Gone 2.6.3 · regiones de TerraBlender: region_0(8), region_1(8), region_2(8) · instalado
+# target: número de 0 a 100, "auto" u "off" (ver la leyenda de arriba)
+target = 25
+# priority: "SOFT", "FIXED" o "IGNORE" (solo cuenta si target es un número)
+priority = "SOFT"
+# base_share: "auto" o 0..100 (cuánto de sus provincias queda para la base)
+base_share = "auto"
+
+[overworld.base]
+# Terralith 2.6.2 + vanilla (la base del mundo). target = % de la tierra, igual que los mods.
+# Cuenta todo el Terralith y el vanilla del mundo, también el de las provincias de los mods.
+# La base es Terralith + vanilla juntos: el mod no los reparte por separado. Que salga más
+# o menos mitad y mitad depende de la lista de biomas de la base y de lo que traen las
+# regiones de los mods; por eso terralith y vanilla son solo metas orientativas.
+# Si dejas target en "auto" y pones terralith y vanilla, target vale terralith + vanilla.
+# target: número de 0 a 100 o "auto"
+target = 25
+# priority: "SOFT", "FIXED" o "IGNORE" (como en los mods)
+priority = "SOFT"
+# terralith y vanilla: metas orientativas (% de la tierra), no garantizadas: salen
+# de la lista de Terralith. Número de 0 a 100 o "auto".
+terralith = "auto"
+vanilla = "auto"
+
+[overworld.calibration]
+# AVANZADO: normalmente no hace falta tocar nada de esta sección.
+# En modo TARGET, al crear un mundo el mod mide cómo queda cada mod con el clima
+# real de esa semilla y preset, sin generar chunks.
+# Zona medida: cuadrado de lado 2 × radius, centrado en "center". Un radio mayor
+# promedia más clima sin costar más tiempo: en las pruebas, 131072 dio la mitad de
+# error o menos que 32768, con el mismo tiempo.
+radius = 131072
+# Centro de la zona medida, [x, z] en bloques.
+center = [0, 0]
+# Segundos que, como máximo, puede sumar esto a la creación del mundo.
+# Si se acaban, se usa lo medido y se marca CALIBRACION_PARCIAL (no es un fallo).
+time_budget_seconds = 30
+# Si NO se puede calibrar (falta una pieza: otra fuente de biomas, TerraBlender sin
+# inicializar, un error al medir):
+#   ABORT    = el mundo NO se crea; el log dice la causa y cómo seguir. Por defecto,
+#              porque los parámetros de un mundo se congelan para siempre.
+#   FALLBACK = se crea en modo WEIGHTS con biomeprovinces-common.toml y queda
+#              marcado SIN_CALIBRAR.
+on_calibration_failure = "ABORT"
+# Puntos por sonda: cada región de TerraBlender que puede salir en las provincias
+# de un mod se mide por separado (una sonda) con estos puntos. Más puntos, más tiempo.
+samples_per_probe = 60000
+# Hilos para medir.
+threads = 2
+# Guarda las mediciones en <juego>/biomeprovinces/calibracion/ y las reutiliza si
+# se crea otro mundo con la misma semilla, preset, mods y config.
+cache = true
+
+[nether]
+# Aún no soportado (la config ya reserva esta sección).
+# enabled = true se ignora, con un aviso en el log.
+enabled = false
+
+[end]
+# Aún no soportado (la config ya reserva esta sección).
+# enabled = true se ignora, con un aviso en el log.
+enabled = false

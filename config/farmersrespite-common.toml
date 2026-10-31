@@ -1,0 +1,30 @@
+# All values can be changed at runtime; use a mod like Configured or similar.
+# Looking for worldgen configuration? In 1.21.1, use a datapack or KubeJS.
+# Override the configured_feature and placed_feature JSONs, or update the crop biome tags.
+# 
+[Kettle]
+	# Should the kettle's GUI include a button to void the liquid stored inside it? Default: true.
+	drainKettleButton = true
+	# Should Create's blaze burners act as a valid heat source for the kettle? Default: true.
+	blazeBurnersAsSource = true
+	# Should Create's blaze burners require being heated or superheated to heat the kettle? Default: true.
+	# When false, any blaze burner except an empty one will passively heat the kettle unless disabled above.
+	blazeBurnersNeedFuel = true
+
+[Crops]
+	# Allow using bone meal to advance tea bush growth stages. Default: false.
+	boneMealTea = false
+	# Allow using bone meal to advance coffee bush growth stages and grow coffee berries. Default: false.
+	boneMealCoffee = false
+	# Allow using bone meal on wild tea bushes to grow more, making tea seeds renewable. Default: true.
+	boneMealWildTea = true
+	# Whether coffee bush crops require other crops nearby to parasitize on and grow in the Overworld. Default: true.
+	# If this is disabled, coffee beans need only be planted on basalt, magma, or blackstone to grow on their own.
+	coffeeParasitization = true
+	# Whether coffee bushes spawn harmful wither clouds when berries are harvested without shears. Default: true.
+	# Disabling this does not currently prevent other coffee-related plants from spawning wither clouds.
+	coffeeClouds = true
+
+[Effects]
+	# Whether successfully sleeping while under the effect of Sleepy grants regeneration. Default: true.
+	sleepyHealing = true

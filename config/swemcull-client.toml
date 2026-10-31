@@ -1,203 +1,200 @@
-#swemcull - client-side render optimisation for SWEM horses.
-#Rendering only. Nothing here touches entity ticking, AI, or any server-authoritative state.
-#Everything below can also be changed in game with /swemcull.
+#SwemCull - faster rendering for SWEM horses.
+#Client-side and rendering only: it never changes how horses behave.
+#Most of this can also be changed in game with /swemcull.
 [general]
-	#Master switch. When false, swemcull does nothing at all.
-	#Set this to false to capture a clean baseline profile.
+	#Master switch. When false, SwemCull does nothing at all.
 	enabled = true
-	#Show a short one-off intro in chat after installing or updating.
+	#Show a short message in chat after installing or updating.
 	showWelcome = true
-	#Internal. The version that last showed its intro message.
-	#Clear this to see the intro again.
-	lastSeenVersion = "1.0.4"
+	#Used to show the update message only once. Clear it to see it again.
+	lastSeenVersion = "1.1.0"
 
-#Distance culling.
-#Skips the entire horse render call beyond the threshold.
-#The horse you ride and the horse under your crosshair are never culled.
+#Distance culling: horses further away than this are not drawn.
+#The horse you ride, lead or look at is never culled.
 [culling]
 	#Enable distance culling.
 	enabled = true
 	#Horses further than this many blocks from the camera are not drawn.
-	#Their name tag and leash are not drawn either.
-	#Vanilla stops drawing horses at roughly 94 blocks on its own, so values
-	#at or above that effectively disable culling.
+	#Minecraft stops drawing horses at about 94 blocks on its own, so values
+	#at or above that have no effect.
 	# Default: 80
 	# Range: 8 ~ 512
 	distance = 80
 	#Horses carrying a player stay visible this far instead, so other riders
-	#do not vanish across a field. They still lose tack and mane at the normal
-	#distances, so a distant rider costs far less than a full-detail horse.
+	#do not vanish across a field. They still lose detail at the normal distances.
 	# Default: 92
 	# Range: 8 ~ 512
 	riddenDistance = 92
-	#Never cull a horse that is carrying a player, at any distance.
-	#SWEM's model has no rider bones - the player is drawn separately by
-	#vanilla - so culling a ridden horse does not hide its rider, it leaves
-	#them sitting in mid-air on nothing.
+	#Never cull a horse that is carrying a player. The rider is drawn
+	#separately, so hiding the horse would leave them floating in mid-air.
 	neverCullRidden = true
 
-#Tack stripping.
-#Beyond the threshold, cosmetic tack bones are hidden while the base horse still renders.
-#This cuts geometry and, more importantly, the per-bone texture-override work that
-#GeckoLib's DynamicGeoEntityRenderer performs every frame.
+#Tack stripping: beyond this distance small tack is hidden, and the horse itself
+#still renders. Tack is the most expensive part of a SWEM horse to draw.
 [stripping]
-	#Enable cosmetic tack stripping.
+	#Enable tack stripping.
 	enabled = true
 	#Horses further than this many blocks from the camera lose their tack.
 	# Default: 24
 	# Range: 4 ~ 512
 	distance = 24
 
-	#Per-group toggles, so each can be A/B tested independently.
-	#Most tack groups use stripping.distance. Four groups deliberately do not:
-	#  saddles uses detail.distance rather than stripping.distance, so a
-	#  tacked horse does not turn bare the moment the bridle goes;
-	#  blanket, pastureBlanket and armorBody default to OFF - they are never
-	#  stripped. They are what still says 'this horse is wearing something' at
-	#  range: the blankets for ten bones, and armorBody for two - the barrel
-	#  and rump plates, which are the whole of the armour by volume;
-	#  wings use detail.distance and are all-or-nothing - a partial wing was
-	#  built and tested and read as broken rather than distant.
-	#mane, tailHair and forelock also use detail.distance: they are part of the
-	#base horse rather than tack.
+	#Which parts can be hidden. Each one notes the distance it uses.
+	#Saddles, wing tips, mane, tail hair and forelock go at detail.distance, so a
+	#horse does not look bare the moment its bridle goes. The blanket, wraps and
+	#armour are off by default: they are what still shows a horse is dressed.
 	[stripping.groups]
-		#Hide saddles (12 bones, detail tier).
+		#Hide saddles (12 bones, detail distance).
 		saddles = true
-		#Hide bridles (18 bones, tack tier).
+		#Hide bridles (18 bones, tack distance).
 		bridles = true
-		#Hide halter (4 bones, tack tier).
+		#Hide halter (4 bones, tack distance).
 		halter = true
-		#Hide blanket (6 bones, detail tier).
+		#Hide blanket (6 bones, detail distance).
 		blanket = false
-		#Hide pastureBlanket (4 bones, tack tier).
+		#Hide pastureBlanket (4 bones, tack distance).
 		pastureBlanket = true
-		#Hide girthStrap (2 bones, tack tier).
+		#Hide girthStrap (2 bones, tack distance).
 		girthStrap = true
-		#Hide legWraps (4 bones, tack tier).
+		#Hide legWraps (4 bones, tack distance).
 		legWraps = false
-		#Hide earNet (4 bones, tack tier).
+		#Hide earNet (4 bones, tack distance).
 		earNet = true
-		#Hide bodyWrap (1 bones, tack tier).
+		#Hide bodyWrap (1 bones, tack distance).
 		bodyWrap = false
-		#Hide legWrapHooves (4 bones, tack tier).
+		#Hide legWrapHooves (4 bones, tack distance).
 		legWrapHooves = true
-		#Hide breastCollar (9 bones, tack tier).
+		#Hide breastCollar (9 bones, tack distance).
 		breastCollar = true
-		#Hide saddleBags (4 bones, tack tier).
+		#Hide saddleBags (4 bones, tack distance).
 		saddleBags = true
-		#Hide armor (12 bones, tack tier).
+		#Hide armor (12 bones, tack distance).
 		armor = false
-		#Hide wings (10 bones, detail tier).
+		#Hide wings (10 bones, detail distance).
 		wings = false
-		#Hide wingTip (2 bones, detail tier).
+		#Hide wingTip (2 bones, detail distance).
 		wingTip = true
-		#Hide trimEars (2 bones, far tier).
+		#Hide trimEars (2 bones, far distance).
 		trimEars = true
-		#Hide trimLowerLegs (4 bones, far tier).
+		#Hide trimLowerLegs (4 bones, far distance).
 		trimLowerLegs = false
-		#Hide trimKnees (6 bones, far tier).
+		#Hide trimKnees (6 bones, far distance).
 		trimKnees = false
-		#Hide mane (20 bones, detail tier).
+		#Hide mane (20 bones, detail distance).
 		mane = true
-		#Hide tailHair (8 bones, detail tier).
+		#Hide tailHair (8 bones, detail distance).
 		tailHair = true
-		#Hide forelock (1 bones, detail tier).
+		#Hide forelock (1 bones, detail distance).
 		forelock = true
-		#Hide farBelly (1 bones, far tier).
+		#Hide farBelly (1 bones, far distance).
 		farBelly = true
-		#Hide farBreast (2 bones, far tier).
+		#Hide farBreast (2 bones, far distance).
 		farBreast = true
-		#Hide farFace (3 bones, far tier).
+		#Hide farFace (3 bones, far distance).
 		farFace = true
-		#Hide farHooves (4 bones, far tier).
+		#Hide farHooves (4 bones, far distance).
 		farHooves = true
-		#Hide farTailDock (1 bones, far tier).
+		#Hide farTailDock (1 bones, far distance).
 		farTailDock = true
 
-#Second detail step, between stripping tack and removing the horse entirely.
-#Hides the mane locks, tail hair and forelock - 29 bones of pure silhouette detail
-#that stops being readable at range. The horse itself still renders and animates.
-#Set this between stripping.distance and culling.distance for a gradual falloff.
+#Mane and tail: beyond this distance the mane, forelock and tail hair are hidden.
+#The horse still renders and animates.
 [detail]
-	#Enable the mane/tail detail step.
+	#Enable the mane and tail step.
 	enabled = true
 	#Horses further than this many blocks lose mane and tail hair.
 	# Default: 36
 	# Range: 4 ~ 512
 	distance = 36
 
-#Small-parts step. Despite the name this defaults NEARER than detail.distance,
-#because the steps are ordered by what you miss rather than by label: these 11
-#bones do not touch the horse's outline, so they can go before the 29 mane and
-#tail bones that do.
-#Hides small or internal parts of the horse itself: the thin slab under the
-#barrel, the chest bumps, the lower lip, the hooves and the tail dock.
-#These were picked by measuring the model - none of them change the horse's
-#outline, which is all you can resolve at this range. The legs, neck, head and
-#barrel are deliberately never touched, because hiding those looks broken.
+#Small parts: beyond this distance the ears, hooves, lower lip, chest, belly
+#and tail dock are hidden. None of them change the outline, so by default this
+#comes before the mane and tail step.
 [far]
-	#Enable the far detail step.
+	#Enable the small parts step.
 	enabled = true
 	#Horses further than this lose their small and internal parts.
 	# Default: 30
 	# Range: 4 ~ 512
 	distance = 30
 
-#Hot-path optimisations that apply at every distance, including horses right in
-#front of you. These change nothing visually - they remove redundant lookups and
-#allocations SWEM performs for every bone of every horse on every frame.
+#Optimisations that apply at every distance, including right next to a horse.
+#Unless noted, they change nothing you can see. Turn one off to compare.
 [optimisations]
-	#Replace SWEM's bone lookup with a hash map.
-	#SWEM resolves bones by recursively walking the whole bone tree and
-	#allocating an Optional, roughly 95 times per horse per frame. This is the
-	#only feature that speeds up standing in the middle of a herd.
-	#Turn off to A/B test it.
+	#Find model parts with a lookup table instead of searching the whole
+	#model, which SWEM does about 95 times per horse per frame.
 	fastBoneLookup = true
-	#Skip bones whose entire subtree is hidden.
-	#GeckoLib runs SWEM's expensive per-bone texture lookup BEFORE it checks
-	#whether the bone is visible, so an invisible bone costs as much as a
-	#visible one and draws nothing. A horse wearing no tack carries ~95 of
-	#them. This is the biggest win when standing right next to a herd.
+	#Skip model parts that are hidden. Without this a hidden part costs as
+	#much as a visible one, and a horse with no tack has about 95 of them.
 	skipHiddenBones = true
-	#Do not draw horses that are outside your view.
-	#SWEM sets noCulling on its horse, which makes Minecraft skip the view
-	#test entirely - so horses behind you are drawn in full, every frame.
-	#This puts that test back, against a box inflated by 3 blocks so animation
-	#reaching outside the hitbox cannot make horses blink at the screen edge.
+	#Do not draw horses outside your view. SWEM for 1.21.1 turns Minecraft's
+	#own check off for its horses, so every horse behind you is drawn. This
+	#puts the check back, sized to the whole model including the wings.
+	#SWEM for 1.20.1 keeps the check, so there this changes nothing.
 	frustumCulling = true
-	#Remember what texture each bone resolved to instead of recomputing it.
-	#SWEM's per-bone texture lookup is 287 instructions with seventy method
-	#calls, run for every visible bone of every horse on every frame - and it
-	#re-resolves the horse's coat each time, parsing a ResourceLocation and
-	#hitting a registry. The answer only changes when the horse's tack, armour
-	#tier or coat changes, so it is cached against exactly those.
-	#Turn off to A/B test it, or if a texture ever looks wrong.
+	#Remember which texture each part of a horse uses instead of working it
+	#out again every frame. It only changes when the horse's coat, tack or
+	#armour does. Turn off if a texture ever looks wrong.
 	cacheTextures = true
-	#Do not draw horses that are on screen but behind something solid.
-	#A barn full of horses is inside your view cone from outside the barn, and
-	#every one of them is drawn through the wall. This traces from the camera
-	#to the horse and skips it when nothing gets through.
-	#EntityCulling does not cover this: it skips any entity with noCulling set,
-	#and SWEM sets it - so SWEM horses have never been occlusion-culled even
-	#in packs that have it installed.
-	#Answers are cached and only horses beyond 12 blocks are ever tested. Glass
-	#does not count as a wall. Turn off if you ever see a horse appear late.
+	#Do not draw horses hidden behind solid blocks, such as a barn full of
+	#horses seen from outside. Only horses more than 6 blocks away are checked.
+	#Glass, fences, gates, trapdoors and slabs never count as walls.
+	#EntityCulling does not do this for SWEM horses. Turn off if a horse ever
+	#appears late as you come round a corner.
 	occlusionCulling = true
+	#With a shaderpack, leave small tack out of horses' shadows. Bridles,
+	#reins and straps are too thin to show in a shadow map anyway; saddles,
+	#blankets, manes and tails stay. Does nothing without shaders.
+	shadowPassLod = true
+	#Draw each horse in about ten draw calls instead of about a hundred.
+	#Measured 50 -> 78 fps with 32 tacked horses on screen. Switches itself off
+	#when ImmediatelyFast or a shaderpack already does the same.
+	batchDrawCalls = true
+	#Animate horses beyond the mane and tail distance 20 times a second
+	#instead of every frame (beyond 12 blocks while far pictures are on).
+	#Measured 185 -> 285 fps with 32 tacked horses at 40 blocks.
+	animationReplay = true
+	#With a shaderpack, work out each horse's animation once per frame instead
+	#of once for the shadow and again for the screen.
+	animationReuseShadow = true
+	#Keep detail on horses you zoom in on with a spyglass or a zoom mod.
+	#Every distance is multiplied by the zoom, so at 4x a horse 96 blocks away
+	#is treated like one at 24. Works with any zoom mod, including scroll zoom.
+	zoomDetail = true
+	#Show SWEM's horse poop on Xaero's Minimap and World Map. Off by default: a pile
+	#of poop on the map is clutter. When on, it gets a poop icon instead of the
+	#broken one Xaero's draws from its model. Does nothing without Xaero's.
+	minimapHorsePoop = false
+	#Draw SWEM's horse poop cheaply: piles behind you, off screen or behind walls are
+	#skipped, and every pile you can see is drawn from one copy instead of each through
+	#GeckoLib, as far away as horses are. SWEM draws every pile in range every frame,
+	#and piles never go away.
+	poopCulling = true
+	#Fade tack and detail out over the last few blocks before they are hidden,
+	#instead of having them disappear at once. Needs batchDrawCalls.
+	fadeDetail = true
+	#Draw far horses as a picture of themselves, retaken many times a second, with
+	#their name tag and leash drawn as normal. Ridden, winged and hurt horses and foals
+	#are always drawn as models, and so is everything with shaders.
+	farPictures = true
+	#How far away, in blocks, a standing horse becomes a picture. Pictures keep every
+	#piece of tack, so from here on a standing horse never loses any.
+	# Default: 24
+	# Range: 16 ~ 256
+	farPictureDistance = 24
 
-#Adaptive quality. Off by default because it changes what you see while you play.
-#When on, every distance above is scaled up and down at runtime to hold a target
-#framerate: detail is pulled in when you drop below it and given back when you
-#have headroom. Presets are a guess about your hardware - this measures it.
+#Adaptive quality: shortens every distance above when horses pull your framerate
+#below the target, and restores them when it recovers. Off by default because it
+#changes what you see while you play.
 [adaptive]
 	#Enable adaptive quality.
 	enabled = false
-	#Framerate to aim for. Distances never shrink below 45% of their
-	#configured value, so horses cannot vanish from under your nose.
-	#The controller converges on one setting and then stops adjusting, so it
-	#does not sit there making horses appear and disappear while you stand still.
+	#Framerate to aim for. Distances never shrink below 45% of their set value,
+	#and it settles rather than adjusting constantly. It does nothing when fewer
+	#than 3 horses are on screen or your framerate is already at its cap.
 	# Default: 60
 	# Range: 15 ~ 480
 	targetFps = 60
-	#Debug HUD showing how many horses are full, stripped or culled right now.
-	#Toggle in game with /swemcull overlay. Hidden while F3 is open.
+	#Show an overlay with how many horses are drawn in full, reduced or skipped.
+	#Toggle in game with /swemcull overlay. Hidden while F1 or F3 is open.
 	overlay = false

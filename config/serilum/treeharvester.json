@@ -16,6 +16,10 @@
 		"//": "If enabled, tree harvesting works when not holding the sneak button. If disabled it's reversed, and only works when sneaking.",
 		"value": false
 	},
+	"treeHarvestIgnoresSneak": {
+		"//": "If enabled, tree harvesting always works and sneaking has no effect, so a tree can't be broken one log at a time. Overrides 'treeHarvestWithoutSneak'.",
+		"value": false
+	},
 	"automaticallyFindBottomBlock": {
 		"//": "Whether the mod should attempt to find the actual bottom log of the tree and start there. This means you can break a tree in the middle and it will still completely be felled.",
 		"value": true
@@ -33,7 +37,7 @@
 		"value": true
 	},
 	"ignorePlayerMadeTrees": {
-		"//": "If enabled, trees with leaves placed by players won't be destroyed.",
+		"//": "If enabled, trees with leaves placed by players, or trees connected to a player-made build, won't be destroyed.",
 		"value": true
 	},
 	"logBlockBlacklist": {

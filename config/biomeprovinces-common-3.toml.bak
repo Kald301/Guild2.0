@@ -1,0 +1,97 @@
+#Biome Provinces reparte el Overworld en provincias amplias: en cada una manda un solo mod de biomas
+#y los demás se apartan. La base (Terralith, o vanilla si no está) aparece en todas.
+#Los valores se leen al abrir o crear un mundo y quedan fijos hasta cerrarlo.
+#Cambiar algo afecta solo a los chunks que se generen después: en un mundo existente vas a ver costuras.
+[general]
+	#Interruptor general. En false el mod no cambia nada (TerraBlender y lithostitched funcionan como siempre).
+	enabled = true
+	#Tamaño medio de cada provincia, en bloques (lado de la celda de Voronoi).
+	#Conviene que sea 3 o 4 veces la celda de región de TerraBlender
+	#(overworld_region_size 3 ≈ 512 bloques, 4 ≈ 1024, 5 ≈ 2048) para que dentro de cada provincia
+	#haya varias regiones del mod que manda y de la base.
+	# Default: 8192
+	# Range: 1024 ~ 131072
+	sector_size = 8192
+	#Cuánto se deforma la grilla: 0 = provincias cuadradas, 1 = formas totalmente irregulares.
+	# Default: 0.85
+	# Range: 0.0 ~ 1.0
+	jitter = 0.85
+	#Cambia el reparto de provincias sin cambiar la semilla del mundo. Mismo salt + misma semilla = mismo mapa.
+	# Default: 0
+	# Range: -9223372036854775808 ~ 9223372036854775807
+	salt = 0
+	#Ondulación de los bordes entre provincias, como fracción de sector_size (0 = bordes rectos).
+	#0.1 con sector 8192 deforma los bordes hasta ~800 bloques. Máximo 0.15.
+	# Default: 0.1
+	# Range: 0.0 ~ 0.15
+	border_warp = 0.1
+	#TerraBlender decide la región en píxeles gruesos y después los "difumina" al hacer zoom, así que sus
+	#regiones se meten en la provincia vecina (con overworld_region_size 5, hasta un par de km).
+	#true  = en cada punto, una región que no corresponde a esa provincia se reemplaza por la base (Terralith/vanilla):
+	#        bordes limpios.
+	#false = se deja la difuminación natural de TerraBlender: bordes más mezclados.
+	strict_borders = true
+
+#Qué mods rotan como provincias y qué entra en cada una.
+[provinces]
+	#Mods que rotan, como "namespace=peso" (el peso es la proporción de provincias de ese mod).
+	#En la provincia de un mod:
+	#  - compiten la región base de TerraBlender (Terralith/vanilla) y las regiones de TerraBlender de ese mod;
+	#  - las regiones de TerraBlender de los OTROS mods de esta lista quedan afuera;
+	#  - los reemplazos de lithostitched cuyo bioma resultante es de ese mod (Regions Unexplored) solo ocurren ahí.
+	#Un mod sin regiones de TerraBlender (como Regions Unexplored) tiene como provincia la base sola,
+	#y sus reemplazos operan sobre ella. También sirve "terralith=1" para provincias solo de base.
+	rotating = ["regions_unexplored=1", "biomesoplenty=1", "biomeswevegone=1"]
+	#Peso de la región base de TerraBlender (Terralith/vanilla) dentro de las provincias de mods con regiones.
+	#-1 = usar el de TerraBlender (vanilla_overworld_region_weight en config/terrablender.toml).
+	#Más alto = más Terralith dentro de las provincias de BOP/BWG.
+	# Default: -1
+	# Range: -1 ~ 100000
+	base_weight = -1
+	#Provincias "plenas" de los mods sin regiones de TerraBlender (Regions Unexplored).
+	#Cada celda de provincia de esos mods se sortea una vez con la semilla: con esta probabilidad es "plena".
+	#  plena    = su superficie usa el layout vanilla y el mod reemplaza casi todo (~90% del mod);
+	#  con base = su superficie usa la base del mundo (Terralith), y el mod solo reemplaza lo vanilla (~40%).
+	#0 = ninguna plena (todas con Terralith); 1 = todas plenas. Las provincias de BOP/BWG no cambian.
+	#Si es mayor que 0, al arrancar se registra una región de TerraBlender: cambiarlo de 0 a otro valor requiere reiniciar.
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	full_province_share = 0.7
+	#En las provincias plenas, bajo la superficie se sigue usando la base del mundo: las cuevas de Terralith
+	#(y lo que Biolith agrega, como el Glimmering Weald de Quark) quedan iguales en todo el mundo.
+	#false = las provincias plenas usan también las cuevas vanilla (lush, dripstone, deep dark).
+	keep_base_underground = true
+	#Pesos propios para regiones de TerraBlender dentro de las provincias, sin tocar la config de cada mod.
+	#Formato "namespace:region=peso". Ejemplo: "biomesoplenty:overworld_rare=4".
+	#Regiones: biomesoplenty:overworld_primary / overworld_secondary / overworld_rare,
+	#biomeswevegone:region_0 / region_1 / region_2. Vacío = respetar los pesos de cada mod.
+	region_weight_overrides = []
+	#Regiones de TerraBlender de mods que NO están en "rotating":
+	#  EVERYWHERE = pueden aparecer en todas las provincias, con su peso;
+	#  NOWHERE    = no aparecen nunca.
+	#Allowed Values: EVERYWHERE, NOWHERE
+	other_regions = "EVERYWHERE"
+
+#Reemplazos de lithostitched (así coloca sus biomas Regions Unexplored 0.6.x).
+[replacements]
+	#Si es true, un reemplazo cuyo bioma resultante pertenece a un mod de "rotating" solo ocurre en la
+	#provincia de ese mod. Respeta todo lo demás de su config (biomas activados, parámetros, grupos).
+	confine_to_province = true
+	#Si es true, las cuevas de ese mod quedan libres en todo el mundo: no se confinan los reemplazos de un
+	#bioma de cueva (etiqueta c:is_cave, por ejemplo lush_caves -> bioshroom_caves) ni las colocaciones forzadas
+	#bajo surface_depth_limit (prismachasm, redstone_caves). Todo lo demás, a cualquier profundidad, se confina.
+	surface_only = true
+	#Para colocaciones forzadas (force_placement): hasta qué profundidad del clima se considera superficie
+	#(0 = superficie; las cuevas especiales de RU usan >= 0.2).
+	# Default: 0.1
+	# Range: -2.0 ~ 2.0
+	surface_depth_limit = 0.1
+	#Dentro de su provincia, cuánto manda un mod de reemplazos (Regions Unexplored):
+	#  ALWAYS          = reemplaza todos sus biomas objetivo; entre sus variantes respeta sus pesos relativos.
+	#  RESPECT_WEIGHTS = usa el sorteo normal de lithostitched contra el peso 100 de la base (como sin este mod).
+	#Allowed Values: ALWAYS, RESPECT_WEIGHTS
+	dominance = "ALWAYS"
+
+[debug]
+	#Escribe en latest.log el mapa de provincias y qué regiones compiten en cada una al abrir un mundo.
+	log_tables = true

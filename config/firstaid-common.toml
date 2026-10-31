@@ -1,0 +1,622 @@
+# First Aid gameplay rules.
+# On a server this file is used for every player and sent to clients when they join.
+# Changes apply after a restart.
+
+# Health of the individual body parts. 2 health points are one heart.
+[body]
+# Max health of the head (2 to 128)
+head = 6
+# Max health of the torso (2 to 128)
+body = 12
+# Max health of the left arm (2 to 128)
+leftArm = 8
+# Max health of the right arm (2 to 128)
+rightArm = 8
+# Max health of the left leg (2 to 128)
+leftLeg = 10
+# Max health of the right leg (2 to 128)
+rightLeg = 10
+# Max health of the left foot (2 to 128)
+leftFoot = 6
+# Max health of the right foot (2 to 128)
+rightFoot = 6
+# The player dies when the head reaches 0 health.
+headIsFatal = true
+# The player dies when the torso reaches 0 health.
+bodyIsFatal = true
+# Scale body part health with the player's max health attribute.
+scaleWithMaxHealth = true
+# Limit each part to 6 hearts and 2 absorption hearts.
+capMaxHealth = false
+# How the vanilla health value, seen by the health bar and other mods, is calculated from the body parts [AVERAGE_ALL, AVERAGE_CRITICAL, MIN_CRITICAL, CRITICAL_50_PERCENT_OTHER_50_PERCENT]
+vanillaHealthCalculation = "MIN_CRITICAL"
+# Random damage leaves fatal parts at 1 health while other parts can still take it.
+friendlyRandomDistribution = false
+# Share of damage exceeding a limb's health that is passed on to the torso (0.0 to 1.0)
+limbOverflowToBody = 0.2
+
+# Armor only protects the body parts it covers. Values are multiplied, then the offset is added.
+[armor]
+# Armor multiplier for helmets (1.0 to 16.0)
+headMultiplier = 6.0
+# Armor multiplier for chestplates (1.0 to 16.0)
+chestMultiplier = 2.5
+# Armor multiplier for leggings (1.0 to 16.0)
+legsMultiplier = 3.0
+# Armor multiplier for boots (1.0 to 16.0)
+feetMultiplier = 6.0
+# Armor added to helmets (0.0 to 4.0)
+headOffset = 1.0
+# Armor added to chestplates (0.0 to 4.0)
+chestOffset = 0.0
+# Armor added to leggings (0.0 to 4.0)
+legsOffset = 0.0
+# Armor added to boots (0.0 to 4.0)
+feetOffset = 0.0
+# Toughness multiplier for helmets (1.0 to 16.0)
+headToughnessMultiplier = 4.0
+# Toughness multiplier for chestplates (1.0 to 16.0)
+chestToughnessMultiplier = 3.0
+# Toughness multiplier for leggings (1.0 to 16.0)
+legsToughnessMultiplier = 3.0
+# Toughness multiplier for boots (1.0 to 16.0)
+feetToughnessMultiplier = 3.5
+# Toughness added to helmets (0.0 to 4.0)
+headToughnessOffset = 0.0
+# Toughness added to chestplates (0.0 to 4.0)
+chestToughnessOffset = 0.0
+# Toughness added to leggings (0.0 to 4.0)
+legsToughnessOffset = 0.0
+# Toughness added to boots (0.0 to 4.0)
+feetToughnessOffset = 0.0
+# LOCAL_ENCHANTMENTS: protection enchantments only protect their own body part. GLOBAL_ENCHANTMENTS: they protect the whole body [GLOBAL_ENCHANTMENTS, LOCAL_ENCHANTMENTS]
+enchantmentMode = "LOCAL_ENCHANTMENTS"
+# Strength multiplier for local protection enchantments (1 to 4)
+enchantmentMultiplier = 4
+# Enchantments with their own multiplier, paired by position with enchantmentOverrideMultipliers.
+enchantmentOverrides = ["minecraft:feather_falling"]
+# Multipliers (1 to 4) for the enchantments listed in enchantmentOverrides.
+enchantmentOverrideMultipliers = ["2"]
+# Damage reduction in percent per level of the Resistance effect (1 to 40)
+resistancePercentPerLevel = 20
+
+# Bandages, plasters and other sources of healing.
+[healing]
+# Allow regeneration from a full hunger bar. Sets the naturalRegeneration game rule of every world.
+naturalRegeneration = true
+# Allow healing from potions, golden apples and other mods.
+otherHealingSources = true
+# Share of max health restored by sleeping through the night (0.0 to 1.0)
+sleepHealing = 0.2
+# Multiplier for healing from potions and other mods (0.0 to 20.0)
+otherHealingMultiplier = 1.5
+# Multiplier for natural regeneration (0.0 to 20.0)
+naturalRegenerationMultiplier = 0.5
+
+[healing.bandage]
+# Total healing in half hearts (1 to 127)
+totalHeals = 8
+# Seconds between two heals (1 to 32767)
+secondsPerHeal = 6
+# Time to apply in milliseconds (0 to 16000)
+applyTime = 2500
+
+[healing.plaster]
+# Total healing in half hearts (1 to 127)
+totalHeals = 4
+# Seconds between two heals (1 to 32767)
+secondsPerHeal = 8
+# Time to apply in milliseconds (0 to 16000)
+applyTime = 2000
+
+# Damage adjustments for the smaller health pools of body parts.
+[combat]
+# Melee damage of unarmed mobs, applied before armor. Does not affect players or projectiles (0.0 to 4.0)
+mobMeleeDamageMultiplier = 0.45
+# Melee damage of mobs holding a weapon or tagged firstaid:full_strength_melee (0.0 to 4.0)
+armedMobMeleeDamageMultiplier = 1.0
+# TaCZ ammunition treated as inhaled toxic gas (torso only, no headshots).
+toxicTaczAmmo = ["daffas_arsenal:toxic_substance"]
+# TaCZ guns whose shots are treated as inhaled toxic gas.
+toxicTaczGuns = ["daffas_arsenal:southeastmomssecretweapon3"]
+# Damage multiplier for arrows and crossbow bolts, applied before armor (0.0 to 4.0)
+arrowDamageMultiplier = 0.5
+# Damage multiplier for player attacks without a weapon (0.0 to 4.0)
+unarmedPlayerDamageMultiplier = 0.5
+# Damage multiplier for player melee weapons (0.0 to 4.0)
+weaponMeleeDamageMultiplier = 0.75
+# Additional multiplier for all mob melee attacks (0.0 to 4.0)
+mobDamageMultiplier = 0.8
+# Minimum post-armor local tissue fraction for a bite/claw cut from firstaid:cutting_melee. Game threshold, not a medical unit (0.01 to 1.0)
+animalCutThreshold = 0.08
+# Blunt hits cause bruises, local pain and concussions.
+bluntTrauma = true
+# Pain from a severe bruise (0.0 to 100.0)
+bruisePain = 40.0
+# Pain spike of a blunt hit relative to the health of the hit part (0.0 to 200.0)
+bluntImpulseFactor = 70.0
+# Chance factor for being knocked out by a blunt hit to the head (0.0 to 1.0)
+headImpactChance = 0.4
+# Seconds until a bruise fades after the last hit (1 to 86400)
+bruiseRecoverySeconds = 180
+# Seconds until concussion symptoms fade after the last hit (1 to 86400)
+concussionRecoverySeconds = 120
+# Head damage after armor, as a fraction of head health, at which a single blow has a 50% chance to cause a concussion. Weaker blows have a smaller chance on an S-shaped curve; lower values make concussions more common (0.02 to 4.0)
+concussionHalfRiskHeadDamage = 0.4
+# Head blows below this fraction of head health never cause a concussion and are not counted as recent impacts (0.0 to 1.0)
+concussionMinimumHeadDamage = 0.06
+# How strongly recent head blows raise the risk of the next one. 0 makes every blow independent (0.0 to 2.0)
+concussionRepeatedImpactWeight = 0.25
+# Half-life in seconds of the recent head-impact load (1 to 86400)
+concussionImpactMemorySeconds = 60
+# Concussions cause headache, unsteady gait, slowed attacks and mining, drowsiness, early nausea and sometimes ringing in the ears.
+concussionSymptoms = true
+# Moderate and severe concussions can cause one or two early vomiting episodes.
+concussionVomiting = true
+# Head pain from a full-strength concussion; painkillers reduce it like other pain (0.0 to 100.0)
+concussionHeadachePain = 30.0
+# The blast wave of an explosion can cause a concussion without a blow to the head (primary blast injury). The risk falls with distance and cover.
+blastConcussion = true
+# Scale of the head dose from the blast wave; 0 turns primary blast concussions off (0.0 to 4.0)
+blastConcussionMultiplier = 1.0
+# Share of the blast-wave head dose stopped by a helmet. Helmets mainly stop fragments and blunt impacts, so keep it small (0.0 to 0.9)
+helmetBlastShield = 0.15
+# The blast wave injures the ears (ringing, temporary deafness, eardrum rupture) and, close to the explosion, the lungs (breathlessness, bleeding into the chest).
+blastBarotrauma = true
+# Cased charges and broken blocks throw fragments into exposed body parts. Armor can stop them. Not used while Shrapnel Explosions provides real fragments.
+blastFragments = true
+# Scale of the expected number of blast fragments (0.0 to 4.0)
+blastFragmentMultiplier = 1.0
+# An explosion that throws the player into a wall moves part of its damage to the body part that hits the wall. The total damage stays the same.
+blastTertiary = true
+# Severe injury, heavy blood loss, near death and nearby explosions cause an acute stress reaction: pounding heart, narrowed vision, shaking and muffled hearing.
+stressReaction = true
+# An extreme stress reaction can cause a short, quiet ringing in the ears, but not while the ears already ring from an injury.
+stressTinnitus = true
+# Chance of stress ringing when the reaction becomes extreme (0.0 to 1.0)
+stressTinnitusChance = 0.4
+# Minimum seconds between two episodes of stress ringing (10 to 86400)
+stressTinnitusCooldownSeconds = 180
+
+# Fractures, bleeding, blood volume, pain and unconsciousness.
+[trauma]
+# Enable the trauma system. When disabled only the body part health is used.
+enabled = true
+
+# Native persistent blood on actual supporting collision surfaces.
+[bloodStains]
+# Store external blood with its supporting chunk. Internal bleeding never creates marks.
+enabled = true
+# Permanent distinct marks per chunk. Nearby compatible marks merge; full chunks reject new distinct marks (8 to 128)
+maximumPerChunk = 128
+# Loaded active seconds until a mark clots; visual game timing (1 to 86400)
+clotSeconds = 30
+# Loaded active seconds until a mark dries; visual game timing, no automatic deletion (1 to 86400)
+drySeconds = 180
+# Wash strength at actual water contact; default removes a full wet or dry footprint in roughly 1-3 seconds. Zero disables washing (0.0 to 100.0)
+waterWashPerSecond = 0.2
+# Wash strength for real rain on an exposed upward face; default clears a full footprint in roughly 10-20 seconds. Zero disables washing (0.0 to 100.0)
+rainWashPerSecond = 0.02
+
+# Blood volume and circulation, measured from 0 to 100.
+[bleeding]
+# Blood lost per second per unit of external wound (0.0 to 100.0)
+externalLossPerSecond = 0.5
+# Blood lost per second per unit of internal wound (0.0 to 100.0)
+internalLossPerSecond = 0.6
+# Blood regained per second while not bleeding (0.0 to 100.0)
+recoveryPerSecond = 0.04
+# Food level needed to fully regain blood. Without it blood slowly returns only to a little above the wake threshold (0 to 20)
+minimumFood = 14
+# Circulation below which the screen darkens and the heartbeat plays (0.0 to 100.0)
+visualThreshold = 75.0
+# Circulation below which nausea starts (0.0 to 100.0)
+nauseaThreshold = 65.0
+# Circulation below which sprinting and jumping are limited (0.0 to 100.0)
+sprintThreshold = 60.0
+# Blood level that is fatal. Always kept 5 below the unconsciousness threshold (0.0 to 100.0)
+fatalBloodThreshold = 40.0
+# Circulation level that is fatal (0.0 to 100.0)
+fatalCirculationThreshold = 40.0
+# After bleeding stops, body fluid partly refills circulation before the blood itself recovers.
+fluidRefill = true
+# Upper loss rate for intensity level 1; increasing game units per second (0.001 to 10000.0)
+level1Upper = 0.05000000074505806
+# Upper loss rate for intensity level 2; increasing game units per second (0.001 to 10000.0)
+level2Upper = 0.10000000149011612
+# Upper loss rate for intensity level 3; increasing game units per second (0.001 to 10000.0)
+level3Upper = 0.20000000298023224
+# Upper loss rate for intensity level 4; increasing game units per second (0.001 to 10000.0)
+level4Upper = 0.3499999940395355
+# Upper loss rate for intensity level 5; increasing game units per second (0.001 to 10000.0)
+level5Upper = 0.6000000238418579
+# Upper loss rate for intensity level 6; increasing game units per second (0.001 to 10000.0)
+level6Upper = 1.0
+# Upper loss rate for intensity level 7; increasing game units per second (0.001 to 10000.0)
+level7Upper = 1.5
+# Upper loss rate for intensity level 8; increasing game units per second (0.001 to 10000.0)
+level8Upper = 2.25
+# Upper loss rate for intensity level 9; increasing game units per second (0.001 to 10000.0)
+level9Upper = 3.5
+# Optional harsh game balance: multiply blood loss. 1 is the default; no fixed death timer (1.0 to 20.0)
+catastrophicLossMultiplier = 1.0
+# Base active seconds of wound recovery; multiplied by injury severity (1 to 86400)
+woundHealingSeconds = 240
+# Restore tissue health gradually as wounds heal. Requires nutrition and circulation; untreated unstable fractures stop repair.
+naturalTissueHealing = true
+# Dressing integrity lost per active second at maximum exertion (0.0 to 0.1)
+dressingWearPerSecond = 0.0002
+# Fraction of external flow limited by a fresh plaster; game balance, not clinical efficacy (0.0 to 1.0)
+plasterPressure = 0.1
+bandagePressure = 0.25
+pressureBandagePressure = 0.85
+# Maximum fraction of compression lost when the dressing is fully wet (0.0 to 1.0)
+wetPressureLoss = 0.35
+# Maximum fraction of compression lost at full blood saturation (0.0 to 1.0)
+soakedPressureLoss = 0.25
+# Game contamination per active second of actual natural-water contact, not a clinical probability (0.0 to 1.0)
+naturalWaterContaminationPerSecond = 0.02
+# Ocean and beach biome water; game abstraction of salt-water exposure (0.0 to 1.0)
+seaWaterContaminationPerSecond = 0.08
+
+# Pain on a scale from 0 to 100.
+[pain]
+# Optional simplified game mode: acting analgesia protects against fracture load damage. False keeps tissue strength separate from pain.
+analgesicLoadProtection = false
+# Enable pain.
+enabled = true
+# Pain from a body part at 0 health (0.0 to 100.0)
+tissue = 25.0
+# Pain from an unsplinted fracture (0.0 to 100.0)
+unstableFracture = 20.0
+# Pain from a splinted fracture (0.0 to 100.0)
+splintedFracture = 10.0
+# Pain from an untreated severe injury (0.0 to 100.0)
+severeInjury = 35.0
+# Pain from a treated severe injury (0.0 to 100.0)
+treatedSevereInjury = 20.0
+# Pain from the worst possible burn (0.0 to 100.0)
+burn = 30.0
+# Pain from an open bleeding wound (0.0 to 100.0)
+bleeding = 5.0
+# Pain caused by a tourniquet (0.0 to 100.0)
+tourniquet = 10.0
+# Weight of the other body parts after the most painful one (0.0 to 1.0)
+otherPartsWeight = 0.25
+# Maximum pain spike from a new injury (0.0 to 100.0)
+spikeMaximum = 25.0
+# Pain spike per share of total max health lost (0.0 to 100.0)
+spikeFactor = 50.0
+# Seconds until a pain spike fades (1 to 86400)
+spikeSeconds = 10
+# Repeated hits in a short time deal slightly more damage.
+repeatedHitVulnerability = true
+# Extra damage share per recent hit (0.0 to 1.0)
+increasePerHit = 0.025
+# Maximum extra damage share (0.0 to 1.0)
+maximumIncrease = 0.25
+# Seconds without hits before the extra damage starts to fade (1 to 86400)
+recoveryDelaySeconds = 10
+# Seconds to forget one recent hit (1 to 86400)
+recoveryIntervalSeconds = 2
+# A serious injury briefly dulls pain through the body's stress response.
+adrenaline = true
+# Maximum share of pain dulled by the stress response (0.0 to 1.0)
+adrenalineMaximum = 0.4
+# Seconds the stress pain relief lasts (1 to 600)
+adrenalineSeconds = 60
+
+# Fainting from blood loss, pain and head trauma.
+[unconsciousness]
+# Enable unconsciousness.
+enabled = true
+# Minimum length of an episode in seconds (1 to 86400)
+minimumSeconds = 10
+# Maximum base length of an episode in seconds (1 to 86400)
+maximumSeconds = 20
+# Seconds of protection against fainting from pain again (1 to 86400)
+repeatCooldownSeconds = 45
+# Blood or circulation level that causes unconsciousness (0.0 to 99.0)
+bloodThreshold = 50.0
+# Circulation needed to wake up (1.0 to 100.0)
+wakeThreshold = 58.0
+# Own blood needed to wake up; saline does not count (0.0 to 100.0)
+minimumBloodToWake = 55.0
+# Chance to faint when hit while in severe pain (0.0 to 1.0)
+painHitChance = 0.1
+# Chance to faint from a new severe injury (0.0 to 1.0)
+severeInjuryChance = 0.18
+# Sprinting or jumping during blood loss can cause fainting.
+exertionFainting = true
+# Circulation below which exertion can cause fainting (0.0 to 100.0)
+exertionThreshold = 75.0
+# Maximum fainting chance per second of exertion (0.0 to 1.0)
+exertionChancePerSecond = 0.12
+
+# Broken bones and severe injuries.
+[fractures]
+# Severe injuries need a splint, a dressing and a trauma or surgical kit before they heal.
+severeNeedsFullTreatment = true
+# Seconds to heal a normal fracture (1 to 86400)
+normalRecoverySeconds = 120
+# Seconds to heal a severe injury (1 to 86400)
+severeRecoverySeconds = 300
+# Healing time after surgery, relative to a splint (0.05 to 1.0)
+surgeryRecoveryMultiplier = 0.8
+# Healing time after trauma kit aftercare, relative to a splint (0.05 to 1.0)
+traumaKitRecoveryMultiplier = 0.6
+# Share of limb health needed for the bone to heal (0.0 to 1.0)
+minimumHealthToHeal = 0.6
+# Unsplinted leg fractures cause limping, falls or crawling.
+unstableLegsLimitWalking = true
+# Share of a broken arm's max health lost each time it strikes or mines (0.0 to 1.0)
+armDamagePerBlock = 0.025
+
+# Burns from fire and heat.
+[burns]
+# Enable burns.
+enabled = true
+# Seconds to heal a light burn (1 to 86400)
+lightRecoverySeconds = 180
+# Seconds to heal a medium burn (1 to 86400)
+mediumRecoverySeconds = 600
+# Seconds to heal a severe burn (1 to 86400)
+severeRecoverySeconds = 1200
+# Burn severity gained per share of fire damage (0.0 to 4.0)
+damageMultiplier = 0.5
+# Share of burn pain removed by a dressing (0.0 to 1.0)
+dressingPainReduction = 0.4
+# Large burns lower circulation through plasma loss.
+plasmaLoss = true
+
+# Opium and morphine.
+[painkillers]
+# Share of pain removed by opium (0.0 to 1.0)
+opiumStrength = 0.6
+# Share of pain removed by morphine (0.0 to 1.0)
+morphineStrength = 0.9
+# Seconds opium lasts (1 to 86400)
+opiumSeconds = 120
+# Seconds morphine lasts (1 to 86400)
+morphineSeconds = 180
+# Seconds until opium reaches full strength (0 to 600)
+opiumOnsetSeconds = 40
+# Seconds until morphine reaches full strength (0 to 600)
+morphineOnsetSeconds = 15
+# Painkillers also restore a little health.
+restoreHealth = false
+
+# Short-term stamina and slowly accumulated fatigue (0-100). Exhaustion slows movement, attacks and mining; only fatigue above 80% can end in a collapse.
+[stamina]
+# Enable stamina and cumulative fatigue.
+enabled = true
+# Stamina spent per second of all-out sprinting, about 150 seconds from full. Work below the critical effort (walking, steady swimming) does not drain it (0.0 to 100.0)
+sprintDrainPerSecond = 0.667
+# Stamina regained per second when resting from empty; recovery slows as the reserve fills and while moving (0.0 to 100.0)
+restRecoveryPerSecond = 3.0
+# Fatigue gained per second of all-out work. Hard activity reaches about 60% within one game day, light walking adds none (0.0 to 100.0)
+fatigueGainPerSecond = 0.1
+# Fatigue recovered per second while standing still awake; walking recovers about half as fast (0.0 to 100.0)
+fatigueRestRecoveryPerSecond = 0.05
+# Fatigue recovered per second while lying in a bed. A completed night always removes all fatigue (0.0 to 100.0)
+fatigueBedRecoveryPerSecond = 0.4
+# Tired players can lie down in a bed during the day and rest. World time does not advance and other players are not affected; monsters nearby still prevent it.
+bedRest = true
+# Fatigue in percent needed to rest in a bed during the day (0.0 to 100.0)
+bedRestFatiguePercent = 60.0
+# Fatigue in percent at which a daytime rest ends and the player gets up (0.0 to 100.0)
+bedRestWakeFatiguePercent = 5.0
+# From 80% fatigue every newly reached percent risks a collapse: 1% at 80%, +2% per percent up to 31% at 95%, then +10% per percent.
+overexertionCollapse = true
+# Seconds a pending collapse waits for solid ground, away from water, lava, elytra flight and falls, before it happens anyway (0 to 600)
+collapseDelaySeconds = 30
+# When the player is alone on the server, a collapse sleeps through one whole day: world time advances by a day.
+collapseSkipsDay = true
+# Unconscious seconds of a collapse while other players are online; world time is not changed (10 to 86400)
+collapseSleepSeconds = 300
+# Food points lost when a collapse sleeps through a day (0 to 20)
+collapseFoodCost = 8
+
+# Game mobilization and intoxication; no tissue repair or real dosing instructions.
+[emergencyDrugs]
+# Active game seconds of injected mobilization (1 to 86400)
+adrenalineDurationSeconds = 120
+# Seconds until full mobilization (1 to 300)
+adrenalineOnsetSeconds = 3
+# Additional seconds after effect expiration before another use (1 to 86400)
+adrenalineCooldownSeconds = 300
+# Share of pain perception suppressed by game mobilization. Fractures remain (0.0 to 0.9)
+adrenalinePainSuppression = 0.35
+# Seconds for a full unit of intoxication to decay (1 to 86400)
+alcoholDurationSeconds = 360
+# Game intoxication per use; 1/6 gives one of six levels. Repeated drinking has no cooldown (0.01 to 1.0)
+alcoholGameDose = 0.16666666666666666
+# Respiratory interaction strength; game coefficient (0.0 to 2.0)
+alcoholOpioidRisk = 0.8
+
+# Tourniquets on arms and legs.
+[tourniquet]
+# Share of external bleeding stopped by a tourniquet (0.0 to 1.0)
+bleedingReduction = 0.95
+# Tissue fraction lost per active second after the ischemia warning; game balance (0.0 to 0.1)
+ischemiaRate = 0.0005
+# Active seconds before ischemia warning. The tourniquet stays on until explicitly removed (1 to 86400)
+durationSeconds = 120
+
+# Treating yourself and other players.
+[treatment]
+# Maximum distance in blocks to treat another player (1.0 to 6.0)
+maximumDistance = 3.0
+# Seconds to apply an elastic bandage (1 to 86400)
+elasticBandageSeconds = 2
+# Seconds to apply a splint (1 to 86400)
+splintSeconds = 3
+# Seconds to use a trauma kit (1 to 86400)
+traumaKitSeconds = 4
+# Seconds to use a surgical kit (1 to 86400)
+surgerySeconds = 8
+# Seconds to apply a tourniquet (1 to 86400)
+tourniquetSeconds = 2
+# Seconds to remove a tourniquet (1 to 86400)
+removeTourniquetSeconds = 2
+# Seconds for an injection (1 to 86400)
+injectionSeconds = 2
+# Seconds to take oral medication (1 to 86400)
+oralSeconds = 2
+# Golden apples close internal wounds.
+goldenAppleHealing = true
+# Share of internal bleeding closed by a golden apple (0.0 to 1.0)
+goldenAppleReduction = 0.5
+# Share of internal bleeding closed by an enchanted golden apple (0.0 to 1.0)
+enchantedAppleReduction = 1.0
+
+# Reusable medical items.
+[supplies]
+# Uses of a surgical kit (1 to 64)
+surgicalKitUses = 4
+# Give the tourniquet back when it is removed.
+returnTourniquet = true
+# Give an empty syringe back after a morphine injection.
+returnMorphineSyringe = true
+
+# Wound infection, antibiotic pills, broad-spectrum antibiotic packs and antibiotic injections.
+[antibiotics]
+# Untreated open wounds and burns can get infected.
+woundInfections = true
+# Contaminated seconds in the current wound exposure before infection grows. Full irrigation resets exposure, not established infection (1 to 86400)
+infectionDelaySeconds = 120
+# Game infection growth per second multiplied by remaining wound contamination. Dressings reduce new water ingress, not existing contamination (0.0 to 1.0)
+infectionGrowthPerSecond = 0.002
+# Game infection reduction per active second of an antibiotic injection. Oral pills use half this rate and pack doses use packDoseStrength; these are game balance values, not clinical efficacy (0.0 to 1.0)
+infectionTreatmentPerSecond = 0.006
+# Allow antibiotic doses with or without injuries. Repeat only after onset and effect end.
+enabled = true
+# Optional legacy game effects: pain relief, poison removal and faster tissue recovery. These are not clinical antibiotic effects.
+extraEffects = false
+# Damage from poison and harmful potions only heals while a medication is active. Needs extraEffects.
+restrictChemicalHealing = true
+# A pack dose or an antibiotic injection removes Hunger in legacy game mode. Needs extraEffects.
+clearHunger = true
+# A pack dose or an antibiotic injection removes Poison in legacy game mode. Needs extraEffects.
+clearPoison = true
+# Seconds until a pill takes effect (1 to 86400)
+pillOnsetSeconds = 10
+# Seconds a pill lasts (1 to 86400)
+pillSeconds = 120
+# Seconds until a dose from the broad-spectrum antibiotics pack takes effect; it is absorbed faster than a pill (1 to 86400)
+packDoseOnsetSeconds = 5
+# Seconds a pack dose keeps working; a longer course than a pill (1 to 86400)
+packDoseSeconds = 240
+# Strength of a pack dose against wound and systemic infection, relative to an injection. A pill is 0.5 (0.5 to 1.0)
+packDoseStrength = 0.8
+# Food poisoning treatment per active second of a pack dose. Pills and injections use the food_poisoning section (0.0 to 1.0)
+packFoodPoisoningTreatmentPerSecond = 0.006666666666666667
+# Seconds until an antibiotic injection takes effect (1 to 86400)
+injectionOnsetSeconds = 3
+# Seconds an antibiotic injection lasts (1 to 86400)
+injectionCourseSeconds = 180
+# Doses in an antibiotics pack (1 to 64)
+packUses = 3
+# Share of pain removed by a pill. Needs extraEffects (0.0 to 1.0)
+pillPainRelief = 0.25
+# Share of pain removed by a pack dose or an injection in legacy game mode. Needs extraEffects (0.0 to 1.0)
+packPainRelief = 0.7
+# Internal wound closed per second by a pill. Needs extraEffects (0.0 to 1.0)
+pillInternalRecovery = 0.002
+# Internal wound closed per second by a pack dose or an injection in legacy game mode. Needs extraEffects (0.0 to 1.0)
+packInternalRecovery = 0.005
+# Health restored per body part per second by a pack dose or an injection in legacy game mode. Needs extraEffects (0.0 to 10.0)
+packHealing = 0.025
+# Burn severity removed per second by a pack dose or an injection in legacy game mode. Needs extraEffects (0.0 to 1.0)
+packBurnRecovery = 0.0005
+
+# Food poisoning from raw or spoiled food, and nausea from poison effects.
+[food_poisoning]
+# Raw meat, raw fish and spoiled flesh can cause food poisoning. Items are chosen by the item tags in the firstaid:food_poisoning folder; cooked food is safe.
+enabled = true
+# Poison and other harmful poison or venom effects also cause nausea and vomiting, scaled by level and remaining time.
+poisonCausesVomiting = true
+# Multiplier for the per-portion contamination chance of each product (raw chicken 30%, pork 18%, beef 10%, mutton 12%, other raw meat 20%, raw fish 8%, spoiled flesh 85%) (0.0 to 10.0)
+chanceMultiplier = 1.0
+# Multiplier for the infective dose of each contaminated portion. More dose means a heavier, longer illness and a shorter incubation (0.0 to 10.0)
+doseMultiplier = 1.0
+# Game seconds per clinical hour of incubation and illness. 5 makes a 5-day course last about ten minutes (1.0 to 3600.0)
+secondsPerClinicalHour = 5.0
+# Illness severity (0-1) from which the illness no longer clears by itself and needs an antibiotic course (0.05 to 1.0)
+antibioticSeverity = 0.6
+# Treatment progress per active second of an antibiotic injection; 1 is a complete cure, 0.5 stops the illness from worsening (0.0 to 1.0)
+injectionTreatmentPerSecond = 0.008333333333333333
+# Treatment progress per active second of oral antibiotics (0.0 to 1.0)
+oralTreatmentPerSecond = 0.005
+# Fluid deficit added per second at full illness intensity (diarrhoea and vomiting). Saline or drinking water replace it (0.0 to 1.0)
+fluidLossPerSecond = 0.06
+# Share of torso health lost per second by a fully developed untreated complicated illness. Never below a quarter of torso health (0.0 to 0.1)
+complicationDamagePerSecond = 0.003
+
+# The First Aid nausea effect: slow waves of queasiness instead of the vanilla spinning screen.
+[nausea]
+# Food poisoning, poison, alcohol, internal bleeding, concussion, heavy blood loss and severe pain cause nausea.
+enabled = true
+# Vanilla Nausea on players (pufferfish, suspicious stew, commands, other mods) becomes the First Aid nausea effect with the same level and time. Off keeps the vanilla effect.
+replaceVanillaNausea = true
+
+# The Give up button in the medical screen: a scripted suicide chosen by the situation (no item: head against a wall, a low block or the floor).
+[surrender]
+# Show and allow the Give up button.
+enabled = true
+# Walk on foot to the nearest suitable wall or block before the animation. Off: always use the floor in place.
+walkToWall = true
+# Blocks searched around the player for a reachable wall or low block (1 to 12)
+searchRadius = 6
+# A movement key stops the animation before the point of no return.
+allowExit = true
+
+# The body after death: a physical ragdoll from the pose at the moment of death, pushed by what killed the player.
+[ragdoll]
+# Every player death drops a ragdoll body. Off: only the Give up animations use it.
+deathRagdoll = true
+# Seconds the body stays before it dissolves into smoke, for every viewer (1.0 to 30.0)
+corpseSeconds = 4.5
+# Strong explosions can tear the body apart.
+dismember = true
+# Blast load needed to tear off a limb; vanilla TNT next to the body is about 1, a creeper three blocks away about 0.35 (0.05 to 2.0)
+dismemberThreshold = 0.32
+# How readily blasts over the threshold tear the body apart; 0 turns dismemberment off (0.0 to 4.0)
+dismemberScale = 1.0
+
+# Silk plants and sleeping poppies.
+[plants]
+# Growth speed on rich soil from Farmer's Delight (1.0 to 10.0)
+richSoilGrowthMultiplier = 1.5
+
+[plants.silk]
+# Ticks until the first harvest (1200 to 2400000)
+firstHarvestTicks = 72000
+# Ticks until the next harvest (1200 to 2400000)
+regrowthTicks = 48000
+# Silk fibres per harvest (1 to 64)
+harvestAmount = 4
+# Silk fibres used per processing (1 to 64)
+processingCost = 2
+# Seconds to process silk (1 to 86400)
+processingSeconds = 1
+# Minimum string from processing (1 to 8)
+minimumString = 1
+# Maximum string from processing (1 to 8)
+maximumString = 2
+# Chance for one extra string (0.0 to 1.0)
+extraStringChance = 0.5
+
+[plants.poppy]
+# Ticks until a poppy matures (1200 to 2400000)
+growthTicks = 72000
+
+# Other mods.
+[compat]
+# Unconscious players cannot hear Simple Voice Chat.
+muteVoiceChatWhenUnconscious = true
+
+# Troubleshooting.
+[debug]
+# Write detailed damage and healing logs.
+debugLogging = false
