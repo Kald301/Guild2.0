@@ -1,21 +1,9 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-30 20:50:25
+ Fecha: 2026-10-31 10:36:58
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
-
-OBSOLETOS PODADOS (2)
-------------------------------------------------------------
-Su .jar ya no esta en la instancia de CurseForge: se borro el
-.pw.toml. A los jugadores se les borra el .jar solo en el proximo
-arranque (packwiz-installer borra lo que el mismo instalo y salio
-del pack).
-
-  * betther-create.pw.toml  (better_create-1.0.0-neoforge-1.21.1.jar)
-      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
-  * ycurrenci.pw.toml  (ycurrenci-2.1.0-neoforge-1.21.1.jar)
-      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)
 ------------------------------------------------------------
@@ -53,7 +41,7 @@ como archivo directo y no depende de ninguna API externa.
   * first-aid-enhanced-neoforge-1.21.1-2.0.0.jar
       .pw.toml borrado : first-aid-enhanced.pw.toml
       tamano           : 2.34 MB
-  * majruszs-difficulty-neoforge-1.21.1-1.1.6.jar
+  * majruszs-difficulty-neoforge-1.21.1-1.1.7.jar
       .pw.toml borrado : majruszs-progressive-difficulty-continued.pw.toml
       tamano           : 1.18 MB
   * skinlayers3d-neoforge-1.11.4-mc1.21.1.jar

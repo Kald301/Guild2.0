@@ -1,0 +1,9 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"swem:horse_armor_amethyst"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:horse_armor_netherite"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:horse_armor_diamond"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:horse_armor_gold"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:horse_armor_iron"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:horse_armor_amethyst_elven"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

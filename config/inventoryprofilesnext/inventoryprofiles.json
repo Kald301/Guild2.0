@@ -2,6 +2,21 @@
     "ModSettings": {
         "first_run": false
     },
+    "GuiSettings": {
+        "enable_profiles_ui": {
+            "value": false
+        },
+        "continuous_crafting_saved_value": false,
+        "change_sort_order_with_scroll_wheel": {
+            "value": false
+        },
+        "show_sort_in_columns_button": {
+            "value": false
+        },
+        "show_sort_in_rows_button": {
+            "value": false
+        }
+    },
     "AutoRefillSettings": {
         "allow_break_for_non_enchanted": {
             "value": true
@@ -12,6 +27,13 @@
         "number_of_notifications": 1,
         "audio_replace_success_notification": {
             "value": false
+        }
+    },
+    "Hotkeys": {
+        "sort_inventory": {
+            "main": {
+                "keys": "BUTTON_3"
+            }
         }
     }
 }

@@ -1,5 +1,9 @@
 [
   {"version":1},
+  {"ingredient":{"id":"firstaid:silk"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"betterend:silk_fiber"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"firstaid:silk_seeds"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:potion","components":"{\"minecraft:potion_contents\":{potion:\"minecraft:water\"}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"sliceanddice:slicer"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"supplementaries:ash_brick"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"torchmaster:megatorch"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -95,9 +99,5 @@
   {"ingredient":{"id":"swem:timothy_bale"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cgs:paper_cartridge"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"createfood:ground_beef"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createfood:raw_beef_meatball"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createfood:beef_meatball"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createfood:small_beef_meatballs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"createfood:beef_meatball_sandwich"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:flint"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"createfood:raw_beef_meatball"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

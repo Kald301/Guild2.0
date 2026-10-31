@@ -3,7 +3,7 @@
 # Health overlay.
 [hud]
 # Overlay style [OFF, NUMBERS, HEARTS, PLAYER_MODEL, PLAYER_MODEL_4_COLORS]
-overlayMode = "HEARTS"
+overlayMode = "PLAYER_MODEL"
 # Screen corner of the overlay [TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT]
 position = "TOP_RIGHT"
 # Horizontal offset from that corner (-32768 to 32767)

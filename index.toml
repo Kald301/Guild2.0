@@ -966,7 +966,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "294bcdf7be7e8bcfeab5cc08f16c1bedc36765b92b010f14ab1273f80708d077"
+hash = "a14a70569f887382bf9e9b6ec4d61f17c6d45d070bf4a6d362cbb9fcc77b11ea"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1838,7 +1838,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "4761c68f1f06e7f029e2666eadebb12c9925f7a132264af8c96ca68869e03927"
+hash = "ef1569cf76abdf9d0b92d7978b8bb1df5fdf4ed866004fd1fcb031dff285bf7a"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1846,7 +1846,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "7b9dd5a78b8f7b38447bc81ab9732cf561f3179a2f278156665be4758fffea2c"
+hash = "f180a366dd4b6e2dce7a9b6bd23d5815c09b894bf83cf92ea3b40d7263e8751a"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1854,7 +1854,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "2343302805d35e5cbb8b619dcd6a3de59c5a5b39d92c0777e0a6e7bdbb902152"
+hash = "ef1569cf76abdf9d0b92d7978b8bb1df5fdf4ed866004fd1fcb031dff285bf7a"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1914,7 +1914,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "1d3b2eb25bef74052dbb6250d3eafbcdd35824448a51310d440514c60f5d15d4"
+hash = "e76378e24fb42c7cb41a630b743b6aa7df31cb249613f7aad24452b33ea8eff4"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1958,7 +1958,7 @@ hash = "1356f9d52b2dcb2afa5a593e53c286d9c1c3778a6f8b1cf761953b185b7dce78"
 
 [[files]]
 file = "config/firstaid-client.toml"
-hash = "83536e424f86de302ecb023f080fc0fb11d57157d8cc3d161fd7f0bf72e187ac"
+hash = "fa111293336b9df48c75c42a0c8b6209eb2ec4a04635e778b8c912906b96232e"
 
 [[files]]
 file = "config/firstaid-common.toml"
@@ -2225,6 +2225,14 @@ file = "config/inventoryprofilesnext/Prueba Caves 3/villager-trading-config-v2.j
 hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
 
 [[files]]
+file = "config/inventoryprofilesnext/Prueba Rios/prev-villager-trading-config-v2.json"
+hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
+
+[[files]]
+file = "config/inventoryprofilesnext/Prueba Rios/villager-trading-config-v2.json"
+hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
+
+[[files]]
 file = "config/inventoryprofilesnext/PruebaCaves/prev-villager-trading-config-v2.json"
 hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
 
@@ -2342,7 +2350,7 @@ hash = "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "c2e3e7f8b3e006c78376d6db876502b4038ea494d00ae08b2bd1c761984f25a0"
+hash = "2c3c4195b0906aa6826e30a7fed31cda27a1e71b9cc9327f1f1c5bb4ed798d9b"
 
 [[files]]
 file = "config/inventoryprofilesnext/tectonicRial/prev-villager-trading-config-v2.json"
@@ -2378,7 +2386,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "8b033d2e7576146f836a1547a7ba2c9d8ad202ab65839536a5e455cb2d537ca8"
+hash = "8ae4d6dbd9d8609e278ef0d0b6c1395420cef93a4f155af410e28baf57669814"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2470,7 +2478,7 @@ hash = "86d7db5bbe4880e49f9cae695f63d9383b5640ab04f4b10a982881418d35ed8e"
 
 [[files]]
 file = "config/jei/client/jei-client.ini"
-hash = "cdadcf027b25930a10d7aa888883e78d0e3b1b46fb75b7982022130d9bb75d54"
+hash = "7259d4e958591aecae3625fcebdf7a4dd1e2193149373d5ebd78eb06576caca0"
 
 [[files]]
 file = "config/jei/client/jei-client.ini.bak.1"
@@ -2569,6 +2577,10 @@ file = "config/jei/world/local/Big/lookupHistory.json"
 hash = "e493094582f0327709934cf92139c6d67906a2e7de4fd60453cabbb482d3d4df"
 
 [[files]]
+file = "config/jei/world/local/Prueba Rios/lookupHistory.json"
+hash = "a761724e6ece2a1b4436363b4be24fb8b6edc90039d93f604d601addce301c59"
+
+[[files]]
 file = "config/jei/world/local/T1/lookupHistory.json"
 hash = "bbda8117182a5755a9076b439241e439b0de04989dc3adaf6b5429528921ad85"
 
@@ -2594,11 +2606,11 @@ hash = "4afd973f2e101fea8dd394daaa2ecd3bdbcafe074593199eccb9860ad531b8bb"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "b5c9f24621fbaab22c01d6caa3c4326048b8b821afc6cb956bb2d102bd52558a"
+hash = "41b7b051dd260aec55299b82329f0e49dc0643130518daf72ad1a160bd90c93c"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "53fb9b99d92d0e1b83c0b3e97fa2ca6b5f7f02e30f4de63df67f95f665efddbe"
+hash = "713ddcb0fef06ba239d14655c9168106d09d9e12c08354f16e39743f07975817"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -3238,7 +3250,7 @@ hash = "be9af3e19b88a658922582657794fd6a6683ac58d13dd7381fb682b4469c40d4"
 
 [[files]]
 file = "config/streamsreflowing.properties"
-hash = "4d8cdb68ac82535d93d167a9e61c09505a71651cf526226ac20687e8004f84f0"
+hash = "a1c6acb16c33c1e4df5ee93f1d637554b0149aa76d493b8d4fe0b8a46eec97fc"
 
 [[files]]
 file = "config/streamsreflowing/bank_features/.guide_version"
@@ -4038,7 +4050,7 @@ hash = "9757a6208de6780c7d86d61a75e997848a30a7e759f5e2f3e29d08ab7aa6383f"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "d1cbe282605f7d3410eb0214f7f648bd3b6f282f257ba93da9ecd6409868d8e5"
+hash = "83be163aba4caa2b805735977b067afbf4ed5a8ae1cf39d6e7e4f3b736c81e7b"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -4571,7 +4583,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "25f994ed1c270ba158ca477758419faf3a502c325e483ec6029276b1ac559847"
+hash = "bb5ef1d3b8ec3595f6d399baad46c2891c37cb1c83046cc1bce3970edeb8b58d"
 metafile = true
 
 [[files]]
@@ -5259,8 +5271,8 @@ hash = "85b0bb55b80d196b879fe6755cd7cc509f6ecd5706bb25acd43826da5335dd57"
 metafile = true
 
 [[files]]
-file = "mods/majruszs-difficulty-neoforge-1.21.1-1.1.6.jar"
-hash = "0703c90dc7f2a54e8f4ffb555347febb891646e7d9ab44da2ed0a285addcfcaf"
+file = "mods/majruszs-difficulty-neoforge-1.21.1-1.1.7.jar"
+hash = "437c9526fcaea55c5c8c7831ae99b6933b978e84071bd4ea421d20f67fa59b0c"
 
 [[files]]
 file = "mods/manyideas-core.pw.toml"
@@ -5279,7 +5291,7 @@ metafile = true
 
 [[files]]
 file = "mods/mca-quests.pw.toml"
-hash = "47fcd105d4eaa3dbd6373c5bd41021edcdf3edcb8a81c75819c321482a522af2"
+hash = "61988b550ef912e5302afda788ecc175933aa9d12939920dbdf44ec521b7c97d"
 metafile = true
 
 [[files]]
@@ -5593,7 +5605,7 @@ metafile = true
 
 [[files]]
 file = "mods/streams-reflowing.pw.toml"
-hash = "290f75e537f4dc6f9d4889ad84181d888a5365d393a2f5adb94524dad18719ca"
+hash = "61ddc7dae258ffbf75617011b8e1a4ee43de44e9deb46278406cba3e162db441"
 metafile = true
 
 [[files]]
@@ -5853,7 +5865,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "eed5a126dc883d3a074b7fcedc718b84754798c922a3f536ae48aebb748ec2b0"
+hash = "7c77ea264976e6496a7871dd81b83e301273c6f89c87da26e65774ee0de539ee"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"
