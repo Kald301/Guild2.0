@@ -1,9 +1,21 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-31 16:01:04
+ Fecha: 2026-10-31 16:41:05
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
+
+OBSOLETOS PODADOS (2)
+------------------------------------------------------------
+Su .jar ya no esta en la instancia de CurseForge: se borro el
+.pw.toml. A los jugadores se les borra el .jar solo en el proximo
+arranque (packwiz-installer borra lo que el mismo instalo y salio
+del pack).
+
+  * sable-trees.pw.toml  (sabletrees-neoforge-1.21.1-0.4.2.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
+  * sabletrees-dynamictrees-compat.pw.toml  (sabletrees_dtcompat-neoforge-1.21.1-0.8.0.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)
 ------------------------------------------------------------

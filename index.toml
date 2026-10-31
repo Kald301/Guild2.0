@@ -966,7 +966,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "ad2b4b7f2bde0176323b97ad6cfea88e36e0319c5095331ed4ac524387d2e07d"
+hash = "89312f100dbe056f5fc41c09fd7a732038cb1e18bda88d0d3df3e315ddfad4fd"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1934,7 +1934,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "09c47e9ea672a2409c8abd3076c992a5422e9ec61b60038e241aae22639c28f6"
+hash = "773149d1be477fe4e96542e23fed851d8290d644e7db2f4f5c023de207ccd9d2"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -2422,7 +2422,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "9639deee3886a2b6f5e7ad0626652af2abd0b9d1a969f1b9b3d0d2dcd3353a4a"
+hash = "db7ab076a177883ca9b6206f33fcc80f152c391e9035107c1eed97860f3f4094"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -5603,18 +5603,8 @@ hash = "5d1a0fefc09545d23a75f37a7cd8b7dcf817a7a57fe28f1419b19be92476dcaa"
 metafile = true
 
 [[files]]
-file = "mods/sable-trees.pw.toml"
-hash = "89be13be257b035b9eb98865e50733bc44c6c9e26ac52e5a09fc8bfbece6f279"
-metafile = true
-
-[[files]]
 file = "mods/sable.pw.toml"
 hash = "f2c81cf494b7b6c1063563d7377224cf64b29e0b86bcf87bcf4da8eb79b9c800"
-metafile = true
-
-[[files]]
-file = "mods/sabletrees-dynamictrees-compat.pw.toml"
-hash = "2483e269cb1e324a8ade461c064a5262b6488f65c66ac286a2c414d31293a749"
 metafile = true
 
 [[files]]
@@ -5978,7 +5968,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "2edea85c22c5519d280db3f3fcf8517f526b2542faf3217c8c5fddfdd233542c"
+hash = "d2d5f37f6c8004651c23b0d1ea67646ca040b2677610a1655bcae16ccb6e490e"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"
