@@ -50,4 +50,58 @@ ServerEvents.recipes(event => {
     'minecraft:diorite',
     'swem:star_worm'
   ]).id('swem:mineral_bone_meal')
+
+  // Gusano estrella (SWEM): da 4 en vez de 16.
+  // Original: 2x2 de roca de gusano estrella (#swem:star_worm_cobble) -> 16
+  event.remove({ id: 'swem:star_worm' })
+  event.shaped('4x swem:star_worm', [
+    'CC',
+    'CC'
+  ], {
+    C: '#swem:star_worm_cobble'
+  }).id('swem:star_worm')
+
+  // Herramientas y armaduras de netherita (SWEM): el original solo pide remaches de netherita.
+  // Ahora, donde la versión de diamante lleva placa de diamante, la de netherita lleva placa de netherita.
+  // Mismas formas que el original. R = remache de netherita, P = placa de netherita,
+  // B = versión de diamante, S = cuerda (solo botas de montar).
+  const netheriteGear = {
+    horse_armor: ['R R', 'PBP', 'P P'],
+    helmet: ['RPR', 'PBP'],
+    chestplate: ['P P', 'RBR', 'RPR'],
+    leggings: ['R R', 'PBP', 'R R'],
+    boots_riding: ['R R', 'SBS', 'P P'],
+    sword: ['P P', ' B ', 'R R'],
+    pickaxe: ['PRP', ' B ', ' R '],
+    axe: ['PR', 'PB', ' R'],
+    shovel: ['P', 'B', 'R'],
+    scythe: ['PPR', ' B ', ' R '],
+    bow: ['RP', ' B', 'RP'],
+    shield: ['PRP', ' B ', ' PR']
+  }
+  Object.keys(netheriteGear).forEach(gear => {
+    const key = {
+      R: 'swem:rivet_netherite',
+      P: 'swem:plate_netherite',
+      B: 'swem:' + gear + '_diamond'
+    }
+    if (gear == 'boots_riding') key.S = '#c:strings'
+    event.remove({ id: 'swem:' + gear + '_netherite' })
+    event.shaped('swem:' + gear + '_netherite', netheriteGear[gear], key).id('swem:' + gear + '_netherite')
+  })
+
+  // Caballos de piedra (SWEM): misma receta + una montura justo encima del bloque del centro.
+  // Original: "S  " / "SSS" / "S S" (S = piedra, pizarra profunda, diorita, andesita o granito)
+  const petRocks = ['stone', 'deepslate', 'diorite', 'andesite', 'granite']
+  petRocks.forEach(rock => {
+    event.remove({ id: 'swem:pet_rock_' + rock })
+    event.shaped('swem:pet_rock_' + rock, [
+      'SM ',
+      'SSS',
+      'S S'
+    ], {
+      S: 'minecraft:' + rock,
+      M: 'minecraft:saddle'
+    }).id('swem:pet_rock_' + rock)
+  })
 })

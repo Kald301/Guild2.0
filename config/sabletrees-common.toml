@@ -1,0 +1,5 @@
+#What happens to a tree once it has fallen and settled.
+#KEEP: it stays in the world as a physics body (you can walk on it, it floats, it rots).
+#BREAK: 2 seconds after settling it breaks into its logs and whatever its leaves drop.
+#Allowed Values: KEEP, BREAK
+fallenTrees = "BREAK"

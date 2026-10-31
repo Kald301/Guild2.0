@@ -1,0 +1,13 @@
+name = "Dynamic Trees - Regions Unexplored"
+filename = "dtru-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d92f2b915c949174e989f1c23e6dd218c107d3f6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8727671
+project-id = 1157051

@@ -1,0 +1,13 @@
+name = "Domino Trees (Dynamic Trees/Timber Tales addon)"
+filename = "dominotrees-neoforge-1.21.1-1.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "af85c4ce10d89c5ca83e78c8d40765d98b486358"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9343511
+project-id = 1585953

@@ -1,0 +1,13 @@
+name = "Dynamic Trees - Biomes O' Plenty"
+filename = "dtbop-3.4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fe3d3901a33bd2f18e917fc579859e67401330c8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7284398
+project-id = 289529

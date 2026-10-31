@@ -1,0 +1,13 @@
+name = "Dynamic Trees Addon Lib"
+filename = "DynamicTrees-AddonLib-DTteam-neoforge-1.21.1-0.2.0-BETA03.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6e62080422574375885ee3366a7b78a7cd1cfdd3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7556695
+project-id = 1404692

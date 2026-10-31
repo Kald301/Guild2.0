@@ -1,0 +1,13 @@
+name = "Dynamic Trees - Oh The Biomes We've Gone"
+filename = "dtbwg-1.1.0-BETA02.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "70652596042c6a74d395288d01b7e3b564661792"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7208105
+project-id = 1269211
