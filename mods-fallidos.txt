@@ -1,6 +1,6 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-10-30 20:11:27
+ Fecha: 2026-10-30 20:50:25
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
@@ -12,9 +12,9 @@ Su .jar ya no esta en la instancia de CurseForge: se borro el
 arranque (packwiz-installer borra lo que el mismo instalo y salio
 del pack).
 
-  * alexs-caves-better-combat.pw.toml  (alexscavesbettercombat-1.0.1.jar)
+  * betther-create.pw.toml  (better_create-1.0.0-neoforge-1.21.1.jar)
       motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
-  * alexs-caves-continued.pw.toml  (alexscaves-1.1.3-neoforge+1.21.1.jar)
+  * ycurrenci.pw.toml  (ycurrenci-2.1.0-neoforge-1.21.1.jar)
       motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)

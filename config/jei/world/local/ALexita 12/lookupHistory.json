@@ -1,5 +1,9 @@
 [
   {"version":1},
+  {"ingredient":{"id":"create_better_motors:brass_alternator"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_better_motors:copper_alternator"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_better_motors:andesite_alternator"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ycurrenci:guichecambio"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cold_sweat:goat_fur_helmet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cold_sweat:goat_fur_chestplate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"cold_sweat:goat_fur_leggings"},"type":"item_stack","bookmarkType":"INGREDIENT"},

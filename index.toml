@@ -966,7 +966,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "c03122f59449cb5d85a1f0dff481d4075ea8e8b280337a8adf666d34b17cb79b"
+hash = "294bcdf7be7e8bcfeab5cc08f16c1bedc36765b92b010f14ab1273f80708d077"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1914,7 +1914,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "c9151ac61f4e415a4a9c47573cf0db1fa8a5f506459bb2c92d1d1b876295e978"
+hash = "1d3b2eb25bef74052dbb6250d3eafbcdd35824448a51310d440514c60f5d15d4"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -2378,7 +2378,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "9d691d999fccd613de59915c1c0c8e22e34a68def454a20ce1acba07fc259bf7"
+hash = "8b033d2e7576146f836a1547a7ba2c9d8ad202ab65839536a5e455cb2d537ca8"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2558,7 +2558,7 @@ hash = "9054e39fed93611290711fdf1b98fdd779bdca67878bf5d5c9830b430a72cb0f"
 
 [[files]]
 file = "config/jei/world/local/ALexita 12/lookupHistory.json"
-hash = "2e549e802d4b7bd5353d7b3473f09d3a9a2856c3453aa048a95eef67bc4309ef"
+hash = "a272f751bf511b396765604ec30c57add7ea906a1b455d931534d8ecf1c02985"
 
 [[files]]
 file = "config/jei/world/local/Alexita 3/lookupHistory.json"
@@ -2598,7 +2598,7 @@ hash = "b5c9f24621fbaab22c01d6caa3c4326048b8b821afc6cb956bb2d102bd52558a"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "3cbb82c50d7c36ab0c8430b8193ae6d08d06e269736c9b80afbac81b651b5e73"
+hash = "53fb9b99d92d0e1b83c0b3e97fa2ca6b5f7f02e30f4de63df67f95f665efddbe"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -4038,7 +4038,7 @@ hash = "9757a6208de6780c7d86d61a75e997848a30a7e759f5e2f3e29d08ab7aa6383f"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "ba985e0ccc321417aff46fee8fe372231eb4eabf4120f9c988495a0bc31b60b7"
+hash = "d1cbe282605f7d3410eb0214f7f648bd3b6f282f257ba93da9ecd6409868d8e5"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -4293,10 +4293,6 @@ file = "kubejs/server_scripts/recipes.js"
 hash = "1ef0f20aa9794074ea4f9e16ed9ff4f99a2723d6ff3f8204a3601acb6eefa981"
 
 [[files]]
-file = "kubejs/server_scripts/zbb_no_build.js"
-hash = "cc4edc7ea4c8bcbe50f8ac761c60593fb881c43e2abfc39248fee9631c305b42"
-
-[[files]]
 file = "kubejs/startup_scripts/main.js"
 hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
 
@@ -4433,11 +4429,6 @@ metafile = true
 [[files]]
 file = "mods/betterend-neoforge.pw.toml"
 hash = "ec13d59b451e2f0d0417960850ec76aad125403d67169aa408f8a51b02d2aa7d"
-metafile = true
-
-[[files]]
-file = "mods/betther-create.pw.toml"
-hash = "4c593e93dcdf0c166420acd0f7fda468996c6a2e71c1b272164b898a8ecd1308"
 metafile = true
 
 [[files]]
@@ -5764,11 +5755,6 @@ hash = "492daa3391b6079b541685db276007b286774bab3b9881505127b7aef6b3f16c"
 metafile = true
 
 [[files]]
-file = "mods/ycurrenci.pw.toml"
-hash = "26b4682ea582930a9271c57279b1f7fc05832020b713078ccdd0981218a46082"
-metafile = true
-
-[[files]]
 file = "mods/yung-structures-addon-for-loot-integrations.pw.toml"
 hash = "c55a7700633fe3bf1e490aad3166bad5381902822ad8bc86c74663603698e036"
 metafile = true
@@ -5867,7 +5853,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "36118d024b3780cbd03ecd08d9461115ec9596f0dbdd7a03dae077a5e4c06c3d"
+hash = "eed5a126dc883d3a074b7fcedc718b84754798c922a3f536ae48aebb748ec2b0"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"
