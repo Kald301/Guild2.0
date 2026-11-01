@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:redwood_forest"
+  ],
+  "min_temp": 0.4875,
+  "max_temp": 1.1125,
+  "units": "mc"
+}

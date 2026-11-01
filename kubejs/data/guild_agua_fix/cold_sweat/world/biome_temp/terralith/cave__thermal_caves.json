@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:cave/thermal_caves"
+  ],
+  "min_temp": 0.442857,
+  "max_temp": 1.157143,
+  "units": "mc"
+}

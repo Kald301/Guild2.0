@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:gravel_beach"
+  ],
+  "min_temp": 0.116667,
+  "max_temp": 0.783333,
+  "units": "mc"
+}

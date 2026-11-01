@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:cave/mantle_caves"
+  ],
+  "min_temp": 1.5,
+  "max_temp": 2.5,
+  "units": "mc"
+}

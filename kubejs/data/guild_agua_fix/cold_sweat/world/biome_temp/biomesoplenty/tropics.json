@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:tropics"
+  ],
+  "min_temp": 0.7,
+  "max_temp": 1.2,
+  "units": "mc"
+}

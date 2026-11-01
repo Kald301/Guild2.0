@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:valley_clearing"
+  ],
+  "min_temp": -0.6,
+  "max_temp": 1.4,
+  "units": "mc"
+}

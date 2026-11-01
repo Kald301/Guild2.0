@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:sierra_badlands"
+  ],
+  "min_temp": 0.745455,
+  "max_temp": 1.654545,
+  "units": "mc"
+}

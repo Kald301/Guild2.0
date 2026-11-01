@@ -76,7 +76,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# The position of the world temperature gauge relative to default
 	# ⌄ 
-	"World Temperature UI Offset" = [-214, 0]
+	"World Temperature UI Offset" = [-361, 0]
 	#─────────────────────────────────────────────────────────────────────────
 	# Enables the world temperature gauge next to the hotbar
 	# ⌄ 

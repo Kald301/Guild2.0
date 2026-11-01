@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:wintry_forest"
+  ],
+  "min_temp": -0.857143,
+  "max_temp": -0.142857,
+  "units": "mc"
+}

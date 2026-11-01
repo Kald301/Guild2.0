@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:pale_bog"
+  ],
+  "min_temp": 0.536842,
+  "max_temp": 1.063158,
+  "units": "mc"
+}

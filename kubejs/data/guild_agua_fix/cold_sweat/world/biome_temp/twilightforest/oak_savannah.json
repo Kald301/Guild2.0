@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:oak_savannah"
+  ],
+  "min_temp": 0.4,
+  "max_temp": 1.4,
+  "units": "mc"
+}

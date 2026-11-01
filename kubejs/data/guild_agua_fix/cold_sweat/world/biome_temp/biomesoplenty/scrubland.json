@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:scrubland"
+  ],
+  "min_temp": 0.665217,
+  "max_temp": 1.534783,
+  "units": "mc"
+}

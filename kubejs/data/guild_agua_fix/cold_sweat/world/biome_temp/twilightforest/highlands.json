@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:highlands"
+  ],
+  "min_temp": 0.105882,
+  "max_temp": 0.694118,
+  "units": "mc"
+}

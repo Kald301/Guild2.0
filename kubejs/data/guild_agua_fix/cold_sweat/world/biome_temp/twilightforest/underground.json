@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:underground"
+  ],
+  "min_temp": 0.2,
+  "max_temp": 1.2,
+  "units": "mc"
+}

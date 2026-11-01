@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "quark"
+  ],
+  "biomes": [
+    "quark:glimmering_weald"
+  ],
+  "min_temp": 0.442857,
+  "max_temp": 1.157143,
+  "units": "mc"
+}

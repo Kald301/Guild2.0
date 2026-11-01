@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:temperate_grove"
+  ],
+  "min_temp": 0.472222,
+  "max_temp": 1.027778,
+  "units": "mc"
+}

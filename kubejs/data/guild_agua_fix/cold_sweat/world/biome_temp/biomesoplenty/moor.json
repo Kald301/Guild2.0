@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:moor"
+  ],
+  "min_temp": 0.2875,
+  "max_temp": 0.9125,
+  "units": "mc"
+}

@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:emerald_peaks"
+  ],
+  "min_temp": -0.257143,
+  "max_temp": 0.457143,
+  "units": "mc"
+}

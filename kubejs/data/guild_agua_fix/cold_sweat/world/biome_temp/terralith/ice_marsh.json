@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:ice_marsh"
+  ],
+  "min_temp": -0.123158,
+  "max_temp": 0.403158,
+  "units": "mc"
+}

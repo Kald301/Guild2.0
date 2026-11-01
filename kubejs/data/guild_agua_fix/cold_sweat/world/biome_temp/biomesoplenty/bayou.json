@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:bayou"
+  ],
+  "min_temp": 0.686842,
+  "max_temp": 1.213158,
+  "units": "mc"
+}

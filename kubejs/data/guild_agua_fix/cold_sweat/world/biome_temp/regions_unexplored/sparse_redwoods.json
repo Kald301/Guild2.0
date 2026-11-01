@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:sparse_redwoods"
+  ],
+  "min_temp": 0.722222,
+  "max_temp": 1.277778,
+  "units": "mc"
+}

@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:cave/andesite_caves"
+  ],
+  "min_temp": 0.615385,
+  "max_temp": 1.384615,
+  "units": "mc"
+}

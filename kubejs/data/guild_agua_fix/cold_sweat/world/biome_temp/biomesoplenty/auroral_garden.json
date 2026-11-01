@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:auroral_garden"
+  ],
+  "min_temp": -0.583333,
+  "max_temp": 0.083333,
+  "units": "mc"
+}

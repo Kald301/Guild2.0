@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "extradelight"
+  ],
+  "biomes": [
+    "extradelight:cornfield"
+  ],
+  "min_temp": 4.642857,
+  "max_temp": 5.357143,
+  "units": "mc"
+}

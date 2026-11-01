@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:tundra"
+  ],
+  "min_temp": -0.8,
+  "max_temp": 0.2,
+  "units": "mc"
+}

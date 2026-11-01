@@ -6,7 +6,7 @@
   },
   "min": {
     "//": "The lowest possible value for the attribute.",
-    "//default": NaN,
+    "//default": -Infinity,
     "value": NaN
   },
   "max": {

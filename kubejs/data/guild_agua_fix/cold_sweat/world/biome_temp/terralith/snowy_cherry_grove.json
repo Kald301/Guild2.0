@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:snowy_cherry_grove"
+  ],
+  "min_temp": -0.177778,
+  "max_temp": 0.377778,
+  "units": "mc"
+}

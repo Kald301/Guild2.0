@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:rocky_shrubland"
+  ],
+  "min_temp": 0.12381,
+  "max_temp": 1.076191,
+  "units": "mc"
+}

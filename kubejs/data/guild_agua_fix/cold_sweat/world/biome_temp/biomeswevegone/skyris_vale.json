@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:skyris_vale"
+  ],
+  "min_temp": -0.027778,
+  "max_temp": 0.527778,
+  "units": "mc"
+}

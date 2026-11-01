@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:snowy_forest"
+  ],
+  "min_temp": -0.173158,
+  "max_temp": 0.353158,
+  "units": "mc"
+}

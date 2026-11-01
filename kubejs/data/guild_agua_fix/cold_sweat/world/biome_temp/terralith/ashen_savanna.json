@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:ashen_savanna"
+  ],
+  "min_temp": 0.5,
+  "max_temp": 1.5,
+  "units": "mc"
+}

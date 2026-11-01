@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "betterend"
+  ],
+  "biomes": [
+    "betterend:umbrella_jungle"
+  ],
+  "min_temp": 0.166667,
+  "max_temp": 0.833333,
+  "units": "mc"
+}

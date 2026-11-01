@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:lavender_field"
+  ],
+  "min_temp": 0.505882,
+  "max_temp": 1.094118,
+  "units": "mc"
+}

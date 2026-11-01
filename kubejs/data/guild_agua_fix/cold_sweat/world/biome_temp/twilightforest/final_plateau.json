@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:final_plateau"
+  ],
+  "min_temp": 0.583333,
+  "max_temp": 1.416667,
+  "units": "mc"
+}

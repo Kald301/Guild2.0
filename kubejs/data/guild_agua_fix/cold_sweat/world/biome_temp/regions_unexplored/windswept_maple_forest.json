@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:windswept_maple_forest"
+  ],
+  "min_temp": 0.4125,
+  "max_temp": 1.0375,
+  "units": "mc"
+}

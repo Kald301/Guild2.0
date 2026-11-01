@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:lush_valley"
+  ],
+  "min_temp": 0.122222,
+  "max_temp": 0.677778,
+  "units": "mc"
+}

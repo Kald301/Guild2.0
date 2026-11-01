@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:amaranth_grassland"
+  ],
+  "min_temp": 0.442857,
+  "max_temp": 1.157143,
+  "units": "mc"
+}

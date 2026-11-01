@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:red_rock_peaks"
+  ],
+  "min_temp": 0.745455,
+  "max_temp": 1.654545,
+  "units": "mc"
+}

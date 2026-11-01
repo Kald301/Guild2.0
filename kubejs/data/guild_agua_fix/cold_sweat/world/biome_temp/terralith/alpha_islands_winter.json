@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:alpha_islands_winter"
+  ],
+  "min_temp": -0.285714,
+  "max_temp": 0.285714,
+  "units": "mc"
+}

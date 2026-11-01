@@ -1,0 +1,12 @@
+[debugCapture]
+	#Suppress teleport, chunk, and entity sync packets for the capture player during debug structure capture.
+	silentCaptureTeleport = true
+	#Number of structure chunks to load per tick during debug structure capture.
+	# Default: 8
+	# Range: 1 ~ 64
+	chunkLoadsPerTick = 8
+	#Ticks to wait before sampling mobs after each structure is prepared.
+	#每个结构准备完成后，采样生物前等待的 tick 数。
+	# Default: 10
+	# Range: 0 ~ 200
+	mobWaitTicks = 10

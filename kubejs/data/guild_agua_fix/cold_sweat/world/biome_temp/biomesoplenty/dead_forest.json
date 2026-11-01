@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:dead_forest"
+  ],
+  "min_temp": -0.184615,
+  "max_temp": 0.584615,
+  "units": "mc"
+}

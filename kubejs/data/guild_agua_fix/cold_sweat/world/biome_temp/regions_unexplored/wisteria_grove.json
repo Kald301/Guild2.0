@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:wisteria_grove"
+  ],
+  "min_temp": 0.82973,
+  "max_temp": 1.37027,
+  "units": "mc"
+}

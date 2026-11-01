@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:old_growth_golden_boreal_taiga"
+  ],
+  "min_temp": 0.065385,
+  "max_temp": 0.834615,
+  "units": "mc"
+}

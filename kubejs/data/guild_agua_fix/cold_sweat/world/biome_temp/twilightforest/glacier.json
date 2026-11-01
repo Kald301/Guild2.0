@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:glacier"
+  ],
+  "min_temp": -0.374545,
+  "max_temp": 0.534545,
+  "units": "mc"
+}

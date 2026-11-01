@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:old_growth_forest"
+  ],
+  "min_temp": 0.4875,
+  "max_temp": 1.1125,
+  "units": "mc"
+}

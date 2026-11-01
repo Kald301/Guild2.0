@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:lush_savanna"
+  ],
+  "min_temp": 0.566667,
+  "max_temp": 1.233333,
+  "units": "mc"
+}

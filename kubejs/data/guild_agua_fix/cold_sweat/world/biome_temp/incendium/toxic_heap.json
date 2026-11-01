@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "incendium"
+  ],
+  "biomes": [
+    "incendium:toxic_heap"
+  ],
+  "min_temp": 1.5,
+  "max_temp": 2.5,
+  "units": "mc"
+}

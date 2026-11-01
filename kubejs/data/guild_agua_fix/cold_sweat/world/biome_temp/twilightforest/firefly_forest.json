@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:firefly_forest"
+  ],
+  "min_temp": 0.25,
+  "max_temp": 0.75,
+  "units": "mc"
+}

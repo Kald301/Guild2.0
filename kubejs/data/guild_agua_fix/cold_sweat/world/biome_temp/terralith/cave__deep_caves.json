@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:cave/deep_caves"
+  ],
+  "min_temp": 0.215385,
+  "max_temp": 0.984615,
+  "units": "mc"
+}

@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:snowy_maple_forest"
+  ],
+  "min_temp": -0.316667,
+  "max_temp": 0.516667,
+  "units": "mc"
+}

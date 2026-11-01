@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:lake"
+  ],
+  "min_temp": 0.41,
+  "max_temp": 0.91,
+  "units": "mc"
+}

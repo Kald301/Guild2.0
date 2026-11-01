@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:wintry_origin_valley"
+  ],
+  "min_temp": -0.5625,
+  "max_temp": 0.0625,
+  "units": "mc"
+}

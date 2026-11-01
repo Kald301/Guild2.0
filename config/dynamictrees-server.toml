@@ -7,7 +7,7 @@
 	#The minimum chance for seed dropping from leaves when a seasonal mod is installed. 0 = during the off season seeds never drop from leaves, 1 = seeds will drop at maximum rate during the entire year. Can be fractional.
 	# Default: 0.15
 	# Range: 0.0 ~ 1.0
-	minSeasonalLeavesSeedDropRate = 0.15
+	minSeasonalLeavesSeedDropRate = 0.5
 	#The rate at which seeds voluntarily drop from branches
 	# Default: 0.01
 	# Range: 0.0 ~ 1.0
@@ -23,7 +23,7 @@
 	#Ticks before a seed in the world attempts to plant itself or despawn. 1200 = 1 minute
 	# Default: 1200
 	# Range: 0 ~ 6000
-	seedTimeToLive = 1200
+	seedTimeToLive = 6000
 	#If enabled then seeds will only voluntarily plant themselves in forest-like biomes.
 	seedOnlyForest = false
 	#The minimum forestness that non-forest-like biomes can have. 0 = is not at all a forest, 1 = may as well be a forest. Can be fractional.

@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:white_cliffs"
+  ],
+  "min_temp": 0.015385,
+  "max_temp": 0.784615,
+  "units": "mc"
+}

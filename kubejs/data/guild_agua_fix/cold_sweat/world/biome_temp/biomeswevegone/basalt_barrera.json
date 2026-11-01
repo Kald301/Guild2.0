@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:basalt_barrera"
+  ],
+  "min_temp": 0.564286,
+  "max_temp": 1.135714,
+  "units": "mc"
+}

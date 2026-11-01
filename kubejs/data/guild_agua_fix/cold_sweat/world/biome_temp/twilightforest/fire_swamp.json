@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:fire_swamp"
+  ],
+  "min_temp": 0.642857,
+  "max_temp": 1.357143,
+  "units": "mc"
+}

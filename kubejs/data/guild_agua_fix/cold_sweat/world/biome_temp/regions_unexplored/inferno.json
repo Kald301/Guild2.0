@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:inferno"
+  ],
+  "min_temp": 1.5,
+  "max_temp": 2.5,
+  "units": "mc"
+}

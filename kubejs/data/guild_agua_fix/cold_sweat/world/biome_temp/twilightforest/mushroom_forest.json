@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:mushroom_forest"
+  ],
+  "min_temp": 0.522222,
+  "max_temp": 1.077778,
+  "units": "mc"
+}

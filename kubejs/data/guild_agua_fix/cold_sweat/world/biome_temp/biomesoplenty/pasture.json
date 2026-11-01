@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:pasture"
+  ],
+  "min_temp": 0.415385,
+  "max_temp": 1.184615,
+  "units": "mc"
+}

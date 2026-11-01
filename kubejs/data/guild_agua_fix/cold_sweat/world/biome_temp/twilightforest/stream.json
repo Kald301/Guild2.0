@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "twilightforest"
+  ],
+  "biomes": [
+    "twilightforest:stream"
+  ],
+  "min_temp": 0.045455,
+  "max_temp": 0.954545,
+  "units": "mc"
+}

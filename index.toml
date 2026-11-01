@@ -10,7 +10,7 @@ hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "30ff9cfcc6f8dfcaea9bb0c7c0c2fabdea93c68d7c03767e8e9a9e8c73e43fd7"
+hash = "6722d3466f383d506ba67ba56c20564bbe2c33214500df578270360b3bde482c"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -550,7 +550,7 @@ hash = "753bdbb0cff81ca77562a88ebcda6ae1c633d0042a12f2f9ec016a966c6ee6c7"
 
 [[files]]
 file = "config/attributefix/cold_sweat/base_temperature.json"
-hash = "1c5e23931e91f5eb0cfadff6d06a09dd29baf3ebda4b9f49f7ebf32f27a9de05"
+hash = "7e74f073fec5def597e7557238c5cce7e9ed9e7b276a9f461bbb404d9018d1ba"
 
 [[files]]
 file = "config/attributefix/cold_sweat/burning_point.json"
@@ -578,11 +578,11 @@ hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
 
 [[files]]
 file = "config/attributefix/cold_sweat/temperature_rate.json"
-hash = "1c5e23931e91f5eb0cfadff6d06a09dd29baf3ebda4b9f49f7ebf32f27a9de05"
+hash = "7e74f073fec5def597e7557238c5cce7e9ed9e7b276a9f461bbb404d9018d1ba"
 
 [[files]]
 file = "config/attributefix/cold_sweat/world_temperature.json"
-hash = "1c5e23931e91f5eb0cfadff6d06a09dd29baf3ebda4b9f49f7ebf32f27a9de05"
+hash = "7e74f073fec5def597e7557238c5cce7e9ed9e7b276a9f461bbb404d9018d1ba"
 
 [[files]]
 file = "config/attributefix/combat_roll/count.json"
@@ -966,7 +966,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "909f02dbfe8fdae63471f60dcfd1544f54ecae0c1bb450d014504a0b42aa3cad"
+hash = "ded6382c658cfdf727707fa194272da124ce7181e4622a9f41658c38306458d7"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1006,7 +1006,7 @@ hash = "730b13a15e01a03825fc40477758799ed8801c783d9cf829867c43c1b08f7ad9"
 
 [[files]]
 file = "config/betterdays-common.toml"
-hash = "b4974b1b6c5773b9451ff3a168ddb64b49890aa19b3b5242e89a339d1b0eed96"
+hash = "e8470a216d53e5a806b69538bb880f1821479cdf429d6bc5f745c089593251af"
 
 [[files]]
 file = "config/betterdeserttemples-neoforge-1_21.toml"
@@ -1162,7 +1162,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
+hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
 
 [[files]]
 file = "config/block_factorys_bosses-client.toml"
@@ -1242,7 +1242,7 @@ hash = "9bbcd79887fd495801e28733a5c4e59b6ba7a1a51c45c6782d03804e6557abef"
 
 [[files]]
 file = "config/coldsweat/client.toml"
-hash = "fbe1dd15216002b378644ea97dd85c0ba25967aad7e843bacd7a61bab6cfe38f"
+hash = "5a227dc1881d020f0ad1ae626b31fdcb3f0fa4596d8ecd233c8c5bec89b1fdb4"
 
 [[files]]
 file = "config/coldsweat/disabled_mods.txt"
@@ -1258,11 +1258,11 @@ hash = "a29dca898bf02ffeaeb73a3bb792b4b1cb9ca423d69451df7217bdde84275ed4"
 
 [[files]]
 file = "config/coldsweat/main.toml"
-hash = "5ce71e3b1e87a10734366dbe8397601a66fe3f8bb2c6b0e8848fe3ed3e2ee062"
+hash = "ce087601848ee62f69304fe5d7b7f0a8faf3915e48e7118dca76b3c44b759e24"
 
 [[files]]
 file = "config/coldsweat/world.toml"
-hash = "eafc64eefaa92e3deb60874e48c520e687fff9e2eb8a2071c61b2871406991f9"
+hash = "782d1a41c36f96e73a09f55a4958310020d3a7d6d870532045350660df2999dc"
 
 [[files]]
 file = "config/combat_roll/client.json5"
@@ -1778,11 +1778,11 @@ hash = "5df33a55d688eb2dea2e918cd698ccbbd84fc9993bb9f74849bac5482e7c1595"
 
 [[files]]
 file = "config/dynamictrees-common.toml"
-hash = "b43ef337537453bd26d678001997f974ef4d04b8fdb3cffcebcf4332985a0d49"
+hash = "9a31721fb2d0ba912eb427dde10079da5b55e84eaaf033419f0f26931759dd50"
 
 [[files]]
 file = "config/dynamictrees-server.toml"
-hash = "a1e5b7200cb0c45088b9cddbb26dd4b4f8343c981138b33e1dade02f88e49c8b"
+hash = "fc6e96377069598eb6e2b8abe03d77e331173a4427e1689230a93dc109922523"
 
 [[files]]
 file = "config/dynamictreesplus-common.toml"
@@ -1858,7 +1858,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "914c62f6dadb89bfcbae3853d87f2102af76a4c399e854de52f7480adfe79571"
+hash = "8755333b79f9301369072115a40a3cdb61956bdb0790358db92379e4328ce868"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1866,7 +1866,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "bd3c2cf2d3d24313482c8b529bf7eb430f0e114a8228c9c1b06313c070dbf816"
+hash = "8755333b79f9301369072115a40a3cdb61956bdb0790358db92379e4328ce868"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1874,7 +1874,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "914c62f6dadb89bfcbae3853d87f2102af76a4c399e854de52f7480adfe79571"
+hash = "518d5445d76ce2b792fad0c17e401df1e8674c7f0bb03a808caf4357db81699b"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1934,7 +1934,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "47d1cd18a20ae625ac4191df00021b4853ece072e728ffac6e91a7a25983c46d"
+hash = "b814e77db7d59b00fb332ca3152eb660612d94745a7870585049e49fca363cbc"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -2422,11 +2422,11 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "f3439cbef49f2eb85779564376c5f90ca0d8788ce2cada5ef9977b4976f4a1be"
+hash = "14ed9770229f8923faa043d5c5bb502257722838a969329cd0002aba3052319f"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
-hash = "d99fbf4650e452dcafe6c2e16b1f7cac9da1b0dfbb49272f682898b09872bdc5"
+hash = "66a81a5d61926e1a1d2c862d8ab1fc548bb86bba7315f66f27847238824405b1"
 
 [[files]]
 file = "config/iriscaves-client.toml"
@@ -2633,6 +2633,10 @@ file = "config/jei/world/local/Test tard/lookupHistory.json"
 hash = "cc432f254b072f54fb25c660517f2387d20f16183ac64d48c3b4ed20419be5e2"
 
 [[files]]
+file = "config/jei/world/local/TestArbolitos/lookupHistory.json"
+hash = "1da26bac73542c6b68ed60ec6fb82129ffd961a4d56a0dfcdfe26415a79b7a15"
+
+[[files]]
 file = "config/jei/world/local/testlocal/lookupHistory.json"
 hash = "4b2288de14dcc166424ac377ae766b1ed10ca15f7fb7086c09b2031c2563e464"
 
@@ -2642,11 +2646,11 @@ hash = "4afd973f2e101fea8dd394daaa2ecd3bdbcafe074593199eccb9860ad531b8bb"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "90d3ed63ba5f0edad52d68a5d76f2c360918646a0cd4a602d9a77412babfc159"
+hash = "45c96bbc62e337144b9e3126fe6420958a47b2a2c184fce3d2c05d692758759b"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "c1ffa07974e1275fec68d1907fe6b42a60c89545b736c98e4319c38e2ea142a5"
+hash = "fe579269d7420a602fb5377654986ba98f9e930b87a6baafabaeda805b28cc12"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -2657,8 +2661,12 @@ file = "config/jei_plus_plus-client.toml"
 hash = "25360558025a4fd3ea2a8a8cf19441b1cf7ce6f33489f50a63ae2c8df17a256b"
 
 [[files]]
-file = "config/jei_structures-common.toml"
+file = "config/jei_structures-common-1.toml.bak"
 hash = "3199ccfc108d4655534b53666739f69f563c397ba2dcc38ba70813353bd777be"
+
+[[files]]
+file = "config/jei_structures-common.toml"
+hash = "d9d6f3044991a2a0b36716347d64d9a8ab3279129f15b28314b27edfef775199"
 
 [[files]]
 file = "config/jei_structures/structure_index.cache"
@@ -4094,7 +4102,7 @@ hash = "9757a6208de6780c7d86d61a75e997848a30a7e759f5e2f3e29d08ab7aa6383f"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "c0cd972073e5a0744616499da76cd1644856d2ba4feb4f6f400b6f09689f46b1"
+hash = "3555a3c7532ace0cbfb0e4e9e42735439befed862f7844b4d054e9136ae0cc94"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -4283,6 +4291,786 @@ hash = "fb64e99bfa3ebdfc1071acb87d2d1602b2bae0bd411c81a154713e849fda613a"
 [[files]]
 file = "kubejs/data/ctov/lithostitched/worldgen_modifier/rats/snowy.json"
 hash = "6bde48e16a42c839293418849d63715a80e8daeefdff77ac1fe6bab2b3172936"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/amber_land.json"
+hash = "0277b1d9060fcea10b35a42ea18f8dc33cd44ab52478da0e43784d02f9991299"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/blossoming_spires.json"
+hash = "e889401751f28c4b620499abaef36363b3fb5ecb279e87771e0503feee6bcb0b"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/chorus_forest.json"
+hash = "f000fa5493cc9d61747aa2d102f84ebdd53face6a21f7a4a99896565f6508c76"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/crystal_mountains.json"
+hash = "cf17ee4a26bb67b4072d72e4606b29f550621b2c126d7c76f48363f909c7cc7f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/dragon_graveyards.json"
+hash = "11391f025415d0885f481268840348e3242ee851420490b75e97384467d4d072"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/dry_shrubland.json"
+hash = "6aaa57ae440400eaa108e3d141c33a581305f7b717e6d9c900e48fd9294d0e26"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/dust_wastelands.json"
+hash = "d25d682a7fa9c101e034b3f041f9f98aac6cc7c407b784d7172747d35f89bfb3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/empty_aurora_cave.json"
+hash = "cd4cb4d89d0d5f4dd08448813f1ce22543d590517de8cd7f1869eea132bf2e82"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/empty_end_cave.json"
+hash = "2e0764b5ee0263d1d5f672d01242126709780bc49ae9512c3a491ecb9845afa0"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/empty_smaragdant_cave.json"
+hash = "0e1bb458555fe858f3ebc280e0ac0de0cbdc18df340c425885108bd5b6ebb725"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/flower_islets.json"
+hash = "cf7d3db6dd945bf1434f6170cef760ade7f19187683e0750d2236cef5e41e9f5"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/foggy_mushroomland.json"
+hash = "2cfcca9532cfe924632a76bcf6a82499abcaff05ce9e97d7763ebe210048d9c4"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/glowing_grasslands.json"
+hash = "17a8948cc9e3a22c9a9024ad91bfe08f68767e113bb4082032a2e6c17aa31517"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/ice_starfield.json"
+hash = "f3945c0afd44797174c3594ab6b2207ea0afc386bf204d2575a732e0381710e5"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/jade_cave.json"
+hash = "169735c17ca7a330681940c1b218867de5ac5ff294ef81b936606903d4043c49"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/lantern_woods.json"
+hash = "6279160f7ff636e4ad0d62d849cdecbe14cf0e95fa1e2c94df0fc81910233892"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/lush_aurora_cave.json"
+hash = "2e22d291a03085060bf2bdb6dc41fc8bdb6187785ea49ea71f04fa9ef5b274b8"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/lush_smaragdant_cave.json"
+hash = "4e3ed2de9e446005b3eba4db41dd274e9ff6f92810c0b90db21561565b45d33b"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/megalake.json"
+hash = "18e6db4530152ae0a54b8df97318bf5a329824d2451635b0a70bf08625b70bc9"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/megalake_grove.json"
+hash = "d3062ff9e2501fb91b7b33daa380c945c2f0e8adfe77c572f87084ebce8fc301"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/neon_oasis.json"
+hash = "20862528ef240413b0be846b8425dbe3be272d7e098d89cf9da9f20747b1e5aa"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/painted_mountains.json"
+hash = "df5f2662dbe8410a16fe115968dab123d9ec6302771cd02e1632d62e35e47ebc"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/shadow_forest.json"
+hash = "b637c45e3af33ee442134a417ac403f8041075a552550b5791a344bf81e0f5e4"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/sulphur_springs.json"
+hash = "151f40994a13ce25528e031641236dca102d119d373ef42a4aa3587e52cc077a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/umbra_valley.json"
+hash = "a9ae5d20514fd4d1008733b4c3dd57f9eba48315a4ebde6d0c9c69abdc3be58a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/umbrella_jungle.json"
+hash = "201592f974372f5e59d2e96c61c0ca983f4997178219f42117798b395e50343b"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/betterend/waterfall_ponds.json"
+hash = "6981351d20f397e8a679ccd188e0b8f8b9c14237c3f2fb787716f868a51f0b7f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/auroral_garden.json"
+hash = "13144d253de9323cf3f2bffa71eed2d463c59cd2c74f722f2c37b07b8d59cced"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/bayou.json"
+hash = "146433ca30ac19984dc90d04f769fc6ef884ad486eee9df659a8b80cdc95089e"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/crystalline_chasm.json"
+hash = "57cc73a81eedf812b6fd1e701417c8d2607df0ed3c9f0eb5e2842dea984b6821"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/dead_forest.json"
+hash = "0ab0c05bd6c1b4f88c473a73d1a604d670e55082f2e2478a1f77ad70a6be29ad"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/end_corruption.json"
+hash = "aa0bff60c80b6b3ce56f0677dd8144ed87be440e359b329800c48d99e66181f4"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/end_reef.json"
+hash = "e607349c4fd907dc21f5ab65d8155ad97d59605e9673d306657d89e801ad84ad"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/end_wilds.json"
+hash = "3fcbf6177a2ca95faa9593e4a497cfdb1da1fdafb10630b86c5cacff741a0ed8"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/erupting_inferno.json"
+hash = "6010d0d3cc3d333e0cd30d21f0cf93f5e9ff80686bd31b78d4532d21b6cd6783"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/glowing_grotto.json"
+hash = "565169374e5b647a28cdf26100cfbda4c5b601d5ecc642ca8f90674e1e886ce3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/gravel_beach.json"
+hash = "cd925907c16bc455eeb9c0e021ceb38410856a7484d44a3452ba9bad12ae9791"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/jacaranda_glade.json"
+hash = "38bcb9d79d100fd619ec0ceed8e9d8c2e0351527ac0d7b80c50ea959b49f8aee"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/lavender_field.json"
+hash = "9cef47cede5296ade7b5fddd0e555dc62220327440d9b665d16076de8dd31140"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/lush_savanna.json"
+hash = "b6e0e709a30f7411510c43699405533be7f48fea224bf3cfa1a8448bb67c27fd"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/moor.json"
+hash = "e8d1c2db356e9cc40a2161812d5ae798fd54c44d5fe8aaacd83cfe4cd62d21e3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/old_growth_dead_forest.json"
+hash = "282017c65c95cb0c33b68c3b4a8ca5ea992131ebb2e2d285464820a5ac750493"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/ominous_woods.json"
+hash = "6a230555785a7c2c90f0931eff014a4e96254e9076f73b806e063a57f9b61147"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/overgrown_greens.json"
+hash = "e373a2c4fb73e870caa31c821e62b21efea3bbffdce3dff5ccecc97a2536a9c6"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/pasture.json"
+hash = "76269f62da6c0a593d17c44d6009b24f49bf516c8fb8e64fe4ebdff19f9d7e70"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/redwood_forest.json"
+hash = "e871392c8e483c6a105f6fae932e89374167bd03345a532a36577ab920a11473"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/rocky_shrubland.json"
+hash = "fd9c50cde7d88a38288a3b889a82d4818ac88391c15f27ad5fe7e1dcce0d4358"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/scrubland.json"
+hash = "7ef70bbf4cec78f0fbdbf72e98f8a382dab475832761599e5cbb4da3bdd8513d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/shrubland.json"
+hash = "5317fb4886dfb92e876c205fc7eb61e45c90d4de91e8e7ac063dbfc1188e59ce"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/snowblossom_grove.json"
+hash = "f54f4f614352cdf6b7573c00dbe69d088cef4fec4da0445c1b253d33259789a3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/snowy_coniferous_forest.json"
+hash = "4365968216c553a6b74b44d0b91b622a582b99c92f2dac547a02cfb868dcbe26"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/snowy_fir_clearing.json"
+hash = "b85b0d2003abcc7fab8415afa55ef2cec70d729252894598f2077f5a1c109ca8"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/tropics.json"
+hash = "752bd7f35a90cbcada3daf7af01867d38bcbe40dc421dedb6d83a2f726f22697"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/undergrowth.json"
+hash = "1b745e209e40fb46254b8d4484b2ed276233cf7a110f3a82ece4a6c5554eca92"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/visceral_heap.json"
+hash = "b0c0ae448b937579813e37354ec31e4398bd65441ee84276249f2772f3ffeb69"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/wasteland.json"
+hash = "98d5eee9d26f0161757344dcd431913bbae37de4dd28cd85c0f829ff2bd911b5"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/wasteland_steppe.json"
+hash = "a2e1ba3bb77363fe7e92db023a7d956e46d7dc8a9e2cf2a115627eec61b507b6"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/wintry_origin_valley.json"
+hash = "fd958ff1ff4c919ac9f687f120a79e729e3076e9e653eed459ff0fe1ace7dc11"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomesoplenty/withered_abyss.json"
+hash = "18cecfe1d1d73b4550f12af7eefefc619fd2c984efc8db09e867ab63518baf77"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/amaranth_grassland.json"
+hash = "2a7b351ede3a0aaa77f1dfd20f5bc6dbf24ad50c36ed1c5c2c6d739ad98990ed"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/basalt_barrera.json"
+hash = "8cbf68952c2d2bdbb25f0b19b9b10da4c6368d51e5ad9afb67e98b6fcbc4d2ca"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/coconino_meadow.json"
+hash = "05d808f0af76fb5e6c14cefea100d261c305afecbbc1d269084bda879037340a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/crag_gardens.json"
+hash = "6bba9c5536ddd5f97475e9305e17132c69f42a9a804078cbdf68f926b56621e4"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/cypress_wetlands.json"
+hash = "f330f06efea580baa0d6aeb3a21de15e65852a917bd2174a66b5181384a95375"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/dacite_shore.json"
+hash = "1adb1e70bf47ded31408a893232b665a09c11230b8354dbc3f8c76a929eb180a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/dead_sea.json"
+hash = "32e871db58ef57ce23adc1e9e3a69724b56ccbb57bcb843aabff04d28ee482d4"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/eroded_borealis.json"
+hash = "3ef961167f22d957f4a9ba5120edb952dfe90c406ca542d4e159d6a76c9e3148"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/lush_stacks.json"
+hash = "71e6d9615787b4773c88e6e5d7cbb558a047a774bb83f979dd0bd7979e69deff"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/pale_bog.json"
+hash = "ed827b1b7062a2c0a5f52c3f78418b5b707294ad8319db4759e719599f1f5e20"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/rainbow_beach.json"
+hash = "e63d9e8a8ad8c44db4876170eadc93b371d6e85d587ee45a59820b3b2406474a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/red_rock_peaks.json"
+hash = "e4db3cc9fde85632702fa433a76bee75959c02f02e13cc5be2064919fbdda65a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/rose_fields.json"
+hash = "2d51bcabf4f38882e45562efb344085f16105b7c079211ae1a11cface8f692b2"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/sakura_grove.json"
+hash = "9fea97be4ff14b7473a0b1fa7afc7f6915d32a88e2b1b45df31620971425829c"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/shattered_glacier.json"
+hash = "729f075e17c3325056ea214aa98fb65384d8657b3009a8d06cb6e70a98ce8027"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/sierra_badlands.json"
+hash = "3ede7fd89fa950a772f0d368b50f148c93ed2028419c691b1bfddedf4a4e7dcb"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/skyris_vale.json"
+hash = "04774f99f0033ad3b3f669563f1f6b9e333f8d75624ed6d82c2e7533f9c67f7f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/biomeswevegone/temperate_grove.json"
+hash = "abe119ef1a319cf478206a0b93f2025bfcf0200a9660f0280741c662087a163e"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/extradelight/cornfield.json"
+hash = "88cd63a4e16ef144dd9e5560cb3acd3453bcc3d90aca0454be78886785892f2f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/ash_barrens.json"
+hash = "cd5a0c9d9d47e46c14ac8047352ce6e1d6b2a853c3b21ef5a3fd333b8fdaf301"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/infernal_dunes.json"
+hash = "94c83d72fde6eefbad758706330f13532118023ed81c5c1760d3ed38f174b5db"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/inverted_forest.json"
+hash = "da40290952cb08581a013a71566b9e8e601713cf2c87ebbbfcc22b0d8cf3f852"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/quartz_flats.json"
+hash = "10fd1426b81a63b1f6e451cb25b422b94f83d6c583b5542a96fc1690eeadb09a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/toxic_heap.json"
+hash = "0a3fc2ec98b41bbd875e08de0b8c57b0a1560caaa90a22e4ca1e0f4e29e15164"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/volcanic_deltas.json"
+hash = "483cc42f8ada4e65af2870bfafe3bc90ff5029f59589ff80879264435c19ce17"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/weeping_valley.json"
+hash = "52e65605edebf9eb30b4b444ac85bac009a30e10737b9caaec6fbf2c1a5d259d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/incendium/withered_forest.json"
+hash = "478d769e72d91f201b8f945fa2d71d0f73ae8dcf1e245046edd81c90fce09c33"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/basalt_deltas.json"
+hash = "cd80a6c16064152e26cbca9327915d7dd7a8371041287109ac28169f39a4650e"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/crimson_forest.json"
+hash = "f1d36be360bb213f44a15921fb3f38a9dc4914e77b1d02d43f7ece208bfd0afc"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/end_barrens.json"
+hash = "8c565b899160082c66e367f83cc2f934d4b985aa46eadbb574572e02406f4c04"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/end_highlands.json"
+hash = "dcc731592cfa7cf7d9d837e7bd10022983e308bf3038cdb80cc7b3b5cf37af91"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/end_midlands.json"
+hash = "cdf75fef2abe2d12c1ad606797c5a4928083be9e64f71b55c1c9e39d03185215"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/nether_wastes.json"
+hash = "8f37f9710913dcadbf9f9f4beccbfbdce611743f088e178fb8a2d5d2c8d2cbc0"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/the_end.json"
+hash = "789f2d948a81594fb1db3cae2dba8c29c9289c5d6f2a0a57fbd57736eed0ac51"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/the_void.json"
+hash = "31a98a40f769959153c0053837a90c73a4cf2b2c86443c11f9b705ecc0b536cb"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/minecraft/warped_forest.json"
+hash = "9a2a017deb52093bd4114eba8c1ee2990e662b6d3ddd4b2fd7898cfce2ee76f4"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/nullscape/crystal_peaks.json"
+hash = "090afaad29b953a7cf062e238b57e48655e505db7c01be96ee84f44da07a7e8d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/nullscape/shadowlands.json"
+hash = "5e4e4906ca667388b222105e39c08177dd3f4d2bc8eef3899aee9ff7163ca781"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/nullscape/void_barrens.json"
+hash = "01f601caae73f7ce085046d75b2ea4bf4cc29dc0e23a6a1ad9537817a16eac73"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/quark/glimmering_weald.json"
+hash = "bf1fdbd80198518673cd11146e28da5f85bbfaaf9d15234f42b0ad0abe26e14f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/rats/ratlantis.json"
+hash = "a8f06bc2a46132c06d9e752b009488d5d2e22b8e4027af7d502696f40146ea0f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/ancient_delta.json"
+hash = "342bff67db1d0de5a38f65aa5dd8356e69ee800f9ba3a91eca1d4a7abb1ede35"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/glistering_meadow.json"
+hash = "b397be02d93d73321c5efa18945ae41b531ca6ab12251d619c1dee4dc105c0c6"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/infernal_holt.json"
+hash = "3e40f3298b0c01dee5502b87f58d547f2c02328735ed494d26595b506dcbf7f2"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/inferno.json"
+hash = "eb0ef2d260a48cda246954523a18ce8b3ab052fec06f88d832d600a12b826722"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/mycotoxic_undergrowth.json"
+hash = "6abc1eef9b6b96b50850e719af2bfdda747db8132659656ba520d9b59b9c091f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/old_growth_boreal_taiga.json"
+hash = "e0605efc5de1b7f2e9cb98199e70d50d5ef84a90da0c3e74bf7cbde3c8bdd22f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/old_growth_forest.json"
+hash = "3b511c400fd7de6e425b482b2215d10c97502293509d186e28d5bdc6b1f2cea3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/old_growth_golden_boreal_taiga.json"
+hash = "46a6b22af429716da4d037860be55c3e45e1ba9edbb2b90cf1f7bdd0d0d39366"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/redstone_abyss.json"
+hash = "75b9e3ace35fe9cc4a3b927968ef012b79708f8ef69d04658ff66d8e0851e04c"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/sparse_redwoods.json"
+hash = "c576fcf9e4b83ba85d2249453806a26ca301779db4f648dfd0e45044df01c2a8"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/tundra.json"
+hash = "4542dd617bed7cdb1ab0dc14f6b6f9f63daf7084008f14cb53b25ff75757c638"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/windswept_maple_forest.json"
+hash = "d59e833e8ef083415ebb08997db3009e5a3b54646a9e3c56a17d3fb70d953f95"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/regions_unexplored/wisteria_grove.json"
+hash = "1e42c67fd911f7ac222f714706bd0ced36bb7391c933e315a7e750171f1fe566"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/streamsreflowing/stream.json"
+hash = "d2fea339fe1f78dbdccbfed145799ed98cac2a70accb24f9ee4bc5e80a77acc2"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terrablender/deferred_placeholder.json"
+hash = "c4e8d3d9cc515b206642acefa7c8d0013a2ba03fbbc839538f40d3f9a09a0d68"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/alpha_islands.json"
+hash = "9c3a4160214daa7a083c373e3b608a5cc62a86680f5ac640c375176a58093d31"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/alpha_islands_winter.json"
+hash = "d2f27c3e0a9a6f06e20422da1c2eea52bd12f6554628950181d1edde35cb8d08"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/alpine_highlands.json"
+hash = "79ebebe9b0176e17baace4c371f2a7a7c02bdafefb31cd592e25369b71174aa0"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/amethyst_canyon.json"
+hash = "bfeb5cfa548d6c98b29b978eeb77d6c6af8947b357ee6f7d31968b0b99aede8b"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/ashen_savanna.json"
+hash = "1ec4e47ef9d03a52f24bccf68e0c12066da4336ea23db2653f7328b6ef1eeacb"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/blooming_valley.json"
+hash = "2b867acafc10cdb54b2459d0cfd5e7442cd8c32389b97ea3f829bbbf40fa7482"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__andesite_caves.json"
+hash = "00705d149d4d71e3ebf8ad2173e8ef18314b882b044bce6d97117717d1c8b753"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__deep_caves.json"
+hash = "9680be57e6103f8bfe7fe5547094031acb88496d42e09dc04eaa491cd6e718dd"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__diorite_caves.json"
+hash = "bae73884d73b8d5c7d47abdd8993664f2bc4fd0b3beaa49142f7e6b302d5b9a3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__frostfire_caves.json"
+hash = "c0f342c0eb9407ee5fe1244ae850d42e18d7e465cad50c0c26c8fdeab2cd0624"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__fungal_caves.json"
+hash = "fd552a87e378f7fc330e35c4ff8cb931525567a0a945fc6f78e6327bc36dee2e"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__granite_caves.json"
+hash = "cbc513016ddb3e9705ffde547c5eacfb2932645986079d68895b256167d957f0"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__infested_caves.json"
+hash = "57563a1d78864aed7a5adcf040ba1f3dd2b5e46a6b6bd6461345f61a010bc117"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__mantle_caves.json"
+hash = "b0def81e3ce2f7f90e0e952750053643ffca7b4dfc73a399f186d63a3b57b58d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__thermal_caves.json"
+hash = "0a5969fed984384b78740841de9b7fa10a0b51565cf8a525bcd2c21240963073"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__tuff_caves.json"
+hash = "3b8f3618526f5300b803e812f1d861648393f8d82f2e0a0f8951ee83c380362c"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cave__underground_jungle.json"
+hash = "dd2231f59e92ea9355017adbde4547adcf44f12195cff41d426e919118d602a0"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/cold_shrubland.json"
+hash = "f8a87817b05a3fb99664e878a2a03475fbd8351b69c85f2743c86cfbd232f505"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/deep_warm_ocean.json"
+hash = "d2343f278de01681fdd9fa171442d9d7dc38c6107ebe148dabd6ae20249f7f25"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/emerald_peaks.json"
+hash = "b44466755b9842babd410ac5bdeb80cd44bb55b950a72be1eeb5ea9d72d3c88e"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/frozen_cliffs.json"
+hash = "2b29d838d798e4caf536b550405a5eb8f064c61e5d8014b42387100962a86e4a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/glacial_chasm.json"
+hash = "a2d0c86d6588e7dc799eeb96bf1aee59d61574a49ffb90818bb4882a726d5845"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/gravel_beach.json"
+hash = "dc6d13638387021d3a0768e0f25483d336b0ecc686d73dea2de723b67c6c20f7"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/gravel_desert.json"
+hash = "f046652519f3bafa8f7b90a0f4e3fbedabaf8d062404320a2b16d84fa20494f3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/hot_shrubland.json"
+hash = "7aac9592512f249e05e629edcffb4f3a002e4ea616ad885c96af79f0d649d081"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/ice_marsh.json"
+hash = "711e2867b03ba23a743751c9584c74efc212668830520deae9fe35daef84516d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/jungle_mountains.json"
+hash = "9166a1753cecf1c0b8c5d3fd795373fbe9f0a848ebd91baf3304ce50097d8ec2"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/lush_valley.json"
+hash = "c876784a986fd8d847da3b83777a7bb924a073c71f643e60097002bb0b7d03d3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/mirage_isles.json"
+hash = "611d1ef020152f432808d0c55355e6eb43f14ba60768b268b8b8da39e1174759"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/moonlight_grove.json"
+hash = "e6482713a75672e8b16fe40b33fe91ceaa6a05b649fe7e320af88b10a5f7000b"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/painted_mountains.json"
+hash = "9dde53cee23a8c02db97ad923ae230622d86206d05a41f451d96737db4da2e15"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/rocky_jungle.json"
+hash = "29a61fb4dc3c831cb3d49aeb5bb7d1e7a64b4798ed8d88332aa87ee98b54985f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/rocky_shrubland.json"
+hash = "b55e843814870c27ec8e35dc55d9bcbe6e235bc3474d08f40450504bfd3e2b06"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/sakura_grove.json"
+hash = "78453e47d05aac2268b0d27b1141a295052015c08abd30f0c6eef80de39e86ae"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/sakura_valley.json"
+hash = "a16c35094cfde3f6d799d58876bcb820f079e1c027f1f6e8e2a14845cda149ad"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/savanna_slopes.json"
+hash = "74f612fd7b2a41c3af068095c71bd64a55d711f85edb975afda393ed816e35f8"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/scarlet_mountains.json"
+hash = "97a0fb42c12fbb013872a754c0240f2fd65d9bd9132f0cec8ca2abec938c466d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/shrubland.json"
+hash = "a8c7469e6906ceb46b5b6dfec4e22dc870b4ed2c53c187f1b3bf177dd4ededbe"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/siberian_grove.json"
+hash = "39e3bd517a6601ddb5fe15b4b5482419a85ad3f273963f6e1486aab5851065b8"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/siberian_taiga.json"
+hash = "31229ab38f3d5343a52554b71f54d09a52e2503f5fab41a85dab9f0417853fb6"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/skylands_autumn.json"
+hash = "47314d5f58b77e086abcdd26a529acab900897b38f318b34250cf3a9b207a56d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/skylands_spring.json"
+hash = "2af338839eb012d5d5c9ba8fcca2e07a52901d010133f425b516593788854773"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/skylands_summer.json"
+hash = "784f6321f429fb26c67615f78aad9e7cb042a71cc09ab3cf4b95206f0aaeb30a"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/skylands_winter.json"
+hash = "5f1cc3c43f407286eb1d27af5e4b81faa5dc68b5647de079f0b9919bbf820646"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/snowy_badlands.json"
+hash = "86b36c9ff0cd1ada42411627525497f4a910d79ec0a9ffd21e1899e80ed5fb90"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/snowy_cherry_grove.json"
+hash = "ccf7c27641d9090eebea4a5f26f0453e08eec9ac5f541e0d13fa95d9cc1b502e"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/snowy_maple_forest.json"
+hash = "3a07424360c84ca25fda86b916a798f7c52ec36f77cb60637ee2faf4100cbabb"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/snowy_shield.json"
+hash = "f78c38b9880b9c74ef79846bda928bd4a40882dc4df2a117620ac1a0ba0da975"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/stony_spires.json"
+hash = "05cd52245ad29294c5bdf4d8edf4e62b19c9043e7d2632dcd2da0fe1b1cf30e5"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/tropical_jungle.json"
+hash = "b219ee507f26079c2610e0b79b86c339e66bd78b6bd04619548be13fe8d3a866"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/valley_clearing.json"
+hash = "f4880a83b2ec366e82c937d39b541ae0f36b91c6485ce09ce0cb21d6ad4f24c9"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/warm_river.json"
+hash = "21d5f9e2d291e4091835433bb3d44df943e1f277778e5007fb9ef64751adc1d9"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/white_cliffs.json"
+hash = "e517488d27a4406e0c7e683421a8ee0514f5841de773ba8cd8e4d12bd0a617c3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/windswept_spires.json"
+hash = "5b2d966d03dfcc6951e9ea62fe3aa1434d72b3b08c80c0a1bbd348676c2b1e5f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/wintry_forest.json"
+hash = "44c035db6ab1fb62b95348b0adb183105f7420b93e55b86aca4547a232a692a3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/wintry_lowlands.json"
+hash = "c710ed38958ec713e9fd85e29ac15b640675d474feeacd221e7eb5ba67a60791"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/yosemite_cliffs.json"
+hash = "4a21e9cdd09aa5dc323b8fe14908e2ac47b5e5e09693b12220e8dfda4708a5b9"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/terralith/yosemite_lowlands.json"
+hash = "154f77c524075e6df4784ec560d6f3d5e5ff5714b6570f7828274dc4b0a71265"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/clearing.json"
+hash = "948628bea7c2924ab4ed0f5500dbd6c79b9cf53b458d9ff1761f9891eb53d145"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/dark_forest.json"
+hash = "cb0f3481f1477f3498d10540f91b83048bce20af5458586fdb303b5a44bcf11f"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/dark_forest_center.json"
+hash = "1f03cdf1cfca7d7df2567658f2beb6b7653e39968e811a75785e71b5241974f1"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/dense_forest.json"
+hash = "705d19f825ac241f9a63d9957038e4d767999515f0a5df02f161a00cd99daf55"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/dense_mushroom_forest.json"
+hash = "4b972a56778855ce86ee18c77d4e8906ac643783a6544150039332343fd5493b"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/enchanted_forest.json"
+hash = "16275133cda57700dcaffb5fc1e6b6ff166666aa7f7e04b1a9485ad044e0e0b3"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/final_plateau.json"
+hash = "85b25cc6c886c54c83e65fcaa6740d508ba6f90ca6bcc392bbffb8dffdbfbaba"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/fire_swamp.json"
+hash = "b24e934611f9d95b927abac717d13b87c3aa635ee911580104337d03a2c649ca"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/firefly_forest.json"
+hash = "ccf4b97db134e88c5519d04f34595ba0c9870d10c15b58c5f8547f99968188af"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/forest.json"
+hash = "567f1656b495c60e490e462c7e0db7815f5a3daee66f7f1a2a5c291ce0657b26"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/glacier.json"
+hash = "11bf2544989bb37cc353fb0b84391c674944dacd843269b55313a52d5fe04f92"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/highlands.json"
+hash = "a164eec782bcdb656f86acc2c9b6e64dac7a3c90fcfe58e3946d199cc55ab043"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/highlands_underground.json"
+hash = "a01fd1ad93c3cff10c8a9e320f1261455d4961b2cd590dc36ad7aac8897aeb5c"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/lake.json"
+hash = "3f059a8efe73bebd28ba764e6a113e11126a3e1f451f118b9fb00700e7be5444"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/mushroom_forest.json"
+hash = "a7d92b3bb081d101724b7926adc2b947db93d221e251cac8cd8cac593fb47171"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/oak_savannah.json"
+hash = "4c533ad7d24341daf79dd310a789fd07c19488326ef2f598a1579225f1da9e89"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/snowy_forest.json"
+hash = "3e8cd0ba955543b59aea14223ab224783ce4bdd3f324f6d512765646b5691b02"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/spooky_forest.json"
+hash = "8f77d34e371771c062c8392fb70b581b122008c4830dd0985fdf9447c8b0712c"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/stream.json"
+hash = "ac8dafaba677e714d142050c46e65a54c76fa10bd1c02e1cab810580015cfb5d"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/swamp.json"
+hash = "06224cc52d822e01c7780b362401a86f3e8f787add2b4b9a83f808bd77cc8439"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/thornlands.json"
+hash = "063536cf560b63fdcc7ff66b2efb21def022859a2b45b45213581b03eda18977"
+
+[[files]]
+file = "kubejs/data/guild_agua_fix/cold_sweat/world/biome_temp/twilightforest/underground.json"
+hash = "b0f6a7d929ee188614ed09a9250ea7d656ef53b8c20d332be5e367f1664e72f0"
 
 [[files]]
 file = "kubejs/data/swem/loot_modifiers/bastion.json"
@@ -4626,12 +5414,12 @@ metafile = true
 
 [[files]]
 file = "mods/cold-sweat.pw.toml"
-hash = "28df5e8d925930030ca0a294f28310839442b082f23600b63c7d07d9323ea31c"
+hash = "3743d6e5cab62e1ca99da99ce5d39ce280a614ba15d9429e771063c7c4240f18"
 metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "bb5ef1d3b8ec3595f6d399baad46c2891c37cb1c83046cc1bce3970edeb8b58d"
+hash = "116dc688a8c946c0c7dcd898df277942504d57364a7531fecca35f9df6f9d915"
 metafile = true
 
 [[files]]
@@ -5096,7 +5884,7 @@ metafile = true
 
 [[files]]
 file = "mods/ghost.pw.toml"
-hash = "5491fe0105a9523983e2b600add869858998447c0722f2f23bcb31548ea2af0e"
+hash = "de6500c039d55d94d9d50b8dd447d971a6e676295e946210e77ffffafc5ec7bd"
 metafile = true
 
 [[files]]
@@ -5170,7 +5958,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris-search.pw.toml"
-hash = "35dbbdcbfa343c287379346f370588e7a7d502242fa8c529a6c94b756811799f"
+hash = "c5164ab8d2aa479167144bede2b39e05aab5bd410a30aaa66d7ffc7df024872f"
 metafile = true
 
 [[files]]
@@ -5205,17 +5993,17 @@ metafile = true
 
 [[files]]
 file = "mods/jei-biome.pw.toml"
-hash = "5ac6e514650c1e1e02d91dd438fe8d8f8900a4907ea89f6272139c66f0bd2eac"
+hash = "1801f7f14e216de5202f817c951abfa9744c3862c01c5b9f9f16200f40d157d7"
 metafile = true
 
 [[files]]
 file = "mods/jei-structures.pw.toml"
-hash = "e7fdc7648cfd659aeb5c9db4ddc3f5151c790a2793dc81d429156e42af0b0fca"
+hash = "72fca5ea87c1f29308a9e15cab9f4fea9c8f3b96dadadc0debb014fee77b8d68"
 metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "10b3806965691bfa3d0de63b563c45077bbede9963a096d094fee88d39fa25a4"
+hash = "4a5ea596148af390e53eaa5225a5569f15cda6ace0c51edf9c6b175cf6030322"
 metafile = true
 
 [[files]]
@@ -5663,12 +6451,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "8f2396245b3a810a4f9d087892827abfaea9e1e644d7b9a1e2c00549577a7224"
+hash = "8a6203521324d8359947340a6b39466e266d95998ebca7db3781d4439ad4fafe"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "635c0cbd8a1eb03fc35f5fa983cc8d7a50e43d4e03c17f63ed9456d0d8b15a06"
+hash = "de0d3c65a2a8c796dce223b73e76677d3976de19491ba0cb8d801fc6b45f002d"
 metafile = true
 
 [[files]]
@@ -5968,7 +6756,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "ef28eec1b566833ecaf2310cba646a44ab49ac2e25edfa1615d3a0b5570cc7e6"
+hash = "8e93a01d6930ab15f8151ecedc2a3d5974a3d547de74b2c2a963c78980b94dca"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"

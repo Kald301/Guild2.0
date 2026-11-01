@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:stony_spires"
+  ],
+  "min_temp": 0.315385,
+  "max_temp": 1.084615,
+  "units": "mc"
+}

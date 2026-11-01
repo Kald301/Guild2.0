@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:alpine_highlands"
+  ],
+  "min_temp": -0.004545,
+  "max_temp": 0.904545,
+  "units": "mc"
+}

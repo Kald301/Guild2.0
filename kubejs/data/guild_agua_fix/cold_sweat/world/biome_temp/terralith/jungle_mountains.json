@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:jungle_mountains"
+  ],
+  "min_temp": 0.686842,
+  "max_temp": 1.213158,
+  "units": "mc"
+}

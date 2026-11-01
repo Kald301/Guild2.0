@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:yosemite_cliffs"
+  ],
+  "min_temp": 0.097222,
+  "max_temp": 0.652778,
+  "units": "mc"
+}

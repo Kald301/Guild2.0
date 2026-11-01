@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:siberian_grove"
+  ],
+  "min_temp": -0.147778,
+  "max_temp": 0.407778,
+  "units": "mc"
+}

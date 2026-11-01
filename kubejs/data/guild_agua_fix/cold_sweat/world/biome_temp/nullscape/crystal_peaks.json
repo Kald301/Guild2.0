@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "nullscape"
+  ],
+  "biomes": [
+    "nullscape:crystal_peaks"
+  ],
+  "min_temp": 0.166667,
+  "max_temp": 0.833333,
+  "units": "mc"
+}

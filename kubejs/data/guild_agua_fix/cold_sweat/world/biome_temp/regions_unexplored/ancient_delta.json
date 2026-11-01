@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "regions_unexplored"
+  ],
+  "biomes": [
+    "regions_unexplored:ancient_delta"
+  ],
+  "min_temp": 0.847222,
+  "max_temp": 1.402778,
+  "units": "mc"
+}

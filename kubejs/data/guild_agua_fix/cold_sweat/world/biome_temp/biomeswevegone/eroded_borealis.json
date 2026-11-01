@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:eroded_borealis"
+  ],
+  "min_temp": -0.884615,
+  "max_temp": -0.115385,
+  "units": "mc"
+}

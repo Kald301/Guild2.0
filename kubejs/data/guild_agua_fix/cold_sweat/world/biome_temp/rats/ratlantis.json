@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "rats"
+  ],
+  "biomes": [
+    "rats:ratlantis"
+  ],
+  "min_temp": 0.216667,
+  "max_temp": 0.883333,
+  "units": "mc"
+}

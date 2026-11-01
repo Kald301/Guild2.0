@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:siberian_taiga"
+  ],
+  "min_temp": -0.097273,
+  "max_temp": 0.357273,
+  "units": "mc"
+}

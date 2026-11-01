@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomeswevegone"
+  ],
+  "biomes": [
+    "biomeswevegone:lush_stacks"
+  ],
+  "min_temp": 0.722222,
+  "max_temp": 1.277778,
+  "units": "mc"
+}

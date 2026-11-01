@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:windswept_spires"
+  ],
+  "min_temp": -0.184615,
+  "max_temp": 0.584615,
+  "units": "mc"
+}

@@ -237,7 +237,7 @@
 	    ["terralith:shield", 48, 68, "F"],
 	    ["terralith:shield_clearing", 28, 80, "F"],
 	    ["terralith:steppe", 44, 78, "F"],
-	    ["terralith:warped_mesa", 66, 84, "F", -5],
+	    ["terralith:warped_mesa", 66, 84, "F", 71],
 	    ["regions_unexplored:alpha_grove", 65, 85, "F"],
 	    ["regions_unexplored:arid_mountains", 85, 120, "F"],
 	    ["regions_unexplored:ashen_woodland", 70, 90, "F"],

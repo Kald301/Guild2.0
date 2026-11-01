@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:snowy_badlands"
+  ],
+  "min_temp": -0.333333,
+  "max_temp": 0.333333,
+  "units": "mc"
+}

@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:cold_shrubland"
+  ],
+  "min_temp": -0.36,
+  "max_temp": 0.64,
+  "units": "mc"
+}

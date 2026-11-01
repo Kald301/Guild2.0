@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "biomesoplenty"
+  ],
+  "biomes": [
+    "biomesoplenty:overgrown_greens"
+  ],
+  "min_temp": 0.336842,
+  "max_temp": 0.863158,
+  "units": "mc"
+}

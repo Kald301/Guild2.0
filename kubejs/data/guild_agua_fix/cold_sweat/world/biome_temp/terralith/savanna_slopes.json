@@ -1,0 +1,11 @@
+{
+  "required_mods": [
+    "terralith"
+  ],
+  "biomes": [
+    "terralith:savanna_slopes"
+  ],
+  "min_temp": 0.5,
+  "max_temp": 1.5,
+  "units": "mc"
+}
