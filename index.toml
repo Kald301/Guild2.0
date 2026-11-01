@@ -10,7 +10,7 @@ hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "6722d3466f383d506ba67ba56c20564bbe2c33214500df578270360b3bde482c"
+hash = "30ff9cfcc6f8dfcaea9bb0c7c0c2fabdea93c68d7c03767e8e9a9e8c73e43fd7"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -966,7 +966,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "ded6382c658cfdf727707fa194272da124ce7181e4622a9f41658c38306458d7"
+hash = "8b2a83e0097e0aef4c76179c2f63f35adc9d8478420ee319865933edeeee4529"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1858,7 +1858,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "8755333b79f9301369072115a40a3cdb61956bdb0790358db92379e4328ce868"
+hash = "e406fdd0dde638be6028371f49cc9c71c93c6293d4f37bd79227e645fe7f5189"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1866,7 +1866,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "8755333b79f9301369072115a40a3cdb61956bdb0790358db92379e4328ce868"
+hash = "e406fdd0dde638be6028371f49cc9c71c93c6293d4f37bd79227e645fe7f5189"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1874,7 +1874,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "518d5445d76ce2b792fad0c17e401df1e8674c7f0bb03a808caf4357db81699b"
+hash = "e406fdd0dde638be6028371f49cc9c71c93c6293d4f37bd79227e645fe7f5189"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1934,7 +1934,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "b814e77db7d59b00fb332ca3152eb660612d94745a7870585049e49fca363cbc"
+hash = "7a47bef038e3d441eef0a03411466a9ee12029b0ab95152112104b67b79fcfa3"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -2054,7 +2054,7 @@ hash = "5baaca0556a4594cd61b5a805d81933069756930f7f2e6f31d262f1b82810a10"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/refillDisabledSlots.txt"
-hash = "a3950067fa6b93958cced4ce7908e10f2074c5c7d91fd30e7c0e8598bfd880a0"
+hash = "957fe8bb1efaa62e065aab131e26e5d3fdea7ea9de83b7727508fb64d5e4f479"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/villager-trading-config-v2.json"
@@ -2422,7 +2422,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "14ed9770229f8923faa043d5c5bb502257722838a969329cd0002aba3052319f"
+hash = "5de4febc127d5adda8622af25602502d800dc29b2badfe411db7eccb12ef21df"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2646,7 +2646,7 @@ hash = "4afd973f2e101fea8dd394daaa2ecd3bdbcafe074593199eccb9860ad531b8bb"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "45c96bbc62e337144b9e3126fe6420958a47b2a2c184fce3d2c05d692758759b"
+hash = "97f62d356ab825a6df1a4b96c2cd4ac5ac40d529f87ebec88076871309e0b660"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
@@ -5992,16 +5992,6 @@ hash = "8cb71b250434e2abbc7b36880df47b6e63acbc908c03d81bf26cf466fbcf643f"
 metafile = true
 
 [[files]]
-file = "mods/jei-biome.pw.toml"
-hash = "1801f7f14e216de5202f817c951abfa9744c3862c01c5b9f9f16200f40d157d7"
-metafile = true
-
-[[files]]
-file = "mods/jei-structures.pw.toml"
-hash = "72fca5ea87c1f29308a9e15cab9f4fea9c8f3b96dadadc0debb014fee77b8d68"
-metafile = true
-
-[[files]]
 file = "mods/jei.pw.toml"
 hash = "4a5ea596148af390e53eaa5225a5569f15cda6ace0c51edf9c6b175cf6030322"
 metafile = true
@@ -6756,7 +6746,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "8e93a01d6930ab15f8151ecedc2a3d5974a3d547de74b2c2a963c78980b94dca"
+hash = "5d18de177ca5e2045652705b6d3b28cb72d083bfd0fb36210aa8a2fbb315633f"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"

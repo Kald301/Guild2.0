@@ -1,9 +1,21 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-11-01 12:03:59
+ Fecha: 2026-11-01 16:51:51
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
+
+OBSOLETOS PODADOS (2)
+------------------------------------------------------------
+Su .jar ya no esta en la instancia de CurseForge: se borro el
+.pw.toml. A los jugadores se les borra el .jar solo en el proximo
+arranque (packwiz-installer borra lo que el mismo instalo y salio
+del pack).
+
+  * jei-biome.pw.toml  (jei_biome-1.21.1-neoforge-1.11.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
+  * jei-structures.pw.toml  (jei_structures-1.21.1-3.1.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)
 ------------------------------------------------------------
