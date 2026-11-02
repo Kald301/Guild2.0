@@ -1,0 +1,21 @@
+#Master switch. When false this mod does nothing and Sable Trees keeps its own behaviour.
+enabled = true
+
+#Root locks of Sable Trees and of Sable Trees: Dynamic Trees Compat.
+[roots]
+	#Breaking the block under a log ('The roots hold this ground: fell the tree and dig the roots
+	#out with a shovel first').
+	#ROOTED_TREES: only under a real tree: a vertical log on dirt or nylium, with the same log above it
+	#  and natural (not player-placed) leaves connected to the trunk. These are the logs Sable Trees
+	#  draws roots on. Structures, fallen logs and builds no longer lock the block under them.
+	#  Rooted stumps (after felling) still hold the ground until you dig the roots out with a shovel.
+	#  Dynamic Trees trunks keep Sable Trees' own rule.
+	#ALL_LOGS: Sable Trees' own rule: under ANY log that was not placed by hand while Sable Trees was
+	#  installed (includes villages, structures, fallen logs and older builds).
+	#OFF: the block under a log or a stump can always be broken.
+	#Allowed Values: ROOTED_TREES, ALL_LOGS, OFF
+	ground_hold = "ROOTED_TREES"
+	#Sable Trees: Dynamic Trees Compat only ('Something holds this tree to the ground: cut the roots
+	#first'). If true (the compat's own behaviour), a Dynamic Trees tree whose base has a surface root
+	#within 2 blocks cannot be felled until those roots are cut. If false, it can be felled directly.
+	dt_surface_roots_hold_trees = true

@@ -1,4 +1,10 @@
 [
   {"version":1},
+  {"ingredient":{"id":"dtbwg:baobab_seed"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"dtru:baobab_seed"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"biomeswevegone:baobab_sapling"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"biomeswevegone:baobab_leaves"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:potion","components":"{\"minecraft:potion_contents\":{potion:\"minecraft:water\"}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"biomeswevegone:baobab_fruit"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"dtbwg:yellow_poplar_seed"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

@@ -1,0 +1,13 @@
+name = "JEI Structures(EMI/JEI)"
+filename = "jei_structures-1.21.1-3.1fix.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2327562307cd985ad3b5a6da6b698387e98894c9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9406070
+project-id = 1568462
