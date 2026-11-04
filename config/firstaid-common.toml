@@ -5,9 +5,9 @@
 # Health of the individual body parts. 2 health points are one heart.
 [body]
 # Max health of the head (2 to 128)
-head = 6
+head = 8
 # Max health of the torso (2 to 128)
-body = 12
+body = 16
 # Max health of the left arm (2 to 128)
 leftArm = 8
 # Max health of the right arm (2 to 128)
@@ -31,7 +31,7 @@ capMaxHealth = false
 # How the vanilla health value, seen by the health bar and other mods, is calculated from the body parts [AVERAGE_ALL, AVERAGE_CRITICAL, MIN_CRITICAL, CRITICAL_50_PERCENT_OTHER_50_PERCENT]
 vanillaHealthCalculation = "MIN_CRITICAL"
 # Random damage leaves fatal parts at 1 health while other parts can still take it.
-friendlyRandomDistribution = false
+friendlyRandomDistribution = true
 # Share of damage exceeding a limb's health that is passed on to the torso (0.0 to 1.0)
 limbOverflowToBody = 0.2
 
@@ -87,7 +87,7 @@ naturalRegeneration = true
 # Allow healing from potions, golden apples and other mods.
 otherHealingSources = true
 # Share of max health restored by sleeping through the night (0.0 to 1.0)
-sleepHealing = 0.2
+sleepHealing = 0.3
 # Multiplier for healing from potions and other mods (0.0 to 20.0)
 otherHealingMultiplier = 1.5
 # Multiplier for natural regeneration (0.0 to 20.0)
@@ -97,9 +97,9 @@ naturalRegenerationMultiplier = 0.5
 # Total healing in half hearts (1 to 127)
 totalHeals = 8
 # Seconds between two heals (1 to 32767)
-secondsPerHeal = 6
+secondsPerHeal = 4
 # Time to apply in milliseconds (0 to 16000)
-applyTime = 2500
+applyTime = 2000
 
 [healing.plaster]
 # Total healing in half hearts (1 to 127)
@@ -124,9 +124,9 @@ arrowDamageMultiplier = 0.5
 # Damage multiplier for player attacks without a weapon (0.0 to 4.0)
 unarmedPlayerDamageMultiplier = 0.5
 # Damage multiplier for player melee weapons (0.0 to 4.0)
-weaponMeleeDamageMultiplier = 0.75
+weaponMeleeDamageMultiplier = 0.9
 # Additional multiplier for all mob melee attacks (0.0 to 4.0)
-mobDamageMultiplier = 0.8
+mobDamageMultiplier = 0.7
 # Minimum post-armor local tissue fraction for a bite/claw cut from firstaid:cutting_melee. Game threshold, not a medical unit (0.01 to 1.0)
 animalCutThreshold = 0.08
 # Blunt hits cause bruises, local pain and concussions.
@@ -142,7 +142,7 @@ bruiseRecoverySeconds = 180
 # Seconds until concussion symptoms fade after the last hit (1 to 86400)
 concussionRecoverySeconds = 120
 # Head damage after armor, as a fraction of head health, at which a single blow has a 50% chance to cause a concussion. Weaker blows have a smaller chance on an S-shaped curve; lower values make concussions more common (0.02 to 4.0)
-concussionHalfRiskHeadDamage = 0.4
+concussionHalfRiskHeadDamage = 0.6
 # Head blows below this fraction of head health never cause a concussion and are not counted as recent impacts (0.0 to 1.0)
 concussionMinimumHeadDamage = 0.06
 # How strongly recent head blows raise the risk of the next one. 0 makes every blow independent (0.0 to 2.0)
@@ -294,7 +294,7 @@ repeatedHitVulnerability = true
 # Extra damage share per recent hit (0.0 to 1.0)
 increasePerHit = 0.025
 # Maximum extra damage share (0.0 to 1.0)
-maximumIncrease = 0.25
+maximumIncrease = 0.15
 # Seconds without hits before the extra damage starts to fade (1 to 86400)
 recoveryDelaySeconds = 10
 # Seconds to forget one recent hit (1 to 86400)
@@ -315,7 +315,7 @@ minimumSeconds = 10
 # Maximum base length of an episode in seconds (1 to 86400)
 maximumSeconds = 20
 # Seconds of protection against fainting from pain again (1 to 86400)
-repeatCooldownSeconds = 45
+repeatCooldownSeconds = 90
 # Blood or circulation level that causes unconsciousness (0.0 to 99.0)
 bloodThreshold = 50.0
 # Circulation needed to wake up (1.0 to 100.0)
@@ -323,15 +323,15 @@ wakeThreshold = 58.0
 # Own blood needed to wake up; saline does not count (0.0 to 100.0)
 minimumBloodToWake = 55.0
 # Chance to faint when hit while in severe pain (0.0 to 1.0)
-painHitChance = 0.1
+painHitChance = 0.05
 # Chance to faint from a new severe injury (0.0 to 1.0)
-severeInjuryChance = 0.18
+severeInjuryChance = 0.08
 # Sprinting or jumping during blood loss can cause fainting.
 exertionFainting = true
 # Circulation below which exertion can cause fainting (0.0 to 100.0)
 exertionThreshold = 75.0
 # Maximum fainting chance per second of exertion (0.0 to 1.0)
-exertionChancePerSecond = 0.12
+exertionChancePerSecond = 0.02
 
 # Broken bones and severe injuries.
 [fractures]
@@ -391,13 +391,13 @@ restoreHealth = false
 # Enable stamina and cumulative fatigue.
 enabled = true
 # Stamina spent per second of all-out sprinting, about 150 seconds from full. Work below the critical effort (walking, steady swimming) does not drain it (0.0 to 100.0)
-sprintDrainPerSecond = 0.667
+sprintDrainPerSecond = 0.4
 # Stamina regained per second when resting from empty; recovery slows as the reserve fills and while moving (0.0 to 100.0)
 restRecoveryPerSecond = 3.0
 # Fatigue gained per second of all-out work. Hard activity reaches about 60% within one game day, light walking adds none (0.0 to 100.0)
-fatigueGainPerSecond = 0.1
+fatigueGainPerSecond = 0.07
 # Fatigue recovered per second while standing still awake; walking recovers about half as fast (0.0 to 100.0)
-fatigueRestRecoveryPerSecond = 0.05
+fatigueRestRecoveryPerSecond = 0.07
 # Fatigue recovered per second while lying in a bed. A completed night always removes all fatigue (0.0 to 100.0)
 fatigueBedRecoveryPerSecond = 0.4
 # Tired players can lie down in a bed during the day and rest. World time does not advance and other players are not affected; monsters nearby still prevent it.

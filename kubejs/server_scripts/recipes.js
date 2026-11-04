@@ -104,4 +104,11 @@ ServerEvents.recipes(event => {
       M: 'minecraft:saddle'
     }).id('swem:pet_rock_' + rock)
   })
+
+  // Tierra frondosa (BWG): receta nueva, BWG no trae ninguna para este bloque.
+  // Turba + tierra (sin forma) -> 2 tierras frondosas.
+  event.shapeless('2x biomeswevegone:lush_dirt', [
+    'biomeswevegone:peat',
+    'minecraft:dirt'
+  ]).id('kubejs:lush_dirt_from_peat')
 })

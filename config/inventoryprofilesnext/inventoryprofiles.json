@@ -6,7 +6,6 @@
         "enable_profiles_ui": {
             "value": false
         },
-        "continuous_crafting_saved_value": false,
         "change_sort_order_with_scroll_wheel": {
             "value": false
         },

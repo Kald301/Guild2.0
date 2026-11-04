@@ -1,0 +1,13 @@
+name = "Weather, Storms & Tornadoes - Concurrent Packet Fix"
+filename = "weather2patch-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b685240f35d50dab0658776366649d98d61c8b64"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7795252
+project-id = 1491974

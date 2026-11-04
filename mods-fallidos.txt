@@ -1,9 +1,19 @@
 ﻿============================================================
  Reporte de verificacion de descarga - modpack Guild 2.0
- Fecha: 2026-11-02 10:24:24
+ Fecha: 2026-11-04 14:22:22
  Rondas de verificacion: 2
  Poda de obsoletos: borrar
 ============================================================
+
+OBSOLETOS PODADOS (1)
+------------------------------------------------------------
+Su .jar ya no esta en la instancia de CurseForge: se borro el
+.pw.toml. A los jugadores se les borra el .jar solo en el proximo
+arranque (packwiz-installer borra lo que el mismo instalo y salio
+del pack).
+
+  * sinytra-connector.pw.toml  (connector-2.0.0-beta.17+1.21.1-full.jar)
+      motivo : su .jar ya no esta en la instancia de CurseForge (ni por nombre ni por hash)
 
 DUPLICADOS CONOCIDOS BORRADOS (1)
 ------------------------------------------------------------
@@ -14,18 +24,24 @@ lo sigue cubriendo el otro.
       borrado : mca-capitals.pw.toml
       motivo  : ya lo cubre capitals-a-monarchy-mod-for-mca-reborn.pw.toml (descarga directa)
 
-CONVERTIDOS A OVERRIDE (10)
+CONVERTIDOS A OVERRIDE (12)
 ------------------------------------------------------------
 El autor excluyo estos mods de la API de CurseForge. Se borro su
 .pw.toml y el .jar real quedo dentro de mods\, asi se distribuye
 como archivo directo y no depende de ninguna API externa.
 
+  * adorablehamsterpets-3.7.0-1.21.1+neoforge.jar
+      .pw.toml borrado : adorable-hamster-pets.pw.toml
+      tamano           : 19.35 MB
   * alexsmobs-2.2.4-neoforge+1.21.1.jar
       .pw.toml borrado : alexs-mobs-continued.pw.toml
       tamano           : 26.19 MB
   * aquaculturedelight-1.2.0-neoforge-1.21.1.jar
       .pw.toml borrado : aquaculture-delight.pw.toml
       tamano           : 0.2 MB
+  * cataclysm_of_chaos-1.3.0-neoforge-1.21.1.jar
+      .pw.toml borrado : cataclysm-of-chaos.pw.toml
+      tamano           : 0.54 MB
   * create-aeronautics-bundled-1.21.1-1.3.2.jar
       .pw.toml borrado : create-aeronautics.pw.toml
       tamano           : 31.59 MB

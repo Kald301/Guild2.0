@@ -1,5 +1,10 @@
 [
   {"version":1},
+  {"ingredient":{"id":"swem:leggings_iron"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"weather2:weather_forecast"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"weather2:weather_item"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"weather2:tornado_siren"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"weather2:tornado_sensor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"dtbwg:baobab_seed"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"dtru:baobab_seed"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"biomeswevegone:baobab_sapling"},"type":"item_stack","bookmarkType":"INGREDIENT"},

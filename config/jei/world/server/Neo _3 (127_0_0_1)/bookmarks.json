@@ -46,5 +46,10 @@
   {"ingredient":{"id":"iceandfire:shiny_scales"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"create:framed_glass_trapdoor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"farmersdelight:tree_bark"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:iron_nugget"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"minecraft:iron_nugget"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:amethyst_shard"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"biomeswevegone:blueberries"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:sand"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:stripped_bamboo_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"swem:timothy_bushel"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

@@ -76,6 +76,12 @@
   "redomesticate": {
     "collar_tag": true
   },
+  "adorablehamsterpets": {
+    "hamster_debug_info": true,
+    "hamster_bed_info": true,
+    "wild_bush_tooltips": true,
+    "hamster_genetics": true
+  },
   "iceandfire": {
     "dragon_egg_entity": true,
     "multipart": true,

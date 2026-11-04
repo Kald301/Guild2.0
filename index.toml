@@ -9,6 +9,10 @@ file = "config/.sereneseasonsplus-descriptive-config-reset.done"
 hash = "f1ceb92d0b8b72485894a12f2e434f475a127d59cae046ee5843be6318f6745e"
 
 [[files]]
+file = "config/CoroUtil/General.toml"
+hash = "6d46bdc090d4bb9bdfb660be4ca94075dc08e09d5fed84108eba92a422a23c49"
+
+[[files]]
 file = "config/InventoryHUD/curios.json"
 hash = "6722d3466f383d506ba67ba56c20564bbe2c33214500df578270360b3bde482c"
 
@@ -25,12 +29,88 @@ file = "config/SpiderOverhaul.json"
 hash = "9ca1bf16d44e9cb130fdc952bb8e25eb8906dc3f42dad1e6b2afd81c08f37dd0"
 
 [[files]]
+file = "config/Weather2/Debug.toml"
+hash = "10bbd6c1da64a524469307eab7df2a69b9487126c075b5012b3e339caa0cf6b8"
+
+[[files]]
+file = "config/Weather2/Misc.toml"
+hash = "c4adccf5ccb603005bbed0f354504ade3b8e60db09e16a09a16fa13e11ec35cb"
+
+[[files]]
+file = "config/Weather2/Particle.toml"
+hash = "4a5c0073f65434b7997e9ee628c951def52a37fc7ad38d154a477c15b05a4d29"
+
+[[files]]
+file = "config/Weather2/Sand.toml"
+hash = "c46ccefde8914dff77582a3af59395767ca8bb0db6b5ac9896c75a27b19c43ab"
+
+[[files]]
+file = "config/Weather2/Snow.toml"
+hash = "e6971de6abe5353df6174a0624b19e07d20138d2b49ea32f30d51dac1a40c16b"
+
+[[files]]
+file = "config/Weather2/Sound.toml"
+hash = "e2297478876da398de60a1d57060ec157d2d6b456707ab57ce1bf689f13cc47b"
+
+[[files]]
+file = "config/Weather2/Storm.toml"
+hash = "1e9bd31a6ba4e732d60b5cb99592a8fe978fc2e996fe8626a10d51bbe1805e8a"
+
+[[files]]
+file = "config/Weather2/Tornado.toml"
+hash = "9d9c8d2c23742cec6c13a62080f48179a411a8bfebc33bca3184aa21318d34f1"
+
+[[files]]
+file = "config/Weather2/Wind.toml"
+hash = "4e264d3bb5843e8a36de2b2b0dadbc28535fb3ae931a6b46344e883bbc856e1f"
+
+[[files]]
 file = "config/accdelight.json"
 hash = "54da2ffa237b5ae41f198a247306c9578e6b1cb9f35376470c7ab3cfb66e7e13"
 
 [[files]]
 file = "config/addonslib-common.toml"
 hash = "d041026e6112bde28569652e819b0a945503a1b07c7e547e516a20917bae1118"
+
+[[files]]
+file = "config/adorablehamsterpets/announcements.json"
+hash = "ea55c225f8ecc54bd828cccb5c87ecab49598c21db59762bf4223b36d66b0d0b"
+
+[[files]]
+file = "config/adorablehamsterpets/items.toml"
+hash = "20ee9551425297eef90216dc95546b450685d32cfed4318474c3948130917fb4"
+
+[[files]]
+file = "config/adorablehamsterpets/links.cache.json"
+hash = "eaf6305d95d523301793a549973197f0d790621f6bc8d52cc3b54315d49c3d2e"
+
+[[files]]
+file = "config/adorablehamsterpets/main.toml"
+hash = "198e690179760e17c3848289d9d6cc91e8e2fe99e8c3a2156f54f45a679a8c97"
+
+[[files]]
+file = "config/adorablehamsterpets/manifest.cache.json"
+hash = "a31e90a7fd4d9ae18b731afb91d213b6540afd4fd7028e29e5a6f11753839256"
+
+[[files]]
+file = "config/adorablehamsterpets/perks.cache.json"
+hash = "dc089a7c5be0123db7e349725a46bbf7b58978f1aea269850d23b78d4f681987"
+
+[[files]]
+file = "config/adorablehamsterpets/root.toml"
+hash = "5b99fddfbf7bc18bcbf36515d2348d02f925300df0da4f07301cd6ec45233d7e"
+
+[[files]]
+file = "config/adorablehamsterpets/supporter_perks.toml"
+hash = "fd62cd8e457626effcd6029290667201e182b317b67dd12d9d58bfb902f25539"
+
+[[files]]
+file = "config/adorablehamsterpets/ui.toml"
+hash = "c1843ea5f817bcb2ac7564768e368f9dcc65812b4eba36e9bc4c5211102d848c"
+
+[[files]]
+file = "config/adorablehamsterpets/worldgen.toml"
+hash = "ba3531f51ce9e808ef0ca425a2032ef410053e48ef98e069c2e08315127cb7cf"
 
 [[files]]
 file = "config/aeronautics-server.toml"
@@ -945,6 +1025,10 @@ file = "config/attributefix/neoforge/swim_speed.json"
 hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
+file = "config/attributefix/puffish_attributes/stamina.json"
+hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
+
+[[files]]
 file = "config/attributefix/sable/player.sub_level_punch_cooldown.json"
 hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
 
@@ -966,7 +1050,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "8fd7fc3a299ff8f26b83aa2487e237e653967b5763c7222078600229eeb904d0"
+hash = "60deb46db8ecfcf2f2c07e5c00056277e1d2e3dd4a9469297482f5d3f9f1102a"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1006,7 +1090,7 @@ hash = "730b13a15e01a03825fc40477758799ed8801c783d9cf829867c43c1b08f7ad9"
 
 [[files]]
 file = "config/betterdays-common.toml"
-hash = "e8470a216d53e5a806b69538bb880f1821479cdf429d6bc5f745c089593251af"
+hash = "6197ed5ce9ffbfd2821392cc618fe6cdab3fcc97b5bd7b56e1f6c7e27aa11c09"
 
 [[files]]
 file = "config/betterdeserttemples-neoforge-1_21.toml"
@@ -1162,7 +1246,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
+hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
 
 [[files]]
 file = "config/block_factorys_bosses-client.toml"
@@ -1565,6 +1649,14 @@ file = "config/cristellib/cataclysm/structure_toggle_config.json5"
 hash = "44b14269e2f7628382cf11744ebd736a124c9c04d51df208aa1c16490e674e91"
 
 [[files]]
+file = "config/cristellib/cataclysm_of_chaos/structure_placement_config.json5"
+hash = "79bdcc2505e838662f313fe9ca1479f019c81d38317784b9072595ea1289d0b9"
+
+[[files]]
+file = "config/cristellib/cataclysm_of_chaos/structure_toggle_config.json5"
+hash = "c24dee2800615c88328435c42755aa890ff6059b602f8b6dae4ef8b917c75eed"
+
+[[files]]
 file = "config/cristellib/extradelight/structure_placement_config.json5"
 hash = "cad4f78f263936c65284fbacc501bc7f97f25cdde350cb105b7585250b0ef2ff"
 
@@ -1858,7 +1950,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "7a8c890b979ade5d0b1a4e903067ad02093a2db15919d93ef0a7d7c63483fbc8"
+hash = "160a0ed8848f61275edb8eb7e81a7874447aa6188a370fd8acdb500898693050"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1866,7 +1958,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "b3fbc6aaf59f4c5875d90ab0ae91c05a310aed38905622eaf569987ccd64fb3e"
+hash = "bdc34674fdf9dd21e5bbd59fe61bbeedfc80c5a85d83d15ec0fd490367eced66"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1874,7 +1966,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "bfe4fb4f5d463b4b748553318f20b41061cb8cdbb15a3d8fe303aaa0af6b7b2b"
+hash = "0f561251e963b6c8941457d5c94aeab2ca3b0dfc7abe39de757ecaf689278140"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -1934,7 +2026,7 @@ hash = "3898ab965692ff4699f110c9d27212ce14c09102bb0988486f189ee692a7c125"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "37b67fe462e8ef8181809fd1e85fdfd8ebca644a414e57d8782db594a6e57c47"
+hash = "89c24cfc54e7b20714fcb78f58c929304610e88cf04df4bc7271bc85bbf5660a"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -1982,7 +2074,7 @@ hash = "fa111293336b9df48c75c42a0c8b6209eb2ec4a04635e778b8c912906b96232e"
 
 [[files]]
 file = "config/firstaid-common.toml"
-hash = "4110adf1bc2a92df3b37d7102b45d949091f94b97f377eb86226efc8f625ef55"
+hash = "a177a0cb742147c6b8892d114c498ee60607e69f5bcd3fd777da7d8e520ef68e"
 
 [[files]]
 file = "config/flywheel-client.toml"
@@ -1995,6 +2087,10 @@ hash = "1ac1fd9694773ef1ec8af42c9cc8a908a1b618fa6fb6031c27305383e97f70c7"
 [[files]]
 file = "config/friendsandfoes.json"
 hash = "858c5784048dbedf407356cabc4cda234b5c3419bec9563d31c2378277e2d5b0"
+
+[[files]]
+file = "config/fzzy_config/keybinds.toml"
+hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/ghosts.toml"
@@ -2054,7 +2150,7 @@ hash = "5baaca0556a4594cd61b5a805d81933069756930f7f2e6f31d262f1b82810a10"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/refillDisabledSlots.txt"
-hash = "957fe8bb1efaa62e065aab131e26e5d3fdea7ea9de83b7727508fb64d5e4f479"
+hash = "f07cc57a35d75eb1878cd4ba4af9d3f5bb104b294ec43123f617efaa664c522e"
 
 [[files]]
 file = "config/inventoryprofilesnext/127.0.0.1/villager-trading-config-v2.json"
@@ -2369,6 +2465,10 @@ file = "config/inventoryprofilesnext/TestArbolitos/prev-villager-trading-config-
 hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
 
 [[files]]
+file = "config/inventoryprofilesnext/TestArbolitos/refillDisabledSlots.txt"
+hash = "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+
+[[files]]
 file = "config/inventoryprofilesnext/TestArbolitos/villager-trading-config-v2.json"
 hash = "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
 
@@ -2386,7 +2486,7 @@ hash = "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "2c3c4195b0906aa6826e30a7fed31cda27a1e71b9cc9327f1f1c5bb4ed798d9b"
+hash = "97d7ad0009c14650a651b49f891d69dbaa5d27ab749bb49b89d8f1f0db30ddb9"
 
 [[files]]
 file = "config/inventoryprofilesnext/tectonicRial/prev-villager-trading-config-v2.json"
@@ -2422,7 +2522,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "f7b24b366bfbabc4b24b4e989887467d81d7e455df10c6776b2e27fc07dfead3"
+hash = "08deff0983bebdcbe4a5e39f7218d581aafc75063d7a382c152a43f5dd763d3a"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2462,11 +2562,11 @@ hash = "1b9faa0637ce35640b258cb9a6ede6d7fbe23f3138e1f3e04167caef4f204ecc"
 
 [[files]]
 file = "config/jade/plugins.json"
-hash = "57d550b6c3e7b3a579d44d46a13170c9d51a2c0d2e7b6e05b21766f398cb58ce"
+hash = "9a0fd1573078644daf1dd6782a1cfd70348ea073dd88c5eeadebedff7e830e65"
 
 [[files]]
 file = "config/jade/sort-order.json"
-hash = "1ba17b3ea99926b1f5760ab2d7a4fbb7befe7918d9fc82fb6dd3672c49550ccd"
+hash = "71ac737b72e90dbd847b7b4185da7d871f3c5296aa2ae390a0eb87fd6b8a872d"
 
 [[files]]
 file = "config/jauml/config.json"
@@ -2506,7 +2606,7 @@ hash = "2e5119684366f75bc8a6df871381c6094a812cadd0d5ed0547405b5f1353f9e1"
 
 [[files]]
 file = "config/jei/client/ingredient-list-mod-sort-order.ini"
-hash = "4500f30b653cb1739b7843fd753575793a809a30e580e74f06d990ba0ede707e"
+hash = "266f9f531febc9a53cea2c9710a82de17f0d2495eba26ffc33168905c6e19fc4"
 
 [[files]]
 file = "config/jei/client/ingredient-list-type-sort-order.ini"
@@ -2634,7 +2734,7 @@ hash = "cc432f254b072f54fb25c660517f2387d20f16183ac64d48c3b4ed20419be5e2"
 
 [[files]]
 file = "config/jei/world/local/TestArbolitos/lookupHistory.json"
-hash = "43f95c98abcaa8512a8c10707d590a19e182bf127d67ffdacdeb1e49e0ad9feb"
+hash = "c23810e35426ba925b99e9ba42c34900bc48fac48b1d1e993cf4bbe6d8cfcfb0"
 
 [[files]]
 file = "config/jei/world/local/testlocal/lookupHistory.json"
@@ -2642,15 +2742,15 @@ hash = "4b2288de14dcc166424ac377ae766b1ed10ca15f7fb7086c09b2031c2563e464"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/bookmarks.json"
-hash = "4afd973f2e101fea8dd394daaa2ecd3bdbcafe074593199eccb9860ad531b8bb"
+hash = "1e2f189bb9979ae1aabe04bde402db6e1bdf668ad1a74b663191f4fef4a3c0e9"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "32d1a5f77a29a924fa8b0f13a70e2c0404c62f9b3f13f47ea15045352fd644e9"
+hash = "3cab0819d7a1b12204879471da6d6a1f7c7e8a8a55c617a3142138402fc77860"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "f405cd16d7e732c4474cba6bfb7578d5e62fa443cb644ecb031ce393d7e8fee0"
+hash = "bfa1914a1d46ad38f0d1c17036e3c4e468ce1f397592dce49e178e0027196135"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -3005,6 +3105,10 @@ file = "config/particular-common.toml"
 hash = "26bebcb2c2a38f280973e18b3554989cdd1fe00724b45a985b5aabb3f09d25d6"
 
 [[files]]
+file = "config/patchouli-client.toml"
+hash = "d9a6d7cadb6d473cf087602d9866840d2bb7f2c16915267eb3f6fbf68d5d774d"
+
+[[files]]
 file = "config/placebo.cfg"
 hash = "eb7e9906d126543f03c2257ca98efa4b845d1e7479dc8b069a12b194c86debcf"
 
@@ -3019,6 +3123,10 @@ hash = "3cee69607e4b2c604cb79954fed9e03baef3d452676c9428d589b20d47fd2fd2"
 [[files]]
 file = "config/ponder-client.toml"
 hash = "f7892742494899f3d7169cbefd1969c7030f1555bfc277e0a0a8fc6b9160b053"
+
+[[files]]
+file = "config/puffish_skills/config.json"
+hash = "548156b84adda7e833d8f8d0cc5dd82dff1ba23a93011c4770ad548f1b9c82b0"
 
 [[files]]
 file = "config/quark-common-1.toml.bak"
@@ -4106,7 +4214,7 @@ hash = "9757a6208de6780c7d86d61a75e997848a30a7e759f5e2f3e29d08ab7aa6383f"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "346e7ffb902b22d4176ba89a03701fd9b4f9acf42e5ea544652060974b963db7"
+hash = "131831a1882b407354c658626aa19acae1fed6da09d0d81bc5bbcb66c51a08d6"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -5142,7 +5250,15 @@ hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "e481a41af7900d8bae6a7c650081da6255f56e806426e2d22fe0bb9f5b3059b8"
+hash = "fe65a7cebf686d32f3201b876d02d654a191f96d125753fe88365d8c06ff6136"
+
+[[files]]
+file = "kubejs/server_scripts/weather2_comandos_solo_op.js"
+hash = "6e63e3a7600dc0a813fa4eeb867f03c97ea32905360ccc5bdb0f062de4ad257b"
+
+[[files]]
+file = "kubejs/server_scripts/weather2_tornado_lista_blanca.js"
+hash = "2cb654719c5806502dee559f61ad0a2dda19a82208b6647bfb76e003f2a22632"
 
 [[files]]
 file = "kubejs/startup_scripts/firstaid_couples_fix.js"
@@ -5172,6 +5288,15 @@ metafile = true
 [[files]]
 file = "mods/addonslib.pw.toml"
 hash = "30931a894fd59654bf9ca72aa1f9882848fe2ad3601595896175e3e56f7be1f9"
+metafile = true
+
+[[files]]
+file = "mods/adorablehamsterpets-3.7.0-1.21.1+neoforge.jar"
+hash = "ff4baffe9fb285048cad2155225012836bd9b70a9910921e611c08b38e64ba4c"
+
+[[files]]
+file = "mods/adventurer-skills-pufferfishs-skills.pw.toml"
+hash = "1cd559718f9d512e24c47246dd5f53c1fd4db1c7cee80331e6f4d84715c8e5ae"
 metafile = true
 
 [[files]]
@@ -5366,6 +5491,10 @@ hash = "c70bc24b041d93887a40fe45e49ba54c65f6e76692ebc442a6a9a93c2f0637c0"
 metafile = true
 
 [[files]]
+file = "mods/cataclysm_of_chaos-1.3.0-neoforge-1.21.1.jar"
+hash = "275c1e4b2e938a3724c0a685ba9d751ec8bd80cd9d4138424fdbc39c2b904db3"
+
+[[files]]
 file = "mods/cataclysms-rise.pw.toml"
 hash = "73d3203547b2b9a02081b70602485802f87aa1345f5c50a4e5c8c5551fbc25db"
 metafile = true
@@ -5462,6 +5591,11 @@ metafile = true
 [[files]]
 file = "mods/corgilib.pw.toml"
 hash = "88b8e547b137f1435b0e383b933062ef0085454561f6adecff585b2fb9b50dd6"
+metafile = true
+
+[[files]]
+file = "mods/coroutil.pw.toml"
+hash = "8ff227007d3ea2f499193f04410000892bcc35b87572ae74d3f19494c6572368"
 metafile = true
 
 [[files]]
@@ -5881,6 +6015,11 @@ hash = "760b68f2927bf6e2043afa4e3a19956f5405e4dfad2940bb6140c904974cdcad"
 metafile = true
 
 [[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "0431771ba664f762587b1d876b0cd0ef4ca0751aed1a5604dfb5f4190f29d409"
+metafile = true
+
+[[files]]
 file = "mods/gabous-libs.pw.toml"
 hash = "a1ccf6a2467dd2cec849b80d4c872ba647e3dd9dccb24da4fb6fae617e73e89e"
 metafile = true
@@ -6284,6 +6423,11 @@ hash = "7d65de9455bb6c263f1e8df1a13a9ba9704e346fa949a1986b88de4ef210ff22"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "3718e8a37d0dc2939cc350cce74bcb9c36b59f48baf4560e62804f7ca6478185"
+metafile = true
+
+[[files]]
 file = "mods/pillager-caravans.pw.toml"
 hash = "0feed48a38a153ae686dbee024c441a36f4adb054f4b5ab4ea5fbc0b21431076"
 metafile = true
@@ -6316,6 +6460,16 @@ metafile = true
 [[files]]
 file = "mods/prickle.pw.toml"
 hash = "eab2f56ff9135b3b7253ea5a73deae2f887e2876f5f0432936044a6e926937b4"
+metafile = true
+
+[[files]]
+file = "mods/puffish-attributes.pw.toml"
+hash = "22d273512f73d6ea8b27dddb628dce14639a35894bb4c27368f7c7a47bb3c2df"
+metafile = true
+
+[[files]]
+file = "mods/puffish-skills.pw.toml"
+hash = "6a8bd3d5ea95c5ddec80171d27e2b150f04b650b0035988e8dbfe55e759a8566"
 metafile = true
 
 [[files]]
@@ -6435,11 +6589,6 @@ metafile = true
 [[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "eb438b9d4a49c0cc65560cdc295bf927cabc6f34319375a0cfbf3aece662add8"
-metafile = true
-
-[[files]]
-file = "mods/sinytra-connector.pw.toml"
-hash = "161d6ad57ed27debb9107d48b0a8de76bc60e41e9d41650efe4bfa080d86e2e8"
 metafile = true
 
 [[files]]
@@ -6640,6 +6789,16 @@ hash = "cfc3d0abc9c387a708d246bef5f90481cd62adee3b6ed7e0932042de2bdbcc3e"
 metafile = true
 
 [[files]]
+file = "mods/weather-storms-tornadoes-concurrent-packet-fix.pw.toml"
+hash = "a1b901a855f6711304f2f3a38f540885aef7b7dbf88850f7b7701ee1a3d47fe4"
+metafile = true
+
+[[files]]
+file = "mods/weather-storms-tornadoes.pw.toml"
+hash = "74deebc436f043207dfa22bb03dbedae591434e7529217223db850d494e34d23"
+metafile = true
+
+[[files]]
 file = "mods/wither-skeleton-tweaks.pw.toml"
 hash = "1e64fe8b0e6b3f7099ed41c1bbe1ec213e48e2c2c7372e130abcb59b3c6679ac"
 metafile = true
@@ -6778,7 +6937,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "d239414078bf0756d63ab58885948ee49328fcb601042406e69263ed3a47677b"
+hash = "713abee3e64e482518aec207cd29a3931a8174c65f40dfeda6f9a923f5718b6f"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"
