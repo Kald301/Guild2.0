@@ -1,0 +1,18 @@
+#Master switch. When false this mod does nothing at all and Zombies Break & Build
+#behaves exactly as if this mod was not installed.
+enabled = true
+#Block building for mobs that use FlyingPathNavigation or FlyingMoveControl.
+checkFlyingNavigation = true
+#Block building for mobs that use WaterBoundPathNavigation (guardians, most modded fish-like monsters).
+checkWaterNavigation = true
+#Block building for mobs whose isNoGravity() is true. Catches custom movers that do not use the
+#standard navigation classes. Combined with OR with the navigation checks above.
+#Note: in vanilla only the Vex sets NoGravity; Blaze and Breeze keep normal gravity and are NOT caught.
+checkNoGravity = true
+#Entity ids that are never blocked by this mod, even if they match the checks above.
+#Drowned is excluded by default because it switches between ground and water navigation.
+#Malformed ids are removed from the file on load (NeoForge keeps a .bak backup); the rest of the list is kept.
+excludedMobIds = ["minecraft:drowned"]
+#Only mobs of this MobCategory are affected. Almost always MONSTER.
+#Allowed Values: MONSTER, CREATURE, AMBIENT, AXOLOTLS, UNDERGROUND_WATER_CREATURE, WATER_CREATURE, WATER_AMBIENT, MISC, ALEXSCAVES_CAVE_CREATURE, ALEXSCAVES_DEEP_SEA_CREATURE, GLARES, RASCALS
+requiredCategory = "MONSTER"

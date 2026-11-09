@@ -6,7 +6,7 @@
 	#Average separation (in blocks) between each Alex's Caves cave biome.
 	# Default: 900
 	# Range: > 50
-	cave_biome_mean_separation = 900
+	cave_biome_mean_separation = 2400
 	#How irregularly shaped Alex's Caves cave biomes can generate. 0 = all biomes nearly circular. 1 = biomes completely squiggly in shape.
 	# Default: 0.15
 	# Range: 0.0 ~ 1.0
@@ -14,9 +14,9 @@
 	#Average spacing in between Alex's Caves cave biomes. 0 = all biomes nearly perfectly equidistant. 1 = biomes completely randomly spread out, sometimes next to eachother.
 	# Default: 0.45
 	# Range: 0.0 ~ 1.0
-	cave_biome_spacing_randomness = 0.45
+	cave_biome_spacing_randomness = 0.2
 	#Whether to warn users when a server starts if an incompatible generation mod is detected.
-	warn_generation_incompatibility = true
+	warn_generation_incompatibility = false
 
 [mob-spawning]
 	#Cave Creatures (All dinosaurs, raycats, etc) spawn at this frequency. Their cap is calculated by multiplying this number with the default mob cap for surface animals.

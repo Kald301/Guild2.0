@@ -1,11 +1,11 @@
 {
   "biomes": {
-    "temperature_multiplier": 1.0,
+    "temperature_multiplier": 1.1,
     "temperature_offset": 0.0,
-    "temperature_scale": 0.25,
-    "vegetation_multiplier": 1.0,
+    "temperature_scale": 0.045,
+    "vegetation_multiplier": 1.1,
     "vegetation_offset": 0.0,
-    "vegetation_scale": 0.25
+    "vegetation_scale": 0.084
   },
   "caves": {
     // Whether old caves/ravines should generate. Game restart required!

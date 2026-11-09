@@ -1,13 +1,13 @@
 name = "Enhanced Celestials 2: Core"
-filename = "Enhanced-Celestials-2-Core-NeoForge-1.21.1-2.0.3.3.jar"
+filename = "Enhanced-Celestials-2-Core-NeoForge-1.21.1-2.0.3.4.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "e98332a46972dd89bbb472395687af72ef988c9a"
+hash = "ef7dbf1d3ea2fa4fa6133c2360bba5a1b20e51b8"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8827906
+file-id = 9464109
 project-id = 1621796

@@ -1,0 +1,14 @@
+[biomas]
+	#Dentro de una zona de Alex's Caves, el bioma de AC gana a los inyectores de Lithostitched
+	#(biomas de cueva de Regions Unexplored como inferno, redstone_caves o prismachasm, que si no lo tapan).
+	prioridad_ac_sobre_inyectores = true
+	#Tope de altura por bioma de AC: por encima de esa y el bioma no se coloca (formato "bioma=y").
+	#Por defecto Forlorn Hollows hasta y=40 y Toxic Caves hasta y=64; el resto sin tope.
+	tope_y = ["alexscaves:forlorn_hollows=40", "alexscaves:toxic_caves=74"]
+
+[tectonic]
+	#Biomas de AC donde se quitan las cuevas cheese/noodle de Tectonic (biomas con camaras grandes).
+	#En los demas se dejan, como las cuevas de ruido de vanilla.
+	quitar_cuevas_en = ["alexscaves:primordial_caves", "alexscaves:candy_cavity", "alexscaves:abyssal_chasm"]
+	#Biomas de AC donde se quitan los rios subterraneos y los tuneles de lava de Tectonic.
+	quitar_rios_y_lava_en = ["alexscaves:magnetic_caves", "alexscaves:primordial_caves", "alexscaves:toxic_caves", "alexscaves:abyssal_chasm", "alexscaves:forlorn_hollows", "alexscaves:candy_cavity"]

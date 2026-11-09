@@ -51,5 +51,10 @@
   {"ingredient":{"id":"biomeswevegone:blueberries"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:sand"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:stripped_bamboo_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"swem:timothy_bushel"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"swem:timothy_bushel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"magistuarmory:corruptedroundshield","components":"{\"minecraft:damage\":101}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:nether_wart"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"biomeswevegone:witch_hazel_fence"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:mutton"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:polished_blackstone_brick_stairs"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

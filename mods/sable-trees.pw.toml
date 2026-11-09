@@ -1,13 +1,13 @@
 name = "Sable Trees: Physics Tree Felling "
-filename = "sabletrees-neoforge-1.21.1-0.4.2.jar"
+filename = "sabletrees-neoforge-1.21.1-0.5.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9dcfdbec8e37e599925c155ccff4be4cd179f746"
+hash = "3997aefd1b5da59723093a280f472ad539651de5"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9343240
+file-id = 9474179
 project-id = 1744089

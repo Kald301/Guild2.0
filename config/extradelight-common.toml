@@ -21,3 +21,10 @@
 [spooky]
 	#All Year Spooky
 	allYearSpooky = false
+
+#Balance
+[balance]
+	#Should the sink/tap give infinite water?
+	infiniteSink = true
+	#Should food spawn in loot tables?
+	spawnFoodLoot = true

@@ -1,0 +1,7 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"irons_spellbooks:scroll","components":"{\"irons_spellbooks:spell_container\":{data:[{id:\"alexs_caves_spellbooks:aspect_of_tremorsaurus\",index:0,level:1,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"irons_spellbooks:scroll","components":"{\"irons_spellbooks:spell_container\":{data:[{id:\"alexs_caves_spellbooks:summon_vesper\",index:0,level:2,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"irons_spellbooks:scroll","components":"{\"irons_spellbooks:spell_container\":{data:[{id:\"alexs_caves_spellbooks:summon_vesper\",index:0,level:1,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"irons_spellbooks:scroll","components":"{\"irons_spellbooks:spell_container\":{data:[{id:\"alexs_caves_spellbooks:summon_grottoceratops\",index:0,level:1,locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

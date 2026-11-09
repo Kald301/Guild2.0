@@ -1,0 +1,13 @@
+name = "Alex's Caves: Spellbooks"
+filename = "alexs_caves_spellbooks-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bd4e8f5875834088981308859b7edc42a7c4234a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9239413
+project-id = 1429793

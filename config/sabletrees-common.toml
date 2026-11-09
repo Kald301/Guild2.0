@@ -3,3 +3,8 @@
 #BREAK: 2 seconds after settling it breaks into its logs and whatever its leaves drop.
 #Allowed Values: KEEP, BREAK
 fallenTrees = "BREAK"
+#What the Create mechanical saw cuts when it touches a fallen tree.
+#WHOLE: the whole tree breaks into items at once, like a standing tree.
+#SINGLE: only the block it touches, so you can push a trunk through it like a sawmill.
+#Allowed Values: WHOLE, SINGLE
+sawCut = "WHOLE"

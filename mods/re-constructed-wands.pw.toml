@@ -1,13 +1,13 @@
 name = "RE:Constructed Wands"
-filename = "reconstructedwands-neoforge-1.21.1-2.0.0.jar"
+filename = "reconstructedwands-neoforge-1.21.1-2.0.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "f83e8df69ec96dc7b47a4048a5ab651642b11105"
+hash = "5b467a091fc80f65b1bbd6e734b39c320c33e484"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9311333
+file-id = 9422009
 project-id = 1425382
