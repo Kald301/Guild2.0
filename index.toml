@@ -1066,7 +1066,7 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "e45b75019b1b309ad2b773a4514630cd2321d5b413f1b960636e0e230e3cce59"
+hash = "61a60f8396775ef9a73d95fecdd1dba10f9f9d238bb80c4cd9d73641aefe371b"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1405,12 +1405,28 @@ file = "config/connector.json"
 hash = "67bee06b2b321ed25e0d4e9b5bac7ab76c8ae76442de6caf11f463ce2ae1ac5e"
 
 [[files]]
+file = "config/copycats-client.toml"
+hash = "381f51308cca7e8aaa1aebb9253a6be686f74ebc70d4da39dd7750d2ca2e9598"
+
+[[files]]
+file = "config/copycats-common.toml"
+hash = "4554d0df9a25e4f58c07df938806bb435fa2556263b60537bcd8f3f3cd28f1c3"
+
+[[files]]
+file = "config/copycats-server.toml"
+hash = "3a2e328d298b0ef379673beffa566eda2d92b4f1d0e00425573b59f0ea66e646"
+
+[[files]]
 file = "config/corpse-server.toml"
 hash = "60de9932246566381fa0f282ab58f8c7db6f5c13a22a39c280b8d555ce1d3df2"
 
 [[files]]
-file = "config/corpsecurioscompat-common.toml"
+file = "config/corpsecurioscompat-common-1.toml.bak"
 hash = "1af8c038af488d4d2f98afc93306cc97a3e7149100c184929980db642abbb89d"
+
+[[files]]
+file = "config/corpsecurioscompat-common.toml"
+hash = "acdd59e02fceb38a0cc0b28cd9b4fd5ec474bb08119b65cddf46aecd433e8802"
 
 [[files]]
 file = "config/cosmeticarmorreworked-client.toml"
@@ -1974,7 +1990,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "f38000c0fce1c5f126e45f133dcd803b8597a51a17aaed87621e83e7ca31a0e6"
+hash = "4565224fccff183e7a556b9fc9e989f4cb9a943e646da7657a6fcabea811eada"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1982,7 +1998,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "7b39a2e5e27756219b1e98f82eef9d4939d9beac398f53a0289796c22cc1b680"
+hash = "572a274fff9289282a836f367bef33970967096cd40ef298ecf274a2b5a6c609"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1990,7 +2006,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "eb22984ea97108037168aaba312ca4cfcb292aa616b8c41e3571f0929df1446a"
+hash = "bda619770360f2fd55702ba60f6fb6fabedccbadae0411a6d0410582d9dcb42b"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -2054,7 +2070,7 @@ hash = "c649bbdbcdf7dcb8241aa13d78f086ec1ac26a3da6a005b68940d35ada48305f"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "272df0107ad596e236868db1d50a96ee3a16ab0b414bb6a9e6de809f7765418b"
+hash = "26bc805a870059537f5ff00107193ffe255518ebc653783a2a6d39b2a08139ec"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -2690,7 +2706,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "ced95be1e5fea08a0d25f83a2123c9cd19bd58f17224e75c32e3dbe5bc71ca44"
+hash = "109dadb82e5874dd2764d4f2b11bb554cc62dcecd782cf474af6e46f7e3e5517"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2774,7 +2790,7 @@ hash = "2e5119684366f75bc8a6df871381c6094a812cadd0d5ed0547405b5f1353f9e1"
 
 [[files]]
 file = "config/jei/client/ingredient-list-mod-sort-order.ini"
-hash = "05cb4d814e08fd131ab872e28781fb5db78f0f172f334b8efdac3ac221f027c8"
+hash = "fd1043a9aabc68704b04fa5c8bd8e1adff2a601918b2af778bbce66b13c14207"
 
 [[files]]
 file = "config/jei/client/ingredient-list-type-sort-order.ini"
@@ -2922,11 +2938,11 @@ hash = "9d78157013f4d270fd96f8d4f6ddc19b20c6ea3a88602166f572a1a4504761c5"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "c346758942ba69d7b4ccf1f3ee07764b007644d52106e5b656ef62b65cd9e506"
+hash = "67d580d903d7d484de3817cc38254055b284b9783de3f27c2a70702799199871"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "91c91e77187d07ff984c1e0394a20586e8e88d8a6827a7555815db4ba70fa6b0"
+hash = "3008cb1a68f63c7a1bf15bf4267851468f08d7760a5f517c2051e14180f4e114"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -4405,12 +4421,16 @@ file = "config/worldedit/.archive-unpack/5f7cd289/zh-TW/strings.json"
 hash = "dc3c9f6273f8c4e10cef482cd283d12c5a74ecdadf3f4f7d5e104b324a2b2720"
 
 [[files]]
+file = "config/worldedit/schematics/drill_1.schem"
+hash = "a48e0a9751efb26829ce76160eaa6ace81db5eabae06a1150184822d49362795"
+
+[[files]]
 file = "config/worldedit/sessions/9d7604c8-49f7-469f-8d51-34b54f527601.json"
 hash = "9757a6208de6780c7d86d61a75e997848a30a7e759f5e2f3e29d08ab7aa6383f"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "fed7a597d23710fbdbc5a4046b700f43b0d00438868f0416263bbd43261cc547"
+hash = "13b9fab41d3dc1aed935e1209bc1f78cf7d7c0844b2044feddb69993d7be2244"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -5779,7 +5799,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "e5bf8ee87f118254d5d3461ee666845dceaf9516918d6e224ef57db66fb75352"
+hash = "dc074c9b98b4ef478ed10487cd14859e414f3db07d061291d7360bbbd0ea0357"
 metafile = true
 
 [[files]]
@@ -5812,6 +5832,11 @@ hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
 metafile = true
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "af68f400faa4564bfaa16509dedcb2dbafb8c3a0154d6e4e0b1443bcb4c6d536"
+metafile = true
+
+[[files]]
 file = "mods/corgilib.pw.toml"
 hash = "88b8e547b137f1435b0e383b933062ef0085454561f6adecff585b2fb9b50dd6"
 metafile = true
@@ -5828,7 +5853,7 @@ metafile = true
 
 [[files]]
 file = "mods/corpse-x-curios-api-compat.pw.toml"
-hash = "0dbb09999d85aa27cae3b923827245ad2e9559bb46f69736dde8f0377fd1c7e2"
+hash = "7bd17d9aa0bd953d9848aef1ef9b3a08e49466de718acde9f020f8f495242f14"
 metafile = true
 
 [[files]]
@@ -5927,7 +5952,7 @@ metafile = true
 
 [[files]]
 file = "mods/creativecore.pw.toml"
-hash = "fb34c9e6bdab66fb3f06b64d609f6f88d9c4609260006f4f54a0b566e1857dff"
+hash = "6543ea97d951fa7e7f736b808c37b8b84a6c7a5d9a79adc2b90fdfbffe31d7d7"
 metafile = true
 
 [[files]]
@@ -6051,12 +6076,12 @@ metafile = true
 
 [[files]]
 file = "mods/emf-compat-better-combat.pw.toml"
-hash = "3fc4cc6240d190171aa31ed62c33b76c3be3fb3d96b9f97ba77aafc2dec69958"
+hash = "19e1810a6253acfd14bbfa72ce9cfee46c3e1fe7c3f8ff9f56a6b11baf1fc3b8"
 metafile = true
 
 [[files]]
 file = "mods/emf-compat-core.pw.toml"
-hash = "6187d58d86a89aca9d44a4ee00e6a10be8c790c3a8e95074a3010982b6097fd7"
+hash = "fd1aaf11d14082f9f9804a77a49e6ae42e83c9cfd9fbf5614e3af425e890fb6e"
 metafile = true
 
 [[files]]
@@ -6562,7 +6587,7 @@ metafile = true
 
 [[files]]
 file = "mods/mezzconfig.pw.toml"
-hash = "b0c3d1ba984a9188d074634f45f17e3e2a248d5324b438f2ba4d18b3894b360e"
+hash = "5d445e2ad3f047becc67fec1e8f3bf6fe22ade3a443ec301590d54d0f3b91f3a"
 metafile = true
 
 [[files]]
@@ -6737,7 +6762,7 @@ metafile = true
 
 [[files]]
 file = "mods/redomesticate.pw.toml"
-hash = "ab20954b9b32af90310672ceab96bfae2d7db77990635ca54482a61cabc97305"
+hash = "795e13ea316c880f36ba9210b8c3da2b152b85e2fe2b9b15562a2c1be60d3077"
 metafile = true
 
 [[files]]
@@ -6787,7 +6812,7 @@ metafile = true
 
 [[files]]
 file = "mods/sabletrees-dynamictrees-compat.pw.toml"
-hash = "a1a349aeff57b91d8776ef7cd03820ce82955b79b04dfe190e7f725712d95c92"
+hash = "56a5e48661aa9a469b9ef236bae624c700a718da8f305983f8f98da3b2314a89"
 metafile = true
 
 [[files]]
@@ -6801,7 +6826,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "b359f7ca216103300226ce7e9715099e8244dc60f0197625c3f522e20bce306d"
+hash = "6aba148930aeb000292b8862990ab4515ea033554b67b44dd3e59f16ef244778"
 metafile = true
 
 [[files]]
@@ -6845,12 +6870,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "f87df94252052022b6f742afc834092a594e4e6fdedf3837cfccc899aaa462d6"
+hash = "9bc110bc3856f564d2da98ae94a2ac91514cf9a206089b3607657468e98bf198"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "8ea22b52142b97ea8b5bd0d732c5a59e9184b2b999d3d448c74186466d0e1e06"
+hash = "bdda40311c245eaed6160010558b57916608f391f265221811be957258eb0219"
 metafile = true
 
 [[files]]
@@ -7160,7 +7185,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "87aa2a0d011111f7b79da519db7ce66b2df510ef6d95fdaeac77e493050c2e6b"
+hash = "afc2d84e09dcec630e52d4159d93bb57d2722e4a0b51f472b9baeef39f73a753"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"

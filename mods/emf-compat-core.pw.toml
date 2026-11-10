@@ -1,13 +1,13 @@
 name = "EMF Compat: Core"
-filename = "emf_compat_core_neoforge_1.21.1_2.3.2.jar"
+filename = "emf_compat_core_neoforge_1.21.1_2.4.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "67e4a92e2df2a2b86a655cfc081d971a81f5a9f8"
+hash = "7aa9e6e1e36e4af8666ffe7141fac8e9c6c8e193"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9205847
+file-id = 9524632
 project-id = 1605113

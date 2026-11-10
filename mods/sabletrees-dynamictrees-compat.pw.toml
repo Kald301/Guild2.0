@@ -1,13 +1,13 @@
 name = "Sable Trees/Dynamic Trees Compatibility"
-filename = "sabletrees_dtcompat-neoforge-1.21.1-0.8.2.jar"
+filename = "sabletrees_dtcompat-neoforge-1.21.1-0.8.3.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "af1a8b99475fe15bbf4f969c4b5f7fa7010ee780"
+hash = "af793813a1f4ca7cf3881b0b29800d27e98bd223"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 9474193
+file-id = 9532793
 project-id = 1768961
