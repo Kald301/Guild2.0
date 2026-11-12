@@ -66,5 +66,8 @@
   {"ingredient":{"id":"minecraft:bone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:dark_prismarine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:raw_copper_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"farmersdelight:carrot_crate"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"farmersdelight:carrot_crate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:cooked_porkchop"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cataclysm:stone_tiles"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cgs:raw_lead"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

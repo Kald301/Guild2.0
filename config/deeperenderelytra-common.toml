@@ -1,0 +1,6 @@
+#Ignitium Soul Elytra boost cooldown duration (in ticks).
+#Set to -1 to disable the boost.
+#Default: 400 ticks (20 seconds)
+# Default: 400
+# Range: -1 ~ 12000
+soulElytraCooldown = 400

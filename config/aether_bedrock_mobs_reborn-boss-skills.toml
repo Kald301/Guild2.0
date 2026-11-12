@@ -1,0 +1,193 @@
+#Boss 技能直接伤害 = 当前攻击力 × 对应技能倍率。
+#Boss direct skill damage = current attack damage multiplied by the corresponding skill multiplier.
+[boss_skill_multipliers]
+
+	[boss_skill_multipliers.saltcrabking]
+		#蟹钳夹击伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for pincer; 0 disables direct damage while preserving effects.
+		# Default: 0.8
+		# Range: 0.0 ~ 1.7976931348623157E308
+		pincer = 0.8
+		#重砸伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for slam; 0 disables direct damage while preserving effects.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		slam = 1.0
+		#冲撞伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for rush; 0 disables direct damage while preserving effects.
+		# Default: 0.8666666666666667
+		# Range: 0.0 ~ 1.7976931348623157E308
+		rush = 0.8666666666666667
+		#泡泡弹伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for bubble; 0 disables direct damage while preserving effects.
+		# Default: 0.4
+		# Range: 0.0 ~ 1.7976931348623157E308
+		bubble = 0.4
+		#盐泉喷发伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for geyser; 0 disables direct damage while preserving effects.
+		# Default: 0.6
+		# Range: 0.0 ~ 1.7976931348623157E308
+		geyser = 0.6
+		#潮汐浪墙伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for wave; 0 disables direct damage while preserving effects.
+		# Default: 0.6666666666666666
+		# Range: 0.0 ~ 1.7976931348623157E308
+		wave = 0.6666666666666666
+		#盐晶破土伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for salt; 0 disables direct damage while preserving effects.
+		# Default: 0.6
+		# Range: 0.0 ~ 1.7976931348623157E308
+		salt = 0.6
+
+	[boss_skill_multipliers.crystalitegolem]
+		#右拳伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for punch_right; 0 disables direct damage while preserving effects.
+		# Default: 1.375
+		# Range: 0.0 ~ 1.7976931348623157E308
+		punch_right = 1.375
+		#左拳伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for punch_left; 0 disables direct damage while preserving effects.
+		# Default: 1.625
+		# Range: 0.0 ~ 1.7976931348623157E308
+		punch_left = 1.625
+		#重锤伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for slam; 0 disables direct damage while preserving effects.
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		slam = 2.0
+		#冲锋伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for charge; 0 disables direct damage while preserving effects.
+		# Default: 1.75
+		# Range: 0.0 ~ 1.7976931348623157E308
+		charge = 1.75
+		#晶笼持续接触伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for cage_contact; 0 disables direct damage while preserving effects.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.7976931348623157E308
+		cage_contact = 0.5
+		#晶核爆发伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for core; 0 disables direct damage while preserving effects.
+		# Default: 1.75
+		# Range: 0.0 ~ 1.7976931348623157E308
+		core = 1.75
+		#晶笼升起伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for cage_erupt; 0 disables direct damage while preserving effects.
+		# Default: 0.75
+		# Range: 0.0 ~ 1.7976931348623157E308
+		cage_erupt = 0.75
+		#晶刺突起伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for spike; 0 disables direct damage while preserving effects.
+		# Default: 1.25
+		# Range: 0.0 ~ 1.7976931348623157E308
+		spike = 1.25
+
+	[boss_skill_multipliers.aether_naga]
+		#噬咬伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for bite; 0 disables direct damage while preserving effects.
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		bite = 2.0
+		#尾扫伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for sweep; 0 disables direct damage while preserving effects.
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		sweep = 2.0
+		#潜地突袭伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for burrow; 0 disables direct damage while preserving effects.
+		# Default: 2.5
+		# Range: 0.0 ~ 1.7976931348623157E308
+		burrow = 2.5
+		#光束每次伤害伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for beam; 0 disables direct damage while preserving effects.
+		# Default: 0.6666666666666666
+		# Range: 0.0 ~ 1.7976931348623157E308
+		beam = 0.6666666666666666
+		#石柱升起伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for pillar; 0 disables direct damage while preserving effects.
+		# Default: 1.6666666666666667
+		# Range: 0.0 ~ 1.7976931348623157E308
+		pillar = 1.6666666666666667
+		#巨石撞击伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for boulder; 0 disables direct damage while preserving effects.
+		# Default: 1.6666666666666667
+		# Range: 0.0 ~ 1.7976931348623157E308
+		boulder = 1.6666666666666667
+
+	[boss_skill_multipliers.eldershulker]
+		#光束每次伤害伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for beam; 0 disables direct damage while preserving effects.
+		# Default: 1.2
+		# Range: 0.0 ~ 1.7976931348623157E308
+		beam = 1.2
+		#相位砸落伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for phase; 0 disables direct damage while preserving effects.
+		# Default: 2.8
+		# Range: 0.0 ~ 1.7976931348623157E308
+		phase = 2.8
+		#浮空力场脉冲伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for field; 0 disables direct damage while preserving effects.
+		# Default: 0.8
+		# Range: 0.0 ~ 1.7976931348623157E308
+		field = 0.8
+		#潜影弹伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for orb; 0 disables direct damage while preserving effects.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		orb = 1.0
+		#碎刃伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for shard; 0 disables direct damage while preserving effects.
+		# Default: 1.2
+		# Range: 0.0 ~ 1.7976931348623157E308
+		shard = 1.2
+		#缠藤破土伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for vine; 0 disables direct damage while preserving effects.
+		# Default: 1.4
+		# Range: 0.0 ~ 1.7976931348623157E308
+		vine = 1.4
+
+	[boss_skill_multipliers.spirit]
+		#灵刃第一斩伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for slash; 0 disables direct damage while preserving effects.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		slash = 1.0
+		#灵刃反斩伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for reverse_slash; 0 disables direct damage while preserving effects.
+		# Default: 1.15
+		# Range: 0.0 ~ 1.7976931348623157E308
+		reverse_slash = 1.15
+		#裂地重斩伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for cleave; 0 disables direct damage while preserving effects.
+		# Default: 1.3
+		# Range: 0.0 ~ 1.7976931348623157E308
+		cleave = 1.3
+		#裂地魂焰伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for cleave_fire; 0 disables direct damage while preserving effects.
+		# Default: 0.9
+		# Range: 0.0 ~ 1.7976931348623157E308
+		cleave_fire = 0.9
+		#灵影突进伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for dash; 0 disables direct damage while preserving effects.
+		# Default: 1.2
+		# Range: 0.0 ~ 1.7976931348623157E308
+		dash = 1.2
+		#突进路径爆发伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for dash_burst; 0 disables direct damage while preserving effects.
+		# Default: 0.9
+		# Range: 0.0 ~ 1.7976931348623157E308
+		dash_burst = 0.9
+		#灵焰轮环伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for nova; 0 disables direct damage while preserving effects.
+		# Default: 0.8
+		# Range: 0.0 ~ 1.7976931348623157E308
+		nova = 0.8
+		#圣环符弹伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for rune; 0 disables direct damage while preserving effects.
+		# Default: 0.6363636363636364
+		# Range: 0.0 ~ 1.7976931348623157E308
+		rune = 0.6363636363636364
+		#天剑落地伤害倍率；0 仅关闭直接伤害，状态与特效保留。
+		#Damage multiplier for sword; 0 disables direct damage while preserving effects.
+		# Default: 1.0909090909090908
+		# Range: 0.0 ~ 1.7976931348623157E308
+		sword = 1.0909090909090908

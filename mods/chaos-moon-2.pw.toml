@@ -1,0 +1,13 @@
+name = "Chaos Moon 2"
+filename = "ChaosMoon2-1.21.1-NeoForge-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "00144fea7838248b6f73a3a7a38b79cc72e2095f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9061663
+project-id = 1667826

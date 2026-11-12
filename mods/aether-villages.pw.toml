@@ -1,0 +1,13 @@
+name = "Aether Villages"
+filename = "AetherVillages-1.21.1-1.0.8-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0795d6a8934c90475c930149940937d6bea515af"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5895490
+project-id = 1073197

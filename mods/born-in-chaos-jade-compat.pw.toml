@@ -1,0 +1,13 @@
+name = "Born in Chaos Jade compat"
+filename = "infected_ore_info-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "199f144aeded02cf2461cfb61eb3e8d85ab70e4d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8700301
+project-id = 1510842

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "somakespells:default_cataclysm_incinerator",
+      "priority": 0,
+      "selector": {
+        "items": ["cataclysm:the_incinerator"],
+        "slots": ["mainhand"]
+      },
+      "mode": "patch",
+      "preserve_upgrades": true,
+      "attributes": [
+        { "attribute": "irons_spellbooks:fire_spell_power", "action": "replace", "operation": "add_multiplied_base", "value": 0.15, "slot": "mainhand" }
+      ]
+    }
+  ]
+}

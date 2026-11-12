@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "somakespells:default_cataclysm_ignitium",
+      "priority": 0,
+      "selector": {
+        "namespace": "cataclysm",
+        "prefix": "ignitium_",
+        "slots": ["armor"]
+      },
+      "mode": "patch",
+      "preserve_upgrades": true,
+      "attributes": [
+        { "attribute": "irons_spellbooks:max_mana", "action": "replace", "operation": "add_value", "value": 200, "slot": "auto" },
+        { "attribute": "irons_spellbooks:spell_power", "action": "replace", "operation": "add_multiplied_base", "value": 0.05, "slot": "auto" },
+        { "attribute": "irons_spellbooks:fire_spell_power", "action": "replace", "operation": "add_multiplied_base", "value": 0.20, "slot": "auto" }
+      ]
+    }
+  ]
+}

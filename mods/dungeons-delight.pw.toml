@@ -1,0 +1,13 @@
+name = "Dungeons Delight"
+filename = "neoforge-dungeonsdelight-1.21.1-1.5.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "917fbf0eb612456e1d5b8c3b7f6c47e821cf5217"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9446248
+project-id = 1258923

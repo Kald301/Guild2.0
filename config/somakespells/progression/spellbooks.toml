@@ -1,0 +1,657 @@
+	#Burning Magma progression
+	[burning_magma.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:blaze"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "irons_spellbooks:pyromancer"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[burning_magma.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "cataclysm:ignited_berserker"
+		#How many kills are required for the third objective target mob.
+		# Default: 20
+		# Range: > 0
+		targetMobKillsRequired = 20
+		#Entity ID for the final objective target mob.
+		finalMobId = "cataclysm:ignis"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Tidebound progression
+	[tidebound.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:guardian"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:elder_guardian"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[tidebound.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "cataclysm:hippocamtus"
+		#How many kills are required for the third objective target mob.
+		# Default: 20
+		# Range: > 0
+		targetMobKillsRequired = 20
+		#Entity ID for the final objective target mob.
+		finalMobId = "cataclysm:scylla"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Starless Grimoire progression
+	[starless_grimoire.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 25
+		# Range: > 0
+		conditionalKillsRequired = 25
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:enderman"
+		#How many kills are required for the third objective target mob.
+		# Default: 5
+		# Range: > 0
+		targetMobKillsRequired = 5
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:shulker"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[starless_grimoire.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 60
+		# Range: > 0
+		conditionalKillsRequired = 60
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:shulker"
+		#How many kills are required for the third objective target mob.
+		# Default: 8
+		# Range: > 0
+		targetMobKillsRequired = 8
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:warden"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Voidbound Codex progression
+	[voidbound_codex.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:enderman"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "born_in_chaos_v1:phantom_creeper"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[voidbound_codex.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "cataclysm:endermaptera"
+		#How many kills are required for the third objective target mob.
+		# Default: 20
+		# Range: > 0
+		targetMobKillsRequired = 20
+		#Entity ID for the final objective target mob.
+		finalMobId = "cataclysm:ender_guardian"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Invoker Canon progression
+	[invoker_canon.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:pillager"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "born_in_chaos_v1:missioner"
+		#How many kills are required for the final objective target mob.
+		# Default: 5
+		# Range: > 0
+		finalMobKillsRequired = 5
+
+	[invoker_canon.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:evoker"
+		#How many kills are required for the third objective target mob.
+		# Default: 20
+		# Range: > 0
+		targetMobKillsRequired = 20
+		#Entity ID for the final objective target mob.
+		finalMobId = "born_in_chaos_v1:lifestealer"
+		#How many kills are required for the final objective target mob.
+		# Default: 5
+		# Range: > 0
+		finalMobKillsRequired = 5
+
+	#Dawnlit Gospel progression
+	[dawnlit_gospel.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:zombie"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "irons_spellbooks:priest"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[dawnlit_gospel.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:zombie"
+		#How many kills are required for the third objective target mob.
+		# Default: 50
+		# Range: > 0
+		targetMobKillsRequired = 50
+		#Entity ID for the final objective target mob.
+		finalMobId = "irons_spellbooks:priest"
+		#How many kills are required for the final objective target mob.
+		# Default: 5
+		# Range: > 0
+		finalMobKillsRequired = 5
+
+	#Frostvein Codex progression
+	[frostvein_codex.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 20
+		# Range: > 0
+		conditionalKillsRequired = 20
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:stray"
+		#How many kills are required for the third objective target mob.
+		# Default: 5
+		# Range: > 0
+		targetMobKillsRequired = 5
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:polar_bear"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[frostvein_codex.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:stray"
+		#How many kills are required for the third objective target mob.
+		# Default: 12
+		# Range: > 0
+		targetMobKillsRequired = 12
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:polar_bear"
+		#How many kills are required for the final objective target mob.
+		# Default: 5
+		# Range: > 0
+		finalMobKillsRequired = 5
+
+	#Stormcaller Lexicon progression
+	[stormcaller_lexicon.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:creeper"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:breeze"
+		#How many kills are required for the final objective target mob.
+		# Default: 5
+		# Range: > 0
+		finalMobKillsRequired = 5
+
+	[stormcaller_lexicon.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:creeper"
+		#How many kills are required for the third objective target mob.
+		# Default: 50
+		# Range: > 0
+		targetMobKillsRequired = 50
+		#Entity ID for the final objective target mob.
+		finalMobId = "cataclysm:scylla"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Verdant Testament progression
+	[verdant_testament.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:cave_spider"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:bogged"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[verdant_testament.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:cave_spider"
+		#How many kills are required for the third objective target mob.
+		# Default: 50
+		# Range: > 0
+		targetMobKillsRequired = 50
+		#Entity ID for the final objective target mob.
+		finalMobId = "cataclysm:amethyst_crab"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Sanguine Testament progression
+	[sanguine_testament.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:bat"
+		#How many kills are required for the third objective target mob.
+		# Default: 25
+		# Range: > 0
+		targetMobKillsRequired = 25
+		#Entity ID for the final objective target mob.
+		finalMobId = "born_in_chaos_v1:bloody_gadfly"
+		#How many kills are required for the final objective target mob.
+		# Default: 5
+		# Range: > 0
+		finalMobKillsRequired = 5
+
+	[sanguine_testament.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 100
+		# Range: > 0
+		conditionalKillsRequired = 100
+		#Entity ID for the third objective target mob.
+		targetMobId = "born_in_chaos_v1:bloody_gadfly"
+		#How many kills are required for the third objective target mob.
+		# Default: 20
+		# Range: > 0
+		targetMobKillsRequired = 20
+		#Entity ID for the final objective target mob.
+		finalMobId = "irons_spellbooks:dead_king"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Soullit Testament progression
+	[soullit_testament.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 20
+		# Range: > 0
+		conditionalKillsRequired = 20
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:phantom"
+		#How many kills are required for the third objective target mob.
+		# Default: 5
+		# Range: > 0
+		targetMobKillsRequired = 5
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:vex"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[soullit_testament.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 50
+		# Range: > 0
+		conditionalKillsRequired = 50
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:ghast"
+		#How many kills are required for the third objective target mob.
+		# Default: 8
+		# Range: > 0
+		targetMobKillsRequired = 8
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:wither_skeleton"
+		#How many kills are required for the final objective target mob.
+		# Default: 10
+		# Range: > 0
+		finalMobKillsRequired = 10
+
+	#Axiomatic Codex progression
+	[axiomatic_codex.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 25
+		# Range: > 0
+		conditionalKillsRequired = 25
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:phantom"
+		#How many kills are required for the third objective target mob.
+		# Default: 5
+		# Range: > 0
+		targetMobKillsRequired = 5
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:enderman"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[axiomatic_codex.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 60
+		# Range: > 0
+		conditionalKillsRequired = 60
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:enderman"
+		#How many kills are required for the third objective target mob.
+		# Default: 8
+		# Range: > 0
+		targetMobKillsRequired = 8
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:warden"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	#Stoneheart Codex progression
+	[stoneheart_codex.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 25
+		# Range: > 0
+		conditionalKillsRequired = 25
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:iron_golem"
+		#How many kills are required for the third objective target mob.
+		# Default: 3
+		# Range: > 0
+		targetMobKillsRequired = 3
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:ravager"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[stoneheart_codex.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 60
+		# Range: > 0
+		conditionalKillsRequired = 60
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:iron_golem"
+		#How many kills are required for the third objective target mob.
+		# Default: 8
+		# Range: > 0
+		targetMobKillsRequired = 8
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:ravager"
+		#How many kills are required for the final objective target mob.
+		# Default: 2
+		# Range: > 0
+		finalMobKillsRequired = 2
+
+	#Resonance Canticle progression
+	[resonance_canticle.tier1]
+		#Tier 1 progression
+		#How many spell casts are required in this tier.
+		# Default: 120
+		# Range: > 1
+		castsRequired = 120
+		#How many conditional kills are required in this tier.
+		# Default: 25
+		# Range: > 0
+		conditionalKillsRequired = 25
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:bat"
+		#How many kills are required for the third objective target mob.
+		# Default: 12
+		# Range: > 0
+		targetMobKillsRequired = 12
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:warden"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1
+
+	[resonance_canticle.tier2]
+		#Tier 2 progression
+		#How many spell casts are required in this tier.
+		# Default: 280
+		# Range: > 1
+		castsRequired = 280
+		#How many conditional kills are required in this tier.
+		# Default: 60
+		# Range: > 0
+		conditionalKillsRequired = 60
+		#Entity ID for the third objective target mob.
+		targetMobId = "minecraft:bat"
+		#How many kills are required for the third objective target mob.
+		# Default: 32
+		# Range: > 0
+		targetMobKillsRequired = 32
+		#Entity ID for the final objective target mob.
+		finalMobId = "minecraft:warden"
+		#How many kills are required for the final objective target mob.
+		# Default: 1
+		# Range: > 0
+		finalMobKillsRequired = 1

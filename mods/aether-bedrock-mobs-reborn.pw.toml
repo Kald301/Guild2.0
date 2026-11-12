@@ -1,0 +1,13 @@
+name = "Aether Bedrock Mobs Reborn"
+filename = "aether_bedrock_mobs_reborn-1.11.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bcf96833ad4835ebd7c03e2a7eb5e4ab300dfede"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9571908
+project-id = 1739137

@@ -14,7 +14,7 @@ hash = "6d46bdc090d4bb9bdfb660be4ca94075dc08e09d5fed84108eba92a422a23c49"
 
 [[files]]
 file = "config/InventoryHUD/curios.json"
-hash = "30ff9cfcc6f8dfcaea9bb0c7c0c2fabdea93c68d7c03767e8e9a9e8c73e43fd7"
+hash = "640b2b7f40b5bb1b78d75751539448b3c1560964dd5603c1d96efc58f85c5b13"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -69,8 +69,20 @@ file = "config/accdelight.json"
 hash = "54da2ffa237b5ae41f198a247306c9578e6b1cb9f35376470c7ab3cfb66e7e13"
 
 [[files]]
+file = "config/accessories.json5"
+hash = "b9f6a56acdb02a286de9aa06578dac5485656fb476adc819fb3c63dd49ad0785"
+
+[[files]]
 file = "config/accompat-common.toml"
 hash = "3101ff9acbc878dafcc9452dc33331c6167512b41fe42707c0b0ee6b270c5687"
+
+[[files]]
+file = "config/aces_spell_utils-client.toml"
+hash = "82821bf871430779149bfac29b32af84004b3c190d58413644d312c58c35f639"
+
+[[files]]
+file = "config/aces_spell_utils-common.toml"
+hash = "ebfaf174afce9599015f0cb0d4202cf052bb752271e59251a4745ca570ff43ec"
 
 [[files]]
 file = "config/addonslib-common.toml"
@@ -117,8 +129,44 @@ file = "config/adorablehamsterpets/worldgen.toml"
 hash = "ba3531f51ce9e808ef0ca425a2032ef410053e48ef98e069c2e08315127cb7cf"
 
 [[files]]
+file = "config/aeroblender-common.toml"
+hash = "c34c0ac1f978b1c80b99fe3b78b8fb29a633392c33b05495e8804d04be6d5449"
+
+[[files]]
 file = "config/aeronautics-server.toml"
 hash = "a9302b0253e494e7d80f0a2785bf4514b0b67da85796437ca032482db62be514"
+
+[[files]]
+file = "config/aether-client.toml"
+hash = "1eb44b8a4ebc37ceee3bcf09a55f0a4757328df30c8be3eacab5162709be54c9"
+
+[[files]]
+file = "config/aether-common.toml"
+hash = "87cff44fd6dcadcbe15ed346faba65afe90a4a0b948e4758a805753ae2475340"
+
+[[files]]
+file = "config/aether-server.toml"
+hash = "054dabc1c3d2765309fd589127800f61ef04f6368bc5a98b9e4a9efdd35c36ba"
+
+[[files]]
+file = "config/aether-startup.toml"
+hash = "7540bee0eb77cd177eb6b550563709ca123b0b9ed77f9198d127340dcc528799"
+
+[[files]]
+file = "config/aether/aether_customizations.txt"
+hash = "113f7dfc56b7b2efdc782e45356c87c47174bb76dc34dcef24ca2ec32c7908e1"
+
+[[files]]
+file = "config/aether/sun_altar_whitelist.json"
+hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+
+[[files]]
+file = "config/aether_bedrock_mobs_reborn-boss-skills.toml"
+hash = "3c93100466a4829e88f7f9193753837e17221821948b2178f03794236c17fdd1"
+
+[[files]]
+file = "config/aether_dragon-common.toml"
+hash = "5dd23ab39d6fdd5a1b3e07f168d77efcb5a47c9131b4dd30f7e27005029dba8b"
 
 [[files]]
 file = "config/alexscaves-client.toml"
@@ -533,6 +581,10 @@ file = "config/amc.json"
 hash = "82a6f62735029515da3c6af6881cf1ca44b346c2836ec3921ede9cde76aace4a"
 
 [[files]]
+file = "config/apotheosis/apothic_attributes.cfg"
+hash = "336a1dcfde783fb49e7f5ae3f5905179e2e7800c0cd41cee8fc6bd210edb2e06"
+
+[[files]]
 file = "config/appleskin-client.toml"
 hash = "7127a276c7305371397053cd8d0833e6825c828850626e4067b9fed1430ed217"
 
@@ -551,6 +603,178 @@ hash = "b73793e634d1a441c12ed1c3d02ec074b2f19a24766512f78ff0b9d83cf9768b"
 [[files]]
 file = "config/artifacts/items.toml"
 hash = "85218a5af8b311d663c58a6c9b69c98eebd92fb8d1b8aaffab4118aa22519cdf"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/evasive.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/goliath_slayer.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/hunger_steal.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/hydro_magic_resist.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/hydro_spell_power.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/life_recovery.json"
+hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/magic_damage_crit_chance.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/magic_damage_crit_damage.json"
+hash = "c53319e27427fef88d5df7db100e255158c6f088d53b67cc4c2a7f8d0a152693"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/magic_projectile_crit_chance.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/magic_projectile_crit_damage.json"
+hash = "c53319e27427fef88d5df7db100e255158c6f088d53b67cc4c2a7f8d0a152693"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/magic_projectile_damage.json"
+hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/mana_rend.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/mana_steal.json"
+hash = "6fae495b9ca027f6d8e72b5a7c2b3f52b3c5c6490b8d5bf38a7ac7679c374485"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/ritual_magic_resist.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/ritual_spell_power.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/spell_res_penetration.json"
+hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/technomancy_magic_resist.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/technomancy_spell_power.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aces_spell_utils/vigor_reap.json"
+hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
+
+[[files]]
+file = "config/attributefix/aether/moa_max_jumps.json"
+hash = "f4141221feb1e43056da711fcda29f9091344a48876c62e6f1d1a61fac8af44a"
+
+[[files]]
+file = "config/attributefix/aether_chronicles/aether_magic_resist.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/aether_chronicles/aether_spell_power.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/armor_pierce.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/armor_shred.json"
+hash = "803b5a64c395b01f6efd12222624c7422cc548890c74d62f105daa670500e438"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/arrow_damage.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/arrow_velocity.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/cold_damage.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/cooldown_reduction.json"
+hash = "20fb17a4c7d63f89af4530b823b1d95c8fc10a114112f802fcf377c1b8c23128"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/crit_chance.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/crit_damage.json"
+hash = "c53319e27427fef88d5df7db100e255158c6f088d53b67cc4c2a7f8d0a152693"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/current_hp_damage.json"
+hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/dodge_chance.json"
+hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/draw_speed.json"
+hash = "bb3d3e9c91455de6702c80400f82cd48760dd76ea9e71498ea4939c675e3b0f4"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/experience_gained.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/fire_damage.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/ghost_health.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/healing_received.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/life_steal.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/mining_speed.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/overheal.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/projectile_damage.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/prot_pierce.json"
+hash = "a34b1473712893aa4dd1a7ae1a7a0a6faf7232e546e1c112871054694c8fed35"
+
+[[files]]
+file = "config/attributefix/apothic_attributes/prot_shred.json"
+hash = "d82f591574e862d5396f65820863483cdcc3acac9a0000e76011685b73376893"
 
 [[files]]
 file = "config/attributefix/aquamirae/depths_fury.json"
@@ -613,6 +837,10 @@ file = "config/attributefix/block_factorys_bosses/roll_count.json"
 hash = "3248ed3164c669c85abf5667762b6f175653169a24bbbcec3f17f4fe56bb78d8"
 
 [[files]]
+file = "config/attributefix/caelus/fall_flying.json"
+hash = "17ef1233e3020b53a3835793bc771c00114af5b167f57cb03506098dbc49e535"
+
+[[files]]
 file = "config/attributefix/cataclysm/additional_critical_damage.json"
 hash = "2e6ad079bdd14db3412092f91245b2cf6f73a86eecc71f17e7cb1a9c8558131e"
 
@@ -627,6 +855,22 @@ hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
 [[files]]
 file = "config/attributefix/cataclysm/nature_heal.json"
 hash = "753bdbb0cff81ca77562a88ebcda6ae1c633d0042a12f2f9ec016a966c6ee6c7"
+
+[[files]]
+file = "config/attributefix/cataclysm_spellbooks/abyssal_magic_resist.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/cataclysm_spellbooks/abyssal_spell_power.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/cataclysm_spellbooks/technomancy_magic_resist.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
+
+[[files]]
+file = "config/attributefix/cataclysm_spellbooks/technomancy_spell_power.json"
+hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
 
 [[files]]
 file = "config/attributefix/cold_sweat/base_temperature.json"
@@ -873,6 +1117,18 @@ file = "config/attributefix/l2damagetracker/regen.json"
 hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
 
 [[files]]
+file = "config/attributefix/lodestone/magic_damage.json"
+hash = "43aa2701d17e26c045533a5b0500fa8c0639d4e62adcccd389ba3426378a80c0"
+
+[[files]]
+file = "config/attributefix/lodestone/magic_proficiency.json"
+hash = "43aa2701d17e26c045533a5b0500fa8c0639d4e62adcccd389ba3426378a80c0"
+
+[[files]]
+file = "config/attributefix/lodestone/magic_resistance.json"
+hash = "43aa2701d17e26c045533a5b0500fa8c0639d4e62adcccd389ba3426378a80c0"
+
+[[files]]
 file = "config/attributefix/minecraft/generic.armor.json"
 hash = "b6aa33f20fbc7bb14c930dfcfd93591f37f2ccf12df0b6da9551f7a6fad1e439"
 
@@ -1029,11 +1285,79 @@ file = "config/attributefix/puffish_attributes/stamina.json"
 hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
+file = "config/attributefix/runiclib/generic.burning_retaliation_chance.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.burning_retaliation_length.json"
+hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.critical_strike_chance.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.critical_strike_multiplier.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.dodge_chance.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.lifesteal_chance.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.lifesteal_heal_amount.json"
+hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.retaliation_amount.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.retaliation_chance.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.vulnerability_chance.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
+file = "config/attributefix/runiclib/generic.vulnerability_multiplier.json"
+hash = "6217856e9bb2355a468bbe03fe24bc97bae91f8deb54e9df42f8a4021cde99e6"
+
+[[files]]
 file = "config/attributefix/sable/player.sub_level_punch_cooldown.json"
 hash = "93b4adf5c49377098f3767e46dea7ab8228ad0edd2d0f59904ff9e12a429e8c0"
 
 [[files]]
 file = "config/attributefix/sable/player.sub_level_punch_strength.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/somakespells/aqua_magic_resist.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/somakespells/aqua_spell_power.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/somakespells/fire_damage.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/somakespells/ice_damage.json"
+hash = "6a50a28a3820a8085fb2d43b0b3ba718ff8d9e0df9800e855d540c3c7a82d862"
+
+[[files]]
+file = "config/attributefix/somakespells/infernal_fire_spell_power.json"
+hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
+
+[[files]]
+file = "config/attributefix/somakespells/soul_fire_spell_power.json"
 hash = "3e05221436880d09fbac95dfc9cde9d2225e8cfdb81ea0c4a41a453934acf938"
 
 [[files]]
@@ -1050,7 +1374,11 @@ hash = "6b9b3d0281e3d07f12580d39983e2ac2eac90f30c739d743b84d55024c3651ed"
 
 [[files]]
 file = "config/autotranslation.json5"
-hash = "4d9a111ba122518c855033fdbb196584203e3825eb14c35ef527b9f92f246f35"
+hash = "3d5e47aa385b57c21273860f30dd4c5fbc2f8b0cb9342afe30e39796b704d962"
+
+[[files]]
+file = "config/azurelib.json"
+hash = "0e16b69d8ff953294280e955969f24aa49d2dd19cbc8eeab166715a7dd969e43"
 
 [[files]]
 file = "config/bclib/client.json"
@@ -1234,7 +1562,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
+hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
 
 [[files]]
 file = "config/block_factorys_bosses-client.toml"
@@ -1287,6 +1615,10 @@ hash = "a83db10f4450e21761559465b75388c115d3f0d899b368e1124f380d49b737a8"
 [[files]]
 file = "config/cataclysm-common.toml"
 hash = "61926b9ce81d6d44ac25e367b67e5642235fa026e6dddd6be54e0c2965570cc7"
+
+[[files]]
+file = "config/cataclysm_spellbooks-server.toml"
+hash = "55db85ad2210ce45ef28e57c134a96e5db2fd8f80a9aff599ab73f8c376cbacc"
 
 [[files]]
 file = "config/chunkloaders-common.toml"
@@ -1445,6 +1777,26 @@ file = "config/createaddition-common.toml"
 hash = "578e11f1bc71d9edc8bcb5de99d089422ce5faf301044f91c9bd24e510576ceb"
 
 [[files]]
+file = "config/createbigcannons-client.toml"
+hash = "2d14d343a8fb8130c42d1b7bc9116d1646f74d9a0877d796892c6ec3b666b2b6"
+
+[[files]]
+file = "config/createbigcannons-server.toml"
+hash = "f9b43150ae555d8c43f6a65f41a0c3b31dc344eb01c7f6b2608fd0a016294b0c"
+
+[[files]]
+file = "config/createdieselgenerators-client.toml"
+hash = "2f1d8f05b215da49383ae8a04ffadcb12202830a6cb2fbada26caaed9ce35dec"
+
+[[files]]
+file = "config/createdieselgenerators-common.toml"
+hash = "9745e0b82765ee9ac86c4340a941e1f26c10b2da19296928d99169fc36dfea1a"
+
+[[files]]
+file = "config/createdieselgenerators-server.toml"
+hash = "3ff7bfbdf8353dffba0809215ab4812f63443843128b3d40ae6b377aeda94855"
+
+[[files]]
 file = "config/createfood-client.toml"
 hash = "6d9e106f9e86341770334cfff104be03466b50d77ee1b03bf0acfa779956bc07"
 
@@ -1495,6 +1847,46 @@ hash = "d8088bd461dd7666552c4174bac6549e55112728e07aa3addd0e32a805c230fc"
 [[files]]
 file = "config/crepperoverhaul-client.jsonc"
 hash = "8ebd8ce17fd98dc18dde0d3271b9237fbc98d9664647940308c9a4d7804dc200"
+
+[[files]]
+file = "config/cristellib/aether/structure_placement_config.json5"
+hash = "3511bcac8a1b8403e94142aa60a5608a351087dfb6e6918d47328fb29726c315"
+
+[[files]]
+file = "config/cristellib/aether/structure_toggle_config.json5"
+hash = "1d290a7e637c87e9cdb636c23c9f2046106fdd457b1cdd06ed23771a0ac893cf"
+
+[[files]]
+file = "config/cristellib/aether_bedrock_mobs_reborn/structure_placement_config.json5"
+hash = "efddf4fe1c99396c1fd77e65e09e707743c801daf06152d03c9ca25dbeba42c2"
+
+[[files]]
+file = "config/cristellib/aether_bedrock_mobs_reborn/structure_toggle_config.json5"
+hash = "42a95f8761c6b434e7b23f2aace7f53c58403105a15f4e277869ef157a140e67"
+
+[[files]]
+file = "config/cristellib/aether_chronicles/structure_placement_config.json5"
+hash = "b8e7f98a1c352902edb22908412ecb3c912d099085acbc04f7aa5349672d57ae"
+
+[[files]]
+file = "config/cristellib/aether_chronicles/structure_toggle_config.json5"
+hash = "b0b907384c498cec6baca8163fa524fa651fa4bc030999841988d0c6ce3f966a"
+
+[[files]]
+file = "config/cristellib/aether_dragon/structure_placement_config.json5"
+hash = "cbdda5184929d272a9eb9b39b563def89de69538e6d9ef29d9ec4c1225968c4a"
+
+[[files]]
+file = "config/cristellib/aether_dragon/structure_toggle_config.json5"
+hash = "2d59d6e402894412ae14f50637feb2ff640890f70a247748675a7f1652aeea92"
+
+[[files]]
+file = "config/cristellib/aether_villages/structure_placement_config.json5"
+hash = "3c96f2fb53006d5ec396fe5d5de5f15aba40a305578c9ce70f2547733cdb36c9"
+
+[[files]]
+file = "config/cristellib/aether_villages/structure_toggle_config.json5"
+hash = "01bd491eaf916faa2940b8975a30e059256ede46ac1ec51a33e0950d72bf4f40"
 
 [[files]]
 file = "config/cristellib/alexscaves/structure_placement_config.json5"
@@ -1637,6 +2029,22 @@ file = "config/cristellib/cataclysm_of_chaos/structure_toggle_config.json5"
 hash = "c24dee2800615c88328435c42755aa890ff6059b602f8b6dae4ef8b917c75eed"
 
 [[files]]
+file = "config/cristellib/deep_aether/structure_placement_config.json5"
+hash = "8b2bfe3a33e0d27571d73f3d6f0b085cd0dabf607610a5f34a58b0018f483a04"
+
+[[files]]
+file = "config/cristellib/deep_aether/structure_toggle_config.json5"
+hash = "613a62ffae148f321f33c77897fd33865177d3f87997fa4983e32db16fe6ddc9"
+
+[[files]]
+file = "config/cristellib/deeperdarker/structure_placement_config.json5"
+hash = "75856312be02a835dd931bbed09a279fa5c232ef4226695908b45fd211335f7e"
+
+[[files]]
+file = "config/cristellib/deeperdarker/structure_toggle_config.json5"
+hash = "e6ce8be2f4c714f1077fa7331b89b1e8b6c728246415c2985e2342361dceca4e"
+
+[[files]]
 file = "config/cristellib/extradelight/structure_placement_config.json5"
 hash = "cad4f78f263936c65284fbacc501bc7f97f25cdde350cb105b7585250b0ef2ff"
 
@@ -1701,6 +2109,14 @@ file = "config/cristellib/mowziesmobs/structure_toggle_config.json5"
 hash = "ed19259693f2a542b7732909fde8be6a820b5ba0148a20012d7e3ce3e9adb21b"
 
 [[files]]
+file = "config/cristellib/mr_aether_ruinedportal/structure_placement_config.json5"
+hash = "7cd05bf6badae490dc99b9e9d93cc97eb8668d0eb664afa62422a82df49f99e0"
+
+[[files]]
+file = "config/cristellib/mr_aether_ruinedportal/structure_toggle_config.json5"
+hash = "24322e0a3314e94d472d4a82a07248508702ae6e202e7d7243fc2f22409859b0"
+
+[[files]]
 file = "config/cristellib/nullscape/structure_placement_config.json5"
 hash = "7de079178b9125685d78b1897aae3cb430dee4f3d72f44ffff235ea885d639e6"
 
@@ -1715,6 +2131,14 @@ hash = "93e874ef7c29b2f8bf2f2feab4ca18aa5e2b5d59486f6616214a45ac5347a6d0"
 [[files]]
 file = "config/cristellib/oddities/structure_toggle_config.json5"
 hash = "cfc21ff3adb8c7cd1b52eb9132d1884a8f49b51a4919918ce1da83195d638c73"
+
+[[files]]
+file = "config/cristellib/pv_darker_structures/structure_placement_config.json5"
+hash = "73c7394902ffb0ddb3762c01e299a9c6caad5656606d939a10a19a4187e2a008"
+
+[[files]]
+file = "config/cristellib/pv_darker_structures/structure_toggle_config.json5"
+hash = "9c3dd0d5a7bf04c84341d81bb114761f00273c233da08b224db6b967edcffebd"
 
 [[files]]
 file = "config/cristellib/ribbits/structure_placement_config.json5"
@@ -1789,6 +2213,10 @@ file = "config/ctov-common.toml"
 hash = "412678e1cd36cec0ab7a9ae1a3a0c6eda53ba470f88dadd3de2fad32573ed082"
 
 [[files]]
+file = "config/cumulus_menus-client.toml"
+hash = "e7d3bcb15179eb4e3e46da5483d61dd7a5222abfeaa9cecdc84da5dccc4331fa"
+
+[[files]]
 file = "config/cupboard.json"
 hash = "df8f2d20dd1bcb60958803079da449204157421fc68b14762b19f0da2a2bbfde"
 
@@ -1803,6 +2231,26 @@ hash = "9f00a6b9904cf63a36c0c72f8346642962d538aaa78b59943b9de60dda82e6d0"
 [[files]]
 file = "config/curios-server.toml"
 hash = "1a3bee95a96f082b8e97cccbce30c1efe1352b616c78e06d5884fd4475668add"
+
+[[files]]
+file = "config/deep_aether-client.toml"
+hash = "01e33dc4e16dcdfcc6f7ed4231a57bcf38d1c268c219585af1c75480acc67a33"
+
+[[files]]
+file = "config/deep_aether-common.toml"
+hash = "5adc0a58ec189437851b47a668c937645d2fe1cf17e760472f052cd20276725a"
+
+[[files]]
+file = "config/deep_aether-server.toml"
+hash = "6863697a9b7c6e47acffd1fb36674cf57520473399889d1133d84e415f0a50f7"
+
+[[files]]
+file = "config/deeperdarker-common.toml"
+hash = "216cba34f4b7bb6f75ac414c98bea3ec02765adaa369f3d681c3b01ee62faaf5"
+
+[[files]]
+file = "config/deeperenderelytra-common.toml"
+hash = "9e86779a5a6fd71458e3d15a76d8af5c08ad6c244789fb6970bdc57d900c141b"
 
 [[files]]
 file = "config/displaydelight-common.toml"
@@ -1847,6 +2295,14 @@ hash = "9867888efe0d40714c8ba340f7310a7a5b7bcfcc2e31ebb9d299bbae86a68b51"
 [[files]]
 file = "config/dungeonconfig/dungeonconfig.json5"
 hash = "5df33a55d688eb2dea2e918cd698ccbbd84fc9993bb9f74849bac5482e7c1595"
+
+[[files]]
+file = "config/dungeonsdelight-client-config.toml"
+hash = "f05dc020b97fb3b8a729942cd6d15e0c870f1bc014dc9183281c650d73690d65"
+
+[[files]]
+file = "config/dungeonsdelight-config.toml"
+hash = "890499252533e72686f54798b8f82ac44ee6a0b7ea1a3802200521b276df95ff"
 
 [[files]]
 file = "config/dynamictrees-common.toml"
@@ -1930,7 +2386,7 @@ hash = "c95058c11e6f32b0f405dcf866ceaffb6494ac9794bc01fee1ede1c4b2d77024"
 
 [[files]]
 file = "config/enhancedcelestials2core/translations-cache/es_es.json"
-hash = "1101aec0ed23d026e5599bd21ce0bb16b698fa4c6e06ac443c6e87b6ac120ed7"
+hash = "27a569834470a2926ff9451b27451ffb587ab9fe2d0ab7bbab4caf4c00f068c8"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/en_us.json"
@@ -1938,7 +2394,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2defaultlunarevents/translations-cache/es_es.json"
-hash = "92e64140c5d15c19e3a597d1ec73a5bfdbdebd05fc133326747791f46ecf2652"
+hash = "a23c63ea1aea9c4f67f8551acc701369aa232c85d182f9dc836a7e4532a0781c"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/en_us.json"
@@ -1946,7 +2402,7 @@ hash = "44adc83d71066c1b7027101b8af6f38846e6459a0f53bb703b5a86e4c145b383"
 
 [[files]]
 file = "config/enhancedcelestials2shaders/translations-cache/es_es.json"
-hash = "839aa9dd9049530f7e83fdd6e558ef7e56297156cb694588be940db36472e0c4"
+hash = "0221e3fc2ca991244697e95e7ad0daee64e05764e7336a35033a2481ff5835ff"
 
 [[files]]
 file = "config/entity_model_features.json"
@@ -2006,7 +2462,7 @@ hash = "c649bbdbcdf7dcb8241aa13d78f086ec1ac26a3da6a005b68940d35ada48305f"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "c8f85ad6374875e528a2e508c0533e3f5a2cfc2f617139b0d7ed7cdbb52fc9d1"
+hash = "c0bc06d8e81904f3f5639292a461e0bf674345f835f7a41d7f29ab6b8b6a927a"
 
 [[files]]
 file = "config/fallingtree.json"
@@ -2071,6 +2527,10 @@ hash = "858c5784048dbedf407356cabc4cda234b5c3419bec9563d31c2378277e2d5b0"
 [[files]]
 file = "config/fzzy_config/keybinds.toml"
 hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
+
+[[files]]
+file = "config/fzzy_config/search.toml"
+hash = "103317c4c1c5ae1421946c921428cbfbd9b2a17ee37115d9778d0b22e3b64e19"
 
 [[files]]
 file = "config/ghosts.toml"
@@ -2638,7 +3098,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "96d509f93c118e8a5e2182f1e4e186a70cc543dc4c728ff1e3a1fb8004a0aa76"
+hash = "d6c6be6aa366f9d752f2c09388eecbc596a7dc06b206512f49181121c9046920"
 
 [[files]]
 file = "config/irisSearchSettings.toml"
@@ -2714,7 +3174,7 @@ hash = "2e5119684366f75bc8a6df871381c6094a812cadd0d5ed0547405b5f1353f9e1"
 
 [[files]]
 file = "config/jei/client/ingredient-list-mod-sort-order.ini"
-hash = "fd1043a9aabc68704b04fa5c8bd8e1adff2a601918b2af778bbce66b13c14207"
+hash = "92e9776b75796a05a184944b13fd5b47720e7cb0631f67a337693874ffb6e255"
 
 [[files]]
 file = "config/jei/client/ingredient-list-type-sort-order.ini"
@@ -2738,7 +3198,7 @@ hash = "2e5119684366f75bc8a6df871381c6094a812cadd0d5ed0547405b5f1353f9e1"
 
 [[files]]
 file = "config/jei/client/recipe-category-sort-order.ini"
-hash = "56739d51c4b04b795c28e0149ad59ac14679f0bf3cd41f6c78f8c8e434aac2ab"
+hash = "356c9654ebd6ec2868aabe2f504d3b6470b78d68b84e9c9449c50aa0a250f383"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
@@ -2821,16 +3281,20 @@ file = "config/jei/world/local/testlocal/lookupHistory.json"
 hash = "4b2288de14dcc166424ac377ae766b1ed10ca15f7fb7086c09b2031c2563e464"
 
 [[files]]
+file = "config/jei/world/local/yggdrasil/lookupHistory.json"
+hash = "672a47861f2895eb4a609a0d2f39a1abb0b49e0995c45d1d74401c6c6c3878c9"
+
+[[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/bookmarks.json"
-hash = "7e7f0313abfdc40712ff0fc848c9522b017b723fd00fe842b158b25873a28864"
+hash = "a5ffd01d4477b61c9c5beb03a4939085ea2ae10525a97e8fc991c42b28e88b84"
 
 [[files]]
 file = "config/jei/world/server/Neo _3 (127_0_0_1)/lookupHistory.json"
-hash = "ab487c5be5da1779585e2373df9f69721e2dfbf1db1dc24f41b5900e5c48d75f"
+hash = "abf9a7c7e997803c3b056517a298ae184295498b37ff16774ce489e0dddd3433"
 
 [[files]]
 file = "config/jei_biome/biome_blocks.json"
-hash = "3008cb1a68f63c7a1bf15bf4267851468f08d7760a5f517c2051e14180f4e114"
+hash = "a02d0601698859c533f3a73f27c887b04982e76ebd12a811612838e8e7cf0db5"
 
 [[files]]
 file = "config/jei_biome/features.toml"
@@ -2899,6 +3363,10 @@ hash = "4deb14dc5a67b474134d4a388eb96f5cd03aab6fe108603586e0ac65b48a8cfe"
 [[files]]
 file = "config/lithostitched.json"
 hash = "ce8ab190281862b0554c92043c2bf8af106fbe4116bcd6dab433f6506781dbc0"
+
+[[files]]
+file = "config/lodestone-client.toml"
+hash = "c088a5e2ac97282375f0c346ced0647f0b76d09e62f0e37342b52dcba17f43c3"
 
 [[files]]
 file = "config/lootintegrations.json"
@@ -3185,6 +3653,14 @@ file = "config/ribbits-options.json"
 hash = "671ee75b5333f98d3a9b92fcfcc79c7df7a6b4c0e5cda025a7b449ab79562b2b"
 
 [[files]]
+file = "config/ritchiesprojectilelib-server.toml"
+hash = "793c05c7f9975032f536f7b9702a4f892b8beb31e641af1f12ee9c96aed4d013"
+
+[[files]]
+file = "config/runiclib.json"
+hash = "d8b59dc047396b66cf2e6a8d2de8bd9c85a0a37b0f569eef520f2a52409aae54"
+
+[[files]]
 file = "config/sable-client.toml"
 hash = "5f816a5d7d32cc56ff3f26e3adbb25c6bfea6d81aba088cca9e00d42d73753e4"
 
@@ -3283,6 +3759,38 @@ hash = "3b25083488df1b392b417e202ade95037aee601ff4a564067c2b1d67fff60aa0"
 [[files]]
 file = "config/solonion.json"
 hash = "105d00b0b515d8fff493d00768d95cc41d35d4ac24e08b075eebe2fae16b8f9f"
+
+[[files]]
+file = "config/somakespells/balance/efeitos.toml"
+hash = "840e897121cd499d066b17f605e79f47da8109eadef3e2a32bd88f20b60de569"
+
+[[files]]
+file = "config/somakespells/equipment/.defaults_initialized"
+hash = "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+
+[[files]]
+file = "config/somakespells/equipment/cataclysm_ignitium.json"
+hash = "899fb0092f0036a4a1f3f1e586ff0a0905fc3495a52b2269a6b10d8057ccb0d1"
+
+[[files]]
+file = "config/somakespells/equipment/cataclysm_incinerator.json"
+hash = "d4f26900c4c92fad84483597686a1bc140278b3771ac2506a5faa2e41bc3103c"
+
+[[files]]
+file = "config/somakespells/equipment/example.json.example"
+hash = "328d0ed52a70de7e196c9652014ea27d17a88fde5a0b13519f6ea9f38ea45f82"
+
+[[files]]
+file = "config/somakespells/equipment/somakespells_ceranium.json"
+hash = "517e6afa80d966e6e4ecf914bc14fcd1e797665d3a5c4e40c1399150c5d7d5fe"
+
+[[files]]
+file = "config/somakespells/general/common.toml"
+hash = "3b1f5f717a51781919e6013dceedda5d56ae09801a5bedc558fdcdea32c008b8"
+
+[[files]]
+file = "config/somakespells/progression/spellbooks.toml"
+hash = "f0aca92f6ebd783844c705ac5b30543e8a54ae27c820c23a0743ef46c1093314"
 
 [[files]]
 file = "config/sophisticatedbackpacks-common.toml"
@@ -4138,7 +4646,7 @@ hash = "9757a6208de6780c7d86d61a75e997848a30a7e759f5e2f3e29d08ab7aa6383f"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "13b9fab41d3dc1aed935e1209bc1f78cf7d7c0844b2044feddb69993d7be2244"
+hash = "6846834e443a85f084d9da3e0b43574d46bb3abd668279fb2672b8e8845ef419"
 
 [[files]]
 file = "config/wover/cached.json"
@@ -4206,7 +4714,7 @@ hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
 
 [[files]]
 file = "config/xaero/world-map/client.cfg"
-hash = "d0f079a8df083f6f60a0e0c1316a25fc841755a91bdcb2f86c66ead8e7d4d13d"
+hash = "e905efcfc98df6480813d099d85109c0852d840d745c555e7bcf72b62a63143d"
 
 [[files]]
 file = "config/xaero/world-map/common.cfg"
@@ -4237,8 +4745,12 @@ file = "config/yungsmenutweaks-neoforge-1_21.toml"
 hash = "f03258dd68fab838e12affe9c56d7a558a808f0803458b657b77acdc84fd4915"
 
 [[files]]
-file = "config/zbbnoflybuild-common.toml"
+file = "config/zbbnoflybuild-common-1.toml.bak"
 hash = "283c3ecdddc7dd934487e6bb1c0f235d8195a5510548b9265364489067ae546c"
+
+[[files]]
+file = "config/zbbnoflybuild-common.toml"
+hash = "a04150e4c7c1eeed402e0edcda4d4a1cff68f1c3c478bac2f6fdb0236280da15"
 
 [[files]]
 file = "config/zeta-common.toml"
@@ -5189,6 +5701,10 @@ file = "mods/Create-Server-Optimizer-NeoForge-1.21.1-2.3.0.jar"
 hash = "98276924d31db617c02e0bb41ea1b7d6f3471669b5380c5f69365a81fcad93c9"
 
 [[files]]
+file = "mods/DaV DeeperAndDarker 1.21.1.jar"
+hash = "49ab178eb44fe4b359981e4c7a82fd5028874e92e63138bff13cffd061215d6e"
+
+[[files]]
 file = "mods/abyssal-decor.pw.toml"
 hash = "424b5720cad1e520ec046e8f445b827fb6475256b7e7ce31fec3ad5e41c3503b"
 metafile = true
@@ -5198,8 +5714,18 @@ file = "mods/accdelight-1.0.0-neoforge+1.21.1.jar"
 hash = "b4f9bba56f68122b23792c33a7ac9e124ff1f0d1ad108a01414f0d6f7edc227b"
 
 [[files]]
+file = "mods/accessories.pw.toml"
+hash = "ee096237cb56c7923b21340657cf9e041230875c837ff5ce02bf8e747dcccd7c"
+metafile = true
+
+[[files]]
 file = "mods/accompat-0.3.3.jar"
 hash = "609891ebc8455e56f4b5f0b36c1e45ec634013644bffb3d079ea7a84fd109b3c"
+
+[[files]]
+file = "mods/aces-spell-utils.pw.toml"
+hash = "e576823631e7a0fe6b8891ce4a5f0aa8a6f365ec56f0227bd5cca457f38d4a21"
+metafile = true
 
 [[files]]
 file = "mods/addonslib.pw.toml"
@@ -5214,6 +5740,34 @@ hash = "ff4baffe9fb285048cad2155225012836bd9b70a9910921e611c08b38e64ba4c"
 file = "mods/adventurer-skills-pufferfishs-skills.pw.toml"
 hash = "1cd559718f9d512e24c47246dd5f53c1fd4db1c7cee80331e6f4d84715c8e5ae"
 metafile = true
+
+[[files]]
+file = "mods/aether-bedrock-mobs-reborn.pw.toml"
+hash = "859c0106528c4609392212ded77e661bbef2e5d773e392ca4ed889c5355247d1"
+metafile = true
+
+[[files]]
+file = "mods/aether-dragon.pw.toml"
+hash = "1b3d5d5af2bd15cf40bbdd42094b839e4ee48fd68d18689a81ad30b1111adc0a"
+metafile = true
+
+[[files]]
+file = "mods/aether-ruined-portal-3.4.jar"
+hash = "5ad9a86448315159e25fb7b502324cc25676751c622c2e8693b3e3aaf0b810c7"
+
+[[files]]
+file = "mods/aether-villages.pw.toml"
+hash = "56012b11efef62f768ab4c035dc4d6adc5fd72a37021342e78fe36895c6bfdce"
+metafile = true
+
+[[files]]
+file = "mods/aether.pw.toml"
+hash = "59c9a1f969edd0ba1da9ba5ad6975951513225d0304a692c3d4c862e2360940c"
+metafile = true
+
+[[files]]
+file = "mods/aether_chronicles-1.0.1.jar"
+hash = "e5123f508daece81fe10999ce5c31287c20e065a49aba29089516731139b0be7"
 
 [[files]]
 file = "mods/alexs-caves-better-combat.pw.toml"
@@ -5260,6 +5814,11 @@ hash = "296b06234a9a865197a4b96ad37b24c4e96c1994ffb10e1a1d61b273b462e64f"
 metafile = true
 
 [[files]]
+file = "mods/apothic-attributes.pw.toml"
+hash = "39c77ded3382f9ccd9c93e3953f7426c27cd9f16e93224125f061ea7b519e087"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "3f910a2722d6884203aba5eee8f5c129ea3c2e0b78bc683b2d7b5604fec755f5"
 metafile = true
@@ -5296,6 +5855,11 @@ metafile = true
 [[files]]
 file = "mods/attributefix.pw.toml"
 hash = "a445471ac6843bcf9fb76eabb4357de0357dfa7782be536a7827a26764fe45c1"
+metafile = true
+
+[[files]]
+file = "mods/azurelib.pw.toml"
+hash = "04a1239e44c76a0c6a3b670513480c402105450af02357b22e6b0027781a6ed0"
 metafile = true
 
 [[files]]
@@ -5363,6 +5927,11 @@ hash = "cf914684c4151076b726116a66f7bc81a6116655551bcce70a9e64e34e5aa308"
 metafile = true
 
 [[files]]
+file = "mods/born-in-chaos-jade-compat.pw.toml"
+hash = "ec71e2be38836779c10f9516ac2e19c90d483eb59fe022678bdaa14445694521"
+metafile = true
+
+[[files]]
 file = "mods/born-in-chaos.pw.toml"
 hash = "4a7d85fc2f67432dad21dd3b316a557ff73d1b4992a54cc1e0877d2ae0c8207a"
 metafile = true
@@ -5389,6 +5958,11 @@ metafile = true
 [[files]]
 file = "mods/c2me.pw.toml"
 hash = "ad215cd8ecda2d49298edc6a4388948cdaeeb9b77cd9206f72c4f6f37d91558b"
+metafile = true
+
+[[files]]
+file = "mods/caelus.pw.toml"
+hash = "86cf2ae835b8f3d981af2e88a4d19fdc3dc4f5aa3904c6ba30e25d77d3e9fcbb"
 metafile = true
 
 [[files]]
@@ -5426,6 +6000,10 @@ file = "mods/cataclysm_of_chaos-1.3.0-neoforge-1.21.1.jar"
 hash = "275c1e4b2e938a3724c0a685ba9d751ec8bd80cd9d4138424fdbc39c2b904db3"
 
 [[files]]
+file = "mods/cataclysm_spellbooks-1.1.11-1.21.jar"
+hash = "6a056e8d9f735defc531cec85c2ced75992950312f2dcaa2aa9fc090cf291763"
+
+[[files]]
 file = "mods/cataclysms-rise.pw.toml"
 hash = "73d3203547b2b9a02081b70602485802f87aa1345f5c50a4e5c8c5551fbc25db"
 metafile = true
@@ -5433,6 +6011,11 @@ metafile = true
 [[files]]
 file = "mods/cgs.pw.toml"
 hash = "1e35822d7c167184d78651887d9823feca7a128688daedfdb93f0a33a3e2c1cf"
+metafile = true
+
+[[files]]
+file = "mods/chaos-moon-2.pw.toml"
+hash = "bcc763cd7ea69c61e27d1bf00e494c7ab249681e5d256d2fa459185ac5a31d42"
 metafile = true
 
 [[files]]
@@ -5594,6 +6177,11 @@ hash = "7043a3417d67c6e987ceecd5124474eb0b153324bcd12c5b5de56ef7422771af"
 metafile = true
 
 [[files]]
+file = "mods/create-big-cannons.pw.toml"
+hash = "b6ac94e91f766466186d350ed45a79fdcf7805f34d9170ccc8612ff47983a5f5"
+metafile = true
+
+[[files]]
 file = "mods/create-cold-sweat.pw.toml"
 hash = "8ea508083cf31e00b95eb5536732a88f21f86f528243674267a8500f0af56f6a"
 metafile = true
@@ -5693,6 +6281,25 @@ hash = "eee6f55018c45210b919902d7d2433e19e03805a99968b9da30181b53ecb2063"
 metafile = true
 
 [[files]]
+file = "mods/deep-aether.pw.toml"
+hash = "183f4532b3c853915ec256a6dd57ef582cb6dd1b08cf593101d99ff6dd75be0b"
+metafile = true
+
+[[files]]
+file = "mods/deeper-and-darker-spellbooks.pw.toml"
+hash = "3dc695414564641b6b7ca4d69eab67eb0b589da25ceb62ccfbe2cee70302d6d3"
+metafile = true
+
+[[files]]
+file = "mods/deeperdarker.pw.toml"
+hash = "ebb3df18070c94169933965dc6ef11ea68adb2b362623417e6b129f0af9a1bbe"
+metafile = true
+
+[[files]]
+file = "mods/deeperenderelytra-1.2-1.21.1.jar"
+hash = "331b3ff7cc6103549ba615579a447468efd7d686a71354c42910d46f57eabb0d"
+
+[[files]]
 file = "mods/display-delight.pw.toml"
 hash = "4bf529c0b36ea0e8e01dc12e80f69a703948d28f7587460526ff0a1330f9e891"
 metafile = true
@@ -5710,6 +6317,11 @@ metafile = true
 [[files]]
 file = "mods/dtbop.pw.toml"
 hash = "2e91e7520b89891f92b219f877f7bdfe1fe07da83e455066528edc8795b16913"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-delight.pw.toml"
+hash = "6c4aa4206b5d201fded0ba197543353e50542bf3c33c6ef45b1b90cebde1d6f6"
 metafile = true
 
 [[files]]
@@ -5874,6 +6486,11 @@ metafile = true
 [[files]]
 file = "mods/farmers-cutting-regions-unexplored.pw.toml"
 hash = "94058325dbe4f6fbad3faeb93b9dc32085ce14e598f2ed493dde870f41d615f5"
+metafile = true
+
+[[files]]
+file = "mods/farmers-cutting-the-aether.pw.toml"
+hash = "2ebcb9f608126f5516f2bc67ab3623859819b25ec34beabfc844f11efe11a421"
 metafile = true
 
 [[files]]
@@ -6160,6 +6777,11 @@ hash = "93f98a3019a5ce1bda97af2c3e937aaa2adbe4e4dce46e74b130d32cbfdc80a2"
 metafile = true
 
 [[files]]
+file = "mods/lodestone.pw.toml"
+hash = "8590e77951c4fb7c1ac4a52f8e1e0fa0103518b8c64ef3ae55ae654bfd6d2594"
+metafile = true
+
+[[files]]
 file = "mods/loot-integrations-integrated-dungeons-villages.pw.toml"
 hash = "fe9b31f5cf652e1e82e55fcd8276458707f436c9c1cdd7610c02a0aa3043ec11"
 metafile = true
@@ -6289,6 +6911,11 @@ hash = "9df145eb4d59032b754eb0f3441261316ccdf718de56ad89029bf36b6f48a8c8"
 metafile = true
 
 [[files]]
+file = "mods/miners-delight-plus.pw.toml"
+hash = "6309c1eba3f762ba6141a0369c5be7673a3056cc3804a8ff424300551157f8bd"
+metafile = true
+
+[[files]]
 file = "mods/mmmmmmmmmmmm.pw.toml"
 hash = "9f49c7407a38c6d066c22d315754378e3d1babb4673d62c1531a1453d74090e9"
 metafile = true
@@ -6349,6 +6976,11 @@ hash = "c183fb8843a6c04da0417e5d51c62b2def40b994f0e9f1176243877b104d88a8"
 metafile = true
 
 [[files]]
+file = "mods/oceans-delight.pw.toml"
+hash = "67f092232a92992046932f1f157c883d6a560c6ffe1de61b1fc6c7e83a0a9f52"
+metafile = true
+
+[[files]]
 file = "mods/oh-the-biomes-weve-gone.pw.toml"
 hash = "d6906350d1e8d0678a72fb801476b262be4cd5f30ee36ddffc2e60e9aaf5a174"
 metafile = true
@@ -6356,6 +6988,11 @@ metafile = true
 [[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
 hash = "081009808225dc55d5503bdcdcef7b96b66571f16b421693bad126ca0d21ada2"
+metafile = true
+
+[[files]]
+file = "mods/owo-lib.pw.toml"
+hash = "a7fd33e3171967cf90314c3a1147769b051315b7db4f30e7c51304d0d3ef4dee"
 metafile = true
 
 [[files]]
@@ -6494,6 +7131,16 @@ hash = "5d1a0fefc09545d23a75f37a7cd8b7dcf817a7a57fe28f1419b19be92476dcaa"
 metafile = true
 
 [[files]]
+file = "mods/ritchies-projectile-library.pw.toml"
+hash = "c62b51a8248d15e3cb63880ac123a92dd6a67973a1eafc4c4cb09f3f74481f78"
+metafile = true
+
+[[files]]
+file = "mods/runiclib.pw.toml"
+hash = "50247b958259e240e9892ce22158f651f7b569c8ea51f345532451f07db810eb"
+metafile = true
+
+[[files]]
 file = "mods/sable-trees.pw.toml"
 hash = "f673ee83eb325c07ab853350905ec39047aa08431f84a5d03a725e9c585d37d1"
 metafile = true
@@ -6559,6 +7206,16 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "617ec6e9893d59905035a510fe336addd46a97b6fd28fad88b70713ebf8e69e3"
+metafile = true
+
+[[files]]
+file = "mods/somake-spells-irons-spells-addon.pw.toml"
+hash = "f0b34171f3c9b88ea6ba8b8fa73f9e5848712897348245fda2d50613d26c9940"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks-create-integration.pw.toml"
+hash = "6876c183b8154953471a24e47efc66b02fa88e9bf88b5ce910093d72d817fd45"
 metafile = true
 
 [[files]]
@@ -6878,7 +7535,7 @@ hash = "9e2b8b2346808187cd1bc936810a3c24309facbaafe0f2437fa8183d6e0e469e"
 
 [[files]]
 file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5_iriscaves.txt"
-hash = "56eecf667e1b5ea6b75242ba1a096c7b3eedaf25c397b986587bdf25eef2a504"
+hash = "64277696c1f9eef81da651dcaf1204f3810e685e55da80fec84f277281070b0e"
 
 [[files]]
 file = "shaderpacks/Outdated ComplementaryUnbound_r5.9 + EP_1.10.0.txt"

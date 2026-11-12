@@ -1,0 +1,13 @@
+name = "Somake Spells - Iron's Spells Addon"
+filename = "somakespells-1.1.0-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4ba6b4be915fcccacb928af2f742253362d57d9a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9535391
+project-id = 1461634

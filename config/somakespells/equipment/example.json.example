@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "somakespells:example",
+      "priority": 0,
+      "selector": { "items": ["minecraft:iron_chestplate"] },
+      "mode": "patch",
+      "preserve_upgrades": true,
+      "remove": [],
+      "remove_attributes": [],
+      "attributes": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "action": "replace",
+          "operation": "add_value",
+          "value": 6,
+          "slot": "auto"
+        }
+      ]
+    }
+  ]
+}
