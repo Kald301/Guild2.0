@@ -1,6 +1,6 @@
 {
   "version": 10,
-  "generatedAt": "2026-11-12T16:01:21.867745500Z",
+  "generatedAt": "2026-11-13T18:55:00.909783700Z",
   "biomes": [
     {
       "biomeId": "aether:skyroot_forest",
@@ -766664,6 +766664,37 @@
           "spawnCharge": "",
           "spawnEnergyBudget": "",
           "dropItems": []
+        },
+        {
+          "entityId": "born_in_chaos_v1:thornshell_crab",
+          "category": "creature",
+          "weight": 8,
+          "minCount": 1,
+          "maxCount": 1,
+          "placementType": "on_ground",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": [
+            "born_in_chaos_v1:rotten_fish",
+            "born_in_chaos_v1:spiny_shell"
+          ]
+        },
+        {
+          "entityId": "naturalist:alligator",
+          "category": "creature",
+          "weight": 10,
+          "minCount": 2,
+          "maxCount": 3,
+          "placementType": "on_ground",
+          "heightmapType": "MOTION_BLOCKING_NO_LEAVES",
+          "hasPlacement": true,
+          "spawnCharge": "",
+          "spawnEnergyBudget": "",
+          "dropItems": [
+            "naturalist:tooth"
+          ]
         },
         {
           "entityId": "naturalist:duck",
